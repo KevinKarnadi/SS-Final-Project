@@ -563,7 +563,9 @@
     "_enabled": true,
     "jumpAudio": null,
     "dieAudio": null,
-    "bulletPrefab": null,
+    "bulletPrefab": {
+      "__uuid__": "6c742d77-9847-4b5e-b8d2-2be64ecdbba2"
+    },
     "_id": "e0gqDvzw1LNbjhnZOpaKrR"
   },
   {
@@ -746,7 +748,9 @@
     "_enabled": true,
     "jumpAudio": null,
     "dieAudio": null,
-    "bulletPrefab": null,
+    "bulletPrefab": {
+      "__uuid__": "6c742d77-9847-4b5e-b8d2-2be64ecdbba2"
+    },
     "_id": "bdIba61TlFW6N/aMlJJOL4"
   },
   {
