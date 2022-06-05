@@ -1,3 +1,3 @@
-Weapons: extract using "TILED"
-tiles: extract using "TILED"
+- Weapons: extract using "TILED"
+- tiles: extract using "TILED"
  
