@@ -1,7 +1,7 @@
 {
-  "title": "WebMario",
+  "title": "SS-Final-Project",
   "packageName": "org.cocos2d.demo",
-  "startScene": "3dcde9ee-7dd8-416d-9c51-376670af1145",
+  "startScene": "",
   "excludeScenes": [],
   "orientation": {
     "landscapeRight": true,
@@ -18,7 +18,7 @@
   "md5Cache": true,
   "nativeMd5Cache": true,
   "encryptJs": true,
-  "xxteaKey": "a62348de-6ea4-42",
+  "xxteaKey": "c38e6c6f-1a68-45",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {

@@ -19,6 +19,9 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     private bulletPrefab: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    private bombPrefab: cc.Prefab = null;
+
     private moveSpeed: number = 300;
 
     private moveDirection: number = 0;
@@ -47,18 +50,28 @@ export default class Player extends cc.Component {
 
     private shoot: boolean = false;
 
+    private bombPool = null;
+
+    private bomb: boolean = false;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.bulletPool = new cc.NodePool('Bullet');
+        this.bombPool = new cc.NodePool('Bomb');
         let maxBulletNum = 5;
-        for(let i: number = 0; i < maxBulletNum; i++)
-        {
+        let maxBombNum = 5;
+        for(let i: number = 0; i < maxBulletNum; i++) {
             let bullet = cc.instantiate(this.bulletPrefab);
 
             this.bulletPool.put(bullet);
+        }
+        for(let i: number = 0; i < maxBombNum; i++) {
+            let bomb = cc.instantiate(this.bombPrefab);
+
+            this.bombPool.put(bomb);
         }
     }
 
@@ -75,6 +88,9 @@ export default class Player extends cc.Component {
                 }
                 if(this.shoot) {
                     this.createBullet();
+                }
+                if(this.bomb) {
+                    this.createBomb();
                 }
                 this.playerAnimation();
             }
@@ -116,6 +132,17 @@ export default class Player extends cc.Component {
             bullet.getComponent('Bullet').init(this.node);
     }
 
+    private createBomb()
+    {
+        this.bomb = false;
+        let bomb = null;
+        if (this.bombPool.size() > 0) 
+            bomb = this.bombPool.get(this.bombPool);
+
+        if(bomb != null)
+            bomb.getComponent('Bomb').init(this.node);
+    }
+
     playerDie() {
         this.isDie = true;
         this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
@@ -136,5 +163,9 @@ export default class Player extends cc.Component {
 
     setPlayerShoot() {
         this.shoot = true;
+    }
+
+    setPlayerBomb() {
+        this.bomb = true;
     }
 }

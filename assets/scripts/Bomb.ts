@@ -1,12 +1,12 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class Bullet extends cc.Component 
+export default class Bomg extends cc.Component 
 {
 
     private anim = null;
 
-    private bulletManager = null;
+    private bombManager = null;
 
     public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
 
@@ -20,14 +20,14 @@ export default class Bullet extends cc.Component
 
         this.setInitPos(node);
 
-        this.anim.play('bullet');
+        this.anim.play('bomb');
         this.bulletMove();
     }
 
     // this function is called when the bullet manager calls "get" API.
     reuse(bulletManager)
     {
-        this.bulletManager = bulletManager;
+        this.bombManager = bulletManager;
 
         this.isTriggered = false;
     }
@@ -58,6 +58,8 @@ export default class Bullet extends cc.Component
     {
         let moveDir = null;
         let speed = 300;
+        let angle = 45;
+        let height = 1000;
 
         // decide bullet direction
         if(this.node.scaleX > 0) {
@@ -66,21 +68,18 @@ export default class Bullet extends cc.Component
             moveDir = -1;
         }
 
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
+        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, height);
+        this.rigidBody.angularVelocity = angle * moveDir * 10;
     }
     
     //detect collision
-    onBeginContact(contact, selfCollider, otherCollider)
-    {
+    onBeginContact(contact, selfCollider, otherCollider) {
         this.node.stopAllActions();
         
         this.unscheduleAllCallbacks();
 
-        this.scheduleOnce(() => {
-
-            this.anim.stop();
+        this.anim.stop();
             
-            this.bulletManager.put(this.node);
-        }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
+        this.bombManager.put(this.node);
     }
 }

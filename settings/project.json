@@ -1,26 +1,22 @@
 {
-  "last-module-event-record-time": 1653033205619,
   "group-list": [
-<<<<<<< HEAD
-    "default"
-  ],
-  "collision-matrix": [
-    [
-      true
-=======
     "default",
     "player",
     "ground",
-    "bullet"
+    "bullet",
+    "wall"
   ],
   "collision-matrix": [
     [
       true,
       false,
+      false,
+      null,
       false
     ],
     [
       false,
+      true,
       true,
       true,
       true
@@ -28,22 +24,30 @@
     [
       false,
       true,
-      false
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      true,
+      false,
+      true
     ],
     [
       false,
       true,
       false,
+      true,
       false
->>>>>>> parent of e2507fd (change bullet range, add wall and bomb)
     ]
   ],
   "excluded-modules": [
     "3D Physics/Builtin"
   ],
   "preview-port": 7456,
-  "design-resolution-width": 1200,
-  "design-resolution-height": 680,
+  "design-resolution-width": 960,
+  "design-resolution-height": 640,
   "fit-width": false,
   "fit-height": true,
   "use-project-simulator-setting": false,
