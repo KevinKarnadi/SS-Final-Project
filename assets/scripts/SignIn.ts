@@ -11,7 +11,7 @@ export default class SignIn extends cc.Component {
         cc.find("Canvas/menuBg/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     }
 
-    signIp() {
+    signIn() {
         let emailBox = cc.find("Canvas/menuBg/email").getComponent(cc.EditBox);
         let passwordBox = cc.find("Canvas/menuBg/password").getComponent(cc.EditBox);
         let email = emailBox.string;
