@@ -1,11 +1,41 @@
 {
   "last-module-event-record-time": 1653033205619,
   "group-list": [
+<<<<<<< HEAD
     "default"
   ],
   "collision-matrix": [
     [
       true
+=======
+    "default",
+    "player",
+    "ground",
+    "bullet"
+  ],
+  "collision-matrix": [
+    [
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      true,
+      false
+    ],
+    [
+      false,
+      true,
+      false,
+      false
+>>>>>>> parent of e2507fd (change bullet range, add wall and bomb)
     ]
   ],
   "excluded-modules": [

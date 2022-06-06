@@ -137,11 +137,8 @@ export default class NewClass extends cc.Component {
             case cc.macro.KEY.space:
                 this.player.setPlayerJump(false);
                 break;
-            case cc.macro.KEY.f:        // shoot (bullet)
+            case cc.macro.KEY.f:        // shoot
                 this.player.setPlayerShoot();
-                break;
-            case cc.macro.KEY.r:        // bomb
-                this.player.setPlayerBomb();
                 break;
             default:
                 break;
