@@ -127,7 +127,7 @@
     "_enabled": true,
     "_type": 2,
     "_allowSleep": false,
-    "_gravityScale": 15,
+    "_gravityScale": 1,
     "_linearDamping": 0,
     "_angularDamping": 0,
     "_linearVelocity": {
@@ -189,6 +189,7 @@
       "__id__": 1
     },
     "_enabled": true,
+    "gameManager": null,
     "_id": ""
   },
   {

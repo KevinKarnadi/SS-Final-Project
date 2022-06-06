@@ -26,6 +26,8 @@ export default class Player extends cc.Component {
 
     private moveDirection: number = 0;
 
+    private changeDirection: number = 0;
+
     private jumpVelocity: number = 1100;
 
     private jump: boolean = false;
@@ -53,6 +55,8 @@ export default class Player extends cc.Component {
     private bombPool = null;
 
     private bomb: boolean = false;
+
+    private angle = null;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -106,9 +110,9 @@ export default class Player extends cc.Component {
     playerMove(dt) {
         this.node.x += this.moveSpeed * this.moveDirection * dt;    // player walking
         this.isMove = (this.moveDirection != 0) ? true : false;
-        if(this.moveDirection == 1) {   // change direction using scaling
+        if(this.moveDirection == 1 || this.changeDirection == 1) {   // change direction using scaling
             this.node.scaleX = 1;
-        } else if(this.moveDirection == -1) {
+        } else if(this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
         }
     }
@@ -128,8 +132,9 @@ export default class Player extends cc.Component {
         if (this.bulletPool.size() > 0) 
             bullet = this.bulletPool.get(this.bulletPool);
 
-        if(bullet != null)
+        if(bullet != null) {
             bullet.getComponent('Bullet').init(this.node);
+        }
     }
 
     private createBomb()
@@ -139,8 +144,10 @@ export default class Player extends cc.Component {
         if (this.bombPool.size() > 0) 
             bomb = this.bombPool.get(this.bombPool);
 
-        if(bomb != null)
+        if(bomb != null) {
+            bomb.getComponent('Bomb').setAngle(this.angle);
             bomb.getComponent('Bomb').init(this.node);
+        }
     }
 
     playerDie() {
@@ -157,6 +164,10 @@ export default class Player extends cc.Component {
         this.moveDirection = dir;
     }
 
+    setPlayerChangeDirection(dir: number) {
+        this.changeDirection = dir;
+    }
+
     setPlayerJump(val: boolean) {
         this.jump = val;
     }
@@ -165,7 +176,8 @@ export default class Player extends cc.Component {
         this.shoot = true;
     }
 
-    setPlayerBomb() {
+    setPlayerBomb(angle) {
+        this.angle = angle;
         this.bomb = true;
     }
 }

@@ -1,8 +1,12 @@
+import GameManager from "./GameManager"
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class Bomg extends cc.Component 
+export default class Bomb extends cc.Component 
 {
+    @property(GameManager)
+    gameManager: GameManager = null;
 
     private anim = null;
 
@@ -12,12 +16,13 @@ export default class Bomg extends cc.Component
 
     private rigidBody: cc.RigidBody = null;
 
+    private shootAngle = null;
+
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
         this.anim = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
-
         this.setInitPos(node);
 
         this.anim.play('bomb');
@@ -59,6 +64,7 @@ export default class Bomg extends cc.Component
         let moveDir = null;
         let speed = 300;
         let angle = 45;
+        let shootAngle = this.shootAngle;
         let height = 1000;
 
         // decide bullet direction
@@ -68,7 +74,13 @@ export default class Bomg extends cc.Component
             moveDir = -1;
         }
 
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, height);
+        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, height);
+        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
+        cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
+        let x = 15000;
+        let y = x * Math.tan(Math.abs(shootAngle)*(Math.PI/180));
+        x *= moveDir;
+        this.rigidBody.applyForceToCenter(cc.v2(x, y), true);
         this.rigidBody.angularVelocity = angle * moveDir * 10;
     }
     
@@ -81,5 +93,9 @@ export default class Bomg extends cc.Component
         this.anim.stop();
             
         this.bombManager.put(this.node);
+    }
+
+    setAngle(angle) {
+        this.shootAngle = angle;
     }
 }
