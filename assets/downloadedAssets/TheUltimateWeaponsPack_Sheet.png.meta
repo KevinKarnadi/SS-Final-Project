@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "214b2db7-0cd9-441d-9dbf-f5e9c4380b03",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 480,
+  "height": 480,
+  "platformSettings": {},
+  "subMetas": {
+    "TheUltimateWeaponsPack_Sheet": {
+      "ver": "1.0.6",
+      "uuid": "2885e1ed-0991-4b5c-8ef1-7756fff2e521",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "214b2db7-0cd9-441d-9dbf-f5e9c4380b03",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -29.5,
+      "offsetY": 9.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 421,
+      "height": 461,
+      "rawWidth": 480,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
