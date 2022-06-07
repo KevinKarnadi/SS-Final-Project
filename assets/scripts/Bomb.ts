@@ -76,7 +76,6 @@ export default class Bomb extends cc.Component
 
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, height);
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
-        cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         let x = 15000;
         let y = x * Math.tan(Math.abs(shootAngle)*(Math.PI/180));
         x *= moveDir;
