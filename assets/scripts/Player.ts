@@ -22,6 +22,8 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     private bombPrefab: cc.Prefab = null;
 
+    private playerName = null;
+
     private moveSpeed: number = 300;
 
     private moveDirection: number = 0;
@@ -63,6 +65,7 @@ export default class Player extends cc.Component {
     onLoad () {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
+        this.playerName = this.node.getChildByName("Name");
         this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
         let maxBulletNum = 5;
@@ -112,8 +115,10 @@ export default class Player extends cc.Component {
         this.isMove = (this.moveDirection != 0) ? true : false;
         if(this.moveDirection == 1 || this.changeDirection == 1) {   // change direction using scaling
             this.node.scaleX = 1;
+            this.playerName.scaleX = 1;
         } else if(this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
+            this.playerName.scaleX = -1;
         }
     }
 
