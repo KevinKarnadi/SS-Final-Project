@@ -65,7 +65,7 @@ export default class Player extends cc.Component {
     onLoad () {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
-        this.playerName = this.node.getChildByName("Name");
+        this.playerName = this.node.getChildByName("Player Name");
         this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
         let maxBulletNum = 5;
@@ -105,7 +105,10 @@ export default class Player extends cc.Component {
     }
 
     onBeginContact(contact, self, other) {
-        if(contact.getWorldManifold().normal.y < 0) { // step on something
+        /*if(contact.getWorldManifold().normal.y < 0) { // step on something
+            this.isOnGround = true;
+        }*/
+        if(other.tag == 1){     // on ground or props
             this.isOnGround = true;
         }
     }
