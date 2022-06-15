@@ -75,8 +75,8 @@ var Bomb = /** @class */ (function (_super) {
         }
         var x = 1000;
         // this.shootAngle = ;
-        console.log((this.shootAngle), moveDir);
-        console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle));
+        // console.log((this.shootAngle), moveDir)
+        // console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle))
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
         this.rigidBody.linearVelocity = cc.v2(x * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * x);

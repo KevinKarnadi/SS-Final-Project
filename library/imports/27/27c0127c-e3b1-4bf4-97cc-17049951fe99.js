@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '4bd3b5m3MVAcJrOIV77Ddig', 'Bomb');
-// scripts/Bomb.ts
+cc._RF.push(module, '27c01J847FL9JfMFwSZUf6Z', 'Ground');
+// scripts/Ground.ts
 
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -23,83 +23,47 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var GameManager_1 = require("./GameManager");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var Bomb = /** @class */ (function (_super) {
-    __extends(Bomb, _super);
-    function Bomb() {
+var Bullet = /** @class */ (function (_super) {
+    __extends(Bullet, _super);
+    function Bullet() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.gameManager = null;
         _this.anim = null;
-        _this.bombManager = null;
+        _this.bulletManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
-        _this.shootAngle = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
-    Bomb.prototype.init = function (node) {
+    Bullet.prototype.init = function (node, index) {
         this.anim = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
-        this.setInitPos(node);
-        this.anim.play('bomb');
-        this.bulletMove();
+        this.setInitPos(node, index);
     };
     // this function is called when the bullet manager calls "get" API.
-    Bomb.prototype.reuse = function (bulletManager) {
-        this.bombManager = bulletManager;
+    Bullet.prototype.reuse = function (bulletManager) {
+        this.bulletManager = bulletManager;
         this.isTriggered = false;
     };
     //this function sets the bullet's initial position when it is reused.
-    Bomb.prototype.setInitPos = function (node) {
+    Bullet.prototype.setInitPos = function (node, index) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
-        if (node.scaleX > 0) {
-            this.node.position = cc.v3(62, 8);
-            this.node.scaleX = 1;
-        }
-        else {
-            this.node.position = cc.v3(-62, 8);
-            this.node.scaleX = -1;
-        }
+        this.node.position = cc.v3(-455 + (3 * index) % (3 * 500), -295 + 3 * Math.floor(index / 500));
         this.node.position = this.node.position.addSelf(node.position);
     };
-    //make the bullet move from current position
-    Bomb.prototype.bulletMove = function () {
-        var moveDir = null;
-        // decide bullet direction
-        if (this.node.scaleX >= 0) {
-            moveDir = 1;
-        }
-        else {
-            moveDir = -1;
-        }
-        var x = 1000;
-        // this.shootAngle = ;
-        // console.log((this.shootAngle), moveDir)
-        // console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle))
-        // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
-        // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
-        this.rigidBody.linearVelocity = cc.v2(x * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * x);
-        this.rigidBody.angularVelocity = 200 * moveDir;
-    };
     //detect collision
-    Bomb.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
-        // this.node.stopAllActions();
-        // this.unscheduleAllCallbacks();
-        // this.anim.stop();
-        this.bombManager.put(this.node);
+    Bullet.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
+        if (otherCollider.node.group == "bullet") {
+            this.node.stopAllActions();
+            this.unscheduleAllCallbacks();
+            this.node.destroy();
+        }
     };
-    Bomb.prototype.setAngle = function (angle) {
-        this.shootAngle = angle;
-    };
-    __decorate([
-        property(GameManager_1.default)
-    ], Bomb.prototype, "gameManager", void 0);
-    Bomb = __decorate([
+    Bullet = __decorate([
         ccclass
-    ], Bomb);
-    return Bomb;
+    ], Bullet);
+    return Bullet;
 }(cc.Component));
-exports.default = Bomb;
+exports.default = Bullet;
 
 cc._RF.pop();

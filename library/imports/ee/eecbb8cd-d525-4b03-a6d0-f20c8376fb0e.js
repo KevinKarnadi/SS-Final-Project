@@ -49,6 +49,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.shoot = false;
         _this.totalPlayer = 3;
         _this.shootAngle = null;
+        _this.groundPool = null;
         return _this;
     }
     // private currPlayerPos = null;
@@ -58,10 +59,25 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+        this.groundPool = new cc.NodePool('Ground');
+        for (var i = 0; i < 9000; i++) {
+            var ground = cc.instantiate(this.groundPrefab);
+            this.groundPool.put(ground);
+        }
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
+        this.createGround();
         this.changePlayer(0);
+    };
+    GameManager.prototype.createGround = function () {
+        var ground = null;
+        var i = 0;
+        while (this.groundPool.size() > 0) {
+            ground = this.groundPool.get(this.groundPool);
+            ground.getComponent('Ground').init(this.node, i);
+            i++;
+        }
     };
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
@@ -249,7 +265,6 @@ var GameManager = /** @class */ (function (_super) {
             return;
         // this.shoot = true;
         // if(this.shootAngle > 30) {
-        console.log("shot angle", this.shootAngle);
         this.player.setPlayerBomb(this.shootAngle);
         // }
         this.player.setPlayerChangeDirection(0);
