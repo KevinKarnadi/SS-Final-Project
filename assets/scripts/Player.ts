@@ -105,12 +105,12 @@ export default class Player extends cc.Component {
     }
 
     onBeginContact(contact, self, other) {
-        /*if(contact.getWorldManifold().normal.y < 0) { // step on something
-            this.isOnGround = true;
-        }*/
-        if(other.tag == 1){     // on ground or props
+        if(contact.getWorldManifold().normal.y < 0) { // step on something
             this.isOnGround = true;
         }
+        // if(other.tag == 1){     // on ground or props
+        //     this.isOnGround = true;
+        // }
     }
 
     playerMove(dt) {

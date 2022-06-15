@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "README",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "- Weapons: extract using \"TILED\" (export as .png)\r\n- tiles:   extract using \"TILED\" (export as .png)\r\n \r\n"
+}

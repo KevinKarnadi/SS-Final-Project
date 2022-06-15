@@ -10,7 +10,7 @@ import UI from "./UI"
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class GameManager extends cc.Component {
 
     @property(Player)
     player1: Player = null;
@@ -29,6 +29,9 @@ export default class NewClass extends cc.Component {
 
     @property(cc.AudioClip)
     bgm: cc.AudioClip = null;
+
+    @property(cc.Prefab)
+    private groundPrefab: cc.Prefab = null;
 
     private player = null;
 
@@ -105,7 +108,7 @@ export default class NewClass extends cc.Component {
             this.player.node.on(cc.Node.EventType.TOUCH_START, this.onEventStart, this);    // touched
             this.player.node.on(cc.Node.EventType.TOUCH_MOVE, this.onEventMove, this);      // aim
             this.player.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onEventCancel, this);  // shoot
-            this.player.node.on(cc.Node.EventType.TOUCH_END, this.onEventEnd, this);      // cancel shoot
+            this.player.node.on(cc.Node.EventType.TOUCH_END, this.onEventEnd, this);        // cancel shoot
         }
     }
 
@@ -114,7 +117,7 @@ export default class NewClass extends cc.Component {
             this.player.node.off(cc.Node.EventType.TOUCH_START, this.onEventStart, this);   // touched
             this.player.node.off(cc.Node.EventType.TOUCH_MOVE, this.onEventMove, this);     // aim
             this.player.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onEventCancel, this); // shoot
-            this.player.node.on(cc.Node.EventType.TOUCH_END, this.onEventEnd, this);      // cancel shoot
+            this.player.node.on(cc.Node.EventType.TOUCH_END, this.onEventEnd, this);        // cancel shoot
         }
     }
 
@@ -198,8 +201,11 @@ export default class NewClass extends cc.Component {
             var diffY = mousePos.y - playerPos.y;
             // mousePos = this.player.node.parent.convertToNodeSpaceAR(mousePos);
             // var angle = mousePos.signAngle(playerPos);
-            this.shootAngle = Math.atan2(diffX, diffY) * (180/ Math.PI) - 90 * -1;
-            if(this.shootAngle >= 0) {
+            // this.shootAngle = Math.atan2(diffX, diffY) * (180/ Math.PI) - 90 * -1;
+            // this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)) * (180/ Math.PI);
+            this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX));
+            // this.shootAngle = Math.atan2(diffY, diffX) * (180/ Math.PI);
+            if(diffX >= 0) {
                 this.player.setPlayerChangeDirection(-1);
             } else {
                 this.player.setPlayerChangeDirection(1);
@@ -258,7 +264,10 @@ export default class NewClass extends cc.Component {
         if(this.shoot) return;
 
         // this.shoot = true;
-        this.player.setPlayerBomb(this.shootAngle);
+        // if(this.shootAngle > 30) {
+            this.player.setPlayerBomb(this.shootAngle);
+
+        // }
         this.player.setPlayerChangeDirection(0);
     }
 }

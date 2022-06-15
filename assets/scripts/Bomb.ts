@@ -62,34 +62,30 @@ export default class Bomb extends cc.Component
     private bulletMove()
     {
         let moveDir = null;
-        let speed = 300;
-        let angle = 45;
-        let shootAngle = this.shootAngle;
-        let height = 1000;
-
         // decide bullet direction
-        if(this.node.scaleX > 0) {
+        if(this.node.scaleX >= 0) {
             moveDir = 1;
         } else {
             moveDir = -1;
         }
+        let x = 1000;
+        // this.shootAngle = ;
+        // console.log((this.shootAngle), moveDir)
+        // console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle))
+        // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
+        // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
+        this.rigidBody.linearVelocity = cc.v2(x * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * x);
+        this.rigidBody.angularVelocity = 200 * moveDir;
 
-        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, height);
-        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
-        let x = 15000;
-        let y = x * Math.tan(Math.abs(shootAngle)*(Math.PI/180));
-        x *= moveDir;
-        this.rigidBody.applyForceToCenter(cc.v2(x, y), true);
-        this.rigidBody.angularVelocity = angle * moveDir * 10;
     }
     
     //detect collision
     onBeginContact(contact, selfCollider, otherCollider) {
-        this.node.stopAllActions();
+        // this.node.stopAllActions();
         
-        this.unscheduleAllCallbacks();
+        // this.unscheduleAllCallbacks();
 
-        this.anim.stop();
+        // this.anim.stop();
             
         this.bombManager.put(this.node);
     }

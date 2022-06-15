@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "All_Fire_Bullet_Pixel_16x16",
+    "texture": "d29b9a58-2271-43e7-be32-8eb338918b46",
+    "atlas": "",
+    "rect": [
+      0,
+      2,
+      640,
+      398
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      640,
+      400
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
