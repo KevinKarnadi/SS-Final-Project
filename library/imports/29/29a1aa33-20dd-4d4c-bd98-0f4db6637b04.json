@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "1_Effects_Explosion_001",
+    "texture": "83a67cc5-fe89-4b35-9adc-c981a002372a",
+    "atlas": "",
+    "rect": [
+      195,
+      289,
+      185,
+      151
+    ],
+    "offset": [
+      -48,
+      -143
+    ],
+    "originalSize": [
+      671,
+      443
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

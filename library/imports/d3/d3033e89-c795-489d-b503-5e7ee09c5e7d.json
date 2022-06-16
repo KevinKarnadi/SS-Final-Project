@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "1_Bullet_Grenade_001",
+    "texture": "e1c05b03-9d48-4bd3-88aa-5887a5a02541",
+    "atlas": "",
+    "rect": [
+      22,
+      15,
+      59,
+      48
+    ],
+    "offset": [
+      8,
+      3.5
+    ],
+    "originalSize": [
+      87,
+      85
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

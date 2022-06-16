@@ -82,6 +82,9 @@ var Player = /** @class */ (function (_super) {
             if (!this.isDie) {
                 cc.find("Player Health/bar", this.node).width = (this.HP / this.maxHP) * 100;
                 this.playerMove(dt);
+                if (this.HP == 0) {
+                    this.playerDie();
+                }
                 if (this.jump) {
                     this.playerJump();
                 }
@@ -104,6 +107,24 @@ var Player = /** @class */ (function (_super) {
         // }
         if (other.node.group == "bullet") {
             this.HP -= 10;
+            if (this.node.name == 'Player 1' && this.HP != 0) {
+                this.animationState = this.animation.play('char1hurt');
+                this.scheduleOnce(function () {
+                    this.animationState = this.animation.play('char1idle');
+                }, 0.5);
+            }
+            else if (this.node.name == 'Player 2' && this.HP != 0) {
+                this.animationState = this.animation.play('char2hurt');
+                this.scheduleOnce(function () {
+                    this.animationState = this.animation.play('char2idle');
+                }, 0.5);
+            }
+            else if (this.node.name == 'Player 3' && this.HP != 0) {
+                this.animationState = this.animation.play('char3hurt');
+                this.scheduleOnce(function () {
+                    this.animationState = this.animation.play('char3idle');
+                }, 0.5);
+            }
         }
     };
     Player.prototype.playerMove = function (dt) {
@@ -112,10 +133,12 @@ var Player = /** @class */ (function (_super) {
         if (this.moveDirection == 1 || this.changeDirection == 1) { // change direction using scaling
             this.node.scaleX = 1;
             this.playerName.scaleX = 1;
+            cc.find("Player Health", this.node).scaleX = 1;
         }
         else if (this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
             this.playerName.scaleX = -1;
+            cc.find("Player Health", this.node).scaleX = -1;
         }
     };
     Player.prototype.playerJump = function () {
@@ -123,6 +146,7 @@ var Player = /** @class */ (function (_super) {
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity); // add jumping velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
+            this.animationState = this.animation.play('char1jump');
         }
     };
     Player.prototype.createBullet = function () {
@@ -146,10 +170,36 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerDie = function () {
         this.isDie = true;
-        this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
+        if (this.node.name == 'Player 1') {
+            this.animation.stop('char1idle');
+            this.animationState = this.animation.play('char1dead');
+        }
+        else if (this.node.name == 'Player 2') {
+            this.animation.stop('char2idle');
+            this.animationState = this.animation.play('char2dead');
+        }
+        else if (this.node.name == 'Player 3') {
+            this.animation.stop('char3idle');
+            this.animationState = this.animation.play('char3dead');
+        }
+        this.scheduleOnce(function () {
+            this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
+        }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
     };
     Player.prototype.playerAnimation = function () {
+        if (!this.isDie) {
+            if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying) {
+                this.animation.stop('char1jump');
+                this.animationState = this.animation.play('char1idle');
+            }
+            if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying) {
+                this.animationState = this.animation.play('char1run');
+            }
+            if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)) {
+                this.animationState = this.animation.play('char1idle');
+            }
+        }
     };
     Player.prototype.setPlayerMoveDirection = function (dir) {
         this.moveDirection = dir;

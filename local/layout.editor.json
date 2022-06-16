@@ -5,21 +5,21 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -1928,
-      "y": -276,
-      "width": 1936,
-      "height": 1048,
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 832,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 287,
-            "height": 930,
+            "width": 229.53750610351562,
+            "height": 714.6000366210938,
             "type": "dock-v",
             "children": [
               {
-                "width": 287,
-                "height": 446,
+                "width": 229.53750610351562,
+                "height": 342,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 287,
-                "height": 481,
+                "width": 229.53750610351562,
+                "height": 369.6000061035156,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 1123,
-            "height": 930,
+            "width": 897.3624877929688,
+            "height": 714.6000366210938,
             "type": "dock-v",
             "children": [
               {
-                "width": 1123,
-                "height": 556,
+                "width": 897.3624877929688,
+                "height": 426.8125,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,10 +52,10 @@
                 ]
               },
               {
-                "width": 1123,
-                "height": 371,
+                "width": 897.3624877929688,
+                "height": 284.7875061035156,
                 "type": "panel",
-                "active": 0,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline",
@@ -65,8 +65,8 @@
             ]
           },
           {
-            "width": 504,
-            "height": 930,
+            "width": 403.1000061035156,
+            "height": 714.6000366210938,
             "type": "panel",
             "active": 0,
             "children": [
@@ -79,12 +79,12 @@
       "panels": [
         "hierarchy",
         "assets",
-        "inspector",
-        "cocos-services",
         "scene",
         "console",
         "timeline",
-        "game-window"
+        "game-window",
+        "inspector",
+        "cocos-services"
       ]
     },
     " common-asset-worker-worker": {}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "1_Char_Throw_001",
+    "texture": "59c0391d-4ca8-441f-a73a-c7cd0db01416",
+    "atlas": "",
+    "rect": [
+      37,
+      41,
+      259,
+      451
+    ],
+    "offset": [
+      -63,
+      0
+    ],
+    "originalSize": [
+      459,
+      533
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

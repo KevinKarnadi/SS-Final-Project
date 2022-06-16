@@ -23,12 +23,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 var Player_1 = require("./Player");
 var UI_1 = require("./UI");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -50,9 +44,10 @@ var GameManager = /** @class */ (function (_super) {
         _this.totalPlayer = 3;
         _this.shootAngle = null;
         _this.groundPool = null;
+        // private currPlayerPos = null;
+        _this.isPaused = false;
         return _this;
     }
-    // private currPlayerPos = null;
     // LIFE-CYCLE CALLBACKS:
     GameManager.prototype.onLoad = function () {
         cc.director.getPhysicsManager().enabled = true;
@@ -69,6 +64,7 @@ var GameManager = /** @class */ (function (_super) {
         //this.playBGM();
         this.createGround();
         this.changePlayer(0);
+        this.initResumeBtn();
     };
     GameManager.prototype.createGround = function () {
         var ground = null;
@@ -147,7 +143,8 @@ var GameManager = /** @class */ (function (_super) {
                 this.player.setPlayerJump(true);
                 break;
             case cc.macro.KEY.escape:
-                this.UI.pause();
+                this.pauseGame();
+                //this.UI.pause();
                 break;
             case cc.macro.KEY.p: // pass
                 this.changePlayer(this.currPlayer + 1);
@@ -273,6 +270,28 @@ var GameManager = /** @class */ (function (_super) {
         this.player.setPlayerBomb(this.shootAngle);
         // }
         this.player.setPlayerChangeDirection(0);
+    };
+    GameManager.prototype.pauseGame = function () {
+        if (cc.director.isPaused()) {
+            cc.director.resume();
+            cc.find("Canvas/Main Camera/Pause Menu").active = false;
+        }
+        else {
+            cc.director.pause();
+            cc.find("Canvas/Main Camera/Pause Menu").active = true;
+        }
+    };
+    // Pause Menu Buttons
+    GameManager.prototype.initResumeBtn = function () {
+        var clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "GameManager";
+        clickEventHandler.handler = "resume";
+        cc.find("Canvas/Main Camera/Pause Menu/resumeBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    };
+    GameManager.prototype.resume = function () {
+        cc.director.resume();
+        cc.find("Canvas/Main Camera/Pause Menu").active = false;
     };
     __decorate([
         property(Player_1.default)

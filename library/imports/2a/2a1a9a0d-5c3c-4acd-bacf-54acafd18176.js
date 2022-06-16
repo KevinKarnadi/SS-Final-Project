@@ -3,12 +3,6 @@ cc._RF.push(module, '2a1a9oNXDxKzbrPVKyv0YF2', 'UI');
 // scripts/UI.ts
 
 "use strict";
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -30,9 +24,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
+var UI = /** @class */ (function (_super) {
+    __extends(UI, _super);
+    function UI() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.timer = null; // game timer
         _this.timeout = false; // game ended
@@ -42,17 +36,17 @@ var NewClass = /** @class */ (function (_super) {
     }
     // LIFE-CYCLE CALLBACKS:
     // onLoad () {}
-    NewClass.prototype.start = function () {
+    UI.prototype.start = function () {
         this.startTimer(300);
     };
-    NewClass.prototype.update = function (dt) {
+    UI.prototype.update = function (dt) {
         this.timer.string = this.timerVal.toString();
     };
-    NewClass.prototype.startTimer = function (time) {
+    UI.prototype.startTimer = function (time) {
         var _this = this;
         this.timerVal = time;
         setInterval(function () {
-            if (!cc.game.isPaused() && !_this.isWin) {
+            if (!cc.director.isPaused() && !_this.isWin) {
                 _this.timerVal--;
                 if (_this.timerVal < 0) {
                     _this.timeout = true;
@@ -60,25 +54,27 @@ var NewClass = /** @class */ (function (_super) {
             }
         }, 1000);
     };
-    NewClass.prototype.isTimeOut = function () {
+    UI.prototype.isTimeOut = function () {
         return this.timeout;
     };
-    NewClass.prototype.pause = function () {
-        if (cc.game.isPaused()) {
-            cc.game.resume();
+    UI.prototype.pause = function () {
+        if (cc.director.isPaused()) {
+            cc.director.resume();
+            cc.find("Canvas/Main Camera/Pause Menu").active = false;
         }
         else {
-            cc.game.pause();
+            cc.director.pause();
+            cc.find("Canvas/Main Camera/Pause Menu").active = true;
         }
     };
     __decorate([
         property(cc.Label)
-    ], NewClass.prototype, "timer", void 0);
-    NewClass = __decorate([
+    ], UI.prototype, "timer", void 0);
+    UI = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
+    ], UI);
+    return UI;
 }(cc.Component));
-exports.default = NewClass;
+exports.default = UI;
 
 cc._RF.pop();

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "3_Char_Jump_007",
+    "texture": "a284272d-ce9b-4ff1-bc89-63b87bdda333",
+    "atlas": "",
+    "rect": [
+      65,
+      28,
+      283,
+      465
+    ],
+    "offset": [
+      -23,
+      23
+    ],
+    "originalSize": [
+      459,
+      567
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

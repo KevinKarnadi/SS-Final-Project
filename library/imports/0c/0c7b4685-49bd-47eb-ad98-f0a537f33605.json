@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "1_Char_Hurt_005",
+    "texture": "b3428add-7fb9-437b-b396-7b8be6292131",
+    "atlas": "",
+    "rect": [
+      28,
+      32,
+      291,
+      455
+    ],
+    "offset": [
+      -56,
+      7
+    ],
+    "originalSize": [
+      459,
+      533
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

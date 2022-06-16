@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "2_Char_Dead_001",
+    "texture": "52a28cc8-6a8a-443e-9937-d960f90cb7f4",
+    "atlas": "",
+    "rect": [
+      7,
+      79,
+      285,
+      481
+    ],
+    "offset": [
+      -140,
+      -32.5
+    ],
+    "originalSize": [
+      579,
+      574
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
