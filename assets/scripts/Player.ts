@@ -123,9 +123,11 @@ export default class Player extends cc.Component {
         if(this.moveDirection == 1 || this.changeDirection == 1) {   // change direction using scaling
             this.node.scaleX = 1;
             this.playerName.scaleX = 1;
+            cc.find("Player Health", this.node).scaleX = 1;
         } else if(this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
             this.playerName.scaleX = -1;
+            cc.find("Player Health", this.node).scaleX = -1;
         }
     }
 
