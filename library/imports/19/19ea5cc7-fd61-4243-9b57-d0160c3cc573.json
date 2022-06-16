@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Toxic (1)",
+    "texture": "74d1b59c-1e93-458d-a09f-d02375e18ae5",
+    "atlas": "",
+    "rect": [
+      0,
+      111,
+      256,
+      145
+    ],
+    "offset": [
+      0,
+      -55.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

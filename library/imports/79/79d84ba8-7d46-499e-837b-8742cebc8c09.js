@@ -3,12 +3,6 @@ cc._RF.push(module, '79d84uofUZJnoN7h0LOvIwJ', 'Player');
 // scripts/Player.ts
 
 "use strict";
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -57,6 +51,8 @@ var Player = /** @class */ (function (_super) {
         _this.bombPool = null;
         _this.bomb = false;
         _this.angle = null;
+        _this.maxHP = 100;
+        _this.HP = 100;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -82,6 +78,7 @@ var Player = /** @class */ (function (_super) {
     Player.prototype.update = function (dt) {
         if (!this.win) {
             if (!this.isDie) {
+                cc.find("Player Health/bar", this.node).width = (this.HP / this.maxHP) * 100;
                 this.playerMove(dt);
                 if (this.jump) {
                     this.playerJump();
@@ -103,6 +100,9 @@ var Player = /** @class */ (function (_super) {
         // if(other.tag == 1){     // on ground or props
         //     this.isOnGround = true;
         // }
+        if (other.node.group == "bullet") {
+            this.HP -= 10;
+        }
     };
     Player.prototype.playerMove = function (dt) {
         this.node.x += this.moveSpeed * this.moveDirection * dt; // player walking
