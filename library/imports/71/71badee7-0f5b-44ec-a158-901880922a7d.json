@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "GroundLower2",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GroundLower",
+    "_name": "GroundLower2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -61,8 +61,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -556.259,
-        -490.646,
+        931.05,
+        37.733,
         0,
         0,
         0,
@@ -280,7 +280,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "ec91656f-2f3d-4a6b-a5ac-6780dac40cf4"
+      "__uuid__": "3c090443-572a-46f1-8dd2-4076671db888"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -348,13 +348,18 @@
     "_id": ""
   },
   {
-    "__type__": "27c01J847FL9JfMFwSZUf6Z",
+    "__type__": "dc60dudp3lCe6ap86+qrBkE",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
+    "groundPrefab": {
+      "__uuid__": "f078255e-7bd6-4720-bdf5-a120568e32d5"
+    },
+    "Bound": -223,
+    "growDir": 0,
     "_id": ""
   },
   {

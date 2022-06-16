@@ -24,46 +24,47 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var Bullet = /** @class */ (function (_super) {
-    __extends(Bullet, _super);
-    function Bullet() {
+var Ground = /** @class */ (function (_super) {
+    __extends(Ground, _super);
+    function Ground() {
+        // private anim = null;
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.anim = null;
-        _this.bulletManager = null;
+        // private bulletManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
-        _this.rigidBody = null;
         return _this;
     }
+    // private rigidBody: cc.RigidBody = null;
     // when created, the bullet need to be placed at correct position and play animation.
-    Bullet.prototype.init = function (node, index) {
-        this.anim = this.getComponent(cc.Animation);
-        this.rigidBody = this.getComponent(cc.RigidBody);
+    Ground.prototype.init = function (node, index) {
+        // this.anim = this.getComponent(cc.Animation);
+        // this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node, index);
     };
     // this function is called when the bullet manager calls "get" API.
-    Bullet.prototype.reuse = function (bulletManager) {
-        this.bulletManager = bulletManager;
-        this.isTriggered = false;
+    Ground.prototype.reuse = function (bulletManager) {
+        // this.bulletManager = bulletManager;
+        // this.isTriggered = false;
     };
     //this function sets the bullet's initial position when it is reused.
-    Bullet.prototype.setInitPos = function (node, index) {
+    Ground.prototype.setInitPos = function (node, index) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
-        this.node.position = cc.v3(-455 + (3 * index) % (3 * 500), -295 + 3 * Math.floor(index / 500));
+        this.node.position = cc.v3(-480 + (15 * index) % (15 * 160), -320 + 15 * Math.floor(index / 160));
         this.node.position = this.node.position.addSelf(node.position);
     };
-    //detect collision
-    Bullet.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
+    Ground.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
+        var _this = this;
         if (otherCollider.node.group == "bullet") {
-            this.node.stopAllActions();
-            this.unscheduleAllCallbacks();
-            this.node.destroy();
+            this.node.getChildByName("particle").active = true;
+            this.scheduleOnce(function () {
+                _this.node.destroy();
+            }, 0.35);
         }
     };
-    Bullet = __decorate([
+    Ground = __decorate([
         ccclass
-    ], Bullet);
-    return Bullet;
+    ], Ground);
+    return Ground;
 }(cc.Component));
-exports.default = Bullet;
+exports.default = Ground;
 
 cc._RF.pop();

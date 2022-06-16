@@ -54,27 +54,27 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-        this.groundPool = new cc.NodePool('Ground');
-        for (var i = 0; i < 9000; i++) {
-            var ground = cc.instantiate(this.groundPrefab);
-            this.groundPool.put(ground);
-        }
+        // this.groundPool = new cc.NodePool('Ground');
+        // for(let i: number = 0; i < 9000; i++) {
+        //     let ground = cc.instantiate(this.groundPrefab);
+        //     this.groundPool.put(ground);
+        // }
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
-        this.createGround();
+        // this.createGround();
         this.changePlayer(0);
         this.initResumeBtn();
     };
-    GameManager.prototype.createGround = function () {
-        var ground = null;
-        var i = 0;
-        while (this.groundPool.size() > 0) {
-            ground = this.groundPool.get(this.groundPool);
-            ground.getComponent('Ground').init(this.node, i);
-            i++;
-        }
-    };
+    // createGround() {
+    //     let ground = null;
+    //     let i = 0;
+    //     while(this.groundPool.size() > 0) {
+    //         ground = this.groundPool.get(this.groundPool);
+    //         ground.getComponent('Ground').init(this.node, i);
+    //         i++; 
+    //     }
+    // }
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
         var cameraPos = this.camera.getPosition();
