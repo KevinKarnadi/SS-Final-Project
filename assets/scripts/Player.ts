@@ -22,6 +22,8 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     private bombPrefab: cc.Prefab = null;
 
+    public line = null;
+
     private playerName = null;
 
     private moveSpeed: number = 300;
@@ -66,6 +68,7 @@ export default class Player extends cc.Component {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
+        this.line = this.node.getChildByName("Line");
         this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
         let maxBulletNum = 5;

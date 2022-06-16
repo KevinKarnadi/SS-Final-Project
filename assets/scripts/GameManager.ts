@@ -213,6 +213,7 @@ export default class GameManager extends cc.Component {
         if (!this.enabledInHierarchy) return;
     
         if(!this.shoot){
+            // count shooting angle in PI
             // var playerPos = cc.v2(this.player.node.position.x + 480, this.player.node.position.y + 320);
             var playerPos = event.getStartLocation();
             var mousePos = event.getLocation();
@@ -224,11 +225,17 @@ export default class GameManager extends cc.Component {
             // this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)) * (180/ Math.PI);
             this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX));
             // this.shootAngle = Math.atan2(diffY, diffX) * (180/ Math.PI);
+
+            // change player direction
             if(diffX >= 0) {
                 this.player.setPlayerChangeDirection(-1);
             } else {
                 this.player.setPlayerChangeDirection(1);
             }
+
+            // draw trajectory line
+            this.player.line.getComponent("TrajectoryLine").drawLine(this.shootAngle);
+
             // console.log(angle);
             // console.log(playerPos.x + " " + playerPos.y)
             // console.log(mousePos.x + " " + mousePos.y);
@@ -281,7 +288,7 @@ export default class GameManager extends cc.Component {
 
     haveShot() {
         if(this.shoot) return;
-
+        this.player.line.getComponent("TrajectoryLine").clearLine();
         // this.shoot = true;
         // if(this.shootAngle > 30) {
             this.player.setPlayerBomb(this.shootAngle);
