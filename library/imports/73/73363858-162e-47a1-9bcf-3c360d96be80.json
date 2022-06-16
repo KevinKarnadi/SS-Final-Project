@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Vines (3)",
+    "texture": "cd4d1e55-8981-43e6-9d9c-5431c0c7505b",
+    "atlas": "",
+    "rect": [
+      78,
+      0,
+      84,
+      256
+    ],
+    "offset": [
+      -8,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,10 +1,3 @@
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -62,6 +55,10 @@ export default class Player extends cc.Component {
 
     private angle = null;
 
+    private maxHP: number = 100;
+
+    private HP: number = 100;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -92,6 +89,7 @@ export default class Player extends cc.Component {
     update (dt) {
         if(!this.win) {
             if(!this.isDie) {
+                cc.find("Player Health/bar", this.node).width = (this.HP / this.maxHP) * 100;
                 this.playerMove(dt);
                 if(this.jump) {
                     this.playerJump();
@@ -114,6 +112,9 @@ export default class Player extends cc.Component {
         // if(other.tag == 1){     // on ground or props
         //     this.isOnGround = true;
         // }
+        if(other.node.group == "bullet") {
+            this.HP -= 10;
+        }
     }
 
     playerMove(dt) {
