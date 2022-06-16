@@ -1,14 +1,7 @@
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class UI extends cc.Component {
 
     @property(cc.Label)
     timer: cc.Label = null; // game timer
@@ -36,7 +29,7 @@ export default class NewClass extends cc.Component {
     startTimer(time: number) {
         this.timerVal = time;
         setInterval(()=>{
-            if(!cc.game.isPaused() && !this.isWin) {
+            if(!cc.director.isPaused() && !this.isWin) {
                 this.timerVal--;
                 if(this.timerVal < 0) {
                     this.timeout = true;
@@ -50,10 +43,12 @@ export default class NewClass extends cc.Component {
     }
 
     pause() {
-        if(cc.game.isPaused()) {
-            cc.game.resume();
+        if(cc.director.isPaused()) {
+            cc.director.resume();
+            cc.find("Canvas/Main Camera/Pause Menu").active = false;
         } else {
-            cc.game.pause();
+            cc.director.pause();
+            cc.find("Canvas/Main Camera/Pause Menu").active = true;
         }
     }
 }

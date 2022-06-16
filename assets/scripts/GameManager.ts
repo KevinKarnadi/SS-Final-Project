@@ -1,9 +1,3 @@
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 import Player from "./Player"
 import UI from "./UI"
 
@@ -51,6 +45,8 @@ export default class GameManager extends cc.Component {
 
     // private currPlayerPos = null;
 
+    private isPaused: boolean = false;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -70,6 +66,7 @@ export default class GameManager extends cc.Component {
         //this.playBGM();
         this.createGround();
         this.changePlayer(0);
+        this.initResumeBtn();
     }
 
     createGround() {
@@ -154,7 +151,8 @@ export default class GameManager extends cc.Component {
                 this.player.setPlayerJump(true);
                 break;
             case cc.macro.KEY.escape:
-                this.UI.pause();
+                this.pauseGame();
+                //this.UI.pause();
                 break;
             case cc.macro.KEY.p:        // pass
                 this.changePlayer(this.currPlayer + 1);
@@ -285,8 +283,34 @@ export default class GameManager extends cc.Component {
         // this.shoot = true;
         // if(this.shootAngle > 30) {
             this.player.setPlayerBomb(this.shootAngle);
-
         // }
         this.player.setPlayerChangeDirection(0);
     }
+
+    pauseGame() {
+        if(cc.director.isPaused()) {
+            cc.director.resume();
+            cc.find("Canvas/Main Camera/Pause Menu").active = false;
+        }
+        else {
+            cc.director.pause();
+            cc.find("Canvas/Main Camera/Pause Menu").active = true;
+        }
+    }
+
+    // Pause Menu Buttons
+
+    initResumeBtn() {
+        let clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "GameManager";
+        clickEventHandler.handler = "resume";
+        cc.find("Canvas/Main Camera/Pause Menu/resumeBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    }
+
+    resume() {
+        cc.director.resume();
+        cc.find("Canvas/Main Camera/Pause Menu").active = false;
+    }
+
 }
