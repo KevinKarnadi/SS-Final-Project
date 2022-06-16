@@ -65,7 +65,7 @@ export default class Player extends cc.Component {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
-        this.line = this.node.getChildByName("Line");
+        this.line = this.node.getChildByName("Trajectory Line");
         this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
         let maxBulletNum = 5;
