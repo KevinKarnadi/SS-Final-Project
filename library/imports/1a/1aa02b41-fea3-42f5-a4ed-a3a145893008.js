@@ -44,12 +44,20 @@ var TrajectoryLine = /** @class */ (function (_super) {
     TrajectoryLine.prototype.start = function () {
     };
     // update (dt) {}
-    TrajectoryLine.prototype.drawLine = function (angle) {
+    TrajectoryLine.prototype.drawStraightLine = function (angle) {
         this.line.clear();
         this.line.lineWidth = 5;
         this.line.lineCap = cc.Graphics.LineCap.ROUND;
-        this.line.moveTo(62, 8);
-        this.line.quadraticCurveTo(62, Math.sin(angle) * 100, 500, Math.sin(angle) * 500);
+        this.line.moveTo(35, 8);
+        this.line.lineTo(300, Math.sinh(angle) * 300);
+        this.line.stroke();
+    };
+    TrajectoryLine.prototype.drawCurveLine = function (angle) {
+        this.line.clear();
+        this.line.lineWidth = 5;
+        this.line.lineCap = cc.Graphics.LineCap.ROUND;
+        this.line.moveTo(35, 8);
+        this.line.quadraticCurveTo(35, Math.cosh(angle) * 100, 500, Math.sinh(angle) * 500);
         this.line.stroke();
     };
     TrajectoryLine.prototype.clearLine = function () {

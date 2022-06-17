@@ -44,13 +44,13 @@ export default class Bomb extends cc.Component
 
         if(node.scaleX > 0)
         {
-            this.node.position = cc.v3(62, 8);
+            this.node.position = cc.v3(35, 8);
 
             this.node.scaleX = 1;
         }
         else
         {
-            this.node.position = cc.v3(-62, 8);
+            this.node.position = cc.v3(-35, 8);
 
             this.node.scaleX = -1;
         }
@@ -68,13 +68,11 @@ export default class Bomb extends cc.Component
         } else {
             moveDir = -1;
         }
-        let x = 1000;
-        // this.shootAngle = ;
-        // console.log((this.shootAngle), moveDir)
-        // console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle))
+        let speed = 1000;
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
-        this.rigidBody.linearVelocity = cc.v2(x * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * x);
+        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
+        this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
         this.rigidBody.angularVelocity = 200 * moveDir;
 
     }

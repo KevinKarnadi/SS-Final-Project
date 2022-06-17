@@ -41,8 +41,6 @@ export default class Player extends cc.Component {
 
     private rigidBody: cc.RigidBody = null;
 
-    private isDieBound: boolean = false;
-
     private win: boolean = false;
 
     private bulletPool = null;
@@ -60,6 +58,8 @@ export default class Player extends cc.Component {
     private HP: number = 100;
 
     private hurt: boolean = false;
+
+    public weapon: string = "gun";
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -185,6 +185,7 @@ export default class Player extends cc.Component {
             bullet = this.bulletPool.get(this.bulletPool);
 
         if(bullet != null) {
+            bullet.getComponent('Bullet').setAngle(this.angle);
             bullet.getComponent('Bullet').init(this.node);
         }
     }
@@ -204,7 +205,6 @@ export default class Player extends cc.Component {
 
     playerDie() {
         this.isDie = true;
-        console.log("die")
         if (this.node.name == 'Player 1'){
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
@@ -268,7 +268,8 @@ export default class Player extends cc.Component {
         this.jump = val;
     }
 
-    setPlayerShoot() {
+    setPlayerShoot(angle) {
+        this.angle = angle;
         this.shoot = true;
     }
 

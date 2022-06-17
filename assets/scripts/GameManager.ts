@@ -183,11 +183,11 @@ export default class GameManager extends cc.Component {
             case cc.macro.KEY.space:
                 this.player.setPlayerJump(false);
                 break;
-            case cc.macro.KEY.f:        // shoot (bullet)
-                this.player.setPlayerShoot();
+            case cc.macro.KEY.f:        // shoot (bullet)    
+                this.player.weapon = "gun";
                 break;
             case cc.macro.KEY.r:        // bomb
-                this.player.setPlayerBomb(45);
+                this.player.weapon = "bomb"
                 break;
             default:
                 break;
@@ -209,30 +209,28 @@ export default class GameManager extends cc.Component {
     
     onEventMove (event) {   // aim
         if (!this.enabledInHierarchy) return;
-    
+
+        var playerPos = event.getStartLocation();
+        var mousePos = event.getLocation();
+        var diffX = mousePos.x - playerPos.x;
+        var diffY = playerPos.y - mousePos.y;
+        this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)); // angle in radian
+        if(diffX >= 0) {    // change player direction
+            this.player.setPlayerChangeDirection(-1);
+        } else {
+            this.player.setPlayerChangeDirection(1);
+        }
         if(!this.shoot){
-            // count shooting angle in PI
-            // var playerPos = cc.v2(this.player.node.position.x + 480, this.player.node.position.y + 320);
-            var playerPos = event.getStartLocation();
-            var mousePos = event.getLocation();
-            var diffX = mousePos.x - playerPos.x;
-            var diffY = mousePos.y - playerPos.y;
-            // mousePos = this.player.node.parent.convertToNodeSpaceAR(mousePos);
-            // var angle = mousePos.signAngle(playerPos);
-            // this.shootAngle = Math.atan2(diffX, diffY) * (180/ Math.PI) - 90 * -1;
-            // this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)) * (180/ Math.PI);
-            this.shootAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX));
-            // this.shootAngle = Math.atan2(diffY, diffX) * (180/ Math.PI);
-
-            // change player direction
-            if(diffX >= 0) {
-                this.player.setPlayerChangeDirection(-1);
-            } else {
-                this.player.setPlayerChangeDirection(1);
+            if(this.player.weapon == "gun") {
+                if(diffY < 0) {
+                    this.shootAngle *= -1;
+                }
+                this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle); // draw trajectory line
+            } else if(this.player.weapon == "bomb") {
+                if(diffY >= 0) { // draw trajectory line
+                    this.player.line.getComponent("TrajectoryLine").drawCurveLine(this.shootAngle);
+                }
             }
-
-            // draw trajectory line
-            this.player.line.getComponent("TrajectoryLine").drawLine(this.shootAngle);
         }
 
         event.stopPropagation();
@@ -258,9 +256,11 @@ export default class GameManager extends cc.Component {
         if(this.shoot) return;
         this.player.line.getComponent("TrajectoryLine").clearLine();
         // this.shoot = true;
-        // if(this.shootAngle > 30) {
+        if(this.player.weapon == "gun") {
+            this.player.setPlayerShoot(this.shootAngle);
+        } else if (this.player.weapon == "bomb") {
             this.player.setPlayerBomb(this.shootAngle);
-        // }
+        }
         this.player.setPlayerChangeDirection(0);
     }
 

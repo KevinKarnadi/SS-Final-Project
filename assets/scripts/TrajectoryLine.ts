@@ -24,12 +24,21 @@ export default class TrajectoryLine extends cc.Component {
 
     // update (dt) {}
 
-    public drawLine(angle) {
+    public drawStraightLine(angle) {
         this.line.clear();
         this.line.lineWidth = 5;
         this.line.lineCap = cc.Graphics.LineCap.ROUND;
-        this.line.moveTo(62, 8);
-        this.line.quadraticCurveTo(62, Math.sin(angle) * 100, 500, Math.sin(angle) * 500)
+        this.line.moveTo(35, 8);
+        this.line.lineTo(300, Math.sinh(angle) * 300)
+        this.line.stroke();
+    }
+
+    public drawCurveLine(angle) {
+        this.line.clear();
+        this.line.lineWidth = 5;
+        this.line.lineCap = cc.Graphics.LineCap.ROUND;
+        this.line.moveTo(35, 8);
+        this.line.quadraticCurveTo(35, Math.cosh(angle) * 100, 500, Math.sinh(angle) * 500)
         this.line.stroke();
     }
 

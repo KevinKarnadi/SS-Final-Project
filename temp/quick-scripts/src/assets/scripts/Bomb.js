@@ -54,11 +54,11 @@ var Bomb = /** @class */ (function (_super) {
     Bomb.prototype.setInitPos = function (node) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
         if (node.scaleX > 0) {
-            this.node.position = cc.v3(62, 8);
+            this.node.position = cc.v3(35, 8);
             this.node.scaleX = 1;
         }
         else {
-            this.node.position = cc.v3(-62, 8);
+            this.node.position = cc.v3(-35, 8);
             this.node.scaleX = -1;
         }
         this.node.position = this.node.position.addSelf(node.position);
@@ -73,13 +73,11 @@ var Bomb = /** @class */ (function (_super) {
         else {
             moveDir = -1;
         }
-        var x = 1000;
-        // this.shootAngle = ;
-        // console.log((this.shootAngle), moveDir)
-        // console.log(Math.sin(this.shootAngle), Math.cos(this.shootAngle))
+        var speed = 1000;
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
-        this.rigidBody.linearVelocity = cc.v2(x * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * x);
+        // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
+        this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
         this.rigidBody.angularVelocity = 200 * moveDir;
     };
     //detect collision

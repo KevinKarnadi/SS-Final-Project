@@ -45,7 +45,6 @@ var Player = /** @class */ (function (_super) {
         _this.animation = null;
         _this.animationState = null;
         _this.rigidBody = null;
-        _this.isDieBound = false;
         _this.win = false;
         _this.bulletPool = null;
         _this.shoot = false;
@@ -55,6 +54,7 @@ var Player = /** @class */ (function (_super) {
         _this.maxHP = 100;
         _this.HP = 100;
         _this.hurt = false;
+        _this.weapon = "gun";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -175,6 +175,7 @@ var Player = /** @class */ (function (_super) {
         if (this.bulletPool.size() > 0)
             bullet = this.bulletPool.get(this.bulletPool);
         if (bullet != null) {
+            bullet.getComponent('Bullet').setAngle(this.angle);
             bullet.getComponent('Bullet').init(this.node);
         }
     };
@@ -190,7 +191,6 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerDie = function () {
         this.isDie = true;
-        console.log("die");
         if (this.node.name == 'Player 1') {
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
@@ -253,7 +253,8 @@ var Player = /** @class */ (function (_super) {
     Player.prototype.setPlayerJump = function (val) {
         this.jump = val;
     };
-    Player.prototype.setPlayerShoot = function () {
+    Player.prototype.setPlayerShoot = function (angle) {
+        this.angle = angle;
         this.shoot = true;
     };
     Player.prototype.setPlayerBomb = function (angle) {

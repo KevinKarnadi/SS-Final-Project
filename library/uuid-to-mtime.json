@@ -5,23 +5,23 @@
     "relativePath": "downloadedAssets"
   },
   "e7f16894-f6bc-49da-8936-f4d9ec85feea": {
-    "asset": 1655456712819,
-    "meta": 1655456758135,
+    "asset": 1655468461426,
+    "meta": 1655468781196,
     "relativePath": "prefabs"
   },
   "b5d82e68-2e74-4126-966f-946ea363403d": {
-    "asset": 1655464987492,
-    "meta": 1655465005045,
+    "asset": 1655468709993,
+    "meta": 1655468781197,
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655456712843,
-    "meta": 1655456758137,
+    "asset": 1655468710000,
+    "meta": 1655468781198,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
-    "asset": 1655456713288,
-    "meta": 1655456758138,
+    "asset": 1655468461439,
+    "meta": 1655468781199,
     "relativePath": "tiles"
   },
   "2f0a3645-6f68-49ee-ac10-6eddc30f80b1": {
@@ -54,11 +54,6 @@
     "meta": 1655456758394,
     "relativePath": "downloadedAssets\\All_Fire_Bullet_Pixel_16x16.png"
   },
-  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655456712834,
-    "meta": 1655456758697,
-    "relativePath": "scripts\\Bomb.ts"
-  },
   "214b2db7-0cd9-441d-9dbf-f5e9c4380b03": {
     "asset": 1655456712783,
     "meta": 1655456758400,
@@ -68,11 +63,6 @@
     "asset": 1655456712823,
     "meta": 1655456758785,
     "relativePath": "scenes\\main menu.fire"
-  },
-  "889b5329-bfed-4779-9715-b56e83d934ca": {
-    "asset": 1655456712834,
-    "meta": 1655456758749,
-    "relativePath": "scripts\\Bullet.ts"
   },
   "7a1aa04c-314c-479b-8320-93a02a081889": {
     "asset": 1655456712782,
@@ -98,11 +88,6 @@
     "asset": 1655456712838,
     "meta": 1655456759248,
     "relativePath": "scripts\\SignUp.ts"
-  },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655456712839,
-    "meta": 1655456759265,
-    "relativePath": "scripts\\TrajectoryLine.ts"
   },
   "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
     "asset": 1655456712840,
@@ -915,8 +900,8 @@
     "relativePath": "tiles\\Purple Planet\\png\\256px\\tiles\\Vines (3).png"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655464987486,
-    "meta": 1655465005104,
+    "asset": 1655468709994,
+    "meta": 1655468781508,
     "relativePath": "scenes\\map1.fire"
   },
   "d96e5e42-a80e-4917-a141-b76c096761dd": {
@@ -945,8 +930,8 @@
     "relativePath": "bullet1\\1_Bullet_Bullet 1_004.png"
   },
   "52ef2856-c0e4-4e7d-8161-5710225bea83": {
-    "asset": 1655456712483,
-    "meta": 1655456758119,
+    "asset": 1655468461414,
+    "meta": 1655468781195,
     "relativePath": "animations"
   },
   "67f8af0e-19da-4bac-9cab-cb3f242d3112": {
@@ -2840,8 +2825,8 @@
     "relativePath": "prefabs\\GroundLower2.prefab"
   },
   "94994fad-ff21-4267-aa3b-b8503fe13a5a": {
-    "asset": 1655456712819,
-    "meta": 1655456758631,
+    "asset": 1655468461427,
+    "meta": 1655468781484,
     "relativePath": "prefabs\\map.prefab"
   },
   "14bfa826-c93f-4d63-9bc3-d96b2656083d": {
@@ -2905,18 +2890,18 @@
     "relativePath": "scenes\\player choose.fire"
   },
   "c48254ab-497f-4383-8b97-ccae106bba14": {
-    "asset": 1655456712836,
-    "meta": 1655456759028,
+    "asset": 1655468710000,
+    "meta": 1655468781298,
     "relativePath": "scripts\\Ground2.ts"
   },
   "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
-    "asset": 1655456712842,
-    "meta": 1655456758782,
+    "asset": 1655468461437,
+    "meta": 1655468781256,
     "relativePath": "scripts\\explosiveObj.ts"
   },
   "0538a49b-db00-4dc3-b8d4-e4b20f6a85b2": {
-    "asset": 1655456712815,
-    "meta": 1655456758584,
+    "asset": 1655468461418,
+    "meta": 1655468781300,
     "relativePath": "prefabs\\barrel.prefab"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
@@ -2963,11 +2948,6 @@
     "asset": 1655456712843,
     "meta": 1655456759099,
     "relativePath": "scripts\\map.ts"
-  },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655460367328,
-    "meta": 1655460378253,
-    "relativePath": "scripts\\GameManager.ts"
   },
   "9836134e-b892-4283-b6b2-78b5acf3ed45": {
     "asset": 1649926784685,
@@ -3469,9 +3449,104 @@
     "meta": 1655462654460,
     "relativePath": "model\\primitives.fbx"
   },
+  "18399900-86d1-4238-b734-16ceee6bd8fb": {
+    "asset": 1655468461416,
+    "meta": 1655468781214,
+    "relativePath": "prefabs\\GroundLowerLeft2.prefab"
+  },
+  "bb9dc2cd-3079-415b-876c-9f2774b04f17": {
+    "asset": 1655468461413,
+    "meta": 1655468781257,
+    "relativePath": "animations\\explosion2.anim"
+  },
+  "3c5fec99-14c4-4792-93f2-6ea443982945": {
+    "asset": 1655468461415,
+    "meta": 1655468781448,
+    "relativePath": "prefabs\\GroundLowerLeft.prefab"
+  },
+  "9a6b8610-97a6-4b6c-ad31-0ccd88437c61": {
+    "asset": 1655468461417,
+    "meta": 1655468781452,
+    "relativePath": "prefabs\\GroundLowerRight2.prefab"
+  },
+  "262f9c76-87bd-4d81-bdda-a1e3f0c409ff": {
+    "asset": 1655468461445,
+    "meta": 1655468781454,
+    "relativePath": "tiles\\explosionSprite"
+  },
+  "a9f74e9b-010d-4171-a56d-97215307b283": {
+    "asset": 1655468461417,
+    "meta": 1655468781457,
+    "relativePath": "prefabs\\GroundLowerRight.prefab"
+  },
+  "12aee294-4f09-444e-9c03-e080c97a4557": {
+    "asset": 1655468461441,
+    "meta": 1655468781552,
+    "relativePath": "tiles\\explosionSprite\\2.png"
+  },
+  "3c5c48a8-dbcf-4e64-b353-66483baba8d9": {
+    "asset": 1655468461442,
+    "meta": 1655468781554,
+    "relativePath": "tiles\\explosionSprite\\3.png"
+  },
+  "c04f7c68-8722-4329-9175-af641c72cdcd": {
+    "asset": 1655468461439,
+    "meta": 1655468781557,
+    "relativePath": "tiles\\explosionSprite\\0.png"
+  },
+  "8f878bd4-3766-468c-9328-da17b798b967": {
+    "asset": 1655468461438,
+    "meta": 1655468781560,
+    "relativePath": "tiles\\Explosion.png"
+  },
+  "376c5ec3-1022-4b79-b3f7-312abc8df9d2": {
+    "asset": 1655468461440,
+    "meta": 1655468781563,
+    "relativePath": "tiles\\explosionSprite\\1.png"
+  },
+  "a28be611-3893-4182-8ad6-c837057f2bc8": {
+    "asset": 1655468461442,
+    "meta": 1655468781571,
+    "relativePath": "tiles\\explosionSprite\\4.png"
+  },
+  "44935175-ddc0-427b-8f72-b6b7491351f7": {
+    "asset": 1655468461443,
+    "meta": 1655468781585,
+    "relativePath": "tiles\\explosionSprite\\5.png"
+  },
+  "da0e308d-419a-4186-85bf-6613998b6f73": {
+    "asset": 1655468461444,
+    "meta": 1655468781586,
+    "relativePath": "tiles\\explosionSprite\\6.png"
+  },
+  "ed60dff0-4940-416c-8c1c-8217683c24d4": {
+    "asset": 1655468461444,
+    "meta": 1655468781588,
+    "relativePath": "tiles\\explosionSprite\\7.png"
+  },
+  "889b5329-bfed-4779-9715-b56e83d934ca": {
+    "asset": 1655471399334,
+    "meta": 1655471401244,
+    "relativePath": "scripts\\Bullet.ts"
+  },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655471607976,
+    "meta": 1655471609629,
+    "relativePath": "scripts\\TrajectoryLine.ts"
+  },
+  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
+    "asset": 1655472133990,
+    "meta": 1655472138142,
+    "relativePath": "scripts\\Bomb.ts"
+  },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655468222118,
-    "meta": 1655468223838,
+    "asset": 1655472161887,
+    "meta": 1655472166871,
     "relativePath": "scripts\\Player.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655472411259,
+    "meta": 1655472413356,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }

@@ -12,6 +12,8 @@ export default class Bullet extends cc.Component
 
     private rigidBody: cc.RigidBody = null;
 
+    private shootAngle = null;
+
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
@@ -39,13 +41,13 @@ export default class Bullet extends cc.Component
 
         if(node.scaleX > 0)
         {
-            this.node.position = cc.v3(62, 8);
+            this.node.position = cc.v3(35, 8);
 
             this.node.scaleX = 1;
         }
         else
         {
-            this.node.position = cc.v3(-62, 8);
+            this.node.position = cc.v3(-35, 8);
 
             this.node.scaleX = -1;
         }
@@ -57,7 +59,7 @@ export default class Bullet extends cc.Component
     private bulletMove()
     {
         let moveDir = null;
-        let speed = 300;
+        let speed = 1000;
 
         // decide bullet direction
         if(this.node.scaleX > 0) {
@@ -65,8 +67,7 @@ export default class Bullet extends cc.Component
         } else {
             moveDir = -1;
         }
-
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
+        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, Math.sinh(this.shootAngle) * speed);
     }
     
     //detect collision
@@ -82,5 +83,9 @@ export default class Bullet extends cc.Component
             
             this.bulletManager.put(this.node);
         }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
+    }
+
+    setAngle(angle) {
+        this.shootAngle = angle;
     }
 }

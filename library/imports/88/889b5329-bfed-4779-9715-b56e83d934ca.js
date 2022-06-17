@@ -32,6 +32,7 @@ var Bullet = /** @class */ (function (_super) {
         _this.bulletManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
+        _this.shootAngle = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
@@ -51,11 +52,11 @@ var Bullet = /** @class */ (function (_super) {
     Bullet.prototype.setInitPos = function (node) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
         if (node.scaleX > 0) {
-            this.node.position = cc.v3(62, 8);
+            this.node.position = cc.v3(35, 8);
             this.node.scaleX = 1;
         }
         else {
-            this.node.position = cc.v3(-62, 8);
+            this.node.position = cc.v3(-35, 8);
             this.node.scaleX = -1;
         }
         this.node.position = this.node.position.addSelf(node.position);
@@ -63,7 +64,7 @@ var Bullet = /** @class */ (function (_super) {
     //make the bullet move from current position
     Bullet.prototype.bulletMove = function () {
         var moveDir = null;
-        var speed = 300;
+        var speed = 1000;
         // decide bullet direction
         if (this.node.scaleX > 0) {
             moveDir = 1;
@@ -71,7 +72,7 @@ var Bullet = /** @class */ (function (_super) {
         else {
             moveDir = -1;
         }
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, 0);
+        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, Math.sinh(this.shootAngle) * speed);
     };
     //detect collision
     Bullet.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
@@ -82,6 +83,9 @@ var Bullet = /** @class */ (function (_super) {
             _this.anim.stop();
             _this.bulletManager.put(_this.node);
         }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
+    };
+    Bullet.prototype.setAngle = function (angle) {
+        this.shootAngle = angle;
     };
     Bullet = __decorate([
         ccclass
