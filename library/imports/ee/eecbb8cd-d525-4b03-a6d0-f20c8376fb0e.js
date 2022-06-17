@@ -36,14 +36,12 @@ var GameManager = /** @class */ (function (_super) {
         _this.UI = null;
         _this.camera = null;
         _this.bgm = null;
-        _this.groundPrefab = null;
         _this.player = null;
         _this.aKeyDown = false;
         _this.dKeyDown = false;
         _this.shoot = false;
         _this.totalPlayer = 3;
         _this.shootAngle = null;
-        _this.groundPool = null;
         // private currPlayerPos = null;
         _this.isPaused = false;
         return _this;
@@ -54,37 +52,25 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-        // this.groundPool = new cc.NodePool('Ground');
-        // for(let i: number = 0; i < 9000; i++) {
-        //     let ground = cc.instantiate(this.groundPrefab);
-        //     this.groundPool.put(ground);
-        // }
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
-        // this.createGround();
         this.changePlayer(0);
         this.initResumeBtn();
     };
-    // createGround() {
-    //     let ground = null;
-    //     let i = 0;
-    //     while(this.groundPool.size() > 0) {
-    //         ground = this.groundPool.get(this.groundPool);
-    //         ground.getComponent('Ground').init(this.node, i);
-    //         i++; 
-    //     }
-    // }
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
         var cameraPos = this.camera.getPosition();
         cameraPos.lerp(playerPos, 0.1, cameraPos);
         cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if (cameraPos.x < 0) {
-            cameraPos.x = 0;
+        if (cameraPos.y > 100) {
+            cameraPos.y = 100;
         }
-        else if (cameraPos.x > 2033) {
-            cameraPos.x = 2033;
+        if (cameraPos.x < -35) {
+            cameraPos.x = -35;
+        }
+        else if (cameraPos.x > 2033 + 35) {
+            cameraPos.x = 2033 + 35;
         }
         this.camera.setPosition(cameraPos);
     };
@@ -292,9 +278,6 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], GameManager.prototype, "bgm", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GameManager.prototype, "groundPrefab", void 0);
     GameManager = __decorate([
         ccclass
     ], GameManager);

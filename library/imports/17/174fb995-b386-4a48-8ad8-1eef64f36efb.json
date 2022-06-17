@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Play R",
+    "texture": "8e985673-195e-401c-85e6-74be73298b0d",
+    "atlas": "",
+    "rect": [
+      50,
+      3,
+      163,
+      249
+    ],
+    "offset": [
+      3.5,
+      0.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
