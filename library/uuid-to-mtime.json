@@ -3535,8 +3535,8 @@
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655479333861,
-    "meta": 1655479333965,
+    "asset": 1655479405383,
+    "meta": 1655479405458,
     "relativePath": "scenes\\map1.fire"
   },
   "31ac9695-182f-4a90-9a0b-4be63331ab13": {
@@ -7730,8 +7730,8 @@
     "relativePath": "animations\\fire.anim"
   },
   "ebdde834-cfd0-4156-ae34-678aa755dd4e": {
-    "asset": 1655476283954,
-    "meta": 1655479164479,
+    "asset": 1655479403456,
+    "meta": 1655479403485,
     "relativePath": "prefabs\\fires.prefab"
   },
   "29b4c7b9-781b-4b5b-b159-9c00a3366553": {

@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "unit",
+    "_name": "fire",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -119,7 +119,7 @@
     "_defaultClip": null,
     "_clips": [
       {
-        "__uuid__": "9ee4e88f-9f63-4557-a4d6-957388940e05"
+        "__uuid__": "9f828c60-1639-446e-a7fa-67d6cd919b7f"
       }
     ],
     "playOnLoad": false,
