@@ -142,6 +142,12 @@ export default class Player extends cc.Component {
                         //     this.animationState = this.animation.play('char3idle');
                         // }, 0.5);
                     }
+                    else if (this.node.name == 'Player 4' && this.HP != 0){
+                        this.animationState = this.animation.play('char4hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
+                    }
                     this.scheduleOnce(()=>{
                         this.hurt = false;
                     }, 0.5)
@@ -173,7 +179,6 @@ export default class Player extends cc.Component {
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity);    // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
-            this.animationState = this.animation.play('char1jump');
         }
     }
 
@@ -217,6 +222,10 @@ export default class Player extends cc.Component {
             this.animation.stop('char3idle');
             this.animationState = this.animation.play('char3dead');
         }
+        else if (this.node.name == 'Player 4'){
+            this.animation.stop('char4idle');
+            this.animationState = this.animation.play('char4dead');
+        }
         this.scheduleOnce(function(){
             this.node.destroy();
             // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
@@ -247,11 +256,27 @@ export default class Player extends cc.Component {
             } else if(this.node.name == "Player 2") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
                     this.animationState = this.animation.play("char2idle");
-                } 
+                } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char2run")) {
+                    this.animationState = this.animation.play("char2run");
+                } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char2jump")) {
+                    this.animationState = this.animation.play("char2jump");
+                }
             } else if(this.node.name == "Player 3") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
                     this.animationState = this.animation.play("char3idle");
-                } 
+                } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char3run")) {
+                    this.animationState = this.animation.play("char3run");
+                } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char3jump")) {
+                    this.animationState = this.animation.play("char3jump");
+                }
+            } else if(this.node.name == "Player 4") {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
+                    this.animationState = this.animation.play("char4idle");
+                } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char4run")) {
+                    this.animationState = this.animation.play("char4run");
+                } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char4jump")) {
+                    this.animationState = this.animation.play("char4jump");
+                }
             }
         }   
     }
