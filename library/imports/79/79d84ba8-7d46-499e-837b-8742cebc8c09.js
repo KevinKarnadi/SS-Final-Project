@@ -54,6 +54,7 @@ var Player = /** @class */ (function (_super) {
         _this.angle = null;
         _this.maxHP = 100;
         _this.HP = 100;
+        _this.hurt = false;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -85,20 +86,23 @@ var Player = /** @class */ (function (_super) {
                 if (this.HP <= 0) {
                     this.playerDie();
                 }
-                if (this.jump) {
-                    this.playerJump();
+                else {
+                    if (this.jump) {
+                        this.playerJump();
+                    }
+                    if (this.shoot) {
+                        this.createBullet();
+                    }
+                    else if (this.bomb) {
+                        this.createBomb();
+                    }
+                    this.playerAnimation();
                 }
-                if (this.shoot) {
-                    this.createBullet();
-                }
-                if (this.bomb) {
-                    this.createBomb();
-                }
-                this.playerAnimation();
             }
         }
     };
     Player.prototype.onBeginContact = function (contact, self, other) {
+        var _this = this;
         if (contact.getWorldManifold().normal.y < 0) { // step on something
             this.isOnGround = true;
         }
@@ -106,27 +110,35 @@ var Player = /** @class */ (function (_super) {
         //     this.isOnGround = true;
         // }
         if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
-            this.HP -= 10;
-            if (this.HP < 0) {
-                this.HP = 0;
-            }
-            if (this.node.name == 'Player 1' && this.HP != 0) {
-                this.animationState = this.animation.play('char1hurt');
-                this.scheduleOnce(function () {
-                    this.animationState = this.animation.play('char1idle');
-                }, 0.5);
-            }
-            else if (this.node.name == 'Player 2' && this.HP != 0) {
-                this.animationState = this.animation.play('char2hurt');
-                this.scheduleOnce(function () {
-                    this.animationState = this.animation.play('char2idle');
-                }, 0.5);
-            }
-            else if (this.node.name == 'Player 3' && this.HP != 0) {
-                this.animationState = this.animation.play('char3hurt');
-                this.scheduleOnce(function () {
-                    this.animationState = this.animation.play('char3idle');
-                }, 0.5);
+            if (!this.isDie) {
+                this.HP -= 10;
+                if (this.HP <= 0) {
+                    this.HP = 0;
+                }
+                else {
+                    this.hurt = true;
+                    if (this.node.name == 'Player 1' && this.HP != 0) {
+                        this.animationState = this.animation.play('char1hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char1idle');
+                        // }, 0.5);
+                    }
+                    else if (this.node.name == 'Player 2' && this.HP != 0) {
+                        this.animationState = this.animation.play('char2hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char2idle');
+                        // }, 0.5);
+                    }
+                    else if (this.node.name == 'Player 3' && this.HP != 0) {
+                        this.animationState = this.animation.play('char3hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
+                    }
+                    this.scheduleOnce(function () {
+                        _this.hurt = false;
+                    }, 0.5);
+                }
             }
         }
         else if (other.node.ground == "wall") {
@@ -151,7 +163,7 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerJump = function () {
         if (this.isOnGround) { // player is on ground
-            this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity); // add jumping velocity
+            this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity); // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
             this.animationState = this.animation.play('char1jump');
@@ -178,6 +190,7 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerDie = function () {
         this.isDie = true;
+        console.log("die");
         if (this.node.name == 'Player 1') {
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
@@ -191,31 +204,44 @@ var Player = /** @class */ (function (_super) {
             this.animationState = this.animation.play('char3dead');
         }
         this.scheduleOnce(function () {
-            this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
+            this.node.destroy();
+            // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
     };
     Player.prototype.playerAnimation = function () {
         if (!this.isDie) { // animation for char1
-            if (this.isOnGround && !this.isMove) {
-                this.animationState = this.animation.play("char1idle");
+            if (this.node.name == "Player 1") { // MUST change to curPlayer == "Player 1"
+                if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
+                    this.animationState = this.animation.play("char1idle");
+                }
+                else if (this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
+                    this.animationState = this.animation.play("char1run");
+                }
+                else if (!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
+                    this.animationState = this.animation.play("char1jump");
+                }
+                // if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
+                //     this.animation.stop('char1jump');
+                //     this.animationState = this.animation.play('char1idle');
+                // }
+                // if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
+                //     this.animationState = this.animation.play('char1run');
+                // }
+                // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
+                //     this.animationState = this.animation.play('char1idle');
+                // }          
             }
-            else if (this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
-                this.animationState = this.animation.play("char1run");
+            else if (this.node.name == "Player 2") {
+                if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
+                    this.animationState = this.animation.play("char2idle");
+                }
             }
-            else if (!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
-                this.animationState = this.animation.play("char1jump");
+            else if (this.node.name == "Player 3") {
+                if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
+                    this.animationState = this.animation.play("char3idle");
+                }
             }
-            // if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
-            //     this.animation.stop('char1jump');
-            //     this.animationState = this.animation.play('char1idle');
-            // }
-            // if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
-            //     this.animationState = this.animation.play('char1run');
-            // }
-            // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
-            //     this.animationState = this.animation.play('char1idle');
-            // }
         }
     };
     Player.prototype.setPlayerMoveDirection = function (dir) {

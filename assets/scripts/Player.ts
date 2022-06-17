@@ -59,6 +59,8 @@ export default class Player extends cc.Component {
 
     private HP: number = 100;
 
+    private hurt: boolean = false;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -93,17 +95,17 @@ export default class Player extends cc.Component {
                 this.playerMove(dt);
                 if(this.HP <= 0){
                     this.playerDie();
+                } else {
+                    if(this.jump) {
+                        this.playerJump();
+                    }
+                    if(this.shoot) {
+                        this.createBullet();
+                    } else if(this.bomb) {
+                        this.createBomb();
+                    }
+                    this.playerAnimation();
                 }
-                if(this.jump) {
-                    this.playerJump();
-                }
-                if(this.shoot) {
-                    this.createBullet();
-                }
-                if(this.bomb) {
-                    this.createBomb();
-                }
-                this.playerAnimation();
             }
         }
     }
@@ -116,27 +118,34 @@ export default class Player extends cc.Component {
         //     this.isOnGround = true;
         // }
         if(other.node.group == "bullet" || other.node.group == "explosiveObj") {
-            this.HP -= 10;
-            if(this.HP < 0) {
-                this.HP = 0;
-            }
-            if (this.node.name == 'Player 1' && this.HP != 0){
-                this.animationState = this.animation.play('char1hurt');
-                this.scheduleOnce(function(){
-                    this.animationState = this.animation.play('char1idle');
-                }, 0.5);
-            }
-            else if (this.node.name == 'Player 2' && this.HP != 0){
-                this.animationState = this.animation.play('char2hurt');
-                this.scheduleOnce(function(){
-                    this.animationState = this.animation.play('char2idle');
-                }, 0.5);
-            }
-            else if (this.node.name == 'Player 3' && this.HP != 0){
-                this.animationState = this.animation.play('char3hurt');
-                this.scheduleOnce(function(){
-                    this.animationState = this.animation.play('char3idle');
-                }, 0.5);
+            if(!this.isDie) {
+                this.HP -= 10;
+                if(this.HP <= 0) {
+                    this.HP = 0;
+                } else {
+                    this.hurt = true;
+                    if (this.node.name == 'Player 1' && this.HP != 0){
+                        this.animationState = this.animation.play('char1hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char1idle');
+                        // }, 0.5);
+                    }
+                    else if (this.node.name == 'Player 2' && this.HP != 0){
+                        this.animationState = this.animation.play('char2hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char2idle');
+                        // }, 0.5);
+                    }
+                    else if (this.node.name == 'Player 3' && this.HP != 0){
+                        this.animationState = this.animation.play('char3hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
+                    }
+                    this.scheduleOnce(()=>{
+                        this.hurt = false;
+                    }, 0.5)
+                }
             }
         } else if(other.node.ground == "wall") {
             if(other.node.name == "Die Boundary") {
@@ -161,7 +170,7 @@ export default class Player extends cc.Component {
 
     playerJump() {
         if(this.isOnGround) {  // player is on ground
-            this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity);    // add jumping velocity
+            this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity);    // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
             this.animationState = this.animation.play('char1jump');
@@ -195,6 +204,7 @@ export default class Player extends cc.Component {
 
     playerDie() {
         this.isDie = true;
+        console.log("die")
         if (this.node.name == 'Player 1'){
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
@@ -208,30 +218,41 @@ export default class Player extends cc.Component {
             this.animationState = this.animation.play('char3dead');
         }
         this.scheduleOnce(function(){
-            this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
+            this.node.destroy();
+            // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
     }
 
     playerAnimation() {
         if(!this.isDie){    // animation for char1
-            if(this.isOnGround && !this.isMove) {
-                this.animationState = this.animation.play("char1idle");
-            } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
-                this.animationState = this.animation.play("char1run");
-            } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
-                this.animationState = this.animation.play("char1jump");
+            if(this.node.name == "Player 1") {  // MUST change to curPlayer == "Player 1"
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
+                    this.animationState = this.animation.play("char1idle");
+                } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
+                    this.animationState = this.animation.play("char1run");
+                } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
+                    this.animationState = this.animation.play("char1jump");
+                }
+                // if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
+                //     this.animation.stop('char1jump');
+                //     this.animationState = this.animation.play('char1idle');
+                // }
+                // if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
+                //     this.animationState = this.animation.play('char1run');
+                // }
+                // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
+                //     this.animationState = this.animation.play('char1idle');
+                // }          
+            } else if(this.node.name == "Player 2") {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
+                    this.animationState = this.animation.play("char2idle");
+                } 
+            } else if(this.node.name == "Player 3") {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
+                    this.animationState = this.animation.play("char3idle");
+                } 
             }
-            // if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
-            //     this.animation.stop('char1jump');
-            //     this.animationState = this.animation.play('char1idle');
-            // }
-            // if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
-            //     this.animationState = this.animation.play('char1run');
-            // }
-            // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
-            //     this.animationState = this.animation.play('char1idle');
-            // }
         }   
     }
 

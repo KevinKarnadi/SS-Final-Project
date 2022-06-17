@@ -2920,8 +2920,8 @@
     "relativePath": "prefabs\\barrel.prefab"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655464987494,
-    "meta": 1655465005080,
+    "asset": 1655467086402,
+    "meta": 1655467086420,
     "relativePath": "scenes\\map2.fire"
   },
   "90a29c43-5904-4118-9750-d571c2dfccb4": {
@@ -2963,11 +2963,6 @@
     "asset": 1655456712843,
     "meta": 1655456759099,
     "relativePath": "scripts\\map.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655459850782,
-    "meta": 1655459853379,
-    "relativePath": "scripts\\Player.ts"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
     "asset": 1655460367328,
@@ -3473,5 +3468,10 @@
     "asset": 1649926784836,
     "meta": 1655462654460,
     "relativePath": "model\\primitives.fbx"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655468222118,
+    "meta": 1655468223838,
+    "relativePath": "scripts\\Player.ts"
   }
 }
