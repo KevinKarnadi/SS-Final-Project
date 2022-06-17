@@ -63,6 +63,7 @@ var Player = /** @class */ (function (_super) {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
+        this.setPlayerName();
         this.bombPool = new cc.NodePool('Bomb');
         var maxBombNum = 5;
         for (var i = 0; i < maxBombNum; i++) {
@@ -308,6 +309,20 @@ var Player = /** @class */ (function (_super) {
     Player.prototype.setPlayerBomb = function (angle) {
         this.angle = angle;
         this.bomb = true;
+    };
+    Player.prototype.setPlayerName = function () {
+        if (this.node.name == "Player 1") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 1 Name");
+        }
+        else if (this.node.name == "Player 2") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 2 Name");
+        }
+        else if (this.node.name == "Player 3") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 3 Name");
+        }
+        else if (this.node.name == "Player 4") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
+        }
     };
     __decorate([
         property(cc.AudioClip)

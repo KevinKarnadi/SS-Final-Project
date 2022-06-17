@@ -37,7 +37,7 @@ var UI = /** @class */ (function (_super) {
     // LIFE-CYCLE CALLBACKS:
     // onLoad () {}
     UI.prototype.start = function () {
-        this.startTimer(300);
+        this.startTimer(20);
     };
     UI.prototype.update = function (dt) {
         this.timer.string = this.timerVal.toString();

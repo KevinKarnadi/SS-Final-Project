@@ -33,19 +33,20 @@ var GameManager = /** @class */ (function (_super) {
         _this.player1 = null;
         _this.player2 = null;
         _this.player3 = null;
+        _this.player4 = null;
         _this.UI = null;
         _this.camera = null;
         _this.bgm = null;
-        _this.groundPrefab = null;
         _this.player = null;
         _this.aKeyDown = false;
         _this.dKeyDown = false;
         _this.shoot = false;
         _this.totalPlayer = 3;
         _this.shootAngle = null;
-        _this.groundPool = null;
+        _this.playerNum = null;
         // private currPlayerPos = null;
         _this.isPaused = false;
+        _this.playerPath = "Canvas/Players/";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -54,39 +55,43 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-        // this.groundPool = new cc.NodePool('Ground');
-        // for(let i: number = 0; i < 9000; i++) {
-        //     let ground = cc.instantiate(this.groundPrefab);
-        //     this.groundPool.put(ground);
-        // }
+        this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
-        // this.createGround();
+        this.loadPlayer();
         this.changePlayer(0);
         this.initResumeBtn();
     };
-    // createGround() {
-    //     let ground = null;
-    //     let i = 0;
-    //     while(this.groundPool.size() > 0) {
-    //         ground = this.groundPool.get(this.groundPool);
-    //         ground.getComponent('Ground').init(this.node, i);
-    //         i++; 
-    //     }
-    // }
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
         var cameraPos = this.camera.getPosition();
         cameraPos.lerp(playerPos, 0.1, cameraPos);
         cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if (cameraPos.x < 0) {
-            cameraPos.x = 0;
+        if (cameraPos.y > 100) {
+            cameraPos.y = 100;
         }
-        else if (cameraPos.x > 2033) {
-            cameraPos.x = 2033;
+        if (cameraPos.x < -35) {
+            cameraPos.x = -35;
+        }
+        else if (cameraPos.x > 2033 + 35) {
+            cameraPos.x = 2033 + 35;
         }
         this.camera.setPosition(cameraPos);
+    };
+    GameManager.prototype.loadPlayer = function () {
+        switch (this.playerNum) {
+            // case 4:
+            // cc.find(this.playerPath + "Player 4").active = true;
+            case "3":
+                cc.find(this.playerPath + "Player 3").active = true;
+            case "2":
+                cc.find(this.playerPath + "Player 2").active = true;
+                cc.find(this.playerPath + "Player 1").active = true;
+                break;
+            default:
+                break;
+        }
     };
     GameManager.prototype.changePlayer = function (num) {
         this.currPlayer = num % this.totalPlayer;
@@ -284,6 +289,9 @@ var GameManager = /** @class */ (function (_super) {
         property(Player_1.default)
     ], GameManager.prototype, "player3", void 0);
     __decorate([
+        property(Player_1.default)
+    ], GameManager.prototype, "player4", void 0);
+    __decorate([
         property(UI_1.default)
     ], GameManager.prototype, "UI", void 0);
     __decorate([
@@ -292,9 +300,6 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], GameManager.prototype, "bgm", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GameManager.prototype, "groundPrefab", void 0);
     GameManager = __decorate([
         ccclass
     ], GameManager);
