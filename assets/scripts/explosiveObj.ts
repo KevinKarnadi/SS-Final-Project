@@ -23,7 +23,7 @@ export default class ExplosiveObj extends cc.Component {
             // this.node.y -= 6;
             this.node.getComponent(cc.PhysicsCircleCollider).enabled = true;
             this.node.group = "explosiveObj";
-            this.anim.play("explosion");
+            this.anim.play("explosion2");
             this.scheduleOnce(()=>{
                 this.node.destroy()
             }, 0.7);
