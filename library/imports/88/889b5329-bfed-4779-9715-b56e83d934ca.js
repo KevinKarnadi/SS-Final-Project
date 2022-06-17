@@ -29,7 +29,6 @@ var Bullet = /** @class */ (function (_super) {
     function Bullet() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.anim = null;
-        _this.bulletManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
         _this.shootAngle = null;
@@ -42,11 +41,6 @@ var Bullet = /** @class */ (function (_super) {
         this.setInitPos(node);
         this.anim.play('bullet');
         this.bulletMove();
-    };
-    // this function is called when the bullet manager calls "get" API.
-    Bullet.prototype.reuse = function (bulletManager) {
-        this.bulletManager = bulletManager;
-        this.isTriggered = false;
     };
     //this function sets the bullet's initial position when it is reused.
     Bullet.prototype.setInitPos = function (node) {
@@ -81,7 +75,7 @@ var Bullet = /** @class */ (function (_super) {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(function () {
             _this.anim.stop();
-            _this.bulletManager.put(_this.node);
+            _this.node.destroy();
         }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
     };
     Bullet.prototype.setAngle = function (angle) {

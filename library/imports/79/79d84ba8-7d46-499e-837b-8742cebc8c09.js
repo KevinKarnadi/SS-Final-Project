@@ -46,7 +46,6 @@ var Player = /** @class */ (function (_super) {
         _this.animationState = null;
         _this.rigidBody = null;
         _this.win = false;
-        _this.bulletPool = null;
         _this.shoot = false;
         _this.bombPool = null;
         _this.bomb = false;
@@ -55,6 +54,7 @@ var Player = /** @class */ (function (_super) {
         _this.HP = 100;
         _this.hurt = false;
         _this.weapon = "gun";
+        _this.gunType = "shotgun";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -63,14 +63,8 @@ var Player = /** @class */ (function (_super) {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
-        this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
-        var maxBulletNum = 5;
         var maxBombNum = 5;
-        for (var i = 0; i < maxBulletNum; i++) {
-            var bullet = cc.instantiate(this.bulletPrefab);
-            this.bulletPool.put(bullet);
-        }
         for (var i = 0; i < maxBombNum; i++) {
             var bomb = cc.instantiate(this.bombPrefab);
             this.bombPool.put(bomb);
@@ -91,7 +85,7 @@ var Player = /** @class */ (function (_super) {
                         this.playerJump();
                     }
                     if (this.shoot) {
-                        this.createBullet();
+                        this.createBullet(this.gunType);
                     }
                     else if (this.bomb) {
                         this.createBomb();
@@ -147,7 +141,7 @@ var Player = /** @class */ (function (_super) {
                 }
             }
         }
-        else if (other.node.ground == "wall") {
+        else if (other.node.group == "wall") {
             if (other.node.name == "Die Boundary") {
                 this.playerDie();
             }
@@ -172,16 +166,38 @@ var Player = /** @class */ (function (_super) {
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity); // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
+            this.animationState = this.animation.play('char1jump');
         }
     };
-    Player.prototype.createBullet = function () {
+    Player.prototype.createBullet = function (mode) {
         this.shoot = false;
-        var bullet = null;
-        if (this.bulletPool.size() > 0)
-            bullet = this.bulletPool.get(this.bulletPool);
-        if (bullet != null) {
-            bullet.getComponent('Bullet').setAngle(this.angle);
-            bullet.getComponent('Bullet').init(this.node);
+        if (mode == "normal") {
+            var bullet = cc.instantiate(this.bulletPrefab);
+            if (bullet != null) {
+                bullet.getComponent('Bullet').setAngle(this.angle);
+                bullet.getComponent('Bullet').init(this.node);
+            }
+        }
+        else if (mode == "burst") {
+            this.schedule(function () {
+                console.log("boom");
+                var bullet = cc.instantiate(this.bulletPrefab);
+                if (bullet != null) {
+                    bullet.getComponent('Bullet').setAngle(this.angle);
+                    bullet.getComponent('Bullet').init(this.node);
+                }
+            }, 0.05, 2);
+        }
+        else if (mode == "shotgun") {
+            var d_angle = -0.2;
+            for (var i = 0; i < 5; i++) {
+                var bullet = cc.instantiate(this.bulletPrefab);
+                if (bullet != null) {
+                    bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
+                    bullet.getComponent('Bullet').init(this.node);
+                    d_angle += 0.1;
+                }
+            }
         }
     };
     Player.prototype.createBomb = function () {

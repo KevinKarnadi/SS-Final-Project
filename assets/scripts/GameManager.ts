@@ -84,10 +84,13 @@ export default class GameManager extends cc.Component {
         var cameraPos = this.camera.getPosition();
         cameraPos.lerp(playerPos, 0.1, cameraPos);
         cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if(cameraPos.x < 0) {
-            cameraPos.x = 0;
-        } else if(cameraPos.x > 2033) {
-            cameraPos.x = 2033;
+        if(cameraPos.y > 100){
+            cameraPos.y = 100;
+        }
+        if(cameraPos.x < -35) {
+            cameraPos.x = -35;
+        } else if(cameraPos.x > 2033+35) {
+            cameraPos.x = 2033+35;
         }
         this.camera.setPosition(cameraPos);
     }
