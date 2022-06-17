@@ -68,7 +68,7 @@ var Ground2 = /** @class */ (function (_super) {
     };
     Ground2.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (other.node.group == "bullet") {
+        if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
             this.node.getChildByName("particle").active = true;
             this.scheduleOnce(function () {
                 _this.node.destroy();
