@@ -24,9 +24,6 @@ export default class GameManager extends cc.Component {
     @property(cc.AudioClip)
     bgm: cc.AudioClip = null;
 
-    @property(cc.Prefab)
-    private groundPrefab: cc.Prefab = null;
-
     private player = null;
 
     private aKeyDown: boolean = false;
@@ -41,8 +38,6 @@ export default class GameManager extends cc.Component {
 
     private shootAngle = null;
 
-    private groundPool = null;
-
     // private currPlayerPos = null;
 
     private isPaused: boolean = false;
@@ -54,30 +49,14 @@ export default class GameManager extends cc.Component {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-        // this.groundPool = new cc.NodePool('Ground');
-        // for(let i: number = 0; i < 9000; i++) {
-        //     let ground = cc.instantiate(this.groundPrefab);
 
-        //     this.groundPool.put(ground);
-        // }
     }
     
     start () {
         //this.playBGM();
-        // this.createGround();
         this.changePlayer(0);
         this.initResumeBtn();
     }
-
-    // createGround() {
-    //     let ground = null;
-    //     let i = 0;
-    //     while(this.groundPool.size() > 0) {
-    //         ground = this.groundPool.get(this.groundPool);
-    //         ground.getComponent('Ground').init(this.node, i);
-    //         i++; 
-    //     }
-    // }
 
     update (dt) {
         var playerPos = this.player.node.getPosition();
