@@ -3460,23 +3460,18 @@
     "relativePath": "tiles\\explosionSprite"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655467562178,
-    "meta": 1655467582881,
+    "asset": 1655468248649,
+    "meta": 1655468248705,
     "relativePath": "scenes\\map1.fire"
   },
-  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
-    "asset": 1655456700864,
-    "meta": 1655467747815,
-    "relativePath": "scripts\\explosiveObj.ts"
-  },
   "0538a49b-db00-4dc3-b8d4-e4b20f6a85b2": {
-    "asset": 1655456868169,
-    "meta": 1655467747830,
+    "asset": 1655468179950,
+    "meta": 1655468179968,
     "relativePath": "prefabs\\barrel.prefab"
   },
   "bb9dc2cd-3079-415b-876c-9f2774b04f17": {
-    "asset": 1655456825498,
-    "meta": 1655467747833,
+    "asset": 1655468174132,
+    "meta": 1655468174155,
     "relativePath": "animations\\explosion2.anim"
   },
   "3c5fec99-14c4-4792-93f2-6ea443982945": {
@@ -3495,8 +3490,8 @@
     "relativePath": "prefabs\\GroundLowerRight.prefab"
   },
   "94994fad-ff21-4267-aa3b-b8503fe13a5a": {
-    "asset": 1655464423232,
-    "meta": 1655467747904,
+    "asset": 1655467872609,
+    "meta": 1655467872665,
     "relativePath": "prefabs\\map.prefab"
   },
   "9a6b8610-97a6-4b6c-ad31-0ccd88437c61": {
@@ -3548,5 +3543,10 @@
     "asset": 1655456217268,
     "meta": 1655467748059,
     "relativePath": "tiles\\explosionSprite\\7.png"
+  },
+  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
+    "asset": 1655468298355,
+    "meta": 1655468301357,
+    "relativePath": "scripts\\explosiveObj.ts"
   }
 }
