@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Menu",
+    "texture": "ea5e4ecd-500a-48b8-9e1b-62e6e9f7ab72",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      51,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      51,
+      50
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

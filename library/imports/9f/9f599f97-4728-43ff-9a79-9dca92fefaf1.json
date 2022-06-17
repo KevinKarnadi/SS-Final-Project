@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_ItemFrame01_Sliver",
+    "texture": "91dd01c5-653f-41b6-944e-fc97fd6b5261",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      132,
+      138
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      132,
+      138
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

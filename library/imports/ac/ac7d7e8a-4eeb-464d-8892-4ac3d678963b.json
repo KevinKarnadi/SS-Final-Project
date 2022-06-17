@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Skull",
+    "texture": "b0369e59-7bf2-429f-b081-0cd997c3e3c3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      113,
+      121
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      113,
+      121
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

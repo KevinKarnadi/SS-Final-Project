@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider03_InnerFrame",
+    "texture": "15a6017a-ba08-4157-9d92-4f21da83396a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      45,
+      33
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      33
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ShopIcon_Gem_04",
+    "texture": "67ab449a-73c1-4efe-9ba8-313fad682a73",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      336,
+      343
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      336,
+      343
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

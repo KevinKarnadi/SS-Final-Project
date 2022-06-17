@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Text_Levelup",
+    "texture": "2a1cd54d-9e5c-4d64-bf38-faa07877353b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      356,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      356,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

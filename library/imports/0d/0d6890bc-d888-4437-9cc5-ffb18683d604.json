@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_TabMenuFrame_s",
+    "texture": "ac74636a-46ad-46c0-8163-475eb5b0f51b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      229,
+      118
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      229,
+      118
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

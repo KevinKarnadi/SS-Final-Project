@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Candle",
+    "texture": "3dcf683f-2a41-464c-8867-445adcff6b8c",
+    "atlas": "",
+    "rect": [
+      56,
+      32,
+      149,
+      193
+    ],
+    "offset": [
+      2.5,
+      -0.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

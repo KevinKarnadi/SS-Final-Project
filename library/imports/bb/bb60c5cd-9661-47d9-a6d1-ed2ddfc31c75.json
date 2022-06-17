@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider05_UserInfo_Fill2_Green",
+    "texture": "5460c2c1-06c5-488a-83e9-2dadda7644e8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      20,
+      14
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      20,
+      14
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

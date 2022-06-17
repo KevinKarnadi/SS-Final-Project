@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Chicken",
+    "texture": "6a1c8dc1-24db-49a0-99b0-5f481492104d",
+    "atlas": "",
+    "rect": [
+      51,
+      22,
+      153,
+      212
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

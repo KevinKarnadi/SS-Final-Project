@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider05_UserInfo_PictureFrame3",
+    "texture": "7085443f-8a9a-46f4-bfd9-a4e7e25ced77",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      53,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      53,
+      62
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

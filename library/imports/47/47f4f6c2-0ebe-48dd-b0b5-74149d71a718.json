@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_ArrowUp",
+    "texture": "c1e30c4e-b20a-472b-9113-9b1004b39590",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      60,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      60,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

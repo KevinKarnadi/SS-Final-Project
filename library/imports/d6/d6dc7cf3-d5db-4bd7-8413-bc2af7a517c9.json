@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Megaphone",
+    "texture": "38caff46-4ab4-4ae6-a60e-4b58793d1e78",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      64,
+      57
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      57
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

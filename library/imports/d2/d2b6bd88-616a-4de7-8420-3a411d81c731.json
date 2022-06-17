@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Treasure",
+    "texture": "c11f811d-3d3d-4d1e-b3b4-e65231d70498",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      110,
+      100
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      110,
+      100
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

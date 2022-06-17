@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Toggle_Check_On",
+    "texture": "319ee414-14b5-40ed-b176-5779aec1310f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      54,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      54,
+      56
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

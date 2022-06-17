@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_GameOver2",
+    "texture": "ad97b084-ccc9-4204-8ad4-62243501ca56",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      304,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      304,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

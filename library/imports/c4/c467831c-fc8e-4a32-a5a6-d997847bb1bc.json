@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider04_IconType_IconFrame_Yellow",
+    "texture": "26310fe2-fcbe-492e-8d11-4899f5f40d20",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      76,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      76,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Popup_Mask",
+    "texture": "a0971051-bd42-4653-ac56-9779f1281e6c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      394,
+      494
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      394,
+      494
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

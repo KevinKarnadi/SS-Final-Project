@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "715d2b29-b8a9-408a-a9a3-3df735fd137b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 60,
+  "height": 60,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_PictoIcon_Compass": {
+      "ver": "1.0.6",
+      "uuid": "6ca61edd-f118-4e8a-81b4-1c17b7b15c6e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "715d2b29-b8a9-408a-a9a3-3df735fd137b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 60,
+      "height": 60,
+      "rawWidth": 60,
+      "rawHeight": 60,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

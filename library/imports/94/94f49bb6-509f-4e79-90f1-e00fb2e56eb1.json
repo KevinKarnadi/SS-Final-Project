@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Mission",
+    "texture": "c75bc113-ac6b-49c6-9726-00b8c8e5de5a",
+    "atlas": "",
+    "rect": [
+      25,
+      51,
+      207,
+      161
+    ],
+    "offset": [
+      0.5,
+      -3.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

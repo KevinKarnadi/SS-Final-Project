@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Asterisk",
+    "texture": "05d076cd-07f9-4ee2-a67d-4b37d54ad600",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      57,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      57,
+      60
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

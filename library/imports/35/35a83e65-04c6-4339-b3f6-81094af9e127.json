@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Lock",
+    "texture": "0ee3f9c3-c704-4259-ac29-bf5b2cc905e3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      41,
+      55
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      41,
+      55
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

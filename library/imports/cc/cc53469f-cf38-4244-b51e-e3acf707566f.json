@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Letter",
+    "texture": "08b8bc28-7271-4b39-bc12-0a301d2366dd",
+    "atlas": "",
+    "rect": [
+      22,
+      31,
+      85,
+      67
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

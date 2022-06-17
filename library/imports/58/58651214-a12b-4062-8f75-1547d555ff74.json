@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Effect_Rainbow",
+    "texture": "67dd90cb-5883-4da7-b159-4c528dfdee3d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      337,
+      122
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      337,
+      122
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Headset",
+    "texture": "fe0dec18-acd1-43cf-b3f5-18112b3ae605",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      61,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      61,
+      58
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_DefeatScene_Skull3",
+    "texture": "c38e0f2d-2aa2-4f7d-aa94-efd9f4bc4633",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      138,
+      87
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      138,
+      87
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

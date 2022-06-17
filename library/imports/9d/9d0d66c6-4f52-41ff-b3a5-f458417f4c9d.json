@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ImageIcon_Star01_On",
+    "texture": "6a61455b-6657-489d-8050-dcbfe441b120",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      171,
+      166
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      171,
+      166
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

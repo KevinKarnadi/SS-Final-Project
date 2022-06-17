@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Label_Circle_Brown",
+    "texture": "86be1efa-a7d7-4991-bc86-f80953d69916",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      63,
+      43
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      63,
+      43
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Coupon",
+    "texture": "980f9c52-8a69-49f3-90a4-d89d165fe7d9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      64,
+      49
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      49
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

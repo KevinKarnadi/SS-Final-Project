@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_UserPicture_Small1",
+    "texture": "7a293d5c-4ce5-402f-9412-cd8dc8dd5695",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      137,
+      137
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      137,
+      137
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

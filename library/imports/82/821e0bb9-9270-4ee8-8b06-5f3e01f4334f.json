@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Timer",
+    "texture": "27af4c90-e24d-4fba-b00c-64b66e0bd34d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      108,
+      130
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      130
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

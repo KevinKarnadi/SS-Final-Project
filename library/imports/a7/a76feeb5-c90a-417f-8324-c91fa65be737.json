@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Wow",
+    "texture": "4ad489a1-7834-4971-be73-6bffecac9b17",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      189,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      189,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

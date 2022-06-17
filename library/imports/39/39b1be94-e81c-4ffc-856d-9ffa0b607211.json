@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Poiton_Purple",
+    "texture": "18ee617a-98a2-4e8d-9d13-c039a14d1c53",
+    "atlas": "",
+    "rect": [
+      142,
+      73,
+      246,
+      360
+    ],
+    "offset": [
+      9,
+      3
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

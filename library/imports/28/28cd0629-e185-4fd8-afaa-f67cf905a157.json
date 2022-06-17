@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Notify_Red",
+    "texture": "7cef1682-25a4-4f72-b7a1-ea9d82ed7c8b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      58,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      59
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

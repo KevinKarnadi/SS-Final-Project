@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Horseshoes",
+    "texture": "bd38891f-8e8a-4a13-9fc0-be86ecc353bd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      128,
+      113
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      113
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

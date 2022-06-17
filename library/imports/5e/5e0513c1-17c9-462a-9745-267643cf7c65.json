@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_MarkCaution1",
+    "texture": "0f32a7d9-1bb0-4ff3-94d4-12778607b7c6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      63
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      21,
+      63
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

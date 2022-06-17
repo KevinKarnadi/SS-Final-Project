@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_LevelupScene_Mark2",
+    "texture": "3e9fc994-e0ce-48bd-9bf9-ebd255396d36",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      212,
+      154
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      212,
+      154
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

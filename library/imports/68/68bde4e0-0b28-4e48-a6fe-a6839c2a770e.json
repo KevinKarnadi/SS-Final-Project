@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Circle02",
+    "texture": "1a944c68-fffd-444e-b3d3-1966c56ce112",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      104,
+      110
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      104,
+      110
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Twitter",
+    "texture": "d79eba65-e0f8-46fb-811f-02bc993d1d8c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      55,
+      47
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      55,
+      47
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

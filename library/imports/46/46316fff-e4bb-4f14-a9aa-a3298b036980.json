@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Input_Field_Icon_Pw",
+    "texture": "685f0eb1-ec90-42a0-98a4-3aa57d7a7a9e",
+    "atlas": "",
+    "rect": [
+      4,
+      0,
+      41,
+      55
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      51,
+      55
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

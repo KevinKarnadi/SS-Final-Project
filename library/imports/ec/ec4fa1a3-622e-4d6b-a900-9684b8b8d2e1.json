@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_ControlPause",
+    "texture": "2623c3aa-4691-4213-b4c9-f100d166d451",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      48,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      48,
+      53
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

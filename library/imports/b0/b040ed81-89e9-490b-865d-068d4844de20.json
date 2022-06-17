@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Talaria",
+    "texture": "91f4bf4c-4fbc-4523-b0c7-b52f973ecbbe",
+    "atlas": "",
+    "rect": [
+      21,
+      9,
+      88,
+      106
+    ],
+    "offset": [
+      1,
+      2
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

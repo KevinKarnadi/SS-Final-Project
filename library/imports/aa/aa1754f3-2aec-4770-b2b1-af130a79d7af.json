@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Purplegem",
+    "texture": "c9dde980-b445-4830-b262-53182e61b848",
+    "atlas": "",
+    "rect": [
+      8,
+      7,
+      17,
+      19
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

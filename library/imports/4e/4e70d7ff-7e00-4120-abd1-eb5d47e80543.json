@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider03_Partten",
+    "texture": "76732089-7dd5-4cf2-a4f3-c38c9e9b0cd8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      61,
+      32
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      61,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Thunder",
+    "texture": "901ca7a5-82a3-4533-8692-1b1b30f93fbd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      42,
+      65
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      42,
+      65
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Sign",
+    "texture": "a4bcd3bb-046d-4ecf-ada3-9a796083183d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      60,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      60,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

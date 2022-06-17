@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Soulgem",
+    "texture": "eb01c4c0-4021-48b2-920f-48988a865fe5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      73,
+      115
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      73,
+      115
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

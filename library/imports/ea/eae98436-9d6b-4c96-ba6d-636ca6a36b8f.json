@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Fire",
+    "texture": "129c9908-13c7-4edb-bb9d-3bd27b8900db",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      48,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      48,
+      70
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

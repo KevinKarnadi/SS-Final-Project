@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Bluetooth",
+    "texture": "fc2b192a-ab3f-48e2-a6f0-caa940bb7763",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      45,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

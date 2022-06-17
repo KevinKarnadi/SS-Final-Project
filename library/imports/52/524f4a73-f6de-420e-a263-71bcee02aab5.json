@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Defeat",
+    "texture": "b4f13a15-2054-4b70-81f6-49cbd251938a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      416,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      416,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

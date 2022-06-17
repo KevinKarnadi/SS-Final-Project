@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Label_Flag_Red",
+    "texture": "0c171f12-e49b-4edd-9725-9b8565f44c16",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      112,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      112,
+      74
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

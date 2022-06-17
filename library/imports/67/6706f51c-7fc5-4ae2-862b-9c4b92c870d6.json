@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Joysick_Bg",
+    "texture": "4b1bb044-38e0-4f1d-930a-9b42a4c2791e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      218,
+      218
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      218,
+      218
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

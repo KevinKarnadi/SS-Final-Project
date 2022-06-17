@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Dollar",
+    "texture": "1364c57d-992e-42a1-b6bf-cb46b23af1bc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      36,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      36,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Input_Field_Icon_Error",
+    "texture": "53c0bef4-454c-4e7c-bb1f-67f1ecc8e23f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      13,
+      38
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      13,
+      38
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Medal_Silver",
+    "texture": "f57b52a1-995d-4d51-aeb3-d39e034e57b7",
+    "atlas": "",
+    "rect": [
+      36,
+      18,
+      59,
+      88
+    ],
+    "offset": [
+      1.5,
+      2
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

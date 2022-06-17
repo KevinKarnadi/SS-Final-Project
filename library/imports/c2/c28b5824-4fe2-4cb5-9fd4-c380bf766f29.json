@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider04_IconType_Fill_Green",
+    "texture": "e21cb198-2bc1-4066-84d0-c9aab2dd5e50",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2,
+      22
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2,
+      22
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

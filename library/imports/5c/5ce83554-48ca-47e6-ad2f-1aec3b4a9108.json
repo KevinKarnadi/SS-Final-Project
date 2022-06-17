@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Alram",
+    "texture": "b3db43a5-c40b-450b-a19c-e8d23570e14b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      64,
+      61
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      61
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

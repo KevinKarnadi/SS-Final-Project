@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ShopIcon_Coin_02",
+    "texture": "0df3cfa2-d759-40cb-9489-a676b8a89586",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      297,
+      218
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      297,
+      218
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

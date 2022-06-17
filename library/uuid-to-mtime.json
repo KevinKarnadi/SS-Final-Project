@@ -900,8 +900,8 @@
     "relativePath": "tiles\\Purple Planet\\png\\256px\\tiles\\Vines (3).png"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655468709994,
-    "meta": 1655468781508,
+    "asset": 1655475972943,
+    "meta": 1655475972982,
     "relativePath": "scenes\\map1.fire"
   },
   "d96e5e42-a80e-4917-a141-b76c096761dd": {
@@ -3529,11 +3529,6 @@
     "meta": 1655471401244,
     "relativePath": "scripts\\Bullet.ts"
   },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655471607976,
-    "meta": 1655471609629,
-    "relativePath": "scripts\\TrajectoryLine.ts"
-  },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
     "asset": 1655472133990,
     "meta": 1655472138142,
@@ -3544,9 +3539,4124 @@
     "meta": 1655472166871,
     "relativePath": "scripts\\Player.ts"
   },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655473286056,
+    "meta": 1655473317813,
+    "relativePath": "scripts\\TrajectoryLine.ts"
+  },
+  "92fa2261-f442-4abe-818a-5ea946b596a1": {
+    "asset": 1655474285753,
+    "meta": 1655474358222,
+    "relativePath": "GUI Kit resource"
+  },
+  "2327287d-08b3-4aad-856a-025b87fe12d5": {
+    "asset": 1655474285750,
+    "meta": 1655474358224,
+    "relativePath": "GUI Kit resource\\Fonts"
+  },
+  "72041d9c-82f3-409d-af3f-2470185c63a1": {
+    "asset": 1655474292940,
+    "meta": 1655474358225,
+    "relativePath": "GUI Kit resource\\Sprites"
+  },
+  "bd15060f-4fac-4bc0-b033-8880b17e5370": {
+    "asset": 1627618356000,
+    "meta": 1655474358235,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Bold.ttf"
+  },
+  "3f27296a-d3ff-4da7-8962-7ede7d6ec3e9": {
+    "asset": 1627618547000,
+    "meta": 1655474358252,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Medium.ttf"
+  },
+  "daaea382-8757-4f83-a38f-b2d190748d4e": {
+    "asset": 1655474292489,
+    "meta": 1655474358254,
+    "relativePath": "GUI Kit resource\\Sprites\\Component"
+  },
+  "e65b03c1-ad74-46a5-8383-36094484b3fc": {
+    "asset": 1655474294545,
+    "meta": 1655474358255,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo"
+  },
+  "b1c5439c-887a-4aad-a2ad-9adb33e9eaf2": {
+    "asset": 1655474286051,
+    "meta": 1655474358260,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText"
+  },
+  "63eabeb0-98dc-4e5a-b207-bed109717f24": {
+    "asset": 1655474286209,
+    "meta": 1655474358262,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button"
+  },
+  "a35fcc0d-1b49-4efc-82ee-f2823bfe006d": {
+    "asset": 1655474286467,
+    "meta": 1655474358263,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame"
+  },
+  "f4bcce4d-c9b0-46ed-8f2e-3257169d9846": {
+    "asset": 1655474287094,
+    "meta": 1655474358270,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)"
+  },
+  "80fe01a1-fb44-4eab-96b3-c379d4efe1fc": {
+    "asset": 1655474289223,
+    "meta": 1655474358272,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)"
+  },
+  "5bf33984-ff6f-4097-87b3-b152c9e9c930": {
+    "asset": 1655474289825,
+    "meta": 1655474358274,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)"
+  },
+  "4e829d50-a2d2-4006-bc1b-09e949c62749": {
+    "asset": 1655474292336,
+    "meta": 1655474358281,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)"
+  },
+  "99efeb62-f1c8-4721-9eb1-614a938191a6": {
+    "asset": 1655474292425,
+    "meta": 1655474358283,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label"
+  },
+  "07b38699-2039-4fb1-8cbc-57dd6f466e9d": {
+    "asset": 1655474292486,
+    "meta": 1655474358285,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup"
+  },
+  "9cb5db5c-aa4a-4cb1-8f19-6cbc40a4f110": {
+    "asset": 1655474292933,
+    "meta": 1655474358291,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider"
+  },
+  "6ab39226-1ca1-4380-b51c-5fe3ec8bc261": {
+    "asset": 1655474293820,
+    "meta": 1655474358292,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon"
+  },
+  "1251689c-9ac3-4891-be71-a54e7199bc92": {
+    "asset": 1655474294262,
+    "meta": 1655474358293,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image"
+  },
+  "2b773a3d-18ca-455d-bb22-9942130f6478": {
+    "asset": 1655474294542,
+    "meta": 1655474358299,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag"
+  },
+  "1213a187-2ba8-4a08-a97b-2c8af49a022f": {
+    "asset": 1655474294859,
+    "meta": 1655474358303,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI"
+  },
+  "af9e6403-92eb-4bab-9d93-952ff973610e": {
+    "asset": 1627618247000,
+    "meta": 1655474358320,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Bold SDF.asset"
+  },
+  "a16777c5-524d-49a1-925a-a520dfa8bb92": {
+    "asset": 1627618481000,
+    "meta": 1655474358324,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Bold_Underlay_Light SDF.asset"
+  },
+  "8824d429-d9ed-47f3-85ef-d241f5b4283b": {
+    "asset": 1627618497000,
+    "meta": 1655474358326,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Bold_Underlay SDF.asset"
+  },
+  "920bda4c-5d91-4ddf-a9f7-bf53a4dfcc70": {
+    "asset": 1627618624000,
+    "meta": 1655474358329,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Medium SDF.asset"
+  },
+  "4689570d-47e7-4281-be49-54a4a86c5d71": {
+    "asset": 1627618453000,
+    "meta": 1655474358351,
+    "relativePath": "GUI Kit resource\\Fonts\\Changa-Medium_Underlay SDF.asset"
+  },
+  "8af64f87-aaf7-42dc-a744-4c233e19f49d": {
+    "asset": 1627618279000,
+    "meta": 1655474358372,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Awesome.png"
+  },
+  "b9e8c591-e38c-4c99-b833-5a0a28411955": {
+    "asset": 1627618443000,
+    "meta": 1655474358379,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_BonusTime1.png"
+  },
+  "1c7ac68e-3ded-497a-b529-986b4ad2345e": {
+    "asset": 1627618563000,
+    "meta": 1655474358392,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_BonusTime2.png"
+  },
+  "3c72c3c1-0eb2-422a-9910-fde72deb8170": {
+    "asset": 1627618373000,
+    "meta": 1655474358414,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_GameOver1.png"
+  },
+  "11b8aaf4-f04f-4edf-a88d-8679eac5058e": {
+    "asset": 1627618556000,
+    "meta": 1655474358418,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Combo.png"
+  },
+  "139c92cd-52e4-4b57-a4b4-40dbf80bd593": {
+    "asset": 1627618499000,
+    "meta": 1655474358427,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Complete.png"
+  },
+  "b4f13a15-2054-4b70-81f6-49cbd251938a": {
+    "asset": 1627618242000,
+    "meta": 1655474358431,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Defeat.png"
+  },
+  "ad97b084-ccc9-4204-8ad4-62243501ca56": {
+    "asset": 1627618586000,
+    "meta": 1655474358445,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_GameOver2.png"
+  },
+  "7920ba75-6af5-4b33-91f3-0d3f41b7a05a": {
+    "asset": 1627618518000,
+    "meta": 1655474358466,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Go.png"
+  },
+  "f67b9f0e-65b8-4dfb-b383-9785efa8e2c5": {
+    "asset": 1627618380000,
+    "meta": 1655474358476,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_good.png"
+  },
+  "de6c689f-125c-49e5-8429-fcf425883eb3": {
+    "asset": 1627618330000,
+    "meta": 1655474358484,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Great.png"
+  },
+  "d9d23250-84a8-45b3-ae5a-c0277eab3779": {
+    "asset": 1627618269000,
+    "meta": 1655474358524,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_LevelUp1.png"
+  },
+  "a8420ff2-ad6e-4431-9997-68efd42e2d53": {
+    "asset": 1627618376000,
+    "meta": 1655474358529,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Lose.png"
+  },
+  "60ae2fb0-6159-47d3-93b3-b966adccc756": {
+    "asset": 1627618204000,
+    "meta": 1655474358533,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_MissionClear1.png"
+  },
+  "834f60e9-3ce9-4d5e-a552-6a5b72876c39": {
+    "asset": 1627618255000,
+    "meta": 1655474358544,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_LevelUp2.png"
+  },
+  "bd9fb1fc-2dca-4685-a651-9bc81ffa4e2a": {
+    "asset": 1627618614000,
+    "meta": 1655474358548,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_MissionClear2.png"
+  },
+  "0cf2562c-e52b-4af7-9b94-bac6ef2afb36": {
+    "asset": 1627618370000,
+    "meta": 1655474358557,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Nice.png"
+  },
+  "70344f3b-37d4-4023-b43b-83bcbad92935": {
+    "asset": 1627618605000,
+    "meta": 1655474358560,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Start.png"
+  },
+  "c945d8fa-fd51-4666-a9db-b8412eaa89b1": {
+    "asset": 1627618329000,
+    "meta": 1655474358566,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Ready.png"
+  },
+  "004902bf-4a80-4f83-9110-af53bfdd11cf": {
+    "asset": 1627618280000,
+    "meta": 1655474358573,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Victory.png"
+  },
+  "4ad489a1-7834-4971-be73-6bffecac9b17": {
+    "asset": 1627618243000,
+    "meta": 1655474358578,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Wow.png"
+  },
+  "6bb1da53-9cdd-4bf2-93a0-1bffa0365d51": {
+    "asset": 1627618450000,
+    "meta": 1655474358590,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Circle01_Blue.png"
+  },
+  "b8155860-82e8-42b7-8838-971e0a02faac": {
+    "asset": 1627618279000,
+    "meta": 1655474358593,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Circle01_Gray.png"
+  },
+  "8dbd10c3-0a75-4571-bd41-40d52966c1ba": {
+    "asset": 1627618371000,
+    "meta": 1655474358595,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\ActionText\\ActionText_Win.png"
+  },
+  "1a944c68-fffd-444e-b3d3-1966c56ce112": {
+    "asset": 1627618515000,
+    "meta": 1655474358600,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Circle02.png"
+  },
+  "3e2b0671-cdc6-4f10-b278-efd8a901eb6b": {
+    "asset": 1627618470000,
+    "meta": 1655474358605,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Circle03.png"
+  },
+  "0ba3b0a9-631f-4bc9-b9dc-75bb60fddc98": {
+    "asset": 1627618374000,
+    "meta": 1655474358611,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_Blue.Png"
+  },
+  "2cab2a39-5996-40da-b20f-364319ba77e6": {
+    "asset": 1627618609000,
+    "meta": 1655474358617,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_Bluegreen.Png"
+  },
+  "4e8b697e-b594-403a-988e-d3e1c1e6881f": {
+    "asset": 1627618546000,
+    "meta": 1655474358642,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_Green.Png"
+  },
+  "7fc9e53c-89bc-4fb0-a5b0-56ebce6fe841": {
+    "asset": 1627618481000,
+    "meta": 1655474358646,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_Brown.Png"
+  },
+  "4bf3a93e-2ffe-4bd0-a093-35596fbd63e2": {
+    "asset": 1627618301000,
+    "meta": 1655474358649,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_Purple.Png"
+  },
+  "03a1b5ab-a1e5-4019-aaac-f1daa130262c": {
+    "asset": 1627618341000,
+    "meta": 1655474358654,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_MainButton_red.png"
+  },
+  "0527b033-c42d-4b25-bfe7-ebde3b6c18b0": {
+    "asset": 1627618356000,
+    "meta": 1655474358667,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square02_f_Icon.png"
+  },
+  "af4efc43-0300-4e8c-a97d-963dea0bc1b5": {
+    "asset": 1627618457000,
+    "meta": 1655474358673,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square01.png"
+  },
+  "e791cce7-bb80-411a-81c5-b72b4d3b7f0b": {
+    "asset": 1627618228000,
+    "meta": 1655474358676,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square02_f.png"
+  },
+  "c5f61620-3918-4357-83e8-b0765aa2f546": {
+    "asset": 1627618294000,
+    "meta": 1655474358699,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square02_n_Icon.png"
+  },
+  "9e586ad5-5c97-4a51-bf89-8ae0e7b5c747": {
+    "asset": 1627618522000,
+    "meta": 1655474358702,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square03_p.png"
+  },
+  "6585fce7-3677-432e-9b15-efdb50156098": {
+    "asset": 1627618316000,
+    "meta": 1655474358705,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square03_White.png"
+  },
+  "7f430a9a-43aa-4e14-b624-8adc02d084a4": {
+    "asset": 1627618369000,
+    "meta": 1655474358729,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square02_n.png"
+  },
+  "46289ffe-2c89-4a85-a973-c993ed5987ba": {
+    "asset": 1627618381000,
+    "meta": 1655474358734,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Circle01_White.png"
+  },
+  "e5344497-7e3f-49ab-a2cc-2f6c418b60e2": {
+    "asset": 1627618484000,
+    "meta": 1655474358736,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Button\\Btn_Square03_n.png"
+  },
+  "913c435c-05ae-48ec-8ab7-2a76648471c7": {
+    "asset": 1627618459000,
+    "meta": 1655474358740,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Circle03_White.png"
+  },
+  "f6b90367-2e73-4e2a-ac9d-e6677dfe2a7e": {
+    "asset": 1627618393000,
+    "meta": 1655474358771,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Circle05_White.png"
+  },
+  "8f26b5ba-4fa4-4f58-b899-d12a00657790": {
+    "asset": 1627618535000,
+    "meta": 1655474358774,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Circle02_White.png"
+  },
+  "972b3c8b-0cce-4dc4-89be-bb7b7014544c": {
+    "asset": 1627618544000,
+    "meta": 1655474358776,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame01_Brown.png"
+  },
+  "35203db9-2062-4d57-863e-2f6d494b34a6": {
+    "asset": 1627618589000,
+    "meta": 1655474358779,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Circle04_White.png"
+  },
+  "91dd01c5-653f-41b6-944e-fc97fd6b5261": {
+    "asset": 1627618625000,
+    "meta": 1655474358817,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame01_Sliver.png"
+  },
+  "c2f66b97-9ce4-465a-b7ed-9873dd0bace0": {
+    "asset": 1627618306000,
+    "meta": 1655474358819,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame02_00_Count.png"
+  },
+  "da6c3590-df54-4922-823f-61ed03ec22ce": {
+    "asset": 1627618453000,
+    "meta": 1655474358821,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame01_Green.png"
+  },
+  "00db5e57-1db0-49f1-b753-86c427947bfe": {
+    "asset": 1627618311000,
+    "meta": 1655474358824,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame02_00_n_White.png"
+  },
+  "1cd2663a-e988-4b65-8ea9-9ce8b50f271f": {
+    "asset": 1627618272000,
+    "meta": 1655474358834,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame02_01_s_Demo.png"
+  },
+  "28857d33-b318-4f12-9177-5563d17de763": {
+    "asset": 1627618250000,
+    "meta": 1655474358850,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ItemFrame02_02_s_White.png"
+  },
+  "a5c47985-7220-4557-a309-b280d1e0fdfa": {
+    "asset": 1627618304000,
+    "meta": 1655474358853,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_ListFrame.png"
+  },
+  "e42e6fea-911d-4a1b-b82d-b4358eee9b0a": {
+    "asset": 1627618454000,
+    "meta": 1655474358855,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Square01_White.png"
+  },
+  "61d378b3-2a41-42de-861b-343017d1bce0": {
+    "asset": 1627618331000,
+    "meta": 1655474358879,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Square03_White.png"
+  },
+  "774d1da3-a7ec-4b51-aaf9-842c5702e624": {
+    "asset": 1627618456000,
+    "meta": 1655474358883,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_StageFrame_d.png"
+  },
+  "be38e048-08f5-4569-a8f0-42edef0e2c27": {
+    "asset": 1627618477000,
+    "meta": 1655474358885,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_StageFrame_n.png"
+  },
+  "4a86c72c-d819-4901-b502-6b94aa1b82c8": {
+    "asset": 1627618526000,
+    "meta": 1655474358891,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_StageFrame_s.png"
+  },
+  "3df8871a-91f9-4b73-b5c4-ffe8e0c4b461": {
+    "asset": 1627618423000,
+    "meta": 1655474358896,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_Square02_White.png"
+  },
+  "2ead614e-75a1-43bd-8491-238edb2cc91a": {
+    "asset": 1627618395000,
+    "meta": 1655474358914,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TablaFrame01_White.png"
+  },
+  "bbc58b43-5ad8-46dc-af4e-543e80a7e800": {
+    "asset": 1627618435000,
+    "meta": 1655474358916,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TablaFrame01_Dark.png"
+  },
+  "4a9e88b7-342b-42e4-8f5d-6ad2d9c72513": {
+    "asset": 1627618451000,
+    "meta": 1655474358941,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TableFrame02.png"
+  },
+  "8e379faf-b952-4fd2-94e2-1eb1f54a1ed0": {
+    "asset": 1627618554000,
+    "meta": 1655474358946,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TabMenuFrame_n.png"
+  },
+  "329d0ec6-4fee-4ba2-aaac-eba7e91bfaa4": {
+    "asset": 1627618501000,
+    "meta": 1655474358955,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TopBarFrame.png"
+  },
+  "ac74636a-46ad-46c0-8163-475eb5b0f51b": {
+    "asset": 1627618361000,
+    "meta": 1655474358969,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_TabMenuFrame_s.png"
+  },
+  "36279210-6949-49ca-9f7f-f367ada168a3": {
+    "asset": 1627618457000,
+    "meta": 1655474358982,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_UserPicture_Large1.png"
+  },
+  "6e8e7e3d-f3eb-4c5c-b504-cdbd87666046": {
+    "asset": 1627618513000,
+    "meta": 1655474358986,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_UserPicture_Large2.png"
+  },
+  "cacdf659-ec76-4419-95cb-a20861fc698e": {
+    "asset": 1627618506000,
+    "meta": 1655474358989,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_UserPicture_Small2.png"
+  },
+  "7a293d5c-4ce5-402f-9412-cd8dc8dd5695": {
+    "asset": 1627618511000,
+    "meta": 1655474358992,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\Frame_UserPicture_Small1.png"
+  },
+  "5df6893f-4543-4675-a1bb-d59aa40b46ff": {
+    "asset": 1627618622000,
+    "meta": 1655474359012,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Arrow.Png"
+  },
+  "a60f00f7-9da9-4579-ab2f-4d365231d051": {
+    "asset": 1627618277000,
+    "meta": 1655474359021,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Bomb.Png"
+  },
+  "6a20adbc-b4eb-48cd-ab78-4ad056f56d6b": {
+    "asset": 1627618271000,
+    "meta": 1655474359025,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Anvil.Png"
+  },
+  "54623de4-260c-4b55-8af5-6403d5220215": {
+    "asset": 1627618427000,
+    "meta": 1655474359033,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Chicken.Png"
+  },
+  "e0af2d1d-b647-477e-9a57-ca915bcc38d3": {
+    "asset": 1627618552000,
+    "meta": 1655474359036,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Clover.Png"
+  },
+  "8a4b5220-04b4-4fd9-bb0b-0e7aca963526": {
+    "asset": 1627618362000,
+    "meta": 1655474359040,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Candle.Png"
+  },
+  "b9f3397b-aa26-48ae-a994-d62069f95a8a": {
+    "asset": 1627618563000,
+    "meta": 1655474359053,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Crown.Png"
+  },
+  "cd5ef71f-ca63-4a8a-a0d0-b74729569a6f": {
+    "asset": 1627618529000,
+    "meta": 1655474359056,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Energy.Png"
+  },
+  "d6cb6381-c6da-45d7-bdc2-e4eaaa0c313b": {
+    "asset": 1627618604000,
+    "meta": 1655474359067,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Envelope.Png"
+  },
+  "946c45b5-aba8-4c4b-aef6-2e565effb1a2": {
+    "asset": 1627618336000,
+    "meta": 1655474359087,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Gem.Png"
+  },
+  "6e37a5ea-d243-414f-97b1-2a828fd90f2e": {
+    "asset": 1627618436000,
+    "meta": 1655474359093,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Gift.Png"
+  },
+  "caeed4cc-1d87-445c-bc71-db8143e84c48": {
+    "asset": 1627618595000,
+    "meta": 1655474359096,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Gold.Png"
+  },
+  "95b7f651-5dc1-45ee-943d-ec6211bc2b31": {
+    "asset": 1627618240000,
+    "meta": 1655474359112,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "da87e869-2b4a-4de2-91ad-e26def03e8e5": {
+    "asset": 1627618583000,
+    "meta": 1655474359127,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Hammer.Png"
+  },
+  "c4bed0b6-07cc-4508-a911-751cc1894377": {
+    "asset": 1627618513000,
+    "meta": 1655474359135,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Horner.Png"
+  },
+  "bd38891f-8e8a-4a13-9fc0-be86ecc353bd": {
+    "asset": 1627618592000,
+    "meta": 1655474359143,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "093c4df5-7a30-4991-bd7e-698d533b0d5f": {
+    "asset": 1627618284000,
+    "meta": 1655474359149,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Key.Png"
+  },
+  "0a1c9d26-4604-46d7-b1a6-cde43eadd3ba": {
+    "asset": 1627618617000,
+    "meta": 1655474359158,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Laurel.Png"
+  },
+  "37824624-a543-42f1-88dc-94863397fbe3": {
+    "asset": 1627618557000,
+    "meta": 1655474359172,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Lock.Png"
+  },
+  "52753540-d93a-4c4b-961b-2b66f74daa1c": {
+    "asset": 1627618390000,
+    "meta": 1655474359176,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Letter.Png"
+  },
+  "d0d67850-1529-490a-bcda-4bd23e856b3e": {
+    "asset": 1627618394000,
+    "meta": 1655474359184,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "9f444b52-8243-474d-88c7-2cfe0ad91e89": {
+    "asset": 1627618322000,
+    "meta": 1655474359196,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "85726e60-ecf8-456a-8337-a7e486e75e66": {
+    "asset": 1627618248000,
+    "meta": 1655474359205,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "b6e7ad1e-b758-42df-9749-d4488dd5016f": {
+    "asset": 1627618235000,
+    "meta": 1655474359208,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Mission.Png"
+  },
+  "ea17017b-d1d5-4f7d-b637-f1b923cab84b": {
+    "asset": 1627618559000,
+    "meta": 1655474359211,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Pickax.Png"
+  },
+  "a0db9710-abf7-4518-85f2-b1112835453a": {
+    "asset": 1627618288000,
+    "meta": 1655474359232,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "ca2e5bf0-e013-4d38-8225-fa2dafd15491": {
+    "asset": 1627618313000,
+    "meta": 1655474359235,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "8cc54c0d-c42d-4f9c-99f3-1bfec6ad29c4": {
+    "asset": 1627618460000,
+    "meta": 1655474359241,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "024061fd-87b0-4481-8f07-b2193864478d": {
+    "asset": 1627618540000,
+    "meta": 1655474359258,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "1fe60325-89ad-43bd-8177-d642c57ebd1d": {
+    "asset": 1627618424000,
+    "meta": 1655474359262,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Scroll.Png"
+  },
+  "ed662e89-1656-4337-a673-d4ae02e00f08": {
+    "asset": 1627618432000,
+    "meta": 1655474359268,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Setting.Png"
+  },
+  "aa0fb343-8fbf-492b-b001-758e2cb0179b": {
+    "asset": 1627618446000,
+    "meta": 1655474359275,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "25c4ea70-3f04-4310-8a64-0b25c5c598e1": {
+    "asset": 1627618525000,
+    "meta": 1655474359294,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "1cc098ec-e9d3-4fb5-a0c7-9d298da0eaa9": {
+    "asset": 1627618583000,
+    "meta": 1655474359300,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "b206bc41-c3ee-405f-9835-9fccd103d458": {
+    "asset": 1627618471000,
+    "meta": 1655474359313,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "f461d3ce-8ff5-4c95-b4be-ad001d31fbc5": {
+    "asset": 1655474287664,
+    "meta": 1655474359337,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128"
+  },
+  "d8360ae4-2ff4-4d31-91b3-125c0a95dd9a": {
+    "asset": 1655474288141,
+    "meta": 1655474359339,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256"
+  },
+  "decb06f3-13f9-4143-a83d-c979de8116e0": {
+    "asset": 1627618348000,
+    "meta": 1655474359322,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Shop.Png"
+  },
+  "7e9ba3fe-bf35-4bca-983b-af56c2246b30": {
+    "asset": 1655474288674,
+    "meta": 1655474359344,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32"
+  },
+  "10e02bf9-9864-44d4-ad73-8977d2419b4f": {
+    "asset": 1655474289220,
+    "meta": 1655474359346,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512"
+  },
+  "b0369e59-7bf2-429f-b081-0cd997c3e3c3": {
+    "asset": 1627618463000,
+    "meta": 1655474359329,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Skull.Png"
+  },
+  "d9ab6521-5e95-4b4b-bcc9-02221442a69d": {
+    "asset": 1655474289723,
+    "meta": 1655474359352,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64"
+  },
+  "d625c797-d2c3-4491-b2f4-a587f2d791ea": {
+    "asset": 1655474289769,
+    "meta": 1655474359356,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_128"
+  },
+  "691e9e80-b59c-4c4e-b886-ca2eaba7cf8e": {
+    "asset": 1627618226000,
+    "meta": 1655474359336,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "4fce00fe-e28d-49de-8a4e-957078c1ef17": {
+    "asset": 1655474289786,
+    "meta": 1655474359358,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_256"
+  },
+  "7b3b99ff-5eda-417f-8c3f-4a9372827552": {
+    "asset": 1655474289803,
+    "meta": 1655474359362,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_32"
+  },
+  "70f1c28e-0be4-4536-b82a-044acf43e904": {
+    "asset": 1655474289822,
+    "meta": 1655474359365,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_512"
+  },
+  "8d95e091-13be-4852-888d-dc3170aeaabf": {
+    "asset": 1655474289839,
+    "meta": 1655474359372,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_64"
+  },
+  "6e70c4d9-fb21-4f59-80c9-5afd8faf6ac5": {
+    "asset": 1627618556000,
+    "meta": 1655474359364,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "eb01c4c0-4021-48b2-920f-48988a865fe5": {
+    "asset": 1627618365000,
+    "meta": 1655474359368,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "81580c31-0e82-4da7-aa7d-32bfb53d1b89": {
+    "asset": 1627618360000,
+    "meta": 1655474359374,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Talaria.Png"
+  },
+  "27af4c90-e24d-4fba-b00c-64b66e0bd34d": {
+    "asset": 1627618399000,
+    "meta": 1655474359380,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Timer.Png"
+  },
+  "e64de481-6e4f-4c34-92e0-d306f4b737f5": {
+    "asset": 1627618400000,
+    "meta": 1655474359382,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Target.Png"
+  },
+  "c11f811d-3d3d-4d1e-b3b4-e65231d70498": {
+    "asset": 1627618344000,
+    "meta": 1655474359386,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Treasure.Png"
+  },
+  "49ff9207-ee0f-4620-b33e-a40a63f546f5": {
+    "asset": 1627618220000,
+    "meta": 1655474359397,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(original)\\Icon_ItemIcon_Trophy.Png"
+  },
+  "05d815b9-f49c-4b33-8652-c1f02f8e933b": {
+    "asset": 1627618627000,
+    "meta": 1655474359419,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Add.png"
+  },
+  "5d628dc9-1ea8-4426-9620-b8575ecbea85": {
+    "asset": 1627618519000,
+    "meta": 1655474359423,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Account.png"
+  },
+  "b0ea1f34-daf3-48d1-ae9b-94b96d5a867b": {
+    "asset": 1627618490000,
+    "meta": 1655474359427,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_AddFriend.png"
+  },
+  "27ce3d8b-3d1c-4f4e-af20-71e35763ccea": {
+    "asset": 1627618429000,
+    "meta": 1655474359436,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Align.png"
+  },
+  "b3db43a5-c40b-450b-a19c-e8d23570e14b": {
+    "asset": 1627618237000,
+    "meta": 1655474359440,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Alram.png"
+  },
+  "a60edc02-1c42-4d6b-9359-1cf10b4601db": {
+    "asset": 1627618312000,
+    "meta": 1655474359443,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Appstore.png"
+  },
+  "08c985de-c168-47c5-b7d7-e080648fee5b": {
+    "asset": 1627618340000,
+    "meta": 1655474359446,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Arrow.png"
+  },
+  "4259280b-2879-4544-aab6-66b1acd6a74c": {
+    "asset": 1627618244000,
+    "meta": 1655474359469,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ArrowNext.png"
+  },
+  "c1e30c4e-b20a-472b-9113-9b1004b39590": {
+    "asset": 1627618488000,
+    "meta": 1655474359481,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ArrowUp.png"
+  },
+  "a5cb4115-872d-49fe-bbe5-9197083e6f5f": {
+    "asset": 1627618439000,
+    "meta": 1655474359490,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ArrowDown.png"
+  },
+  "3f087df8-c5f2-4dac-803a-39f925f774fe": {
+    "asset": 1627618574000,
+    "meta": 1655474359496,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Ax.png"
+  },
+  "330ffda2-3125-42ea-a56c-c733ae6a31c4": {
+    "asset": 1627618506000,
+    "meta": 1655474359499,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Attachment.png"
+  },
+  "441602e9-3051-4fee-9d65-e07c705c948a": {
+    "asset": 1627618615000,
+    "meta": 1655474359501,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Back.png"
+  },
+  "9b03f1ff-9be9-483a-9566-95bc10a88563": {
+    "asset": 1627618210000,
+    "meta": 1655474359504,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ArrowPrev.png"
+  },
+  "05d076cd-07f9-4ee2-a67d-4b37d54ad600": {
+    "asset": 1627618228000,
+    "meta": 1655474359522,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Asterisk.png"
+  },
+  "c1ab0002-7ed6-4994-836a-f71c32499cca": {
+    "asset": 1627618541000,
+    "meta": 1655474359542,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bad.png"
+  },
+  "af6e18d9-0319-4530-b76c-f80621949904": {
+    "asset": 1627618625000,
+    "meta": 1655474359546,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bank.png"
+  },
+  "c76babdb-e30c-45bc-8867-7c2d6ad0430a": {
+    "asset": 1627618484000,
+    "meta": 1655474359552,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Basket.png"
+  },
+  "dd223cec-0edc-4010-9068-fcb1d16d21ba": {
+    "asset": 1627618448000,
+    "meta": 1655474359558,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Battle.png"
+  },
+  "5f1ba3d0-ff8e-46cf-851a-0737fac065c7": {
+    "asset": 1627618226000,
+    "meta": 1655474359561,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Badge.png"
+  },
+  "47e74a0c-5a08-4cad-8dee-a906750ab424": {
+    "asset": 1627618534000,
+    "meta": 1655474359568,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Binoculars.png"
+  },
+  "57cfe90d-6bc7-4acd-9999-3d09dbefe2ca": {
+    "asset": 1627618615000,
+    "meta": 1655474359574,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bin.png"
+  },
+  "b072197f-a553-401a-ba3e-c62b313bec7f": {
+    "asset": 1627618397000,
+    "meta": 1655474359584,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bitcoin.png"
+  },
+  "4ec1a1a7-c221-44a6-852f-64337208a021": {
+    "asset": 1627618536000,
+    "meta": 1655474359604,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Block.png"
+  },
+  "fc2b192a-ab3f-48e2-a6f0-caa940bb7763": {
+    "asset": 1627618364000,
+    "meta": 1655474359607,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bluetooth.png"
+  },
+  "e519eee7-aee1-4200-9753-8924e3756bab": {
+    "asset": 1627618396000,
+    "meta": 1655474359611,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Book.png"
+  },
+  "a93318ed-d892-4106-a611-4327cfa86a3a": {
+    "asset": 1627618407000,
+    "meta": 1655474359613,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bomb.png"
+  },
+  "fd243a5b-1a3f-4f0c-9ac9-10927714c74e": {
+    "asset": 1627618286000,
+    "meta": 1655474359619,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bookmark.png"
+  },
+  "a109675c-f820-459c-a214-ddb6698e3a0e": {
+    "asset": 1627618571000,
+    "meta": 1655474359631,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bottom.png"
+  },
+  "96a01479-226c-4092-a08f-11aa8fbd4b73": {
+    "asset": 1627618377000,
+    "meta": 1655474359633,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_BookmarkAdd.png"
+  },
+  "a3d758e3-7972-4703-aa8a-9ffa5b950bb6": {
+    "asset": 1627618633000,
+    "meta": 1655474359643,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Brain.png"
+  },
+  "edf3db1d-4b91-4896-be47-7d5672b5a762": {
+    "asset": 1627618484000,
+    "meta": 1655474359646,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bulb.png"
+  },
+  "eae4ed8a-4d63-44ce-b07f-d500169bcfbe": {
+    "asset": 1627618432000,
+    "meta": 1655474359660,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Bug.png"
+  },
+  "de1c3782-5f94-4a70-9310-94be814766d0": {
+    "asset": 1627618561000,
+    "meta": 1655474359666,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Calendar.png"
+  },
+  "290a9cdd-3653-4942-8c88-21f7daea62d1": {
+    "asset": 1627618485000,
+    "meta": 1655474359669,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Call.png"
+  },
+  "19cd12b3-05c9-4e59-aa49-068b5fb32613": {
+    "asset": 1627618365000,
+    "meta": 1655474359673,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Cancel.png"
+  },
+  "e1b2c86c-4ad2-4758-b284-8614ad85152f": {
+    "asset": 1627618388000,
+    "meta": 1655474359676,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_CallReject.png"
+  },
+  "8e7ec6ba-c5fe-4160-b4b4-f290c22ef4c4": {
+    "asset": 1627618467000,
+    "meta": 1655474359679,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Camera.png"
+  },
+  "ab301657-61d6-40ce-842d-d3a6cb95720b": {
+    "asset": 1627618620000,
+    "meta": 1655474359700,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Card.png"
+  },
+  "e82f694c-02c0-46d4-88c6-ef5d158799d6": {
+    "asset": 1627618593000,
+    "meta": 1655474359707,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Cart.png"
+  },
+  "6a4952a8-f450-459e-8f20-740645a45901": {
+    "asset": 1627618619000,
+    "meta": 1655474359721,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Chat.png"
+  },
+  "f1756b2d-f6d3-4a1c-8d4d-13f14b16f65b": {
+    "asset": 1627618266000,
+    "meta": 1655474359732,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Check.png"
+  },
+  "af33f01a-0c20-4787-9dc9-491cb9814693": {
+    "asset": 1627618304000,
+    "meta": 1655474359736,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Category.png"
+  },
+  "fceffa9d-36be-48a2-8218-0755dcb105ab": {
+    "asset": 1627618364000,
+    "meta": 1655474359740,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Cloud.png"
+  },
+  "a3ae2466-1ce9-4fda-a124-dc983f21f0c4": {
+    "asset": 1627618326000,
+    "meta": 1655474359742,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Cny.png"
+  },
+  "675dc296-f4f3-473c-9a41-5bc5cd0dd17e": {
+    "asset": 1627618517000,
+    "meta": 1655474359749,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Coffee.png"
+  },
+  "715d2b29-b8a9-408a-a9a3-3df735fd137b": {
+    "asset": 1627618267000,
+    "meta": 1655474359761,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Compass.png"
+  },
+  "f1b600b1-5f24-4083-bb61-239e7fddfd56": {
+    "asset": 1627618522000,
+    "meta": 1655474359771,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Confirm.png"
+  },
+  "5f9a1751-6075-45fd-9e6b-1be9deec9bc1": {
+    "asset": 1627618616000,
+    "meta": 1655474359782,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Contact.png"
+  },
+  "140a0aab-46ed-43f4-aaee-d7afa2cdba0f": {
+    "asset": 1627618447000,
+    "meta": 1655474359785,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Control.png"
+  },
+  "a4619538-b6de-4d14-a152-a5e2861219e9": {
+    "asset": 1627618274000,
+    "meta": 1655474359787,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ControlNext.png"
+  },
+  "2623c3aa-4691-4213-b4c9-f100d166d451": {
+    "asset": 1627618521000,
+    "meta": 1655474359794,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ControlPause.png"
+  },
+  "9a794d38-31c5-4ceb-a726-ef5574d4c0a2": {
+    "asset": 1627618503000,
+    "meta": 1655474359811,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ControlPrev.png"
+  },
+  "7bd30821-32f6-42b1-a259-310f3c639053": {
+    "asset": 1627618377000,
+    "meta": 1655474359813,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ControlPlay.png"
+  },
+  "c4202538-a840-43bb-bcc5-04c5ecd1aaf5": {
+    "asset": 1627618523000,
+    "meta": 1655474359829,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Copy.png"
+  },
+  "5a11933c-9b40-4e92-94f8-24e9106bf9f8": {
+    "asset": 1627618225000,
+    "meta": 1655474359834,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Crop.png"
+  },
+  "de49ca88-6437-420f-b36b-56be6cc5f6a3": {
+    "asset": 1627618291000,
+    "meta": 1655474359836,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ControlStop.png"
+  },
+  "980f9c52-8a69-49f3-90a4-d89d165fe7d9": {
+    "asset": 1627618443000,
+    "meta": 1655474359840,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Coupon.png"
+  },
+  "5f2d3c1b-2a05-4f1c-9b49-c84cd1f2565f": {
+    "asset": 1627618517000,
+    "meta": 1655474359847,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Crown.png"
+  },
+  "74c6ee14-ff50-4f1f-b12c-d2f04a937679": {
+    "asset": 1627618446000,
+    "meta": 1655474359851,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Defense.png"
+  },
+  "9ba36d27-fc10-4a52-8d08-34e71557aba7": {
+    "asset": 1627618337000,
+    "meta": 1655474359855,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Delete.png"
+  },
+  "ffea2ab4-588c-4d4f-abd0-a1b33d6c5557": {
+    "asset": 1627618624000,
+    "meta": 1655474359868,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Dislike.png"
+  },
+  "702343ac-e31b-4686-9da9-0e99869146d6": {
+    "asset": 1627618278000,
+    "meta": 1655474359874,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Document.png"
+  },
+  "eb216cb1-0b46-4c0c-9006-a25411705500": {
+    "asset": 1627618282000,
+    "meta": 1655474359876,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Down.png"
+  },
+  "52593613-fd9f-4577-a227-8aeea57b5620": {
+    "asset": 1627618494000,
+    "meta": 1655474359880,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Dollar.png"
+  },
+  "c039bbc0-f4ec-41e9-a046-895ad6b52c3d": {
+    "asset": 1627618512000,
+    "meta": 1655474359891,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Download.png"
+  },
+  "fbae9876-44c5-44cd-9d68-3d7efab62978": {
+    "asset": 1627618599000,
+    "meta": 1655474359896,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Earth.png"
+  },
+  "afc0b5f8-2ba3-40af-9354-b2c2642d7f56": {
+    "asset": 1627618444000,
+    "meta": 1655474359901,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Dynamite.png"
+  },
+  "6ea672ec-302a-4cac-8bd4-4f8fc6c0bffa": {
+    "asset": 1627618302000,
+    "meta": 1655474359905,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Eat.png"
+  },
+  "e1839a54-2d80-4413-84e8-29a801c04aaa": {
+    "asset": 1627618351000,
+    "meta": 1655474359916,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_EmojiGood.png"
+  },
+  "2dbe8ef9-f420-439c-ae6f-0481488a67ee": {
+    "asset": 1627618489000,
+    "meta": 1655474359920,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_EmojiSoso.png"
+  },
+  "91f49d66-1786-4a3e-a69f-b93df584eb02": {
+    "asset": 1627618349000,
+    "meta": 1655474359932,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Energy.png"
+  },
+  "935f5f8b-e461-4230-8e37-757aac522c90": {
+    "asset": 1627618320000,
+    "meta": 1655474359935,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Exit.png"
+  },
+  "7925c343-9e14-45fd-868b-fa3d41b4a727": {
+    "asset": 1627618353000,
+    "meta": 1655474359945,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Expand.png"
+  },
+  "8c606583-3cf2-4e76-9b3a-704324e4b139": {
+    "asset": 1627618578000,
+    "meta": 1655474359947,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Facebook.png"
+  },
+  "80b64c5d-5b6c-4737-8353-7f5c5a3fb7ab": {
+    "asset": 1627618233000,
+    "meta": 1655474359950,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Export.png"
+  },
+  "85e3472b-7bc4-4f7a-a098-024906e2fd1e": {
+    "asset": 1627618595000,
+    "meta": 1655474359957,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Feather.png"
+  },
+  "4dd3e6e6-3622-479f-965d-87e2ac1a1e0f": {
+    "asset": 1627618539000,
+    "meta": 1655474359975,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Fingerprint.png"
+  },
+  "53527fc4-48f7-405c-8cec-08554684a9e4": {
+    "asset": 1627618404000,
+    "meta": 1655474359981,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Filter.png"
+  },
+  "6fbc234e-2730-4b6d-989c-a95ae47adbe8": {
+    "asset": 1627618571000,
+    "meta": 1655474359984,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Firm.png"
+  },
+  "129c9908-13c7-4edb-bb9d-3bd27b8900db": {
+    "asset": 1627618291000,
+    "meta": 1655474359986,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Fire.png"
+  },
+  "4274bac4-3665-45b5-a0d1-a6b4fa165f2c": {
+    "asset": 1627618408000,
+    "meta": 1655474359992,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Fix.png"
+  },
+  "41b35316-9995-40db-b58b-9c4d1b7b1f0b": {
+    "asset": 1627618491000,
+    "meta": 1655474359999,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Flask01.png"
+  },
+  "f13885bc-c5f3-47b5-891e-bfaf125b339f": {
+    "asset": 1627618235000,
+    "meta": 1655474360002,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Flag.png"
+  },
+  "43a10e66-440a-43f2-91ab-71a914fb1f40": {
+    "asset": 1627618421000,
+    "meta": 1655474360016,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Flask02.png"
+  },
+  "016b1d4d-5d64-42b3-a466-016ceb05e1ff": {
+    "asset": 1627618340000,
+    "meta": 1655474360034,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Folder.png"
+  },
+  "4b639b16-fdfb-400c-9a17-478f89489e56": {
+    "asset": 1627618588000,
+    "meta": 1655474360040,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Game.png"
+  },
+  "7ee663d7-a03e-478d-95f0-86d40a662947": {
+    "asset": 1627618630000,
+    "meta": 1655474360043,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Flask03.png"
+  },
+  "6a36bad1-cc30-41e7-8d76-87f6c728a8cc": {
+    "asset": 1627618607000,
+    "meta": 1655474360046,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Gem.png"
+  },
+  "eaf539ba-8e3d-426e-8e59-6aee1b217e03": {
+    "asset": 1627618582000,
+    "meta": 1655474360059,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_FolderOpen.png"
+  },
+  "120f4aa0-168b-4a23-8c5e-774206c26be9": {
+    "asset": 1627618230000,
+    "meta": 1655474360061,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_GenderFemale.png"
+  },
+  "b2393d1b-6646-493b-9106-023add5305bb": {
+    "asset": 1627618339000,
+    "meta": 1655474360063,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_GenderMale.png"
+  },
+  "83cdca0c-9dd5-4f2d-b15a-1658f747c5ab": {
+    "asset": 1627618594000,
+    "meta": 1655474360066,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Gift.png"
+  },
+  "d80c3294-f50d-4188-87cc-8165d0321da1": {
+    "asset": 1627618253000,
+    "meta": 1655474360094,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Globe.png"
+  },
+  "df1c73fa-57f3-4d16-abb6-bbabbb513c84": {
+    "asset": 1627618505000,
+    "meta": 1655474360099,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Gmail.png"
+  },
+  "bbfdeaa3-04f1-442a-a771-eca27c202a14": {
+    "asset": 1627618302000,
+    "meta": 1655474360106,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Gold.png"
+  },
+  "3231331c-0358-48c9-8562-556c265e7baa": {
+    "asset": 1627618579000,
+    "meta": 1655474360115,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Googleplay.png"
+  },
+  "8b45fa21-d4d8-435b-ad63-53e6ad384e34": {
+    "asset": 1627618430000,
+    "meta": 1655474360117,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Graph.png"
+  },
+  "357b7150-0ebd-4b55-86ae-1546efff9156": {
+    "asset": 1627618322000,
+    "meta": 1655474360125,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Graduation.png"
+  },
+  "d1801278-8781-44e5-8129-83be9823d42b": {
+    "asset": 1627618545000,
+    "meta": 1655474360129,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Hammer.png"
+  },
+  "ddd3ce62-7e83-426f-ad09-36c19575950d": {
+    "asset": 1627618355000,
+    "meta": 1655474360145,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Hand.png"
+  },
+  "b6190f9b-71b8-479d-9ac6-9ebeda6a81c7": {
+    "asset": 1627618383000,
+    "meta": 1655474360153,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Hashtag.png"
+  },
+  "fe0dec18-acd1-43cf-b3f5-18112b3ae605": {
+    "asset": 1627618218000,
+    "meta": 1655474360159,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Headset.png"
+  },
+  "45bbdabe-0f8d-4d63-83a7-3410f8652b8c": {
+    "asset": 1627618521000,
+    "meta": 1655474360168,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Heart.png"
+  },
+  "9d5c844a-c7d0-4b37-bd55-c42bea2b9c41": {
+    "asset": 1627618350000,
+    "meta": 1655474360173,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Hide.png"
+  },
+  "e1e37d27-1fff-4602-a3c3-ef9a8040323d": {
+    "asset": 1627618371000,
+    "meta": 1655474360177,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Helmet.png"
+  },
+  "ab133234-7783-43eb-bd00-a751575663e0": {
+    "asset": 1627618581000,
+    "meta": 1655474360183,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Home.png"
+  },
+  "c7d2f10b-620d-403a-8f9a-0c0e81c9f285": {
+    "asset": 1627618310000,
+    "meta": 1655474360191,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Key.png"
+  },
+  "0597cb1b-f665-42ea-af94-eb0953ef7736": {
+    "asset": 1627618510000,
+    "meta": 1655474360211,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Left.png"
+  },
+  "61fb63ae-cc8b-4621-ac8d-281858226267": {
+    "asset": 1627618603000,
+    "meta": 1655474360214,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Knowledge.png"
+  },
+  "4705904e-18ea-4fed-ad43-513cd25a6167": {
+    "asset": 1627618212000,
+    "meta": 1655474360216,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_HeartEmpty.png"
+  },
+  "32c93d3f-779d-4bd5-b0cc-355284df70bd": {
+    "asset": 1627618284000,
+    "meta": 1655474360233,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Like.png"
+  },
+  "7d2da889-8d33-457c-aad3-af66478799c3": {
+    "asset": 1627618578000,
+    "meta": 1655474360235,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_List.png"
+  },
+  "1682eb00-184b-4ce4-a50f-c2e7e3dc9ea1": {
+    "asset": 1627618580000,
+    "meta": 1655474360237,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Link.png"
+  },
+  "12b93991-28ec-44f8-bcc2-13cb7ec6bb65": {
+    "asset": 1627618363000,
+    "meta": 1655474360240,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Location.png"
+  },
+  "7a1579c0-0f56-4fea-9718-50f522fff909": {
+    "asset": 1627618596000,
+    "meta": 1655474360258,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Lock.png"
+  },
+  "a3ac7334-febe-4d07-b3f4-1f5b6d59d45a": {
+    "asset": 1627618474000,
+    "meta": 1655474360277,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Magnetic.png"
+  },
+  "7019c208-5aed-413f-8f65-71f0cab387a5": {
+    "asset": 1627618209000,
+    "meta": 1655474360282,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MailUnread.png"
+  },
+  "be5afd4d-2df3-4343-879b-1c893b17c37f": {
+    "asset": 1627618549000,
+    "meta": 1655474360289,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Map.png"
+  },
+  "0f32a7d9-1bb0-4ff3-94d4-12778607b7c6": {
+    "asset": 1627618384000,
+    "meta": 1655474360296,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkCaution1.png"
+  },
+  "c7ef5c8a-079c-426a-8571-8d2c79820bdb": {
+    "asset": 1627618474000,
+    "meta": 1655474360302,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MailRead.png"
+  },
+  "c06ffb31-f91e-4586-a1b2-14a87b01ade5": {
+    "asset": 1627618473000,
+    "meta": 1655474360304,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkCaution2.png"
+  },
+  "ae1f1ec7-c662-4313-a6d8-8d86a6cdf539": {
+    "asset": 1627618244000,
+    "meta": 1655474360308,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkInfo1.png"
+  },
+  "2287aaee-0a46-4eae-ae5c-8e08d0e01dc6": {
+    "asset": 1627618575000,
+    "meta": 1655474360327,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkInfo2.png"
+  },
+  "14bbd02e-45dc-41c1-8489-509545358994": {
+    "asset": 1627618488000,
+    "meta": 1655474360342,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkQuestion1.png"
+  },
+  "241e4884-571b-42b8-bdec-2ebb37b46cd8": {
+    "asset": 1627618553000,
+    "meta": 1655474360347,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_MarkQuestion2.png"
+  },
+  "977a9c1b-9c72-4cd5-aa13-751cedd3fef2": {
+    "asset": 1627618467000,
+    "meta": 1655474360353,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Media.png"
+  },
+  "13c9ad21-b590-469c-b557-ae7990ee8323": {
+    "asset": 1627618435000,
+    "meta": 1655474360355,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Medal.png"
+  },
+  "ea5e4ecd-500a-48b8-9e1b-62e6e9f7ab72": {
+    "asset": 1627618542000,
+    "meta": 1655474360359,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Menu.png"
+  },
+  "38caff46-4ab4-4ae6-a60e-4b58793d1e78": {
+    "asset": 1627618572000,
+    "meta": 1655474360375,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Megaphone.png"
+  },
+  "7e6e8b08-5dc5-4511-8921-6a8bd000588d": {
+    "asset": 1627618358000,
+    "meta": 1655474360379,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Message.png"
+  },
+  "0e84f3db-2dc9-4e47-b8a2-63927bea3068": {
+    "asset": 1627618283000,
+    "meta": 1655474360381,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Minus.png"
+  },
+  "dde87423-e64c-47fc-8f43-4a1a31589abd": {
+    "asset": 1627618542000,
+    "meta": 1655474360396,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Mobile.png"
+  },
+  "cfc6a084-4d86-4cb5-bc64-f760cddf18dc": {
+    "asset": 1627618313000,
+    "meta": 1655474360405,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Money.png"
+  },
+  "949a31f9-8db2-43ec-8650-df53b12fe53b": {
+    "asset": 1627618507000,
+    "meta": 1655474360407,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Music1.png"
+  },
+  "669743d3-cf94-462c-9a46-40b1b1ee9b55": {
+    "asset": 1627618446000,
+    "meta": 1655474360409,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_More.png"
+  },
+  "783dc9b5-6d65-4f3d-ac74-cbf92d469478": {
+    "asset": 1627618621000,
+    "meta": 1655474360413,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Music2.png"
+  },
+  "46bc9721-8b2e-42b6-bb6a-6c759096517a": {
+    "asset": 1627618370000,
+    "meta": 1655474360427,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Newspaper.png"
+  },
+  "c008da49-5c14-4b8c-a49e-5d67dc8c743c": {
+    "asset": 1627618270000,
+    "meta": 1655474360429,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Next.png"
+  },
+  "bc303d25-cde1-4966-b4ea-7d6e215d6aae": {
+    "asset": 1627618465000,
+    "meta": 1655474360434,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Notification.png"
+  },
+  "96474f9e-8547-4862-8f54-7d57279243e8": {
+    "asset": 1627618560000,
+    "meta": 1655474360462,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pc.png"
+  },
+  "6d08d2c7-4c10-43b9-8880-5d9731823d3d": {
+    "asset": 1627618345000,
+    "meta": 1655474360466,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_NotificationOff.png"
+  },
+  "d3f012e2-6a0b-4778-b30c-32ea0bd1b6b0": {
+    "asset": 1627618242000,
+    "meta": 1655474360469,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Paper.png"
+  },
+  "e73a630e-bbb5-4dde-8bfa-2cc0786dc816": {
+    "asset": 1627618238000,
+    "meta": 1655474360471,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pen.png"
+  },
+  "4c3d7ed4-e855-4bb6-9d48-a0191a75e849": {
+    "asset": 1627618338000,
+    "meta": 1655474360480,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pencil.png"
+  },
+  "0a1083df-c0f8-407a-a0f1-8fd8d9a99778": {
+    "asset": 1627618387000,
+    "meta": 1655474360495,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Photo.png"
+  },
+  "ab8747af-b879-4c81-8c6e-7762342791a8": {
+    "asset": 1627618608000,
+    "meta": 1655474360500,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Percent.png"
+  },
+  "8d086400-bcf8-41fa-801b-b74d9802143d": {
+    "asset": 1627618605000,
+    "meta": 1655474360511,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pick.png"
+  },
+  "31283840-f10a-431a-a9d2-8a466ab704b0": {
+    "asset": 1627618559000,
+    "meta": 1655474360522,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Piechart.png"
+  },
+  "f5201c48-4b51-4e4d-a8e2-73a09230afe5": {
+    "asset": 1627618405000,
+    "meta": 1655474360525,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pinterest.png"
+  },
+  "9562db7c-1887-4d50-8736-d5c266ffae30": {
+    "asset": 1627618531000,
+    "meta": 1655474360528,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Pinwheel.png"
+  },
+  "d72bd6d8-a998-410e-a55b-05c2eb6a9030": {
+    "asset": 1627618485000,
+    "meta": 1655474360532,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Planet.png"
+  },
+  "97ca4f7c-757c-40fe-9ab0-7dce4fa5de1c": {
+    "asset": 1627618344000,
+    "meta": 1655474360550,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Plus.png"
+  },
+  "6b199288-bcf0-4080-9fdb-5c7a8b819003": {
+    "asset": 1627618594000,
+    "meta": 1655474360563,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Player.png"
+  },
+  "ae4bccc8-ccf8-49a6-b55f-d8643e82ad27": {
+    "asset": 1627618565000,
+    "meta": 1655474360568,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Preferense.png"
+  },
+  "b5997929-80ea-4ef5-a0c6-e45b0da09032": {
+    "asset": 1627618419000,
+    "meta": 1655474360584,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Prev.png"
+  },
+  "8fde166f-d97f-45b2-8174-aebb865901a8": {
+    "asset": 1627618570000,
+    "meta": 1655474360590,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Printer.png"
+  },
+  "ea77df9b-292c-41ed-87ab-547aff1f6072": {
+    "asset": 1627618295000,
+    "meta": 1655474360593,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Quit.png"
+  },
+  "e319df18-062c-4e5b-8da8-417b06a550d9": {
+    "asset": 1627618441000,
+    "meta": 1655474360595,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Random.png"
+  },
+  "acc09b23-dac1-46a1-a1a0-3ef8087fc6a5": {
+    "asset": 1627618514000,
+    "meta": 1655474360602,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Ranking.png"
+  },
+  "012218e7-2c8f-4574-b4ee-bb791a590269": {
+    "asset": 1627618594000,
+    "meta": 1655474360623,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Record.png"
+  },
+  "6e4f7aa2-584f-4a08-8ccf-e763d30d8b6a": {
+    "asset": 1627618509000,
+    "meta": 1655474360625,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_RecordOff.png"
+  },
+  "c76fe97f-aead-422e-8fb4-224f38495030": {
+    "asset": 1627618261000,
+    "meta": 1655474360636,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Refresh.png"
+  },
+  "e93d5f7b-7929-42ab-9483-2c2d315957aa": {
+    "asset": 1627618568000,
+    "meta": 1655474360645,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Remove.png"
+  },
+  "a0f9ce92-69b1-4a8e-ad17-14c56ae2c330": {
+    "asset": 1627618527000,
+    "meta": 1655474360648,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Reset.png"
+  },
+  "0ffb2e49-2e34-4503-88a2-613d170cbf52": {
+    "asset": 1627618263000,
+    "meta": 1655474360663,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Right.png"
+  },
+  "b5efcce4-c90b-4786-95a9-729363ef4838": {
+    "asset": 1627618275000,
+    "meta": 1655474360667,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Safe.png"
+  },
+  "ffba8371-7cc4-4c6e-8e09-dcbb82795dc8": {
+    "asset": 1627618601000,
+    "meta": 1655474360674,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Ring.png"
+  },
+  "758f5ff3-80a9-4bb8-9442-80152365294c": {
+    "asset": 1627618320000,
+    "meta": 1655474360680,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Sandglass.png"
+  },
+  "057672c0-5735-4ac5-a207-9e20afdc437e": {
+    "asset": 1627618416000,
+    "meta": 1655474360694,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Scan.png"
+  },
+  "0c94cbc3-0751-40fe-93c7-fd334638c1dd": {
+    "asset": 1627618213000,
+    "meta": 1655474360697,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Reload.png"
+  },
+  "d2b1c2f4-0674-403e-bbac-03676de64a5f": {
+    "asset": 1627618388000,
+    "meta": 1655474360701,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Screwdriver.png"
+  },
+  "8e620474-2ee7-4763-bf50-0aaca0c92636": {
+    "asset": 1627618573000,
+    "meta": 1655474360714,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Search.png"
+  },
+  "fedd0856-67a3-45ee-a751-4cefacc4b23f": {
+    "asset": 1627618285000,
+    "meta": 1655474360727,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Send1.png"
+  },
+  "3225c4d3-6e5b-4753-8309-bd0dcc1978e2": {
+    "asset": 1627618297000,
+    "meta": 1655474360729,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Send2.png"
+  },
+  "7ab03ec8-9f0b-4a6a-bc5b-fc702db25038": {
+    "asset": 1627618553000,
+    "meta": 1655474360732,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Service.png"
+  },
+  "50312053-411f-4afb-abab-a562580e9d9d": {
+    "asset": 1627618294000,
+    "meta": 1655474360752,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Setting1.png"
+  },
+  "89707dfb-d119-467f-93bf-1dc4d914040a": {
+    "asset": 1627618288000,
+    "meta": 1655474360755,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Setting2.png"
+  },
+  "53872553-4fae-42e9-9db4-dbad771e6933": {
+    "asset": 1627618414000,
+    "meta": 1655474360760,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Share.png"
+  },
+  "26e7f247-c54c-4249-93c6-38be4cc3af80": {
+    "asset": 1627618547000,
+    "meta": 1655474360780,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Shop.png"
+  },
+  "cc81a2cc-22fd-4e85-b29b-b87fa7d6ec49": {
+    "asset": 1627618299000,
+    "meta": 1655474360782,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Shopping.png"
+  },
+  "a4bcd3bb-046d-4ecf-ada3-9a796083183d": {
+    "asset": 1627618487000,
+    "meta": 1655474360785,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Sign.png"
+  },
+  "41963951-4d21-4c5b-9cec-08363bca3754": {
+    "asset": 1627618465000,
+    "meta": 1655474360790,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Show.png"
+  },
+  "fe481a89-1723-4f2b-8f67-4bb7cfbc0271": {
+    "asset": 1627618389000,
+    "meta": 1655474360807,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Siren.png"
+  },
+  "a817aeee-c361-4646-827f-37100006e0d7": {
+    "asset": 1627618531000,
+    "meta": 1655474360812,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Skull.png"
+  },
+  "1dedb837-2f67-4ba1-90d6-3a7499db42aa": {
+    "asset": 1627618586000,
+    "meta": 1655474360827,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Sort.png"
+  },
+  "5b087cd7-8584-4406-a4c5-0ab52ae2bac2": {
+    "asset": 1627618572000,
+    "meta": 1655474360834,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Star.png"
+  },
+  "4bef1f11-62b3-4959-b25a-31f8db3b30fc": {
+    "asset": 1627618620000,
+    "meta": 1655474360847,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Speedmeter.png"
+  },
+  "19c82026-5523-4b23-8cf0-a72427cace45": {
+    "asset": 1627618285000,
+    "meta": 1655474360861,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_StarCircle.png"
+  },
+  "eb1a2a25-60c2-48ee-9cb4-9e40aed7d072": {
+    "asset": 1627618234000,
+    "meta": 1655474360864,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Skype.png"
+  },
+  "cc3683f8-e481-403a-ac34-f82db3c7b588": {
+    "asset": 1627618475000,
+    "meta": 1655474360867,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Stopwatch.png"
+  },
+  "27ceca83-9ffd-4536-bccd-21463afea1b5": {
+    "asset": 1627618607000,
+    "meta": 1655474360869,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Sparkle.png"
+  },
+  "083eb836-b302-462d-aab5-d1e875107144": {
+    "asset": 1627618449000,
+    "meta": 1655474360873,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Support.png"
+  },
+  "0d1732dd-522b-4370-8d43-80dda2ecf901": {
+    "asset": 1627618443000,
+    "meta": 1655474360893,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Tag.png"
+  },
+  "ff3a11bf-0086-4a12-aa3e-4a5ec87e1b7f": {
+    "asset": 1627618509000,
+    "meta": 1655474360904,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Target.png"
+  },
+  "6858e37d-4b1d-4bd9-b149-0ff3f80d34f1": {
+    "asset": 1627618337000,
+    "meta": 1655474360909,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Sword.png"
+  },
+  "0f3fda82-8a44-4272-b5b4-aa45a9c2c429": {
+    "asset": 1627618256000,
+    "meta": 1655474360914,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Text.png"
+  },
+  "bdaf06b3-e135-4f94-b0ef-c63dd8e4aad6": {
+    "asset": 1627618516000,
+    "meta": 1655474360921,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Tent.png"
+  },
+  "e939fb36-1a0a-4872-ac3d-c4f3787b8090": {
+    "asset": 1627618252000,
+    "meta": 1655474360922,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Thumbnails.png"
+  },
+  "901ca7a5-82a3-4533-8692-1b1b30f93fbd": {
+    "asset": 1627618496000,
+    "meta": 1655474360925,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Thunder.png"
+  },
+  "997e2223-8b34-4f46-830c-c022fb2f5e93": {
+    "asset": 1627618405000,
+    "meta": 1655474360942,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Time.png"
+  },
+  "f4006441-c236-4efe-9824-19a9f2b2a3ef": {
+    "asset": 1627618412000,
+    "meta": 1655474360961,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Toolbox.png"
+  },
+  "93cf8ca2-c2fb-4201-b3fc-0cbbcd73ab34": {
+    "asset": 1627618301000,
+    "meta": 1655474360969,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Top.png"
+  },
+  "47f1a837-21a2-4bee-8bd7-ebeb3df92950": {
+    "asset": 1627618341000,
+    "meta": 1655474360977,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Trophy.png"
+  },
+  "c69dafb8-044a-4cc1-aa41-cdbcc3f03d17": {
+    "asset": 1627618274000,
+    "meta": 1655474360982,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Ufo.png"
+  },
+  "f84c0f32-7569-4d7c-8b44-4cf7c8e72bf1": {
+    "asset": 1627618249000,
+    "meta": 1655474360986,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Treasure.png"
+  },
+  "d79eba65-e0f8-46fb-811f-02bc993d1d8c": {
+    "asset": 1627618537000,
+    "meta": 1655474360989,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Twitter.png"
+  },
+  "fe9ee930-0cfd-4ff5-9f4c-7fc754d4ab47": {
+    "asset": 1627618437000,
+    "meta": 1655474360992,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Unlock.png"
+  },
+  "1987fd34-36d1-40c6-8aa2-ba4cf47db23c": {
+    "asset": 1627618614000,
+    "meta": 1655474361030,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Up.png"
+  },
+  "9bf52cd5-832a-40a6-a92d-8f08ba3c7d39": {
+    "asset": 1627618451000,
+    "meta": 1655474361039,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Upload.png"
+  },
+  "56e91cbb-1a27-4445-90d3-e07538c8b0be": {
+    "asset": 1627618298000,
+    "meta": 1655474361042,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_User.png"
+  },
+  "afae85c3-6c10-4a53-8b45-5f69d2d66c94": {
+    "asset": 1627618277000,
+    "meta": 1655474361047,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Volume.png"
+  },
+  "ab436cd4-bc1d-4bf2-9d3c-c26f2e8b5842": {
+    "asset": 1627618281000,
+    "meta": 1655474361051,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_VolumeMute.png"
+  },
+  "a68e08c4-0f9c-4732-a1bc-8eb4779fc043": {
+    "asset": 1627618629000,
+    "meta": 1655474361053,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Wallet.png"
+  },
+  "aa2e040e-d6d5-461b-b5c1-9a8f17d0d98b": {
+    "asset": 1627618528000,
+    "meta": 1655474361059,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Warning.png"
+  },
+  "d5cdfb57-68cd-4a94-b4f8-add20eef1368": {
+    "asset": 1627618239000,
+    "meta": 1655474361086,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Water.png"
+  },
+  "c51ac945-26e5-4a17-9895-8dbfbd8a199c": {
+    "asset": 1627618507000,
+    "meta": 1655474361091,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Video.png"
+  },
+  "101e91b3-10f7-4d4e-8cb2-699873d2232d": {
+    "asset": 1627618252000,
+    "meta": 1655474361095,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Youtube.png"
+  },
+  "37b68bd3-47b4-4a75-a37e-eb729bc9f999": {
+    "asset": 1627618385000,
+    "meta": 1655474361118,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_Wifi.png"
+  },
+  "b0b950cd-9165-43a9-becb-36edb8ea5c8a": {
+    "asset": 1627618411000,
+    "meta": 1655474361121,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ZoomOut.png"
+  },
+  "46f5d766-d6c9-4c7b-8ebd-cf6cc56f5d29": {
+    "asset": 1627618297000,
+    "meta": 1655474361123,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcon_(orginal)\\Icon_PictoIcon_ZoomIn.png"
+  },
+  "86be1efa-a7d7-4991-bc86-f80953d69916": {
+    "asset": 1627618633000,
+    "meta": 1655474361125,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Circle_Brown.Png"
+  },
+  "0c171f12-e49b-4edd-9725-9b8565f44c16": {
+    "asset": 1627618499000,
+    "meta": 1655474361154,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Flag_Red.Png"
+  },
+  "fdb66976-7b8a-40f4-aa9d-9b586c21668d": {
+    "asset": 1627618222000,
+    "meta": 1655474361164,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Ribbon01_Brown.Png"
+  },
+  "58379957-ae85-40a8-9336-97353bf4beb2": {
+    "asset": 1627618458000,
+    "meta": 1655474361167,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Tag_Red.png"
+  },
+  "4876bee6-d8df-4cc5-97f2-a616f87503a9": {
+    "asset": 1627618544000,
+    "meta": 1655474361175,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Ribbon02_Orange.Png"
+  },
+  "86b8b935-7ea8-4c48-9b10-7ee9a2a6a5f7": {
+    "asset": 1627618268000,
+    "meta": 1655474361179,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Flag_Purple.Png"
+  },
+  "f1287d05-51ff-4a2d-af8b-70ac208e3e9c": {
+    "asset": 1627618239000,
+    "meta": 1655474361184,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Tag_White.png"
+  },
+  "c779654b-1675-433a-9597-3d88c32282d5": {
+    "asset": 1627618585000,
+    "meta": 1655474361189,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Label\\Label_Ribbon01_Green.Png"
+  },
+  "f8ac6ec6-efc0-40e9-9f5e-9ad440c22b1d": {
+    "asset": 1627618214000,
+    "meta": 1655474361200,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup\\Popup_Frame.Png"
+  },
+  "416abb73-5132-4b7c-bfc7-a9c504d0e302": {
+    "asset": 1627618473000,
+    "meta": 1655474361227,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup\\Popup_TitleFrame_02.Png"
+  },
+  "a0971051-bd42-4653-ac56-9779f1281e6c": {
+    "asset": 1627618433000,
+    "meta": 1655474361231,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup\\Popup_Mask.Png"
+  },
+  "52c5be45-b29f-46fe-ace9-c6e3254f43c9": {
+    "asset": 1627618611000,
+    "meta": 1655474361234,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup\\Popup_TitleFrame_03.Png"
+  },
+  "da3e985a-c98b-4aca-9f72-7ec2d6dd159a": {
+    "asset": 1627618208000,
+    "meta": 1655474361238,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Popup\\Popup_TitleFrame_00.Png"
+  },
+  "2fbb2f47-c1a6-4586-99aa-9c161f16a9ba": {
+    "asset": 1627618227000,
+    "meta": 1655474361240,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider01_Fill_Brown.png"
+  },
+  "9676ba89-0406-45fa-8ffc-3ecea532a427": {
+    "asset": 1627618359000,
+    "meta": 1655474361243,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider01_Fill_Orange.png"
+  },
+  "841e0fe4-7c1a-40bc-86e8-b0ef9ae7fce1": {
+    "asset": 1627618480000,
+    "meta": 1655474361257,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider01_Fill_White.png"
+  },
+  "7841d1da-2faa-4ae3-8de0-1be4c4c24b81": {
+    "asset": 1627618450000,
+    "meta": 1655474361267,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider01_Frame.png"
+  },
+  "cbfec947-fc19-4812-83aa-f778f9998a73": {
+    "asset": 1627618384000,
+    "meta": 1655474361289,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider02_Fill_White.png"
+  },
+  "e99198d1-ea7d-432a-92f3-c6e88f0221cc": {
+    "asset": 1627618549000,
+    "meta": 1655474361294,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider02_Fill_Orange.png"
+  },
+  "2351af3f-4eed-41ce-a2e9-de11df18d3b4": {
+    "asset": 1627618303000,
+    "meta": 1655474361296,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider02_Frame.png"
+  },
+  "ad3d3269-f9e0-4572-ba01-72b2edcfe0ec": {
+    "asset": 1627618206000,
+    "meta": 1655474361303,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider02_Handle_Off.png"
+  },
+  "59a11a8c-a90f-4390-a21f-556f6a9849f6": {
+    "asset": 1627618269000,
+    "meta": 1655474361311,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider02_Handle_On.png"
+  },
+  "106e65bf-76da-4c59-a975-53e4476e98f5": {
+    "asset": 1627618378000,
+    "meta": 1655474361315,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider03_Fill_Green.png"
+  },
+  "40292002-ea49-44d7-b5e4-d8c66636b61a": {
+    "asset": 1627618319000,
+    "meta": 1655474361328,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider03_Fill_White.png"
+  },
+  "e35aa0b8-679f-4ca8-8413-3c25fcaf3e2f": {
+    "asset": 1627618254000,
+    "meta": 1655474361337,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider03_FrontFrame.png"
+  },
+  "15a6017a-ba08-4157-9d92-4f21da83396a": {
+    "asset": 1627618410000,
+    "meta": 1655474361353,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider03_InnerFrame.png"
+  },
+  "76732089-7dd5-4cf2-a4f3-c38c9e9b0cd8": {
+    "asset": 1627618355000,
+    "meta": 1655474361355,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider03_Partten.png"
+  },
+  "b1e8e811-b832-43ea-8fe2-230e029d4098": {
+    "asset": 1627618525000,
+    "meta": 1655474361358,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Blue.png"
+  },
+  "6a660e5a-e344-4ff7-a821-9cced5554c4f": {
+    "asset": 1627618240000,
+    "meta": 1655474361361,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Gray.png"
+  },
+  "e21cb198-2bc1-4066-84d0-c9aab2dd5e50": {
+    "asset": 1627618415000,
+    "meta": 1655474361372,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Green.png"
+  },
+  "f0ab7b3b-7ae6-41f4-b541-0416bc45d6ee": {
+    "asset": 1627618433000,
+    "meta": 1655474361386,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Purple.png"
+  },
+  "6f99acc2-49e6-480a-a70b-cc4fe508b3f3": {
+    "asset": 1627618527000,
+    "meta": 1655474361392,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Red.png"
+  },
+  "422aa00b-3fde-43fc-872c-674ab8e44cd1": {
+    "asset": 1627618317000,
+    "meta": 1655474361414,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Frame.png"
+  },
+  "729e2e43-1564-40d1-be0a-ae1cf1df4c51": {
+    "asset": 1627618537000,
+    "meta": 1655474361416,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Gary.png"
+  },
+  "35839cd5-2b48-4b40-9652-dc1a8e8aff84": {
+    "asset": 1627618356000,
+    "meta": 1655474361419,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Fill_Yellow.png"
+  },
+  "1ea5554f-20db-4be3-abc1-ca533732289d": {
+    "asset": 1627618402000,
+    "meta": 1655474361421,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_Frame_Line.png"
+  },
+  "5e3d1bfa-fc1d-4e9d-b069-9103e355ed0d": {
+    "asset": 1627618442000,
+    "meta": 1655474361435,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Blue.png"
+  },
+  "8ee274fd-01c6-4ce5-9eba-f03f04adced4": {
+    "asset": 1627618419000,
+    "meta": 1655474361437,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Green.png"
+  },
+  "f1503308-3e2a-4b76-8924-ba7a61535a23": {
+    "asset": 1627618378000,
+    "meta": 1655474361457,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Purple.png"
+  },
+  "6613468b-f83d-4c24-ab67-5e78102a1c79": {
+    "asset": 1627618487000,
+    "meta": 1655474361462,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Red.png"
+  },
+  "9deb4ee9-98d9-45b4-abfb-ce607b69c622": {
+    "asset": 1627618634000,
+    "meta": 1655474361466,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_Fill1_Orange.png"
+  },
+  "26310fe2-fcbe-492e-8d11-4899f5f40d20": {
+    "asset": 1627618222000,
+    "meta": 1655474361468,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider04_IconType_IconFrame_Yellow.png"
+  },
+  "617b1611-4117-4e57-a822-855175c6198d": {
+    "asset": 1627618293000,
+    "meta": 1655474361472,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_Fill1_White.png"
+  },
+  "5460c2c1-06c5-488a-83e9-2dadda7644e8": {
+    "asset": 1627618546000,
+    "meta": 1655474361477,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_Fill2_Green.png"
+  },
+  "8964e0b8-1207-4058-82b6-e7a99cd15602": {
+    "asset": 1627618626000,
+    "meta": 1655474361492,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_FrontFrame.png"
+  },
+  "5a5c7830-7eb6-48ea-aa39-b3e0263736d1": {
+    "asset": 1627618436000,
+    "meta": 1655474361496,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_Fill2_White.png"
+  },
+  "0dee3e80-8b0f-48f8-81fd-ae7f8ff224e0": {
+    "asset": 1627618554000,
+    "meta": 1655474361510,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_InnerFrame1.png"
+  },
+  "bb1b3a2f-180f-46dd-a374-1d0870ed756b": {
+    "asset": 1627618419000,
+    "meta": 1655474361516,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_InnerFrame2.png"
+  },
+  "fd13681a-f251-432d-a71d-8935ec449e2e": {
+    "asset": 1627618575000,
+    "meta": 1655474361519,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_PictureFrame2.png"
+  },
+  "7085443f-8a9a-46f4-bfd9-a4e7e25ced77": {
+    "asset": 1627618292000,
+    "meta": 1655474361523,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_PictureFrame3.png"
+  },
+  "1482c0c7-7118-416f-9230-98b5a6d29693": {
+    "asset": 1627618422000,
+    "meta": 1655474361525,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Slider\\Slider05_UserInfo_PictureFrame1.png"
+  },
+  "8880e21b-2dc5-4ba1-9621-c150c65841ec": {
+    "asset": 1627618584000,
+    "meta": 1655474361536,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Check_s.Png"
+  },
+  "2ff0acf3-8c8c-4a83-af52-2e20ded243c4": {
+    "asset": 1627618624000,
+    "meta": 1655474361539,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Check_l.Png"
+  },
+  "59cd7321-420d-4f71-b358-6161f236634f": {
+    "asset": 1627618482000,
+    "meta": 1655474361542,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Clover.Png"
+  },
+  "3ec7063c-fb5c-4255-82e3-ecf6776df92f": {
+    "asset": 1627618478000,
+    "meta": 1655474361568,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Coins.Png"
+  },
+  "aa9370b1-a230-4c37-8f2b-f65fb09f3feb": {
+    "asset": 1627618503000,
+    "meta": 1655474361577,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Coin.Png"
+  },
+  "0c91e8e1-6aa1-406b-a919-1f00546ae685": {
+    "asset": 1627618469000,
+    "meta": 1655474361579,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Crown.Png"
+  },
+  "e1d1c21b-07f2-48ef-b996-b84b77577e6e": {
+    "asset": 1627618550000,
+    "meta": 1655474361582,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Horner.Png"
+  },
+  "130e2c1c-321e-496f-959e-8436c17a4f8f": {
+    "asset": 1627618353000,
+    "meta": 1655474361586,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Gem.Png"
+  },
+  "20db1733-59cc-4aab-9be2-de6952ce16d8": {
+    "asset": 1627618250000,
+    "meta": 1655474361589,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Key.Png"
+  },
+  "a215bb14-fcba-4b25-a118-d13543da2f07": {
+    "asset": 1627618336000,
+    "meta": 1655474361592,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Lock.Png"
+  },
+  "636a1bfc-0985-4f36-bf51-e0f62c4ce7f4": {
+    "asset": 1627618576000,
+    "meta": 1655474361605,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Medal_Bronze.Png"
+  },
+  "fc7621ed-b28f-4b25-96b2-cbbb841112ab": {
+    "asset": 1627618283000,
+    "meta": 1655474361626,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Medal_Silver.Png"
+  },
+  "e2a17058-524a-48cc-b35f-0dd782070646": {
+    "asset": 1627618218000,
+    "meta": 1655474361629,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Medal_Gray.Png"
+  },
+  "57087136-275b-4741-8744-74781077c1ec": {
+    "asset": 1627618231000,
+    "meta": 1655474361634,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Medal_Gold.Png"
+  },
+  "a64facc4-8f5f-4c76-8b95-1f1dc3546da2": {
+    "asset": 1627618310000,
+    "meta": 1655474361637,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Page_Next.Png"
+  },
+  "51d8c939-8c98-41a3-b70b-e2336c8fd8e3": {
+    "asset": 1627618422000,
+    "meta": 1655474361641,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Soulgem.Png"
+  },
+  "b625e21d-6058-4e2b-93bf-afeb8e81120e": {
+    "asset": 1627618335000,
+    "meta": 1655474361644,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Star00.Png"
+  },
+  "214aca32-b2ae-48a9-bb7a-01251d068909": {
+    "asset": 1627618414000,
+    "meta": 1655474361647,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Page_Prev.Png"
+  },
+  "b1e7af0a-3730-4e1c-a7f7-e3eb05fadf96": {
+    "asset": 1627618396000,
+    "meta": 1655474361658,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Star01_Off.png"
+  },
+  "6a61455b-6657-489d-8050-dcbfe441b120": {
+    "asset": 1627618391000,
+    "meta": 1655474361670,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Star01_On.Png"
+  },
+  "c52dff60-ddd3-4c89-b5ca-2e79ce5cdd4b": {
+    "asset": 1627618471000,
+    "meta": 1655474361675,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Star02_Off.Png"
+  },
+  "17818bc5-22ea-4b4e-969f-bb407cd3ad26": {
+    "asset": 1627618259000,
+    "meta": 1655474361681,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ImageIcon_Star02_On.Png"
+  },
+  "77498b1f-b714-4f5d-bef1-33bce87a2cb6": {
+    "asset": 1627618603000,
+    "meta": 1655474361683,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Falg.Png"
+  },
+  "49eadff1-17cc-4ee4-adc0-36ae62406aed": {
+    "asset": 1627618565000,
+    "meta": 1655474361685,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Chest.Png"
+  },
+  "7c213262-1cf5-4792-9c26-a00fc8dcf493": {
+    "asset": 1627618351000,
+    "meta": 1655474361688,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Message.Png"
+  },
+  "d133a14c-0676-4d56-b08a-b428f676765f": {
+    "asset": 1627618207000,
+    "meta": 1655474361701,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Shop.Png"
+  },
+  "678a2ce6-cdab-466b-9110-baea6fdc3c7c": {
+    "asset": 1627618502000,
+    "meta": 1655474361706,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Setting.Png"
+  },
+  "5ff305ef-b368-48ee-b4f8-9fa2fe05e6c8": {
+    "asset": 1627618560000,
+    "meta": 1655474361723,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Add.Png"
+  },
+  "e5fd4780-6b77-4d21-912f-bf11e2684d9a": {
+    "asset": 1627618328000,
+    "meta": 1655474361727,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Add_Friend.Png"
+  },
+  "6d402536-35ce-44f7-b5d1-20d127cac4f7": {
+    "asset": 1627618580000,
+    "meta": 1655474361729,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_MenuIcon_Trophy.Png"
+  },
+  "310090e1-9ef9-4802-a0af-17301aed2dfa": {
+    "asset": 1627618458000,
+    "meta": 1655474361733,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Bell.Png"
+  },
+  "f56ef33e-51f6-43c4-8b19-eb9ad00c1bc5": {
+    "asset": 1627618557000,
+    "meta": 1655474361745,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Coupon.Png"
+  },
+  "cf000b30-3c30-48ea-8739-0f5a4f96c7a0": {
+    "asset": 1627618519000,
+    "meta": 1655474361747,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Close.Png"
+  },
+  "4e707f91-6a14-47d7-a45b-08673cb21329": {
+    "asset": 1627618259000,
+    "meta": 1655474361750,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Continue.Png"
+  },
+  "43dff090-644b-44c5-9252-932d685fe59c": {
+    "asset": 1627618241000,
+    "meta": 1655474361757,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Crown.Png"
+  },
+  "9ef62646-6d72-4590-87c6-82c030513a22": {
+    "asset": 1627618621000,
+    "meta": 1655474361774,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_decoration.Png"
+  },
+  "647ce64f-0e7c-4c3b-a832-d68330dd1323": {
+    "asset": 1627618398000,
+    "meta": 1655474361776,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_energy.Png"
+  },
+  "20e33e8c-c9d7-454c-a843-7b29381dc2cb": {
+    "asset": 1627618627000,
+    "meta": 1655474361778,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Facebook.Png"
+  },
+  "1364c57d-992e-42a1-b6bf-cb46b23af1bc": {
+    "asset": 1627618565000,
+    "meta": 1655474361780,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Dollar.Png"
+  },
+  "22168238-a2a7-44b0-903b-13399f39c0c5": {
+    "asset": 1627618538000,
+    "meta": 1655474361791,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Facebook_Whie.Png"
+  },
+  "c9822222-dffa-4732-b9d3-8b012cfb50d1": {
+    "asset": 1627618265000,
+    "meta": 1655474361800,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Home.Png"
+  },
+  "b97a288c-47c7-48e5-8222-357e7d362498": {
+    "asset": 1627618504000,
+    "meta": 1655474361804,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_GameJoystick.Png"
+  },
+  "0ee3f9c3-c704-4259-ac29-bf5b2cc905e3": {
+    "asset": 1627618566000,
+    "meta": 1655474361811,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Lock.Png"
+  },
+  "ac0aceeb-7b54-45fb-878d-0bdf16a5dfa5": {
+    "asset": 1627618307000,
+    "meta": 1655474361829,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Modify.Png"
+  },
+  "c6ab163a-cd33-4baa-89ee-a5bc5f9bc3f3": {
+    "asset": 1627618439000,
+    "meta": 1655474361831,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Music.Png"
+  },
+  "cb44e304-95db-4032-ac8a-99c06d8fae9d": {
+    "asset": 1627618359000,
+    "meta": 1655474361837,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Pause.Png"
+  },
+  "d2b5be7a-206c-4ff2-9dcf-c56f8a51b02f": {
+    "asset": 1627618268000,
+    "meta": 1655474361840,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Quit.Png"
+  },
+  "48bd704a-dd31-405d-af94-2f67c6a42cc2": {
+    "asset": 1627618257000,
+    "meta": 1655474361853,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Restart.Png"
+  },
+  "2a1017a8-a811-47f7-b398-d5247cdc0654": {
+    "asset": 1627618585000,
+    "meta": 1655474361860,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Sound.Png"
+  },
+  "842a2b4c-64d3-496c-bacc-648afdf073c2": {
+    "asset": 1627618548000,
+    "meta": 1655474361863,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Resume.Png"
+  },
+  "494920ff-bf76-429a-a3c6-77ae8ffe9818": {
+    "asset": 1627618506000,
+    "meta": 1655474361868,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_Support.Png"
+  },
+  "0c1e444d-e9ba-445b-852c-46b3c9291b47": {
+    "asset": 1627618540000,
+    "meta": 1655474361880,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_PictoIcon_User.Png"
+  },
+  "0df3cfa2-d759-40cb-9489-a676b8a89586": {
+    "asset": 1627618495000,
+    "meta": 1655474361882,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Coin_02.Png"
+  },
+  "90f54ae5-5568-479f-b2d2-f17ad3dd79d9": {
+    "asset": 1627618470000,
+    "meta": 1655474361884,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Coin_01.Png"
+  },
+  "4f5580d2-4618-41bb-ae7c-2718e9cea274": {
+    "asset": 1627618328000,
+    "meta": 1655474361902,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Gem_01.Png"
+  },
+  "01f68b67-1fc5-48bc-88da-3c4ef28763eb": {
+    "asset": 1627618386000,
+    "meta": 1655474361906,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Coin_04.Png"
+  },
+  "37065eb9-1c7f-466d-a4be-340f58ae2220": {
+    "asset": 1627618342000,
+    "meta": 1655474361911,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Gem_03.Png"
+  },
+  "26e09824-7eb9-412c-9373-0402d8b5cb2e": {
+    "asset": 1627618441000,
+    "meta": 1655474361913,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Gem_02.Png"
+  },
+  "cadb0a99-7d1a-456b-a513-e33e9cdff9f6": {
+    "asset": 1627618479000,
+    "meta": 1655474361917,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Soulgem_01.Png"
+  },
+  "1ab40b61-2f9f-4014-96aa-b6753ad4b6d3": {
+    "asset": 1627618532000,
+    "meta": 1655474361922,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Soulgem_02.Png"
+  },
+  "974749b2-33fa-4c4b-b968-9c066ca6042c": {
+    "asset": 1627618425000,
+    "meta": 1655474361936,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Coin_03.Png"
+  },
+  "67ab449a-73c1-4efe-9ba8-313fad682a73": {
+    "asset": 1627618248000,
+    "meta": 1655474361942,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Gem_04.Png"
+  },
+  "71dd611d-aa5d-44ff-9ef3-c201489a8f20": {
+    "asset": 1627618306000,
+    "meta": 1655474361965,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Arrow.Png"
+  },
+  "24d37e9c-9f24-4b9f-8ab0-8b798aa569e4": {
+    "asset": 1627618296000,
+    "meta": 1655474361968,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Soulgem_04.Png"
+  },
+  "2a7ffa12-2ea8-4f81-b3e8-0b770442f829": {
+    "asset": 1627618279000,
+    "meta": 1655474361971,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_ShopIcon_Soulgem_03.Png"
+  },
+  "8ea34770-11d7-435b-a93b-5bf449907693": {
+    "asset": 1627618556000,
+    "meta": 1655474361973,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Attack.Png"
+  },
+  "7bfb7463-4d8b-4925-a86a-27f18456ff97": {
+    "asset": 1627618215000,
+    "meta": 1655474361982,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Energe.Png"
+  },
+  "f2717553-dce2-4cd3-9d88-4f7981e27057": {
+    "asset": 1627618574000,
+    "meta": 1655474361997,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Ring.Png"
+  },
+  "bfd7c466-9d2b-4206-8fa3-2b9205ae287e": {
+    "asset": 1627618288000,
+    "meta": 1655474362001,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Potion.Png"
+  },
+  "5d58ec75-f12e-4e46-9d21-53633a696dcf": {
+    "asset": 1627618260000,
+    "meta": 1655474362023,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_SkillIcon_Shield.Png"
+  },
+  "170ffb58-3739-48b1-ba1e-fda310fb66bd": {
+    "asset": 1627618530000,
+    "meta": 1655474362030,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_StatsIcon_Gem_White.Png"
+  },
+  "eec7b42b-359b-4935-bed6-51b32bcc6c7e": {
+    "asset": 1627618308000,
+    "meta": 1655474362033,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_StatsIcon_Attack_White.Png"
+  },
+  "93651b22-cf93-46e4-a204-393974a8e15f": {
+    "asset": 1627618482000,
+    "meta": 1655474362036,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_StatsIcon_Defense_White.Png"
+  },
+  "7c343d5b-08b0-4ab4-8162-79ae98ecd9a4": {
+    "asset": 1627618300000,
+    "meta": 1655474362047,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_StatsIcon_Gold_White.Png"
+  },
+  "75b60aa7-1251-4ea1-a47b-646b3cae7cbf": {
+    "asset": 1627618587000,
+    "meta": 1655474362050,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_Icon\\Icon_StatsIcon_Health_White.Png"
+  },
+  "a9b635a8-f746-43f2-94a2-44ce5ed2eb06": {
+    "asset": 1627618205000,
+    "meta": 1655474362068,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Deco_Laurel_L.Png"
+  },
+  "1a74c3cf-a7a6-46c7-be64-b2ad18130ef7": {
+    "asset": 1627618369000,
+    "meta": 1655474362086,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Arrow2.Png"
+  },
+  "a17e4304-f076-474f-86d1-8ab81864f8b2": {
+    "asset": 1627618332000,
+    "meta": 1655474362092,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Arrow1.Png"
+  },
+  "4bcfa6b5-6d23-4548-b995-b21f96ee4219": {
+    "asset": 1627618631000,
+    "meta": 1655474362104,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Arrow3.Png"
+  },
+  "8e5bdf27-4ce2-4db6-a454-443bc49d2798": {
+    "asset": 1627618614000,
+    "meta": 1655474362116,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Skull1.Png"
+  },
+  "b9edaced-7696-41f3-ac9b-ff47f80617e5": {
+    "asset": 1627618276000,
+    "meta": 1655474362129,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Background.Png"
+  },
+  "1ecfc288-9a6a-4667-8def-0f3cfb2b4932": {
+    "asset": 1627618375000,
+    "meta": 1655474362131,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Deco_Laurel_R.Png"
+  },
+  "c8824a56-a21e-45f2-a7e9-871a9d162612": {
+    "asset": 1627618612000,
+    "meta": 1655474362143,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Skull2.Png"
+  },
+  "c38e0f2d-2aa2-4f7d-aa94-efd9f4bc4633": {
+    "asset": 1627618477000,
+    "meta": 1655474362162,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_DefeatScene_Skull3.Png"
+  },
+  "bc55632b-b230-4f70-85e6-3b6a0e3ac860": {
+    "asset": 1627618251000,
+    "meta": 1655474362174,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Particle_01.Png"
+  },
+  "e67a27dc-3077-4093-a026-16a907393cd4": {
+    "asset": 1627618346000,
+    "meta": 1655474362182,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Grow_White.Png"
+  },
+  "3d4ef177-9733-4762-a88f-e8c0369ea3c4": {
+    "asset": 1627618258000,
+    "meta": 1655474362191,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Particle_02.Png"
+  },
+  "d87e7214-e2da-4e50-b24f-3b375fd8e2c6": {
+    "asset": 1627618316000,
+    "meta": 1655474362204,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Particle_03.Png"
+  },
+  "3f26c4db-560f-4f46-b71d-139fa48c763a": {
+    "asset": 1627618590000,
+    "meta": 1655474362206,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Particle_05.Png"
+  },
+  "5589eede-82cb-4a8e-b084-a3a4d3244413": {
+    "asset": 1627618631000,
+    "meta": 1655474362209,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Particle_04.Png"
+  },
+  "80dd4e71-2504-4d40-b510-16a7fbb5d599": {
+    "asset": 1627618256000,
+    "meta": 1655474362226,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Iconscene_Samplearea.Png"
+  },
+  "67dd90cb-5883-4da7-b159-4c528dfdee3d": {
+    "asset": 1627618245000,
+    "meta": 1655474362231,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Rainbow.Png"
+  },
+  "c5db4cca-e09c-4087-9fc1-362428fc306b": {
+    "asset": 1627618483000,
+    "meta": 1655474362251,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark1.Png"
+  },
+  "3e9fc994-e0ce-48bd-9bf9-ebd255396d36": {
+    "asset": 1627618449000,
+    "meta": 1655474362256,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark2.Png"
+  },
+  "5fa77501-00e2-447e-82ec-fb28f88319ab": {
+    "asset": 1627618429000,
+    "meta": 1655474362263,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark5.Png"
+  },
+  "d680d1d3-1f81-41a5-b3ec-848c35395a9e": {
+    "asset": 1627618554000,
+    "meta": 1655474362268,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark3.Png"
+  },
+  "726efb35-d813-41ad-9e9e-6e05052368ec": {
+    "asset": 1627618416000,
+    "meta": 1655474362271,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark4.Png"
+  },
+  "aeadb25c-0635-4ead-b768-40530fa42a3a": {
+    "asset": 1627618561000,
+    "meta": 1655474362297,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Effect_Rotate_White.Png"
+  },
+  "7f405a7d-ea36-4318-bb49-a9e39b2b774d": {
+    "asset": 1627618473000,
+    "meta": 1655474362304,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Line_Left_White.Png"
+  },
+  "3e185153-a428-4548-b865-4dc01a7367c6": {
+    "asset": 1627618407000,
+    "meta": 1655474362307,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_LevelupScene_Mark6.Png"
+  },
+  "011542a9-75bb-4385-b3be-c148d92e37d5": {
+    "asset": 1627618606000,
+    "meta": 1655474362329,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Line_Right_White.Png"
+  },
+  "265b2b98-aa3b-4803-a1f4-3f0091650e34": {
+    "asset": 1627618454000,
+    "meta": 1655474362334,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Luckybox_Bronze.Png"
+  },
+  "0e16f16e-68e0-4608-a26e-c4f4e706c156": {
+    "asset": 1627618408000,
+    "meta": 1655474362336,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Luckybox_Diamond.Png"
+  },
+  "b9205870-6ad8-4c6d-b092-74abbea218e2": {
+    "asset": 1627618406000,
+    "meta": 1655474362343,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Luckybox_Gold.Png"
+  },
+  "f209440b-94f7-4b50-948b-be005029c003": {
+    "asset": 1627618623000,
+    "meta": 1655474362359,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Luckybox_Platinum.Png"
+  },
+  "2a1cd54d-9e5c-4d64-bf38-faa07877353b": {
+    "asset": 1627618462000,
+    "meta": 1655474362379,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Text_Levelup.Png"
+  },
+  "8523fb6a-25c1-484f-9059-0ee47523172c": {
+    "asset": 1627618562000,
+    "meta": 1655474362384,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Luckybox_Silver.Png"
+  },
+  "f72a9e7e-9aba-4510-a715-be1f829e4f73": {
+    "asset": 1627618345000,
+    "meta": 1655474362388,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Text_Titlesample02.Png"
+  },
+  "ac65e495-2fda-4dca-a720-7259655ee859": {
+    "asset": 1627618312000,
+    "meta": 1655474362394,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Text_Titlesample01.Png"
+  },
+  "4aa48103-27ff-43e2-a75e-01d9fde83966": {
+    "asset": 1627618319000,
+    "meta": 1655474362401,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Userpicture_L_Sample2.Png"
+  },
+  "377c32c7-02d8-4c71-9ef7-8e89eecbe771": {
+    "asset": 1627618343000,
+    "meta": 1655474362403,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Userpicture_L_Sample1.Png"
+  },
+  "e7097cf4-a695-4906-ae2d-70fe5928d8f8": {
+    "asset": 1627618213000,
+    "meta": 1655474362416,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Userpicture_S_Sample1.Png"
+  },
+  "e028f34f-4344-4573-9913-40142d8fedbe": {
+    "asset": 1627618280000,
+    "meta": 1655474362420,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_image\\Image_Userpicture_S_Sample2.Png"
+  },
+  "e043338b-aeb9-48fc-8ec4-abec305e2821": {
+    "asset": 1627618401000,
+    "meta": 1655474362440,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Chn.Png"
+  },
+  "8aaf51c4-a7e4-4965-a860-09e2a2f029df": {
+    "asset": 1627618224000,
+    "meta": 1655474362443,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Deu.Png"
+  },
+  "d36e9e5a-1a30-404d-8aef-78d7020d5855": {
+    "asset": 1627618573000,
+    "meta": 1655474362448,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Eng.Png"
+  },
+  "68ad31d3-ce0e-4541-a58b-49d809607dc0": {
+    "asset": 1627618535000,
+    "meta": 1655474362458,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Fra.Png"
+  },
+  "97d1d89c-1c8a-4f71-bd43-8454cd16b912": {
+    "asset": 1627618257000,
+    "meta": 1655474362463,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Ind.Png"
+  },
+  "3319e801-4901-43e7-9112-d6ef5373d95b": {
+    "asset": 1627618339000,
+    "meta": 1655474362466,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Esp.Png"
+  },
+  "0877a53c-cef4-428a-8546-7f0af2172464": {
+    "asset": 1627618429000,
+    "meta": 1655474362471,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Jpn.Png"
+  },
+  "f266ad6f-cf13-4d72-9e65-1745ea643f92": {
+    "asset": 1627618438000,
+    "meta": 1655474362481,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Kor.Png"
+  },
+  "9c744f26-2e0a-4b83-ac47-e5e68e2ff653": {
+    "asset": 1627618324000,
+    "meta": 1655474362487,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Prt.Png"
+  },
+  "8d2f8fe4-babb-4df8-801e-4c1d9dcb4ddc": {
+    "asset": 1627618417000,
+    "meta": 1655474362496,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Rus.Png"
+  },
+  "d9598b9a-1c0b-4e7f-b337-1dd7df421441": {
+    "asset": 1627618214000,
+    "meta": 1655474362502,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Tur.Png"
+  },
+  "eaae197a-b44b-439e-befa-a4fb8754d6e3": {
+    "asset": 1627618490000,
+    "meta": 1655474362528,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Eng.Png"
+  },
+  "b2fcb05c-bf7e-444e-944c-fb4d2517edc9": {
+    "asset": 1627618570000,
+    "meta": 1655474362530,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Deu.Png"
+  },
+  "852f3e52-90b2-4e6f-ad09-99069841186c": {
+    "asset": 1627618334000,
+    "meta": 1655474362532,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Large_Twn.Png"
+  },
+  "cd68648e-10d3-408e-b731-6a9872c2853a": {
+    "asset": 1627618335000,
+    "meta": 1655474362534,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Chn.Png"
+  },
+  "d6831482-8ed6-4175-8714-a90e3d6250d1": {
+    "asset": 1627618234000,
+    "meta": 1655474362543,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Esp.Png"
+  },
+  "0bc04b44-4748-4a77-b736-0300d77423f4": {
+    "asset": 1627618352000,
+    "meta": 1655474362549,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Fra.Png"
+  },
+  "101076f6-d7e1-4840-ba23-f5a5e1a0f536": {
+    "asset": 1627618467000,
+    "meta": 1655474362568,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Jpn.Png"
+  },
+  "2e6efa0a-dd7c-4069-af83-2fef8fdb9c89": {
+    "asset": 1627618569000,
+    "meta": 1655474362572,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Ind.Png"
+  },
+  "509e57d8-3075-40b1-aee7-5d06f73be961": {
+    "asset": 1627618336000,
+    "meta": 1655474362583,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Kor.Png"
+  },
+  "73b8cf24-713f-443b-8b47-f51ec71130f3": {
+    "asset": 1627618262000,
+    "meta": 1655474362587,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Prt.Png"
+  },
+  "27b629c3-c7e3-40cc-8a7b-6de2dc7faa53": {
+    "asset": 1627618343000,
+    "meta": 1655474362589,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Rus.Png"
+  },
+  "a5bf947c-7aa9-4e4b-bebc-b23b10603849": {
+    "asset": 1627618600000,
+    "meta": 1655474362592,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Tur.Png"
+  },
+  "7e670ed0-4a73-4efd-afaa-516bb645d0e4": {
+    "asset": 1627618510000,
+    "meta": 1655474362606,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_LanguageFlag\\Language_Small_Twn.Png"
+  },
+  "a4f9c04b-2b70-4347-aafa-dc16908bdd00": {
+    "asset": 1627618315000,
+    "meta": 1655474362609,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\InputField_Frame_Error.Png"
+  },
+  "e86dda55-b6e9-44d1-9f37-63c07327ab75": {
+    "asset": 1627618324000,
+    "meta": 1655474362626,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\InputField_Frame_Hint.Png"
+  },
+  "daf859b8-db60-46e5-ad3c-84a33618c009": {
+    "asset": 1627618372000,
+    "meta": 1655474362632,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\InputField_Frame_Normal.Png"
+  },
+  "32a97225-5895-488e-af81-8e4cdaaa0c5f": {
+    "asset": 1627618314000,
+    "meta": 1655474362645,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\InputField_Frame_Typing.Png"
+  },
+  "53c0bef4-454c-4e7c-bb1f-67f1ecc8e23f": {
+    "asset": 1627618241000,
+    "meta": 1655474362651,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Input_Field_Icon_Error.Png"
+  },
+  "098d12e1-6448-4857-9ef7-5962caf8c738": {
+    "asset": 1627618461000,
+    "meta": 1655474362654,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Input_Field_Icon_Email.Png"
+  },
+  "685f0eb1-ec90-42a0-98a4-3aa57d7a7a9e": {
+    "asset": 1627618481000,
+    "meta": 1655474362656,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Input_Field_Icon_Pw.Png"
+  },
+  "a026e2fc-465a-4b82-b540-c00f88a00351": {
+    "asset": 1627618526000,
+    "meta": 1655474362663,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Input_Field_Icon_Required_Circle.Png"
+  },
+  "b6305907-903b-4ae8-a369-d6eccff81b29": {
+    "asset": 1627618593000,
+    "meta": 1655474362670,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Input_Field_Icon_User.Png"
+  },
+  "485b3003-a0b0-495f-b1e8-6b848566eb3e": {
+    "asset": 1627618299000,
+    "meta": 1655474362688,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Joysick_Point.Png"
+  },
+  "4b1bb044-38e0-4f1d-930a-9b42a4c2791e": {
+    "asset": 1627618464000,
+    "meta": 1655474362693,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Joysick_Bg.Png"
+  },
+  "bb387f98-7113-43d6-bcba-d88abf1ebbe7": {
+    "asset": 1627618219000,
+    "meta": 1655474362698,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Notify_Green.Png"
+  },
+  "12b8ffc0-9db8-44e7-8ddd-0858e3aa9137": {
+    "asset": 1627618545000,
+    "meta": 1655474362704,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Notify_Orange.Png"
+  },
+  "39c64c3c-a441-4b26-b6d3-d413a47966f8": {
+    "asset": 1627618598000,
+    "meta": 1655474362708,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Notify_Icon_Warning.Png"
+  },
+  "2a81eae3-418b-47b0-a72c-0a436d5c582d": {
+    "asset": 1627618391000,
+    "meta": 1655474362719,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Pagenavi_Bg1.Png"
+  },
+  "7cef1682-25a4-4f72-b7a1-ea9d82ed7c8b": {
+    "asset": 1627618403000,
+    "meta": 1655474362722,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Notify_Red.Png"
+  },
+  "086d8b4f-be76-4634-a53e-73bc3dfd8d87": {
+    "asset": 1627618254000,
+    "meta": 1655474362725,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Pagenavi_Bg2.Png"
+  },
+  "467ee909-ddf4-4342-8582-9e25a058964c": {
+    "asset": 1627618247000,
+    "meta": 1655474362740,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Pagenavi_Point.Png"
+  },
+  "4ea9815f-734e-4221-aa44-1eadb4c1ccd0": {
+    "asset": 1627618478000,
+    "meta": 1655474362743,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Button_Frame.Png"
+  },
+  "e76ae3a1-4eb5-4cc6-b851-509a8ae30578": {
+    "asset": 1627618423000,
+    "meta": 1655474362749,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Button_Icon.Png"
+  },
+  "68e43bc5-3c89-40bb-83c5-4bd978da5622": {
+    "asset": 1627618434000,
+    "meta": 1655474362761,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Frame02.Png"
+  },
+  "f9d55656-ee43-4ba9-9ff2-49dbf9fcfceb": {
+    "asset": 1627618495000,
+    "meta": 1655474362764,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Icon_Coin.Png"
+  },
+  "ea4194e6-f564-4fa0-af69-1191dc233057": {
+    "asset": 1627618253000,
+    "meta": 1655474362766,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Frame01.Png"
+  },
+  "3003b7ca-8fc8-4e7d-b543-879b04bf5fd4": {
+    "asset": 1627618598000,
+    "meta": 1655474362770,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Icon_Soulgem.Png"
+  },
+  "4692ae32-aace-4fef-a662-e3f2150b539c": {
+    "asset": 1627618533000,
+    "meta": 1655474362777,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Icon_Gem.Png"
+  },
+  "0350b1b5-86ec-4b32-b249-f7ac377d547c": {
+    "asset": 1627618500000,
+    "meta": 1655474362787,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Status_Icon_Star.Png"
+  },
+  "e99b424c-0343-4a9e-9e3f-deced1e527dd": {
+    "asset": 1627618368000,
+    "meta": 1655474362794,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Check_Off.Png"
+  },
+  "319ee414-14b5-40ed-b176-5779aec1310f": {
+    "asset": 1627618628000,
+    "meta": 1655474362810,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Check_On.Png"
+  },
+  "67eb348e-d973-4409-bece-ee3bd5c81597": {
+    "asset": 1627618539000,
+    "meta": 1655474362813,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Radio_Btn_On.Png"
+  },
+  "1ac5b4c0-afe1-4801-b4a4-587831cd5173": {
+    "asset": 1627618587000,
+    "meta": 1655474362815,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Radio_Btn_Off.Png"
+  },
+  "75e17aee-d758-4d48-b0a7-2ae0f69da14a": {
+    "asset": 1627618496000,
+    "meta": 1655474362816,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Switch_Bg.Png"
+  },
+  "5700f343-38b4-47d8-8903-aa5529aae88d": {
+    "asset": 1627618221000,
+    "meta": 1655474362832,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Switch_Off.Png"
+  },
+  "c2d7b700-472f-4cdf-8dc2-37db620559d9": {
+    "asset": 1627618290000,
+    "meta": 1655474362837,
+    "relativePath": "GUI Kit resource\\Sprites\\Demo\\Demo_UI\\Toggle_Switch_On.Png"
+  },
+  "42156ef1-f44e-46c8-a416-789330009b32": {
+    "asset": 1627618333000,
+    "meta": 1655474362862,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Anvil.Png"
+  },
+  "fcb8cc63-71cf-4b42-a1ba-5684c237e356": {
+    "asset": 1627618520000,
+    "meta": 1655474362865,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Arrow.Png"
+  },
+  "f664fa3f-b167-4041-9fb5-565b11eebe14": {
+    "asset": 1627618348000,
+    "meta": 1655474362872,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Chicken.Png"
+  },
+  "0ddf3342-aa31-4875-8bcc-ef1927c6a48e": {
+    "asset": 1627618262000,
+    "meta": 1655474362876,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Bomb.Png"
+  },
+  "135a68d8-8e21-4748-9d5d-98634fdecf47": {
+    "asset": 1627618468000,
+    "meta": 1655474362878,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Candle.Png"
+  },
+  "39b76f7c-d71c-45da-bb3d-e7fd5a339b95": {
+    "asset": 1627618305000,
+    "meta": 1655474362881,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Clover.Png"
+  },
+  "6a6c22b7-14bd-4639-a102-eeb458a4706f": {
+    "asset": 1627618328000,
+    "meta": 1655474362900,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Energy.Png"
+  },
+  "194c0f70-f497-454b-b961-844ccb829a65": {
+    "asset": 1627618287000,
+    "meta": 1655474362907,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Crown.Png"
+  },
+  "76e01ab0-84cc-43c1-aba9-82e12e7577ae": {
+    "asset": 1627618568000,
+    "meta": 1655474362925,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Gem.Png"
+  },
+  "1c985696-b84a-426b-9266-6474ff452d24": {
+    "asset": 1627618551000,
+    "meta": 1655474362930,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Envelope.Png"
+  },
+  "25db110c-5bfd-49e3-8164-45840b9d63d9": {
+    "asset": 1627618522000,
+    "meta": 1655474362935,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Gift.Png"
+  },
+  "c1ec6f7b-9467-4fb5-893a-8b68ab59309c": {
+    "asset": 1627618296000,
+    "meta": 1655474362951,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "72aa47fd-ee9b-42e3-a5bf-605fbb10942a": {
+    "asset": 1627618417000,
+    "meta": 1655474362955,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Hammer.Png"
+  },
+  "630f64b0-720f-4790-bc25-4e1df08f6a73": {
+    "asset": 1627618233000,
+    "meta": 1655474362957,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Gold.Png"
+  },
+  "b32462b0-93fa-4965-b85b-0ba31ceef364": {
+    "asset": 1627618466000,
+    "meta": 1655474362962,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Horner.Png"
+  },
+  "62358d6e-1de1-4ef4-96ff-804bcfae7a6b": {
+    "asset": 1627618403000,
+    "meta": 1655474362976,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "61050157-9296-4675-b9f6-90a6bab1ec8e": {
+    "asset": 1627618558000,
+    "meta": 1655474362978,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Key.Png"
+  },
+  "08b8bc28-7271-4b39-bc12-0a301d2366dd": {
+    "asset": 1627618611000,
+    "meta": 1655474362984,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Letter.Png"
+  },
+  "2215f5fd-6567-49d9-87e2-497223977a57": {
+    "asset": 1627618292000,
+    "meta": 1655474362997,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Lock.Png"
+  },
+  "ad973fc4-3550-49c2-af14-84f6bb512291": {
+    "asset": 1627618504000,
+    "meta": 1655474363004,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Laurel.Png"
+  },
+  "f4459fca-899b-4cb0-b95e-5b1de37c1736": {
+    "asset": 1627618223000,
+    "meta": 1655474363021,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Mission.Png"
+  },
+  "1c158aac-406e-49ce-9c99-bb1af0664239": {
+    "asset": 1627618523000,
+    "meta": 1655474363029,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "06dacfd3-9583-427c-98c3-ccc41a2d9df0": {
+    "asset": 1627618536000,
+    "meta": 1655474363032,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Pickax.Png"
+  },
+  "dcd82eaf-d757-42b2-9c9d-f7b241639873": {
+    "asset": 1627618219000,
+    "meta": 1655474363034,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "f57b52a1-995d-4d51-aeb3-d39e034e57b7": {
+    "asset": 1627618602000,
+    "meta": 1655474363038,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "4009d7ba-48be-4c05-9fd2-9d76ec0484f1": {
+    "asset": 1627618323000,
+    "meta": 1655474363052,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "48d5ef0e-d70c-4b5e-91b9-df1e1fee068c": {
+    "asset": 1627618541000,
+    "meta": 1655474363063,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "5ef982b8-e195-487d-988c-d2c7b4519697": {
+    "asset": 1627618461000,
+    "meta": 1655474363074,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "36e00dce-877e-40f0-8ea2-2f6b748a463f": {
+    "asset": 1627618427000,
+    "meta": 1655474363076,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Scroll.Png"
+  },
+  "ab2b3b5f-84a7-4d64-8b76-93082edbcc72": {
+    "asset": 1627618392000,
+    "meta": 1655474363079,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "da3b4440-630b-460b-9428-7842fef38ab9": {
+    "asset": 1627618462000,
+    "meta": 1655474363082,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "a27f07c7-6ee0-4109-bdc4-2971115645b1": {
+    "asset": 1627618440000,
+    "meta": 1655474363090,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Setting.Png"
+  },
+  "61cba37d-38d2-4b1b-9ca3-251d165a5c58": {
+    "asset": 1627618370000,
+    "meta": 1655474363094,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "f62c5fe1-069b-4a6e-8a0b-9791f0465e27": {
+    "asset": 1627618456000,
+    "meta": 1655474363109,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "97854ad9-aa66-4cee-97be-d4a018024514": {
+    "asset": 1627618440000,
+    "meta": 1655474363114,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "3a6ebe41-8fa9-44ea-9c42-194146931da9": {
+    "asset": 1627618246000,
+    "meta": 1655474363117,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Shop.Png"
+  },
+  "8cf5decb-019d-40b4-a853-bbb5392dab3d": {
+    "asset": 1627618508000,
+    "meta": 1655474363123,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Skull.Png"
+  },
+  "8da15dcb-b22b-4022-a6c9-dced01a302a5": {
+    "asset": 1627618420000,
+    "meta": 1655474363132,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "a000f37b-dc02-49fb-a14b-7670edc55eac": {
+    "asset": 1627618413000,
+    "meta": 1655474363134,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "67a2fca5-15b2-4229-acdb-05771dc89a97": {
+    "asset": 1627618247000,
+    "meta": 1655474363137,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "91f4bf4c-4fbc-4523-b0c7-b52f973ecbbe": {
+    "asset": 1627618590000,
+    "meta": 1655474363139,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Talaria.Png"
+  },
+  "53a2f4b5-28c1-4aab-ab55-0c52c84cd602": {
+    "asset": 1627618613000,
+    "meta": 1655474363160,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Target.Png"
+  },
+  "3bd5c586-d8c6-4fd4-becd-0cdc904f29a9": {
+    "asset": 1627618411000,
+    "meta": 1655474363164,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Treasure.Png"
+  },
+  "031add40-3a5f-4a65-9b9c-ca4e2d883898": {
+    "asset": 1627618361000,
+    "meta": 1655474363168,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Trophy.Png"
+  },
+  "f73e3586-f6e2-45d9-a864-ea04654d2244": {
+    "asset": 1627618610000,
+    "meta": 1655474363188,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Arrow.Png"
+  },
+  "6867d06a-ccbf-41ea-9d2f-59d3ca4c1ef9": {
+    "asset": 1627618373000,
+    "meta": 1655474363191,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_128\\Icon_ItemIcon_Timer.Png"
+  },
+  "3dcf683f-2a41-464c-8867-445adcff6b8c": {
+    "asset": 1627618245000,
+    "meta": 1655474363194,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Candle.Png"
+  },
+  "a170f5d4-af8c-4e0f-9da9-85caff31624c": {
+    "asset": 1627618338000,
+    "meta": 1655474363196,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Anvil.Png"
+  },
+  "795a059c-8ec3-4e09-b565-5cb07f4a05c5": {
+    "asset": 1627618236000,
+    "meta": 1655474363208,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Bomb.Png"
+  },
+  "ad95a6a2-011e-42bc-b986-1bd3ff87387b": {
+    "asset": 1627618569000,
+    "meta": 1655474363238,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Clover.Png"
+  },
+  "0bfc5e11-91bc-40ca-949b-760a49e8f0a7": {
+    "asset": 1627618409000,
+    "meta": 1655474363245,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Crown.Png"
+  },
+  "3b3b1415-70bf-4bca-8b05-5a82330e6740": {
+    "asset": 1627618352000,
+    "meta": 1655474363251,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Envelope.Png"
+  },
+  "6a1c8dc1-24db-49a0-99b0-5f481492104d": {
+    "asset": 1627618357000,
+    "meta": 1655474363253,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Chicken.Png"
+  },
+  "0822a621-f658-4457-a6a6-253ec4ad0925": {
+    "asset": 1627618492000,
+    "meta": 1655474363257,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Energy.Png"
+  },
+  "2d365dc9-3bcc-433c-b2db-e7f9c8549676": {
+    "asset": 1627618489000,
+    "meta": 1655474363262,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Gem.Png"
+  },
+  "b5a5c6b7-0dea-4b2f-8ece-0ce415691f50": {
+    "asset": 1627618342000,
+    "meta": 1655474363271,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Gift.Png"
+  },
+  "c4e83349-a880-4c4f-a587-a688d04dea4e": {
+    "asset": 1627618360000,
+    "meta": 1655474363288,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "0c1e9967-ae0d-45b7-a335-6d25e60c1eee": {
+    "asset": 1627618397000,
+    "meta": 1655474363314,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Hammer.Png"
+  },
+  "d23ed6bd-3e60-4ffd-a857-05599ae499f3": {
+    "asset": 1627618500000,
+    "meta": 1655474363321,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Horner.Png"
+  },
+  "72d26e9f-f0a4-4951-95e5-c5fe54bcb4ef": {
+    "asset": 1627618275000,
+    "meta": 1655474363323,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Gold.Png"
+  },
+  "40cc4eb9-76bf-4647-b7b9-f2ad4bc2493f": {
+    "asset": 1627618227000,
+    "meta": 1655474363326,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "df4813c6-940a-4ebf-86ac-9d1ff52c40ca": {
+    "asset": 1627618591000,
+    "meta": 1655474363335,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Key.Png"
+  },
+  "055ecd97-9ae9-466e-868b-26a6b41b15cc": {
+    "asset": 1627618232000,
+    "meta": 1655474363344,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Laurel.Png"
+  },
+  "d84aa7d5-d89e-4bf5-81fe-1fe78c6f1aa5": {
+    "asset": 1627618631000,
+    "meta": 1655474363359,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Letter.Png"
+  },
+  "2eb5a12c-0f50-4750-8ef7-e214859e8d27": {
+    "asset": 1627618229000,
+    "meta": 1655474363375,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Lock.Png"
+  },
+  "c75bc113-ac6b-49c6-9726-00b8c8e5de5a": {
+    "asset": 1627618363000,
+    "meta": 1655474363381,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Mission.Png"
+  },
+  "000d4718-73af-4336-a6c3-7a4e84ac51c5": {
+    "asset": 1627618528000,
+    "meta": 1655474363395,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "ac0dd889-7fe0-4475-8660-572f1bc31fa0": {
+    "asset": 1627618390000,
+    "meta": 1655474363405,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "aad06683-2b22-4ef0-834e-d6a1015c6280": {
+    "asset": 1627618394000,
+    "meta": 1655474363408,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Pickax.Png"
+  },
+  "bc76365a-599b-4a5a-85c5-53902212bf53": {
+    "asset": 1627618448000,
+    "meta": 1655474363410,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "60e9aa42-3420-4328-bbb5-50685b23c0e2": {
+    "asset": 1627618350000,
+    "meta": 1655474363413,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "3de671dd-7254-428b-80a1-642be22c0ef0": {
+    "asset": 1627618318000,
+    "meta": 1655474363430,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "4509aea9-e71f-43d6-9597-89a7eac506cf": {
+    "asset": 1627618282000,
+    "meta": 1655474363444,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "b542290c-8be6-4a2c-8358-c692b37ac30e": {
+    "asset": 1627618552000,
+    "meta": 1655474363455,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "dfc37a62-8f9c-49ba-af09-2c7bbf3ed125": {
+    "asset": 1627618616000,
+    "meta": 1655474363459,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Scroll.Png"
+  },
+  "cdf95f17-6314-4f4c-8b17-750f34b8fca9": {
+    "asset": 1627618238000,
+    "meta": 1655474363463,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "6e2d616d-53c4-45b0-a751-7b78237788c5": {
+    "asset": 1627618567000,
+    "meta": 1655474363465,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Setting.Png"
+  },
+  "150bd2f8-3c87-43bd-bcf6-688eeeda1503": {
+    "asset": 1627618452000,
+    "meta": 1655474363475,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "2b932397-f2b0-4b41-b5a6-d2d8419c3655": {
+    "asset": 1627618418000,
+    "meta": 1655474363482,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "ddd65591-323c-4526-afdb-3ec931596f7f": {
+    "asset": 1627618505000,
+    "meta": 1655474363493,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "c585720e-c8b7-487e-9ce3-478224235ff8": {
+    "asset": 1627618373000,
+    "meta": 1655474363511,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Shop.Png"
+  },
+  "093a0f73-6e17-461d-a786-02d0b913fed1": {
+    "asset": 1627618514000,
+    "meta": 1655474363516,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Skull.Png"
+  },
+  "7c28cb0d-e456-4404-a4d7-3af26d242f02": {
+    "asset": 1627618206000,
+    "meta": 1655474363522,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "f955b44e-0f3a-4f7e-9438-49122d07ce5e": {
+    "asset": 1627618558000,
+    "meta": 1655474363538,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "787ffdd6-39a2-42ae-a0c7-a7d0dd04e22b": {
+    "asset": 1627618215000,
+    "meta": 1655474363545,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Talaria.Png"
+  },
+  "e0d14478-de3c-441e-acc5-e4320ca8f238": {
+    "asset": 1627618367000,
+    "meta": 1655474363574,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Timer.Png"
+  },
+  "0827d3c7-bacb-47dc-96ab-abdaf17c1874": {
+    "asset": 1627618426000,
+    "meta": 1655474363600,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Treasure.Png"
+  },
+  "73189f71-0339-4a46-8c95-3426bc65a2ac": {
+    "asset": 1627618300000,
+    "meta": 1655474363606,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Anvil.Png"
+  },
+  "69474595-d51d-48a1-a5d4-a5d3632c5c9d": {
+    "asset": 1627618589000,
+    "meta": 1655474363614,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Trophy.Png"
+  },
+  "b9b6609c-7d28-417c-838b-d06be604cdf5": {
+    "asset": 1627618375000,
+    "meta": 1655474363627,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Bomb.Png"
+  },
+  "56a8aee2-f5c3-4f23-9ab4-28f78dc0b954": {
+    "asset": 1627618445000,
+    "meta": 1655474363643,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Target.Png"
+  },
+  "c12bde62-4f97-4cb1-a04f-4e6576f29b5b": {
+    "asset": 1627618383000,
+    "meta": 1655474363646,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_256\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "d58844bf-219a-453d-b5fa-705e1e214d2b": {
+    "asset": 1627618475000,
+    "meta": 1655474363650,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Arrow.Png"
+  },
+  "5bc79836-bb1e-4584-83d9-f299e648bfa2": {
+    "asset": 1627618530000,
+    "meta": 1655474363684,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Candle.Png"
+  },
+  "2277b381-9507-4a8a-ad0c-99ad6bf8cebb": {
+    "asset": 1627618333000,
+    "meta": 1655474363689,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Clover.Png"
+  },
+  "f19e68ec-7223-47b5-ac93-c02ae5a68edf": {
+    "asset": 1627618289000,
+    "meta": 1655474363697,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Chicken.Png"
+  },
+  "cabbee5f-429a-4265-94e1-12765321a413": {
+    "asset": 1627618610000,
+    "meta": 1655474363704,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Crown.Png"
+  },
+  "98bb6433-a790-4e26-b8a3-6f4b28b35c52": {
+    "asset": 1627618456000,
+    "meta": 1655474363719,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Gem.Png"
+  },
+  "9b4a397e-0fe2-42cd-9eec-f23f2d181591": {
+    "asset": 1627618308000,
+    "meta": 1655474363722,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Envelope.Png"
+  },
+  "5ee7f610-799e-4712-aede-438db718ed75": {
+    "asset": 1627618543000,
+    "meta": 1655474363732,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Gift.Png"
+  },
+  "a5bf3a80-2995-4ee0-b2ca-6303b181b7dd": {
+    "asset": 1627618493000,
+    "meta": 1655474363735,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Energy.Png"
+  },
+  "8328530a-961e-4bf7-8167-b5b9330a64e4": {
+    "asset": 1627618618000,
+    "meta": 1655474363771,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "dc47c2e3-217c-44ca-8dc6-2879e342d8d9": {
+    "asset": 1627618415000,
+    "meta": 1655474363806,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Horner.Png"
+  },
+  "af120584-844a-4fa5-83e4-d5e3742fa82a": {
+    "asset": 1627618265000,
+    "meta": 1655474363811,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Gold.Png"
+  },
+  "e46489b2-af35-40a8-a93b-0df6579b6ea1": {
+    "asset": 1627618529000,
+    "meta": 1655474363815,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "ea9fc97b-5c92-48b4-ad1d-27527b02eeda": {
+    "asset": 1627618477000,
+    "meta": 1655474363820,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Hammer.Png"
+  },
+  "bc11ff39-946c-4b64-80b2-084d889e4d75": {
+    "asset": 1627618273000,
+    "meta": 1655474363828,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Laurel.Png"
+  },
+  "fda9d0d4-65a1-4611-b759-13bdfd3a85c2": {
+    "asset": 1627618321000,
+    "meta": 1655474363830,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Letter.Png"
+  },
+  "4a923afd-b557-4956-9428-14e754910414": {
+    "asset": 1627618627000,
+    "meta": 1655474363832,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Key.Png"
+  },
+  "e50d2dcb-83e8-49f4-b519-cebb7ad26149": {
+    "asset": 1627618617000,
+    "meta": 1655474363867,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Lock.Png"
+  },
+  "980b67c9-d4a3-4d49-a742-dcf2afc9adc2": {
+    "asset": 1627618303000,
+    "meta": 1655474363880,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Mission.Png"
+  },
+  "b22e77cd-50a1-48d3-aef1-07850758da1d": {
+    "asset": 1627618630000,
+    "meta": 1655474363901,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "15908a21-02bd-45ee-afac-9839b4c97702": {
+    "asset": 1627618327000,
+    "meta": 1655474363904,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "d7952eb9-89e5-43e7-b85f-ac70562697cb": {
+    "asset": 1627618498000,
+    "meta": 1655474363906,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "2b8597b0-1acf-48e3-ad63-8f2f35034fd2": {
+    "asset": 1627618309000,
+    "meta": 1655474363909,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "9e9edad9-7108-4d92-9752-64538e6b8131": {
+    "asset": 1627618381000,
+    "meta": 1655474363916,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Pickax.Png"
+  },
+  "e94f4994-a725-41a5-93c7-36278878ba55": {
+    "asset": 1627618543000,
+    "meta": 1655474363919,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "a8f67140-f1f0-4dd9-8a57-911632ac6242": {
+    "asset": 1627618534000,
+    "meta": 1655474363944,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "c9dde980-b445-4830-b262-53182e61b848": {
+    "asset": 1627618469000,
+    "meta": 1655474363946,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "0e1ef757-86cd-424d-8fcf-01ba2a0656b8": {
+    "asset": 1627618438000,
+    "meta": 1655474363960,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Setting.Png"
+  },
+  "e6e00ffe-c51f-43ec-935e-12d0d139f75c": {
+    "asset": 1627618613000,
+    "meta": 1655474363963,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Scroll.Png"
+  },
+  "f2cc299c-ceb4-4038-a05e-eaf7e3110711": {
+    "asset": 1627618431000,
+    "meta": 1655474363965,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "f713b715-478e-42e6-b8a5-3172ae2a4de4": {
+    "asset": 1627618395000,
+    "meta": 1655474363967,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "5e195e7b-ec85-4e29-99c7-6616576e577a": {
+    "asset": 1627618332000,
+    "meta": 1655474363971,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "f925c708-8769-4b12-8d2a-fe4eac81dbe4": {
+    "asset": 1627618493000,
+    "meta": 1655474363993,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "0512066e-4b7c-41a7-a14f-a22e35580f9e": {
+    "asset": 1627618428000,
+    "meta": 1655474363999,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Skull.Png"
+  },
+  "5491551b-c153-46c9-b808-3ca2975a12a4": {
+    "asset": 1627618533000,
+    "meta": 1655474364003,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "2646f3d3-249c-4828-9936-0d92fa1cb312": {
+    "asset": 1627618260000,
+    "meta": 1655474364005,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Shop.Png"
+  },
+  "54906bdb-55a6-4f1d-8755-5204156f0ff2": {
+    "asset": 1627618424000,
+    "meta": 1655474364008,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "fa6c474f-88a4-4e4c-a327-4fe4539fcada": {
+    "asset": 1627618468000,
+    "meta": 1655474364011,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "0e4a8b53-7ae3-4ed0-94f1-83e2d5b506ef": {
+    "asset": 1627618329000,
+    "meta": 1655474364014,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Talaria.Png"
+  },
+  "e27a2deb-d593-4b34-b57e-3aeb41b32783": {
+    "asset": 1627618591000,
+    "meta": 1655474364048,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Target.Png"
+  },
+  "b22ca78f-5ab5-4c19-972d-54db752c2108": {
+    "asset": 1627618571000,
+    "meta": 1655474364050,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Timer.Png"
+  },
+  "2fc7bbdd-62c8-4c88-805e-c94108a6a207": {
+    "asset": 1627618347000,
+    "meta": 1655474364052,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Treasure.Png"
+  },
+  "f7f0e87f-4b27-450f-8a27-7079c9a2b8a8": {
+    "asset": 1627618518000,
+    "meta": 1655474364058,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_32\\Icon_ItemIcon_Trophy.Png"
+  },
+  "6f117263-5342-4fa1-9404-c548f69eb295": {
+    "asset": 1627618261000,
+    "meta": 1655474364094,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Anvil.Png"
+  },
+  "ca3053c0-e2fa-4352-a255-d263a4258b8b": {
+    "asset": 1627618596000,
+    "meta": 1655474364113,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Arrow.Png"
+  },
+  "77b9195e-5069-43e1-881c-3025cca8d9e6": {
+    "asset": 1627618278000,
+    "meta": 1655474364118,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Bomb.Png"
+  },
+  "3c745a75-8158-46a8-8949-b713d2ed3b4f": {
+    "asset": 1627618224000,
+    "meta": 1655474364139,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Candle.Png"
+  },
+  "f23935ad-14e0-45cd-adff-14e8cc554976": {
+    "asset": 1627618550000,
+    "meta": 1655474364171,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Crown.Png"
+  },
+  "ac129199-82ab-41cd-9ca3-d83a80e7b121": {
+    "asset": 1627618418000,
+    "meta": 1655474364176,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Chicken.Png"
+  },
+  "aa859011-827b-40dd-bf9c-e732f41b74c7": {
+    "asset": 1627618619000,
+    "meta": 1655474364181,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Energy.Png"
+  },
+  "6555b932-75d6-4519-a0ab-e0e0e99ba926": {
+    "asset": 1627618433000,
+    "meta": 1655474364185,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Clover.Png"
+  },
+  "47ceeff1-db7a-4160-95e7-cf8317a8c819": {
+    "asset": 1627618404000,
+    "meta": 1655474364259,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Envelope.Png"
+  },
+  "0cc38894-203f-4f6f-acc1-92d0d41fa30e": {
+    "asset": 1627618318000,
+    "meta": 1655474364265,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Gift.Png"
+  },
+  "3c0db3fe-1e18-41cf-a12f-ba6fae1f0a1d": {
+    "asset": 1627618258000,
+    "meta": 1655474364277,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Gem.Png"
+  },
+  "719e5d76-3a34-466d-bd32-a8e1a5edff73": {
+    "asset": 1627618206000,
+    "meta": 1655474364281,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "1f03712f-b3d7-4399-9b4e-8160ac216232": {
+    "asset": 1627618237000,
+    "meta": 1655474364309,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Hammer.Png"
+  },
+  "f819a350-1b93-4734-a18f-f4681ce33d28": {
+    "asset": 1627618597000,
+    "meta": 1655474364317,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Gold.Png"
+  },
+  "b15f034c-792d-431e-a9c3-d552e6d8d5ac": {
+    "asset": 1627618294000,
+    "meta": 1655474364337,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "9d5cc3bb-d83f-4b0c-aa87-4a17c60f7d2f": {
+    "asset": 1627618604000,
+    "meta": 1655474364346,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Horner.Png"
+  },
+  "aa08012b-53a2-481d-bb9d-65af4ffad903": {
+    "asset": 1627618564000,
+    "meta": 1655474364392,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Letter.Png"
+  },
+  "c11b3c6c-7cc9-4e64-9dd2-a306732918b5": {
+    "asset": 1627618540000,
+    "meta": 1655474364395,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Laurel.Png"
+  },
+  "d48444d2-b4c9-45f4-bbb5-cbe5f80aef58": {
+    "asset": 1627618431000,
+    "meta": 1655474364406,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Lock.Png"
+  },
+  "200e2988-0109-413b-823e-51a2348c09c9": {
+    "asset": 1627618612000,
+    "meta": 1655474364410,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Key.Png"
+  },
+  "1369f9be-56b0-4816-acce-c8ea9cd634de": {
+    "asset": 1627618326000,
+    "meta": 1655474364439,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "1143370f-b0a3-4a2d-896a-3fc7a0df0cb6": {
+    "asset": 1627618479000,
+    "meta": 1655474364478,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "bdf289db-33d3-4a5c-9066-ca3a78b1a317": {
+    "asset": 1627618464000,
+    "meta": 1655474364482,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Mission.Png"
+  },
+  "50245000-d756-46bc-a978-7ed7f9cb8b1f": {
+    "asset": 1627618567000,
+    "meta": 1655474364486,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "9c27f761-f699-46d8-bfd2-54c5809bd9f7": {
+    "asset": 1627618212000,
+    "meta": 1655474364502,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "18ee617a-98a2-4e8d-9d13-c039a14d1c53": {
+    "asset": 1627618608000,
+    "meta": 1655474364523,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "47ec07a4-bf23-4346-910d-d506a61ede6a": {
+    "asset": 1627618236000,
+    "meta": 1655474364530,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "914bb53b-75d6-4d3e-b969-5afd875053f5": {
+    "asset": 1627618410000,
+    "meta": 1655474364543,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Pickax.Png"
+  },
+  "9a0f15a1-7bce-4eb2-8300-03aed5fd0834": {
+    "asset": 1627618628000,
+    "meta": 1655474364586,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "d951aee7-c0b9-4e9b-a3ad-4cab7e03a857": {
+    "asset": 1627618501000,
+    "meta": 1655474364590,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Scroll.Png"
+  },
+  "9494934d-9ee1-415a-9cfc-16784041f127": {
+    "asset": 1627618225000,
+    "meta": 1655474364603,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Setting.Png"
+  },
+  "1b25c4d7-3d32-4384-901a-c173b8da1888": {
+    "asset": 1627618209000,
+    "meta": 1655474364626,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "bdc89067-8f27-4612-990c-1ac24e30a271": {
+    "asset": 1627618354000,
+    "meta": 1655474364632,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "ba70f025-90c3-471d-9237-a61834ed55a1": {
+    "asset": 1627618600000,
+    "meta": 1655474364646,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Shop.Png"
+  },
+  "347a36c9-08f9-4210-80cc-a8ef12a16eb3": {
+    "asset": 1627618584000,
+    "meta": 1655474364652,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "55b4467c-3b0e-4b76-bd27-b2280c9e6a27": {
+    "asset": 1627618231000,
+    "meta": 1655474364677,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "cae590c4-58f5-41bb-b43d-c661b6e71a6a": {
+    "asset": 1627618524000,
+    "meta": 1655474364716,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "a2edeffd-394b-4403-8815-73a1fc7bfc68": {
+    "asset": 1627618588000,
+    "meta": 1655474364722,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Skull.Png"
+  },
+  "cd2d8083-b31f-49f6-a14d-0cbb1945fe8d": {
+    "asset": 1627618445000,
+    "meta": 1655474364728,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Talaria.Png"
+  },
+  "b068bcaa-67ea-4637-b7c8-636d9b6648b5": {
+    "asset": 1627618454000,
+    "meta": 1655474364735,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "109f0360-92c2-4811-863a-6f7cc09ac397": {
+    "asset": 1627618358000,
+    "meta": 1655474364755,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "0311d549-6989-48ec-a369-5e1d63363423": {
+    "asset": 1627618580000,
+    "meta": 1655474364773,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Target.Png"
+  },
+  "9b7657f2-7cdf-4727-b146-cb47f7ed54bd": {
+    "asset": 1627618347000,
+    "meta": 1655474364780,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Anvil.Png"
+  },
+  "38f6c59d-63d1-4b9d-83f4-8e003cd59ff2": {
+    "asset": 1627618582000,
+    "meta": 1655474364788,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Arrow.Png"
+  },
+  "884b40b7-b32c-4e55-ac06-b81e08444cbd": {
+    "asset": 1627618592000,
+    "meta": 1655474364805,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Bomb.Png"
+  },
+  "451fe29e-6095-4bd1-9c5c-3f770d083865": {
+    "asset": 1627618258000,
+    "meta": 1655474364816,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Treasure.Png"
+  },
+  "8fa8d96b-74ee-4aaf-baed-54b4959ea18b": {
+    "asset": 1627618410000,
+    "meta": 1655474364834,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Candle.Png"
+  },
+  "52296ac5-f040-43ec-a605-8fb2a99c4897": {
+    "asset": 1627618272000,
+    "meta": 1655474364840,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Trophy.Png"
+  },
+  "f661c7c0-14c4-442f-888c-50572cac479d": {
+    "asset": 1627618602000,
+    "meta": 1655474364847,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_512\\Icon_ItemIcon_Timer.Png"
+  },
+  "2d3e29b6-e7fb-474e-b675-5693e5f512ee": {
+    "asset": 1627618633000,
+    "meta": 1655474364864,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Clover.Png"
+  },
+  "a5901152-afa3-4a54-b674-14eb6115e0bd": {
+    "asset": 1627618599000,
+    "meta": 1655474364869,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Chicken.Png"
+  },
+  "642f2e35-0975-49ee-98a6-67849332a02d": {
+    "asset": 1627618587000,
+    "meta": 1655474364876,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Crown.Png"
+  },
+  "4d8bec22-2104-440c-b335-0eda9df08b15": {
+    "asset": 1627618460000,
+    "meta": 1655474364892,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Energy.Png"
+  },
+  "f23292c8-b56c-4f0d-bd25-784ed8d73ea0": {
+    "asset": 1627618555000,
+    "meta": 1655474364904,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Gift.Png"
+  },
+  "e6e933ac-01a5-4ec0-89df-2af1c1677382": {
+    "asset": 1627618331000,
+    "meta": 1655474364908,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Gift_Blue.Png"
+  },
+  "a90b73cb-7fd0-4805-8f69-bbd5f618f2c1": {
+    "asset": 1627618421000,
+    "meta": 1655474364927,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Gold.Png"
+  },
+  "38082ad5-8ae4-4934-8cb0-b1b94b9ef60f": {
+    "asset": 1627618208000,
+    "meta": 1655474364934,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Hammer.Png"
+  },
+  "39dcbbe9-8518-4ef3-af69-5365421a2a0d": {
+    "asset": 1627618626000,
+    "meta": 1655474364936,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Horner.Png"
+  },
+  "dc4abf3c-8534-43e8-9acf-daf846a15934": {
+    "asset": 1627618233000,
+    "meta": 1655474364963,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Horseshoes.Png"
+  },
+  "1b9e2340-22c2-459c-a8ed-147044ebb45a": {
+    "asset": 1627618452000,
+    "meta": 1655474364970,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Gem.Png"
+  },
+  "1eddab40-d440-425c-af47-d200655681fb": {
+    "asset": 1627618229000,
+    "meta": 1655474364976,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Envelope.Png"
+  },
+  "67c52e9a-3e25-42c4-8c09-cc8917b312f0": {
+    "asset": 1627618497000,
+    "meta": 1655474364984,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Key.Png"
+  },
+  "5417b88e-8ecb-4997-bd68-a8715101915d": {
+    "asset": 1627618407000,
+    "meta": 1655474364998,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Laurel.Png"
+  },
+  "031cd7b3-2fc5-4162-b8c8-931fd5cc3e4c": {
+    "asset": 1627618498000,
+    "meta": 1655474365017,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Lock.Png"
+  },
+  "081d3775-0dff-4525-a551-efd84e9e4325": {
+    "asset": 1627618211000,
+    "meta": 1655474365020,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Letter.Png"
+  },
+  "2fadbe01-8b20-4a57-9dd8-565c9980c667": {
+    "asset": 1627618362000,
+    "meta": 1655474365025,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Medal_Bronze.Png"
+  },
+  "36ceaf59-c488-4f1b-8c7c-fe539cc6344e": {
+    "asset": 1627618367000,
+    "meta": 1655474365061,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Pickax.Png"
+  },
+  "96ad7330-0998-4030-b7a0-d246ed1ae0c0": {
+    "asset": 1627618325000,
+    "meta": 1655474365072,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Medal_Gold.Png"
+  },
+  "bce7b8fa-9ae0-48cf-8d65-1b43a1e511b6": {
+    "asset": 1627618472000,
+    "meta": 1655474365076,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Medal_Silver.Png"
+  },
+  "a7a4b8cd-ec84-4319-b887-5fb724ee7b9a": {
+    "asset": 1627618334000,
+    "meta": 1655474365078,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Poiton_Purple.Png"
+  },
+  "cca5050a-b35d-4f0c-b24f-dcc09de03945": {
+    "asset": 1627618597000,
+    "meta": 1655474365080,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Purplegem.Png"
+  },
+  "2404c52e-a7e7-419b-a34d-6b33d1ee71b8": {
+    "asset": 1627618272000,
+    "meta": 1655474365083,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Potion_Red.Png"
+  },
+  "0f2fa9dd-8463-44a8-89a1-4b5d87c4eb29": {
+    "asset": 1627618296000,
+    "meta": 1655474365085,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Sandglass.Png"
+  },
+  "e776bb0d-ad25-4582-b1df-6f5765f3ca0c": {
+    "asset": 1627618246000,
+    "meta": 1655474365107,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Mission.Png"
+  },
+  "3dd2ce33-c9f8-49ec-9dc9-bb0ba61b8ef1": {
+    "asset": 1627618563000,
+    "meta": 1655474365123,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Setting.Png"
+  },
+  "019a3f27-97fc-4b10-9a0a-9b9f4404def5": {
+    "asset": 1627618577000,
+    "meta": 1655474365129,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Shield_B.Png"
+  },
+  "140b13f1-fa75-434c-bd0a-21e28125696a": {
+    "asset": 1627618255000,
+    "meta": 1655474365131,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Shield_A.Png"
+  },
+  "001a8f46-abec-4644-b562-ea172ce390e7": {
+    "asset": 1627618263000,
+    "meta": 1655474365148,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Shop.Png"
+  },
+  "da22ce5f-8c8a-47a4-ba7a-58ad40ff57f2": {
+    "asset": 1627618622000,
+    "meta": 1655474365150,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Shield_D.Png"
+  },
+  "cb11fa85-64c2-4352-9097-653165926886": {
+    "asset": 1627618632000,
+    "meta": 1655474365153,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Shield_C.Png"
+  },
+  "b2880896-9576-4f6f-aee3-06c1343dcd32": {
+    "asset": 1627618374000,
+    "meta": 1655474365156,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Scroll.Png"
+  },
+  "7c1edd9e-19c8-49d4-9924-390700dc58b0": {
+    "asset": 1627618532000,
+    "meta": 1655474365185,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Skull.Png"
+  },
+  "9ccd01de-7fb8-4bcf-bb26-0a975b0f2596": {
+    "asset": 1627618406000,
+    "meta": 1655474365192,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Soulgem.Png"
+  },
+  "670e9f40-7453-451d-9db8-64a9dc068ec9": {
+    "asset": 1627618623000,
+    "meta": 1655474365195,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Sword_B.Png"
+  },
+  "53def57c-3cfc-4363-858c-0dcb912a3e61": {
+    "asset": 1627618324000,
+    "meta": 1655474365206,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Talaria.Png"
+  },
+  "0ab626d6-b25f-433d-bb76-941a77cd5c35": {
+    "asset": 1627618311000,
+    "meta": 1655474365211,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Sword_A.Png"
+  },
+  "3ac97237-b53b-4cbd-939f-6fe0c61d1f9d": {
+    "asset": 1627618486000,
+    "meta": 1655474365236,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_32\\PictoIcon_32.unitypackage"
+  },
+  "28a3c00a-c025-4617-9477-0c963c29766e": {
+    "asset": 1627618221000,
+    "meta": 1655474365241,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_128\\PictoIcon_128.unitypackage"
+  },
+  "646533b8-e8ee-410b-ae5d-90ca62fbaedb": {
+    "asset": 1627618281000,
+    "meta": 1655474365214,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Target.Png"
+  },
+  "79b53c93-36d0-4736-8d76-513da7bf9252": {
+    "asset": 1627618387000,
+    "meta": 1655474365215,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Timer.Png"
+  },
+  "e4c450cb-0982-44c2-a555-acf6baebeade": {
+    "asset": 1627618551000,
+    "meta": 1655474365251,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_64\\PictoIcon_64.unitypackage"
+  },
+  "3d5b94ce-e911-4c74-87f7-4a7dadef236d": {
+    "asset": 1627618425000,
+    "meta": 1655474365252,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_256\\PictoIcon_256.unitypackage"
+  },
+  "79bbf688-ea84-44ad-8f9d-3141cd634ed4": {
+    "asset": 1627618232000,
+    "meta": 1655474365216,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Treasure.Png"
+  },
+  "03befc7b-9588-4504-8f2c-1609b9373adb": {
+    "asset": 1627618566000,
+    "meta": 1655474365257,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_PictoIcons_(x2)\\PictoIcon_512\\PictoIcon_512.unitypackage"
+  },
+  "8c221a45-4961-43b8-85e1-9aa3c19f56b8": {
+    "asset": 1627618317000,
+    "meta": 1655474365246,
+    "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Trophy.Png"
+  },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655472440373,
-    "meta": 1655472533890,
+    "asset": 1655475781888,
+    "meta": 1655475789231,
     "relativePath": "scripts\\GameManager.ts"
   }
 }

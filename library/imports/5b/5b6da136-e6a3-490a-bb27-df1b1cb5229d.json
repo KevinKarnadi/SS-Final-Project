@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Anvil",
+    "texture": "a170f5d4-af8c-4e0f-9da9-85caff31624c",
+    "atlas": "",
+    "rect": [
+      16,
+      48,
+      212,
+      155
+    ],
+    "offset": [
+      -6,
+      2.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

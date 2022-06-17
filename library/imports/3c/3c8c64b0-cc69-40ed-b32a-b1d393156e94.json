@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Bin",
+    "texture": "57cfe90d-6bc7-4acd-9999-3d09dbefe2ca",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      54,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      54,
+      60
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

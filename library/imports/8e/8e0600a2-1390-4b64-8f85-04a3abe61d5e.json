@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Laurel",
+    "texture": "bc11ff39-946c-4b64-80b2-084d889e4d75",
+    "atlas": "",
+    "rect": [
+      3,
+      2,
+      26,
+      26
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

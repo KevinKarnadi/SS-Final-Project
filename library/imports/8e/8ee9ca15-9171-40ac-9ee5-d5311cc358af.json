@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider01_Fill_Brown",
+    "texture": "2fbb2f47-c1a6-4586-99aa-9c161f16a9ba",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      9,
+      24
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      9,
+      24
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

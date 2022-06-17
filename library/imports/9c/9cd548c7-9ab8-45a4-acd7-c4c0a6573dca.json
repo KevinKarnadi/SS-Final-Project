@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_MarkQuestion1",
+    "texture": "14bbd02e-45dc-41c1-8489-509545358994",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      36,
+      63
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      36,
+      63
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

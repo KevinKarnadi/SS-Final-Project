@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Clover",
+    "texture": "ad95a6a2-011e-42bc-b986-1bd3ff87387b",
+    "atlas": "",
+    "rect": [
+      42,
+      43,
+      173,
+      166
+    ],
+    "offset": [
+      0.5,
+      2
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

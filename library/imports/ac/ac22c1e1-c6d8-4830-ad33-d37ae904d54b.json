@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Label_Ribbon01_Brown",
+    "texture": "fdb66976-7b8a-40f4-aa9d-9b586c21668d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      524,
+      137
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      524,
+      137
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Complete",
+    "texture": "139c92cd-52e4-4b57-a4b4-40dbf80bd593",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      579,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      579,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

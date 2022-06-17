@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d79eba65-e0f8-46fb-811f-02bc993d1d8c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 55,
+  "height": 47,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_PictoIcon_Twitter": {
+      "ver": "1.0.6",
+      "uuid": "949a102f-f664-43d9-a16c-63adce2c31b6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d79eba65-e0f8-46fb-811f-02bc993d1d8c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 55,
+      "height": 47,
+      "rawWidth": 55,
+      "rawHeight": 47,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

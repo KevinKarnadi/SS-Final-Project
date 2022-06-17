@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Effect_Grow_White",
+    "texture": "e67a27dc-3077-4093-a026-16a907393cd4",
+    "atlas": "",
+    "rect": [
+      3,
+      2,
+      433,
+      437
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      439,
+      439
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

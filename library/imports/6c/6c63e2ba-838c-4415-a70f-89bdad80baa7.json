@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_TopBarFrame",
+    "texture": "329d0ec6-4fee-4ba2-aaac-eba7e91bfaa4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      655,
+      116
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      655,
+      116
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

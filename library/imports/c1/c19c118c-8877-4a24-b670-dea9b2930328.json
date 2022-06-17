@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Video",
+    "texture": "c51ac945-26e5-4a17-9895-8dbfbd8a199c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      68,
+      46
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      68,
+      46
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

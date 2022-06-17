@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Lock",
+    "texture": "031cd7b3-2fc5-4162-b8c8-931fd5cc3e4c",
+    "atlas": "",
+    "rect": [
+      14,
+      9,
+      36,
+      45
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      64,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

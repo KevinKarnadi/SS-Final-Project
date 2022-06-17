@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_MainButton_Purple",
+    "texture": "4bf3a93e-2ffe-4bd0-a093-35596fbd63e2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      159,
+      127
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      159,
+      127
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Magnetic",
+    "texture": "a3ac7334-febe-4d07-b3f4-1f5b6d59d45a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      51,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      51,
+      53
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

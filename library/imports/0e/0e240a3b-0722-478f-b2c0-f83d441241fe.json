@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Language_Large_Kor",
+    "texture": "f266ad6f-cf13-4d72-9e65-1745ea643f92",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      133,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

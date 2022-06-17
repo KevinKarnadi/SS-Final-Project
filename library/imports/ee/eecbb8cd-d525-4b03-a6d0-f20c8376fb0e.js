@@ -268,7 +268,7 @@ var GameManager = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "GameManager";
         clickEventHandler.handler = "resume";
-        cc.find("Canvas/Main Camera/Pause Menu/resumeBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/resumeBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     GameManager.prototype.resume = function () {
         cc.director.resume();

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Flag",
+    "texture": "f13885bc-c5f3-47b5-891e-bfaf125b339f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      59,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      59,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

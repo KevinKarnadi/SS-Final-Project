@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Shield_A",
+    "texture": "cdf95f17-6314-4f4c-8b17-750f34b8fca9",
+    "atlas": "",
+    "rect": [
+      40,
+      50,
+      194,
+      171
+    ],
+    "offset": [
+      9,
+      -7.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

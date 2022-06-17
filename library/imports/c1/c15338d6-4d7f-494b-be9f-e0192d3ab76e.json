@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_StatsIcon_Defense_White",
+    "texture": "93651b22-cf93-46e4-a204-393974a8e15f",
+    "atlas": "",
+    "rect": [
+      3,
+      0,
+      28,
+      33
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      34,
+      33
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

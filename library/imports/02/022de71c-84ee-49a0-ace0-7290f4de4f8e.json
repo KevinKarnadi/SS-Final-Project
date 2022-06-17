@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Luckybox_Diamond",
+    "texture": "0e16f16e-68e0-4608-a26e-c4f4e706c156",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      327,
+      294
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      327,
+      294
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

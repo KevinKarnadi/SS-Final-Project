@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Reset",
+    "texture": "a0f9ce92-69b1-4a8e-ad17-14c56ae2c330",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      56,
+      66
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      56,
+      66
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

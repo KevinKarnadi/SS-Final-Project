@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Pagenavi_Bg1",
+    "texture": "2a81eae3-418b-47b0-a72c-0a436d5c582d",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      50,
+      32
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      51,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

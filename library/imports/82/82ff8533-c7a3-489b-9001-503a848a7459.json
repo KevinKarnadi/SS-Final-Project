@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Hammer",
+    "texture": "da87e869-2b4a-4de2-91ad-e26def03e8e5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      135,
+      132
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      135,
+      132
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

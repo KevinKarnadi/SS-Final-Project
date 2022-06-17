@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ImageIcon_Horner",
+    "texture": "e1d1c21b-07f2-48ef-b996-b84b77577e6e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      58,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      59
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

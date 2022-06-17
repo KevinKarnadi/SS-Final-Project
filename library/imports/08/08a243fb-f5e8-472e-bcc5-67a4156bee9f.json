@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Star",
+    "texture": "5b087cd7-8584-4406-a4c5-0ab52ae2bac2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      70,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      70,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Ring",
+    "texture": "ffba8371-7cc4-4c6e-8e09-dcbb82795dc8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      59,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      59,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

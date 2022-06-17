@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Label_Ribbon02_Orange",
+    "texture": "4876bee6-d8df-4cc5-97f2-a616f87503a9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      142,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      142,
+      58
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

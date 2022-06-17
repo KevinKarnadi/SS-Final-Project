@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_DefeatScene_Arrow3",
+    "texture": "4bcfa6b5-6d23-4548-b995-b21f96ee4219",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      83
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      83
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

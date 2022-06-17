@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_TablaFrame01_White",
+    "texture": "2ead614e-75a1-43bd-8491-238edb2cc91a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      136,
+      150
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      136,
+      150
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Bitcoin",
+    "texture": "b072197f-a553-401a-ba3e-c62b313bec7f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      47,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      47,
+      62
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

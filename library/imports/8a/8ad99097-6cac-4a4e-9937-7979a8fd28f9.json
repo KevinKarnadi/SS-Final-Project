@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Language_Large_Eng",
+    "texture": "d36e9e5a-1a30-404d-8aef-78d7020d5855",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      133,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

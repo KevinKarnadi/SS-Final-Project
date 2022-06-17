@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_MenuIcon_Falg",
+    "texture": "77498b1f-b714-4f5d-bef1-33bce87a2cb6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      120,
+      93
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      120,
+      93
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

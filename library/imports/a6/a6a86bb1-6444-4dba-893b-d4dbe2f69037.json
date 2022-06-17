@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Frame_Square03_White",
+    "texture": "61d378b3-2a41-42de-861b-343017d1bce0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      152,
+      138
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      152,
+      138
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

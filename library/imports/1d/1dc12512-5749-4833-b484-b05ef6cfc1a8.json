@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Quit",
+    "texture": "d2b5be7a-206c-4ff2-9dcf-c56f8a51b02f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      58,
+      66
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      66
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

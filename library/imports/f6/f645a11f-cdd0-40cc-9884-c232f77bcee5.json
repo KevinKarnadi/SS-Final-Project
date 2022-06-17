@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Trophy",
+    "texture": "f7f0e87f-4b27-450f-8a27-7079c9a2b8a8",
+    "atlas": "",
+    "rect": [
+      5,
+      6,
+      23,
+      20
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

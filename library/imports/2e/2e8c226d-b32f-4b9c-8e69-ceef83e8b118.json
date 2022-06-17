@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_SkillIcon_Ring",
+    "texture": "f2717553-dce2-4cd3-9d88-4f7981e27057",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      33,
+      38
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      33,
+      38
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

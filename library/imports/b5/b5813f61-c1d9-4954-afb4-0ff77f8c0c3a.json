@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_GameJoystick",
+    "texture": "b97a288c-47c7-48e5-8222-357e7d362498",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      83,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      83,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

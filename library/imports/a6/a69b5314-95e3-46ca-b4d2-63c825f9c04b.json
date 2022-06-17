@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Sandglass",
+    "texture": "9a0f15a1-7bce-4eb2-8300-03aed5fd0834",
+    "atlas": "",
+    "rect": [
+      91,
+      69,
+      337,
+      369
+    ],
+    "offset": [
+      3.5,
+      2.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

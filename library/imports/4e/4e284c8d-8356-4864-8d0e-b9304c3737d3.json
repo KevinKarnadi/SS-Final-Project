@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Toggle_Switch_Bg",
+    "texture": "75e17aee-d758-4d48-b0a7-2ae0f69da14a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      77,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      77,
+      74
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

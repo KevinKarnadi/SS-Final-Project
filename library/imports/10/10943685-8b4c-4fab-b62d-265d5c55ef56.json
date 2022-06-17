@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Youtube",
+    "texture": "101e91b3-10f7-4d4e-8cb2-699873d2232d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      63,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      63,
+      44
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

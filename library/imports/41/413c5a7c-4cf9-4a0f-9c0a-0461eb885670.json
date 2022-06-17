@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider01_Fill_White",
+    "texture": "841e0fe4-7c1a-40bc-86e8-b0ef9ae7fce1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      9,
+      24
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      9,
+      24
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

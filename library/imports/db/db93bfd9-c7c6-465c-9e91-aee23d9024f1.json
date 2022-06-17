@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_MainButton_Bluegreen",
+    "texture": "2cab2a39-5996-40da-b20f-364319ba77e6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      159,
+      127
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      159,
+      127
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Input_Field_Icon_Email",
+    "texture": "098d12e1-6448-4857-9ef7-5962caf8c738",
+    "atlas": "",
+    "rect": [
+      0,
+      8,
+      51,
+      40
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      51,
+      55
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

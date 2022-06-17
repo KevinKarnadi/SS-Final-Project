@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_LevelUp1",
+    "texture": "d9d23250-84a8-45b3-ae5a-c0277eab3779",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      321,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      321,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Effect_Particle_05",
+    "texture": "3f26c4db-560f-4f46-b71d-139fa48c763a",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      51,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      55,
+      55
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

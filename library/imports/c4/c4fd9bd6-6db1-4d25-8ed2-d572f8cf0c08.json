@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Gmail",
+    "texture": "df1c73fa-57f3-4d16-abb6-bbabbb513c84",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      53,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      53,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

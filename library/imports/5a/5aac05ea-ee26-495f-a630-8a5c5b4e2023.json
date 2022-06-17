@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider02_Fill_Orange",
+    "texture": "e99198d1-ea7d-432a-92f3-c6e88f0221cc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      31,
+      24
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      31,
+      24
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

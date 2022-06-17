@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Potion_Red",
+    "texture": "a0db9710-abf7-4518-85f2-b1112835453a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      107,
+      126
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      107,
+      126
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Pickax",
+    "texture": "aad06683-2b22-4ef0-834e-d6a1015c6280",
+    "atlas": "",
+    "rect": [
+      45,
+      44,
+      177,
+      159
+    ],
+    "offset": [
+      5.5,
+      4.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

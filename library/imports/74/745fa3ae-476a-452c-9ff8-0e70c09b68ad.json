@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_SkillIcon_Energe",
+    "texture": "7bfb7463-4d8b-4925-a86a-27f18456ff97",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      24,
+      36
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      24,
+      36
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

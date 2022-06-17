@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider05_UserInfo_FrontFrame",
+    "texture": "8964e0b8-1207-4058-82b6-e7a99cd15602",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      241,
+      94
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      241,
+      94
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

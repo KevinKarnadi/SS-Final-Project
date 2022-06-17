@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Knowledge",
+    "texture": "61fb63ae-cc8b-4621-ac8d-281858226267",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      50,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      58
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

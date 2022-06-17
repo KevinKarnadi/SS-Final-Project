@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_StatsIcon_Attack_White",
+    "texture": "eec7b42b-359b-4935-bed6-51b32bcc6c7e",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      30,
+      30
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      34,
+      33
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

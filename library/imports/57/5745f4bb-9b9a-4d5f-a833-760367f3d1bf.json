@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Planet",
+    "texture": "d72bd6d8-a998-410e-a55b-05c2eb6a9030",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      65,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      65,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

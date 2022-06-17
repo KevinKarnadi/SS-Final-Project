@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_energy",
+    "texture": "647ce64f-0e7c-4c3b-a832-d68330dd1323",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      39,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      39,
+      51
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

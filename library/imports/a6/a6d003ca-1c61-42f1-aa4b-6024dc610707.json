@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Image_Deco_Laurel_L",
+    "texture": "a9b635a8-f746-43f2-94a2-44ce5ed2eb06",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      156,
+      133
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      156,
+      133
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

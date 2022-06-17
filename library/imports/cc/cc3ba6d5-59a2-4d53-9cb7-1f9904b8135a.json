@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Victory",
+    "texture": "004902bf-4a80-4f83-9110-af53bfdd11cf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      483,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      483,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

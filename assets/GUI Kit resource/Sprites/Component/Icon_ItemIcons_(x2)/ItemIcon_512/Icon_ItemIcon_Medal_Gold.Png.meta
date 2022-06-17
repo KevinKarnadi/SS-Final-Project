@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1143370f-b0a3-4a2d-896a-3fc7a0df0cb6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_ItemIcon_Medal_Gold": {
+      "ver": "1.0.6",
+      "uuid": "901a4add-4f89-4348-a178-2aa1d90b6f80",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1143370f-b0a3-4a2d-896a-3fc7a0df0cb6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 5.5,
+      "offsetY": 6.5,
+      "trimX": 145,
+      "trimY": 75,
+      "width": 233,
+      "height": 349,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

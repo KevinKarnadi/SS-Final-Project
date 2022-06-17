@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Gift_Blue",
+    "texture": "719e5d76-3a34-466d-bd32-a8e1a5edff73",
+    "atlas": "",
+    "rect": [
+      93,
+      84,
+      335,
+      323
+    ],
+    "offset": [
+      4.5,
+      10.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

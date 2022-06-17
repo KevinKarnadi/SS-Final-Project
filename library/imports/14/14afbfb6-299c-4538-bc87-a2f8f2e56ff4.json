@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_BookmarkAdd",
+    "texture": "96a01479-226c-4092-a08f-11aa8fbd4b73",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      57,
+      59
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      57,
+      59
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

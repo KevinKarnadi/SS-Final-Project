@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Combo",
+    "texture": "11b8aaf4-f04f-4edf-a88d-8679eac5058e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      274,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      274,
+      58
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

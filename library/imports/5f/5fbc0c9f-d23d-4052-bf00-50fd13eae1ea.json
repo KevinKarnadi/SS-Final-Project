@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Win",
+    "texture": "8dbd10c3-0a75-4571-bd41-40d52966c1ba",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      232,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      232,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

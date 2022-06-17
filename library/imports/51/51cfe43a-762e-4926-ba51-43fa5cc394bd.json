@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider04_IconType_IconFrame_Gary",
+    "texture": "729e2e43-1564-40d1-be0a-ae1cf1df4c51",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      76,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      76,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

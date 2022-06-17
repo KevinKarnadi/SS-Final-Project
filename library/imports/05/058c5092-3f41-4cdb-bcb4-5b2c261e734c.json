@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Slider04_IconType_Fill_Red",
+    "texture": "6f99acc2-49e6-480a-a70b-cc4fe508b3f3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2,
+      22
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2,
+      22
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

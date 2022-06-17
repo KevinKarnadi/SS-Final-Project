@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_MissionClear1",
+    "texture": "60ae2fb0-6159-47d3-93b3-b966adccc756",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      489,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      489,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

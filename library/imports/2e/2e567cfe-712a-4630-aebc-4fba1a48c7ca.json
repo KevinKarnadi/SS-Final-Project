@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_ItemIcon_Sword_B",
+    "texture": "670e9f40-7453-451d-9db8-64a9dc068ec9",
+    "atlas": "",
+    "rect": [
+      8,
+      10,
+      46,
+      45
+    ],
+    "offset": [
+      -1,
+      -0.5
+    ],
+    "originalSize": [
+      64,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

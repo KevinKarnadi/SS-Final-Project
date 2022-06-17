@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Input_Field_Icon_Required_Circle",
+    "texture": "a026e2fc-465a-4b82-b540-c00f88a00351",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      14,
+      14
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      14,
+      14
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

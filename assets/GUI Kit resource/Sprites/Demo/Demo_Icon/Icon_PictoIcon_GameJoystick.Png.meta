@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b97a288c-47c7-48e5-8222-357e7d362498",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 83,
+  "height": 54,
+  "platformSettings": {},
+  "subMetas": {
+    "Icon_PictoIcon_GameJoystick": {
+      "ver": "1.0.6",
+      "uuid": "b5813f61-c1d9-4954-afb4-0ff77f8c0c3a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b97a288c-47c7-48e5-8222-357e7d362498",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 83,
+      "height": 54,
+      "rawWidth": 83,
+      "rawHeight": 54,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

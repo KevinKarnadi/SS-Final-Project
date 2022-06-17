@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Status_Icon_Soulgem",
+    "texture": "3003b7ca-8fc8-4e7d-b543-879b04bf5fd4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      83,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      83,
+      69
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

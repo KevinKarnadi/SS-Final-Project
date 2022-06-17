@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_BonusTime1",
+    "texture": "b9e8c591-e38c-4c99-b833-5a0a28411955",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      395,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      395,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

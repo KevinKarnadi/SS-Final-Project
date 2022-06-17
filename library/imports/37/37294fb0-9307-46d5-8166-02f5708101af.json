@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Service",
+    "texture": "7ab03ec8-9f0b-4a6a-bc5b-fc702db25038",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      67,
+      71
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      67,
+      71
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

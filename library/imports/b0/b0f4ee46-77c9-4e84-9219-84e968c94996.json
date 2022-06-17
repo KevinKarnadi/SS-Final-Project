@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ActionText_Nice",
+    "texture": "0cf2562c-e52b-4af7-9b94-bac6ef2afb36",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      149,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      149,
+      52
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

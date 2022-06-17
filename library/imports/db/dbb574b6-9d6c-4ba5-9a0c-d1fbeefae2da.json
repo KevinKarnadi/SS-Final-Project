@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Hide",
+    "texture": "9d5c844a-c7d0-4b37-bd55-c42bea2b9c41",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      70,
+      46
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      70,
+      46
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

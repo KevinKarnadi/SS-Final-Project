@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_MailUnread",
+    "texture": "7019c208-5aed-413f-8f65-71f0cab387a5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      61,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      61,
+      50
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

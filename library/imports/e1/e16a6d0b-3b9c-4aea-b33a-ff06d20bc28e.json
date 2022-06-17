@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_PictoIcon_Helmet",
+    "texture": "e1e37d27-1fff-4602-a3c3-ef9a8040323d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      54,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      54,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
