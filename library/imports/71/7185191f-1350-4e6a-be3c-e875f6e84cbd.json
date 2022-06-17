@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Brown_Trap_Up_01",
+    "texture": "c495a99b-20af-404c-abfc-5db5615de921",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      162
+    ],
+    "offset": [
+      0,
+      47
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

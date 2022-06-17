@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "StoneOnly_Plateform_Left_01",
+    "texture": "f3904d85-fd0f-40e8-97af-e96572124233",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      135
+    ],
+    "offset": [
+      0,
+      60.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

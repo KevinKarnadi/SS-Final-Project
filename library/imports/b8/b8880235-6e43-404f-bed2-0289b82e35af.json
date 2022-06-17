@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Item_RedStar_01",
+    "texture": "de9798ba-9b6a-439e-bc3a-48bdca357912",
+    "atlas": "",
+    "rect": [
+      5,
+      14,
+      246,
+      228
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

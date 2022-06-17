@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fire_column_medium_7",
+    "texture": "22e49a38-3952-4e26-b4b0-45958a997392",
+    "atlas": "",
+    "rect": [
+      13,
+      31,
+      17,
+      49
+    ],
+    "offset": [
+      -1,
+      -10.5
+    ],
+    "originalSize": [
+      45,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

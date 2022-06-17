@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Placard_RightOnly_01",
+    "texture": "70a87628-6465-4a7a-8bf6-3e428dddb835",
+    "atlas": "",
+    "rect": [
+      25,
+      78,
+      214,
+      178
+    ],
+    "offset": [
+      4,
+      -39
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

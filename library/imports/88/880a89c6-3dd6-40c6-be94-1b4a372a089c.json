@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IceOnly_Down_Middle_Coin_01",
+    "texture": "7413b1ea-9d32-4ec4-a42a-7c40754e656c",
+    "atlas": "",
+    "rect": [
+      0,
+      139,
+      256,
+      117
+    ],
+    "offset": [
+      0,
+      -69.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

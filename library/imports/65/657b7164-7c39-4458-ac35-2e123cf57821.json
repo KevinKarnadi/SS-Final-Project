@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IceOnly_Left_Middle_Coin_01",
+    "texture": "e0540634-312e-4f4b-863f-0a808ba45ea6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      86,
+      256
+    ],
+    "offset": [
+      -85,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

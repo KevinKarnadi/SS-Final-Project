@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Trap_Up_Stone_01",
+    "texture": "b0f58310-2fc3-4cd3-8def-5f39e12768e4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      162
+    ],
+    "offset": [
+      0,
+      47
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Crystal_Border_01",
+    "texture": "cc77d039-325d-4aa8-9ac2-c7a648966364",
+    "atlas": "",
+    "rect": [
+      10,
+      3,
+      235,
+      253
+    ],
+    "offset": [
+      -0.5,
+      -1.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

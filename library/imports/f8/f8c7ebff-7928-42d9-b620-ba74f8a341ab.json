@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Back_Blend_NightDay",
+    "texture": "13fefdbe-5b56-4c3e-8cac-78a89afaf050",
+    "atlas": "",
+    "rect": [
+      73,
+      0,
+      439,
+      512
+    ],
+    "offset": [
+      36.5,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

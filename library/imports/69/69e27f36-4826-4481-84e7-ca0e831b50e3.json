@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bumper_Up_FrameA",
+    "texture": "e7dc4065-1fbf-40ef-8732-4570bdf6000a",
+    "atlas": "",
+    "rect": [
+      32,
+      220,
+      192,
+      36
+    ],
+    "offset": [
+      0,
+      -110
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

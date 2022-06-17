@@ -47,7 +47,7 @@ var Ground = /** @class */ (function (_super) {
     };
     //this function sets the bullet's initial position when it is reused.
     Ground.prototype.setInitPos = function (node, index) {
-        this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
+        this.node.parent = node;
         this.node.position = cc.v3(-480 + (15 * index) % (15 * 200), -320 + 15 * Math.floor(index / 200));
         this.node.position = this.node.position.addSelf(node.position);
     };

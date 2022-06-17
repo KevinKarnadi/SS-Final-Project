@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Back_Desert_01",
+    "texture": "ff62d672-a95f-46d2-be1d-2a569d6a159f",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      512,
+      126
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BrownOnly_Plateform_Middle_01",
+    "texture": "954571ea-0317-46fa-a575-921f6b4aba8c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      143
+    ],
+    "offset": [
+      0,
+      56.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

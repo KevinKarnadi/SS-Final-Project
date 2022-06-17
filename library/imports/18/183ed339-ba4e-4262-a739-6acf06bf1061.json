@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Back_BlendRight_Desert",
+    "texture": "6376105f-0a91-4e25-a54f-2528a1bd6582",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      454,
+      512
+    ],
+    "offset": [
+      -29,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

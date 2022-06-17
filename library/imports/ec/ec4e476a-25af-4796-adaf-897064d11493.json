@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BrownGrass_Plateform_Middle_01",
+    "texture": "393dd218-a33a-4f7b-816f-95c97a4f29e4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      143
+    ],
+    "offset": [
+      0,
+      56.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

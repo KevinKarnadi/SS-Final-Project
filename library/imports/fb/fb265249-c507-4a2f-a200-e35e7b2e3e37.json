@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Spike_Down_Only_01",
+    "texture": "63fb4c46-953a-43a8-b29f-998f65b28aa5",
+    "atlas": "",
+    "rect": [
+      16,
+      130,
+      224,
+      126
+    ],
+    "offset": [
+      0,
+      -65
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

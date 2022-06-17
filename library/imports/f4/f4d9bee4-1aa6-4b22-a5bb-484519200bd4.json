@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IceSnow_Plateform_Right_01",
+    "texture": "9c2e6591-1e73-47bb-bcb5-88d4b794f9c1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      135
+    ],
+    "offset": [
+      0,
+      60.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

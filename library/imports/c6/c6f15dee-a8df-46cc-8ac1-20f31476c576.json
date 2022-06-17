@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tree_Glow_01",
+    "texture": "20e66a26-9ece-44b4-97ab-b8cedf5b585d",
+    "atlas": "",
+    "rect": [
+      1,
+      13,
+      510,
+      499
+    ],
+    "offset": [
+      0,
+      -6.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

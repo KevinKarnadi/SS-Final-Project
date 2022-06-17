@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "StoneGrass_Plateform_Left_01",
+    "texture": "980f2dcf-c6c8-478c-a8f4-e314e4627e92",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      135
+    ],
+    "offset": [
+      0,
+      60.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

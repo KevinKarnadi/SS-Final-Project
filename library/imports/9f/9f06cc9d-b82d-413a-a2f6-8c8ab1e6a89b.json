@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BrownOnly_Right_Middle_Coin_01",
+    "texture": "00014a35-5f42-40ed-baea-3cad8c011325",
+    "atlas": "",
+    "rect": [
+      131,
+      0,
+      125,
+      256
+    ],
+    "offset": [
+      65.5,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

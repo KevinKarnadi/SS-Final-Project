@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Trap_Down_Stone_01",
+    "texture": "9d4f1c6c-a417-4e67-b783-b02d1e17222c",
+    "atlas": "",
+    "rect": [
+      0,
+      89,
+      256,
+      167
+    ],
+    "offset": [
+      0,
+      -44.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

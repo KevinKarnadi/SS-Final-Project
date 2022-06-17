@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Back_Mount_02",
+    "texture": "7ada6604-1eca-4981-b6eb-63e77f79d544",
+    "atlas": "",
+    "rect": [
+      3,
+      2,
+      506,
+      125
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      512,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

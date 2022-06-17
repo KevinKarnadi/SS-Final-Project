@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Crystal_NoBorder_01",
+    "texture": "23ebe897-7eb4-4ad8-9cc7-f05821a76a93",
+    "atlas": "",
+    "rect": [
+      11,
+      6,
+      233,
+      250
+    ],
+    "offset": [
+      -0.5,
+      -3
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

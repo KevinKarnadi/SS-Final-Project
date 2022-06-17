@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Item_ChestClosed_01",
+    "texture": "b583110d-56bb-45c6-9f5d-34045a1bfe5b",
+    "atlas": "",
+    "rect": [
+      14,
+      46,
+      228,
+      210
+    ],
+    "offset": [
+      0,
+      -23
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

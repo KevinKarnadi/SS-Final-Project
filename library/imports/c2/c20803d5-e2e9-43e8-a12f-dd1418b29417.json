@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Ice_Trap_Down_01",
+    "texture": "d8cf734e-a840-4f95-9715-784428c13d08",
+    "atlas": "",
+    "rect": [
+      0,
+      89,
+      256,
+      167
+    ],
+    "offset": [
+      0,
+      -44.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

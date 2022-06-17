@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Stool_Middle_Only_01",
+    "texture": "655447ac-eb9a-40b2-8e69-102ce9e53f62",
+    "atlas": "",
+    "rect": [
+      55,
+      0,
+      158,
+      256
+    ],
+    "offset": [
+      6,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

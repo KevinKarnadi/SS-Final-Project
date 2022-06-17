@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Crystal_Glow_01",
+    "texture": "a8285c1f-809c-4d67-9dbd-55444fab687a",
+    "atlas": "",
+    "rect": [
+      3,
+      7,
+      250,
+      249
+    ],
+    "offset": [
+      0,
+      -3.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

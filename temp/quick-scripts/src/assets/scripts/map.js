@@ -30,8 +30,10 @@ var Map = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.groundPrefab = null;
         _this.groundUpperPrefab = null;
+        _this.firePrefab = null;
         _this.groundPool = null;
         _this.groundPool1 = null;
+        _this.firePool = null;
         return _this;
     }
     Map.prototype.onLoad = function () {
@@ -55,9 +57,16 @@ var Map = /** @class */ (function (_super) {
                 this.groundPool1.put(ground);
             }
         }
+        this.firePool = new cc.NodePool('Fire');
+        for (var i = 0; i < 200; i++) {
+            var fire = cc.instantiate(this.firePrefab);
+            this.firePool.put(fire);
+            // y.max = -222.5
+        }
     };
     Map.prototype.start = function () {
         this.createGround();
+        this.createFire();
     };
     Map.prototype.createGround = function () {
         var ground = null;
@@ -84,12 +93,29 @@ var Map = /** @class */ (function (_super) {
             }
         }
     };
+    Map.prototype.createFire = function () {
+        var index = 0;
+        var fires = null;
+        while (this.firePool.size() > 0) {
+            fires = this.firePool.get(this.firePool);
+            fires.parent = cc.find("Canvas/fire");
+            fires.position = cc.v2(-518 + (16 * index), -320);
+            fires.position = fires.position.addSelf(this.node.position);
+            fires.getComponent(cc.Animation).play("fire");
+            // fires.node.zIndex = 100;
+            // console.log(fires.position.x, "fire");
+            index++;
+        }
+    };
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "groundPrefab", void 0);
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "groundUpperPrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "firePrefab", void 0);
     Map = __decorate([
         ccclass
     ], Map);

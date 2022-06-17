@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Rainbow_Smooth_02",
+    "texture": "f41abaca-ce20-4c22-8c9a-efff5ce24df2",
+    "atlas": "",
+    "rect": [
+      5,
+      6,
+      502,
+      242
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      512,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
