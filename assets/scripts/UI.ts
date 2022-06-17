@@ -6,7 +6,7 @@ export default class UI extends cc.Component {
     @property(cc.Label)
     timer: cc.Label = null; // game timer
 
-    private timerVal: number;   // game timer
+    public timerVal: number;   // game timer
 
     private timeout: boolean = false;   // game ended
 
@@ -19,7 +19,7 @@ export default class UI extends cc.Component {
     // onLoad () {}
 
     start () {
-        this.startTimer(300);
+        this.startTimer(20);
     }
 
     update (dt) {

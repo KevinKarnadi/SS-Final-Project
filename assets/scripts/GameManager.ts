@@ -1,4 +1,5 @@
 import Player from "./Player"
+import TrajectoryLine from "./TrajectoryLine";
 import UI from "./UI"
 
 const {ccclass, property} = cc._decorator;
@@ -14,6 +15,9 @@ export default class GameManager extends cc.Component {
 
     @property(Player)
     player3: Player = null;
+
+    @property(Player)
+    player4: Player = null;
 
     @property(UI)
     UI: UI = null;
@@ -43,6 +47,10 @@ export default class GameManager extends cc.Component {
 
     private groundPool = null;
 
+    private alivePlayer = null;
+
+    private winner = null;
+
     // private currPlayerPos = null;
 
     private isPaused: boolean = false;
@@ -60,6 +68,7 @@ export default class GameManager extends cc.Component {
 
         //     this.groundPool.put(ground);
         // }
+        this.alivePlayer = this.totalPlayer;
     }
     
     start () {
@@ -80,16 +89,24 @@ export default class GameManager extends cc.Component {
     // }
 
     update (dt) {
-        var playerPos = this.player.node.getPosition();
-        var cameraPos = this.camera.getPosition();
-        cameraPos.lerp(playerPos, 0.1, cameraPos);
-        cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if(cameraPos.x < 0) {
-            cameraPos.x = 0;
-        } else if(cameraPos.x > 2033) {
-            cameraPos.x = 2033;
+        if (this.player){
+            if (this.UI.timerVal < 0){
+                this.currPlayer += 1;
+                this.changePlayer(this.currPlayer);
+                this.UI.timerVal = 20;
+            }
+            var playerPos = this.player.node.getPosition();
+            var cameraPos = this.camera.getPosition();
+            cameraPos.lerp(playerPos, 0.1, cameraPos);
+            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            if(cameraPos.x < 0) {
+                cameraPos.x = 0;
+            } else if(cameraPos.x > 2033) {
+                cameraPos.x = 2033;
+            }
+            this.camera.setPosition(cameraPos);
+            //this.isWin();
         }
-        this.camera.setPosition(cameraPos);
     }
 
     changePlayer(num) {
@@ -98,25 +115,126 @@ export default class GameManager extends cc.Component {
             this.player.setPlayerMoveDirection(0);
             this.player.setPlayerJump(false);
             this.onDisable();
-        } 
-        switch (this.currPlayer) {
-            case 0:
-                this.player = this.player1;
-                break;
-            case 1:
-                this.player = this.player2;
-                break;
-            case 2:
-                this.player = this.player3;
-                break;
-            default:
-                break;
         }
-        this.onEnable();
+        if (this.totalPlayer == 3){
+            switch (this.currPlayer) {
+                case 0:
+                    this.player = this.player1;
+                    break;
+                case 1:
+                    this.player = this.player2;
+                    break;
+                case 2:
+                    this.player = this.player3;
+                    break;
+                default:
+                    break;
+            }
+        }
+        else{
+            this.changePlayer(this.currPlayer+1);
+        }
+        /*if (this.totalPlayer == 2){
+            switch (this.currPlayer) {
+                case 0:
+                    if (this.player1 == null)
+                        this.changePlayer(1);
+                    else
+                        this.player = this.player1;
+                    break;
+                case 1:
+                    if (this.player2 == null)
+                        this.changePlayer(0);
+                    else
+                        this.player = this.player2;
+                    break;
+                default:
+                    break;
+            }
+        }
+        if (this.totalPlayer == 3){
+            switch (this.currPlayer) {
+                case 0:
+                    this.player = this.player1;
+                    break;
+                case 1:
+                    this.player = this.player2;
+                    break;
+                case 2:
+                    this.player = this.player3;
+                    break;
+                default:
+                    break;
+            }
+        }
+        if (this.totalPlayer == 4){
+            switch (this.currPlayer) {
+                case 0:
+                    if (this.player1 == null)
+                        this.changePlayer(1);
+                    else
+                        this.player = this.player1;
+                    break;
+                case 1:
+                    if (this.player2 == null)
+                        this.changePlayer(2);
+                    else
+                        this.player = this.player2;
+                    break;
+                case 2:
+                    if (this.player3 == null)
+                        this.changePlayer(3);
+                    else
+                        this.player = this.player3;
+                    break;
+                case 3:
+                    if (this.player4 == null)
+                        this.changePlayer(0);
+                    else
+                        this.player = this.player4;
+                    break;
+                default:
+                    break;
+            }
+        }*/
+        if (this.player)
+            this.onEnable();
     }
 
     playBGM() {
         cc.audioEngine.playMusic(this.bgm, true);
+    }
+
+    isWin() {
+        let alive = 0;
+        if (this.totalPlayer == 2){
+            if (this.player1 != null)
+                alive += 1;
+            if (this.player2 != null)
+                alive += 1;
+        }
+        if (this.totalPlayer == 3){
+            if (this.player1 != null)
+                alive += 1;
+            if (this.player2 != null)
+                alive += 1;
+            if (this.player3 != null)
+                alive += 1;
+        }
+        if (this.totalPlayer == 4){
+            if (this.player1 != null)
+                alive += 1;
+            if (this.player2 != null)
+                alive += 1;
+            if (this.player3 != null)
+                alive += 1;
+            if (this.player4 != null)
+                alive += 1;
+        }
+        this.alivePlayer = alive;
+        if (this.alivePlayer == 1)
+            this.winner = this.player;
+        console.log("congrats " + this.winner.node.playerName)
     }
 
     protected onEnable(): void {
