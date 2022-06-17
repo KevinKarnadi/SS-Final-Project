@@ -214,17 +214,24 @@ export default class Player extends cc.Component {
     }
 
     playerAnimation() {
-        if(!this.isDie){
-            if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
-                this.animation.stop('char1jump');
-                this.animationState = this.animation.play('char1idle');
+        if(!this.isDie){    // animation for char1
+            if(this.isOnGround && !this.isMove) {
+                this.animationState = this.animation.play("char1idle");
+            } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
+                this.animationState = this.animation.play("char1run");
+            } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
+                this.animationState = this.animation.play("char1jump");
             }
-            if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
-                this.animationState = this.animation.play('char1run');
-            }
-            if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
-                this.animationState = this.animation.play('char1idle');
-            }
+            // if (this.isOnGround && this.animation.getAnimationState('char1jump').isPlaying){
+            //     this.animation.stop('char1jump');
+            //     this.animationState = this.animation.play('char1idle');
+            // }
+            // if (this.isMove && !this.animation.getAnimationState('char1run').isPlaying && !this.animation.getAnimationState('char1jump').isPlaying){
+            //     this.animationState = this.animation.play('char1run');
+            // }
+            // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
+            //     this.animationState = this.animation.play('char1idle');
+            // }
         }   
     }
 
