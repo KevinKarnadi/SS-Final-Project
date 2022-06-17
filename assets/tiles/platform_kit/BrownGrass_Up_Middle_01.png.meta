@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "522e9937-7430-4ae2-bb96-f878449069c7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "BrownGrass_Up_Middle_01": {
+      "ver": "1.0.6",
+      "uuid": "15228e32-e29f-4f5b-a00e-abdb65000620",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "522e9937-7430-4ae2-bb96-f878449069c7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

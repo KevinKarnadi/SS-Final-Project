@@ -9,8 +9,12 @@ export default class Map extends cc.Component {
     @property(cc.Prefab)
     private groundUpperPrefab: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    private firePrefab: cc.Prefab = null;
+
     private groundPool = null;
     private groundPool1 = null;
+    private firePool = null;
 
     onLoad () {
         if(!this.groundUpperPrefab){
@@ -33,12 +37,19 @@ export default class Map extends cc.Component {
                 this.groundPool1.put(ground);
             }
         }
+        this.firePool = new cc.NodePool('Fire');
+        for(let i: number = 0; i < 200; i++) {
+            let fire = cc.instantiate(this.firePrefab);
+            this.firePool.put(fire);
+            // y.max = -222.5
+        }
     }
     
     start () {
         this.createGround();
+        this.createFire();
     }
-
+    
     createGround() {
         let ground = null;
         let i = 0;
@@ -61,6 +72,24 @@ export default class Map extends cc.Component {
                 ground.getComponent('Ground').init(this.node, i);
                 i++; 
             }
+        }
+    }
+
+    createFire(){
+        let index = 0;
+        let fires = null;
+        while(this.firePool.size() > 0){
+            fires = this.firePool.get(this.firePool);
+            
+            fires.parent = cc.find("Canvas/fire");
+    
+            fires.position = cc.v2(-518 + (16 * index), -320); 
+            
+            fires.position = fires.position.addSelf(this.node.position);
+            fires.getComponent(cc.Animation).play("fire");
+            // fires.node.zIndex = 100;
+            // console.log(fires.position.x, "fire");
+            index++;
         }
     }
 }

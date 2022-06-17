@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "06c67cb5-76e1-42d0-b73c-14b867061d2f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "StoneGrass_Slope_45_Left_01": {
+      "ver": "1.0.6",
+      "uuid": "3d28161b-4555-4498-ac3f-db8899130d76",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "06c67cb5-76e1-42d0-b73c-14b867061d2f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

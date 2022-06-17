@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9d4f1c6c-a417-4e67-b783-b02d1e17222c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "Trap_Down_Stone_01": {
+      "ver": "1.0.6",
+      "uuid": "2ae90957-e3cb-4406-a4c0-5ee37632bc21",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9d4f1c6c-a417-4e67-b783-b02d1e17222c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -44.5,
+      "trimX": 0,
+      "trimY": 89,
+      "width": 256,
+      "height": 167,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

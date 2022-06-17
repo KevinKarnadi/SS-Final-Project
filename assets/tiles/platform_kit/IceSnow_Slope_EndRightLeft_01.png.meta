@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c1569465-e5ff-480b-bf93-6d5c6a251a10",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "IceSnow_Slope_EndRightLeft_01": {
+      "ver": "1.0.6",
+      "uuid": "b218956e-0ddc-4e49-8ce1-d9e2a165f561",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c1569465-e5ff-480b-bf93-6d5c6a251a10",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

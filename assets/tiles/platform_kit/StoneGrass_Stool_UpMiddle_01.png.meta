@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4b960dd8-c102-4034-b627-f4a807b29cc0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "StoneGrass_Stool_UpMiddle_01": {
+      "ver": "1.0.6",
+      "uuid": "33648f73-f173-40fd-b7ca-1d0484340c15",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4b960dd8-c102-4034-b627-f4a807b29cc0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

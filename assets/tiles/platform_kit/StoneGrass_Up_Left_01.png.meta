@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "002b1cd8-be70-4586-a184-10b893490a6c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "StoneGrass_Up_Left_01": {
+      "ver": "1.0.6",
+      "uuid": "0057bb24-2ddf-4e67-a80d-ce1289070a9c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "002b1cd8-be70-4586-a184-10b893490a6c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

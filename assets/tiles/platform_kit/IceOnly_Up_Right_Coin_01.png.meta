@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2e60f1aa-46f8-4990-9a00-c60ae6c4bc1c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "IceOnly_Up_Right_Coin_01": {
+      "ver": "1.0.6",
+      "uuid": "e461142e-161e-4d11-a324-f20cff78ed47",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2e60f1aa-46f8-4990-9a00-c60ae6c4bc1c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

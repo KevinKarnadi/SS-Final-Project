@@ -32,7 +32,7 @@ export default class Ground extends cc.Component
     //this function sets the bullet's initial position when it is reused.
     private setInitPos(node: cc.Node, index: number)
     {
-        this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
+        this.node.parent = node;
 
         this.node.position = cc.v3(-480 + (15 * index) % (15 * 200), -320 + 15 * Math.floor(index / 200)); 
         

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "faa8a68e-e63c-4a50-aa8c-fde61ed7b461",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "BrownGrass_Slope_22_Left_02": {
+      "ver": "1.0.6",
+      "uuid": "2db67a99-5e7e-41d4-bc5a-76f2ddb79817",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "faa8a68e-e63c-4a50-aa8c-fde61ed7b461",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -64,
+      "trimX": 0,
+      "trimY": 128,
+      "width": 256,
+      "height": 128,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

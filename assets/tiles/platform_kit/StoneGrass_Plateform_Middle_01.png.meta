@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "000eebab-8e02-4332-9b16-fe35276ec3c6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "StoneGrass_Plateform_Middle_01": {
+      "ver": "1.0.6",
+      "uuid": "d20152b2-5c08-4ffc-a28b-1c7be2be9d0b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "000eebab-8e02-4332-9b16-fe35276ec3c6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 56.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 143,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

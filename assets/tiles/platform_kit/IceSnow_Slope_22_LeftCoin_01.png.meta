@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "acc543cc-e212-4316-b214-63018de3d003",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "IceSnow_Slope_22_LeftCoin_01": {
+      "ver": "1.0.6",
+      "uuid": "942ca7e8-1534-4e21-b1bb-eeac4aa90998",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "acc543cc-e212-4316-b214-63018de3d003",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

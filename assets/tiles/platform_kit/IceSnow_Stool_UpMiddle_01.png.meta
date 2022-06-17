@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c483590a-95dd-4edd-962d-5c44893ea041",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "IceSnow_Stool_UpMiddle_01": {
+      "ver": "1.0.6",
+      "uuid": "fdc74923-6b26-437d-ad5f-b3d75cea3d04",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c483590a-95dd-4edd-962d-5c44893ea041",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

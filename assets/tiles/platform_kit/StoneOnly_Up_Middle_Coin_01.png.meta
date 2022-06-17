@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "df4a3a86-e698-48ab-9262-1693357d8f5a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "StoneOnly_Up_Middle_Coin_01": {
+      "ver": "1.0.6",
+      "uuid": "9abcafc8-0552-489b-8e58-83adebd2c074",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "df4a3a86-e698-48ab-9262-1693357d8f5a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 76.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 103,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
