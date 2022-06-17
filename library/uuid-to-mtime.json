@@ -1499,11 +1499,6 @@
     "meta": 1655486061637,
     "relativePath": "scenes\\sign up.fire"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655485986859,
-    "meta": 1655486061519,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "f078255e-7bd6-4720-bdf5-a120568e32d5": {
     "asset": 1655436650412,
     "meta": 1655486060848,
@@ -1525,8 +1520,8 @@
     "relativePath": "animations\\char1"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655485986843,
-    "meta": 1655486061041,
+    "asset": 1655487102613,
+    "meta": 1655487102709,
     "relativePath": "scenes\\map1.fire"
   },
   "9048496c-8fb7-42f2-b0cb-1b006f7c4a5b": {
@@ -8683,5 +8678,10 @@
     "asset": 1655484008967,
     "meta": 1655486245407,
     "relativePath": "prefabs\\map2GroundLower2.prefab"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655486403344,
+    "meta": 1655486456315,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }
