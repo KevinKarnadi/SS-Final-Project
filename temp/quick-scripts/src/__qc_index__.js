@@ -4,6 +4,7 @@ require('./assets/scripts/Bullet');
 require('./assets/scripts/GameManager');
 require('./assets/scripts/Ground');
 require('./assets/scripts/Ground2');
+require('./assets/scripts/Lobby');
 require('./assets/scripts/MainMenu');
 require('./assets/scripts/Player');
 require('./assets/scripts/SignIn');
