@@ -237,9 +237,6 @@
       "__id__": 56
     },
     "bgm": null,
-    "groundPrefab": {
-      "__uuid__": "68894128-ac14-4270-9cef-f88ac0c8d220"
-    },
     "_id": "22+1L5AdtBA50dzaWwtwzn"
   },
   {
@@ -319,8 +316,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -120.388,
-        258.095,
+        -152.762,
+        -93.033,
         0,
         0,
         0,
@@ -8337,7 +8334,7 @@
       "__id__": 179
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 181

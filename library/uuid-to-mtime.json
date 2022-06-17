@@ -1519,11 +1519,6 @@
     "meta": 1655486060156,
     "relativePath": "animations\\char1"
   },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655487102613,
-    "meta": 1655487102709,
-    "relativePath": "scenes\\map1.fire"
-  },
   "9048496c-8fb7-42f2-b0cb-1b006f7c4a5b": {
     "asset": 1655436650455,
     "meta": 1655486062153,
@@ -8680,8 +8675,13 @@
     "relativePath": "prefabs\\map2GroundLower2.prefab"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655486403344,
-    "meta": 1655486456315,
+    "asset": 1655487213731,
+    "meta": 1655487295091,
     "relativePath": "scripts\\GameManager.ts"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655487460771,
+    "meta": 1655487460824,
+    "relativePath": "scenes\\map1.fire"
   }
 }
