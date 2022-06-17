@@ -6,8 +6,6 @@ export default class Bullet extends cc.Component
 
     private anim = null;
 
-    private bulletManager = null;
-
     public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
 
     private rigidBody: cc.RigidBody = null;
@@ -24,14 +22,6 @@ export default class Bullet extends cc.Component
 
         this.anim.play('bullet');
         this.bulletMove();
-    }
-
-    // this function is called when the bullet manager calls "get" API.
-    reuse(bulletManager)
-    {
-        this.bulletManager = bulletManager;
-
-        this.isTriggered = false;
     }
 
     //this function sets the bullet's initial position when it is reused.
@@ -81,7 +71,8 @@ export default class Bullet extends cc.Component
 
             this.anim.stop();
             
-            this.bulletManager.put(this.node);
+            this.node.destroy();
+
         }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
     }
 

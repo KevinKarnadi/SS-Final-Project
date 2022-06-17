@@ -43,8 +43,6 @@ export default class Player extends cc.Component {
 
     private win: boolean = false;
 
-    private bulletPool = null;
-
     private shoot: boolean = false;
 
     private bombPool = null;
@@ -61,6 +59,8 @@ export default class Player extends cc.Component {
 
     public weapon: string = "gun";
 
+    public gunType: string = "shotgun";
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -68,15 +68,8 @@ export default class Player extends cc.Component {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
-        this.bulletPool = new cc.NodePool('Bullet');
         this.bombPool = new cc.NodePool('Bomb');
-        let maxBulletNum = 5;
         let maxBombNum = 5;
-        for(let i: number = 0; i < maxBulletNum; i++) {
-            let bullet = cc.instantiate(this.bulletPrefab);
-
-            this.bulletPool.put(bullet);
-        }
         for(let i: number = 0; i < maxBombNum; i++) {
             let bomb = cc.instantiate(this.bombPrefab);
 
@@ -100,7 +93,7 @@ export default class Player extends cc.Component {
                         this.playerJump();
                     }
                     if(this.shoot) {
-                        this.createBullet();
+                        this.createBullet(this.gunType);
                     } else if(this.bomb) {
                         this.createBomb();
                     }
@@ -153,7 +146,7 @@ export default class Player extends cc.Component {
                     }, 0.5)
                 }
             }
-        } else if(other.node.ground == "wall") {
+        } else if(other.node.group == "wall") {
             if(other.node.name == "Die Boundary") {
                 this.playerDie();
             }
@@ -179,19 +172,40 @@ export default class Player extends cc.Component {
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity);    // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
+            this.animationState = this.animation.play('char1jump');
         }
     }
 
-    private createBullet()
+    private createBullet(mode: string)
     {
         this.shoot = false;
-        let bullet = null;
-        if (this.bulletPool.size() > 0) 
-            bullet = this.bulletPool.get(this.bulletPool);
-
-        if(bullet != null) {
-            bullet.getComponent('Bullet').setAngle(this.angle);
-            bullet.getComponent('Bullet').init(this.node);
+        if(mode == "normal") {
+            let bullet = cc.instantiate(this.bulletPrefab);
+            if(bullet != null) {
+                bullet.getComponent('Bullet').setAngle(this.angle);
+                bullet.getComponent('Bullet').init(this.node);
+            }
+        }
+        else if(mode == "burst") {
+            this.schedule(function() {
+                console.log("boom");
+                let bullet = cc.instantiate(this.bulletPrefab);
+                if(bullet != null) {
+                    bullet.getComponent('Bullet').setAngle(this.angle);
+                    bullet.getComponent('Bullet').init(this.node);
+                }
+            }, 0.05, 2);
+        }
+        else if(mode == "shotgun") {
+            let d_angle = -0.2;
+            for(let i = 0; i < 5; i++) {
+                let bullet = cc.instantiate(this.bulletPrefab);
+                if(bullet != null) {
+                    bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
+                    bullet.getComponent('Bullet').init(this.node);
+                    d_angle += 0.1;
+                }
+            }
         }
     }
 
@@ -269,7 +283,7 @@ export default class Player extends cc.Component {
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char3jump")) {
                     this.animationState = this.animation.play("char3jump");
                 }
-            } else if(this.node.name == "Player 4") {
+            }  else if(this.node.name == "Player 4") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
                     this.animationState = this.animation.play("char4idle");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char4run")) {
