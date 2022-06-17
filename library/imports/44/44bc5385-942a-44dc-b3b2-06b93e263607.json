@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Computer mouse R",
+    "texture": "fb0c5f81-4c75-45e7-8c1f-5dab4c34530d",
+    "atlas": "",
+    "rect": [
+      58,
+      6,
+      140,
+      244
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
