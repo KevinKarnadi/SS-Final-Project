@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "barrel",
+    "texture": "31ac9695-182f-4a90-9a0b-4be63331ab13",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      511,
+      512
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      512,
+      513
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
