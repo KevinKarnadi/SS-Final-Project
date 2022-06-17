@@ -3409,11 +3409,6 @@
     "meta": 1655456759028,
     "relativePath": "scripts\\Ground2.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655456712837,
-    "meta": 1655456759183,
-    "relativePath": "scripts\\Player.ts"
-  },
   "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
     "asset": 1655456712842,
     "meta": 1655456758782,
@@ -3470,8 +3465,13 @@
     "relativePath": "scripts\\map.ts"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655458392480,
-    "meta": 1655458393914,
+    "asset": 1655458575836,
+    "meta": 1655458696793,
     "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655459139916,
+    "meta": 1655459142398,
+    "relativePath": "scripts\\Player.ts"
   }
 }

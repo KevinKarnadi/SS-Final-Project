@@ -91,7 +91,7 @@ export default class Player extends cc.Component {
             if(!this.isDie) {
                 cc.find("Player Health/bar", this.node).width = (this.HP / this.maxHP) * 100;
                 this.playerMove(dt);
-                if(this.HP == 0){
+                if(this.HP <= 0){
                     this.playerDie();
                 }
                 if(this.jump) {
@@ -117,6 +117,9 @@ export default class Player extends cc.Component {
         // }
         if(other.node.group == "bullet" || other.node.group == "explosiveObj") {
             this.HP -= 10;
+            if(this.HP < 0) {
+                this.HP = 0;
+            }
             if (this.node.name == 'Player 1' && this.HP != 0){
                 this.animationState = this.animation.play('char1hurt');
                 this.scheduleOnce(function(){
@@ -134,6 +137,10 @@ export default class Player extends cc.Component {
                 this.scheduleOnce(function(){
                     this.animationState = this.animation.play('char3idle');
                 }, 0.5);
+            }
+        } else if(other.node.ground == "wall") {
+            if(other.node.name == "Die Boundary") {
+                this.playerDie();
             }
         }
     }

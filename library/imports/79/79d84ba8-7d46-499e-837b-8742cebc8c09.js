@@ -82,7 +82,7 @@ var Player = /** @class */ (function (_super) {
             if (!this.isDie) {
                 cc.find("Player Health/bar", this.node).width = (this.HP / this.maxHP) * 100;
                 this.playerMove(dt);
-                if (this.HP == 0) {
+                if (this.HP <= 0) {
                     this.playerDie();
                 }
                 if (this.jump) {
@@ -107,6 +107,9 @@ var Player = /** @class */ (function (_super) {
         // }
         if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
             this.HP -= 10;
+            if (this.HP < 0) {
+                this.HP = 0;
+            }
             if (this.node.name == 'Player 1' && this.HP != 0) {
                 this.animationState = this.animation.play('char1hurt');
                 this.scheduleOnce(function () {
@@ -124,6 +127,11 @@ var Player = /** @class */ (function (_super) {
                 this.scheduleOnce(function () {
                     this.animationState = this.animation.play('char3idle');
                 }, 0.5);
+            }
+        }
+        else if (other.node.ground == "wall") {
+            if (other.node.name == "Die Boundary") {
+                this.playerDie();
             }
         }
     };

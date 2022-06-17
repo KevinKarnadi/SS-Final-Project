@@ -223,29 +223,6 @@ var GameManager = /** @class */ (function (_super) {
             }
             // draw trajectory line
             this.player.line.getComponent("TrajectoryLine").drawLine(this.shootAngle);
-            // console.log(angle);
-            // console.log(playerPos.x + " " + playerPos.y)
-            // console.log(mousePos.x + " " + mousePos.y);
-            // gagal
-            // var pos = this.player.node.getPosition();
-            // var angle = pos.angle(event.getLocation());
-            // var degr = cc.misc.radiansToDegrees(angle);
-            // this.player.node.getjoi
-            // console.log(angle)
-            // angry bird
-            // if(this.currAngle < 90) {
-            //     this.currAngle += 1;
-            // }
-            // let start = event.getStartLocation();
-            // let cur = event.getLocation();
-            // cur.subSelf(start);
-            // let cur_v = cc.v2(cur.x, cur.y);
-            // if(cur_v.mag() > this.maxLength){
-            //     cur_v.normalizeSelf().mulSelf(this.maxLength);
-            // }
-            // this.node.setPosition(this.startPos.add(cur_v));
-            // this.rb.linearVelocity = cc.Vec2.ZERO;
-            // this.rb.angularVelocity = 0;
         }
         event.stopPropagation();
     };
