@@ -86,8 +86,8 @@ export default class GameManager extends cc.Component {
         cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
         if(cameraPos.x < 0) {
             cameraPos.x = 0;
-        } else if(cameraPos.x > 8500) {
-            cameraPos.x = 8500;
+        } else if(cameraPos.x > 2033) {
+            cameraPos.x = 2033;
         }
         this.camera.setPosition(cameraPos);
     }
@@ -233,36 +233,6 @@ export default class GameManager extends cc.Component {
 
             // draw trajectory line
             this.player.line.getComponent("TrajectoryLine").drawLine(this.shootAngle);
-
-            // console.log(angle);
-            // console.log(playerPos.x + " " + playerPos.y)
-            // console.log(mousePos.x + " " + mousePos.y);
-
-            // gagal
-            // var pos = this.player.node.getPosition();
-            // var angle = pos.angle(event.getLocation());
-            // var degr = cc.misc.radiansToDegrees(angle);
-            // this.player.node.getjoi
-            // console.log(angle)
-
-            // angry bird
-            // if(this.currAngle < 90) {
-            //     this.currAngle += 1;
-
-            // }
-            // let start = event.getStartLocation();
-            // let cur = event.getLocation();
-            // cur.subSelf(start);
-            
-            // let cur_v = cc.v2(cur.x, cur.y);
-            // if(cur_v.mag() > this.maxLength){
-            //     cur_v.normalizeSelf().mulSelf(this.maxLength);
-            // }
-
-            // this.node.setPosition(this.startPos.add(cur_v));
-            
-            // this.rb.linearVelocity = cc.Vec2.ZERO;
-            // this.rb.angularVelocity = 0;
         }
 
         event.stopPropagation();

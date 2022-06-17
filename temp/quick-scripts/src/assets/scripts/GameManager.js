@@ -83,8 +83,8 @@ var GameManager = /** @class */ (function (_super) {
         if (cameraPos.x < 0) {
             cameraPos.x = 0;
         }
-        else if (cameraPos.x > 8500) {
-            cameraPos.x = 8500;
+        else if (cameraPos.x > 2033) {
+            cameraPos.x = 2033;
         }
         this.camera.setPosition(cameraPos);
     };

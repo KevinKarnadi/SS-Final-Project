@@ -5,21 +5,21 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
-      "width": 1382,
+      "x": -1578,
+      "y": -89,
+      "width": 1384,
       "height": 744,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 292,
-            "height": 626,
+            "width": 292.95001220703125,
+            "height": 628.2000122070312,
             "type": "dock-v",
             "children": [
               {
-                "width": 292,
-                "height": 300,
+                "width": 292.95001220703125,
+                "height": 301.0625,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 292,
-                "height": 323,
+                "width": 292.95001220703125,
+                "height": 324.13751220703125,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 760,
-            "height": 626,
+            "width": 762.4625244140625,
+            "height": 628.2000122070312,
             "type": "dock-v",
             "children": [
               {
-                "width": 760,
-                "height": 349.984375,
+                "width": 762.4625244140625,
+                "height": 351.2375183105469,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,8 +52,8 @@
                 ]
               },
               {
-                "width": 760,
-                "height": 273,
+                "width": 762.4625244140625,
+                "height": 273.9624938964844,
                 "type": "panel",
                 "active": 2,
                 "children": [
@@ -65,8 +65,8 @@
             ]
           },
           {
-            "width": 308,
-            "height": 626,
+            "width": 309,
+            "height": 628.2000122070312,
             "type": "panel",
             "active": 0,
             "children": [
@@ -86,14 +86,16 @@
         "inspector",
         "cocos-services"
       ]
-    }
+    },
+    " common-asset-worker-worker": {},
+    "window-1655458481991": {}
   },
   "panels": {
     "project-settings": {
-      "x": 395,
+      "x": 392,
       "y": 84,
-      "width": 600,
-      "height": 565
+      "width": 604,
+      "height": 567
     }
   },
   "panelLabelWidth": {}

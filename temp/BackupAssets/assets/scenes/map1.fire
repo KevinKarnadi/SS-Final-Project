@@ -28281,6 +28281,7 @@
     "groundPrefab": {
       "__uuid__": "f078255e-7bd6-4720-bdf5-a120568e32d5"
     },
+    "groundUpperPrefab": null,
     "_id": "67EIZRdVtGGpC/mqaxO/0s"
   },
   {
@@ -28515,7 +28516,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1861.944,
+        2492.124,
         106.975,
         0,
         0,
