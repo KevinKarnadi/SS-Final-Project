@@ -11,6 +11,7 @@ require('./assets/scripts/Instructions');
 require('./assets/scripts/Lobby');
 require('./assets/scripts/MainMenu');
 require('./assets/scripts/Player');
+require('./assets/scripts/PlayerName');
 require('./assets/scripts/SignIn');
 require('./assets/scripts/SignUp');
 require('./assets/scripts/TrajectoryLine');

@@ -5,14 +5,22 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
+<<<<<<< HEAD
       "x": 0,
       "y": 0,
       "width": 1536,
       "height": 824,
+=======
+      "x": -1928,
+      "y": -276,
+      "width": 1936,
+      "height": 1048,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
       "layout": {
         "type": "dock-h",
         "children": [
           {
+<<<<<<< HEAD
             "width": 325.875,
             "height": 708.2000122070312,
             "type": "dock-v",
@@ -20,6 +28,15 @@
               {
                 "width": 325.875,
                 "height": 339.1000061035156,
+=======
+            "width": 414,
+            "height": 930,
+            "type": "dock-v",
+            "children": [
+              {
+                "width": 414,
+                "height": 446,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +44,13 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "width": 325.875,
                 "height": 366.1000061035156,
+=======
+                "width": 414,
+                "height": 481,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,6 +60,7 @@
             ]
           },
           {
+<<<<<<< HEAD
             "width": 847.6625366210938,
             "height": 708.2000122070312,
             "type": "dock-v",
@@ -45,6 +68,15 @@
               {
                 "width": 847.6625366210938,
                 "height": 396.1125183105469,
+=======
+            "width": 1065,
+            "height": 930,
+            "type": "dock-v",
+            "children": [
+              {
+                "width": 1065,
+                "height": 521,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,10 +84,15 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "width": 847.6625366210938,
                 "height": 309.0874938964844,
+=======
+                "width": 1065,
+                "height": 406,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
                 "type": "panel",
-                "active": 2,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline",
@@ -65,8 +102,13 @@
             ]
           },
           {
+<<<<<<< HEAD
             "width": 342.8625183105469,
             "height": 708.2000122070312,
+=======
+            "width": 435,
+            "height": 930,
+>>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
             "type": "panel",
             "active": 0,
             "children": [

@@ -68,6 +68,7 @@ export default class Player extends cc.Component {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
+        this.setPlayerName();
         this.bombPool = new cc.NodePool('Bomb');
         let maxBombNum = 5;
         for(let i: number = 0; i < maxBombNum; i++) {
@@ -315,5 +316,17 @@ export default class Player extends cc.Component {
     setPlayerBomb(angle) {
         this.angle = angle;
         this.bomb = true;
+    }
+
+    setPlayerName() {
+        if(this.node.name == "Player 1") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 1 Name");
+        } else if(this.node.name == "Player 2") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 2 Name");
+        } else if(this.node.name == "Player 3") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 3 Name");
+        } else if(this.node.name == "Player 4") {
+            this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
+        }
     }
 }

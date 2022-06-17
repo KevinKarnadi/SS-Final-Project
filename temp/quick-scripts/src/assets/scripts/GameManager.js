@@ -33,6 +33,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.player1 = null;
         _this.player2 = null;
         _this.player3 = null;
+        _this.player4 = null;
         _this.UI = null;
         _this.camera = null;
         _this.bgm = null;
@@ -42,8 +43,10 @@ var GameManager = /** @class */ (function (_super) {
         _this.shoot = false;
         _this.totalPlayer = 3;
         _this.shootAngle = null;
+        _this.playerNum = null;
         // private currPlayerPos = null;
         _this.isPaused = false;
+        _this.playerPath = "Canvas/Players/";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -52,9 +55,11 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+        this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
+        this.loadPlayer();
         this.changePlayer(0);
         this.initResumeBtn();
     };
@@ -73,6 +78,20 @@ var GameManager = /** @class */ (function (_super) {
             cameraPos.x = 2033 + 35;
         }
         this.camera.setPosition(cameraPos);
+    };
+    GameManager.prototype.loadPlayer = function () {
+        switch (this.playerNum) {
+            // case 4:
+            // cc.find(this.playerPath + "Player 4").active = true;
+            case "3":
+                cc.find(this.playerPath + "Player 3").active = true;
+            case "2":
+                cc.find(this.playerPath + "Player 2").active = true;
+                cc.find(this.playerPath + "Player 1").active = true;
+                break;
+            default:
+                break;
+        }
     };
     GameManager.prototype.changePlayer = function (num) {
         this.currPlayer = num % this.totalPlayer;
@@ -269,6 +288,9 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(Player_1.default)
     ], GameManager.prototype, "player3", void 0);
+    __decorate([
+        property(Player_1.default)
+    ], GameManager.prototype, "player4", void 0);
     __decorate([
         property(UI_1.default)
     ], GameManager.prototype, "UI", void 0);

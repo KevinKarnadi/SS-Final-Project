@@ -84,11 +84,6 @@
     "meta": 1655492563624,
     "relativePath": "scripts\\SignUp.ts"
   },
-  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
-    "asset": 1655492501945,
-    "meta": 1655492563687,
-    "relativePath": "scripts\\UI.ts"
-  },
   "4977cb39-3d9b-44f6-8a80-df768def1503": {
     "asset": 1655492501180,
     "meta": 1655492562407,
@@ -7084,11 +7079,6 @@
     "meta": 1655492563237,
     "relativePath": "scripts\\Ground2.ts"
   },
-  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
-    "asset": 1655494983446,
-    "meta": 1655494983477,
-    "relativePath": "scenes\\instructions - win.fire"
-  },
   "62c6c919-5814-4460-8812-a21b718708ad": {
     "asset": 1655492501528,
     "meta": 1655492562617,
@@ -8134,11 +8124,6 @@
     "meta": 1655492563826,
     "relativePath": "tiles\\rockUpper0.png"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655492501941,
-    "meta": 1655492563571,
-    "relativePath": "scripts\\Player.ts"
-  },
   "fb0c5f81-4c75-45e7-8c1f-5dab4c34530d": {
     "asset": 1655492501527,
     "meta": 1655492562590,
@@ -8173,16 +8158,6 @@
     "asset": 1655492501688,
     "meta": 1655492562739,
     "relativePath": "prefabs\\map2GroundLower2.prefab"
-  },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655492501914,
-    "meta": 1655492563139,
-    "relativePath": "scripts\\GameManager.ts"
-  },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655492501782,
-    "meta": 1655492562880,
-    "relativePath": "scenes\\map1.fire"
   },
   "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
     "asset": 1655492501772,
@@ -8709,11 +8684,6 @@
     "meta": 1655494667518,
     "relativePath": "model\\primitives.fbx"
   },
-  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
-    "asset": 1655495588619,
-    "meta": 1655495588645,
-    "relativePath": "scenes\\menu.fire"
-  },
   "d88601a3-d368-4f56-a122-f399a96e41de": {
     "asset": 1655495087624,
     "meta": 1655495087626,
@@ -8738,5 +8708,45 @@
     "asset": 1655495436166,
     "meta": 1655495436220,
     "relativePath": "menu\\Play R.png"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655495776743,
+    "meta": 1655495814520,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655495776744,
+    "meta": 1655495814673,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
+    "asset": 1655495613515,
+    "meta": 1655495814695,
+    "relativePath": "scripts\\UI.ts"
+  },
+  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
+    "asset": 1655494983446,
+    "meta": 1655495814699,
+    "relativePath": "scenes\\instructions - win.fire"
+  },
+  "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
+    "asset": 1655495776745,
+    "meta": 1655495814736,
+    "relativePath": "scripts\\PlayerName.ts"
+  },
+  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
+    "asset": 1655495588619,
+    "meta": 1655495814738,
+    "relativePath": "scenes\\menu.fire"
+  },
+  "a1c84c84-e423-47be-abcd-c229d3f1ce7f": {
+    "asset": 1655495776741,
+    "meta": 1655495814741,
+    "relativePath": "scenes\\player name.fire"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655495776737,
+    "meta": 1655495814773,
+    "relativePath": "scenes\\map1.fire"
   }
 }
