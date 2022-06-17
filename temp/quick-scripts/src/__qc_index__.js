@@ -12,4 +12,5 @@ require('./assets/scripts/TrajectoryLine');
 require('./assets/scripts/UI');
 require('./assets/scripts/Welcome');
 require('./assets/scripts/WelcomeTxt');
+require('./assets/scripts/explosiveObj');
 require('./assets/scripts/map');

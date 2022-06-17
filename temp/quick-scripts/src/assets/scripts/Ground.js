@@ -48,12 +48,22 @@ var Ground = /** @class */ (function (_super) {
     //this function sets the bullet's initial position when it is reused.
     Ground.prototype.setInitPos = function (node, index) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
-        this.node.position = cc.v3(-480 + (15 * index) % (15 * 160), -320 + 15 * Math.floor(index / 160));
+        this.node.position = cc.v3(-480 + (15 * index) % (15 * 200), -320 + 15 * Math.floor(index / 200));
         this.node.position = this.node.position.addSelf(node.position);
     };
-    Ground.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
+    Ground.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (otherCollider.node.group == "bullet") {
+        if (other.node.group == "bullet") {
+            // console.log(other.node.group, "begin");
+            this.node.getChildByName("particle").active = true;
+            this.scheduleOnce(function () {
+                _this.node.destroy();
+            }, 0.35);
+        }
+    };
+    Ground.prototype.onPreSolve = function (contact, self, other) {
+        var _this = this;
+        if (other.node.group == "explosiveObj") {
             this.node.getChildByName("particle").active = true;
             this.scheduleOnce(function () {
                 _this.node.destroy();

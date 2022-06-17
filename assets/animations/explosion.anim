@@ -3,10 +3,10 @@
   "_name": "explosion",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.5166666666666667,
+  "_duration": 0.6,
   "sample": 60,
-  "speed": 1,
-  "wrapMode": 2,
+  "speed": 0.5,
+  "wrapMode": 1,
   "curveData": {
     "comps": {
       "cc.Sprite": {
@@ -14,7 +14,7 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "404ebb84-6512-440d-995a-0173d8d62f7f"
+              "__uuid__": "1e36e7f7-30c0-42f5-a952-d1a71ba52241"
             }
           },
           {
@@ -52,9 +52,51 @@
             "value": {
               "__uuid__": "e3d8141b-35c7-4781-88fb-bb867c2deb98"
             }
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": {
+              "__uuid__": "e3d8141b-35c7-4781-88fb-bb867c2deb98"
+            }
+          }
+        ]
+      },
+      "cc.RigidBody": {
+        "gravityScale": [
+          {
+            "frame": 0,
+            "value": 0
           }
         ]
       }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 0.5,
+          "value": 255
+        },
+        {
+          "frame": 0.5833333333333334,
+          "value": 0
+        }
+      ],
+      "width": [
+        {
+          "frame": 0,
+          "value": 180
+        }
+      ],
+      "height": [
+        {
+          "frame": 0,
+          "value": 120
+        }
+      ]
     }
   },
   "events": []

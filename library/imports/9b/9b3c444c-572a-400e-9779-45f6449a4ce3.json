@@ -410,7 +410,7 @@
     "_id": ""
   },
   {
-    "__type__": "dc60dudp3lCe6ap86+qrBkE",
+    "__type__": "c4825SrSX9Dg4uXzK4Qa7oU",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -420,7 +420,7 @@
     "groundPrefab": {
       "__uuid__": "f078255e-7bd6-4720-bdf5-a120568e32d5"
     },
-    "Bound": 40,
+    "Bound": -223,
     "growDir": 1,
     "_id": ""
   },

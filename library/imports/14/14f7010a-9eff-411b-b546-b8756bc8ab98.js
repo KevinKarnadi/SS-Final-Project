@@ -29,23 +29,32 @@ var Map = /** @class */ (function (_super) {
     function Map() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.groundPrefab = null;
+        _this.groundUpperPrefab = null;
         _this.groundPool = null;
         _this.groundPool1 = null;
         return _this;
     }
     Map.prototype.onLoad = function () {
-        this.groundPool = new cc.NodePool('Ground');
-        for (var i = 0; i < 1120; i++) {
-            var ground = cc.instantiate(this.groundPrefab);
-            this.groundPool.put(ground);
-            // y.max = -215
+        if (!this.groundUpperPrefab) {
+            this.groundPool = new cc.NodePool('Ground');
+            for (var i = 0; i < 1400; i++) {
+                var ground = cc.instantiate(this.groundPrefab);
+                this.groundPool.put(ground);
+                // y.max = -222.5
+            }
         }
-        // this.groundPool1 = new cc.NodePool('Ground1');
-        // for(let i: number = 0; i < 200; i++) {
-        //     let ground = cc.instantiate(this.groundPrefab);
-        //     this.groundPool1.put(ground);
-        //     // y.max = -215
-        // }
+        else {
+            this.groundPool = new cc.NodePool('Ground');
+            for (var i = 0; i < (1400 - 200); i++) {
+                var ground = cc.instantiate(this.groundPrefab);
+                this.groundPool.put(ground);
+            }
+            this.groundPool1 = new cc.NodePool('Ground1');
+            for (var i = 0; i < 200; i++) {
+                var ground = cc.instantiate(this.groundUpperPrefab);
+                this.groundPool1.put(ground);
+            }
+        }
     };
     Map.prototype.start = function () {
         this.createGround();
@@ -53,22 +62,34 @@ var Map = /** @class */ (function (_super) {
     Map.prototype.createGround = function () {
         var ground = null;
         var i = 0;
-        while (this.groundPool.size() > 0) {
-            ground = this.groundPool.get(this.groundPool);
-            ground.getComponent('Ground').init(this.node, i);
-            i++;
+        if (!this.groundUpperPrefab) {
+            while (this.groundPool.size() > 0) {
+                ground = this.groundPool.get(this.groundPool);
+                ground.getComponent('Ground').init(this.node, i);
+                i++;
+            }
         }
-        // ground = null;
-        // i = 0;
-        // while(this.groundPool1.size() > 0) {
-        //     ground = this.groundPool1.get(this.groundPool1);
-        //     ground.getComponent('Ground').init(this.node, i);
-        //     i++; 
-        // }
+        else {
+            while (this.groundPool.size() > 0) {
+                ground = this.groundPool.get(this.groundPool);
+                ground.getComponent('Ground').init(this.node, i);
+                i++;
+            }
+            ground = null;
+            i = 1400 - 200;
+            while (this.groundPool1.size() > 0) {
+                ground = this.groundPool1.get(this.groundPool1);
+                ground.getComponent('Ground').init(this.node, i);
+                i++;
+            }
+        }
     };
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "groundPrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "groundUpperPrefab", void 0);
     Map = __decorate([
         ccclass
     ], Map);

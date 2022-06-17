@@ -7,7 +7,7 @@ export default class Ground2 extends cc.Component {
     private groundPrefab: cc.Prefab = null;
 
     @property()
-    Bound: number = -223;
+    Bound: number = -223; // base
 
     @property()
     growDir: number = 0;

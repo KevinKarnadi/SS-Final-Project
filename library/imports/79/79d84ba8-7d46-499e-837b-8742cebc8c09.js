@@ -105,7 +105,7 @@ var Player = /** @class */ (function (_super) {
         // if(other.tag == 1){     // on ground or props
         //     this.isOnGround = true;
         // }
-        if (other.node.group == "bullet") {
+        if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
             this.HP -= 10;
             if (this.node.name == 'Player 1' && this.HP != 0) {
                 this.animationState = this.animation.play('char1hurt');

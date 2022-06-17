@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rockLower0",
+    "texture": "b0c77456-37bb-4338-9501-fe174ef7ae6e",
+    "atlas": "",
+    "rect": [
+      16,
+      0,
+      16,
+      16
+    ],
+    "offset": [
+      8,
+      8
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

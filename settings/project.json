@@ -4,42 +4,57 @@
     "player",
     "ground",
     "bullet",
-    "wall"
+    "wall",
+    "explosiveObj"
   ],
   "collision-matrix": [
     [
       true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
       false,
-      false,
+      true,
       null,
-      false
+      true
     ],
     [
+      true,
+      true,
+      true,
       false,
-      true,
-      true,
       true,
       true
     ],
     [
-      false,
+      true,
       true,
       false,
-      true
-    ],
-    [
-      false,
-      true,
       true,
       false,
       true
     ],
     [
-      false,
       true,
-      false,
       true,
-      false
+      true,
+      true,
+      true,
+      true
     ]
   ],
   "excluded-modules": [
@@ -67,6 +82,5 @@
     "audience": {
       "enable": false
     }
-  },
-  "start-scene": "current"
+  }
 }

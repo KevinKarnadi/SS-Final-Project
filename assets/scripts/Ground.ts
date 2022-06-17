@@ -34,20 +34,30 @@ export default class Ground extends cc.Component
     {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
 
-        this.node.position = cc.v3(-480 + (15 * index) % (15 * 160), -320 + 15 * Math.floor(index / 160)); 
+        this.node.position = cc.v3(-480 + (15 * index) % (15 * 200), -320 + 15 * Math.floor(index / 200)); 
         
-
         this.node.position = this.node.position.addSelf(node.position);
     }
     
-    onBeginContact(contact, selfCollider, otherCollider) {
-        if(otherCollider.node.group == "bullet") {
+    onBeginContact(contact, self, other) {
+        if(other.node.group == "bullet") {
+            // console.log(other.node.group, "begin");
             this.node.getChildByName("particle").active = true;
             
             this.scheduleOnce(()=>{
                 this.node.destroy();
             }, 0.35);
             
+        }
+    }
+
+    onPreSolve(contact, self, other){
+        if(other.node.group == "explosiveObj"){
+            this.node.getChildByName("particle").active = true;
+            
+            this.scheduleOnce(()=>{
+                this.node.destroy();
+            }, 0.35);
         }
     }
 }

@@ -1,0 +1,24 @@
+{
+  "__type__": "cc.TiledMapAsset",
+  "_name": "rockLower",
+  "_objFlags": 0,
+  "_native": "",
+  "tmxXmlStr": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<map version=\"1.8\" tiledversion=\"1.8.4\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"2\" height=\"2\" tilewidth=\"16\" tileheight=\"16\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\r\n <tileset firstgid=\"1\" name=\"Textures-16\" tilewidth=\"16\" tileheight=\"16\" tilecount=\"1024\" columns=\"32\">\r\n  <image source=\"../../downloadedAssets/Textures-16.png\" width=\"512\" height=\"512\"/>\r\n </tileset>\r\n <layer id=\"1\" name=\"Tile Layer 1\" width=\"2\" height=\"2\">\r\n  <data encoding=\"csv\">\r\n0,141,\r\n0,0\r\n</data>\r\n </layer>\r\n</map>\r\n",
+  "textures": [
+    null
+  ],
+  "textureNames": [
+    "../../downloadedAssets/Textures-16.png"
+  ],
+  "textureSizes": [
+    {
+      "__type__": "cc.Size",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "imageLayerTextures": [],
+  "imageLayerTextureNames": [],
+  "tsxFiles": [],
+  "tsxFileNames": []
+}

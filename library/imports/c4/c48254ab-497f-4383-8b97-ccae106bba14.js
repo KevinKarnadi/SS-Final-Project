@@ -29,7 +29,7 @@ var Ground2 = /** @class */ (function (_super) {
     function Ground2() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.groundPrefab = null;
-        _this.Bound = -223;
+        _this.Bound = -223; // base
         _this.growDir = 0;
         return _this;
     }
