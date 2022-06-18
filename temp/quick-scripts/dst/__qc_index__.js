@@ -10,6 +10,7 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
+require('./assets/scripts/AreaNode');
 require('./assets/scripts/Bomb');
 require('./assets/scripts/Bullet');
 require('./assets/scripts/GameManager');
@@ -21,6 +22,7 @@ require('./assets/scripts/Instructions-win');
 require('./assets/scripts/Instructions');
 require('./assets/scripts/Lobby');
 require('./assets/scripts/MainMenu');
+require('./assets/scripts/MiniCam');
 require('./assets/scripts/Player');
 require('./assets/scripts/PlayerName');
 require('./assets/scripts/Playerchoose');
@@ -32,6 +34,7 @@ require('./assets/scripts/Welcome');
 require('./assets/scripts/WelcomeTxt');
 require('./assets/scripts/explosiveObj');
 require('./assets/scripts/map');
+require('./assets/scripts/weaponObj');
 
                     }
                     if (nodeEnv) {
