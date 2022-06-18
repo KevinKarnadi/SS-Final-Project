@@ -18,7 +18,7 @@ export default class ExplosiveObj extends cc.Component {
     }
     
     onBeginContact(contact, self, other){
-        if(other.node.group == "bullet" || other.node.group == "explosiveObj"){
+        if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb"){
             // this.node.y += 1;
             // this.node.y -= 6;
             this.node.getComponent(cc.PhysicsCircleCollider).enabled = true;

@@ -74,7 +74,6 @@ var Bullet = /** @class */ (function (_super) {
         this.unscheduleAllCallbacks();
         // this.scheduleOnce(() => {
         this.animation.stop();
-        console.log("aanasdn");
         this.node.destroy();
         // }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
     };

@@ -46,7 +46,7 @@ export default class Ground extends cc.Component
             
             this.scheduleOnce(()=>{
                 this.node.destroy();
-            }, 0.35);
+            }, 0.1);
             
         } else if(other.node.group == "bullet") {
             this.node.getChildByName("particle").active = true;

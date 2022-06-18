@@ -515,8 +515,8 @@
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655526077499,
-    "meta": 1655526121431,
+    "asset": 1655546935244,
+    "meta": 1655560271953,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
@@ -7420,8 +7420,8 @@
     "relativePath": "GUI Kit resource\\Sprites\\Component\\Icon_ItemIcons_(x2)\\ItemIcon_64\\Icon_ItemIcon_Treasure.Png"
   },
   "14bfa826-c93f-4d63-9bc3-d96b2656083d": {
-    "asset": 1655521011988,
-    "meta": 1655526121419,
+    "asset": 1655546935244,
+    "meta": 1655560271952,
     "relativePath": "instructions"
   },
   "3ac97237-b53b-4cbd-939f-6fe0c61d1f9d": {
@@ -7528,11 +7528,6 @@
     "asset": 1655468461427,
     "meta": 1655526121848,
     "relativePath": "prefabs\\map.prefab"
-  },
-  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
-    "asset": 1655468461437,
-    "meta": 1655526122010,
-    "relativePath": "scripts\\explosiveObj.ts"
   },
   "62c6c919-5814-4460-8812-a21b718708ad": {
     "asset": 1655456712806,
@@ -10619,29 +10614,89 @@
     "meta": 1655544711310,
     "relativePath": "scripts\\Player.ts"
   },
-  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655544876180,
-    "meta": 1655544881605,
-    "relativePath": "scripts\\Bomb.ts"
-  },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
     "asset": 1655546140485,
     "meta": 1655546145159,
     "relativePath": "scripts\\GameManager.ts"
   },
+  "32f77663-1432-4962-a902-993e9d5ef357": {
+    "asset": 1655546935244,
+    "meta": 1655547078256,
+    "relativePath": "scripts\\Playerchoose.ts"
+  },
+  "75f3b5e3-dba0-41e3-a0bf-76c2334db06d": {
+    "asset": 1655546935188,
+    "meta": 1655547078200,
+    "relativePath": "instructions\\4.png"
+  },
+  "ea382efe-c15f-48d3-a69a-6874e73ec33d": {
+    "asset": 1655546935188,
+    "meta": 1655547078208,
+    "relativePath": "instructions\\2.png"
+  },
+  "7dc825fb-db59-44cf-b4a1-20fdcd89b09c": {
+    "asset": 1655546935196,
+    "meta": 1655547078208,
+    "relativePath": "instructions\\Btn_Square03_White.png"
+  },
+  "9fef5160-217f-4d46-ac27-c5975053739a": {
+    "asset": 1655546935188,
+    "meta": 1655547078264,
+    "relativePath": "instructions\\3.png"
+  },
+  "84f58db2-2e82-4889-a475-3abd3361ab48": {
+    "asset": 1655546935188,
+    "meta": 1655547078264,
+    "relativePath": "instructions\\A.png"
+  },
+  "37718698-e425-43aa-ac28-24bfec88713d": {
+    "asset": 1655546935212,
+    "meta": 1655547078264,
+    "relativePath": "instructions\\E.png"
+  },
+  "b69de8a4-ffd1-4814-ba88-95e440e9c774": {
+    "asset": 1655546935212,
+    "meta": 1655547078272,
+    "relativePath": "instructions\\M.png"
+  },
+  "83d3477a-3658-4010-91bd-b089420ac6a8": {
+    "asset": 1655546935228,
+    "meta": 1655547078296,
+    "relativePath": "instructions\\map1.jpg"
+  },
+  "7ea0329d-2647-4507-937f-62620240dc27": {
+    "asset": 1655546935212,
+    "meta": 1655547078296,
+    "relativePath": "instructions\\T.png"
+  },
+  "169a307d-3530-43ae-86a0-5b69668d579c": {
+    "asset": 1655546935236,
+    "meta": 1655547078320,
+    "relativePath": "instructions\\map2.jpg"
+  },
   "889b5329-bfed-4779-9715-b56e83d934ca": {
-    "asset": 1655546201046,
-    "meta": 1655546203108,
+    "asset": 1655560693997,
+    "meta": 1655560701504,
     "relativePath": "scripts\\Bullet.ts"
   },
+  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
+    "asset": 1655560803364,
+    "meta": 1655560805527,
+    "relativePath": "scripts\\explosiveObj.ts"
+  },
   "27c0127c-e3b1-4bf4-97cc-17049951fe99": {
-    "asset": 1655546628205,
-    "meta": 1655546632584,
+    "asset": 1655561001366,
+    "meta": 1655561027999,
     "relativePath": "scripts\\Ground.ts"
   },
   "c48254ab-497f-4383-8b97-ccae106bba14": {
-    "asset": 1655546614818,
-    "meta": 1655546632666,
+    "asset": 1655560996519,
+    "meta": 1655561028072,
     "relativePath": "scripts\\Ground2.ts"
+  },
+  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
+    "asset": 1655561405347,
+    "meta": 1655561407005,
+    "relativePath": "scripts\\Bomb.ts"
   }
 }

@@ -69,8 +69,6 @@ export default class Bullet extends cc.Component
         // this.scheduleOnce(() => {
 
             this.animation.stop();
-
-            console.log("aanasdn")
             
             this.node.destroy();
 

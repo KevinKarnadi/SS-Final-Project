@@ -54,10 +54,9 @@ export default class Ground2 extends cc.Component {
     onBeginContact(contact, self, other) {
         if(other.node.group == "bomb" || other.node.group == "explosiveObj") {
             this.node.getChildByName("particle").active = true;
-            
             this.scheduleOnce(()=>{
                 this.node.destroy();
-            }, 0.3);
+            }, 0.1);
             
         } else if(other.node.group == "bullet") {
             this.node.getChildByName("particle").active = true;

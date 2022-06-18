@@ -82,13 +82,13 @@ var Bomb = /** @class */ (function (_super) {
     };
     //detect collision
     Bomb.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
-        // this.node.stopAllActions();
         var _this = this;
-        // this.unscheduleAllCallbacks();
-        // this.anim.stop();
         this.scheduleOnce(function () {
+            _this.node.stopAllActions();
+            _this.unscheduleAllCallbacks();
+            _this.animation.stop();
             _this.bombManager.put(_this.node);
-        }, 0.1);
+        }, 0.07);
     };
     Bomb.prototype.setAngle = function (angle) {
         this.shootAngle = angle;

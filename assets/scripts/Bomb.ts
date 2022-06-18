@@ -80,14 +80,12 @@ export default class Bomb extends cc.Component
     
     //detect collision
     onBeginContact(contact, selfCollider, otherCollider) {
-        // this.node.stopAllActions();
-        
-        // this.unscheduleAllCallbacks();
-
-        // this.anim.stop();
         this.scheduleOnce(() => {
+            this.node.stopAllActions();
+            this.unscheduleAllCallbacks();
+            this.animation.stop();
             this.bombManager.put(this.node);
-        }, 0.1);
+        }, 0.07);
     }
 
     setAngle(angle) {
