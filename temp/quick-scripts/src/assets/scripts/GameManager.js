@@ -150,6 +150,7 @@ var GameManager = /** @class */ (function (_super) {
         if ((this.player && !this.player.isDie)) {
             this.player.setPlayerMoveDirection(0);
             this.player.setPlayerJump(false);
+            this.player.line.getComponent("TrajectoryLine").clearLine();
             this.onDisable();
         }
         switch (this.currPlayer) {
@@ -275,17 +276,17 @@ var GameManager = /** @class */ (function (_super) {
         else {
             this.player.setPlayerChangeDirection(1);
         }
+        if (diffY < 0) {
+            this.shootAngle *= -1;
+        }
         if (!this.shoot) {
             if (this.player.weapon == "gun") {
-                if (diffY < 0) {
-                    this.shootAngle *= -1;
-                }
                 this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle); // draw trajectory line
             }
             else if (this.player.weapon == "bomb") {
-                if (diffY >= 0) { // draw trajectory line
-                    this.player.line.getComponent("TrajectoryLine").drawCurveLine(this.shootAngle);
-                }
+                var power = (Math.abs(diffY) >= Math.abs(diffX) ? Math.abs(diffY) : Math.abs(diffX));
+                this.player.line.getComponent("TrajectoryLine").drawCurveLine(this.shootAngle, power * 2); // draw arrow
+                this.player.power = (power * 2 > 100) ? 100 : power * 2;
             }
         }
         event.stopPropagation();

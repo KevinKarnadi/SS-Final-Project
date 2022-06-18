@@ -10,7 +10,21 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class TrajectoryLine extends cc.Component {
 
+    @property(cc.Prefab)
+    arrowPrefab: cc.Prefab = null;
+
+    @property(cc.Label)
+    angle: cc.Label = null;
+
+    @property(cc.Label)
+    power: cc.Label = null;
+
+    @property(cc.Node)
+    label: cc.Node = null;
+
     private line: cc.Graphics = null;
+
+    private arrow = null;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -33,12 +47,23 @@ export default class TrajectoryLine extends cc.Component {
         this.line.stroke();
     }
 
-    public drawCurveLine(angle) {
-        this.line.clear();
-        this.line.lineWidth = 5;
-        this.line.lineCap = cc.Graphics.LineCap.ROUND;
-        this.line.moveTo(35, 8);
+    public drawCurveLine(angle, power) {
+        if(this.arrow) {
+            if(power > 100) power = 100;
+            let degree = angle * 180 / Math.PI;
+            this.arrow.getComponent("Arrow").arrowMove(degree);
+            this.angle.string = Math.floor(degree).toString();
+            this.power.string = power.toString();
+        } else {
+            this.arrow = cc.instantiate(this.arrowPrefab);
+            this.arrow.getComponent("Arrow").init(this.node);
+            this.label.active = true;
+        }
         // not accurate
+        // this.line.clear();
+        // this.line.lineWidth = 5;
+        // this.line.lineCap = cc.Graphics.LineCap.ROUND;
+        // this.line.moveTo(35, 8);
         // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, 35 + Math.sin(angle) * 1000, 8 + Math.cos(angle) * 100);
         // // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000 + Math.tan(angle) * 100, 1000, 8);
         // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, Math.cos(angle) * 1000, 8);
@@ -48,5 +73,10 @@ export default class TrajectoryLine extends cc.Component {
 
     public clearLine() {
         this.line.clear();
+        this.label.active = false;
+        if(this.arrow) {
+            this.arrow.destroy();
+            this.arrow = null;
+        }
     }
 }

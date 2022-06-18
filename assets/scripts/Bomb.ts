@@ -1,13 +1,8 @@
-import GameManager from "./GameManager"
-
 const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class Bomb extends cc.Component 
 {
-    @property(GameManager)
-    gameManager: GameManager = null;
-
     private bombManager = null;
 
     public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
@@ -17,6 +12,8 @@ export default class Bomb extends cc.Component
     private shootAngle = null;
 
     private animation: cc.Animation = null;
+
+    private power = null;
 
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
@@ -68,14 +65,19 @@ export default class Bomb extends cc.Component
         } else {
             moveDir = -1;
         }
-        let speed = 500;
+        let speed = 10 * this.power;
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
+        if(this.shootAngle >= 0) {
+            this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
+        } else {
+            speed *= 0.75;
+            this.rigidBody.linearVelocity = cc.v2(speed * moveDir, Math.sinh(this.shootAngle) * speed);
+        }
         this.rigidBody.angularVelocity = 200 * moveDir;
     }
-    
+    r
     //detect collision
     onBeginContact(contact, selfCollider, otherCollider) {
         this.scheduleOnce(() => {
@@ -86,7 +88,8 @@ export default class Bomb extends cc.Component
         }, 0.07);
     }
 
-    setAngle(angle) {
+    setAnglePower(angle, power) {
         this.shootAngle = angle;
+        this.power = power;
     }
 }

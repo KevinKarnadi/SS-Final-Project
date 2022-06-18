@@ -34,7 +34,12 @@ var TrajectoryLine = /** @class */ (function (_super) {
     __extends(TrajectoryLine, _super);
     function TrajectoryLine() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.arrowPrefab = null;
+        _this.angle = null;
+        _this.power = null;
+        _this.label = null;
         _this.line = null;
+        _this.arrow = null;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -52,12 +57,25 @@ var TrajectoryLine = /** @class */ (function (_super) {
         this.line.lineTo(35 + Math.cos(angle) * 300, 8 + Math.sin(angle) * 300);
         this.line.stroke();
     };
-    TrajectoryLine.prototype.drawCurveLine = function (angle) {
-        this.line.clear();
-        this.line.lineWidth = 5;
-        this.line.lineCap = cc.Graphics.LineCap.ROUND;
-        this.line.moveTo(35, 8);
+    TrajectoryLine.prototype.drawCurveLine = function (angle, power) {
+        if (this.arrow) {
+            if (power > 100)
+                power = 100;
+            var degree = angle * 180 / Math.PI;
+            this.arrow.getComponent("Arrow").arrowMove(degree);
+            this.angle.string = Math.floor(degree).toString();
+            this.power.string = power.toString();
+        }
+        else {
+            this.arrow = cc.instantiate(this.arrowPrefab);
+            this.arrow.getComponent("Arrow").init(this.node);
+            this.label.active = true;
+        }
         // not accurate
+        // this.line.clear();
+        // this.line.lineWidth = 5;
+        // this.line.lineCap = cc.Graphics.LineCap.ROUND;
+        // this.line.moveTo(35, 8);
         // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, 35 + Math.sin(angle) * 1000, 8 + Math.cos(angle) * 100);
         // // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000 + Math.tan(angle) * 100, 1000, 8);
         // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, Math.cos(angle) * 1000, 8);
@@ -66,7 +84,24 @@ var TrajectoryLine = /** @class */ (function (_super) {
     };
     TrajectoryLine.prototype.clearLine = function () {
         this.line.clear();
+        this.label.active = false;
+        if (this.arrow) {
+            this.arrow.destroy();
+            this.arrow = null;
+        }
     };
+    __decorate([
+        property(cc.Prefab)
+    ], TrajectoryLine.prototype, "arrowPrefab", void 0);
+    __decorate([
+        property(cc.Label)
+    ], TrajectoryLine.prototype, "angle", void 0);
+    __decorate([
+        property(cc.Label)
+    ], TrajectoryLine.prototype, "power", void 0);
+    __decorate([
+        property(cc.Node)
+    ], TrajectoryLine.prototype, "label", void 0);
     TrajectoryLine = __decorate([
         ccclass
     ], TrajectoryLine);

@@ -8655,8 +8655,8 @@
     "relativePath": "scenes\\map choose.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655526077490,
-    "meta": 1655526122279,
+    "asset": 1655582034845,
+    "meta": 1655582034871,
     "relativePath": "scenes\\map1.fire"
   },
   "e3e1d4e5-5361-4979-b486-f16ff66ec3f7": {
@@ -8690,8 +8690,8 @@
     "relativePath": "scripts\\Instructions-win.ts"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655526077498,
-    "meta": 1655526122314,
+    "asset": 1655582209738,
+    "meta": 1655582209762,
     "relativePath": "scenes\\map2.fire"
   },
   "ac577e29-450c-4502-87bd-26c6f5cf8b80": {
@@ -10604,11 +10604,6 @@
     "meta": 1655526122851,
     "relativePath": "tiles\\forest_bg.jpg"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655546140485,
-    "meta": 1655546145159,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "32f77663-1432-4962-a902-993e9d5ef357": {
     "asset": 1655546935244,
     "meta": 1655547078256,
@@ -10684,19 +10679,39 @@
     "meta": 1655561028072,
     "relativePath": "scripts\\Ground2.ts"
   },
-  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655568225732,
-    "meta": 1655568227409,
-    "relativePath": "scripts\\Bomb.ts"
+  "47c28277-f078-4ef9-9c1b-e54efe844aaa": {
+    "asset": 1655570043441,
+    "meta": 1655570101407,
+    "relativePath": "downloadedAssets\\arrow.png"
   },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655569050379,
-    "meta": 1655569115738,
-    "relativePath": "scripts\\TrajectoryLine.ts"
+  "60471ab7-3252-44d6-8bc5-c14ba45fd75c": {
+    "asset": 1655578730104,
+    "meta": 1655578730133,
+    "relativePath": "prefabs\\Arrow.prefab"
+  },
+  "59d65ac2-77ae-4779-a35b-8a22d30354c4": {
+    "asset": 1655582097390,
+    "meta": 1655582105177,
+    "relativePath": "scripts\\Arrow.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655582785982,
+    "meta": 1655582885820,
+    "relativePath": "scripts\\GameManager.ts"
   },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655569216334,
-    "meta": 1655569218482,
+    "asset": 1655582828805,
+    "meta": 1655582885929,
     "relativePath": "scripts\\Player.ts"
+  },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655582616432,
+    "meta": 1655582885949,
+    "relativePath": "scripts\\TrajectoryLine.ts"
+  },
+  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
+    "asset": 1655583101538,
+    "meta": 1655583103834,
+    "relativePath": "scripts\\Bomb.ts"
   }
 }

@@ -23,18 +23,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var GameManager_1 = require("./GameManager");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Bomb = /** @class */ (function (_super) {
     __extends(Bomb, _super);
     function Bomb() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.gameManager = null;
         _this.bombManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
         _this.shootAngle = null;
         _this.animation = null;
+        _this.power = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
@@ -73,11 +72,17 @@ var Bomb = /** @class */ (function (_super) {
         else {
             moveDir = -1;
         }
-        var speed = 500;
+        var speed = 10 * this.power;
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
+        if (this.shootAngle >= 0) {
+            this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
+        }
+        else {
+            speed *= 0.75;
+            this.rigidBody.linearVelocity = cc.v2(speed * moveDir, Math.sinh(this.shootAngle) * speed);
+        }
         this.rigidBody.angularVelocity = 200 * moveDir;
     };
     //detect collision
@@ -90,12 +95,10 @@ var Bomb = /** @class */ (function (_super) {
             _this.bombManager.put(_this.node);
         }, 0.07);
     };
-    Bomb.prototype.setAngle = function (angle) {
+    Bomb.prototype.setAnglePower = function (angle, power) {
         this.shootAngle = angle;
+        this.power = power;
     };
-    __decorate([
-        property(GameManager_1.default)
-    ], Bomb.prototype, "gameManager", void 0);
     Bomb = __decorate([
         ccclass
     ], Bomb);

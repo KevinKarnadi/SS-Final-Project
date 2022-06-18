@@ -21,6 +21,8 @@ export default class Player extends cc.Component {
 
     private playerChar: string = null;
 
+    private aimLabel = null;
+
     private moveSpeed: number = 300;
 
     private moveDirection: number = 0;
@@ -53,6 +55,8 @@ export default class Player extends cc.Component {
 
     private angle = null;
 
+    private power: number = null;
+
     private maxHP: number = 100;
 
     private HP: number = 100;
@@ -70,13 +74,13 @@ export default class Player extends cc.Component {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
+        this.aimLabel = this.node.getChildByName("Aim Layout");;
         this.setPlayerName();
         this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         let maxBombNum = 5;
         for(let i: number = 0; i < maxBombNum; i++) {
             let bomb = cc.instantiate(this.bombPrefab);
-
             this.bombPool.put(bomb);
         }
     }
@@ -152,10 +156,16 @@ export default class Player extends cc.Component {
             this.node.scaleX = 1;
             this.playerName.scaleX = 1;
             cc.find("Player Health", this.node).scaleX = 1;
+            if(this.aimLabel.active) {
+                this.aimLabel.scaleX = 1;
+            }
         } else if(this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
             this.playerName.scaleX = -1;
             cc.find("Player Health", this.node).scaleX = -1;
+            if(this.aimLabel.active) {
+                this.aimLabel.scaleX = -1;
+            }
         }
     }
 
@@ -209,7 +219,7 @@ export default class Player extends cc.Component {
             bomb = this.bombPool.get(this.bombPool);
 
         if(bomb != null) {
-            bomb.getComponent('Bomb').setAngle(this.angle);
+            bomb.getComponent('Bomb').setAnglePower(this.angle, this.power);
             bomb.getComponent('Bomb').init(this.node);
         }
     }

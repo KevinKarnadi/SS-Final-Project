@@ -1,4 +1,5 @@
 
+require('./assets/scripts/Arrow');
 require('./assets/scripts/Bomb');
 require('./assets/scripts/Bullet');
 require('./assets/scripts/GameManager');

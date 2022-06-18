@@ -35,6 +35,7 @@ var Player = /** @class */ (function (_super) {
         _this.line = null;
         _this.playerName = null;
         _this.playerChar = null;
+        _this.aimLabel = null;
         _this.moveSpeed = 300;
         _this.moveDirection = 0;
         _this.changeDirection = 0;
@@ -51,6 +52,7 @@ var Player = /** @class */ (function (_super) {
         _this.bombPool = null;
         _this.bomb = false;
         _this.angle = null;
+        _this.power = null;
         _this.maxHP = 100;
         _this.HP = 100;
         _this.hurt = false;
@@ -64,6 +66,8 @@ var Player = /** @class */ (function (_super) {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
+        this.aimLabel = this.node.getChildByName("Aim Layout");
+        ;
         this.setPlayerName();
         this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
@@ -145,11 +149,17 @@ var Player = /** @class */ (function (_super) {
             this.node.scaleX = 1;
             this.playerName.scaleX = 1;
             cc.find("Player Health", this.node).scaleX = 1;
+            if (this.aimLabel.active) {
+                this.aimLabel.scaleX = 1;
+            }
         }
         else if (this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
             this.playerName.scaleX = -1;
             cc.find("Player Health", this.node).scaleX = -1;
+            if (this.aimLabel.active) {
+                this.aimLabel.scaleX = -1;
+            }
         }
     };
     Player.prototype.playerJump = function () {
@@ -197,7 +207,7 @@ var Player = /** @class */ (function (_super) {
         if (this.bombPool.size() > 0)
             bomb = this.bombPool.get(this.bombPool);
         if (bomb != null) {
-            bomb.getComponent('Bomb').setAngle(this.angle);
+            bomb.getComponent('Bomb').setAnglePower(this.angle, this.power);
             bomb.getComponent('Bomb').init(this.node);
         }
     };
