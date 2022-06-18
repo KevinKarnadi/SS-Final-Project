@@ -10604,11 +10604,6 @@
     "meta": 1655526122851,
     "relativePath": "tiles\\forest_bg.jpg"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655544700027,
-    "meta": 1655544711310,
-    "relativePath": "scripts\\Player.ts"
-  },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
     "asset": 1655546140485,
     "meta": 1655546145159,
@@ -10695,8 +10690,13 @@
     "relativePath": "scripts\\Bomb.ts"
   },
   "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655568961238,
-    "meta": 1655568963618,
+    "asset": 1655569050379,
+    "meta": 1655569115738,
     "relativePath": "scripts\\TrajectoryLine.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655569216334,
+    "meta": 1655569218482,
+    "relativePath": "scripts\\Player.ts"
   }
 }

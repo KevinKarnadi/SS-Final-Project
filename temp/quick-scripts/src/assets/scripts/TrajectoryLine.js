@@ -62,7 +62,7 @@ var TrajectoryLine = /** @class */ (function (_super) {
         // // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000 + Math.tan(angle) * 100, 1000, 8);
         // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, Math.cos(angle) * 1000, 8);
         // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000, 1000, 960);
-        this.line.stroke();
+        // this.line.stroke();
     };
     TrajectoryLine.prototype.clearLine = function () {
         this.line.clear();

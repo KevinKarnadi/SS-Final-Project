@@ -106,7 +106,7 @@ var Player = /** @class */ (function (_super) {
         // if(other.tag == 1){     // on ground or props
         //     this.isOnGround = true;
         // }
-        if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
+        if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if (!this.isDie) {
                 this.HP -= 10;
                 if (this.HP <= 0) {
@@ -116,27 +116,15 @@ var Player = /** @class */ (function (_super) {
                     this.hurt = true;
                     if (this.playerChar == "char1" && this.HP != 0) {
                         this.animationState = this.animation.play('char1hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char1idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char2" && this.HP != 0) {
                         this.animationState = this.animation.play('char2hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char2idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char3" && this.HP != 0) {
                         this.animationState = this.animation.play('char3hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char3idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char4" && this.HP != 0) {
                         this.animationState = this.animation.play('char4hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char3idle');
-                        // }, 0.5);
                     }
                     this.scheduleOnce(function () {
                         _this.hurt = false;
