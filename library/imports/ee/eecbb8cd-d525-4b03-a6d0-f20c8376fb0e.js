@@ -80,12 +80,13 @@ var GameManager = /** @class */ (function (_super) {
         this.camera.setPosition(cameraPos);
     };
     GameManager.prototype.loadPlayer = function () {
-        switch (this.playerNum) {
+        this.totalPlayer = parseInt(this.playerNum);
+        switch (this.totalPlayer) {
             // case 4:
             // cc.find(this.playerPath + "Player 4").active = true;
-            case "3":
+            case 3:
                 cc.find(this.playerPath + "Player 3").active = true;
-            case "2":
+            case 2:
                 cc.find(this.playerPath + "Player 2").active = true;
                 cc.find(this.playerPath + "Player 1").active = true;
                 break;
@@ -95,7 +96,7 @@ var GameManager = /** @class */ (function (_super) {
     };
     GameManager.prototype.changePlayer = function (num) {
         this.currPlayer = num % this.totalPlayer;
-        if (this.player) {
+        if ((this.player && !this.player.isDie)) {
             this.player.setPlayerMoveDirection(0);
             this.player.setPlayerJump(false);
             this.onDisable();
@@ -113,7 +114,12 @@ var GameManager = /** @class */ (function (_super) {
             default:
                 break;
         }
-        this.onEnable();
+        if (!this.player.isDie) {
+            this.onEnable();
+        }
+        else {
+            this.changePlayer(num + 1);
+        }
     };
     GameManager.prototype.playBGM = function () {
         cc.audioEngine.playMusic(this.bgm, true);

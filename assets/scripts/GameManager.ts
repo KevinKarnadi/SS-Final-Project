@@ -83,12 +83,13 @@ export default class GameManager extends cc.Component {
     }
 
     loadPlayer() {
-        switch (this.playerNum) {
+        this.totalPlayer = parseInt(this.playerNum);
+        switch (this.totalPlayer) {
             // case 4:
             // cc.find(this.playerPath + "Player 4").active = true;
-            case "3":
+            case 3:
                 cc.find(this.playerPath + "Player 3").active = true;
-            case "2":
+            case 2:
                 cc.find(this.playerPath + "Player 2").active = true;
                 cc.find(this.playerPath + "Player 1").active = true;
                 break;
@@ -99,7 +100,7 @@ export default class GameManager extends cc.Component {
 
     changePlayer(num) {
         this.currPlayer = num % this.totalPlayer;
-        if(this.player) {
+        if((this.player && !this.player.isDie)) {
             this.player.setPlayerMoveDirection(0);
             this.player.setPlayerJump(false);
             this.onDisable();
@@ -117,7 +118,11 @@ export default class GameManager extends cc.Component {
             default:
                 break;
         }
-        this.onEnable();
+        if(!this.player.isDie) {
+            this.onEnable();
+        } else {
+            this.changePlayer(num+1);
+        }
     }
 
     playBGM() {

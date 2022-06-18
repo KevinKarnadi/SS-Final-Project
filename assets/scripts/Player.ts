@@ -31,7 +31,7 @@ export default class Player extends cc.Component {
 
     private isOnGround: boolean = false;
 
-    private isDie: boolean = false;
+    public isDie: boolean = false;
 
     private isMove: boolean = false;
 

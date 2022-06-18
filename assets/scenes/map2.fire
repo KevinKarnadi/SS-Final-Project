@@ -229,6 +229,7 @@
     "player3": {
       "__id__": 39
     },
+    "player4": null,
     "UI": {
       "__id__": 54
     },
@@ -236,9 +237,6 @@
       "__id__": 56
     },
     "bgm": null,
-    "groundPrefab": {
-      "__uuid__": "68894128-ac14-4270-9cef-f88ac0c8d220"
-    },
     "_id": "22+1L5AdtBA50dzaWwtwzn"
   },
   {
@@ -1066,7 +1064,7 @@
         "__id__": 30
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 35

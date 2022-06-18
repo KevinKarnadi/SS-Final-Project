@@ -1,11 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-<<<<<<< HEAD
     "_name": "instructions",
-=======
-    "_name": "instructions - how to play",
->>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
     "_objFlags": 0,
     "_native": "",
     "scene": {
@@ -40,11 +36,7 @@
         "__id__": 29
       },
       {
-<<<<<<< HEAD
         "__id__": 33
-=======
-        "__id__": 31
->>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
       }
     ],
     "_active": true,
@@ -1318,15 +1310,12 @@
     "_components": [
       {
         "__id__": 30
-<<<<<<< HEAD
       },
       {
         "__id__": 31
       },
       {
         "__id__": 32
-=======
->>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
       }
     ],
     "_prefab": null,
@@ -1498,7 +1487,6 @@
     "_active": true,
     "_components": [
       {
-<<<<<<< HEAD
         "__id__": 34
       },
       {
@@ -1506,9 +1494,6 @@
       },
       {
         "__id__": 36
-=======
-        "__id__": 32
->>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
       }
     ],
     "_prefab": null,
@@ -1564,11 +1549,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-<<<<<<< HEAD
       "__id__": 33
-=======
-      "__id__": 31
->>>>>>> 5b3fb475f9dd130cfcd8b89c8d1186fe86abf881
     },
     "_enabled": true,
     "_materials": [
