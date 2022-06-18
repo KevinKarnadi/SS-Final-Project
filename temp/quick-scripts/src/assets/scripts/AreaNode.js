@@ -67,7 +67,6 @@ var AreaNode = /** @class */ (function (_super) {
             !(event.getLocationX() >= 830 && event.getLocationX() <= 940 &&
                 event.getLocationY() >= 520 && event.getLocationY() <= 630)) {
             this.miniMapUi.getChildByName("leftPanel").active = false;
-            // this.miniMapUi.getChildByName("rightPanel").active = false;
             this.activePanel = "0";
             this.setCameraAnchor(0);
         }
