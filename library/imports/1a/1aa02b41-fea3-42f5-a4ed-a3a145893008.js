@@ -49,7 +49,7 @@ var TrajectoryLine = /** @class */ (function (_super) {
         this.line.lineWidth = 5;
         this.line.lineCap = cc.Graphics.LineCap.ROUND;
         this.line.moveTo(35, 8);
-        this.line.lineTo(300, Math.sinh(angle) * 300);
+        this.line.lineTo(35 + Math.cos(angle) * 300, 8 + Math.sin(angle) * 300);
         this.line.stroke();
     };
     TrajectoryLine.prototype.drawCurveLine = function (angle) {
@@ -57,7 +57,11 @@ var TrajectoryLine = /** @class */ (function (_super) {
         this.line.lineWidth = 5;
         this.line.lineCap = cc.Graphics.LineCap.ROUND;
         this.line.moveTo(35, 8);
-        this.line.quadraticCurveTo(35, Math.cosh(angle) * 100, 500, Math.sinh(angle) * 500);
+        // not accurate
+        // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, 35 + Math.sin(angle) * 1000, 8 + Math.cos(angle) * 100);
+        // // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000 + Math.tan(angle) * 100, 1000, 8);
+        // // this.line.quadraticCurveTo(35, Math.tan(angle) * 100, Math.cos(angle) * 1000, 8);
+        // this.line.quadraticCurveTo(35, Math.sin(angle) * 1000, 1000, 960);
         this.line.stroke();
     };
     TrajectoryLine.prototype.clearLine = function () {

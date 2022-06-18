@@ -1489,11 +1489,6 @@
     "meta": 1655526121798,
     "relativePath": "prefabs\\GroundLower.prefab"
   },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655473286056,
-    "meta": 1655526122639,
-    "relativePath": "scripts\\TrajectoryLine.ts"
-  },
   "1e307695-eaab-467a-8e9f-7c16a1a891e3": {
     "asset": 1655476799709,
     "meta": 1655526121437,
@@ -10695,8 +10690,13 @@
     "relativePath": "scripts\\Ground2.ts"
   },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655561405347,
-    "meta": 1655561407005,
+    "asset": 1655568225732,
+    "meta": 1655568227409,
     "relativePath": "scripts\\Bomb.ts"
+  },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655568961238,
+    "meta": 1655568963618,
+    "relativePath": "scripts\\TrajectoryLine.ts"
   }
 }

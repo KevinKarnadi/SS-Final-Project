@@ -68,14 +68,12 @@ export default class Bomb extends cc.Component
         } else {
             moveDir = -1;
         }
-        let speed = 1000;
+        let speed = 500;
         // this.rigidBody.applyForceToCenter(cc.v2(Math.sin(shootAngle) * x, Math.cos(shootAngle) * x), true);
         // this.rigidBody.linearVelocity = cc.v2(Math.sin(this.shootAngle) * x * moveDir, Math.cos(this.shootAngle) * x);
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
         this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
         this.rigidBody.angularVelocity = 200 * moveDir;
-
-
     }
     
     //detect collision
