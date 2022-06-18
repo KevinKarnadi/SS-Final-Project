@@ -19,6 +19,8 @@ export default class Player extends cc.Component {
 
     private playerName = null;
 
+    private playerChar: string = null;
+
     private moveSpeed: number = 300;
 
     private moveDirection: number = 0;
@@ -69,6 +71,7 @@ export default class Player extends cc.Component {
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
         this.setPlayerName();
+        this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         let maxBombNum = 5;
         for(let i: number = 0; i < maxBombNum; i++) {
@@ -118,25 +121,25 @@ export default class Player extends cc.Component {
                     this.HP = 0;
                 } else {
                     this.hurt = true;
-                    if (this.node.name == 'Player 1' && this.HP != 0){
+                    if (this.playerChar == "char1" && this.HP != 0){
                         this.animationState = this.animation.play('char1hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char1idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 2' && this.HP != 0){
+                    else if (this.playerChar == "char2" && this.HP != 0){
                         this.animationState = this.animation.play('char2hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char2idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 3' && this.HP != 0){
+                    else if (this.playerChar == "char3" && this.HP != 0){
                         this.animationState = this.animation.play('char3hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char3idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 4' && this.HP != 0){
+                    else if (this.playerChar == "char4" && this.HP != 0){
                         this.animationState = this.animation.play('char4hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char3idle');
@@ -225,19 +228,19 @@ export default class Player extends cc.Component {
 
     playerDie() {
         this.isDie = true;
-        if (this.node.name == 'Player 1'){
+        if (this.playerChar == "char1"){
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
         }
-        else if (this.node.name == 'Player 2'){
+        else if (this.playerChar == "char2"){
             this.animation.stop('char2idle');
             this.animationState = this.animation.play('char2dead');
         }
-        else if (this.node.name == 'Player 3'){
+        else if (this.playerChar == "char3"){
             this.animation.stop('char3idle');
             this.animationState = this.animation.play('char3dead');
         }
-        else if (this.node.name == 'Player 4'){
+        else if (this.playerChar == "char4"){
             this.animation.stop('char4idle');
             this.animationState = this.animation.play('char4dead');
         }
@@ -250,7 +253,7 @@ export default class Player extends cc.Component {
 
     playerAnimation() {
         if(!this.isDie){    // animation for char1
-            if(this.node.name == "Player 1") {  // MUST change to curPlayer == "Player 1"
+            if(this.playerChar == "char1") {  // MUST change to curPlayer == "Player 1"
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
                     this.animationState = this.animation.play("char1idle");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
@@ -268,7 +271,7 @@ export default class Player extends cc.Component {
                 // if (this.animationState == null || (!this.isMove && this.isOnGround && !this.animation.getAnimationState('char1idle').isPlaying)){
                 //     this.animationState = this.animation.play('char1idle');
                 // }          
-            } else if(this.node.name == "Player 2") {
+            } else if(this.playerChar == "char2") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
                     this.animationState = this.animation.play("char2idle");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char2run")) {
@@ -276,7 +279,7 @@ export default class Player extends cc.Component {
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char2jump")) {
                     this.animationState = this.animation.play("char2jump");
                 }
-            } else if(this.node.name == "Player 3") {
+            } else if(this.playerChar == "char3") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
                     this.animationState = this.animation.play("char3idle");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char3run")) {
@@ -284,7 +287,7 @@ export default class Player extends cc.Component {
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char3jump")) {
                     this.animationState = this.animation.play("char3jump");
                 }
-            }  else if(this.node.name == "Player 4") {
+            }  else if(this.playerChar == "char4") {
                 if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
                     this.animationState = this.animation.play("char4idle");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char4run")) {
@@ -327,6 +330,23 @@ export default class Player extends cc.Component {
             this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 3 Name");
         } else if(this.node.name == "Player 4") {
             this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
+        }
+    }
+
+    setPlayerChar() {
+        if(this.node.name == "Player 1") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 1 Char");
+            this.playerChar = "char1";
+        } else if(this.node.name == "Player 2") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
+            this.playerChar = "char2";
+            console.log("aaa")
+        } else if(this.node.name == "Player 3") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
+            this.playerChar = "char3";
+        } else if(this.node.name == "Player 4") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
+            this.playerChar = "char4";
         }
     }
 }

@@ -34,6 +34,7 @@ var Player = /** @class */ (function (_super) {
         _this.bombPrefab = null;
         _this.line = null;
         _this.playerName = null;
+        _this.playerChar = null;
         _this.moveSpeed = 300;
         _this.moveDirection = 0;
         _this.changeDirection = 0;
@@ -64,6 +65,7 @@ var Player = /** @class */ (function (_super) {
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
         this.setPlayerName();
+        this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         var maxBombNum = 5;
         for (var i = 0; i < maxBombNum; i++) {
@@ -112,25 +114,25 @@ var Player = /** @class */ (function (_super) {
                 }
                 else {
                     this.hurt = true;
-                    if (this.node.name == 'Player 1' && this.HP != 0) {
+                    if (this.playerChar == "char1" && this.HP != 0) {
                         this.animationState = this.animation.play('char1hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char1idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 2' && this.HP != 0) {
+                    else if (this.playerChar == "char2" && this.HP != 0) {
                         this.animationState = this.animation.play('char2hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char2idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 3' && this.HP != 0) {
+                    else if (this.playerChar == "char3" && this.HP != 0) {
                         this.animationState = this.animation.play('char3hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char3idle');
                         // }, 0.5);
                     }
-                    else if (this.node.name == 'Player 4' && this.HP != 0) {
+                    else if (this.playerChar == "char4" && this.HP != 0) {
                         this.animationState = this.animation.play('char4hurt');
                         // this.scheduleOnce(function(){
                         //     this.animationState = this.animation.play('char3idle');
@@ -213,19 +215,19 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerDie = function () {
         this.isDie = true;
-        if (this.node.name == 'Player 1') {
+        if (this.playerChar == "char1") {
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
         }
-        else if (this.node.name == 'Player 2') {
+        else if (this.playerChar == "char2") {
             this.animation.stop('char2idle');
             this.animationState = this.animation.play('char2dead');
         }
-        else if (this.node.name == 'Player 3') {
+        else if (this.playerChar == "char3") {
             this.animation.stop('char3idle');
             this.animationState = this.animation.play('char3dead');
         }
-        else if (this.node.name == 'Player 4') {
+        else if (this.playerChar == "char4") {
             this.animation.stop('char4idle');
             this.animationState = this.animation.play('char4dead');
         }
@@ -237,7 +239,7 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerAnimation = function () {
         if (!this.isDie) { // animation for char1
-            if (this.node.name == "Player 1") { // MUST change to curPlayer == "Player 1"
+            if (this.playerChar == "char1") { // MUST change to curPlayer == "Player 1"
                 if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
                     this.animationState = this.animation.play("char1idle");
                 }
@@ -258,7 +260,7 @@ var Player = /** @class */ (function (_super) {
                 //     this.animationState = this.animation.play('char1idle');
                 // }          
             }
-            else if (this.node.name == "Player 2") {
+            else if (this.playerChar == "char2") {
                 if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
                     this.animationState = this.animation.play("char2idle");
                 }
@@ -269,7 +271,7 @@ var Player = /** @class */ (function (_super) {
                     this.animationState = this.animation.play("char2jump");
                 }
             }
-            else if (this.node.name == "Player 3") {
+            else if (this.playerChar == "char3") {
                 if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
                     this.animationState = this.animation.play("char3idle");
                 }
@@ -280,7 +282,7 @@ var Player = /** @class */ (function (_super) {
                     this.animationState = this.animation.play("char3jump");
                 }
             }
-            else if (this.node.name == "Player 4") {
+            else if (this.playerChar == "char4") {
                 if (this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
                     this.animationState = this.animation.play("char4idle");
                 }
@@ -322,6 +324,25 @@ var Player = /** @class */ (function (_super) {
         }
         else if (this.node.name == "Player 4") {
             this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
+        }
+    };
+    Player.prototype.setPlayerChar = function () {
+        if (this.node.name == "Player 1") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 1 Char");
+            this.playerChar = "char1";
+        }
+        else if (this.node.name == "Player 2") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
+            this.playerChar = "char2";
+            console.log("aaa");
+        }
+        else if (this.node.name == "Player 3") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
+            this.playerChar = "char3";
+        }
+        else if (this.node.name == "Player 4") {
+            this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
+            this.playerChar = "char4";
         }
     };
     __decorate([

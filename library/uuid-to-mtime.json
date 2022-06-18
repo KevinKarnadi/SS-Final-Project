@@ -8645,13 +8645,13 @@
     "relativePath": "scenes\\player name.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655521661726,
-    "meta": 1655521661770,
+    "asset": 1655524384930,
+    "meta": 1655524384975,
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655521015661,
-    "meta": 1655521159092,
+    "asset": 1655524404612,
+    "meta": 1655524404650,
     "relativePath": "scenes\\map1.fire"
   },
   "88c457f4-8aa9-4d21-b32b-b6c188e1bc4a": {
@@ -8739,14 +8739,14 @@
     "meta": 1655522608370,
     "relativePath": "scripts\\Bullet.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655523209587,
-    "meta": 1655523220153,
-    "relativePath": "scripts\\Player.ts"
-  },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
     "asset": 1655523324666,
     "meta": 1655523347135,
     "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655524472962,
+    "meta": 1655524474324,
+    "relativePath": "scripts\\Player.ts"
   }
 }
