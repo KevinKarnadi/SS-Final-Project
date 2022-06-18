@@ -30,19 +30,19 @@ var Bomb = /** @class */ (function (_super) {
     function Bomb() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.gameManager = null;
-        _this.anim = null;
         _this.bombManager = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
         _this.shootAngle = null;
+        _this.animation = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
     Bomb.prototype.init = function (node) {
-        this.anim = this.getComponent(cc.Animation);
+        this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
-        this.anim.play('bomb');
+        this.animation.play('grenade');
         this.bulletMove();
     };
     // this function is called when the bullet manager calls "get" API.

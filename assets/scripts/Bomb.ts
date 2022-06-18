@@ -8,8 +8,6 @@ export default class Bomb extends cc.Component
     @property(GameManager)
     gameManager: GameManager = null;
 
-    private anim = null;
-
     private bombManager = null;
 
     public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
@@ -18,14 +16,16 @@ export default class Bomb extends cc.Component
 
     private shootAngle = null;
 
+    private animation: cc.Animation = null;
+
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
-        this.anim = this.getComponent(cc.Animation);
+        this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
 
-        this.anim.play('bomb');
+        this.animation.play('grenade');
         this.bulletMove();
     }
 
@@ -74,6 +74,7 @@ export default class Bomb extends cc.Component
         // this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.sin(this.shootAngle), Math.sinh(this.shootAngle) * speed);
         this.rigidBody.linearVelocity = cc.v2(speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
         this.rigidBody.angularVelocity = 200 * moveDir;
+
 
     }
     

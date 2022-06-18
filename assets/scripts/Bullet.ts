@@ -4,23 +4,22 @@ const {ccclass, property} = cc._decorator;
 export default class Bullet extends cc.Component 
 {
 
-    private anim = null;
-
     public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
 
     private rigidBody: cc.RigidBody = null;
 
     private shootAngle = null;
 
+    private animation: cc.Animation = null;
+
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
-        this.anim = this.getComponent(cc.Animation);
+        this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
 
         this.setInitPos(node);
-
-        this.anim.play('bullet');
+        this.animation.play('bullet1');
         this.bulletMove();
     }
 
@@ -69,7 +68,7 @@ export default class Bullet extends cc.Component
 
         this.scheduleOnce(() => {
 
-            this.anim.stop();
+            this.animation.stop();
             
             this.node.destroy();
 

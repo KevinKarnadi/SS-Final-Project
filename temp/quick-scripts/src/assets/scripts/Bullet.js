@@ -28,18 +28,18 @@ var Bullet = /** @class */ (function (_super) {
     __extends(Bullet, _super);
     function Bullet() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.anim = null;
         _this.isTriggered = false; // I add this to make the bullet kill one enemy at a time.
         _this.rigidBody = null;
         _this.shootAngle = null;
+        _this.animation = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
     Bullet.prototype.init = function (node) {
-        this.anim = this.getComponent(cc.Animation);
+        this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
-        this.anim.play('bullet');
+        this.animation.play('bullet1');
         this.bulletMove();
     };
     //this function sets the bullet's initial position when it is reused.
@@ -74,7 +74,7 @@ var Bullet = /** @class */ (function (_super) {
         this.node.stopAllActions();
         this.unscheduleAllCallbacks();
         this.scheduleOnce(function () {
-            _this.anim.stop();
+            _this.animation.stop();
             _this.node.destroy();
         }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
     };

@@ -535,13 +535,13 @@
     "relativePath": "downloadedAssets\\README.md"
   },
   "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8": {
-    "asset": 1655456712810,
-    "meta": 1655526121769,
+    "asset": 1655544362005,
+    "meta": 1655544362021,
     "relativePath": "prefabs\\Bomb.prefab"
   },
   "6c742d77-9847-4b5e-b8d2-2be64ecdbba2": {
-    "asset": 1655456712811,
-    "meta": 1655526121771,
+    "asset": 1655544305872,
+    "meta": 1655544305912,
     "relativePath": "prefabs\\Bullet.prefab"
   },
   "68894128-ac14-4270-9cef-f88ac0c8d220": {
@@ -1473,11 +1473,6 @@
     "asset": 1655456712823,
     "meta": 1655526121892,
     "relativePath": "scenes\\main menu.fire"
-  },
-  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655472133990,
-    "meta": 1655526121943,
-    "relativePath": "scripts\\Bomb.ts"
   },
   "b3ff54d3-07e8-496e-98cc-b5aa76e5afc1": {
     "asset": 1655456712831,
@@ -8649,16 +8644,6 @@
     "meta": 1655526121852,
     "relativePath": "prefabs\\map2GroundLower2.prefab"
   },
-  "889b5329-bfed-4779-9715-b56e83d934ca": {
-    "asset": 1655522606272,
-    "meta": 1655526121986,
-    "relativePath": "scripts\\Bullet.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655524472962,
-    "meta": 1655526122529,
-    "relativePath": "scripts\\Player.ts"
-  },
   "6544f070-3e25-4dc5-9e39-9ff59f10552d": {
     "asset": 1655526079020,
     "meta": 1655526121433,
@@ -10640,8 +10625,23 @@
     "relativePath": "tiles\\forest_bg.jpg"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655539698995,
-    "meta": 1655540265820,
+    "asset": 1655541520383,
+    "meta": 1655541613200,
     "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655541555605,
+    "meta": 1655541613358,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
+    "asset": 1655544561774,
+    "meta": 1655544585317,
+    "relativePath": "scripts\\Bomb.ts"
+  },
+  "889b5329-bfed-4779-9715-b56e83d934ca": {
+    "asset": 1655544581087,
+    "meta": 1655544585381,
+    "relativePath": "scripts\\Bullet.ts"
   }
 }
