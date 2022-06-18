@@ -5,10 +5,12 @@
     "ground",
     "bullet",
     "wall",
-    "explosiveObj"
+    "explosiveObj",
+    "bomb"
   ],
   "collision-matrix": [
     [
+      true,
       true,
       true,
       true,
@@ -19,6 +21,7 @@
     [
       true,
       false,
+      true,
       true,
       true,
       true,
@@ -30,6 +33,7 @@
       false,
       true,
       null,
+      true,
       true
     ],
     [
@@ -46,6 +50,7 @@
       false,
       true,
       false,
+      true,
       true
     ],
     [
@@ -54,7 +59,17 @@
       true,
       true,
       true,
+      true,
       true
+    ],
+    [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false
     ]
   ],
   "excluded-modules": [
@@ -83,9 +98,5 @@
       "enable": false
     }
   },
-<<<<<<< HEAD
-  "start-scene": "a1c84c84-e423-47be-abcd-c229d3f1ce7f"
-=======
   "start-scene": "89bd0550-ef73-4044-8dd7-09d9af029680"
->>>>>>> 6dcfb028c6b8e6e92f6bb5e8202ac95d5df67280
 }

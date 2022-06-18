@@ -110,11 +110,7 @@ export default class GameManager extends cc.Component {
         this.totalPlayer = parseInt(this.playerNum);
         switch (this.totalPlayer) {
             case 4:
-<<<<<<< HEAD
                 cc.find(this.playerPath + "Player 4").active = true;
-=======
-            cc.find(this.playerPath + "Player 4").active = true;
->>>>>>> 6dcfb028c6b8e6e92f6bb5e8202ac95d5df67280
             case 3:
                 cc.find(this.playerPath + "Player 3").active = true;
             case 2:

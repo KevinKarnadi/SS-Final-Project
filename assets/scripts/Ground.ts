@@ -40,7 +40,7 @@ export default class Ground extends cc.Component
     }
     
     onBeginContact(contact, self, other) {
-        if(other.node.group == "bullet") {
+        if(other.node.group == "bomb") {
             // console.log(other.node.group, "begin");
             this.node.getChildByName("particle").active = true;
             
@@ -48,6 +48,11 @@ export default class Ground extends cc.Component
                 this.node.destroy();
             }, 0.35);
             
+        } else if(other.node.group == "bullet") {
+            this.node.getChildByName("particle").active = true;
+            this.scheduleOnce(()=>{
+                this.node.destroy();
+            }, 0.05);
         }
     }
 
@@ -58,6 +63,6 @@ export default class Ground extends cc.Component
             this.scheduleOnce(()=>{
                 this.node.destroy();
             }, 0.35);
-        }
+        } 
     }
 }

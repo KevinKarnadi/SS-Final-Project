@@ -81,8 +81,8 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "_groupIndex": 3,
-    "groupIndex": 3,
+    "_groupIndex": 6,
+    "groupIndex": 6,
     "_id": ""
   },
   {
@@ -101,7 +101,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "0d97a73a-7922-4de5-90d2-7ccedabcbcba"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -150,8 +150,14 @@
       "__id__": 1
     },
     "_enabled": true,
-    "_defaultClip": null,
-    "_clips": [],
+    "_defaultClip": {
+      "__uuid__": "e83e0426-cb9b-44e7-844e-bb55fe0e8067"
+    },
+    "_clips": [
+      {
+        "__uuid__": "e83e0426-cb9b-44e7-844e-bb55fe0e8067"
+      }
+    ],
     "playOnLoad": false,
     "_id": ""
   },

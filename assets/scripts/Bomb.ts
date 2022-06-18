@@ -85,8 +85,9 @@ export default class Bomb extends cc.Component
         // this.unscheduleAllCallbacks();
 
         // this.anim.stop();
-            
-        this.bombManager.put(this.node);
+        this.scheduleOnce(() => {
+            this.bombManager.put(this.node);
+        }, 0.1);
     }
 
     setAngle(angle) {

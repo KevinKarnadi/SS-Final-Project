@@ -70,13 +70,13 @@ var Bullet = /** @class */ (function (_super) {
     };
     //detect collision
     Bullet.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
-        var _this = this;
         this.node.stopAllActions();
         this.unscheduleAllCallbacks();
-        this.scheduleOnce(function () {
-            _this.animation.stop();
-            _this.node.destroy();
-        }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
+        // this.scheduleOnce(() => {
+        this.animation.stop();
+        console.log("aanasdn");
+        this.node.destroy();
+        // }, 0.1); // for better animation effect, I delay 0.1s when bullet hits the enemy
     };
     Bullet.prototype.setAngle = function (angle) {
         this.shootAngle = angle;

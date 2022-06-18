@@ -68,11 +68,17 @@ var Ground2 = /** @class */ (function (_super) {
     };
     Ground2.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (other.node.group == "bullet" || other.node.group == "explosiveObj") {
+        if (other.node.group == "bomb" || other.node.group == "explosiveObj") {
             this.node.getChildByName("particle").active = true;
             this.scheduleOnce(function () {
                 _this.node.destroy();
             }, 0.3);
+        }
+        else if (other.node.group == "bullet") {
+            this.node.getChildByName("particle").active = true;
+            this.scheduleOnce(function () {
+                _this.node.destroy();
+            }, 0.05);
         }
     };
     __decorate([

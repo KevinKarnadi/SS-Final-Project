@@ -53,12 +53,18 @@ var Ground = /** @class */ (function (_super) {
     };
     Ground.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (other.node.group == "bullet") {
+        if (other.node.group == "bomb") {
             // console.log(other.node.group, "begin");
             this.node.getChildByName("particle").active = true;
             this.scheduleOnce(function () {
                 _this.node.destroy();
             }, 0.35);
+        }
+        else if (other.node.group == "bullet") {
+            this.node.getChildByName("particle").active = true;
+            this.scheduleOnce(function () {
+                _this.node.destroy();
+            }, 0.05);
         }
     };
     Ground.prototype.onPreSolve = function (contact, self, other) {
