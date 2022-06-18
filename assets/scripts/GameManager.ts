@@ -40,7 +40,9 @@ export default class GameManager extends cc.Component {
 
     private currPlayer: number;
 
-    private totalPlayer: number = 3;
+    private totalPlayer: number = 2;
+
+    private alivePlayer = null;
 
     private shootAngle = null;
 
@@ -52,6 +54,8 @@ export default class GameManager extends cc.Component {
 
     private playerPath: string = "Canvas/Players/";
 
+    private winner;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -60,6 +64,7 @@ export default class GameManager extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        this.alivePlayer = this.totalPlayer;
     }
     
     start () {
@@ -70,35 +75,42 @@ export default class GameManager extends cc.Component {
     }
 
     update (dt) {
-        var playerPos = this.player.node.getPosition();
-        var cameraPos = this.camera.getPosition();
-        var prevCamPos = this.camera.getPosition();
-        cameraPos.lerp(playerPos, 0.1, cameraPos);
-        cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if(cameraPos.y > 100){
-            cameraPos.y = 100;
-        }
-        if(cameraPos.x < -35) {
-            cameraPos.x = -35;
-        } else if(cameraPos.x > 2033+35) {
-            cameraPos.x = 2033+35;
-        }
-        this.camera.setPosition(cameraPos);
-        if(this.background){
-            this.background.setPosition(cameraPos.x < prevCamPos.x ? 
-                ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
-                (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
-                cameraPos.y < prevCamPos.y ? 
-                ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
-                (this.background.y - (prevCamPos.y - cameraPos.y)/3));
+        if(this.winner == null){
+            var playerPos = this.player.node.getPosition();
+            var cameraPos = this.camera.getPosition();
+            var prevCamPos = this.camera.getPosition();
+            cameraPos.lerp(playerPos, 0.1, cameraPos);
+            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            if(cameraPos.y > 100){
+                cameraPos.y = 100;
+            }
+            if(cameraPos.x < -35) {
+                cameraPos.x = -35;
+            } else if(cameraPos.x > 2033+35) {
+                cameraPos.x = 2033+35;
+            }
+            this.camera.setPosition(cameraPos);
+            if(this.background){
+                this.background.setPosition(cameraPos.x < prevCamPos.x ? 
+                    ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
+                    (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
+                    cameraPos.y < prevCamPos.y ? 
+                    ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
+                    (this.background.y - (prevCamPos.y - cameraPos.y)/3));
+            }
+            if(this.UI.timerVal < 0 || this.player.isDie){
+                this.UI.timerVal = 20;
+                this.changePlayer(this.currPlayer + 1);
+            }
+            this.isWin();
         }
     }
 
     loadPlayer() {
         this.totalPlayer = parseInt(this.playerNum);
         switch (this.totalPlayer) {
-            // case 4:
-            // cc.find(this.playerPath + "Player 4").active = true;
+            case 4:
+                cc.find(this.playerPath + "Player 4").active = true;
             case 3:
                 cc.find(this.playerPath + "Player 3").active = true;
             case 2:
@@ -107,6 +119,40 @@ export default class GameManager extends cc.Component {
                 break;
             default:
                 break;
+        }
+    }
+
+    isWin(){
+        let alive = this.totalPlayer;
+        if (this.totalPlayer == 2){
+            if(this.player1.isDie)
+                alive--;
+            if(this.player2.isDie)
+                alive--;
+        }
+        else if (this.totalPlayer == 3){
+            if(this.player1.isDie)
+                alive--;
+            if(this.player2.isDie)
+                alive--;
+            if(this.player3.isDie)
+                alive--;
+        }
+        else if (this.totalPlayer == 4){
+            if(this.player1.isDie)
+                alive--;
+            if(this.player2.isDie)
+                alive--;
+            if(this.player3.isDie)
+                alive--;
+            if(this.player4.isDie)
+                alive--;
+        }
+        this.alivePlayer = alive;
+        if (this.alivePlayer == 1){
+            this.winner = this.player.playerName.getComponent(cc.Label).string;
+            console.log(this.winner);
+            //this.UI.pause();
         }
     }
 
@@ -178,6 +224,7 @@ export default class GameManager extends cc.Component {
                 break;
             case cc.macro.KEY.p:        // pass
                 this.changePlayer(this.currPlayer + 1);
+                this.UI.timerVal = 20;
                 break;
             default:
                 break;
