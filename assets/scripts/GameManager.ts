@@ -97,8 +97,8 @@ export default class GameManager extends cc.Component {
     loadPlayer() {
         this.totalPlayer = parseInt(this.playerNum);
         switch (this.totalPlayer) {
-            // case 4:
-            // cc.find(this.playerPath + "Player 4").active = true;
+            case 4:
+            cc.find(this.playerPath + "Player 4").active = true;
             case 3:
                 cc.find(this.playerPath + "Player 3").active = true;
             case 2:
