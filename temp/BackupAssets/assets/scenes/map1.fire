@@ -2823,8 +2823,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        398.502,
-        -77.789,
+        -50,
+        0,
         0,
         0,
         0,

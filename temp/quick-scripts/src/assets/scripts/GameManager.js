@@ -37,6 +37,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.UI = null;
         _this.camera = null;
         _this.bgm = null;
+        _this.background = null;
         _this.player = null;
         _this.aKeyDown = false;
         _this.dKeyDown = false;
@@ -66,6 +67,7 @@ var GameManager = /** @class */ (function (_super) {
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
         var cameraPos = this.camera.getPosition();
+        var prevCamPos = this.camera.getPosition();
         cameraPos.lerp(playerPos, 0.1, cameraPos);
         cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
         if (cameraPos.y > 100) {
@@ -78,6 +80,13 @@ var GameManager = /** @class */ (function (_super) {
             cameraPos.x = 2033 + 35;
         }
         this.camera.setPosition(cameraPos);
+        if (this.background) {
+            this.background.setPosition(cameraPos.x < prevCamPos.x ?
+                ((cameraPos.x - prevCamPos.x) / 3 + this.background.x) :
+                (this.background.x - (prevCamPos.x - cameraPos.x) / 3), cameraPos.y < prevCamPos.y ?
+                ((cameraPos.y - prevCamPos.y) / 3 + this.background.y) :
+                (this.background.y - (prevCamPos.y - cameraPos.y) / 3));
+        }
     };
     GameManager.prototype.loadPlayer = function () {
         this.totalPlayer = parseInt(this.playerNum);
@@ -306,6 +315,9 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], GameManager.prototype, "bgm", void 0);
+    __decorate([
+        property(cc.Node)
+    ], GameManager.prototype, "background", void 0);
     GameManager = __decorate([
         ccclass
     ], GameManager);
