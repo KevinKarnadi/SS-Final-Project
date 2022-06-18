@@ -17,7 +17,7 @@ export default class Player extends cc.Component {
 
     public line = null;
 
-    private playerName = null;
+    public playerName = null;
 
     private playerChar: string = null;
 
@@ -340,7 +340,7 @@ export default class Player extends cc.Component {
         } else if(this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
             this.playerChar = "char2";
-            console.log("aaa")
+            //console.log("aaa")
         } else if(this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
             this.playerChar = "char3";

@@ -334,7 +334,7 @@ var Player = /** @class */ (function (_super) {
         else if (this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
             this.playerChar = "char2";
-            console.log("aaa");
+            //console.log("aaa")
         }
         else if (this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");

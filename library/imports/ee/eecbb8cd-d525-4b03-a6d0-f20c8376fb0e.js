@@ -42,7 +42,8 @@ var GameManager = /** @class */ (function (_super) {
         _this.aKeyDown = false;
         _this.dKeyDown = false;
         _this.shoot = false;
-        _this.totalPlayer = 3;
+        _this.totalPlayer = 2;
+        _this.alivePlayer = null;
         _this.shootAngle = null;
         _this.playerNum = null;
         // private currPlayerPos = null;
@@ -57,6 +58,7 @@ var GameManager = /** @class */ (function (_super) {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        this.alivePlayer = this.totalPlayer;
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
@@ -65,27 +67,34 @@ var GameManager = /** @class */ (function (_super) {
         this.initResumeBtn();
     };
     GameManager.prototype.update = function (dt) {
-        var playerPos = this.player.node.getPosition();
-        var cameraPos = this.camera.getPosition();
-        var prevCamPos = this.camera.getPosition();
-        cameraPos.lerp(playerPos, 0.1, cameraPos);
-        cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-        if (cameraPos.y > 100) {
-            cameraPos.y = 100;
-        }
-        if (cameraPos.x < -35) {
-            cameraPos.x = -35;
-        }
-        else if (cameraPos.x > 2033 + 35) {
-            cameraPos.x = 2033 + 35;
-        }
-        this.camera.setPosition(cameraPos);
-        if (this.background) {
-            this.background.setPosition(cameraPos.x < prevCamPos.x ?
-                ((cameraPos.x - prevCamPos.x) / 3 + this.background.x) :
-                (this.background.x - (prevCamPos.x - cameraPos.x) / 3), cameraPos.y < prevCamPos.y ?
-                ((cameraPos.y - prevCamPos.y) / 3 + this.background.y) :
-                (this.background.y - (prevCamPos.y - cameraPos.y) / 3));
+        if (this.winner == null) {
+            var playerPos = this.player.node.getPosition();
+            var cameraPos = this.camera.getPosition();
+            var prevCamPos = this.camera.getPosition();
+            cameraPos.lerp(playerPos, 0.1, cameraPos);
+            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            if (cameraPos.y > 100) {
+                cameraPos.y = 100;
+            }
+            if (cameraPos.x < -35) {
+                cameraPos.x = -35;
+            }
+            else if (cameraPos.x > 2033 + 35) {
+                cameraPos.x = 2033 + 35;
+            }
+            this.camera.setPosition(cameraPos);
+            if (this.background) {
+                this.background.setPosition(cameraPos.x < prevCamPos.x ?
+                    ((cameraPos.x - prevCamPos.x) / 3 + this.background.x) :
+                    (this.background.x - (prevCamPos.x - cameraPos.x) / 3), cameraPos.y < prevCamPos.y ?
+                    ((cameraPos.y - prevCamPos.y) / 3 + this.background.y) :
+                    (this.background.y - (prevCamPos.y - cameraPos.y) / 3));
+            }
+            if (this.UI.timerVal < 0 || this.player.isDie) {
+                this.UI.timerVal = 20;
+                this.changePlayer(this.currPlayer + 1);
+            }
+            this.isWin();
         }
     };
     GameManager.prototype.loadPlayer = function () {
@@ -101,6 +110,39 @@ var GameManager = /** @class */ (function (_super) {
                 break;
             default:
                 break;
+        }
+    };
+    GameManager.prototype.isWin = function () {
+        var alive = this.totalPlayer;
+        if (this.totalPlayer == 2) {
+            if (this.player1.isDie)
+                alive--;
+            if (this.player2.isDie)
+                alive--;
+        }
+        else if (this.totalPlayer == 3) {
+            if (this.player1.isDie)
+                alive--;
+            if (this.player2.isDie)
+                alive--;
+            if (this.player3.isDie)
+                alive--;
+        }
+        else if (this.totalPlayer == 4) {
+            if (this.player1.isDie)
+                alive--;
+            if (this.player2.isDie)
+                alive--;
+            if (this.player3.isDie)
+                alive--;
+            if (this.player4.isDie)
+                alive--;
+        }
+        this.alivePlayer = alive;
+        if (this.alivePlayer == 1) {
+            this.winner = this.player.playerName.getComponent(cc.Label).string;
+            console.log(this.winner);
+            //this.UI.pause();
         }
     };
     GameManager.prototype.changePlayer = function (num) {
@@ -168,6 +210,7 @@ var GameManager = /** @class */ (function (_super) {
                 break;
             case cc.macro.KEY.p: // pass
                 this.changePlayer(this.currPlayer + 1);
+                this.UI.timerVal = 20;
                 break;
             default:
                 break;
