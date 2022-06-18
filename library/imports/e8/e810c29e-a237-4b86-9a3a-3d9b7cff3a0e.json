@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Wide arrow L",
+    "texture": "f2a0d728-a5a3-40ae-a0cd-44a749f79c5a",
+    "atlas": "",
+    "rect": [
+      4,
+      34,
+      251,
+      190
+    ],
+    "offset": [
+      1.5,
+      -1
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

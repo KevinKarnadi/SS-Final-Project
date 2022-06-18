@@ -30,6 +30,9 @@ export default class GameManager extends cc.Component {
     @property(cc.Node)
     background: cc.Node = null
 
+    @property()
+    cameraSpeed: number = 300;
+
     private player = null;
 
     private aKeyDown: boolean = false;
@@ -56,6 +59,8 @@ export default class GameManager extends cc.Component {
 
     private winner;
 
+    private cameraAnchor: number = 0;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -79,8 +84,13 @@ export default class GameManager extends cc.Component {
             var playerPos = this.player.node.getPosition();
             var cameraPos = this.camera.getPosition();
             var prevCamPos = this.camera.getPosition();
-            cameraPos.lerp(playerPos, 0.1, cameraPos);
-            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            if(this.cameraAnchor == 1 || this.cameraAnchor == -1){
+                cameraPos.x += this.cameraAnchor * this.cameraSpeed * dt;
+                // console.log(this.cameraAnchor, "update");
+            } else{
+                cameraPos.lerp(playerPos, 0.1, cameraPos);
+                cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            }
             if(cameraPos.y > 100){
                 cameraPos.y = 100;
             }
@@ -90,14 +100,14 @@ export default class GameManager extends cc.Component {
                 cameraPos.x = 2033+35;
             }
             this.camera.setPosition(cameraPos);
-            if(this.background){
-                this.background.setPosition(cameraPos.x < prevCamPos.x ? 
-                    ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
-                    (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
-                    cameraPos.y < prevCamPos.y ? 
-                    ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
-                    (this.background.y - (prevCamPos.y - cameraPos.y)/3));
-            }
+            // if(this.background){
+            //     this.background.setPosition(cameraPos.x < prevCamPos.x ? 
+            //         ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
+            //         (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
+            //         cameraPos.y < prevCamPos.y ? 
+            //         ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
+            //         (this.background.y - (prevCamPos.y - cameraPos.y)/3));
+            // }
             if(this.UI.timerVal < 0 || this.player.isDie){
                 this.UI.timerVal = 20;
                 this.changePlayer(this.currPlayer + 1);
@@ -358,6 +368,10 @@ export default class GameManager extends cc.Component {
     resume() {
         cc.director.resume();
         cc.find("Canvas/Main Camera/Pause Menu").active = false;
+    }
+
+    setCameraAnchor(value){
+        this.cameraAnchor = value;
     }
 
 }

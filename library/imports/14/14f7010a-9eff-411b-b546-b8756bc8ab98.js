@@ -58,7 +58,7 @@ var Map = /** @class */ (function (_super) {
             }
         }
         this.firePool = new cc.NodePool('Fire');
-        for (var i = 0; i < 200; i++) {
+        for (var i = 0; i < 210; i++) {
             var fire = cc.instantiate(this.firePrefab);
             this.firePool.put(fire);
             // y.max = -222.5
@@ -99,7 +99,7 @@ var Map = /** @class */ (function (_super) {
         while (this.firePool.size() > 0) {
             fires = this.firePool.get(this.firePool);
             fires.parent = cc.find("Canvas/fire");
-            fires.position = cc.v2(-518 + (16 * index), -320);
+            fires.position = cc.v2(-598 + (16 * index), -320);
             fires.position = fires.position.addSelf(this.node.position);
             fires.getComponent(cc.Animation).play("fire");
             // fires.node.zIndex = 100;

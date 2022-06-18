@@ -67,6 +67,9 @@ var UI = /** @class */ (function (_super) {
             cc.find("Canvas/Main Camera/Pause Menu").active = true;
         }
     };
+    UI.prototype.getTime = function () {
+        return this.timer.string;
+    };
     __decorate([
         property(cc.Label)
     ], UI.prototype, "timer", void 0);

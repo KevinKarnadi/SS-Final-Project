@@ -38,6 +38,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.camera = null;
         _this.bgm = null;
         _this.background = null;
+        _this.cameraSpeed = 300;
         _this.player = null;
         _this.aKeyDown = false;
         _this.dKeyDown = false;
@@ -49,6 +50,7 @@ var GameManager = /** @class */ (function (_super) {
         // private currPlayerPos = null;
         _this.isPaused = false;
         _this.playerPath = "Canvas/Players/";
+        _this.cameraAnchor = 0;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -71,8 +73,14 @@ var GameManager = /** @class */ (function (_super) {
             var playerPos = this.player.node.getPosition();
             var cameraPos = this.camera.getPosition();
             var prevCamPos = this.camera.getPosition();
-            cameraPos.lerp(playerPos, 0.1, cameraPos);
-            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            if (this.cameraAnchor == 1 || this.cameraAnchor == -1) {
+                cameraPos.x += this.cameraAnchor * this.cameraSpeed * dt;
+                // console.log(this.cameraAnchor, "update");
+            }
+            else {
+                cameraPos.lerp(playerPos, 0.1, cameraPos);
+                cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+            }
             if (cameraPos.y > 100) {
                 cameraPos.y = 100;
             }
@@ -83,13 +91,14 @@ var GameManager = /** @class */ (function (_super) {
                 cameraPos.x = 2033 + 35;
             }
             this.camera.setPosition(cameraPos);
-            if (this.background) {
-                this.background.setPosition(cameraPos.x < prevCamPos.x ?
-                    ((cameraPos.x - prevCamPos.x) / 3 + this.background.x) :
-                    (this.background.x - (prevCamPos.x - cameraPos.x) / 3), cameraPos.y < prevCamPos.y ?
-                    ((cameraPos.y - prevCamPos.y) / 3 + this.background.y) :
-                    (this.background.y - (prevCamPos.y - cameraPos.y) / 3));
-            }
+            // if(this.background){
+            //     this.background.setPosition(cameraPos.x < prevCamPos.x ? 
+            //         ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
+            //         (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
+            //         cameraPos.y < prevCamPos.y ? 
+            //         ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
+            //         (this.background.y - (prevCamPos.y - cameraPos.y)/3));
+            // }
             if (this.UI.timerVal < 0 || this.player.isDie) {
                 this.UI.timerVal = 20;
                 this.changePlayer(this.currPlayer + 1);
@@ -338,6 +347,9 @@ var GameManager = /** @class */ (function (_super) {
         cc.director.resume();
         cc.find("Canvas/Main Camera/Pause Menu").active = false;
     };
+    GameManager.prototype.setCameraAnchor = function (value) {
+        this.cameraAnchor = value;
+    };
     __decorate([
         property(Player_1.default)
     ], GameManager.prototype, "player1", void 0);
@@ -362,6 +374,9 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], GameManager.prototype, "background", void 0);
+    __decorate([
+        property()
+    ], GameManager.prototype, "cameraSpeed", void 0);
     GameManager = __decorate([
         ccclass
     ], GameManager);

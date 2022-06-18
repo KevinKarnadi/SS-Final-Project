@@ -38,7 +38,7 @@ export default class Map extends cc.Component {
             }
         }
         this.firePool = new cc.NodePool('Fire');
-        for(let i: number = 0; i < 200; i++) {
+        for(let i: number = 0; i < 210; i++) {
             let fire = cc.instantiate(this.firePrefab);
             this.firePool.put(fire);
             // y.max = -222.5
@@ -83,7 +83,7 @@ export default class Map extends cc.Component {
             
             fires.parent = cc.find("Canvas/fire");
     
-            fires.position = cc.v2(-518 + (16 * index), -320); 
+            fires.position = cc.v2(-598 + (16 * index), -320); 
             
             fires.position = fires.position.addSelf(this.node.position);
             fires.getComponent(cc.Animation).play("fire");

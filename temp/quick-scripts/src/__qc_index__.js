@@ -1,4 +1,5 @@
 
+require('./assets/scripts/AreaNode');
 require('./assets/scripts/Arrow');
 require('./assets/scripts/Bomb');
 require('./assets/scripts/Bullet');
@@ -11,6 +12,7 @@ require('./assets/scripts/Instructions-win');
 require('./assets/scripts/Instructions');
 require('./assets/scripts/Lobby');
 require('./assets/scripts/MainMenu');
+require('./assets/scripts/MiniCam');
 require('./assets/scripts/Player');
 require('./assets/scripts/PlayerName');
 require('./assets/scripts/Playerchoose');
@@ -22,3 +24,4 @@ require('./assets/scripts/Welcome');
 require('./assets/scripts/WelcomeTxt');
 require('./assets/scripts/explosiveObj');
 require('./assets/scripts/map');
+require('./assets/scripts/weaponObj');

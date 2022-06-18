@@ -7629,11 +7629,6 @@
     "meta": 1655526121889,
     "relativePath": "scenes\\lobby.fire"
   },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655493193026,
-    "meta": 1655526122413,
-    "relativePath": "scripts\\map.ts"
-  },
   "ebdde834-cfd0-4156-ae34-678aa755dd4e": {
     "asset": 1655482544948,
     "meta": 1655526121774,
@@ -7643,11 +7638,6 @@
     "asset": 1655482544945,
     "meta": 1655526121473,
     "relativePath": "animations\\fire.anim"
-  },
-  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
-    "asset": 1655495575574,
-    "meta": 1655526122659,
-    "relativePath": "scripts\\UI.ts"
   },
   "7d49911f-ad6c-4ba8-859a-5c9258f2d037": {
     "asset": 1655495571714,
@@ -8654,11 +8644,6 @@
     "meta": 1655526121898,
     "relativePath": "scenes\\map choose.fire"
   },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655582034845,
-    "meta": 1655582034871,
-    "relativePath": "scenes\\map1.fire"
-  },
   "e3e1d4e5-5361-4979-b486-f16ff66ec3f7": {
     "asset": 1655521015608,
     "meta": 1655526121747,
@@ -8688,11 +8673,6 @@
     "asset": 1655521012029,
     "meta": 1655526122296,
     "relativePath": "scripts\\Instructions-win.ts"
-  },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655582209738,
-    "meta": 1655582209762,
-    "relativePath": "scenes\\map2.fire"
   },
   "ac577e29-450c-4502-87bd-26c6f5cf8b80": {
     "asset": 1655521012030,
@@ -10694,11 +10674,6 @@
     "meta": 1655582105177,
     "relativePath": "scripts\\Arrow.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655582785982,
-    "meta": 1655582885820,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
     "asset": 1655582828805,
     "meta": 1655582885929,
@@ -10710,8 +10685,58 @@
     "relativePath": "scripts\\TrajectoryLine.ts"
   },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655583101538,
-    "meta": 1655583103834,
+    "asset": 1655583182545,
+    "meta": 1655583876204,
     "relativePath": "scripts\\Bomb.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655583373595,
+    "meta": 1655583876277,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655583373608,
+    "meta": 1655583876308,
+    "relativePath": "scripts\\map.ts"
+  },
+  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
+    "asset": 1655583373605,
+    "meta": 1655583876326,
+    "relativePath": "scripts\\UI.ts"
+  },
+  "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
+    "asset": 1655583373587,
+    "meta": 1655583876347,
+    "relativePath": "scripts\\AreaNode.ts"
+  },
+  "b30ff041-67a8-4d6e-aa55-bb453710aff4": {
+    "asset": 1655583373598,
+    "meta": 1655583876355,
+    "relativePath": "scripts\\MiniCam.ts"
+  },
+  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
+    "asset": 1655583373612,
+    "meta": 1655583876363,
+    "relativePath": "scripts\\weaponObj.ts"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655583373584,
+    "meta": 1655582209762,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655583373573,
+    "meta": 1655582034871,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "d182a07b-2b6e-47e4-ac25-7212536ecabb": {
+    "asset": 1655583373632,
+    "meta": 1655583876556,
+    "relativePath": "tiles\\Wide arrow R.png"
+  },
+  "f2a0d728-a5a3-40ae-a0cd-44a749f79c5a": {
+    "asset": 1655583373624,
+    "meta": 1655583876559,
+    "relativePath": "tiles\\Wide arrow L.png"
   }
 }

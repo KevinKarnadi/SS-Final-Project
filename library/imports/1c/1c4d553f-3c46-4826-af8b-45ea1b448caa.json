@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Wide arrow R",
+    "texture": "d182a07b-2b6e-47e4-ac25-7212536ecabb",
+    "atlas": "",
+    "rect": [
+      3,
+      33,
+      251,
+      190
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

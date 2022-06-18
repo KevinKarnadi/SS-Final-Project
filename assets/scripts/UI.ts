@@ -51,4 +51,8 @@ export default class UI extends cc.Component {
             cc.find("Canvas/Main Camera/Pause Menu").active = true;
         }
     }
+
+    getTime(){
+        return this.timer.string;
+    }
 }
