@@ -45,19 +45,19 @@ export default class Playerchoose extends cc.Component {
     }
 
     loadTwoPlayers(){
-        cc.director.loadScene("instructions");
+        cc.director.loadScene("map choose");
     }
 
     loadThreePlayers(){
-        cc.director.loadScene("instructions");
+        cc.director.loadScene("map choose");
     }
 
     loadFourPlayers(){
-        cc.director.loadScene("instructions");
+        cc.director.loadScene("map choose");
     }
 
     loadTeamPlayers(){
-        cc.director.loadScene("instructions");
+        cc.director.loadScene("map choose");
     }
 
 }

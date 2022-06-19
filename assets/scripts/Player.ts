@@ -15,19 +15,15 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     private bombPrefab: cc.Prefab = null;
 
-    @property(cc.Prefab)
-    damageParc: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    damageEffAnim: cc.Prefab = null;
-
     public line = null;
 
-    public playerName = null;
+    private playerName = null;
+
+    private playerNumber = null;
 
     private playerChar: string = null;
 
-    private aimLabel = null;
+    private totalPlayer: string = null;
 
     private moveSpeed: number = 300;
 
@@ -61,8 +57,6 @@ export default class Player extends cc.Component {
 
     private angle = null;
 
-    private power: number = null;
-
     private maxHP: number = 100;
 
     private HP: number = 100;
@@ -71,11 +65,7 @@ export default class Player extends cc.Component {
 
     public weapon: string = "gun";
 
-    public gunType: string = "normal";
-
-    private currWeaponNum: string = "0";
-
-    private aim: boolean = false;
+    public gunType: string = "shotgun";
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -83,14 +73,16 @@ export default class Player extends cc.Component {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
+        this.playerNumber = this.node.getChildByName("Player Number");
         this.line = this.node.getChildByName("Trajectory Line");
-        this.aimLabel = this.node.getChildByName("Aim Bomb Layout");;
         this.setPlayerName();
+        this.setPlayerNumber();
         this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         let maxBombNum = 5;
         for(let i: number = 0; i < maxBombNum; i++) {
             let bomb = cc.instantiate(this.bombPrefab);
+
             this.bombPool.put(bomb);
         }
     }
@@ -128,85 +120,45 @@ export default class Player extends cc.Component {
         // if(other.tag == 1){     // on ground or props
         //     this.isOnGround = true;
         // }
-        if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
+        if(other.node.group == "bullet" || other.node.group == "explosiveObj") {
             if(!this.isDie) {
-                this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
+                this.HP -= 10;
                 if(this.HP <= 0) {
                     this.HP = 0;
                 } else {
                     this.hurt = true;
                     if (this.playerChar == "char1" && this.HP != 0){
                         this.animationState = this.animation.play('char1hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char1idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char2" && this.HP != 0){
                         this.animationState = this.animation.play('char2hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char2idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char3" && this.HP != 0){
                         this.animationState = this.animation.play('char3hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char4" && this.HP != 0){
                         this.animationState = this.animation.play('char4hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
                     }
                     this.scheduleOnce(()=>{
                         this.hurt = false;
                     }, 0.5)
-
-                }
-                if(other.node.group == "bullet"){
-                    let particleEff = cc.instantiate(this.damageParc);
-                    particleEff.parent = cc.director.getScene();
-                    particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                    this.scheduleOnce(()=>{
-                        particleEff.destroy();
-                    }, 0.6);
-                }
-
-                if(other.node.group == "bomb"){
-                    let particleEff = cc.instantiate(this.damageEffAnim);
-                    particleEff.parent = cc.director.getScene();
-                    particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                    this.scheduleOnce(()=>{
-                        particleEff.destroy();
-                    }, 0.4);
                 }
             }
         } else if(other.node.group == "wall") {
             if(other.node.name == "Die Boundary") {
                 this.playerDie();
-            }
-        }
-
-        if(other.node.group == "weaponObj"){
-            this.currWeaponNum = other.node.getComponent("weaponObj").getWeaponType();
-            switch (this.currWeaponNum) {
-                case "0":
-                    this.weapon = "gun";
-                    this.gunType = "normal";
-                    break;
-                case "1":
-                    this.weapon = "gun";
-                    this.gunType = "burst";
-                    break;
-                case "2":
-                    this.weapon = "bomb";
-                    break;
-                case "3":
-                    this.weapon = "gun";
-                    this.gunType = "shotgun";
-                    break;
-                case "4":
-                    this.weapon = "gun";
-                    this.gunType = "sniper";
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        if(other.node.group == "itemObj"){
-            this.HP += 30;
-            if(this.HP > 100){
-                this.HP = 100;
             }
         }
     }
@@ -218,16 +170,10 @@ export default class Player extends cc.Component {
             this.node.scaleX = 1;
             this.playerName.scaleX = 1;
             cc.find("Player Health", this.node).scaleX = 1;
-            if(this.aimLabel.active) {
-                this.aimLabel.scaleX = 1;
-            }
         } else if(this.moveDirection == -1 || this.changeDirection == -1) {
             this.node.scaleX = -1;
             this.playerName.scaleX = -1;
             cc.find("Player Health", this.node).scaleX = -1;
-            if(this.aimLabel.active) {
-                this.aimLabel.scaleX = -1;
-            }
         }
     }
 
@@ -243,14 +189,11 @@ export default class Player extends cc.Component {
     private createBullet(mode: string)
     {
         this.shoot = false;
-        this.scheduleOnce(()=>{
-            this.aim = false;
-        }, 0.5)
         if(mode == "normal") {
             let bullet = cc.instantiate(this.bulletPrefab);
             if(bullet != null) {
                 bullet.getComponent('Bullet').setAngle(this.angle);
-                bullet.getComponent('Bullet').init(this.node, 1000);
+                bullet.getComponent('Bullet').init(this.node);
             }
         }
         else if(mode == "burst") {
@@ -259,26 +202,19 @@ export default class Player extends cc.Component {
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node, 1000);
+                    bullet.getComponent('Bullet').init(this.node);
                 }
             }, 0.05, 2);
         }
         else if(mode == "shotgun") {
-            let d_angle = -0.1;
-            for(let i = 0; i < 3; i++) {
+            let d_angle = -0.2;
+            for(let i = 0; i < 5; i++) {
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
-                    bullet.getComponent('Bullet').init(this.node, 1000);
-                    d_angle += 0.05;
+                    bullet.getComponent('Bullet').init(this.node);
+                    d_angle += 0.1;
                 }
-            }
-        }
-        else if(mode == "sniper") {
-            let bullet = cc.instantiate(this.bulletPrefab);
-            if(bullet != null) {
-                bullet.getComponent('Bullet').setAngle(this.angle);
-                bullet.getComponent('Bullet').init(this.node, 2000);
             }
         }
     }
@@ -291,7 +227,7 @@ export default class Player extends cc.Component {
             bomb = this.bombPool.get(this.bombPool);
 
         if(bomb != null) {
-            bomb.getComponent('Bomb').setAnglePower(this.angle, this.power);
+            bomb.getComponent('Bomb').setAngle(this.angle);
             bomb.getComponent('Bomb').init(this.node);
         }
     }
@@ -319,16 +255,13 @@ export default class Player extends cc.Component {
             // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
-        cc.find("Canvas/Game Manager").getComponent("GameManager").playerDie();
     }
 
     playerAnimation() {
         if(!this.isDie){    // animation for char1
             if(this.playerChar == "char1") {  // MUST change to curPlayer == "Player 1"
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char1idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
                     this.animationState = this.animation.play("char1idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char1aim")) {
-                    this.animationState = this.animation.play("char1aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
                     this.animationState = this.animation.play("char1run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
@@ -345,30 +278,24 @@ export default class Player extends cc.Component {
                 //     this.animationState = this.animation.play('char1idle');
                 // }          
             } else if(this.playerChar == "char2") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char2idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
                     this.animationState = this.animation.play("char2idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char2aim")) {
-                    this.animationState = this.animation.play("char2aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char2run")) {
                     this.animationState = this.animation.play("char2run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char2jump")) {
                     this.animationState = this.animation.play("char2jump");
                 }
             } else if(this.playerChar == "char3") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char3idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
                     this.animationState = this.animation.play("char3idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char3aim")) {
-                    this.animationState = this.animation.play("char3aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char3run")) {
                     this.animationState = this.animation.play("char3run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char3jump")) {
                     this.animationState = this.animation.play("char3jump");
                 }
             }  else if(this.playerChar == "char4") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char4idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
                     this.animationState = this.animation.play("char4idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char4aim")) {
-                    this.animationState = this.animation.play("char4aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char4run")) {
                     this.animationState = this.animation.play("char4run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char4jump")) {
@@ -412,6 +339,34 @@ export default class Player extends cc.Component {
         }
     }
 
+    setPlayerNumber() {
+        if(this.node.name == "Player Number - 2") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("2 Players");
+        } else if(this.node.name == "Player Number - 3") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("3 Players");
+        } else if(this.node.name == "Player Number - 4") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("4 Players");
+        } else if(this.node.name == "Player Number - team") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("Team Players");
+        }
+    }
+
+    setTotalPlayer() {
+        if(this.node.name == "Player Number - 2") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 2");
+            this.totalPlayer = "num2";
+        } else if(this.node.name == "Player Number - 3") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 3");
+            this.totalPlayer = "num3";
+        } else if(this.node.name == "Player Number - 4") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 4");
+            this.totalPlayer = "num4";
+        } else if(this.node.name == "Player Number - team") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - team");
+            this.totalPlayer = "numteam";
+        }
+    }
+
     setPlayerChar() {
         if(this.node.name == "Player 1") {
             this.playerChar = cc.sys.localStorage.getItem("Player 1 Char");
@@ -427,9 +382,5 @@ export default class Player extends cc.Component {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
             this.playerChar = "char4";
         }
-    }
-
-    getCurrWeaponNum(){
-        return this.currWeaponNum;
     }
 }
