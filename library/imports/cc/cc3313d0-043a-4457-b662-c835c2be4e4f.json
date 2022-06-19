@@ -14,7 +14,7 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "82b878a7-986b-410b-864f-c24ed6bd57df"
+              "__uuid__": "33e3b75e-a840-4ee2-8587-11c290cbb18f"
             }
           },
           {
@@ -72,7 +72,87 @@
             }
           }
         ]
+      },
+      "cc.PhysicsBoxCollider": {
+        "size": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 40,
+              "height": 66
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 66,
+              "height": 44
+            }
+          }
+        ],
+        "offset": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": -15
+            }
+          }
+        ]
       }
+    },
+    "props": {
+      "width": [
+        {
+          "frame": 0,
+          "value": 44
+        },
+        {
+          "frame": 0.75,
+          "value": 66
+        }
+      ],
+      "height": [
+        {
+          "frame": 0,
+          "value": 66
+        },
+        {
+          "frame": 0.75,
+          "value": 44
+        }
+      ],
+      "y": [
+        {
+          "frame": 0,
+          "value": 258.095
+        },
+        {
+          "frame": 0.75,
+          "value": 247
+        }
+      ],
+      "anchorY": [
+        {
+          "frame": 0,
+          "value": 0.5
+        },
+        {
+          "frame": 0.75,
+          "value": 0.85
+        }
+      ]
     }
   },
   "events": []
