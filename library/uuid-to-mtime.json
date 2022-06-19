@@ -10759,16 +10759,6 @@
     "meta": 1655631728290,
     "relativePath": "scripts\\Instructions-win.ts"
   },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655628943093,
-    "meta": 1655631728529,
-    "relativePath": "scripts\\map.ts"
-  },
-  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
-    "asset": 1655628723220,
-    "meta": 1655631729059,
-    "relativePath": "scripts\\weaponObj.ts"
-  },
   "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
     "asset": 1655627347590,
     "meta": 1655631727134,
@@ -10795,8 +10785,8 @@
     "relativePath": "scenes\\instructions - option 2.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655631129527,
-    "meta": 1655631727293,
+    "asset": 1655643457195,
+    "meta": 1655643457377,
     "relativePath": "scenes\\map2.fire"
   },
   "6655e9c6-40ef-4c1b-aec9-7085014e437e": {
@@ -10813,11 +10803,6 @@
     "asset": 1655627347502,
     "meta": 1655631726815,
     "relativePath": "instructions\\minimap.jpg"
-  },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655632277694,
-    "meta": 1655632283362,
-    "relativePath": "scripts\\GameManager.ts"
   },
   "d2502241-7449-4cce-b1cf-569beb90c56d": {
     "asset": 1655569820399,
@@ -10868,5 +10853,25 @@
     "asset": 1655642879276,
     "meta": 1655642883806,
     "relativePath": "scripts\\Player.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655642966613,
+    "meta": 1655642997431,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "07acbd49-2d53-4e29-9763-b9900f0bec0d": {
+    "asset": 1655642966588,
+    "meta": 1655642997493,
+    "relativePath": "scenes\\temp.fire"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655643304654,
+    "meta": 1655643332370,
+    "relativePath": "scripts\\map.ts"
+  },
+  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
+    "asset": 1655643421301,
+    "meta": 1655643425791,
+    "relativePath": "scripts\\weaponObj.ts"
   }
 }

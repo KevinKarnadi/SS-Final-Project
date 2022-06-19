@@ -38,11 +38,8 @@ var WeaponObj = /** @class */ (function (_super) {
     WeaponObj.prototype.update = function (dt) {
     };
     WeaponObj.prototype.onBeginContact = function (contact, self, other) {
-        var _this = this;
         if (other.node.name == "Die Boundary" || other.node.group == "player") {
-            this.scheduleOnce(function () {
-                _this.node.destroy();
-            }, 0);
+            this.node.destroy();
         }
     };
     WeaponObj.prototype.getWeaponType = function () {

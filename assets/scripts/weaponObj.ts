@@ -20,9 +20,7 @@ export default class WeaponObj extends cc.Component {
 
     onBeginContact(contact, self, other){
         if(other.node.name == "Die Boundary" || other.node.group == "player"){
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0);
+            this.node.destroy();
         }
     }
 
