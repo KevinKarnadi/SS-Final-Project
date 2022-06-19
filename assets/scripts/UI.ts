@@ -6,6 +6,9 @@ export default class UI extends cc.Component {
     @property(cc.Label)
     timer: cc.Label = null; // game timer
 
+    @property(cc.Node)
+    GameManager: cc.Node = null;
+
     public timerVal: number;   // game timer
 
     private timeout: boolean = false;   // game ended
@@ -24,18 +27,27 @@ export default class UI extends cc.Component {
 
     update (dt) {
         this.timer.string = this.timerVal.toString();
+        if(this.GameManager.getComponent("GameManager").getWin()){
+            this.isWin = true;
+            this.timer.string = "--"
+        }
+        this.unschedule(this.countTimer);
     }
 
     startTimer(time: number) {
         this.timerVal = time;
-        setInterval(()=>{
-            if(!cc.director.isPaused() && !this.isWin) {
-                this.timerVal--;
-                if(this.timerVal < 0) {
-                    this.timeout = true;
-                }
+        this.schedule(()=>{
+            this.countTimer();
+        }, 1);
+    }
+
+    countTimer(){
+        if(!cc.director.isPaused() && !this.isWin) {
+            this.timerVal--;
+            if(this.timerVal < 0) {
+                this.timeout = true;
             }
-        }, 1000);
+        }
     }
 
     isTimeOut() {

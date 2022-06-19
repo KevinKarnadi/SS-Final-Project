@@ -29,6 +29,7 @@ var UI = /** @class */ (function (_super) {
     function UI() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.timer = null; // game timer
+        _this.GameManager = null;
         _this.timeout = false; // game ended
         _this.isWin = false;
         _this.currPlayer = 1;
@@ -41,18 +42,26 @@ var UI = /** @class */ (function (_super) {
     };
     UI.prototype.update = function (dt) {
         this.timer.string = this.timerVal.toString();
+        if (this.GameManager.getComponent("GameManager").getWin()) {
+            this.isWin = true;
+            this.timer.string = "--";
+        }
+        this.unschedule(this.countTimer);
     };
     UI.prototype.startTimer = function (time) {
         var _this = this;
         this.timerVal = time;
-        setInterval(function () {
-            if (!cc.director.isPaused() && !_this.isWin) {
-                _this.timerVal--;
-                if (_this.timerVal < 0) {
-                    _this.timeout = true;
-                }
+        this.schedule(function () {
+            _this.countTimer();
+        }, 1);
+    };
+    UI.prototype.countTimer = function () {
+        if (!cc.director.isPaused() && !this.isWin) {
+            this.timerVal--;
+            if (this.timerVal < 0) {
+                this.timeout = true;
             }
-        }, 1000);
+        }
     };
     UI.prototype.isTimeOut = function () {
         return this.timeout;
@@ -73,6 +82,9 @@ var UI = /** @class */ (function (_super) {
     __decorate([
         property(cc.Label)
     ], UI.prototype, "timer", void 0);
+    __decorate([
+        property(cc.Node)
+    ], UI.prototype, "GameManager", void 0);
     UI = __decorate([
         ccclass
     ], UI);

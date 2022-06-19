@@ -401,12 +401,23 @@ var GameManager = /** @class */ (function (_super) {
         close_clickEventHandler.component = "GameManager";
         close_clickEventHandler.handler = "close";
         cc.find("Canvas/Main Camera/Settings Menu/closeBtn").getComponent(cc.Button).clickEvents.push(close_clickEventHandler);
+        var bgmute_clickEventHandler = new cc.Component.EventHandler();
+        bgmute_clickEventHandler.target = this.node;
+        bgmute_clickEventHandler.component = "GameManager";
+        bgmute_clickEventHandler.handler = "bgMute";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Mute/bgMuteBtn").getComponent(cc.Button).clickEvents.push(bgmute_clickEventHandler);
     };
     GameManager.prototype.close = function () {
         cc.find("Canvas/Main Camera/Settings Menu").active = false;
     };
+    GameManager.prototype.bgMute = function () {
+        cc.audioEngine.setMusicVolume(0);
+    };
     GameManager.prototype.setCameraAnchor = function (value) {
         this.cameraAnchor = value;
+    };
+    GameManager.prototype.getWin = function () {
+        return (this.winner != null);
     };
     GameManager.prototype.updateWeaponUi = function () {
         // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;

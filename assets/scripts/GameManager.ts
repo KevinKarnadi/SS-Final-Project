@@ -456,6 +456,10 @@ export default class GameManager extends cc.Component {
 
     setCameraAnchor(value){
         this.cameraAnchor = value;
+        
+    }
+    getWin(){
+        return (this.winner != null);
     }
 
     updateWeaponUi(){
