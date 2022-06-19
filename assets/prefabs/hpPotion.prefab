@@ -173,7 +173,7 @@
       "__uuid__": "05f3518f-da25-436c-9d1e-359541963b52"
     },
     "_texture": null,
-    "_stopped": false,
+    "_stopped": true,
     "playOnLoad": true,
     "autoRemoveOnFinish": false,
     "totalParticles": 99.6,

@@ -297,6 +297,7 @@ var Player = /** @class */ (function (_super) {
             // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
+        cc.find("Canvas/Game Manager").getComponent("GameManager").playerDie();
     };
     Player.prototype.playerAnimation = function () {
         if (!this.isDie) { // animation for char1

@@ -175,7 +175,7 @@ export default class GameManager extends cc.Component {
             if(this.player4.isDie)
                 alive--;
         }
-        this.alivePlayer = alive;
+        // this.alivePlayer = alive;
         if (this.alivePlayer == 1){
             this.winner = this.player.playerName.getComponent(cc.Label).string;
             console.log(this.winner);
@@ -487,5 +487,9 @@ export default class GameManager extends cc.Component {
                     break;
             }
         }
+    }
+
+    playerDie(){
+        this.alivePlayer -= 1;
     }
 }

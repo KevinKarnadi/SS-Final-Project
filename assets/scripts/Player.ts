@@ -319,6 +319,7 @@ export default class Player extends cc.Component {
             // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
         cc.audioEngine.playEffect(this.dieAudio, false);
+        cc.find("Canvas/Game Manager").getComponent("GameManager").playerDie();
     }
 
     playerAnimation() {

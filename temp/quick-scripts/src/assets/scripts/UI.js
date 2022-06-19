@@ -42,18 +42,15 @@ var UI = /** @class */ (function (_super) {
     };
     UI.prototype.update = function (dt) {
         this.timer.string = this.timerVal.toString();
-        if (this.GameManager.getComponent("GameManager").getWin()) {
+        if (cc.find("Canvas/Game Manager").getComponent("GameManager").getWin()) {
+            this.unschedule(this.countTimer);
             this.isWin = true;
             this.timer.string = "--";
         }
-        this.unschedule(this.countTimer);
     };
     UI.prototype.startTimer = function (time) {
-        var _this = this;
         this.timerVal = time;
-        this.schedule(function () {
-            _this.countTimer();
-        }, 1);
+        this.schedule(this.countTimer, 1);
     };
     UI.prototype.countTimer = function () {
         if (!cc.director.isPaused() && !this.isWin) {

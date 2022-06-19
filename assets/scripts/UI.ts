@@ -27,18 +27,16 @@ export default class UI extends cc.Component {
 
     update (dt) {
         this.timer.string = this.timerVal.toString();
-        if(this.GameManager.getComponent("GameManager").getWin()){
+        if(cc.find("Canvas/Game Manager").getComponent("GameManager").getWin()){
+            this.unschedule(this.countTimer);
             this.isWin = true;
             this.timer.string = "--"
         }
-        this.unschedule(this.countTimer);
     }
 
     startTimer(time: number) {
         this.timerVal = time;
-        this.schedule(()=>{
-            this.countTimer();
-        }, 1);
+        this.schedule(this.countTimer, 1);
     }
 
     countTimer(){

@@ -10864,25 +10864,10 @@
     "meta": 1655658090393,
     "relativePath": "scripts\\Bullet.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655657989275,
-    "meta": 1655658091648,
-    "relativePath": "scripts\\Player.ts"
-  },
   "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
     "asset": 1655657989276,
     "meta": 1655658091941,
     "relativePath": "scripts\\TrajectoryLine.ts"
-  },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655658788403,
-    "meta": 1655658819680,
-    "relativePath": "scripts\\GameManager.ts"
-  },
-  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
-    "asset": 1655658788404,
-    "meta": 1655658819767,
-    "relativePath": "scripts\\UI.ts"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
     "asset": 1655658788401,
@@ -10910,8 +10895,8 @@
     "relativePath": "prefabs\\Weapon4.prefab"
   },
   "6655e9c6-40ef-4c1b-aec9-7085014e437e": {
-    "asset": 1655654521046,
-    "meta": 1655659142187,
+    "asset": 1655659345810,
+    "meta": 1655659345832,
     "relativePath": "prefabs\\hpPotion.prefab"
   },
   "2a471583-08aa-468c-bb5e-4dd1ff887c57": {
@@ -10933,5 +10918,20 @@
     "asset": 1655659157930,
     "meta": 1655659161197,
     "relativePath": "scripts\\map.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655659535477,
+    "meta": 1655659553990,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655659576571,
+    "meta": 1655659579661,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
+    "asset": 1655659844557,
+    "meta": 1655659854328,
+    "relativePath": "scripts\\UI.ts"
   }
 }

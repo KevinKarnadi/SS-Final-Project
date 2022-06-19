@@ -154,7 +154,7 @@ var GameManager = /** @class */ (function (_super) {
             if (this.player4.isDie)
                 alive--;
         }
-        this.alivePlayer = alive;
+        // this.alivePlayer = alive;
         if (this.alivePlayer == 1) {
             this.winner = this.player.playerName.getComponent(cc.Label).string;
             console.log(this.winner);
@@ -444,6 +444,9 @@ var GameManager = /** @class */ (function (_super) {
                     break;
             }
         }
+    };
+    GameManager.prototype.playerDie = function () {
+        this.alivePlayer -= 1;
     };
     __decorate([
         property(Player_1.default)
