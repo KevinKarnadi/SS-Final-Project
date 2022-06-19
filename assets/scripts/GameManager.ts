@@ -438,10 +438,20 @@ export default class GameManager extends cc.Component {
         close_clickEventHandler.component = "GameManager";
         close_clickEventHandler.handler = "close";
         cc.find("Canvas/Main Camera/Settings Menu/closeBtn").getComponent(cc.Button).clickEvents.push(close_clickEventHandler);
+
+        let bgmute_clickEventHandler = new cc.Component.EventHandler();
+        bgmute_clickEventHandler.target = this.node;
+        bgmute_clickEventHandler.component = "GameManager";
+        bgmute_clickEventHandler.handler = "bgMute";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Mute/bgMuteBtn").getComponent(cc.Button).clickEvents.push(bgmute_clickEventHandler);
     }
 
     close() {
         cc.find("Canvas/Main Camera/Settings Menu").active = false;
+    }
+
+    bgMute() {
+        cc.audioEngine.setMusicVolume(0);
     }
 
     setCameraAnchor(value){
