@@ -6,7 +6,7 @@
   "_duration": 0.7666666666666667,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 0,
+  "wrapMode": 1,
   "curveData": {
     "comps": {
       "cc.Sprite": {
@@ -76,7 +76,7 @@
       "cc.PhysicsBoxCollider": {
         "size": [
           {
-            "frame": 0,
+            "frame": 0.4166666666666667,
             "value": {
               "__type__": "cc.Size",
               "width": 40,
@@ -84,7 +84,7 @@
             }
           },
           {
-            "frame": 0.75,
+            "frame": 0.5833333333333334,
             "value": {
               "__type__": "cc.Size",
               "width": 66,
@@ -94,7 +94,7 @@
         ],
         "offset": [
           {
-            "frame": 0,
+            "frame": 0.4166666666666667,
             "value": {
               "__type__": "cc.Vec2",
               "x": 0,
@@ -102,11 +102,11 @@
             }
           },
           {
-            "frame": 0.75,
+            "frame": 0.5833333333333334,
             "value": {
               "__type__": "cc.Vec2",
               "x": 0,
-              "y": -11
+              "y": -5.5
             }
           }
         ]
@@ -115,41 +115,31 @@
     "props": {
       "width": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 44
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 66
         }
       ],
       "height": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 66
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 44
-        }
-      ],
-      "y": [
-        {
-          "frame": 0,
-          "value": 258.095
-        },
-        {
-          "frame": 0.75,
-          "value": 247
         }
       ],
       "anchorY": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 0.5
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 0.75
         }
       ]

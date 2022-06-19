@@ -1515,8 +1515,8 @@
     "relativePath": "animations\\char2"
   },
   "24e3e352-3335-4e89-b6e9-850d63f0ad17": {
-    "asset": 1655646608859,
-    "meta": 1655646608869,
+    "asset": 1655649216718,
+    "meta": 1655649216726,
     "relativePath": "animations\\char1\\char1dead.anim"
   },
   "09dcc182-3124-4a76-a0cd-9444214b11da": {
@@ -10815,18 +10815,18 @@
     "relativePath": "scripts\\GameManager.ts"
   },
   "cc3313d0-043a-4457-b662-c835c2be4e4f": {
-    "asset": 1655647029559,
-    "meta": 1655647029567,
+    "asset": 1655649109213,
+    "meta": 1655649109220,
     "relativePath": "animations\\char2\\char2dead.anim"
   },
   "5ba2c380-3535-42d9-b25a-af50dfdcfa2d": {
-    "asset": 1655647161666,
-    "meta": 1655647161681,
+    "asset": 1655649312435,
+    "meta": 1655649312446,
     "relativePath": "animations\\char3\\char3dead.anim"
   },
   "528554ff-2382-433c-b293-6309a9f99465": {
-    "asset": 1655647215706,
-    "meta": 1655647215714,
+    "asset": 1655649304895,
+    "meta": 1655649304909,
     "relativePath": "animations\\char4\\char4dead.anim"
   },
   "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {

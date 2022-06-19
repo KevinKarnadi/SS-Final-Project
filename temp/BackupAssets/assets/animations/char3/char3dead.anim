@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "char1dead",
+  "_name": "char3dead",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.7666666666666667,
@@ -14,61 +14,61 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "5087a409-25fa-4a99-8acd-9d5503102347"
+              "__uuid__": "ef8c2ba1-334d-4722-bf04-9737bee7f0c0"
             }
           },
           {
             "frame": 0.08333333333333333,
             "value": {
-              "__uuid__": "459fbbec-9885-4e2f-9c4b-854086c67314"
+              "__uuid__": "7d39e8b5-af01-4258-b442-2e3010d3797d"
             }
           },
           {
             "frame": 0.16666666666666666,
             "value": {
-              "__uuid__": "8c332d5d-70be-4611-b00b-be4eb5e5cb0c"
+              "__uuid__": "c9988b99-bebd-4cd0-82dd-3aa0f17668d7"
             }
           },
           {
             "frame": 0.25,
             "value": {
-              "__uuid__": "c7633dfc-2bee-4b01-9f35-3710675fb06a"
+              "__uuid__": "10301ff7-e482-46b4-9880-54299ea1d2a7"
             }
           },
           {
             "frame": 0.3333333333333333,
             "value": {
-              "__uuid__": "f6ad5588-e4b5-4db9-9e22-f90fdae4077f"
+              "__uuid__": "06ec8314-b456-4b0f-987a-b0460dda08af"
             }
           },
           {
             "frame": 0.4166666666666667,
             "value": {
-              "__uuid__": "366969f1-b479-4d0c-af55-c09a4f95bd56"
+              "__uuid__": "06644da4-62e4-4899-bdb7-89785f8d19b8"
             }
           },
           {
             "frame": 0.5,
             "value": {
-              "__uuid__": "923676c9-9d26-4559-9ce5-7dbd63676aa0"
+              "__uuid__": "be5a7dec-079f-4a37-8e01-188ed7e5b850"
             }
           },
           {
             "frame": 0.5833333333333334,
             "value": {
-              "__uuid__": "d106e89c-ad34-47d0-9d89-3ffe5af32674"
+              "__uuid__": "71983972-f6ea-4fd4-b62c-0212f041e72a"
             }
           },
           {
             "frame": 0.6666666666666666,
             "value": {
-              "__uuid__": "37f72fbf-1b77-457d-83a3-aea33b2e4ec4"
+              "__uuid__": "fd46cef6-205b-4fe1-a8f8-2f0ec1198eed"
             }
           },
           {
             "frame": 0.75,
             "value": {
-              "__uuid__": "36d6e1ec-2b64-4334-a60c-ddffeb277a3d"
+              "__uuid__": "c5bdc88e-014e-4620-b569-f0d70ecf006b"
             }
           }
         ]
@@ -76,7 +76,7 @@
       "cc.PhysicsBoxCollider": {
         "size": [
           {
-            "frame": 0,
+            "frame": 0.4166666666666667,
             "value": {
               "__type__": "cc.Size",
               "width": 40,
@@ -84,7 +84,7 @@
             }
           },
           {
-            "frame": 0.75,
+            "frame": 0.5833333333333334,
             "value": {
               "__type__": "cc.Size",
               "width": 66,
@@ -94,7 +94,7 @@
         ],
         "offset": [
           {
-            "frame": 0,
+            "frame": 0.4166666666666667,
             "value": {
               "__type__": "cc.Vec2",
               "x": 0,
@@ -102,7 +102,7 @@
             }
           },
           {
-            "frame": 0.75,
+            "frame": 0.5833333333333334,
             "value": {
               "__type__": "cc.Vec2",
               "x": 0,
@@ -115,41 +115,41 @@
     "props": {
       "width": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 44
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 66
         }
       ],
       "height": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 66
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 44
         }
       ],
       "y": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 258.095
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 247
         }
       ],
       "anchorY": [
         {
-          "frame": 0,
+          "frame": 0.4166666666666667,
           "value": 0.5
         },
         {
-          "frame": 0.75,
+          "frame": 0.5833333333333334,
           "value": 0.85
         }
       ]
