@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "AK47",
+    "texture": "57bb838e-a2c1-4476-b5a2-3a1196be46c2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      287,
+      99
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      287,
+      99
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

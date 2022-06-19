@@ -4,7 +4,7 @@ const {ccclass, property} = cc._decorator;
 export default class WeaponObj extends cc.Component {
 
     @property()
-    bulletType: string = "1";
+    weaponType: string = "0";
 
     onLoad () {
 
@@ -19,14 +19,14 @@ export default class WeaponObj extends cc.Component {
     }
 
     onBeginContact(contact, self, other){
-        // if(other.node.name == "Die Boundary" || other.node.group == "player"){
-        //     this.node.destroy();
-        // }
-        
-        
+        if(other.node.name == "Die Boundary" || other.node.group == "player"){
+            this.scheduleOnce(()=>{
+                this.node.destroy();
+            }, 0.1);
+        }
     }
 
-    getBulletType(){
-        return this.bulletType;
+    getWeaponType(){
+        return this.weaponType;
     }
 }

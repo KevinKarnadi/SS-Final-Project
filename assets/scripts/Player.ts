@@ -67,6 +67,8 @@ export default class Player extends cc.Component {
 
     public gunType: string = "shotgun";
 
+    private currWeaponNum: string = "0";
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -146,6 +148,10 @@ export default class Player extends cc.Component {
             if(other.node.name == "Die Boundary") {
                 this.playerDie();
             }
+        }
+
+        if(other.node.group == "weaponObj"){
+            this.currWeaponNum = other.node.getComponent("weaponObj").getWeaponType();
         }
     }
 
@@ -346,5 +352,9 @@ export default class Player extends cc.Component {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
             this.playerChar = "char4";
         }
+    }
+
+    getCurrWeaponNum(){
+        return this.currWeaponNum;
     }
 }

@@ -28,7 +28,7 @@ var WeaponObj = /** @class */ (function (_super) {
     __extends(WeaponObj, _super);
     function WeaponObj() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.bulletType = "1";
+        _this.weaponType = "0";
         return _this;
     }
     WeaponObj.prototype.onLoad = function () {
@@ -38,16 +38,19 @@ var WeaponObj = /** @class */ (function (_super) {
     WeaponObj.prototype.update = function (dt) {
     };
     WeaponObj.prototype.onBeginContact = function (contact, self, other) {
-        // if(other.node.name == "Die Boundary" || other.node.group == "player"){
-        //     this.node.destroy();
-        // }
+        var _this = this;
+        if (other.node.name == "Die Boundary" || other.node.group == "player") {
+            this.scheduleOnce(function () {
+                _this.node.destroy();
+            }, 0.1);
+        }
     };
-    WeaponObj.prototype.getBulletType = function () {
-        return this.bulletType;
+    WeaponObj.prototype.getWeaponType = function () {
+        return this.weaponType;
     };
     __decorate([
         property()
-    ], WeaponObj.prototype, "bulletType", void 0);
+    ], WeaponObj.prototype, "weaponType", void 0);
     WeaponObj = __decorate([
         ccclass
     ], WeaponObj);

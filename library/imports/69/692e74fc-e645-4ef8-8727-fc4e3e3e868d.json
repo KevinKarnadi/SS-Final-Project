@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Shotgun (2)",
+    "texture": "1a62a97a-c6ea-43e8-aae5-bafbf0b5ba08",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      297,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      297,
+      84
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

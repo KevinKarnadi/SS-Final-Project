@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Assault Rifles (1)",
+    "texture": "b155ac09-5899-4f6e-afc8-35a516dc0582",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      282,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      282,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

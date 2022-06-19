@@ -10674,11 +10674,6 @@
     "meta": 1655609877904,
     "relativePath": "scripts\\Arrow.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655609835670,
-    "meta": 1655609879051,
-    "relativePath": "scripts\\Player.ts"
-  },
   "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
     "asset": 1655609835671,
     "meta": 1655609879296,
@@ -10688,11 +10683,6 @@
     "asset": 1655609835666,
     "meta": 1655609877973,
     "relativePath": "scripts\\Bomb.ts"
-  },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655609835668,
-    "meta": 1655609878346,
-    "relativePath": "scripts\\GameManager.ts"
   },
   "14f7010a-9eff-411b-b546-b8756bc8ab98": {
     "asset": 1655573134790,
@@ -10704,20 +10694,10 @@
     "meta": 1655609879336,
     "relativePath": "scripts\\UI.ts"
   },
-  "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
-    "asset": 1655574436705,
-    "meta": 1655609877863,
-    "relativePath": "scripts\\AreaNode.ts"
-  },
   "b30ff041-67a8-4d6e-aa55-bb453710aff4": {
     "asset": 1655572556240,
     "meta": 1655609878843,
     "relativePath": "scripts\\MiniCam.ts"
-  },
-  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
-    "asset": 1655572580153,
-    "meta": 1655609879358,
-    "relativePath": "scripts\\weaponObj.ts"
   },
   "d182a07b-2b6e-47e4-ac25-7212536ecabb": {
     "asset": 1605948212000,
@@ -10735,8 +10715,8 @@
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655609835643,
-    "meta": 1655609877638,
+    "asset": 1655612686870,
+    "meta": 1655612686933,
     "relativePath": "scenes\\map1.fire"
   },
   "9155eefe-fefa-4f6e-acc9-aef1af1dba51": {
@@ -10748,5 +10728,85 @@
     "asset": 1655609807039,
     "meta": 1655609879453,
     "relativePath": "tiles\\gun"
+  },
+  "b155ac09-5899-4f6e-afc8-35a516dc0582": {
+    "asset": 1567143977000,
+    "meta": 1655610333002,
+    "relativePath": "tiles\\gun\\Assault Rifles (1).png"
+  },
+  "57bb838e-a2c1-4476-b5a2-3a1196be46c2": {
+    "asset": 1567142672000,
+    "meta": 1655610333014,
+    "relativePath": "tiles\\gun\\AK47.png"
+  },
+  "85bf1bff-a83d-4720-b301-88c65a2b0cc1": {
+    "asset": 1567143546000,
+    "meta": 1655610333027,
+    "relativePath": "tiles\\gun\\Grenade Launcher.png"
+  },
+  "6bd37579-6b7c-484f-a5e6-cd9a099e9c71": {
+    "asset": 1567142506000,
+    "meta": 1655610333045,
+    "relativePath": "tiles\\gun\\Assault Rifles (2).png"
+  },
+  "5c7b36ba-7c7e-4aaf-81fa-d555c81b49f1": {
+    "asset": 1567143197000,
+    "meta": 1655610333114,
+    "relativePath": "tiles\\gun\\Shotgun (1).png"
+  },
+  "1a62a97a-c6ea-43e8-aae5-bafbf0b5ba08": {
+    "asset": 1567142836000,
+    "meta": 1655610333116,
+    "relativePath": "tiles\\gun\\Shotgun (2).png"
+  },
+  "9a618bd4-024e-483f-a642-97f239224775": {
+    "asset": 1567143133000,
+    "meta": 1655610333121,
+    "relativePath": "tiles\\gun\\Sniper.png"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655611823706,
+    "meta": 1655612440958,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
+    "asset": 1655612883818,
+    "meta": 1655612906235,
+    "relativePath": "scripts\\AreaNode.ts"
+  },
+  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
+    "asset": 1655612829666,
+    "meta": 1655612906470,
+    "relativePath": "scripts\\weaponObj.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655614203007,
+    "meta": 1655614207870,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "871e6f87-2c90-4061-b43a-d92069aae244": {
+    "asset": 1655614238076,
+    "meta": 1655614238105,
+    "relativePath": "prefabs\\Weapon0.prefab"
+  },
+  "2a471583-08aa-468c-bb5e-4dd1ff887c57": {
+    "asset": 1655614415519,
+    "meta": 1655614415773,
+    "relativePath": "prefabs\\Weapon1.prefab"
+  },
+  "e95d217b-2b5f-4a77-8edb-0fa96c9e7f26": {
+    "asset": 1655614417434,
+    "meta": 1655614417456,
+    "relativePath": "prefabs\\Weapon2.prefab"
+  },
+  "e9ac18d4-37f3-4ced-b93e-452f4b3ad0fe": {
+    "asset": 1655614419093,
+    "meta": 1655614419113,
+    "relativePath": "prefabs\\Weapon3.prefab"
+  },
+  "744654eb-e22d-41fd-899b-58f80a2910c8": {
+    "asset": 1655614420622,
+    "meta": 1655614420639,
+    "relativePath": "prefabs\\Weapon4.prefab"
   }
 }

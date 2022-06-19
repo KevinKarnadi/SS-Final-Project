@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Grenade Launcher",
+    "texture": "85bf1bff-a83d-4720-b301-88c65a2b0cc1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      325,
+      102
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      325,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

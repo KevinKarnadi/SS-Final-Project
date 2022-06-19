@@ -30,6 +30,24 @@ export default class GameManager extends cc.Component {
     @property(cc.Node)
     background: cc.Node = null
 
+    @property(cc.SpriteFrame)
+    private weaponSprite0: cc.SpriteFrame = null;
+    
+    @property(cc.SpriteFrame)
+    private weaponSprite1: cc.SpriteFrame = null;
+    
+    @property(cc.SpriteFrame)
+    private weaponSprite2: cc.SpriteFrame = null;
+
+    @property(cc.SpriteFrame)
+    private weaponSprite3: cc.SpriteFrame = null;
+
+    @property(cc.SpriteFrame)
+    private weaponSprite4: cc.SpriteFrame = null;
+
+    @property(cc.Node)
+    private spriteUi: cc.Node = null;
+
     @property()
     cameraSpeed: number = 300;
 
@@ -70,6 +88,12 @@ export default class GameManager extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
         this.alivePlayer = this.totalPlayer;
+
+        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
+        // console.log(weaponSprite, "0");
+        // weaponSprite = this.weaponSprite0;
+        // console.log(weaponSprite, "1");
+        // this.spriteUi.getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
     }
     
     start () {
@@ -113,6 +137,7 @@ export default class GameManager extends cc.Component {
                 this.changePlayer(this.currPlayer + 1);
             }
             this.isWin();
+            this.updateWeaponUi();
         }
     }
 
@@ -374,4 +399,30 @@ export default class GameManager extends cc.Component {
         this.cameraAnchor = value;
     }
 
+    updateWeaponUi(){
+        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
+        if(this.player){
+            switch (this.player.getCurrWeaponNum()){
+                case "0":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
+                    // console.log(weaponSprite, "updateweaponUi");
+                    break;
+                case "1":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite1;
+                    break;
+                case "2":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite2;
+                    break;
+                case "3":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    break;
+                case "4":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite4;
+                    break;
+                default:
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    break;
+            }
+        }
+    }
 }

@@ -32,7 +32,7 @@ export default class AreaNode extends cc.Component {
     }
 
     onMouseDown(event){
-        console.log(event.getLocationX(), event.getLocationY(), "click");
+        // console.log(event.getLocationX(), event.getLocationY(), "click");
         // x: 690 800; y: 520 630 left 
         // x: 830 940; y: 520 630 right
         if(event.getLocationX() >= 830 && event.getLocationX() <= 940 &&
@@ -91,7 +91,7 @@ export default class AreaNode extends cc.Component {
     }
 
     setCameraAnchor(value){
-        console.log(value, "set");
+        // console.log(value, "set");
         this.gameManager.getComponent("GameManager").setCameraAnchor(value);
     }
 }

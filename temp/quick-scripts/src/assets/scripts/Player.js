@@ -58,6 +58,7 @@ var Player = /** @class */ (function (_super) {
         _this.hurt = false;
         _this.weapon = "gun";
         _this.gunType = "shotgun";
+        _this.currWeaponNum = "0";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -140,6 +141,9 @@ var Player = /** @class */ (function (_super) {
             if (other.node.name == "Die Boundary") {
                 this.playerDie();
             }
+        }
+        if (other.node.group == "weaponObj") {
+            this.currWeaponNum = other.node.getComponent("weaponObj").getWeaponType();
         }
     };
     Player.prototype.playerMove = function (dt) {
@@ -342,6 +346,9 @@ var Player = /** @class */ (function (_super) {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
             this.playerChar = "char4";
         }
+    };
+    Player.prototype.getCurrWeaponNum = function () {
+        return this.currWeaponNum;
     };
     __decorate([
         property(cc.AudioClip)

@@ -38,6 +38,12 @@ var GameManager = /** @class */ (function (_super) {
         _this.camera = null;
         _this.bgm = null;
         _this.background = null;
+        _this.weaponSprite0 = null;
+        _this.weaponSprite1 = null;
+        _this.weaponSprite2 = null;
+        _this.weaponSprite3 = null;
+        _this.weaponSprite4 = null;
+        _this.spriteUi = null;
         _this.cameraSpeed = 300;
         _this.player = null;
         _this.aKeyDown = false;
@@ -61,6 +67,11 @@ var GameManager = /** @class */ (function (_super) {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
         this.alivePlayer = this.totalPlayer;
+        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
+        // console.log(weaponSprite, "0");
+        // weaponSprite = this.weaponSprite0;
+        // console.log(weaponSprite, "1");
+        // this.spriteUi.getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
@@ -104,6 +115,7 @@ var GameManager = /** @class */ (function (_super) {
                 this.changePlayer(this.currPlayer + 1);
             }
             this.isWin();
+            this.updateWeaponUi();
         }
     };
     GameManager.prototype.loadPlayer = function () {
@@ -350,6 +362,32 @@ var GameManager = /** @class */ (function (_super) {
     GameManager.prototype.setCameraAnchor = function (value) {
         this.cameraAnchor = value;
     };
+    GameManager.prototype.updateWeaponUi = function () {
+        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
+        if (this.player) {
+            switch (this.player.getCurrWeaponNum()) {
+                case "0":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
+                    // console.log(weaponSprite, "updateweaponUi");
+                    break;
+                case "1":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite1;
+                    break;
+                case "2":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite2;
+                    break;
+                case "3":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    break;
+                case "4":
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite4;
+                    break;
+                default:
+                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    break;
+            }
+        }
+    };
     __decorate([
         property(Player_1.default)
     ], GameManager.prototype, "player1", void 0);
@@ -374,6 +412,24 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], GameManager.prototype, "background", void 0);
+    __decorate([
+        property(cc.SpriteFrame)
+    ], GameManager.prototype, "weaponSprite0", void 0);
+    __decorate([
+        property(cc.SpriteFrame)
+    ], GameManager.prototype, "weaponSprite1", void 0);
+    __decorate([
+        property(cc.SpriteFrame)
+    ], GameManager.prototype, "weaponSprite2", void 0);
+    __decorate([
+        property(cc.SpriteFrame)
+    ], GameManager.prototype, "weaponSprite3", void 0);
+    __decorate([
+        property(cc.SpriteFrame)
+    ], GameManager.prototype, "weaponSprite4", void 0);
+    __decorate([
+        property(cc.Node)
+    ], GameManager.prototype, "spriteUi", void 0);
     __decorate([
         property()
     ], GameManager.prototype, "cameraSpeed", void 0);

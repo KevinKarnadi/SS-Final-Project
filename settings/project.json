@@ -9,7 +9,8 @@
     "bomb",
     "UI",
     "MiniMap",
-    "Sprite"
+    "Sprite",
+    "weaponObj"
   ],
   "collision-matrix": [
     [
@@ -19,6 +20,10 @@
       true,
       true,
       true,
+      true,
+      null,
+      null,
+      null,
       true
     ],
     [
@@ -28,6 +33,10 @@
       true,
       true,
       true,
+      true,
+      null,
+      null,
+      null,
       true
     ],
     [
@@ -37,6 +46,10 @@
       true,
       null,
       true,
+      true,
+      null,
+      null,
+      null,
       true
     ],
     [
@@ -54,6 +67,10 @@
       true,
       false,
       true,
+      true,
+      null,
+      null,
+      null,
       true
     ],
     [
@@ -63,6 +80,10 @@
       true,
       true,
       true,
+      true,
+      null,
+      null,
+      null,
       true
     ],
     [
@@ -106,6 +127,19 @@
       false,
       false,
       false
+    ],
+    [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true
     ]
   ],
   "excluded-modules": [
