@@ -57,7 +57,7 @@ var Player = /** @class */ (function (_super) {
         _this.HP = 100;
         _this.hurt = false;
         _this.weapon = "gun";
-        _this.gunType = "shotgun";
+        _this.gunType = "normal";
         _this.currWeaponNum = "0";
         return _this;
     }
@@ -144,6 +144,29 @@ var Player = /** @class */ (function (_super) {
         }
         if (other.node.group == "weaponObj") {
             this.currWeaponNum = other.node.getComponent("weaponObj").getWeaponType();
+            switch (this.currWeaponNum) {
+                case "0":
+                    this.weapon = "gun";
+                    this.gunType = "normal";
+                    break;
+                case "1":
+                    this.weapon = "gun";
+                    this.gunType = "burst";
+                    break;
+                case "2":
+                    this.weapon = "bomb";
+                    break;
+                case "3":
+                    this.weapon = "gun";
+                    this.gunType = "shotgun";
+                    break;
+                case "4":
+                    this.weapon = "gun";
+                    this.gunType = "sniper";
+                    break;
+                default:
+                    break;
+            }
         }
     };
     Player.prototype.playerMove = function (dt) {
@@ -180,7 +203,7 @@ var Player = /** @class */ (function (_super) {
             var bullet = cc.instantiate(this.bulletPrefab);
             if (bullet != null) {
                 bullet.getComponent('Bullet').setAngle(this.angle);
-                bullet.getComponent('Bullet').init(this.node);
+                bullet.getComponent('Bullet').init(this.node, 1000);
             }
         }
         else if (mode == "burst") {
@@ -189,7 +212,7 @@ var Player = /** @class */ (function (_super) {
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node);
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                 }
             }, 0.05, 2);
         }
@@ -199,9 +222,16 @@ var Player = /** @class */ (function (_super) {
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
-                    bullet.getComponent('Bullet').init(this.node);
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                     d_angle += 0.05;
                 }
+            }
+        }
+        else if (mode == "sniper") {
+            var bullet = cc.instantiate(this.bulletPrefab);
+            if (bullet != null) {
+                bullet.getComponent('Bullet').setAngle(this.angle);
+                bullet.getComponent('Bullet').init(this.node, 2000);
             }
         }
     };

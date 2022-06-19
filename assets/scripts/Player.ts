@@ -65,7 +65,7 @@ export default class Player extends cc.Component {
 
     public weapon: string = "gun";
 
-    public gunType: string = "shotgun";
+    public gunType: string = "normal";
 
     private currWeaponNum: string = "0";
 
@@ -152,6 +152,29 @@ export default class Player extends cc.Component {
 
         if(other.node.group == "weaponObj"){
             this.currWeaponNum = other.node.getComponent("weaponObj").getWeaponType();
+            switch (this.currWeaponNum) {
+                case "0":
+                    this.weapon = "gun";
+                    this.gunType = "normal";
+                    break;
+                case "1":
+                    this.weapon = "gun";
+                    this.gunType = "burst";
+                    break;
+                case "2":
+                    this.weapon = "bomb";
+                    break;
+                case "3":
+                    this.weapon = "gun";
+                    this.gunType = "shotgun";
+                    break;
+                case "4":
+                    this.weapon = "gun";
+                    this.gunType = "sniper";
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
@@ -191,7 +214,7 @@ export default class Player extends cc.Component {
             let bullet = cc.instantiate(this.bulletPrefab);
             if(bullet != null) {
                 bullet.getComponent('Bullet').setAngle(this.angle);
-                bullet.getComponent('Bullet').init(this.node);
+                bullet.getComponent('Bullet').init(this.node, 1000);
             }
         }
         else if(mode == "burst") {
@@ -200,7 +223,7 @@ export default class Player extends cc.Component {
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node);
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                 }
             }, 0.05, 2);
         }
@@ -210,9 +233,16 @@ export default class Player extends cc.Component {
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
-                    bullet.getComponent('Bullet').init(this.node);
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                     d_angle += 0.05;
                 }
+            }
+        }
+        else if(mode == "sniper") {
+            let bullet = cc.instantiate(this.bulletPrefab);
+            if(bullet != null) {
+                bullet.getComponent('Bullet').setAngle(this.angle);
+                bullet.getComponent('Bullet').init(this.node, 2000);
             }
         }
     }

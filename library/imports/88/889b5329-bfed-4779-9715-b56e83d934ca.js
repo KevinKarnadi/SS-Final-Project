@@ -35,12 +35,12 @@ var Bullet = /** @class */ (function (_super) {
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
-    Bullet.prototype.init = function (node) {
+    Bullet.prototype.init = function (node, speed) {
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
         this.animation.play('bullet1');
-        this.bulletMove();
+        this.bulletMove(speed);
     };
     //this function sets the bullet's initial position when it is reused.
     Bullet.prototype.setInitPos = function (node) {
@@ -56,9 +56,8 @@ var Bullet = /** @class */ (function (_super) {
         this.node.position = this.node.position.addSelf(node.position);
     };
     //make the bullet move from current position
-    Bullet.prototype.bulletMove = function () {
+    Bullet.prototype.bulletMove = function (speed) {
         var moveDir = null;
-        var speed = 1000;
         // decide bullet direction
         if (this.node.scaleX > 0) {
             moveDir = 1;
