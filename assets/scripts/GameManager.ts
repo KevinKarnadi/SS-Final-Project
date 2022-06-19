@@ -128,7 +128,7 @@ export default class GameManager extends cc.Component {
                 this.UI.timerVal = 20;
                 this.changePlayer(this.currPlayer + 1);
             }
-            this.isWin();
+            // this.isWin();
             this.updateWeaponUi();
         }
     }
@@ -207,6 +207,7 @@ export default class GameManager extends cc.Component {
         if(!this.player.isDie) {
             this.onEnable();
         } else {
+            // console.log(this.currPlayer, "change");
             this.changePlayer(num+1);
         }
     }
@@ -491,5 +492,13 @@ export default class GameManager extends cc.Component {
 
     playerDie(){
         this.alivePlayer -= 1;
+        if (this.alivePlayer == 1){
+            this.UI.timerVal = 20;
+            this.winner = this.player.playerName.getComponent(cc.Label).string;
+            // console.log(this.winner);
+            // console.log(this.player.isDie, "die");
+            this.changePlayer(this.currPlayer + 1);
+            //this.UI.pause();
+        }
     }
 }

@@ -10919,11 +10919,6 @@
     "meta": 1655659161197,
     "relativePath": "scripts\\map.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655659535477,
-    "meta": 1655659553990,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
     "asset": 1655659576571,
     "meta": 1655659579661,
@@ -10943,5 +10938,10 @@
     "asset": 1655662650520,
     "meta": 1655662689989,
     "relativePath": "scripts\\ending.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655663921280,
+    "meta": 1655663927223,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }

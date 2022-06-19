@@ -109,7 +109,7 @@ var GameManager = /** @class */ (function (_super) {
                 this.UI.timerVal = 20;
                 this.changePlayer(this.currPlayer + 1);
             }
-            this.isWin();
+            // this.isWin();
             this.updateWeaponUi();
         }
     };
@@ -186,6 +186,7 @@ var GameManager = /** @class */ (function (_super) {
             this.onEnable();
         }
         else {
+            // console.log(this.currPlayer, "change");
             this.changePlayer(num + 1);
         }
     };
@@ -447,6 +448,14 @@ var GameManager = /** @class */ (function (_super) {
     };
     GameManager.prototype.playerDie = function () {
         this.alivePlayer -= 1;
+        if (this.alivePlayer == 1) {
+            this.UI.timerVal = 20;
+            this.winner = this.player.playerName.getComponent(cc.Label).string;
+            // console.log(this.winner);
+            // console.log(this.player.isDie, "die");
+            this.changePlayer(this.currPlayer + 1);
+            //this.UI.pause();
+        }
     };
     __decorate([
         property(Player_1.default)
