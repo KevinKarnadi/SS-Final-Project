@@ -84,7 +84,8 @@ export default class GameManager extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
-        this.alivePlayer = this.totalPlayer;
+        // this.alivePlayer = this.totalPlayer;
+        this.alivePlayer = parseInt(this.playerNum);
     }
     
     start () {
@@ -96,40 +97,41 @@ export default class GameManager extends cc.Component {
     }
 
     update (dt) {
+        
+        var playerPos = this.player.node.getPosition();
+        var cameraPos = this.camera.getPosition();
+        var prevCamPos = this.camera.getPosition();
+        if(this.cameraAnchor == 1 || this.cameraAnchor == -1){
+            cameraPos.x += this.cameraAnchor * this.cameraSpeed * dt;
+            // console.log(this.cameraAnchor, "update");
+        } else{
+            cameraPos.lerp(playerPos, 0.1, cameraPos);
+            cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
+        }
+        if(cameraPos.y > 100){
+            cameraPos.y = 100;
+        }
+        if(cameraPos.x < -35) {
+            cameraPos.x = -35;
+        } else if(cameraPos.x > 2033+35) {
+            cameraPos.x = 2033+35;
+        }
+        this.camera.setPosition(cameraPos);
+        // if(this.background){
+        //     this.background.setPosition(cameraPos.x < prevCamPos.x ? 
+        //         ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
+        //         (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
+        //         cameraPos.y < prevCamPos.y ? 
+        //         ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
+        //         (this.background.y - (prevCamPos.y - cameraPos.y)/3));
+        // }
+        this.updateWeaponUi();
         if(this.winner == null){
-            var playerPos = this.player.node.getPosition();
-            var cameraPos = this.camera.getPosition();
-            var prevCamPos = this.camera.getPosition();
-            if(this.cameraAnchor == 1 || this.cameraAnchor == -1){
-                cameraPos.x += this.cameraAnchor * this.cameraSpeed * dt;
-                // console.log(this.cameraAnchor, "update");
-            } else{
-                cameraPos.lerp(playerPos, 0.1, cameraPos);
-                cameraPos.y = cc.misc.clampf(playerPos.y, 0, 200);
-            }
-            if(cameraPos.y > 100){
-                cameraPos.y = 100;
-            }
-            if(cameraPos.x < -35) {
-                cameraPos.x = -35;
-            } else if(cameraPos.x > 2033+35) {
-                cameraPos.x = 2033+35;
-            }
-            this.camera.setPosition(cameraPos);
-            // if(this.background){
-            //     this.background.setPosition(cameraPos.x < prevCamPos.x ? 
-            //         ((cameraPos.x - prevCamPos.x)/3 + this.background.x) : 
-            //         (this.background.x - (prevCamPos.x - cameraPos.x)/3), 
-            //         cameraPos.y < prevCamPos.y ? 
-            //         ((cameraPos.y - prevCamPos.y)/3 + this.background.y) :
-            //         (this.background.y - (prevCamPos.y - cameraPos.y)/3));
-            // }
             if(this.UI.timerVal < 0 || this.player.isDie){
                 this.UI.timerVal = 20;
                 this.changePlayer(this.currPlayer + 1);
             }
             // this.isWin();
-            this.updateWeaponUi();
         }
     }
 
@@ -201,11 +203,15 @@ export default class GameManager extends cc.Component {
             case 2:
                 this.player = this.player3;
                 break;
+            case 3:
+                this.player = this.player4;
+                break;
             default:
                 break;
         }
         if(!this.player.isDie) {
             this.onEnable();
+            this.changePlayerUi();
         } else {
             // console.log(this.currPlayer, "change");
             this.changePlayer(num+1);
@@ -499,6 +505,43 @@ export default class GameManager extends cc.Component {
             // console.log(this.player.isDie, "die");
             this.changePlayer(this.currPlayer + 1);
             //this.UI.pause();
+        }
+    }
+
+    changePlayerUi(){
+        cc.find("Canvas/Main Camera/Profile/name").getComponent(cc.Label).string = this.player.playerName.getComponent(cc.Label).string;
+
+        switch(this.currPlayer){
+            case 0:
+                cc.find("Canvas/Main Camera/Profile/face0").active = true;
+                cc.find("Canvas/Main Camera/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                break;
+            case 1:
+                cc.find("Canvas/Main Camera/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/Profile/face1").active = true;
+                cc.find("Canvas/Main Camera/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                break;
+            case 2:
+                cc.find("Canvas/Main Camera/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/Profile/face2").active = true;
+                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                break;
+            case 3:
+                cc.find("Canvas/Main Camera/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/Profile/face3").active = true;
+                break;
+            default:
+                cc.find("Canvas/Main Camera/Profile/face0").active = true;
+                cc.find("Canvas/Main Camera/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                break;
         }
     }
 }

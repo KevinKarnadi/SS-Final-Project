@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_Square02_n_Icon",
+    "texture": "812f10da-1af9-4937-adfc-6570bc6ee927",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      78,
+      91
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      91
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

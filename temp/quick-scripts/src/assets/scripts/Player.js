@@ -36,8 +36,10 @@ var Player = /** @class */ (function (_super) {
         _this.damageEffAnim = null;
         _this.line = null;
         _this.playerName = null;
+        _this.playerNumber = null;
         _this.playerChar = null;
         _this.aimLabel = null;
+        _this.totalPlayer = null;
         _this.moveSpeed = 300;
         _this.moveDirection = 0;
         _this.changeDirection = 0;
@@ -69,10 +71,11 @@ var Player = /** @class */ (function (_super) {
         this.animation = this.node.getComponent(cc.Animation);
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
+        this.playerNumber = this.node.getChildByName("Player Number");
         this.line = this.node.getChildByName("Trajectory Line");
         this.aimLabel = this.node.getChildByName("Aim Bomb Layout");
-        ;
         this.setPlayerName();
+        this.setPlayerNumber();
         this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         var maxBombNum = 5;
@@ -124,15 +127,27 @@ var Player = /** @class */ (function (_super) {
                     this.hurt = true;
                     if (this.playerChar == "char1" && this.HP != 0) {
                         this.animationState = this.animation.play('char1hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char1idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char2" && this.HP != 0) {
                         this.animationState = this.animation.play('char2hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char2idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char3" && this.HP != 0) {
                         this.animationState = this.animation.play('char3hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
                     }
                     else if (this.playerChar == "char4" && this.HP != 0) {
                         this.animationState = this.animation.play('char4hurt');
+                        // this.scheduleOnce(function(){
+                        //     this.animationState = this.animation.play('char3idle');
+                        // }, 0.5);
                     }
                     this.scheduleOnce(function () {
                         _this.hurt = false;
@@ -241,7 +256,7 @@ var Player = /** @class */ (function (_super) {
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node, 1000);
+                    bullet.getComponent('Bullet').init(this.node), 1000;
                 }
             }, 0.05, 2);
         }
@@ -398,6 +413,38 @@ var Player = /** @class */ (function (_super) {
         }
         else if (this.node.name == "Player 4") {
             this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
+        }
+    };
+    Player.prototype.setPlayerNumber = function () {
+        if (this.node.name == "Player Number - 2") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("2 Players");
+        }
+        else if (this.node.name == "Player Number - 3") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("3 Players");
+        }
+        else if (this.node.name == "Player Number - 4") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("4 Players");
+        }
+        else if (this.node.name == "Player Number - team") {
+            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("Team Players");
+        }
+    };
+    Player.prototype.setTotalPlayer = function () {
+        if (this.node.name == "Player Number - 2") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 2");
+            this.totalPlayer = "num2";
+        }
+        else if (this.node.name == "Player Number - 3") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 3");
+            this.totalPlayer = "num3";
+        }
+        else if (this.node.name == "Player Number - 4") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 4");
+            this.totalPlayer = "num4";
+        }
+        else if (this.node.name == "Player Number - team") {
+            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - team");
+            this.totalPlayer = "numteam";
         }
     };
     Player.prototype.setPlayerChar = function () {

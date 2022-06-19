@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Icon_MenuIcon_Shop",
+    "texture": "b8e6b544-f3e5-4e8c-9b08-08922730fee6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      84,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      86
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
