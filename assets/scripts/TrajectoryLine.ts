@@ -51,6 +51,10 @@ export default class TrajectoryLine extends cc.Component {
         this.line.stroke();
     }
 
+    public drawCircle(angle, range) {
+        
+    }
+
     public drawCurveLine(angle, power) {
         if(this.arrow) {
             if(power > 100) power = 100;

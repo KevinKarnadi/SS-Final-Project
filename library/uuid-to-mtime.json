@@ -10694,16 +10694,6 @@
     "meta": 1655620786572,
     "relativePath": "tiles\\Wide arrow L.png"
   },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655620673016,
-    "meta": 1655620786437,
-    "relativePath": "scenes\\map2.fire"
-  },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655625107957,
-    "meta": 1655625107994,
-    "relativePath": "scenes\\map1.fire"
-  },
   "4391c114-c863-4b9a-8fbd-9f3435ec65aa": {
     "asset": 1655620673025,
     "meta": 1655620786452,
@@ -10784,11 +10774,6 @@
     "meta": 1655620785656,
     "relativePath": "scripts\\AreaNode.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655623000189,
-    "meta": 1655623079224,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
     "asset": 1655623941911,
     "meta": 1655624027073,
@@ -10800,8 +10785,28 @@
     "relativePath": "scripts\\Bullet.ts"
   },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655625089163,
-    "meta": 1655625092071,
+    "asset": 1655625172649,
+    "meta": 1655625258507,
     "relativePath": "scripts\\Player.ts"
+  },
+  "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc": {
+    "asset": 1655625172605,
+    "meta": 1655625258516,
+    "relativePath": "prefabs\\damageParticle.prefab"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655625172643,
+    "meta": 1655625258536,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655625172625,
+    "meta": 1655625258554,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655625370508,
+    "meta": 1655625372102,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }
