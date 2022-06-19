@@ -32,7 +32,7 @@ export default class InstructionsMenuWin extends cc.Component {
     }
 
     loadPrevInstructions(){
-        cc.director.loadScene("instructions - option 2");
+        cc.director.loadScene("instructions - minimap");
     }
 
 }

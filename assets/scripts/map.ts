@@ -27,6 +27,9 @@ export default class Map extends cc.Component {
     @property(cc.Prefab)
     private weaponPrefab4: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    private hpPrefab: cc.Prefab = null;
+
     private groundPool = null;
     private groundPool1 = null;
     private firePool = null;
@@ -62,6 +65,7 @@ export default class Map extends cc.Component {
         }
 
         this.schedule(this.spawnWeapon, 18);
+        this.schedule(this.spawnPotion, 17);
         this.schedule(()=>{
             this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8)
@@ -142,6 +146,17 @@ export default class Map extends cc.Component {
         if(newWeapon){
             newWeapon.parent = this.node.parent.getChildByName("Object");
             newWeapon.setPosition(position);
+        }
+    }
+
+    spawnPotion(){
+        let newpotion = null;
+        let position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
+        newpotion = cc.instantiate(this.hpPrefab);
+
+        if(newpotion){
+            newpotion.parent = this.node.parent.getChildByName("Object");
+            newpotion.setPosition(position);
         }
     }
 }

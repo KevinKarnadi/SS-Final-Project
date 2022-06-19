@@ -8574,16 +8574,6 @@
     "meta": 1655620785889,
     "relativePath": "scenes\\player choose.fire"
   },
-  "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
-    "asset": 1655521015613,
-    "meta": 1655620785535,
-    "relativePath": "scenes\\instructions - option 1.fire"
-  },
-  "6555e4a8-1a9d-4cb6-aa84-03cfc8147668": {
-    "asset": 1655521015614,
-    "meta": 1655620785559,
-    "relativePath": "scenes\\instructions - option 2.fire"
-  },
   "88c457f4-8aa9-4d21-b32b-b6c188e1bc4a": {
     "asset": 1655521011989,
     "meta": 1655620785462,
@@ -8624,16 +8614,6 @@
     "meta": 1655620784901,
     "relativePath": "menu"
   },
-  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
-    "asset": 1655521015615,
-    "meta": 1655620785560,
-    "relativePath": "scenes\\instructions - win.fire"
-  },
-  "0701692b-7313-45e8-943f-2c5d552864b6": {
-    "asset": 1655521015617,
-    "meta": 1655620785572,
-    "relativePath": "scenes\\instructions.fire"
-  },
   "8e985673-195e-401c-85e6-74be73298b0d": {
     "asset": 1655521015610,
     "meta": 1655620785389,
@@ -8663,16 +8643,6 @@
     "asset": 1655521015611,
     "meta": 1655620785451,
     "relativePath": "menu\\title.jpg"
-  },
-  "cc30a729-901c-4bb4-a6c8-771469ad2d80": {
-    "asset": 1655521012028,
-    "meta": 1655620785970,
-    "relativePath": "scripts\\Instructions-option2.ts"
-  },
-  "56f80abf-11ab-4509-b792-89693b426946": {
-    "asset": 1655521012029,
-    "meta": 1655620785983,
-    "relativePath": "scripts\\Instructions-win.ts"
   },
   "ac577e29-450c-4502-87bd-26c6f5cf8b80": {
     "asset": 1655521012030,
@@ -10729,11 +10699,6 @@
     "meta": 1655620788056,
     "relativePath": "tiles\\gun\\Sniper.png"
   },
-  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
-    "asset": 1655620673018,
-    "meta": 1655620786399,
-    "relativePath": "scripts\\weaponObj.ts"
-  },
   "871e6f87-2c90-4061-b43a-d92069aae244": {
     "asset": 1655620672990,
     "meta": 1655620785517,
@@ -10759,11 +10724,6 @@
     "meta": 1655620785532,
     "relativePath": "prefabs\\Weapon4.prefab"
   },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655620673018,
-    "meta": 1655620786067,
-    "relativePath": "scripts\\map.ts"
-  },
   "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
     "asset": 1655620673016,
     "meta": 1655620785656,
@@ -10778,16 +10738,6 @@
     "asset": 1655625172605,
     "meta": 1655625258516,
     "relativePath": "prefabs\\damageParticle.prefab"
-  },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655627232055,
-    "meta": 1655627232083,
-    "relativePath": "scenes\\map2.fire"
-  },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655629506822,
-    "meta": 1655629506856,
-    "relativePath": "scenes\\map1.fire"
   },
   "d9ff03ee-14cd-45d2-a69e-056dab059d69": {
     "asset": 1655628219378,
@@ -10809,11 +10759,6 @@
     "meta": 1655629340777,
     "relativePath": "prefabs\\Crosshair2.prefab"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655629125433,
-    "meta": 1655629134618,
-    "relativePath": "scripts\\Player.ts"
-  },
   "59d65ac2-77ae-4779-a35b-8a22d30354c4": {
     "asset": 1655629473521,
     "meta": 1655629491989,
@@ -10833,5 +10778,80 @@
     "asset": 1655630048985,
     "meta": 1655630078738,
     "relativePath": "scripts\\TrajectoryLine.ts"
+  },
+  "cc30a729-901c-4bb4-a6c8-771469ad2d80": {
+    "asset": 1655630119510,
+    "meta": 1655630151594,
+    "relativePath": "scripts\\Instructions-option2.ts"
+  },
+  "56f80abf-11ab-4509-b792-89693b426946": {
+    "asset": 1655630119511,
+    "meta": 1655630151621,
+    "relativePath": "scripts\\Instructions-win.ts"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655630119511,
+    "meta": 1655630151694,
+    "relativePath": "scripts\\map.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655630119852,
+    "meta": 1655630151820,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
+    "asset": 1655630119512,
+    "meta": 1655630151842,
+    "relativePath": "scripts\\weaponObj.ts"
+  },
+  "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
+    "asset": 1655630119507,
+    "meta": 1655630151854,
+    "relativePath": "scenes\\instructions - option 1.fire"
+  },
+  "0701692b-7313-45e8-943f-2c5d552864b6": {
+    "asset": 1655630119508,
+    "meta": 1655630151856,
+    "relativePath": "scenes\\instructions.fire"
+  },
+  "7a77e40f-36ce-479c-a7a8-abe9f2881fbe": {
+    "asset": 1655630119509,
+    "meta": 1655630151869,
+    "relativePath": "scripts\\Instructions-minimap.ts"
+  },
+  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
+    "asset": 1655630119508,
+    "meta": 1655630151871,
+    "relativePath": "scenes\\instructions - win.fire"
+  },
+  "6555e4a8-1a9d-4cb6-aa84-03cfc8147668": {
+    "asset": 1655630119507,
+    "meta": 1655630151874,
+    "relativePath": "scenes\\instructions - option 2.fire"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655630119961,
+    "meta": 1655630151898,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655630119886,
+    "meta": 1655630151913,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "6655e9c6-40ef-4c1b-aec9-7085014e437e": {
+    "asset": 1655630119504,
+    "meta": 1655630151915,
+    "relativePath": "prefabs\\hpPotion.prefab"
+  },
+  "2d743afe-407c-4994-96cd-8b013bd3bfb6": {
+    "asset": 1655630119506,
+    "meta": 1655630151916,
+    "relativePath": "scenes\\instructions - minimap.fire"
+  },
+  "3c559798-b9aa-4c2a-9042-c07e66c32966": {
+    "asset": 1655630119504,
+    "meta": 1655630152012,
+    "relativePath": "instructions\\minimap.jpg"
   }
 }

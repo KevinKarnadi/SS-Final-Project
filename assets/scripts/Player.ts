@@ -125,7 +125,7 @@ export default class Player extends cc.Component {
         // }
         if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if(!this.isDie) {
-                this.HP -= 10;
+                this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
                 if(this.HP <= 0) {
                     this.HP = 0;
                 } else {
@@ -146,14 +146,14 @@ export default class Player extends cc.Component {
                         this.hurt = false;
                     }, 0.5)
 
-                    if(other.node.group == "bullet" || other.node.group == "bomb" ){
-                        let particleEff = cc.instantiate(this.damageParc);
-                        particleEff.parent = cc.director.getScene();
-                        particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                        this.scheduleOnce(()=>{
-                            particleEff.destroy();
-                        }, 0.6);
-                    }
+                }
+                if(other.node.group == "bullet" || other.node.group == "bomb" ){
+                    let particleEff = cc.instantiate(this.damageParc);
+                    particleEff.parent = cc.director.getScene();
+                    particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    this.scheduleOnce(()=>{
+                        particleEff.destroy();
+                    }, 0.6);
                 }
             }
         } else if(other.node.group == "wall") {
@@ -186,6 +186,13 @@ export default class Player extends cc.Component {
                     break;
                 default:
                     break;
+            }
+        }
+
+        if(other.node.group == "itemObj"){
+            this.HP += 30;
+            if(this.HP > 100){
+                this.HP = 100;
             }
         }
     }

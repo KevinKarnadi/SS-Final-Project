@@ -45,7 +45,7 @@ var InstructionsMenuWin = /** @class */ (function (_super) {
         cc.director.loadScene("player choose");
     };
     InstructionsMenuWin.prototype.loadPrevInstructions = function () {
-        cc.director.loadScene("instructions - option 2");
+        cc.director.loadScene("instructions - minimap");
     };
     InstructionsMenuWin = __decorate([
         ccclass

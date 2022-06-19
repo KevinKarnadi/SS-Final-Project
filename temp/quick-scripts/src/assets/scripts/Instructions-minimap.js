@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '56f80q/EatFCbeSiWk7QmlG', 'Instructions-win');
-// scripts/Instructions-win.ts
+cc._RF.push(module, '7a77eQPNs5HnKeoq+nyiB++', 'Instructions-minimap');
+// scripts/Instructions-minimap.ts
 
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -24,34 +24,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var InstructionsMenuWin = /** @class */ (function (_super) {
-    __extends(InstructionsMenuWin, _super);
-    function InstructionsMenuWin() {
+var InstructionsMenuMinimap = /** @class */ (function (_super) {
+    __extends(InstructionsMenuMinimap, _super);
+    function InstructionsMenuMinimap() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    InstructionsMenuWin.prototype.start = function () {
-        var playbtn = new cc.Component.EventHandler();
-        playbtn.target = this.node;
-        playbtn.component = "Instructions-win";
-        playbtn.handler = "loadNextInstructions";
-        cc.find("Play").getComponent(cc.Button).clickEvents.push(playbtn);
+    InstructionsMenuMinimap.prototype.start = function () {
+        var nextbtn = new cc.Component.EventHandler();
+        nextbtn.target = this.node;
+        nextbtn.component = "Instructions-minimap";
+        nextbtn.handler = "loadNextInstructions";
+        cc.find("Next").getComponent(cc.Button).clickEvents.push(nextbtn);
         var prevbtn = new cc.Component.EventHandler();
         prevbtn.target = this.node;
-        prevbtn.component = "Instructions-win";
+        prevbtn.component = "Instructions-minimap";
         prevbtn.handler = "loadPrevInstructions";
         cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
     };
-    InstructionsMenuWin.prototype.loadNextInstructions = function () {
-        cc.director.loadScene("player choose");
+    InstructionsMenuMinimap.prototype.loadNextInstructions = function () {
+        cc.director.loadScene("instructions - win");
     };
-    InstructionsMenuWin.prototype.loadPrevInstructions = function () {
-        cc.director.loadScene("instructions - minimap");
+    InstructionsMenuMinimap.prototype.loadPrevInstructions = function () {
+        cc.director.loadScene("instructions - option 2");
     };
-    InstructionsMenuWin = __decorate([
+    InstructionsMenuMinimap = __decorate([
         ccclass
-    ], InstructionsMenuWin);
-    return InstructionsMenuWin;
+    ], InstructionsMenuMinimap);
+    return InstructionsMenuMinimap;
 }(cc.Component));
-exports.default = InstructionsMenuWin;
+exports.default = InstructionsMenuMinimap;
 
 cc._RF.pop();

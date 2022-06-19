@@ -42,7 +42,7 @@ var InstructionsMenuOption2 = /** @class */ (function (_super) {
         cc.find("Canvas/Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
     };
     InstructionsMenuOption2.prototype.loadNextInstructions = function () {
-        cc.director.loadScene("instructions - win");
+        cc.director.loadScene("instructions - minimap");
     };
     InstructionsMenuOption2.prototype.loadPrevInstructions = function () {
         cc.director.loadScene("instructions - option 1");

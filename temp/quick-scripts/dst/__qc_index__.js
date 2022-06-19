@@ -18,6 +18,7 @@ require('./assets/scripts/Crosshair');
 require('./assets/scripts/GameManager');
 require('./assets/scripts/Ground');
 require('./assets/scripts/Ground2');
+require('./assets/scripts/Instructions-minimap');
 require('./assets/scripts/Instructions-option1');
 require('./assets/scripts/Instructions-option2');
 require('./assets/scripts/Instructions-win');
