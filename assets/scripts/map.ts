@@ -12,10 +12,26 @@ export default class Map extends cc.Component {
     @property(cc.Prefab)
     private firePrefab: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    private weaponPrefab0: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    private weaponPrefab1: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    private weaponPrefab2: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    private weaponPrefab3: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    private weaponPrefab4: cc.Prefab = null;
+
     private groundPool = null;
     private groundPool1 = null;
     private firePool = null;
     private spawnCooldown: number = 0;
+    private toSpawnWeaponNum: number = 0;
 
     onLoad () {
         if(!this.groundUpperPrefab){
@@ -44,6 +60,11 @@ export default class Map extends cc.Component {
             this.firePool.put(fire);
             // y.max = -222.5
         }
+
+        this.schedule(this.spawnWeapon, 18);
+        this.schedule(()=>{
+            this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
+        }, 8)
     }
     
     start () {
@@ -91,6 +112,36 @@ export default class Map extends cc.Component {
             // fires.node.zIndex = 100;
             // console.log(fires.position.x, "fire");
             index++;
+        }
+    }
+
+    spawnWeapon(){
+        let newWeapon = null;
+        let position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
+        switch(this.toSpawnWeaponNum){
+            case 0:
+                newWeapon = cc.instantiate(this.weaponPrefab0);
+                break;
+            case 1:
+                newWeapon = cc.instantiate(this.weaponPrefab1);
+                break;
+            case 2:
+                newWeapon = cc.instantiate(this.weaponPrefab2);
+                break;
+            case 3:
+                newWeapon = cc.instantiate(this.weaponPrefab3);
+                break;
+            case 4:
+                newWeapon = cc.instantiate(this.weaponPrefab4);
+                break;
+            default:
+                newWeapon = cc.instantiate(this.weaponPrefab3);
+                break;
+        }
+
+        if(newWeapon){
+            newWeapon.parent = this.node.parent.getChildByName("Object");
+            newWeapon.setPosition(position);
         }
     }
 }

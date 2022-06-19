@@ -31,13 +31,20 @@ var Map = /** @class */ (function (_super) {
         _this.groundPrefab = null;
         _this.groundUpperPrefab = null;
         _this.firePrefab = null;
+        _this.weaponPrefab0 = null;
+        _this.weaponPrefab1 = null;
+        _this.weaponPrefab2 = null;
+        _this.weaponPrefab3 = null;
+        _this.weaponPrefab4 = null;
         _this.groundPool = null;
         _this.groundPool1 = null;
         _this.firePool = null;
         _this.spawnCooldown = 0;
+        _this.toSpawnWeaponNum = 0;
         return _this;
     }
     Map.prototype.onLoad = function () {
+        var _this = this;
         if (!this.groundUpperPrefab) {
             this.groundPool = new cc.NodePool('Ground');
             for (var i = 0; i < 1400; i++) {
@@ -64,6 +71,10 @@ var Map = /** @class */ (function (_super) {
             this.firePool.put(fire);
             // y.max = -222.5
         }
+        this.schedule(this.spawnWeapon, 15);
+        this.schedule(function () {
+            _this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
+        }, 8);
     };
     Map.prototype.start = function () {
         this.createGround();
@@ -108,6 +119,34 @@ var Map = /** @class */ (function (_super) {
             index++;
         }
     };
+    Map.prototype.spawnWeapon = function () {
+        var newWeapon = null;
+        var position = cc.v2(Math.floor(Math.random() * 2600) - 380, 350);
+        switch (this.toSpawnWeaponNum) {
+            case 0:
+                newWeapon = cc.instantiate(this.weaponPrefab0);
+                break;
+            case 1:
+                newWeapon = cc.instantiate(this.weaponPrefab1);
+                break;
+            case 2:
+                newWeapon = cc.instantiate(this.weaponPrefab2);
+                break;
+            case 3:
+                newWeapon = cc.instantiate(this.weaponPrefab3);
+                break;
+            case 4:
+                newWeapon = cc.instantiate(this.weaponPrefab4);
+                break;
+            default:
+                newWeapon = cc.instantiate(this.weaponPrefab3);
+                break;
+        }
+        if (newWeapon) {
+            newWeapon.parent = this.node.parent.getChildByName("Object");
+            newWeapon.setPosition(position);
+        }
+    };
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "groundPrefab", void 0);
@@ -117,6 +156,21 @@ var Map = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "firePrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "weaponPrefab0", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "weaponPrefab1", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "weaponPrefab2", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "weaponPrefab3", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "weaponPrefab4", void 0);
     Map = __decorate([
         ccclass
     ], Map);
