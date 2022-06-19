@@ -1284,6 +1284,9 @@
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
     },
+    "crosshairPrefab": {
+      "__uuid__": "012d44b0-45fd-4eb9-8cb5-f5e76f9f2f68"
+    },
     "angle": {
       "__id__": 16
     },
@@ -2752,6 +2755,9 @@
     "_enabled": true,
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
+    },
+    "crosshairPrefab": {
+      "__uuid__": "012d44b0-45fd-4eb9-8cb5-f5e76f9f2f68"
     },
     "angle": {
       "__id__": 51
@@ -4222,6 +4228,9 @@
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
     },
+    "crosshairPrefab": {
+      "__uuid__": "012d44b0-45fd-4eb9-8cb5-f5e76f9f2f68"
+    },
     "angle": {
       "__id__": 86
     },
@@ -5600,6 +5609,9 @@
     "_enabled": true,
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
+    },
+    "crosshairPrefab": {
+      "__uuid__": "012d44b0-45fd-4eb9-8cb5-f5e76f9f2f68"
     },
     "angle": {
       "__id__": 120

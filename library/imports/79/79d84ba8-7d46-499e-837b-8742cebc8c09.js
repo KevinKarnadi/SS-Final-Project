@@ -114,7 +114,7 @@ var Player = /** @class */ (function (_super) {
         // }
         if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if (!this.isDie) {
-                this.HP -= 10;
+                this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
                 if (this.HP <= 0) {
                     this.HP = 0;
                 }

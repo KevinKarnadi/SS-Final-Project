@@ -27,16 +27,16 @@
         "__id__": 11
       },
       {
-        "__id__": 13
+        "__id__": 15
       },
       {
-        "__id__": 17
+        "__id__": 19
       },
       {
         "__id__": 21
       },
       {
-        "__id__": 23
+        "__id__": 25
       },
       {
         "__id__": 27
@@ -486,101 +486,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Option 1 copy",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 1
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 12
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 555.88,
-      "height": 50.4
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_trs": {
-      "__type__": "TypedArray",
-      "ctor": "Float64Array",
-      "array": [
-        496.131,
-        267.961,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0.903,
-        0.903,
-        0.903
-      ]
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "_groupIndex": 0,
-    "groupIndex": 0,
-    "_id": "93i46S8DJBqof0nqk3+Fo3"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_string": "Be the last man standing to win",
-    "_N$string": "Be the last man standing to win",
-    "_fontSize": 40,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_styleFlags": 0,
-    "_underlineHeight": 0,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "08aFEKuttKFKIG6vFFefcJ"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "Next",
     "_objFlags": 0,
     "_parent": {
@@ -590,13 +495,13 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      },
+      {
         "__id__": 14
-      },
-      {
-        "__id__": 15
-      },
-      {
-        "__id__": 16
       }
     ],
     "_prefab": null,
@@ -652,7 +557,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 13
+      "__id__": 11
     },
     "_enabled": true,
     "_materials": [
@@ -684,7 +589,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 13
+      "__id__": 11
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -752,7 +657,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 13
+      "__id__": 11
     },
     "_enabled": true,
     "_id": "f6sXZPbflBTJ5B4yh9BkZ7"
@@ -768,13 +673,13 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 16
+      },
+      {
+        "__id__": 17
+      },
+      {
         "__id__": 18
-      },
-      {
-        "__id__": 19
-      },
-      {
-        "__id__": 20
       }
     ],
     "_prefab": null,
@@ -830,7 +735,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 17
+      "__id__": 15
     },
     "_enabled": true,
     "_materials": [
@@ -862,7 +767,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 17
+      "__id__": 15
     },
     "_enabled": true,
     "_id": "69DLmOf4RLA6Id1I8yPfXd"
@@ -872,7 +777,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 17
+      "__id__": 15
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -946,7 +851,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 22
+        "__id__": 20
       }
     ],
     "_prefab": null,
@@ -1002,7 +907,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 21
+      "__id__": 19
     },
     "_enabled": true,
     "_materials": [
@@ -1040,13 +945,13 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 22
+      },
+      {
+        "__id__": 23
+      },
+      {
         "__id__": 24
-      },
-      {
-        "__id__": 25
-      },
-      {
-        "__id__": 26
       }
     ],
     "_prefab": null,
@@ -1102,7 +1007,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 21
     },
     "_enabled": true,
     "_materials": [
@@ -1134,7 +1039,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 21
     },
     "_enabled": true,
     "_id": "5frQvkd7JGkZcyDbLaFedd"
@@ -1144,7 +1049,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 21
     },
     "_enabled": true,
     "_normalMaterial": null,
@@ -1209,7 +1114,104 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "label",
+    "_name": "Changa-Bold",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 26
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 573.28,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        487.42,
+        265.755,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "c9/b2XMA9CYKuWFWh4rn40"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 25
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_string": "Be the last man standing to win",
+    "_N$string": "Be the last man standing to win",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "bd15060f-4fac-4bc0-b033-8880b17e5370"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_styleFlags": 0,
+    "_underlineHeight": 0,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 0,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "5dMDwSYJFLR6r27EX/4FYe"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Play",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -1232,7 +1234,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 77.81,
+      "width": 77.68,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -1244,8 +1246,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        486.46,
-        191.405,
+        485.26,
+        188.865,
         0,
         0,
         0,
@@ -1267,7 +1269,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "52x+5S8itOJpPAYrK1M5Wg"
+    "_id": "65EeXvpmZDdp8k4gJS73GY"
   },
   {
     "__type__": "cc.Label",
@@ -1289,17 +1291,19 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "bd15060f-4fac-4bc0-b033-8880b17e5370"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
     "_underlineHeight": 0,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 0,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "38/7R35g9LsonLiOuSxJHn"
+    "_id": "4dr6bgGF5Kw6b3NZ+91KWF"
   }
 ]

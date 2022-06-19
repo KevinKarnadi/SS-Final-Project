@@ -543,7 +543,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 8
@@ -2012,7 +2012,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 43
@@ -3481,7 +3481,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 78
@@ -4860,7 +4860,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6
@@ -57583,6 +57583,9 @@
     },
     "weaponPrefab4": {
       "__uuid__": "744654eb-e22d-41fd-899b-58f80a2910c8"
+    },
+    "hpPrefab": {
+      "__uuid__": "6655e9c6-40ef-4c1b-aec9-7085014e437e"
     },
     "_id": "d7c3soqLhPSKpG37foEoDO"
   },

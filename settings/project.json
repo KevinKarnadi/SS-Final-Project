@@ -10,8 +10,7 @@
     "UI",
     "MiniMap",
     "Sprite",
-    "weaponObj",
-    "itemObj"
+    "weaponObj"
   ],
   "collision-matrix": [
     [
@@ -25,7 +24,6 @@
       null,
       null,
       null,
-      true,
       true
     ],
     [
@@ -39,7 +37,6 @@
       null,
       null,
       null,
-      true,
       true
     ],
     [
@@ -53,7 +50,6 @@
       null,
       null,
       null,
-      true,
       true
     ],
     [
@@ -75,7 +71,6 @@
       null,
       null,
       null,
-      true,
       true
     ],
     [
@@ -89,7 +84,6 @@
       null,
       null,
       null,
-      true,
       true
     ],
     [
@@ -145,21 +139,6 @@
       false,
       false,
       false,
-      true,
-      true
-    ],
-    [
-      true,
-      true,
-      true,
-      false,
-      true,
-      true,
-      false,
-      false,
-      false,
-      false,
-      true,
       true
     ]
   ],
