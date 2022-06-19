@@ -36,6 +36,7 @@ var Map = /** @class */ (function (_super) {
         _this.weaponPrefab2 = null;
         _this.weaponPrefab3 = null;
         _this.weaponPrefab4 = null;
+        _this.hpPrefab = null;
         _this.groundPool = null;
         _this.groundPool1 = null;
         _this.firePool = null;
@@ -72,6 +73,7 @@ var Map = /** @class */ (function (_super) {
             // y.max = -222.5
         }
         this.schedule(this.spawnWeapon, 18);
+        this.schedule(this.spawnPotion, 17);
         this.schedule(function () {
             _this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8);
@@ -147,6 +149,15 @@ var Map = /** @class */ (function (_super) {
             newWeapon.setPosition(position);
         }
     };
+    Map.prototype.spawnPotion = function () {
+        var newpotion = null;
+        var position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
+        newpotion = cc.instantiate(this.hpPrefab);
+        if (newpotion) {
+            newpotion.parent = this.node.parent.getChildByName("Object");
+            newpotion.setPosition(position);
+        }
+    };
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "groundPrefab", void 0);
@@ -171,6 +182,9 @@ var Map = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Map.prototype, "weaponPrefab4", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Map.prototype, "hpPrefab", void 0);
     Map = __decorate([
         ccclass
     ], Map);

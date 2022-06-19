@@ -10669,11 +10669,6 @@
     "meta": 1655626030449,
     "relativePath": "scenes\\map2.fire"
   },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655624703502,
-    "meta": 1655626030410,
-    "relativePath": "scenes\\map1.fire"
-  },
   "4391c114-c863-4b9a-8fbd-9f3435ec65aa": {
     "asset": 1655610240830,
     "meta": 1655626032486,
@@ -10714,11 +10709,6 @@
     "meta": 1655626035575,
     "relativePath": "tiles\\gun\\Sniper.png"
   },
-  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
-    "asset": 1655612829666,
-    "meta": 1655626032398,
-    "relativePath": "scripts\\weaponObj.ts"
-  },
   "871e6f87-2c90-4061-b43a-d92069aae244": {
     "asset": 1655614238076,
     "meta": 1655626030278,
@@ -10743,11 +10733,6 @@
     "asset": 1655614420622,
     "meta": 1655626030298,
     "relativePath": "prefabs\\Weapon4.prefab"
-  },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655616331414,
-    "meta": 1655626031621,
-    "relativePath": "scripts\\map.ts"
   },
   "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
     "asset": 1655619363080,
@@ -10809,11 +10794,6 @@
     "meta": 1655627749528,
     "relativePath": "scripts\\Instructions-win.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655627635104,
-    "meta": 1655627749789,
-    "relativePath": "scripts\\Player.ts"
-  },
   "7a77e40f-36ce-479c-a7a8-abe9f2881fbe": {
     "asset": 1655627624351,
     "meta": 1655627749832,
@@ -10829,9 +10809,29 @@
     "meta": 1655627749892,
     "relativePath": "instructions\\minimap.jpg"
   },
-  "68279f04-687b-4c4a-a0f3-df7274e460c4": {
-    "asset": 1655627850840,
-    "meta": 1655627855189,
-    "relativePath": "scripts\\itemObj.ts"
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655628993017,
+    "meta": 1655628993102,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655628756485,
+    "meta": 1655628773216,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
+    "asset": 1655628723220,
+    "meta": 1655628773245,
+    "relativePath": "scripts\\weaponObj.ts"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655628943093,
+    "meta": 1655628954068,
+    "relativePath": "scripts\\map.ts"
+  },
+  "6655e9c6-40ef-4c1b-aec9-7085014e437e": {
+    "asset": 1655628979323,
+    "meta": 1655628979353,
+    "relativePath": "prefabs\\hpPotion.prefab"
   }
 }

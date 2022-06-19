@@ -177,6 +177,12 @@ var Player = /** @class */ (function (_super) {
                     break;
             }
         }
+        if (other.node.group == "itemObj") {
+            this.HP += 30;
+            if (this.HP > 100) {
+                this.HP = 100;
+            }
+        }
     };
     Player.prototype.playerMove = function (dt) {
         this.node.x += this.moveSpeed * this.moveDirection * dt; // player walking

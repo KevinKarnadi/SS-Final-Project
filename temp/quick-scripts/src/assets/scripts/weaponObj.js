@@ -42,7 +42,7 @@ var WeaponObj = /** @class */ (function (_super) {
         if (other.node.name == "Die Boundary" || other.node.group == "player") {
             this.scheduleOnce(function () {
                 _this.node.destroy();
-            }, 0.1);
+            }, 0);
         }
     };
     WeaponObj.prototype.getWeaponType = function () {

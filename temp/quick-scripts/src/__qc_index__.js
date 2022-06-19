@@ -24,6 +24,5 @@ require('./assets/scripts/UI');
 require('./assets/scripts/Welcome');
 require('./assets/scripts/WelcomeTxt');
 require('./assets/scripts/explosiveObj');
-require('./assets/scripts/itemObj');
 require('./assets/scripts/map');
 require('./assets/scripts/weaponObj');

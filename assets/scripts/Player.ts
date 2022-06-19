@@ -188,6 +188,13 @@ export default class Player extends cc.Component {
                     break;
             }
         }
+
+        if(other.node.group == "itemObj"){
+            this.HP += 30;
+            if(this.HP > 100){
+                this.HP = 100;
+            }
+        }
     }
 
     playerMove(dt) {
