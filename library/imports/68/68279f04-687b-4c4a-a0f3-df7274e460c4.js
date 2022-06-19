@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '56f80q/EatFCbeSiWk7QmlG', 'Instructions-win');
-// scripts/Instructions-win.ts
+cc._RF.push(module, '682798EaHtMSqDz33J05GDE', 'itemObj');
+// scripts/itemObj.ts
 
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -24,34 +24,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var InstructionsMenuWin = /** @class */ (function (_super) {
-    __extends(InstructionsMenuWin, _super);
-    function InstructionsMenuWin() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var ItemObj = /** @class */ (function (_super) {
+    __extends(ItemObj, _super);
+    function ItemObj() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.potionPrefab = null;
+        return _this;
     }
-    InstructionsMenuWin.prototype.start = function () {
-        var playbtn = new cc.Component.EventHandler();
-        playbtn.target = this.node;
-        playbtn.component = "Instructions-win";
-        playbtn.handler = "loadNextInstructions";
-        cc.find("Play").getComponent(cc.Button).clickEvents.push(playbtn);
-        var prevbtn = new cc.Component.EventHandler();
-        prevbtn.target = this.node;
-        prevbtn.component = "Instructions-win";
-        prevbtn.handler = "loadPrevInstructions";
-        cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
+    ItemObj.prototype.onLoad = function () {
     };
-    InstructionsMenuWin.prototype.loadNextInstructions = function () {
-        cc.director.loadScene("player choose");
+    ItemObj.prototype.start = function () {
     };
-    InstructionsMenuWin.prototype.loadPrevInstructions = function () {
-        cc.director.loadScene("instructions - minimap");
+    ItemObj.prototype.update = function (dt) {
     };
-    InstructionsMenuWin = __decorate([
+    __decorate([
+        property(cc.Prefab)
+    ], ItemObj.prototype, "potionPrefab", void 0);
+    ItemObj = __decorate([
         ccclass
-    ], InstructionsMenuWin);
-    return InstructionsMenuWin;
+    ], ItemObj);
+    return ItemObj;
 }(cc.Component));
-exports.default = InstructionsMenuWin;
+exports.default = ItemObj;
 
 cc._RF.pop();

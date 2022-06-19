@@ -135,14 +135,14 @@ var Player = /** @class */ (function (_super) {
                     this.scheduleOnce(function () {
                         _this.hurt = false;
                     }, 0.5);
-                    if (other.node.group == "bullet" || other.node.group == "bomb") {
-                        var particleEff_1 = cc.instantiate(this.damageParc);
-                        particleEff_1.parent = cc.director.getScene();
-                        particleEff_1.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                        this.scheduleOnce(function () {
-                            particleEff_1.destroy();
-                        }, 0.6);
-                    }
+                }
+                if (other.node.group == "bullet" || other.node.group == "bomb") {
+                    var particleEff_1 = cc.instantiate(this.damageParc);
+                    particleEff_1.parent = cc.director.getScene();
+                    particleEff_1.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    this.scheduleOnce(function () {
+                        particleEff_1.destroy();
+                    }, 0.6);
                 }
             }
         }

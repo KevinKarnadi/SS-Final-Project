@@ -17,6 +17,7 @@ require('./assets/scripts/Bullet');
 require('./assets/scripts/GameManager');
 require('./assets/scripts/Ground');
 require('./assets/scripts/Ground2');
+require('./assets/scripts/Instructions-minimap');
 require('./assets/scripts/Instructions-option1');
 require('./assets/scripts/Instructions-option2');
 require('./assets/scripts/Instructions-win');
@@ -34,6 +35,7 @@ require('./assets/scripts/UI');
 require('./assets/scripts/Welcome');
 require('./assets/scripts/WelcomeTxt');
 require('./assets/scripts/explosiveObj');
+require('./assets/scripts/itemObj');
 require('./assets/scripts/map');
 require('./assets/scripts/weaponObj');
 

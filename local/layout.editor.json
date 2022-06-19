@@ -13,13 +13,13 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 216.546875,
-            "height": 626,
+            "width": 214.453125,
+            "height": 610,
             "type": "dock-v",
             "children": [
               {
-                "width": 216.546875,
-                "height": 312.015625,
+                "width": 214.453125,
+                "height": 303.984375,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 216.546875,
-                "height": 310.984375,
+                "width": 214.453125,
+                "height": 303.015625,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 775.109375,
-            "height": 626,
+            "width": 765.875,
+            "height": 610,
             "type": "dock-v",
             "children": [
               {
-                "width": 775.109375,
-                "height": 356.984375,
+                "width": 765.875,
+                "height": 347.828125,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,10 +52,10 @@
                 ]
               },
               {
-                "width": 775.109375,
-                "height": 266,
+                "width": 765.875,
+                "height": 259.15625,
                 "type": "panel",
-                "active": 0,
+                "active": 2,
                 "children": [
                   "console",
                   "timeline",
@@ -65,8 +65,8 @@
             ]
           },
           {
-            "width": 368.328125,
-            "height": 626,
+            "width": 363.671875,
+            "height": 610,
             "type": "panel",
             "active": 0,
             "children": [
@@ -86,7 +86,9 @@
         "inspector",
         "cocos-services"
       ]
-    }
+    },
+    " common-asset-worker-worker": {},
+    "window-1655628072750": {}
   },
   "panels": {
     "project-settings": {
