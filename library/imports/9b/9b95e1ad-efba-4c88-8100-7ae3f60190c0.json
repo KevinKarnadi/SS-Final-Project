@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "1_Effects_Muzzle Flash 1_001",
+    "texture": "2a04012c-e945-45ec-b8cd-5c8a3e252628",
+    "atlas": "",
+    "rect": [
+      0,
+      16,
+      121,
+      123
+    ],
+    "offset": [
+      -13.5,
+      -4
+    ],
+    "originalSize": [
+      148,
+      147
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

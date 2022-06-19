@@ -32,6 +32,7 @@ var Bullet = /** @class */ (function (_super) {
         _this.rigidBody = null;
         _this.shootAngle = null;
         _this.animation = null;
+        _this.speed = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
@@ -39,24 +40,24 @@ var Bullet = /** @class */ (function (_super) {
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
-        this.animation.play('bullet1');
-        this.bulletMove(speed);
+        this.animation.play('flash');
+        this.speed = speed;
     };
     //this function sets the bullet's initial position when it is reused.
     Bullet.prototype.setInitPos = function (node) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
         if (node.scaleX > 0) {
-            this.node.position = cc.v3(35, 8);
+            this.node.position = cc.v3(35, 4);
             this.node.scaleX = 1;
         }
         else {
-            this.node.position = cc.v3(-35, 8);
+            this.node.position = cc.v3(-35, 4);
             this.node.scaleX = -1;
         }
         this.node.position = this.node.position.addSelf(node.position);
     };
     //make the bullet move from current position
-    Bullet.prototype.bulletMove = function (speed) {
+    Bullet.prototype.bulletMove = function () {
         var moveDir = null;
         // decide bullet direction
         if (this.node.scaleX > 0) {
@@ -65,7 +66,11 @@ var Bullet = /** @class */ (function (_super) {
         else {
             moveDir = -1;
         }
-        this.rigidBody.linearVelocity = cc.v2((35 * moveDir) + speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
+        this.rigidBody.linearVelocity = cc.v2((35 * moveDir) + this.speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * this.speed);
+    };
+    Bullet.prototype.playBulletAnim = function () {
+        this.bulletMove();
+        this.animation.play('bullet1');
     };
     //detect collision
     Bullet.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {

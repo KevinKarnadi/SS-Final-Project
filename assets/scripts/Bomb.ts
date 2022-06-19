@@ -41,13 +41,13 @@ export default class Bomb extends cc.Component
 
         if(node.scaleX > 0)
         {
-            this.node.position = cc.v3(35, 8);
+            this.node.position = cc.v3(35, 4);
 
             this.node.scaleX = 1;
         }
         else
         {
-            this.node.position = cc.v3(-35, 8);
+            this.node.position = cc.v3(-35, 4);
 
             this.node.scaleX = -1;
         }

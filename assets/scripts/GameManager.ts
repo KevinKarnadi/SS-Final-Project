@@ -321,6 +321,7 @@ export default class GameManager extends cc.Component {
             this.shootAngle *= -1;
         }
         if(!this.shoot){
+            this.player.aim = true;
             if(this.player.weapon == "gun") {
                 if(this.player.gunType == "normal") {
                     this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 300); // draw trajectory line

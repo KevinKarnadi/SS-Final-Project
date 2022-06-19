@@ -182,6 +182,9 @@
     "_clips": [
       {
         "__uuid__": "8db184f9-a938-44f3-ae00-982fda5d675e"
+      },
+      {
+        "__uuid__": "47e3a1b9-42df-435c-a8e4-0854ff9a8628"
       }
     ],
     "playOnLoad": false,

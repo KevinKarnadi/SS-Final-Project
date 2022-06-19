@@ -296,6 +296,7 @@ var GameManager = /** @class */ (function (_super) {
             this.shootAngle *= -1;
         }
         if (!this.shoot) {
+            this.player.aim = true;
             if (this.player.weapon == "gun") {
                 if (this.player.gunType == "normal") {
                     this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 300); // draw trajectory line
