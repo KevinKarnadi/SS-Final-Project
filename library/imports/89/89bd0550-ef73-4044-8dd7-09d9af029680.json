@@ -286,7 +286,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": null,
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "3ep6Z0rjpMppnB0/Fdq3wW"
   },
   {
@@ -1917,7 +1922,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": null,
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "a7lLcG491PBJn3d+gGNY8Y"
   },
   {
@@ -3387,7 +3397,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": null,
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "c9V8U5ZQZDfKA6ReVMtt1W"
   },
   {
@@ -4857,7 +4872,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": null,
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "4fT/X3nmBPnKfZ8i7JHTK9"
   },
   {

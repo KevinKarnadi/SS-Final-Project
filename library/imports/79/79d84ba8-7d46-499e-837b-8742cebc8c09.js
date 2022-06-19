@@ -33,6 +33,7 @@ var Player = /** @class */ (function (_super) {
         _this.bulletPrefab = null;
         _this.bombPrefab = null;
         _this.damageParc = null;
+        _this.damageEffAnim = null;
         _this.line = null;
         _this.playerName = null;
         _this.playerChar = null;
@@ -136,13 +137,21 @@ var Player = /** @class */ (function (_super) {
                         _this.hurt = false;
                     }, 0.5);
                 }
-                if (other.node.group == "bullet" || other.node.group == "bomb") {
+                if (other.node.group == "bullet") {
                     var particleEff_1 = cc.instantiate(this.damageParc);
                     particleEff_1.parent = cc.director.getScene();
                     particleEff_1.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
                     this.scheduleOnce(function () {
                         particleEff_1.destroy();
                     }, 0.6);
+                }
+                if (other.node.group == "bomb") {
+                    var particleEff_2 = cc.instantiate(this.damageEffAnim);
+                    particleEff_2.parent = cc.director.getScene();
+                    particleEff_2.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    this.scheduleOnce(function () {
+                        particleEff_2.destroy();
+                    }, 0.4);
                 }
             }
         }
@@ -410,6 +419,9 @@ var Player = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Player.prototype, "damageParc", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Player.prototype, "damageEffAnim", void 0);
     Player = __decorate([
         ccclass
     ], Player);

@@ -500,13 +500,13 @@
     "relativePath": "model\\primitives.fbx"
   },
   "486aa8ce-d412-4d43-a012-1887f2c7be5e": {
-    "asset": 1655631690307,
-    "meta": 1655631725956,
+    "asset": 1655632459777,
+    "meta": 1655641928266,
     "relativePath": "downloadedAssets"
   },
   "e7f16894-f6bc-49da-8936-f4d9ec85feea": {
-    "asset": 1655631690313,
-    "meta": 1655631725978,
+    "asset": 1655632848608,
+    "meta": 1655641928268,
     "relativePath": "prefabs"
   },
   "b5d82e68-2e74-4126-966f-946ea363403d": {
@@ -515,8 +515,8 @@
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655631690316,
-    "meta": 1655631725987,
+    "asset": 1655632459788,
+    "meta": 1655641928271,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
@@ -1375,8 +1375,8 @@
     "relativePath": "tiles\\Purple Planet\\png\\256px\\tiles\\Vines (3).png"
   },
   "52ef2856-c0e4-4e7d-8161-5710225bea83": {
-    "asset": 1655631118092,
-    "meta": 1655631725951,
+    "asset": 1655633151962,
+    "meta": 1655641928259,
     "relativePath": "animations"
   },
   "8db184f9-a938-44f3-ae00-982fda5d675e": {
@@ -10764,11 +10764,6 @@
     "meta": 1655631728529,
     "relativePath": "scripts\\map.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655631409431,
-    "meta": 1655631728739,
-    "relativePath": "scripts\\Player.ts"
-  },
   "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
     "asset": 1655628723220,
     "meta": 1655631729059,
@@ -10798,11 +10793,6 @@
     "asset": 1655627347607,
     "meta": 1655631727142,
     "relativePath": "scenes\\instructions - option 2.fire"
-  },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655632589014,
-    "meta": 1655632589071,
-    "relativePath": "scenes\\map1.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
     "asset": 1655631129527,
@@ -10858,5 +10848,25 @@
     "asset": 1655631129470,
     "meta": 1655632473828,
     "relativePath": "downloadedAssets\\redcrosshair.png"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655642906111,
+    "meta": 1655642906350,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "538be6e7-57d8-4b3b-9bc4-7ba67b931233": {
+    "asset": 1655633189612,
+    "meta": 1655642703443,
+    "relativePath": "animations\\explosion2smaller.anim"
+  },
+  "e8377321-f999-4b8c-9de6-747ed22edec2": {
+    "asset": 1655642737975,
+    "meta": 1655642737986,
+    "relativePath": "prefabs\\damageEffAnim.prefab"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655642879276,
+    "meta": 1655642883806,
+    "relativePath": "scripts\\Player.ts"
   }
 }

@@ -13,13 +13,13 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 217.09375,
+            "width": 217,
             "height": 626,
             "type": "dock-v",
             "children": [
               {
-                "width": 217.09375,
-                "height": 312.84375,
+                "width": 217,
+                "height": 313,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 217.09375,
-                "height": 310.15625,
+                "width": 217,
+                "height": 310,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 775.078125,
+            "width": 775,
             "height": 626,
             "type": "dock-v",
             "children": [
               {
-                "width": 775.078125,
-                "height": 350.375,
+                "width": 775,
+                "height": 349.984375,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,10 +52,10 @@
                 ]
               },
               {
-                "width": 775.078125,
-                "height": 272.625,
+                "width": 775,
+                "height": 273,
                 "type": "panel",
-                "active": 0,
+                "active": 2,
                 "children": [
                   "console",
                   "timeline",
@@ -65,7 +65,7 @@
             ]
           },
           {
-            "width": 367.8125,
+            "width": 368,
             "height": 626,
             "type": "panel",
             "active": 0,
@@ -86,9 +86,7 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    " common-asset-worker-worker": {},
-    "window-1655632484595": {}
+    }
   },
   "panels": {
     "project-settings": {
