@@ -50,8 +50,8 @@ export default class TrajectoryLine extends cc.Component {
         let cos = Math.cos(angle) * range;
         let sin =  Math.sin(angle) * range;
         for(let i = 9; i >= 0; i--) {
-            this.line.moveTo(35 + cos - cos * 0.1 * (i+1), 4 + sin - sin * 0.1 * (i+1));
-            this.line.lineTo(35 + cos - cos * 0.1 * i - (cos/9), 4 + sin - sin * 0.1 * i - (sin/9));
+            this.line.moveTo(35 + cos - cos * 0.1 * (i+1), 8 + sin - sin * 0.1 * (i+1));
+            this.line.lineTo(35 + cos - cos * 0.1 * i - (cos/9), 8 + sin - sin * 0.1 * i - (sin/9));
         }
         this.line.stroke();
     }

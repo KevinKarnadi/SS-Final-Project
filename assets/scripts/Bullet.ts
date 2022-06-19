@@ -12,8 +12,6 @@ export default class Bullet extends cc.Component
 
     private animation: cc.Animation = null;
 
-    private speed: number = null;
-
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node, speed: number) 
     {
@@ -21,8 +19,8 @@ export default class Bullet extends cc.Component
         this.rigidBody = this.getComponent(cc.RigidBody);
 
         this.setInitPos(node);
-        this.animation.play('flash');
-        this.speed = speed;
+        this.animation.play('bullet1');
+        this.bulletMove(speed);
     }
 
     //this function sets the bullet's initial position when it is reused.
@@ -32,13 +30,13 @@ export default class Bullet extends cc.Component
 
         if(node.scaleX > 0)
         {
-            this.node.position = cc.v3(35, 4);
+            this.node.position = cc.v3(35, 8);
 
             this.node.scaleX = 1;
         }
         else
         {
-            this.node.position = cc.v3(-35, 4);
+            this.node.position = cc.v3(-35, 8);
 
             this.node.scaleX = -1;
         }
@@ -47,7 +45,7 @@ export default class Bullet extends cc.Component
     }
 
     //make the bullet move from current position
-    private bulletMove()
+    private bulletMove(speed)
     {
         let moveDir = null;
 
@@ -57,12 +55,7 @@ export default class Bullet extends cc.Component
         } else {
             moveDir = -1;
         }
-        this.rigidBody.linearVelocity = cc.v2((35 * moveDir) +  this.speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * this.speed);
-    }
-
-    private playBulletAnim() {
-        this.bulletMove();
-        this.animation.play('bullet1');
+        this.rigidBody.linearVelocity = cc.v2((35 * moveDir) +  speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
     }
     
     //detect collision

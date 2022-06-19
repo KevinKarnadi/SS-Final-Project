@@ -75,8 +75,6 @@ export default class Player extends cc.Component {
 
     private currWeaponNum: string = "0";
 
-    private aim: boolean = false;
-
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -243,9 +241,6 @@ export default class Player extends cc.Component {
     private createBullet(mode: string)
     {
         this.shoot = false;
-        this.scheduleOnce(()=>{
-            this.aim = false;
-        }, 0.5)
         if(mode == "normal") {
             let bullet = cc.instantiate(this.bulletPrefab);
             if(bullet != null) {
@@ -324,10 +319,8 @@ export default class Player extends cc.Component {
     playerAnimation() {
         if(!this.isDie){    // animation for char1
             if(this.playerChar == "char1") {  // MUST change to curPlayer == "Player 1"
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char1idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char1idle")) {
                     this.animationState = this.animation.play("char1idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char1aim")) {
-                    this.animationState = this.animation.play("char1aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char1run")) {
                     this.animationState = this.animation.play("char1run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char1jump")) {
@@ -344,30 +337,24 @@ export default class Player extends cc.Component {
                 //     this.animationState = this.animation.play('char1idle');
                 // }          
             } else if(this.playerChar == "char2") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char2idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char2idle")) {
                     this.animationState = this.animation.play("char2idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char2aim")) {
-                    this.animationState = this.animation.play("char2aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char2run")) {
                     this.animationState = this.animation.play("char2run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char2jump")) {
                     this.animationState = this.animation.play("char2jump");
                 }
             } else if(this.playerChar == "char3") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char3idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char3idle")) {
                     this.animationState = this.animation.play("char3idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char3aim")) {
-                    this.animationState = this.animation.play("char3aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char3run")) {
                     this.animationState = this.animation.play("char3run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char3jump")) {
                     this.animationState = this.animation.play("char3jump");
                 }
             }  else if(this.playerChar == "char4") {
-                if(this.isOnGround && !this.isMove && !this.hurt && !this.aim && (!this.animationState || this.animationState.name != "char4idle")) {
+                if(this.isOnGround && !this.isMove && !this.hurt && (!this.animationState || this.animationState.name != "char4idle")) {
                     this.animationState = this.animation.play("char4idle");
-                } else if(this.isOnGround && this.aim  && (!this.animationState || this.animationState.name != "char4aim")) {
-                    this.animationState = this.animation.play("char4aim");
                 } else if(this.isOnGround && this.isMove && (!this.animationState || this.animationState.name != "char4run")) {
                     this.animationState = this.animation.play("char4run");
                 } else if(!this.isOnGround && (!this.animationState || this.animationState.name != "char4jump")) {
