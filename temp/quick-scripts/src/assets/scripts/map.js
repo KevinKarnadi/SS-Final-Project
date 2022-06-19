@@ -71,7 +71,7 @@ var Map = /** @class */ (function (_super) {
             this.firePool.put(fire);
             // y.max = -222.5
         }
-        this.schedule(this.spawnWeapon, 15);
+        this.schedule(this.spawnWeapon, 18);
         this.schedule(function () {
             _this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8);
@@ -121,7 +121,7 @@ var Map = /** @class */ (function (_super) {
     };
     Map.prototype.spawnWeapon = function () {
         var newWeapon = null;
-        var position = cc.v2(Math.floor(Math.random() * 2600) - 380, 350);
+        var position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
         switch (this.toSpawnWeaponNum) {
             case 0:
                 newWeapon = cc.instantiate(this.weaponPrefab0);

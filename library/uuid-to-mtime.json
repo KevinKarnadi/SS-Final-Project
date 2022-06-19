@@ -505,8 +505,8 @@
     "relativePath": "downloadedAssets"
   },
   "e7f16894-f6bc-49da-8936-f4d9ec85feea": {
-    "asset": 1655609835628,
-    "meta": 1655609876363,
+    "asset": 1655614420639,
+    "meta": 1655616837700,
     "relativePath": "prefabs"
   },
   "b5d82e68-2e74-4126-966f-946ea363403d": {
@@ -515,8 +515,8 @@
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655609835670,
-    "meta": 1655609876376,
+    "asset": 1655611399728,
+    "meta": 1655616837704,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
@@ -10710,8 +10710,8 @@
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655616229834,
-    "meta": 1655616229923,
+    "asset": 1655617161873,
+    "meta": 1655617162280,
     "relativePath": "scenes\\map1.fire"
   },
   "9155eefe-fefa-4f6e-acc9-aef1af1dba51": {
@@ -10720,8 +10720,8 @@
     "relativePath": "resources"
   },
   "4391c114-c863-4b9a-8fbd-9f3435ec65aa": {
-    "asset": 1655609807039,
-    "meta": 1655609879453,
+    "asset": 1655610240830,
+    "meta": 1655616837709,
     "relativePath": "tiles\\gun"
   },
   "b155ac09-5899-4f6e-afc8-35a516dc0582": {
@@ -10764,11 +10764,6 @@
     "meta": 1655612440958,
     "relativePath": "scripts\\Player.ts"
   },
-  "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
-    "asset": 1655612883818,
-    "meta": 1655612906235,
-    "relativePath": "scripts\\AreaNode.ts"
-  },
   "beed6ded-5b03-4d94-9ec1-4da2d33af648": {
     "asset": 1655612829666,
     "meta": 1655612906470,
@@ -10805,8 +10800,13 @@
     "relativePath": "scripts\\GameManager.ts"
   },
   "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655616181619,
-    "meta": 1655616214606,
+    "asset": 1655616331414,
+    "meta": 1655616373715,
     "relativePath": "scripts\\map.ts"
+  },
+  "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
+    "asset": 1655617117754,
+    "meta": 1655617121195,
+    "relativePath": "scripts\\AreaNode.ts"
   }
 }
