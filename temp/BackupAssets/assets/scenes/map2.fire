@@ -288,6 +288,9 @@
     "damageParc": {
       "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
     },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "b8ONIcom5MjLYeo6hKw1Rl"
   },
   {
@@ -1921,6 +1924,9 @@
     "damageParc": {
       "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
     },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "ee/3QjZklMfo1GcOYIhGwG"
   },
   {
@@ -3393,6 +3399,9 @@
     "damageParc": {
       "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
     },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
     "_id": "7ePlkS2wFIro7h/fX2cBvI"
   },
   {
@@ -4864,6 +4873,9 @@
     },
     "damageParc": {
       "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
+    "damageEffAnim": {
+      "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
     },
     "_id": "11neOE4aVPt5qfYcDskN35"
   },
