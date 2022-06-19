@@ -10684,11 +10684,6 @@
     "meta": 1655609877973,
     "relativePath": "scripts\\Bomb.ts"
   },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655573134790,
-    "meta": 1655609878813,
-    "relativePath": "scripts\\map.ts"
-  },
   "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
     "asset": 1655572819570,
     "meta": 1655609879336,
@@ -10710,13 +10705,13 @@
     "relativePath": "tiles\\Wide arrow L.png"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655609835662,
-    "meta": 1655609877682,
+    "asset": 1655614729445,
+    "meta": 1655614729519,
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655614475184,
-    "meta": 1655614475265,
+    "asset": 1655614630143,
+    "meta": 1655614630211,
     "relativePath": "scenes\\map1.fire"
   },
   "9155eefe-fefa-4f6e-acc9-aef1af1dba51": {
@@ -10779,11 +10774,6 @@
     "meta": 1655612906470,
     "relativePath": "scripts\\weaponObj.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655614203007,
-    "meta": 1655614207870,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "871e6f87-2c90-4061-b43a-d92069aae244": {
     "asset": 1655614238076,
     "meta": 1655614238105,
@@ -10808,5 +10798,15 @@
     "asset": 1655614420622,
     "meta": 1655614420639,
     "relativePath": "prefabs\\Weapon4.prefab"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655614586482,
+    "meta": 1655614611610,
+    "relativePath": "scripts\\map.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655614713075,
+    "meta": 1655614716111,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }

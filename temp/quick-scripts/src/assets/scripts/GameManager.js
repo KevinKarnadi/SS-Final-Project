@@ -43,7 +43,6 @@ var GameManager = /** @class */ (function (_super) {
         _this.weaponSprite2 = null;
         _this.weaponSprite3 = null;
         _this.weaponSprite4 = null;
-        _this.spriteUi = null;
         _this.cameraSpeed = 300;
         _this.player = null;
         _this.aKeyDown = false;
@@ -67,11 +66,6 @@ var GameManager = /** @class */ (function (_super) {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
         this.alivePlayer = this.totalPlayer;
-        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
-        // console.log(weaponSprite, "0");
-        // weaponSprite = this.weaponSprite0;
-        // console.log(weaponSprite, "1");
-        // this.spriteUi.getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
     };
     GameManager.prototype.start = function () {
         //this.playBGM();
@@ -427,9 +421,6 @@ var GameManager = /** @class */ (function (_super) {
     __decorate([
         property(cc.SpriteFrame)
     ], GameManager.prototype, "weaponSprite4", void 0);
-    __decorate([
-        property(cc.Node)
-    ], GameManager.prototype, "spriteUi", void 0);
     __decorate([
         property()
     ], GameManager.prototype, "cameraSpeed", void 0);

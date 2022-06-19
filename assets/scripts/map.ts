@@ -15,6 +15,7 @@ export default class Map extends cc.Component {
     private groundPool = null;
     private groundPool1 = null;
     private firePool = null;
+    private spawnCooldown: number = 0;
 
     onLoad () {
         if(!this.groundUpperPrefab){

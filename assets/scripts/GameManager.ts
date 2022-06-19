@@ -45,9 +45,6 @@ export default class GameManager extends cc.Component {
     @property(cc.SpriteFrame)
     private weaponSprite4: cc.SpriteFrame = null;
 
-    @property(cc.Node)
-    private spriteUi: cc.Node = null;
-
     @property()
     cameraSpeed: number = 300;
 
@@ -88,12 +85,6 @@ export default class GameManager extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
         this.alivePlayer = this.totalPlayer;
-
-        // var weaponSprite = cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame;
-        // console.log(weaponSprite, "0");
-        // weaponSprite = this.weaponSprite0;
-        // console.log(weaponSprite, "1");
-        // this.spriteUi.getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
     }
     
     start () {

@@ -34,6 +34,7 @@ var Map = /** @class */ (function (_super) {
         _this.groundPool = null;
         _this.groundPool1 = null;
         _this.firePool = null;
+        _this.spawnCooldown = 0;
         return _this;
     }
     Map.prototype.onLoad = function () {
