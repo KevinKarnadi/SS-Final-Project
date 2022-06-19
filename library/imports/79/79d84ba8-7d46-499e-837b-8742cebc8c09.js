@@ -194,13 +194,13 @@ var Player = /** @class */ (function (_super) {
             }, 0.05, 2);
         }
         else if (mode == "shotgun") {
-            var d_angle = -0.2;
-            for (var i = 0; i < 5; i++) {
+            var d_angle = -0.1;
+            for (var i = 0; i < 3; i++) {
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
                     bullet.getComponent('Bullet').init(this.node);
-                    d_angle += 0.1;
+                    d_angle += 0.05;
                 }
             }
         }

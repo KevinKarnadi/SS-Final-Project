@@ -205,13 +205,13 @@ export default class Player extends cc.Component {
             }, 0.05, 2);
         }
         else if(mode == "shotgun") {
-            let d_angle = -0.2;
-            for(let i = 0; i < 5; i++) {
+            let d_angle = -0.1;
+            for(let i = 0; i < 3; i++) {
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle + d_angle);
                     bullet.getComponent('Bullet').init(this.node);
-                    d_angle += 0.1;
+                    d_angle += 0.05;
                 }
             }
         }

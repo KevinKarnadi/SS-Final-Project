@@ -56,7 +56,7 @@ export default class Bullet extends cc.Component
         } else {
             moveDir = -1;
         }
-        this.rigidBody.linearVelocity = cc.v2(speed * moveDir, Math.sinh(this.shootAngle) * speed);
+        this.rigidBody.linearVelocity = cc.v2((35 * moveDir) +  speed * moveDir * Math.cos(this.shootAngle), Math.sin(this.shootAngle) * speed);
     }
     
     //detect collision

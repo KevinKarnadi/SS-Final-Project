@@ -296,7 +296,15 @@ var GameManager = /** @class */ (function (_super) {
         }
         if (!this.shoot) {
             if (this.player.weapon == "gun") {
-                this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle); // draw trajectory line
+                if (this.player.gunType == "normal") {
+                    this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 300); // draw trajectory line
+                }
+                else if (this.player.gunType == "burst") {
+                    this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 200); // draw trajectory line
+                }
+                else if (this.player.gunType == "shotgun") {
+                    this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 100); // draw trajectory line
+                }
             }
             else if (this.player.weapon == "bomb") {
                 var power = (Math.abs(diffY) >= Math.abs(diffX) ? Math.abs(diffY) : Math.abs(diffX));

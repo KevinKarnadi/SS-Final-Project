@@ -38,12 +38,16 @@ export default class TrajectoryLine extends cc.Component {
 
     // update (dt) {}
 
-    public drawStraightLine(angle) {
+    public drawStraightLine(angle, range) {
         this.line.clear();
         this.line.lineWidth = 5;
         this.line.lineCap = cc.Graphics.LineCap.ROUND;
-        this.line.moveTo(35, 8);
-        this.line.lineTo(35 + Math.cos(angle) * 300, 8 + Math.sin(angle) * 300)
+        let cos = Math.cos(angle) * range;
+        let sin =  Math.sin(angle) * range;
+        for(let i = 9; i >= 0; i--) {
+            this.line.moveTo(35 + cos - cos * 0.1 * (i+1), 8 + sin - sin * 0.1 * (i+1));
+            this.line.lineTo(35 + cos - cos * 0.1 * i - (cos/9), 8 + sin - sin * 0.1 * i - (sin/9));
+        }
         this.line.stroke();
     }
 
