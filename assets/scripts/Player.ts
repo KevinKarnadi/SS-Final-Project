@@ -18,6 +18,9 @@ export default class Player extends cc.Component {
     @property(cc.Prefab)
     damageParc: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    damageEffAnim: cc.Prefab = null;
+
     public line = null;
 
     public playerName = null;
@@ -147,13 +150,22 @@ export default class Player extends cc.Component {
                     }, 0.5)
 
                 }
-                if(other.node.group == "bullet" || other.node.group == "bomb" ){
+                if(other.node.group == "bullet"){
                     let particleEff = cc.instantiate(this.damageParc);
                     particleEff.parent = cc.director.getScene();
                     particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
                     this.scheduleOnce(()=>{
                         particleEff.destroy();
                     }, 0.6);
+                }
+
+                if(other.node.group == "bomb"){
+                    let particleEff = cc.instantiate(this.damageEffAnim);
+                    particleEff.parent = cc.director.getScene();
+                    particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    this.scheduleOnce(()=>{
+                        particleEff.destroy();
+                    }, 0.4);
                 }
             }
         } else if(other.node.group == "wall") {

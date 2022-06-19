@@ -40,7 +40,7 @@ var ExplosiveObj = /** @class */ (function (_super) {
     };
     ExplosiveObj.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
+        if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb" || other.node.name == "Die Boundary") {
             // this.node.y += 1;
             // this.node.y -= 6;
             this.node.getComponent(cc.PhysicsCircleCollider).enabled = true;
