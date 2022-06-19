@@ -32,6 +32,7 @@ var Player = /** @class */ (function (_super) {
         _this.dieAudio = null;
         _this.bulletPrefab = null;
         _this.bombPrefab = null;
+        _this.damageParc = null;
         _this.line = null;
         _this.playerName = null;
         _this.playerChar = null;
@@ -134,6 +135,14 @@ var Player = /** @class */ (function (_super) {
                     this.scheduleOnce(function () {
                         _this.hurt = false;
                     }, 0.5);
+                    if (other.node.group == "bullet" || other.node.group == "bomb") {
+                        var particleEff_1 = cc.instantiate(this.damageParc);
+                        particleEff_1.parent = cc.director.getScene();
+                        particleEff_1.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                        this.scheduleOnce(function () {
+                            particleEff_1.destroy();
+                        }, 0.6);
+                    }
                 }
             }
         }
@@ -392,6 +401,9 @@ var Player = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Player.prototype, "bombPrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], Player.prototype, "damageParc", void 0);
     Player = __decorate([
         ccclass
     ], Player);
