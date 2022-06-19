@@ -10334,11 +10334,6 @@
     "meta": 1655647326220,
     "relativePath": "scenes\\map2.fire"
   },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655650667208,
-    "meta": 1655650667254,
-    "relativePath": "scenes\\map1.fire"
-  },
   "379612b5-d8a0-411c-b11b-7d0b1c1f3722": {
     "asset": 1655649530803,
     "meta": 1655649534344,
@@ -10899,29 +10894,34 @@
     "meta": 1655651206628,
     "relativePath": "model\\primitives.fbx"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655651614961,
-    "meta": 1655651689474,
-    "relativePath": "scripts\\GameManager.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655652189123,
-    "meta": 1655652191130,
-    "relativePath": "scripts\\Player.ts"
-  },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655653053352,
-    "meta": 1655653087773,
-    "relativePath": "scripts\\TrajectoryLine.ts"
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655654424770,
+    "meta": 1655654434659,
+    "relativePath": "scenes\\map1.fire"
   },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
-    "asset": 1655653164761,
-    "meta": 1655653209780,
+    "asset": 1655654711013,
+    "meta": 1655654813967,
     "relativePath": "scripts\\Bomb.ts"
   },
   "889b5329-bfed-4779-9715-b56e83d934ca": {
-    "asset": 1655653286363,
-    "meta": 1655653300917,
+    "asset": 1655654708000,
+    "meta": 1655654814061,
     "relativePath": "scripts\\Bullet.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655654793144,
+    "meta": 1655654814558,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655654808282,
+    "meta": 1655654814817,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655654716280,
+    "meta": 1655654814857,
+    "relativePath": "scripts\\TrajectoryLine.ts"
   }
 }

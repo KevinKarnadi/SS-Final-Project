@@ -68,7 +68,7 @@ var GameManager = /** @class */ (function (_super) {
         this.alivePlayer = this.totalPlayer;
     };
     GameManager.prototype.start = function () {
-        //this.playBGM();
+        this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
         this.initPauseMenuButtons();
