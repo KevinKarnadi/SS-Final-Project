@@ -91,7 +91,11 @@ export default class GameManager extends cc.Component {
         //this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
+        // Pause menu buttons
         this.initResumeBtn();
+        this.initRestartBtn();
+        this.initSettingsBtn();
+        this.initExitBtn();
     }
 
     update (dt) {
@@ -392,6 +396,46 @@ export default class GameManager extends cc.Component {
     resume() {
         cc.director.resume();
         cc.find("Canvas/Main Camera/Pause Menu").active = false;
+    }
+
+    initRestartBtn() {
+        let clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "GameManager";
+        clickEventHandler.handler = "restart";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/restartBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    }
+
+    restart() {
+        cc.director.resume();
+        let sceneName = cc.director.getScene().name;
+        cc.director.loadScene("loading", ()=>{
+            cc.director.loadScene(sceneName);
+        });
+    }
+
+    initSettingsBtn() {
+        let clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "GameManager";
+        clickEventHandler.handler = "settings";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/settingsBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    }
+
+    settings() {
+        //
+    }
+
+    initExitBtn() {
+        let clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "GameManager";
+        clickEventHandler.handler = "exit";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/exitBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    }
+
+    exit() {
+        //
     }
 
     setCameraAnchor(value){
