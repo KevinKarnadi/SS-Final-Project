@@ -1,7 +1,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class InstructionsMenuOption2 extends cc.Component {
+export default class InstructionsMenuMinimap extends cc.Component {
 
     properties: {
             Edit_Box: cc.EditBox,
@@ -10,29 +10,29 @@ export default class InstructionsMenuOption2 extends cc.Component {
     start () {
         let nextbtn = new cc.Component.EventHandler();
         nextbtn.target = this.node;
-        nextbtn.component = "Instructions-option2";
+        nextbtn.component = "Instructions-minimap";
         nextbtn.handler = "loadNextInstructions";
 
 
-        cc.find("Canvas/Next").getComponent(cc.Button).clickEvents.push(nextbtn);
+        cc.find("Next").getComponent(cc.Button).clickEvents.push(nextbtn);
 
 
         let prevbtn = new cc.Component.EventHandler();
         prevbtn.target = this.node;
-        prevbtn.component = "Instructions-option2";
+        prevbtn.component = "Instructions-minimap";
         prevbtn.handler = "loadPrevInstructions";
 
 
-        cc.find("Canvas/Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
+        cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
 
     }
 
     loadNextInstructions(){
-        cc.director.loadScene("instructions - minimap");
+        cc.director.loadScene("instructions - win");
     }
 
     loadPrevInstructions(){
-        cc.director.loadScene("instructions - option 1");
+        cc.director.loadScene("instructions - option 2");
     }
 
 }
