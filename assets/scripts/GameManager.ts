@@ -91,11 +91,8 @@ export default class GameManager extends cc.Component {
         //this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
-        // Pause menu buttons
-        this.initResumeBtn();
-        this.initRestartBtn();
-        this.initSettingsBtn();
-        this.initExitBtn();
+        this.initPauseMenuButtons();
+        this.initSettingsMenuButtons();
     }
 
     update (dt) {
@@ -385,25 +382,35 @@ export default class GameManager extends cc.Component {
 
     // Pause Menu Buttons
 
-    initResumeBtn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "GameManager";
-        clickEventHandler.handler = "resume";
-        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/resumeBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    initPauseMenuButtons() {
+        let resume_clickEventHandler = new cc.Component.EventHandler();
+        resume_clickEventHandler.target = this.node;
+        resume_clickEventHandler.component = "GameManager";
+        resume_clickEventHandler.handler = "resume";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/resumeBtn").getComponent(cc.Button).clickEvents.push(resume_clickEventHandler);
+
+        let restart_clickEventHandler = new cc.Component.EventHandler();
+        restart_clickEventHandler.target = this.node;
+        restart_clickEventHandler.component = "GameManager";
+        restart_clickEventHandler.handler = "restart";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/restartBtn").getComponent(cc.Button).clickEvents.push(restart_clickEventHandler);
+
+        let settings_clickEventHandler = new cc.Component.EventHandler();
+        settings_clickEventHandler.target = this.node;
+        settings_clickEventHandler.component = "GameManager";
+        settings_clickEventHandler.handler = "settings";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/settingsBtn").getComponent(cc.Button).clickEvents.push(settings_clickEventHandler);
+
+        let exit_clickEventHandler = new cc.Component.EventHandler();
+        exit_clickEventHandler.target = this.node;
+        exit_clickEventHandler.component = "GameManager";
+        exit_clickEventHandler.handler = "exit";
+        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/exitBtn").getComponent(cc.Button).clickEvents.push(exit_clickEventHandler);
     }
 
     resume() {
         cc.director.resume();
         cc.find("Canvas/Main Camera/Pause Menu").active = false;
-    }
-
-    initRestartBtn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "GameManager";
-        clickEventHandler.handler = "restart";
-        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/restartBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     }
 
     restart() {
@@ -414,28 +421,26 @@ export default class GameManager extends cc.Component {
         });
     }
 
-    initSettingsBtn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "GameManager";
-        clickEventHandler.handler = "settings";
-        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/settingsBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
-    }
-
     settings() {
-        //
-    }
-
-    initExitBtn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "GameManager";
-        clickEventHandler.handler = "exit";
-        cc.find("Canvas/Main Camera/Pause Menu/Big Layout/exitBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Main Camera/Settings Menu").active = true;
     }
 
     exit() {
         //
+    }
+
+    // Settings Menu Buttons
+
+    initSettingsMenuButtons() {
+        let close_clickEventHandler = new cc.Component.EventHandler();
+        close_clickEventHandler.target = this.node;
+        close_clickEventHandler.component = "GameManager";
+        close_clickEventHandler.handler = "close";
+        cc.find("Canvas/Main Camera/Settings Menu/closeBtn").getComponent(cc.Button).clickEvents.push(close_clickEventHandler);
+    }
+
+    close() {
+        cc.find("Canvas/Main Camera/Settings Menu").active = false;
     }
 
     setCameraAnchor(value){
