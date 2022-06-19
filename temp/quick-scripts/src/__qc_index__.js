@@ -3,6 +3,7 @@ require('./assets/scripts/AreaNode');
 require('./assets/scripts/Arrow');
 require('./assets/scripts/Bomb');
 require('./assets/scripts/Bullet');
+require('./assets/scripts/Crosshair');
 require('./assets/scripts/GameManager');
 require('./assets/scripts/Ground');
 require('./assets/scripts/Ground2');

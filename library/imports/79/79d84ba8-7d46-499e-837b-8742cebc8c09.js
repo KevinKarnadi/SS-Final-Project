@@ -68,7 +68,7 @@ var Player = /** @class */ (function (_super) {
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.playerName = this.node.getChildByName("Player Name");
         this.line = this.node.getChildByName("Trajectory Line");
-        this.aimLabel = this.node.getChildByName("Aim Layout");
+        this.aimLabel = this.node.getChildByName("Aim Bomb Layout");
         ;
         this.setPlayerName();
         this.setPlayerChar();

@@ -285,9 +285,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": {
-      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
-    },
+    "damageParc": null,
     "_id": "3ep6Z0rjpMppnB0/Fdq3wW"
   },
   {
@@ -543,7 +541,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 8
@@ -1284,6 +1282,7 @@
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
     },
+    "crosshairPrefab": null,
     "angle": {
       "__id__": 16
     },
@@ -1915,9 +1914,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": {
-      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
-    },
+    "damageParc": null,
     "_id": "a7lLcG491PBJn3d+gGNY8Y"
   },
   {
@@ -2012,7 +2009,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 43
@@ -2753,6 +2750,7 @@
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
     },
+    "crosshairPrefab": null,
     "angle": {
       "__id__": 51
     },
@@ -3384,9 +3382,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": {
-      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
-    },
+    "damageParc": null,
     "_id": "c9V8U5ZQZDfKA6ReVMtt1W"
   },
   {
@@ -3481,7 +3477,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 78
@@ -4222,6 +4218,7 @@
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
     },
+    "crosshairPrefab": null,
     "angle": {
       "__id__": 86
     },
@@ -4853,14 +4850,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
-    "damageParc": {
-      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
-    },
+    "damageParc": null,
     "_id": "4fT/X3nmBPnKfZ8i7JHTK9"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6
@@ -5600,6 +5595,9 @@
     "_enabled": true,
     "arrowPrefab": {
       "__uuid__": "60471ab7-3252-44d6-8bc5-c14ba45fd75c"
+    },
+    "crosshairPrefab": {
+      "__uuid__": "8dc08216-1188-4f74-a218-9e03a4ea2e34"
     },
     "angle": {
       "__id__": 120
@@ -13024,7 +13022,7 @@
       "__uuid__": "ec91656f-2f3d-4a6b-a5ac-6780dac40cf4"
     },
     "_texture": null,
-    "_stopped": true,
+    "_stopped": false,
     "playOnLoad": true,
     "autoRemoveOnFinish": false,
     "totalParticles": 10,

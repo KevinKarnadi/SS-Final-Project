@@ -306,7 +306,7 @@ var GameManager = /** @class */ (function (_super) {
                     this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 400); // draw trajectory line
                 }
                 else if (this.player.gunType == "shotgun") {
-                    this.player.line.getComponent("TrajectoryLine").drawCircle(this.shootAngle, 100); // draw trajectory line
+                    this.player.line.getComponent("TrajectoryLine").drawCircle(this.shootAngle); // draw trajectory line
                 }
             }
             else if (this.player.weapon == "bomb") {

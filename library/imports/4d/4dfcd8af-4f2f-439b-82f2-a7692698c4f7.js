@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '59d65rCd65HeaNbiiLTA1TE', 'Arrow');
-// scripts/Arrow.ts
+cc._RF.push(module, '4dfcdivTy9Dm4Lyp2kmmMT3', 'Crosshair');
+// scripts/Crosshair.ts
 
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -24,19 +24,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var Arrow = /** @class */ (function (_super) {
-    __extends(Arrow, _super);
-    function Arrow() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.label = null;
-        return _this;
+var Crosshair1 = /** @class */ (function (_super) {
+    __extends(Crosshair1, _super);
+    function Crosshair1() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
-    Arrow.prototype.init = function (node) {
+    Crosshair1.prototype.init = function (node) {
+        console.log("aaa");
         this.setInitPos(node);
     };
     //this function sets the arrow's initial position when it is reused.
-    Arrow.prototype.setInitPos = function (node) {
+    Crosshair1.prototype.setInitPos = function (node) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
         if (node.scaleX > 0) {
             this.node.position = cc.v3(35, 8);
@@ -49,17 +48,17 @@ var Arrow = /** @class */ (function (_super) {
         this.node.position = this.node.position.addSelf(node.position);
     };
     //make the arrow move according to the angle
-    Arrow.prototype.arrowMove = function (angle) {
+    Crosshair1.prototype.crosshairMove = function (angle) {
         this.node.angle = angle;
     };
-    Arrow.prototype.destroyArrow = function () {
+    Crosshair1.prototype.destroyArrow = function () {
         this.node.destroy();
     };
-    Arrow = __decorate([
+    Crosshair1 = __decorate([
         ccclass
-    ], Arrow);
-    return Arrow;
+    ], Crosshair1);
+    return Crosshair1;
 }(cc.Component));
-exports.default = Arrow;
+exports.default = Crosshair1;
 
 cc._RF.pop();

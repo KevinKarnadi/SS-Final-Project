@@ -543,7 +543,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 8
@@ -2012,7 +2012,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 43
@@ -3481,7 +3481,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 78
@@ -4860,7 +4860,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6

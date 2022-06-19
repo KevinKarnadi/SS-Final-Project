@@ -35,11 +35,13 @@ var TrajectoryLine = /** @class */ (function (_super) {
     function TrajectoryLine() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.arrowPrefab = null;
+        _this.crosshairPrefab = null;
         _this.angle = null;
         _this.power = null;
         _this.label = null;
         _this.line = null;
         _this.arrow = null;
+        _this.crosshair = null;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -60,6 +62,16 @@ var TrajectoryLine = /** @class */ (function (_super) {
             this.line.lineTo(35 + cos - cos * 0.1 * i - (cos / 9), 8 + sin - sin * 0.1 * i - (sin / 9));
         }
         this.line.stroke();
+    };
+    TrajectoryLine.prototype.drawCircle = function (angle) {
+        if (this.crosshair) {
+            var degree = angle * 180 / Math.PI;
+            this.crosshair.getComponent("Crosshair").crosshairMove(degree);
+        }
+        else {
+            this.crosshair = cc.instantiate(this.crosshairPrefab);
+            this.crosshair.getComponent("Crosshair").init(this.node);
+        }
     };
     TrajectoryLine.prototype.drawCurveLine = function (angle, power) {
         if (this.arrow) {
@@ -93,10 +105,17 @@ var TrajectoryLine = /** @class */ (function (_super) {
             this.arrow.destroy();
             this.arrow = null;
         }
+        else if (this.crosshair) {
+            this.crosshair.destroy();
+            this.crosshair = null;
+        }
     };
     __decorate([
         property(cc.Prefab)
     ], TrajectoryLine.prototype, "arrowPrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], TrajectoryLine.prototype, "crosshairPrefab", void 0);
     __decorate([
         property(cc.Label)
     ], TrajectoryLine.prototype, "angle", void 0);

@@ -43,7 +43,6 @@ var Arrow = /** @class */ (function (_super) {
             this.node.scaleX = 1;
         }
         else {
-            console.log("beda");
             this.node.position = cc.v3(-35, 8);
             this.node.scaleX = -1;
         }

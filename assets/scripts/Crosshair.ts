@@ -1,13 +1,12 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class Arrow extends cc.Component 
+export default class Crosshair1 extends cc.Component 
 {
-    private label = null;
-
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
+        console.log("aaa")
         this.setInitPos(node);
     }
 
@@ -33,7 +32,7 @@ export default class Arrow extends cc.Component
     }
 
     //make the arrow move according to the angle
-    private arrowMove(angle)
+    private crosshairMove(angle)
     {
         this.node.angle = angle;
     }

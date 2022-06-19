@@ -13,6 +13,9 @@ export default class TrajectoryLine extends cc.Component {
     @property(cc.Prefab)
     arrowPrefab: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    crosshairPrefab: cc.Prefab = null;
+
     @property(cc.Label)
     angle: cc.Label = null;
 
@@ -25,6 +28,8 @@ export default class TrajectoryLine extends cc.Component {
     private line: cc.Graphics = null;
 
     private arrow = null;
+
+    private crosshair = null;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -51,8 +56,14 @@ export default class TrajectoryLine extends cc.Component {
         this.line.stroke();
     }
 
-    public drawCircle(angle, range) {
-        
+    public drawCircle(angle) {
+        if(this.crosshair) {
+            let degree = angle * 180 / Math.PI;
+            this.crosshair.getComponent("Crosshair").crosshairMove(degree);
+        } else {
+            this.crosshair = cc.instantiate(this.crosshairPrefab);
+            this.crosshair.getComponent("Crosshair").init(this.node);
+        }
     }
 
     public drawCurveLine(angle, power) {
@@ -85,6 +96,9 @@ export default class TrajectoryLine extends cc.Component {
         if(this.arrow) {
             this.arrow.destroy();
             this.arrow = null;
+        } else if(this.crosshair) {
+            this.crosshair.destroy();
+            this.crosshair = null;
         }
     }
 }

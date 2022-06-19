@@ -500,23 +500,23 @@
     "relativePath": "model\\primitives.fbx"
   },
   "486aa8ce-d412-4d43-a012-1887f2c7be5e": {
-    "asset": 1655570101235,
-    "meta": 1655620784897,
+    "asset": 1655628265312,
+    "meta": 1655628777003,
     "relativePath": "downloadedAssets"
   },
   "e7f16894-f6bc-49da-8936-f4d9ec85feea": {
-    "asset": 1655620672993,
-    "meta": 1655620784909,
+    "asset": 1655628471247,
+    "meta": 1655628777004,
     "relativePath": "prefabs"
   },
   "b5d82e68-2e74-4126-966f-946ea363403d": {
-    "asset": 1655620673015,
-    "meta": 1655620784909,
+    "asset": 1655625172642,
+    "meta": 1655628777006,
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655620673018,
-    "meta": 1655620784910,
+    "asset": 1655625172649,
+    "meta": 1655628777007,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
@@ -10664,11 +10664,6 @@
     "meta": 1655620785365,
     "relativePath": "prefabs\\Arrow.prefab"
   },
-  "59d65ac2-77ae-4779-a35b-8a22d30354c4": {
-    "asset": 1655582097390,
-    "meta": 1655620785676,
-    "relativePath": "scripts\\Arrow.ts"
-  },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
     "asset": 1655583182545,
     "meta": 1655620785712,
@@ -10774,20 +10769,10 @@
     "meta": 1655620785656,
     "relativePath": "scripts\\AreaNode.ts"
   },
-  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
-    "asset": 1655623941911,
-    "meta": 1655624027073,
-    "relativePath": "scripts\\TrajectoryLine.ts"
-  },
   "889b5329-bfed-4779-9715-b56e83d934ca": {
     "asset": 1655624989024,
     "meta": 1655624995080,
     "relativePath": "scripts\\Bullet.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655625172649,
-    "meta": 1655625258507,
-    "relativePath": "scripts\\Player.ts"
   },
   "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc": {
     "asset": 1655625172605,
@@ -10795,18 +10780,58 @@
     "relativePath": "prefabs\\damageParticle.prefab"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655625172643,
-    "meta": 1655625258536,
+    "asset": 1655627232055,
+    "meta": 1655627232083,
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655625172625,
-    "meta": 1655625258554,
+    "asset": 1655629506822,
+    "meta": 1655629506856,
     "relativePath": "scenes\\map1.fire"
   },
+  "d9ff03ee-14cd-45d2-a69e-056dab059d69": {
+    "asset": 1655628219378,
+    "meta": 1655628265392,
+    "relativePath": "downloadedAssets\\redcrosshair2.png"
+  },
+  "27c8e39e-21b5-4447-bf25-d0e2d7d47a15": {
+    "asset": 1655628182501,
+    "meta": 1655628265429,
+    "relativePath": "downloadedAssets\\redcrosshair.png"
+  },
+  "012d44b0-45fd-4eb9-8cb5-f5e76f9f2f68": {
+    "asset": 1655629329006,
+    "meta": 1655629329023,
+    "relativePath": "prefabs\\Crosshair1.prefab"
+  },
+  "8dc08216-1188-4f74-a218-9e03a4ea2e34": {
+    "asset": 1655629340767,
+    "meta": 1655629340777,
+    "relativePath": "prefabs\\Crosshair2.prefab"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655629125433,
+    "meta": 1655629134618,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "59d65ac2-77ae-4779-a35b-8a22d30354c4": {
+    "asset": 1655629473521,
+    "meta": 1655629491989,
+    "relativePath": "scripts\\Arrow.ts"
+  },
+  "4dfcd8af-4f2f-439b-82f2-a7692698c4f7": {
+    "asset": 1655629792282,
+    "meta": 1655629794335,
+    "relativePath": "scripts\\Crosshair.ts"
+  },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655625370508,
-    "meta": 1655625372102,
+    "asset": 1655630057669,
+    "meta": 1655630078687,
     "relativePath": "scripts\\GameManager.ts"
+  },
+  "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
+    "asset": 1655630048985,
+    "meta": 1655630078738,
+    "relativePath": "scripts\\TrajectoryLine.ts"
   }
 }

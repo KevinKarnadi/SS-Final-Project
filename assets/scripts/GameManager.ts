@@ -328,7 +328,7 @@ export default class GameManager extends cc.Component {
                 } else if(this.player.gunType == "sniper") {
                     this.player.line.getComponent("TrajectoryLine").drawStraightLine(this.shootAngle, 400); // draw trajectory line
                 } else if(this.player.gunType == "shotgun") {
-                    this.player.line.getComponent("TrajectoryLine").drawCircle(this.shootAngle, 100); // draw trajectory line
+                    this.player.line.getComponent("TrajectoryLine").drawCircle(this.shootAngle); // draw trajectory line
                 }
             } else if(this.player.weapon == "bomb") {
                 let power = (Math.abs(diffY) >= Math.abs(diffX) ? Math.abs(diffY) : Math.abs(diffX)) 

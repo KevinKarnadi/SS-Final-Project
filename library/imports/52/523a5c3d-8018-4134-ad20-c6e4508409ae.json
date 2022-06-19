@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "redcrosshair",
+    "texture": "27c8e39e-21b5-4447-bf25-d0e2d7d47a15",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      2000,
+      1980
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      2001,
+      1981
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

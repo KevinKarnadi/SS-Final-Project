@@ -285,6 +285,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": null,
     "_id": "3ep6Z0rjpMppnB0/Fdq3wW"
   },
   {
@@ -540,7 +541,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 8
@@ -1912,6 +1913,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": null,
     "_id": "a7lLcG491PBJn3d+gGNY8Y"
   },
   {
@@ -2006,7 +2008,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 43
@@ -3378,6 +3380,7 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": null,
     "_id": "c9V8U5ZQZDfKA6ReVMtt1W"
   },
   {
@@ -3472,7 +3475,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 78
@@ -4844,11 +4847,12 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": null,
     "_id": "4fT/X3nmBPnKfZ8i7JHTK9"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Aim Layout",
+    "_name": "Aim Bomb Layout",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6
