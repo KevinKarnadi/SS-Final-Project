@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Weapon0",
+    "_name": "",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Weapon0",
+    "_name": "Weapon2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -61,8 +61,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        11.079,
-        -88.55,
+        376.71,
+        -70.268,
         0,
         0,
         0,
@@ -170,10 +170,10 @@
       "__uuid__": "b2687ac4-099e-403c-a192-ff477686f4f5"
     },
     "_spriteFrame": {
-      "__uuid__": "c8d8d646-a265-4a89-a59b-8c57dfffdd3d"
+      "__uuid__": "1717abb4-e1ad-472b-9a0f-5f3097bf0968"
     },
     "_texture": null,
-    "_stopped": false,
+    "_stopped": true,
     "playOnLoad": true,
     "autoRemoveOnFinish": false,
     "totalParticles": 150,
@@ -261,7 +261,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "7b/N7t7qFAYLwXj2cPhppB",
+    "fileId": "00Q2Re/uRIe4RJR9pAZdar",
     "sync": false
   },
   {
@@ -344,7 +344,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "6724d073-18b5-4c62-85ae-3d7da38b8f93"
+      "__uuid__": "91383da2-9c21-4cab-a14a-ca9e115c8428"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -368,7 +368,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "45yTdLhtBNOZfGRJRB+B1J",
+    "fileId": "735PBOv7tErqjgR6CRDBEP",
     "sync": false
   },
   {
@@ -430,7 +430,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "weaponType": "0",
+    "weaponType": "2",
     "_id": ""
   },
   {

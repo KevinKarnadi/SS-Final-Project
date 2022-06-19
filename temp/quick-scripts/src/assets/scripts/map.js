@@ -72,8 +72,8 @@ var Map = /** @class */ (function (_super) {
             this.firePool.put(fire);
             // y.max = -222.5
         }
-        this.schedule(this.spawnWeapon, 18);
-        this.schedule(this.spawnPotion, 17);
+        this.schedule(this.spawnWeapon, 10);
+        this.schedule(this.spawnPotion, 12);
         this.schedule(function () {
             _this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8);
