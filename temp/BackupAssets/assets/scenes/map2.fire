@@ -57557,6 +57557,21 @@
     "firePrefab": {
       "__uuid__": "ebdde834-cfd0-4156-ae34-678aa755dd4e"
     },
+    "weaponPrefab0": {
+      "__uuid__": "871e6f87-2c90-4061-b43a-d92069aae244"
+    },
+    "weaponPrefab1": {
+      "__uuid__": "2a471583-08aa-468c-bb5e-4dd1ff887c57"
+    },
+    "weaponPrefab2": {
+      "__uuid__": "e95d217b-2b5f-4a77-8edb-0fa96c9e7f26"
+    },
+    "weaponPrefab3": {
+      "__uuid__": "e9ac18d4-37f3-4ced-b93e-452f4b3ad0fe"
+    },
+    "weaponPrefab4": {
+      "__uuid__": "744654eb-e22d-41fd-899b-58f80a2910c8"
+    },
     "_id": "d7c3soqLhPSKpG37foEoDO"
   },
   {

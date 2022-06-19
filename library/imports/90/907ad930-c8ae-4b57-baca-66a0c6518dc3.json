@@ -286,6 +286,9 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
     "_id": "b8ONIcom5MjLYeo6hKw1Rl"
   },
   {
@@ -1913,6 +1916,9 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
     "_id": "ee/3QjZklMfo1GcOYIhGwG"
   },
   {
@@ -3379,6 +3385,9 @@
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
     },
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
+    },
     "_id": "7ePlkS2wFIro7h/fX2cBvI"
   },
   {
@@ -4844,6 +4853,9 @@
     },
     "bombPrefab": {
       "__uuid__": "1bc757ba-fa42-4e60-a9b6-7867db0cfcd8"
+    },
+    "damageParc": {
+      "__uuid__": "e39ca372-da23-4eda-a8a3-8b9c9c99e6dc"
     },
     "_id": "11neOE4aVPt5qfYcDskN35"
   },
