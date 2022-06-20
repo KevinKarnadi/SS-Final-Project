@@ -11254,7 +11254,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "face3",
+    "_name": "face2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 235
@@ -11348,7 +11348,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "face4",
+    "_name": "face3",
     "_objFlags": 0,
     "_parent": {
       "__id__": 235

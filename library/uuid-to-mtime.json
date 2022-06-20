@@ -10950,13 +10950,13 @@
     "relativePath": "Custom Soldiers\\characters\\char2\\idle\\2_Char_Idle_000.png"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655705041342,
-    "meta": 1655705041388,
+    "asset": 1655706364065,
+    "meta": 1655706364096,
     "relativePath": "scenes\\map1.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655705101013,
-    "meta": 1655705101045,
+    "asset": 1655706385244,
+    "meta": 1655706385273,
     "relativePath": "scenes\\map2.fire"
   },
   "8ef4c6df-818f-40d9-8184-63a1bbde492f": {
@@ -11005,8 +11005,8 @@
     "relativePath": "scripts\\Bullet.ts"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655705747413,
-    "meta": 1655705753638,
+    "asset": 1655706371871,
+    "meta": 1655706373964,
     "relativePath": "scripts\\GameManager.ts"
   }
 }
