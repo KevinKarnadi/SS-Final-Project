@@ -82,8 +82,6 @@ export default class GameManager extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        cc.audioEngine.stopMusic();
-        this.playBGM();
         cc.director.getPhysicsManager().enabled = true;
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
@@ -92,14 +90,16 @@ export default class GameManager extends cc.Component {
         // this.playerNum = 4;
         // this.alivePlayer = this.totalPlayer;
         this.alivePlayer = parseInt(this.playerNum);
-    }
-    
-    start () {
+        
+        cc.audioEngine.stopMusic();
+        this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
         this.initPauseMenuButtons();
         this.initSettingsMenuButtons();
     }
+    
+    start () {}
 
     update (dt) {
         

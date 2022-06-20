@@ -3,13 +3,13 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class chooseMap extends cc.Component {
 
-    // onLoad () {}
-
-    start () {
+    onLoad () {
         this.initMap1Btn();
         this.initMap2Btn();
         this.initBackBtn();
     }
+
+    start () {}
 
     // update (dt) {}
 

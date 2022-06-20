@@ -36,12 +36,11 @@ export default class MainMenu extends cc.Component {
 
     onLoad () {
         this.playBGM();
-    }
-
-    start () {
         this.initSignUpBtn();
         this.initSignInBtn();
     }
+
+    start () {}
 
     update (dt) {}
 

@@ -41,12 +41,12 @@ export default class SignUp extends cc.Component {
         cc.director.loadScene("main menu");
     }
 
-    onLoad () {}
-
-    start () {
+    onLoad () {
         this.initSignUpBtn();
         this.initBackBtn();
     }
+
+    start () {}
 
     update (dt) {}
 

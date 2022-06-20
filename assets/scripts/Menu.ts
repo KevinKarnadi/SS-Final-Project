@@ -12,12 +12,11 @@ export default class Menu extends cc.Component {
 
     onLoad() {
         this.playBGM();
-    }
-
-    start () {
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     }
+
+    start () {}
 
     playBGM() {
         cc.audioEngine.playMusic(this.bgm, true);

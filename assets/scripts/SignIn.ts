@@ -39,12 +39,12 @@ export default class SignIn extends cc.Component {
         cc.director.loadScene("main menu");
     }
 
-    onLoad () {}
-
-    start () {
+    onLoad () {
         this.initSignInBtn();
         this.initBackBtn();
     }
+
+    start () {}
 
     update (dt) {}
 
