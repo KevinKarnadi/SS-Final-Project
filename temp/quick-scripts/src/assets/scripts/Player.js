@@ -61,7 +61,7 @@ var Player = /** @class */ (function (_super) {
         _this.HP = 100;
         _this.hurt = false;
         _this.weapon = "gun";
-        _this.gunType = "burst";
+        _this.gunType = "normal";
         _this.currWeaponNum = "0";
         _this.aim = false;
         return _this;
@@ -252,7 +252,6 @@ var Player = /** @class */ (function (_super) {
         }
         else if (mode == "burst") {
             this.schedule(function () {
-                console.log("boom");
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
