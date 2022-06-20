@@ -29,12 +29,12 @@ var chooseMap = /** @class */ (function (_super) {
     function chooseMap() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    // onLoad () {}
-    chooseMap.prototype.start = function () {
+    chooseMap.prototype.onLoad = function () {
         this.initMap1Btn();
         this.initMap2Btn();
         this.initBackBtn();
     };
+    chooseMap.prototype.start = function () { };
     // update (dt) {}
     chooseMap.prototype.initBackBtn = function () {
         var clickEventHandler = new cc.Component.EventHandler();

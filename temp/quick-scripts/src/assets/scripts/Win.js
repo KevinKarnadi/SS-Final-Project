@@ -39,6 +39,7 @@ var Win = /** @class */ (function (_super) {
         _this.char2 = null;
         _this.char3 = null;
         _this.char4 = null;
+        _this.gameover = false;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -46,33 +47,41 @@ var Win = /** @class */ (function (_super) {
     Win.prototype.start = function () {
     };
     Win.prototype.update = function (dt) {
-        if (cc.find("Canvas/Game Manager").getComponent("GameManager").getWin()) {
-            this.playername.getComponent(cc.Label).string = cc.find("Canvas/Main Camera/UI/Profile/name").getComponent(cc.Label).string;
-            this.winnerScore.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").scoreLabel.string;
-            this.winnerCoin.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").coinLabel.string;
-            this.winnerGem.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").gemLabel.string;
-            if (cc.find("Canvas/Main Camera/UI/Profile/face0").active) {
-                this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char1;
-                //cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
+        if (!this.gameover) {
+            if (cc.find("Canvas/Game Manager").getComponent("GameManager").getWin()) {
+                this.gameover = true;
+                this.playername.getComponent(cc.Label).string = cc.find("Canvas/Main Camera/UI/Profile/name").getComponent(cc.Label).string;
+                this.winnerScore.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").scoreLabel.string;
+                this.winnerCoin.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").coinLabel.string;
+                this.winnerGem.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").gemLabel.string;
+                if (cc.find("Canvas/Main Camera/UI/Profile/face0").active) {
+                    this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char1;
+                    //cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
+                }
+                if (cc.find("Canvas/Main Camera/UI/Profile/face1").active) {
+                    this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char2;
+                    //cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
+                }
+                if (cc.find("Canvas/Main Camera/UI/Profile/face2").active) {
+                    this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char3;
+                    //cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
+                }
+                if (cc.find("Canvas/Main Camera/UI/Profile/face3").active) {
+                    this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char4;
+                    //cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
+                }
+                cc.find("Canvas/Main Camera/UI/Timer").active = false;
+                cc.find("Canvas/Main Camera/UI/Record").active = false;
+                cc.find("Canvas/Main Camera/UI/WeaponUi").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile").active = false;
+                var action = cc.sequence(cc.fadeIn(2), cc.fadeOut(2));
+                this.node.runAction(action);
             }
-            if (cc.find("Canvas/Main Camera/UI/Profile/face1").active) {
-                this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char2;
-                //cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
-            }
-            if (cc.find("Canvas/Main Camera/UI/Profile/face2").active) {
-                this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char3;
-                //cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
-            }
-            if (cc.find("Canvas/Main Camera/UI/Profile/face3").active) {
-                this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char4;
-                //cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
-            }
-            cc.find("Canvas/Main Camera/UI/Timer").active = false;
-            cc.find("Canvas/Main Camera/UI/Record").active = false;
-            cc.find("Canvas/Main Camera/UI/WeaponUi").active = false;
-            cc.find("Canvas/Main Camera/UI/Profile").active = false;
-            var action = cc.sequence(cc.fadeIn(2), cc.fadeOut(2));
-            this.node.runAction(action);
+        }
+        else {
+            this.scheduleOnce(function () {
+                cc.director.loadScene("ending");
+            }, 6);
         }
     };
     __decorate([

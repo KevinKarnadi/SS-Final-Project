@@ -110,11 +110,11 @@ var SignUp = /** @class */ (function (_super) {
     SignUp.prototype.back = function () {
         cc.director.loadScene("main menu");
     };
-    SignUp.prototype.onLoad = function () { };
-    SignUp.prototype.start = function () {
+    SignUp.prototype.onLoad = function () {
         this.initSignUpBtn();
         this.initBackBtn();
     };
+    SignUp.prototype.start = function () { };
     SignUp.prototype.update = function (dt) { };
     SignUp.prototype.updateUserStats = function (coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
         var userStats = {

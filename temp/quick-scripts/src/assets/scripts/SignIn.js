@@ -59,11 +59,11 @@ var SignIn = /** @class */ (function (_super) {
     SignIn.prototype.back = function () {
         cc.director.loadScene("main menu");
     };
-    SignIn.prototype.onLoad = function () { };
-    SignIn.prototype.start = function () {
+    SignIn.prototype.onLoad = function () {
         this.initSignInBtn();
         this.initBackBtn();
     };
+    SignIn.prototype.start = function () { };
     SignIn.prototype.update = function (dt) { };
     SignIn = __decorate([
         ccclass

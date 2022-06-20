@@ -56,11 +56,10 @@ var MainMenu = /** @class */ (function (_super) {
     };
     MainMenu.prototype.onLoad = function () {
         this.playBGM();
-    };
-    MainMenu.prototype.start = function () {
         this.initSignUpBtn();
         this.initSignInBtn();
     };
+    MainMenu.prototype.start = function () { };
     MainMenu.prototype.update = function (dt) { };
     __decorate([
         property(cc.AudioClip)

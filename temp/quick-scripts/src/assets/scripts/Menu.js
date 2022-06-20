@@ -69,12 +69,10 @@ var Menu = /** @class */ (function (_super) {
     }
     Menu.prototype.onLoad = function () {
         this.playBGM();
-        this;
-    };
-    Menu.prototype.start = function () {
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     };
+    Menu.prototype.start = function () { };
     Menu.prototype.playBGM = function () {
         cc.audioEngine.playMusic(this.bgm, true);
     };
