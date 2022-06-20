@@ -506,23 +506,23 @@ export default class GameManager extends cc.Component {
         if(this.player){
             switch (this.player.getCurrWeaponNum()){
                 case "0":
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite0;
                     // console.log(weaponSprite, "updateweaponUi");
                     break;
                 case "1":
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite1;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite1;
                     break;
                 case "2":
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite2;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite2;
                     break;
                 case "3":
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
                     break;
                 case "4":
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite4;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite4;
                     break;
                 default:
-                    cc.find("Canvas/Main Camera/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
+                    cc.find("Canvas/Main Camera/UI/WeaponUi").getChildByName("Sprite").getComponent(cc.Sprite).spriteFrame = this.weaponSprite3;
                     break;
             }
         }
@@ -541,38 +541,38 @@ export default class GameManager extends cc.Component {
     }
 
     changePlayerUi(){
-        cc.find("Canvas/Main Camera/Profile/name").getComponent(cc.Label).string = this.player.playerName.getComponent(cc.Label).string;
+        cc.find("Canvas/Main Camera/UI/Profile/name").getComponent(cc.Label).string = this.player.playerName.getComponent(cc.Label).string;
 
         switch(this.player.playerChar){
             case "char1":
-                cc.find("Canvas/Main Camera/Profile/face0").active = true;
-                cc.find("Canvas/Main Camera/Profile/face1").active = false;
-                cc.find("Canvas/Main Camera/Profile/face2").active = false;
-                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face0").active = true;
+                cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
             case "char2":
-                cc.find("Canvas/Main Camera/Profile/face0").active = false;
-                cc.find("Canvas/Main Camera/Profile/face1").active = true;
-                cc.find("Canvas/Main Camera/Profile/face2").active = false;
-                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face1").active = true;
+                cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
             case "char3":
-                cc.find("Canvas/Main Camera/Profile/face0").active = false;
-                cc.find("Canvas/Main Camera/Profile/face1").active = false;
-                cc.find("Canvas/Main Camera/Profile/face2").active = true;
-                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face2").active = true;
+                cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
             case "char4":
-                cc.find("Canvas/Main Camera/Profile/face0").active = false;
-                cc.find("Canvas/Main Camera/Profile/face1").active = false;
-                cc.find("Canvas/Main Camera/Profile/face2").active = false;
-                cc.find("Canvas/Main Camera/Profile/face3").active = true;
+                cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face3").active = true;
                 break;
             default:
-                cc.find("Canvas/Main Camera/Profile/face0").active = true;
-                cc.find("Canvas/Main Camera/Profile/face1").active = false;
-                cc.find("Canvas/Main Camera/Profile/face2").active = false;
-                cc.find("Canvas/Main Camera/Profile/face3").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face0").active = true;
+                cc.find("Canvas/Main Camera/UI/Profile/face1").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face2").active = false;
+                cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
         }
     }

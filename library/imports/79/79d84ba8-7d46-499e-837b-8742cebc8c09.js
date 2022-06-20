@@ -300,6 +300,9 @@ var Player = /** @class */ (function (_super) {
             this.node.destroy();
             // this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         }, 1);
+        cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 10000);
+        cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("gem", 50);
+        cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 500);
         cc.audioEngine.playEffect(this.dieAudio, false);
         cc.find("Canvas/Game Manager").getComponent("GameManager").playerDie();
     };

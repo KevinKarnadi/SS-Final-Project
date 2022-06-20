@@ -31,6 +31,7 @@ var Ground2 = /** @class */ (function (_super) {
         _this.groundPrefab = null;
         _this.Bound = -223; // base
         _this.growDir = 0;
+        _this.isGone = false;
         return _this;
     }
     Ground2.prototype.onLoad = function () {
@@ -68,17 +69,41 @@ var Ground2 = /** @class */ (function (_super) {
     };
     Ground2.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
-        if (other.node.group == "bomb" || other.node.group == "explosiveObj") {
+        if (other.node.group == "bomb") {
             this.node.getChildByName("particle").active = true;
-            this.scheduleOnce(function () {
-                _this.node.destroy();
-            }, 0.1);
+            if (!this.isGone) {
+                this.scheduleOnce(function () {
+                    _this.node.destroy();
+                }, 0.1);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
         }
         else if (other.node.group == "bullet") {
             this.node.getChildByName("particle").active = true;
-            this.scheduleOnce(function () {
-                _this.node.destroy();
-            }, 0.05);
+            if (!this.isGone) {
+                this.scheduleOnce(function () {
+                    _this.node.destroy();
+                }, 0.05);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
+        }
+    };
+    Ground2.prototype.onPreSolve = function (contact, self, other) {
+        var _this = this;
+        if (other.node.group == "explosiveObj") {
+            this.node.getChildByName("particle").active = true;
+            if (!this.isGone) {
+                this.scheduleOnce(function () {
+                    _this.node.destroy();
+                }, 0.35);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
         }
     };
     __decorate([

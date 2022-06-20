@@ -12,6 +12,8 @@ export default class Ground2 extends cc.Component {
     @property()
     growDir: number = 0;
 
+    private isGone: boolean = false;
+
     onLoad () {
         this.createBlocks();
     }
@@ -52,17 +54,41 @@ export default class Ground2 extends cc.Component {
     }
 
     onBeginContact(contact, self, other) {
-        if(other.node.group == "bomb" || other.node.group == "explosiveObj") {
+        if(other.node.group == "bomb") {
             this.node.getChildByName("particle").active = true;
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0.1);
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.1);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
             
         } else if(other.node.group == "bullet") {
             this.node.getChildByName("particle").active = true;
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0.05);
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.05);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
         }
+    }
+
+    onPreSolve(contact, self, other){
+        if(other.node.group == "explosiveObj"){
+            this.node.getChildByName("particle").active = true;
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.35);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
+        } 
     }
 }

@@ -34,7 +34,7 @@ var MainMenu = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "MainMenu";
         clickEventHandler.handler = "signUp";
-        cc.find("Canvas/menuBg/SignUpBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Block/Big Layout/SignUpBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     MainMenu.prototype.signUp = function () {
         cc.director.loadScene("sign up");
@@ -44,7 +44,7 @@ var MainMenu = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "MainMenu";
         clickEventHandler.handler = "signIn";
-        cc.find("Canvas/menuBg/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     MainMenu.prototype.signIn = function () {
         cc.director.loadScene("sign in");
