@@ -1406,6 +1406,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "bgm": {
+      "__uuid__": "b69c39d4-8e59-4b93-8732-108f667c801d"
+    },
     "_id": "dfCLN6oHFJvapVT49If1v8"
   }
 ]

@@ -54,6 +54,14 @@ var InstructionsMenuOption2 = /** @class */ (function (_super) {
         settings_clickEventHandler.component = "Menu";
         settings_clickEventHandler.handler = "settings";
         cc.find("SettingsBtn").getComponent(cc.Button).clickEvents.push(settings_clickEventHandler);
+        var shopbtn = new cc.Component.EventHandler();
+        shopbtn.target = this.node;
+        shopbtn.component = "Menu";
+        shopbtn.handler = "loadShop";
+        cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+    };
+    InstructionsMenuOption2.prototype.loadShop = function () {
+        cc.director.loadScene("shop");
     };
     InstructionsMenuOption2.prototype.loadInstructions = function () {
         cc.director.loadScene("instructions");

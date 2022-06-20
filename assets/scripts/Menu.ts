@@ -36,6 +36,16 @@ export default class InstructionsMenuOption2 extends cc.Component {
         settings_clickEventHandler.component = "Menu";
         settings_clickEventHandler.handler = "settings";
         cc.find("SettingsBtn").getComponent(cc.Button).clickEvents.push(settings_clickEventHandler);
+
+        let shopbtn = new cc.Component.EventHandler();
+        shopbtn.target = this.node;
+        shopbtn.component = "Menu";
+        shopbtn.handler = "loadShop";
+        cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+    }
+
+    loadShop(){
+        cc.director.loadScene("shop");
     }
 
     loadInstructions(){
