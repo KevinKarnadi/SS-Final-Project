@@ -59,6 +59,7 @@ var Bullet = /** @class */ (function (_super) {
     //make the bullet move from current position
     Bullet.prototype.bulletMove = function () {
         var moveDir = null;
+        console.log("aaa");
         // decide bullet direction
         if (this.node.scaleX > 0) {
             moveDir = 1;

@@ -61,7 +61,7 @@ var Player = /** @class */ (function (_super) {
         _this.HP = 100;
         _this.hurt = false;
         _this.weapon = "gun";
-        _this.gunType = "normal";
+        _this.gunType = "burst";
         _this.currWeaponNum = "0";
         _this.aim = false;
         return _this;
@@ -256,7 +256,7 @@ var Player = /** @class */ (function (_super) {
                 var bullet = cc.instantiate(this.bulletPrefab);
                 if (bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node), 1000;
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                 }
             }, 0.05, 2);
         }

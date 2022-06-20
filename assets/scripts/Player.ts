@@ -273,11 +273,10 @@ export default class Player extends cc.Component {
         }
         else if(mode == "burst") {
             this.schedule(function() {
-                console.log("boom");
                 let bullet = cc.instantiate(this.bulletPrefab);
                 if(bullet != null) {
                     bullet.getComponent('Bullet').setAngle(this.angle);
-                    bullet.getComponent('Bullet').init(this.node), 1000;
+                    bullet.getComponent('Bullet').init(this.node, 1000);
                 }
             }, 0.05, 2);
         }
