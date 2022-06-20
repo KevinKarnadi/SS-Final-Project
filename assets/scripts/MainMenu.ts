@@ -34,10 +34,11 @@ export default class MainMenu extends cc.Component {
         cc.audioEngine.playMusic(this.bgm, true);
     }
 
-    onLoad () {}
+    onLoad () {
+        this.playBGM();
+    }
 
     start () {
-        this.playBGM();
         this.initSignUpBtn();
         this.initSignInBtn();
     }

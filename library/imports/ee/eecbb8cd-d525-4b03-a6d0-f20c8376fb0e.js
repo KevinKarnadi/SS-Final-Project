@@ -61,17 +61,18 @@ var GameManager = /** @class */ (function (_super) {
     }
     // LIFE-CYCLE CALLBACKS:
     GameManager.prototype.onLoad = function () {
+        cc.audioEngine.stopMusic();
+        this.playBGM();
         cc.director.getPhysicsManager().enabled = true;
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        // this.playerNum = 4;
         // this.alivePlayer = this.totalPlayer;
         this.alivePlayer = parseInt(this.playerNum);
     };
     GameManager.prototype.start = function () {
-        cc.audioEngine.stopMusic();
-        this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
         this.initPauseMenuButtons();
@@ -404,7 +405,10 @@ var GameManager = /** @class */ (function (_super) {
         cc.find("Canvas/Main Camera/Settings Menu").active = true;
     };
     GameManager.prototype.exit = function () {
-        //
+        cc.audioEngine.stopAll();
+        cc.director.loadScene("loading", function () {
+            cc.director.loadScene("menu");
+        });
     };
     // Settings Menu Buttons
     GameManager.prototype.initSettingsMenuButtons = function () {
@@ -528,6 +532,9 @@ var GameManager = /** @class */ (function (_super) {
                 cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
         }
+    };
+    GameManager.prototype.getCurrPlayer = function () {
+        return this.currPlayer;
     };
     __decorate([
         property(Player_1.default)

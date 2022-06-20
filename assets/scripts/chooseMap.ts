@@ -8,9 +8,24 @@ export default class chooseMap extends cc.Component {
     start () {
         this.initMap1Btn();
         this.initMap2Btn();
+        this.initBackBtn();
     }
 
     // update (dt) {}
+
+    initBackBtn() {
+        let clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "chooseMap";
+        clickEventHandler.handler = "back";
+        cc.find("BlueButton").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    }
+
+    back() {
+        cc.director.loadScene("loading", ()=>{
+            cc.director.loadScene("player name");
+        });
+    }
 
     initMap1Btn() {
         let clickEventHandler = new cc.Component.EventHandler();
@@ -21,6 +36,7 @@ export default class chooseMap extends cc.Component {
     }
 
     map1() {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map1");
         });
@@ -35,6 +51,7 @@ export default class chooseMap extends cc.Component {
     }
 
     map2() {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map2");
         });

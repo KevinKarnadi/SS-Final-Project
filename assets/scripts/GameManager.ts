@@ -82,18 +82,19 @@ export default class GameManager extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        cc.audioEngine.stopMusic();
+        this.playBGM();
         cc.director.getPhysicsManager().enabled = true;
         cc.director.getPhysicsManager().gravity = cc.v2(0, -980);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        // this.playerNum = 4;
         // this.alivePlayer = this.totalPlayer;
         this.alivePlayer = parseInt(this.playerNum);
     }
     
     start () {
-        cc.audioEngine.stopMusic();
-        this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
         this.initPauseMenuButtons();
@@ -442,7 +443,10 @@ export default class GameManager extends cc.Component {
     }
 
     exit() {
-        //
+        cc.audioEngine.stopAll();
+        cc.director.loadScene("loading", ()=>{
+            cc.director.loadScene("menu");
+        });
     }
 
     // Settings Menu Buttons
@@ -583,5 +587,9 @@ export default class GameManager extends cc.Component {
                 cc.find("Canvas/Main Camera/UI/Profile/face3").active = false;
                 break;
         }
+    }
+
+    getCurrPlayer(){
+        return this.currPlayer;
     }
 }

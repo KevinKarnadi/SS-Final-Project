@@ -24,16 +24,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var InstructionsMenuOption2 = /** @class */ (function (_super) {
-    __extends(InstructionsMenuOption2, _super);
-    function InstructionsMenuOption2() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var Menu = /** @class */ (function (_super) {
+    __extends(Menu, _super);
+    function Menu() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.bgm = null;
+        return _this;
     }
-    InstructionsMenuOption2.prototype.start = function () {
+    Menu.prototype.onLoad = function () {
+        this.playBGM();
+    };
+    Menu.prototype.start = function () {
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     };
-    InstructionsMenuOption2.prototype.initMenuButtons = function () {
+    Menu.prototype.playBGM = function () {
+        cc.audioEngine.playMusic(this.bgm, true);
+    };
+    Menu.prototype.initMenuButtons = function () {
         var instrbtn = new cc.Component.EventHandler();
         instrbtn.target = this.node;
         instrbtn.component = "Menu";
@@ -54,17 +62,33 @@ var InstructionsMenuOption2 = /** @class */ (function (_super) {
         settings_clickEventHandler.component = "Menu";
         settings_clickEventHandler.handler = "settings";
         cc.find("SettingsBtn").getComponent(cc.Button).clickEvents.push(settings_clickEventHandler);
+        var shopbtn = new cc.Component.EventHandler();
+        shopbtn.target = this.node;
+        shopbtn.component = "Menu";
+        shopbtn.handler = "loadShop";
+        cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+        var xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Menu";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
     };
-    InstructionsMenuOption2.prototype.loadInstructions = function () {
+    Menu.prototype.loadShop = function () {
+        cc.director.loadScene("shop");
+    };
+    Menu.prototype.loadQuitGame = function () {
+        cc.director.end();
+    };
+    Menu.prototype.loadInstructions = function () {
         cc.director.loadScene("instructions");
     };
-    InstructionsMenuOption2.prototype.loadPlayInstructions = function () {
+    Menu.prototype.loadPlayInstructions = function () {
         cc.director.loadScene("player choose");
     };
-    InstructionsMenuOption2.prototype.settings = function () {
+    Menu.prototype.settings = function () {
         cc.find("Settings Menu").active = true;
     };
-    InstructionsMenuOption2.prototype.initSettingsMenuButtons = function () {
+    Menu.prototype.initSettingsMenuButtons = function () {
         var close_clickEventHandler = new cc.Component.EventHandler();
         close_clickEventHandler.target = this.node;
         close_clickEventHandler.component = "Menu";
@@ -91,28 +115,31 @@ var InstructionsMenuOption2 = /** @class */ (function (_super) {
         sfx_sliderEventHandler.handler = "changeSfxVol";
         cc.find("Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).slideEvents.push(sfx_sliderEventHandler);
     };
-    InstructionsMenuOption2.prototype.close = function () {
+    Menu.prototype.close = function () {
         cc.find("Settings Menu").active = false;
     };
-    InstructionsMenuOption2.prototype.bgMute = function () {
+    Menu.prototype.bgMute = function () {
         cc.audioEngine.setMusicVolume(0);
     };
-    InstructionsMenuOption2.prototype.sfxMute = function () {
+    Menu.prototype.sfxMute = function () {
         cc.audioEngine.setEffectsVolume(0);
     };
-    InstructionsMenuOption2.prototype.changeBgVol = function () {
+    Menu.prototype.changeBgVol = function () {
         var value = cc.find("Settings Menu/Big Layout/BG Volume/bgSlider").getComponent(cc.Slider).progress;
         cc.audioEngine.setMusicVolume(value);
     };
-    InstructionsMenuOption2.prototype.changeSfxVol = function () {
+    Menu.prototype.changeSfxVol = function () {
         var value = cc.find("Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).progress;
         cc.audioEngine.setEffectsVolume(value);
     };
-    InstructionsMenuOption2 = __decorate([
+    __decorate([
+        property(cc.AudioClip)
+    ], Menu.prototype, "bgm", void 0);
+    Menu = __decorate([
         ccclass
-    ], InstructionsMenuOption2);
-    return InstructionsMenuOption2;
+    ], Menu);
+    return Menu;
 }(cc.Component));
-exports.default = InstructionsMenuOption2;
+exports.default = Menu;
 
 cc._RF.pop();

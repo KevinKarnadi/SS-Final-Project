@@ -1,15 +1,26 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class InstructionsMenuOption2 extends cc.Component {
+export default class Menu extends cc.Component {
+
+    @property(cc.AudioClip)
+    bgm: cc.AudioClip = null;
 
     properties: {
             Edit_Box: cc.EditBox,
     }
 
+    onLoad() {
+        this.playBGM();
+    }
+
     start () {
         this.initMenuButtons();
         this.initSettingsMenuButtons();
+    }
+
+    playBGM() {
+        cc.audioEngine.playMusic(this.bgm, true);
     }
 
     initMenuButtons() {
@@ -36,6 +47,26 @@ export default class InstructionsMenuOption2 extends cc.Component {
         settings_clickEventHandler.component = "Menu";
         settings_clickEventHandler.handler = "settings";
         cc.find("SettingsBtn").getComponent(cc.Button).clickEvents.push(settings_clickEventHandler);
+
+        let shopbtn = new cc.Component.EventHandler();
+        shopbtn.target = this.node;
+        shopbtn.component = "Menu";
+        shopbtn.handler = "loadShop";
+        cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+
+        let xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Menu";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
+    }
+
+    loadShop(){
+        cc.director.loadScene("shop");
+    }
+
+    loadQuitGame(){
+        cc.director.end();
     }
 
     loadInstructions(){

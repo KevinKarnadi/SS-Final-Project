@@ -54,9 +54,10 @@ var MainMenu = /** @class */ (function (_super) {
     MainMenu.prototype.playBGM = function () {
         cc.audioEngine.playMusic(this.bgm, true);
     };
-    MainMenu.prototype.onLoad = function () { };
-    MainMenu.prototype.start = function () {
+    MainMenu.prototype.onLoad = function () {
         this.playBGM();
+    };
+    MainMenu.prototype.start = function () {
         this.initSignUpBtn();
         this.initSignInBtn();
     };

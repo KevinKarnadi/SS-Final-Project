@@ -64,6 +64,9 @@ var Player = /** @class */ (function (_super) {
         _this.gunType = "normal";
         _this.currWeaponNum = "0";
         _this.aim = false;
+        _this.skill = "none";
+        _this.speedVec = 1;
+        _this.hpVec = 0;
         _this.sfx_hit = null;
         return _this;
     }
@@ -121,7 +124,10 @@ var Player = /** @class */ (function (_super) {
         if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if (!this.isDie) {
                 cc.audioEngine.playEffect(this.sfx_hit, false);
-                this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
+                console.log(this.HP, "before");
+                this.HP -= (other.node.group == "explosiveObj") ? this.changeHp(25) : this.changeHp(10);
+                this.HP += (7 * this.hpVec);
+                console.log(this.HP, "after");
                 if (this.HP <= 0) {
                     this.HP = 0;
                 }
@@ -200,7 +206,7 @@ var Player = /** @class */ (function (_super) {
         }
     };
     Player.prototype.playerMove = function (dt) {
-        this.node.x += this.moveSpeed * this.moveDirection * dt; // player walking
+        this.node.x += this.moveSpeed * this.speedVec * this.moveDirection * dt; // player walking
         this.isMove = (this.moveDirection != 0) ? true : false;
         if (this.moveDirection == 1 || this.changeDirection == 1) { // change direction using scaling
             this.node.scaleX = 1;
@@ -456,9 +462,39 @@ var Player = /** @class */ (function (_super) {
             this.playerChar = "char4";
             this.playerChar = "char1";
         }
+        this.setSkill(this.playerChar);
     };
     Player.prototype.getCurrWeaponNum = function () {
         return this.currWeaponNum;
+    };
+    Player.prototype.setSkill = function (charNum) {
+        switch (charNum) {
+            case "char1":
+                this.skill = "none";
+                break;
+            case "char2":
+                this.skill = "speed";
+                this.speedVec = 1.5;
+                break;
+            case "char3":
+                this.skill = "health";
+                this.hpVec = 1;
+                break;
+            case "char4":
+                this.skill = "damage";
+                break;
+            default:
+                this.skill = "none";
+                break;
+        }
+    };
+    Player.prototype.changeHp = function (value) {
+        var currPlayer = cc.find("Canvas/Game Manager").getComponent("GameManager").getCurrPlayer();
+        var damageGet = value;
+        if (currPlayer == 3 && value != 25) {
+            damageGet += 10;
+        }
+        return damageGet;
     };
     __decorate([
         property(cc.AudioClip)
