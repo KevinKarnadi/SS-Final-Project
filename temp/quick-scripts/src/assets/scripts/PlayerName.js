@@ -56,6 +56,7 @@ var NewClass = /** @class */ (function (_super) {
         switch (this.playerNum) {
             case "4":
                 cc.find(this.editBoxPath + 'Player4').active = true;
+                cc.find(this.editBoxPath + 'Player3').active = true;
             case "3":
                 cc.find(this.editBoxPath + 'Player3').active = true;
             default:

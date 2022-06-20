@@ -1896,7 +1896,7 @@
   {
     "__type__": "cc.Node",
     "_name": "view",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 35
     },
@@ -1962,7 +1962,7 @@
   {
     "__type__": "cc.Node",
     "_name": "content",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 36
     },
@@ -2037,7 +2037,7 @@
   {
     "__type__": "cc.Node",
     "_name": "background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 37
     },
@@ -2106,7 +2106,7 @@
   {
     "__type__": "cc.Node",
     "_name": "char1",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 38
     },
@@ -2200,7 +2200,7 @@
   {
     "__type__": "cc.Node",
     "_name": "PriceChar1",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 38
     },
@@ -2338,7 +2338,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Gem",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 42
     },
@@ -2374,14 +2374,14 @@
       "array": [
         -31.6,
         0,
-        0,
+        null,
         0,
         0,
         0,
         1,
         1,
         1,
-        1
+        null
       ]
     },
     "_eulerAngles": {
@@ -2432,7 +2432,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 42
     },
@@ -2468,14 +2468,14 @@
       "array": [
         16.832,
         0,
-        0,
+        null,
         0,
         0,
         0,
         1,
         1,
         1,
-        1
+        null
       ]
     },
     "_eulerAngles": {
@@ -2702,7 +2702,7 @@
   {
     "__type__": "cc.Node",
     "_name": "background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 37
     },
@@ -2771,7 +2771,7 @@
   {
     "__type__": "cc.Node",
     "_name": "char1",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 51
     },
@@ -2865,7 +2865,7 @@
   {
     "__type__": "cc.Node",
     "_name": "PriceChar2",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 51
     },
@@ -3003,7 +3003,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Gem",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 55
     },
@@ -3097,7 +3097,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 55
     },
@@ -3367,7 +3367,7 @@
   {
     "__type__": "cc.Node",
     "_name": "background copy",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 37
     },
@@ -3436,7 +3436,7 @@
   {
     "__type__": "cc.Node",
     "_name": "char3",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 64
     },
@@ -3530,7 +3530,7 @@
   {
     "__type__": "cc.Node",
     "_name": "PriceChar3",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 64
     },
@@ -3668,7 +3668,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Gem",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 68
     },
@@ -3762,7 +3762,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 68
     },
@@ -4032,7 +4032,7 @@
   {
     "__type__": "cc.Node",
     "_name": "background copy",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 37
     },
@@ -4101,7 +4101,7 @@
   {
     "__type__": "cc.Node",
     "_name": "char4",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 77
     },
@@ -4195,7 +4195,7 @@
   {
     "__type__": "cc.Node",
     "_name": "PriceChar4",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 77
     },
@@ -4293,8 +4293,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 125,
-      "height": 55
+      "width": null,
+      "height": null
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4305,16 +4305,16 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        0,
-        0,
+        null,
+        null,
+        null,
         0,
         0,
         0,
         1,
         1,
         1,
-        1
+        null
       ]
     },
     "_eulerAngles": {
@@ -4333,7 +4333,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Gem",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 81
     },
@@ -4427,7 +4427,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 81
     },
@@ -4564,10 +4564,10 @@
     "alignMode": 0,
     "_target": null,
     "_alignFlags": 45,
-    "_left": 0,
-    "_right": 0,
-    "_top": 0,
-    "_bottom": 0,
+    "_left": null,
+    "_right": null,
+    "_top": null,
+    "_bottom": null,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,

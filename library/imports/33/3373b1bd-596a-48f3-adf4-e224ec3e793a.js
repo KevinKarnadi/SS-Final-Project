@@ -117,9 +117,7 @@ var Shop = /** @class */ (function (_super) {
         cc.director.loadScene(scene);
     };
     Shop.prototype.loadCharBtn = function () {
-        console.log("load", this.char1);
         if (this.char1 == "true") {
-            console.log("change");
             this.lockBtn(this.char1btn);
         }
         if (this.char2 == "true") {
@@ -133,11 +131,9 @@ var Shop = /** @class */ (function (_super) {
         }
     };
     Shop.prototype.lockBtn = function (btn) {
-        console.log("lock");
         btn.node.off(cc.Node.EventType.MOUSE_DOWN);
         btn.interactable = false;
         btn.enableAutoGrayEffect = true;
-        console.log("change");
         this.changePrice(btn);
     };
     Shop.prototype.changePrice = function (btn) {
@@ -148,9 +144,7 @@ var Shop = /** @class */ (function (_super) {
         var currGem = parseInt(this.gem.string);
         if (currGem >= price) {
             var remain = currGem - price;
-            console.log(remain);
             this.gem.string = remain.toString();
-            console.log(this.gem.string);
             cc.sys.localStorage.setItem("gem", this.gem.string);
             cc.sys.localStorage.setItem(item, true);
             this.setUserStats();
