@@ -35,6 +35,7 @@ export default class Map extends cc.Component {
     private firePool = null;
     private spawnCooldown: number = 0;
     private toSpawnWeaponNum: number = 0;
+    private weaponState: boolean[] = [true, false, false, false, false];
 
     onLoad () {
         if(!this.groundUpperPrefab){
@@ -69,6 +70,24 @@ export default class Map extends cc.Component {
         this.schedule(()=>{
             this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8)
+        // cc.sys.localStorage.setItem("AK47", AK47);
+        // cc.sys.localStorage.setItem("AR", AR);
+        // cc.sys.localStorage.setItem("grenade", grenade);
+        // cc.sys.localStorage.setItem("shotgun", shotgun);
+        // cc.sys.localStorage.setItem("sniper", sniper);
+        this.weaponState[0] = cc.sys.localStorage.getItem("AK47");
+        this.weaponState[1] = cc.sys.localStorage.getItem("AR");
+        this.weaponState[2] = cc.sys.localStorage.getItem("grenade");
+        this.weaponState[3] = cc.sys.localStorage.getItem("shotgun");
+        this.weaponState[4] = cc.sys.localStorage.getItem("sniper");
+        for(let i=0; i<5; i++){
+            if(!this.weaponState[i]){
+                this.weaponState[i] = false;
+            } else{
+                this.weaponState[i] = true;
+            }
+        }
+        // console.log(this.weaponState, "load");
     }
     
     start () {
@@ -122,6 +141,15 @@ export default class Map extends cc.Component {
     spawnWeapon(){
         let newWeapon = null;
         let position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
+        for(let i=0; i<5; i++){
+            if(this.weaponState[this.toSpawnWeaponNum]){
+                break;
+            } else{
+                this.toSpawnWeaponNum++;
+                this.toSpawnWeaponNum %= 5;
+            }
+            // console.log(this.toSpawnWeaponNum, "spawn");
+        }
         switch(this.toSpawnWeaponNum){
             case 0:
                 newWeapon = cc.instantiate(this.weaponPrefab0);
@@ -139,7 +167,7 @@ export default class Map extends cc.Component {
                 newWeapon = cc.instantiate(this.weaponPrefab4);
                 break;
             default:
-                newWeapon = cc.instantiate(this.weaponPrefab3);
+                newWeapon = cc.instantiate(this.weaponPrefab0);
                 break;
         }
 

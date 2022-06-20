@@ -9,6 +9,9 @@ export default class Player extends cc.Component {
     @property(cc.AudioClip)
     dieAudio: cc.AudioClip = null;
 
+    @property(cc.AudioClip)
+    walkAudio: cc.AudioClip = null;
+
     @property(cc.Prefab)
     private bulletPrefab: cc.Prefab = null;
 
@@ -231,6 +234,7 @@ export default class Player extends cc.Component {
     }
 
     playerMove(dt) {
+        //cc.audioEngine.playEffect(this.walkAudio, false);
         this.node.x += this.moveSpeed * this.speedVec * this.moveDirection * dt;    // player walking
         this.isMove = (this.moveDirection != 0) ? true : false;
         if(this.moveDirection == 1 || this.changeDirection == 1) {   // change direction using scaling
@@ -252,6 +256,7 @@ export default class Player extends cc.Component {
 
     playerJump() {
         if(this.isOnGround) {  // player is on ground
+            cc.audioEngine.playEffect(this.jumpAudio, false);
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity);    // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
@@ -316,6 +321,7 @@ export default class Player extends cc.Component {
 
     playerDie() {
         this.isDie = true;
+        cc.audioEngine.playEffect(this.dieAudio, false);
         if (this.playerChar == "char1"){
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
