@@ -99,7 +99,6 @@ export default class Win extends cc.Component {
         cc.sys.localStorage.setItem("gem", lastGem);
         let user = firebase.auth().currentUser;
         if(user) {
-            console.log("aaa");
             var stats = firebase.database().ref("userData/" + user.uid);
             var userStats = {
                 coin: lastCoin,
@@ -107,25 +106,5 @@ export default class Win extends cc.Component {
             }
             return firebase.database().ref("userData/" + user.uid).update(userStats);
         }
-    }
-
-    updateUserStats(coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
-        var userStats = {
-            coin: coin,
-            gem: gem,
-            char1: char1,
-            char2: char2,
-            char3: char3,
-            char4: char4,
-            AK47: AK47,
-            AR: AR,
-            grenade: grenade,
-            shotgun: shotgun,
-            sniper: sniper,
-            purple: purple,
-            forest: forest,
-            username: username
-        }
-        return firebase.database().ref("userData/" + firebase.auth().currentUser.uid).update(userStats);
     }
 }
