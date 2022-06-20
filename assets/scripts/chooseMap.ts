@@ -3,6 +3,8 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class chooseMap extends cc.Component {
 
+    private chosenMap: string = "map1";
+
     onLoad () {
         this.initMap1Btn();
         this.initMap2Btn();
@@ -40,6 +42,7 @@ export default class chooseMap extends cc.Component {
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map1");
         });
+        cc.sys.localStorage.setItem("Current Map", "map1");
     }
 
     initMap2Btn() {
@@ -55,6 +58,7 @@ export default class chooseMap extends cc.Component {
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map2");
         });
+        cc.sys.localStorage.setItem("Current Map", "map2");
     }
 
 }
