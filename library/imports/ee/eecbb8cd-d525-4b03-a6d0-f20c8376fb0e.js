@@ -57,6 +57,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.isPaused = false;
         _this.playerPath = "Canvas/Players/";
         _this.cameraAnchor = 0;
+        _this.moveChoice = null;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -71,12 +72,14 @@ var GameManager = /** @class */ (function (_super) {
         this.alivePlayer = parseInt(this.playerNum);
         cc.audioEngine.stopMusic();
         this.playBGM();
-        this.loadPlayer();
-        this.changePlayer(0);
         this.initPauseMenuButtons();
         this.initSettingsMenuButtons();
+        this.initNextMoveButtons();
     };
-    GameManager.prototype.start = function () { };
+    GameManager.prototype.start = function () {
+        this.loadPlayer();
+        this.changePlayer(0);
+    };
     GameManager.prototype.update = function (dt) {
         var playerPos = this.player.node.getPosition();
         var cameraPos = this.camera.getPosition();
@@ -191,11 +194,40 @@ var GameManager = /** @class */ (function (_super) {
         if (!this.player.isDie) {
             this.onEnable();
             this.changePlayerUi();
+            this.chooseNextMove();
         }
         else {
             // console.log(this.currPlayer, "change");
             this.changePlayer(num + 1);
         }
+    };
+    GameManager.prototype.chooseNextMove = function () {
+        cc.director.pause();
+        var playerName = this.player.playerName.getComponent(cc.Label).string;
+        cc.find("Canvas/Main Camera/Next Move Menu/Big Layout/Name").getComponent(cc.Label).string = playerName + "'s turn";
+        cc.find("Canvas/Main Camera/Next Move Menu").active = true;
+    };
+    GameManager.prototype.initNextMoveButtons = function () {
+        var move_clickEventHandler = new cc.Component.EventHandler();
+        move_clickEventHandler.target = this.node;
+        move_clickEventHandler.component = "GameManager";
+        move_clickEventHandler.handler = "chooseMove";
+        cc.find("Canvas/Main Camera/Next Move Menu/Big Layout/moveBtn").getComponent(cc.Button).clickEvents.push(move_clickEventHandler);
+        var shoot_clickEventHandler = new cc.Component.EventHandler();
+        shoot_clickEventHandler.target = this.node;
+        shoot_clickEventHandler.component = "GameManager";
+        shoot_clickEventHandler.handler = "chooseShoot";
+        cc.find("Canvas/Main Camera/Next Move Menu/Big Layout/shootBtn").getComponent(cc.Button).clickEvents.push(shoot_clickEventHandler);
+    };
+    GameManager.prototype.chooseMove = function () {
+        this.moveChoice = "move";
+        cc.find("Canvas/Main Camera/Next Move Menu").active = false;
+        cc.director.resume();
+    };
+    GameManager.prototype.chooseShoot = function () {
+        this.moveChoice = "shoot";
+        cc.find("Canvas/Main Camera/Next Move Menu").active = false;
+        cc.director.resume();
     };
     GameManager.prototype.playBGM = function () {
         var sceneName = cc.director.getScene().name;
@@ -223,15 +255,21 @@ var GameManager = /** @class */ (function (_super) {
     GameManager.prototype.onKeyDown = function (e) {
         switch (e.keyCode) {
             case cc.macro.KEY.a: // move left
-                this.aKeyDown = true;
-                this.player.setPlayerMoveDirection(-1);
+                if (this.moveChoice == "move") {
+                    this.aKeyDown = true;
+                    this.player.setPlayerMoveDirection(-1);
+                }
                 break;
             case cc.macro.KEY.d: // move right
-                this.dKeyDown = true;
-                this.player.setPlayerMoveDirection(1);
+                if (this.moveChoice == "move") {
+                    this.dKeyDown = true;
+                    this.player.setPlayerMoveDirection(1);
+                }
                 break;
             case cc.macro.KEY.space: // jump
-                this.player.setPlayerJump(true);
+                if (this.moveChoice == "move") {
+                    this.player.setPlayerJump(true);
+                }
                 break;
             case cc.macro.KEY.escape:
                 this.pauseGame();
@@ -249,24 +287,30 @@ var GameManager = /** @class */ (function (_super) {
         switch (e.keyCode) {
             case cc.macro.KEY.a:
                 this.aKeyDown = false;
-                if (this.dKeyDown) {
-                    this.player.setPlayerMoveDirection(1); // move right
-                }
-                else {
-                    this.player.setPlayerMoveDirection(0); // stop moving
+                if (this.moveChoice == "move") {
+                    if (this.dKeyDown) {
+                        this.player.setPlayerMoveDirection(1); // move right
+                    }
+                    else {
+                        this.player.setPlayerMoveDirection(0); // stop moving
+                    }
                 }
                 break;
             case cc.macro.KEY.d:
                 this.dKeyDown = false;
-                if (this.aKeyDown) {
-                    this.player.setPlayerMoveDirection(-1); // move left
-                }
-                else {
-                    this.player.setPlayerMoveDirection(0); // stop moving
+                if (this.moveChoice == "move") {
+                    if (this.aKeyDown) {
+                        this.player.setPlayerMoveDirection(-1); // move left
+                    }
+                    else {
+                        this.player.setPlayerMoveDirection(0); // stop moving
+                    }
                 }
                 break;
             case cc.macro.KEY.space:
-                this.player.setPlayerJump(false);
+                if (this.moveChoice == "move") {
+                    this.player.setPlayerJump(false);
+                }
                 break;
             case cc.macro.KEY.f: // shoot (bullet)    
                 this.player.weapon = "gun";
@@ -281,6 +325,8 @@ var GameManager = /** @class */ (function (_super) {
     GameManager.prototype.onEventStart = function (event) {
         if (!this.enabledInHierarchy)
             return;
+        if (this.moveChoice == "move")
+            return;
         if (!this.shoot) {
             // this.startPos = this.node.position;
             // this.motorJoint.enabled = false;
@@ -292,6 +338,8 @@ var GameManager = /** @class */ (function (_super) {
     };
     GameManager.prototype.onEventMove = function (event) {
         if (!this.enabledInHierarchy)
+            return;
+        if (this.moveChoice == "move")
             return;
         var playerPos = event.getStartLocation();
         var mousePos = event.getLocation();
@@ -334,17 +382,23 @@ var GameManager = /** @class */ (function (_super) {
     GameManager.prototype.onEventCancel = function (event) {
         if (!this.enabledInHierarchy)
             return;
+        if (this.moveChoice == "move")
+            return;
         this.haveShot();
         event.stopPropagation();
     };
     GameManager.prototype.onEventEnd = function (event) {
         if (!this.enabledInHierarchy)
             return;
+        if (this.moveChoice == "move")
+            return;
         this.haveShot();
         event.stopPropagation();
     };
     GameManager.prototype.haveShot = function () {
         if (this.shoot)
+            return;
+        if (this.moveChoice == "move")
             return;
         this.player.line.getComponent("TrajectoryLine").clearLine();
         // this.shoot = true;
@@ -355,6 +409,17 @@ var GameManager = /** @class */ (function (_super) {
             this.player.setPlayerBomb(this.shootAngle);
         }
         this.player.setPlayerChangeDirection(0);
+        this.pauseAfterShoot();
+    };
+    GameManager.prototype.pauseAfterShoot = function () {
+        var _this = this;
+        this.UI.freeze = true;
+        this.moveChoice = null;
+        this.scheduleOnce(function () {
+            _this.UI.freeze = false;
+            _this.UI.timerVal = 20;
+            _this.changePlayer(_this.currPlayer + 1);
+        }, 2);
     };
     GameManager.prototype.pauseGame = function () {
         if (cc.director.isPaused()) {

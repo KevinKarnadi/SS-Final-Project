@@ -1,3 +1,4 @@
+declare const firebase: any;
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -43,7 +44,7 @@ export default class Win extends cc.Component {
     // onLoad () {}
 
     start () {
-
+        
     }
 
     update (dt) {
@@ -55,6 +56,7 @@ export default class Win extends cc.Component {
                 this.winnerScore.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").scoreLabel.string;
                 this.winnerCoin.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").coinLabel.string;
                 this.winnerGem.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").gemLabel.string;
+                this.updateDatabase();
                 if(cc.find("Canvas/Main Camera/UI/Profile/face0").active){
                     this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char1;
                     //cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
@@ -84,5 +86,46 @@ export default class Win extends cc.Component {
                 cc.director.loadScene("ending");
             }, 6)
         }
+    }
+
+    updateDatabase() {
+        let winCoin = parseInt(this.winnerCoin.string);
+        let winGem = parseInt(this.winnerGem.string);
+        let currCoin = parseInt(cc.sys.localStorage.getItem("coin"));
+        let currGem = parseInt(cc.sys.localStorage.getItem("gem"));
+        let lastCoin = currCoin + winCoin;
+        cc.sys.localStorage.setItem("coin", lastCoin);
+        let lastGem = currGem + winGem;
+        cc.sys.localStorage.setItem("gem", lastGem);
+        let user = firebase.auth().currentUser;
+        if(user) {
+            console.log("aaa");
+            var stats = firebase.database().ref("userData/" + user.uid);
+            var userStats = {
+                coin: lastCoin,
+                gem: lastGem
+            }
+            return firebase.database().ref("userData/" + user.uid).update(userStats);
+        }
+    }
+
+    updateUserStats(coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
+        var userStats = {
+            coin: coin,
+            gem: gem,
+            char1: char1,
+            char2: char2,
+            char3: char3,
+            char4: char4,
+            AK47: AK47,
+            AR: AR,
+            grenade: grenade,
+            shotgun: shotgun,
+            sniper: sniper,
+            purple: purple,
+            forest: forest,
+            username: username
+        }
+        return firebase.database().ref("userData/" + firebase.auth().currentUser.uid).update(userStats);
     }
 }

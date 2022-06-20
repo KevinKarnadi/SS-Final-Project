@@ -54,6 +54,7 @@ var Win = /** @class */ (function (_super) {
                 this.winnerScore.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").scoreLabel.string;
                 this.winnerCoin.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").coinLabel.string;
                 this.winnerGem.string = cc.find("Canvas/Main Camera/UI").getComponent("UI").gemLabel.string;
+                this.updateDatabase();
                 if (cc.find("Canvas/Main Camera/UI/Profile/face0").active) {
                     this.playerimage.getComponent(cc.Sprite).spriteFrame = this.char1;
                     //cc.find("Canvas/Main Camera/UI/Profile/face0").active = false;
@@ -83,6 +84,45 @@ var Win = /** @class */ (function (_super) {
                 cc.director.loadScene("ending");
             }, 6);
         }
+    };
+    Win.prototype.updateDatabase = function () {
+        var winCoin = parseInt(this.winnerCoin.string);
+        var winGem = parseInt(this.winnerGem.string);
+        var currCoin = parseInt(cc.sys.localStorage.getItem("coin"));
+        var currGem = parseInt(cc.sys.localStorage.getItem("gem"));
+        var lastCoin = currCoin + winCoin;
+        cc.sys.localStorage.setItem("coin", lastCoin);
+        var lastGem = currGem + winGem;
+        cc.sys.localStorage.setItem("gem", lastGem);
+        var user = firebase.auth().currentUser;
+        if (user) {
+            console.log("aaa");
+            var stats = firebase.database().ref("userData/" + user.uid);
+            var userStats = {
+                coin: lastCoin,
+                gem: lastGem
+            };
+            return firebase.database().ref("userData/" + user.uid).update(userStats);
+        }
+    };
+    Win.prototype.updateUserStats = function (coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
+        var userStats = {
+            coin: coin,
+            gem: gem,
+            char1: char1,
+            char2: char2,
+            char3: char3,
+            char4: char4,
+            AK47: AK47,
+            AR: AR,
+            grenade: grenade,
+            shotgun: shotgun,
+            sniper: sniper,
+            purple: purple,
+            forest: forest,
+            username: username
+        };
+        return firebase.database().ref("userData/" + firebase.auth().currentUser.uid).update(userStats);
     };
     __decorate([
         property(cc.Label)

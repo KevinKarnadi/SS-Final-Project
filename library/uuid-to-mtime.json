@@ -10944,11 +10944,6 @@
     "meta": 1655722707275,
     "relativePath": "scripts\\Ground2.ts"
   },
-  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
-    "asset": 1655722631401,
-    "meta": 1655722707464,
-    "relativePath": "scripts\\UI.ts"
-  },
   "e7386ee3-71d1-4390-8c89-b0b497e1ed81": {
     "asset": 1655722631378,
     "meta": 1655722707479,
@@ -10993,16 +10988,6 @@
     "asset": 1655738548703,
     "meta": 1655738636859,
     "relativePath": "scenes\\player choose.fire"
-  },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655738548697,
-    "meta": 1655738636905,
-    "relativePath": "scenes\\map2.fire"
-  },
-  "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655738548689,
-    "meta": 1655738636963,
-    "relativePath": "scenes\\map1.fire"
   },
   "61fb21cf-39ed-4d0b-ab8c-a3a97e0e71ec": {
     "asset": 1655738548673,
@@ -11064,11 +11049,6 @@
     "meta": 1655746053675,
     "relativePath": "scripts\\chooseMap.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655745764348,
-    "meta": 1655746053860,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
     "asset": 1655745764349,
     "meta": 1655746053886,
@@ -11084,14 +11064,34 @@
     "meta": 1655746054011,
     "relativePath": "scripts\\SignUp.ts"
   },
-  "cff5fa54-0ee6-44b6-8c49-5c8883ae0cf9": {
-    "asset": 1655745764350,
-    "meta": 1655746054028,
-    "relativePath": "scripts\\Win.ts"
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655746543448,
+    "meta": 1655746689041,
+    "relativePath": "scripts\\GameManager.ts"
   },
   "4c7686a6-3d5a-452f-80f0-febc320f8769": {
-    "asset": 1655746464251,
-    "meta": 1655746467247,
+    "asset": 1655746500077,
+    "meta": 1655746689215,
     "relativePath": "scripts\\Menu.ts"
+  },
+  "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
+    "asset": 1655746543449,
+    "meta": 1655746689310,
+    "relativePath": "scripts\\UI.ts"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655746543446,
+    "meta": 1655746689398,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "89bd0550-ef73-4044-8dd7-09d9af029680": {
+    "asset": 1655746543428,
+    "meta": 1655746689442,
+    "relativePath": "scenes\\map1.fire"
+  },
+  "cff5fa54-0ee6-44b6-8c49-5c8883ae0cf9": {
+    "asset": 1655749387683,
+    "meta": 1655749391986,
+    "relativePath": "scripts\\Win.ts"
   }
 }

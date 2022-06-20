@@ -39,6 +39,7 @@ var UI = /** @class */ (function (_super) {
         _this.score = 0;
         _this.coin = 0;
         _this.gem = 0;
+        _this.freeze = false;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -59,7 +60,7 @@ var UI = /** @class */ (function (_super) {
         this.schedule(this.countTimer, 1);
     };
     UI.prototype.countTimer = function () {
-        if (!cc.director.isPaused() && !this.isWin) {
+        if (!cc.director.isPaused() && !this.isWin && !this.freeze) {
             this.timerVal--;
             if (this.timerVal < 0) {
                 this.timeout = true;
