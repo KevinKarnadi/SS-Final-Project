@@ -56,6 +56,7 @@ var chooseMap = /** @class */ (function (_super) {
         cc.find("Btn_Square02_n/map1").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     chooseMap.prototype.map1 = function () {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", function () {
             cc.director.loadScene("map1");
         });
@@ -68,6 +69,7 @@ var chooseMap = /** @class */ (function (_super) {
         cc.find("Btn_Square02_n/map2").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     chooseMap.prototype.map2 = function () {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", function () {
             cc.director.loadScene("map2");
         });

@@ -11020,8 +11020,8 @@
     "relativePath": "scenes\\character choose.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655733317048,
-    "meta": 1655733550685,
+    "asset": 1655734283745,
+    "meta": 1655734283778,
     "relativePath": "scenes\\map2.fire"
   },
   "4c7686a6-3d5a-452f-80f0-febc320f8769": {
@@ -11039,19 +11039,19 @@
     "meta": 1655733549685,
     "relativePath": "menu\\Arrow 1 L.png"
   },
-  "901b4825-046c-4294-a8e6-acc9878d3ada": {
-    "asset": 1655733317086,
-    "meta": 1655733551236,
-    "relativePath": "scripts\\chooseMap.ts"
-  },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
     "asset": 1655733952688,
     "meta": 1655733952722,
     "relativePath": "scenes\\map1.fire"
   },
+  "901b4825-046c-4294-a8e6-acc9878d3ada": {
+    "asset": 1655734067944,
+    "meta": 1655734080646,
+    "relativePath": "scripts\\chooseMap.ts"
+  },
   "cff5fa54-0ee6-44b6-8c49-5c8883ae0cf9": {
-    "asset": 1655733967003,
-    "meta": 1655733967771,
+    "asset": 1655733988662,
+    "meta": 1655734080713,
     "relativePath": "scripts\\Win.ts"
   }
 }
