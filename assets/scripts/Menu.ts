@@ -1,15 +1,23 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class InstructionsMenuOption2 extends cc.Component {
+export default class Menu extends cc.Component {
+
+    @property(cc.AudioClip)
+    bgm: cc.AudioClip = null;
 
     properties: {
             Edit_Box: cc.EditBox,
     }
 
     start () {
+        this.playBGM();
         this.initMenuButtons();
         this.initSettingsMenuButtons();
+    }
+
+    playBGM() {
+        cc.audioEngine.playMusic(this.bgm, true);
     }
 
     initMenuButtons() {
