@@ -8,13 +8,13 @@ export default class InstructionsMenuWin extends cc.Component {
     }
 
     start () {
-        let playbtn = new cc.Component.EventHandler();
-        playbtn.target = this.node;
-        playbtn.component = "Instructions-win";
-        playbtn.handler = "loadNextInstructions";
+        let returnbtn = new cc.Component.EventHandler();
+        returnbtn.target = this.node;
+        returnbtn.component = "Instructions-win";
+        returnbtn.handler = "loadNextInstructions";
 
 
-        cc.find("Play").getComponent(cc.Button).clickEvents.push(playbtn);
+        cc.find("Return").getComponent(cc.Button).clickEvents.push(returnbtn);
 
 
         let prevbtn = new cc.Component.EventHandler();
@@ -28,7 +28,7 @@ export default class InstructionsMenuWin extends cc.Component {
     }
 
     loadNextInstructions(){
-        cc.director.loadScene("player choose");
+        cc.director.loadScene("menu");
     }
 
     loadPrevInstructions(){
