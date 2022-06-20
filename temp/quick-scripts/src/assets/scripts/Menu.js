@@ -59,9 +59,17 @@ var InstructionsMenuOption2 = /** @class */ (function (_super) {
         shopbtn.component = "Menu";
         shopbtn.handler = "loadShop";
         cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+        var xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Menu";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
     };
     InstructionsMenuOption2.prototype.loadShop = function () {
         cc.director.loadScene("shop");
+    };
+    InstructionsMenuOption2.prototype.loadQuitGame = function () {
+        cc.director.end();
     };
     InstructionsMenuOption2.prototype.loadInstructions = function () {
         cc.director.loadScene("instructions");

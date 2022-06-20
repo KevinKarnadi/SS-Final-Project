@@ -50,6 +50,11 @@ var Playerchoose = /** @class */ (function (_super) {
         teambtn.component = "Playerchoose";
         teambtn.handler = "loadTeamPlayers";
         cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
+        var xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Playerchoose";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
     };
     Playerchoose.prototype.loadTwoPlayers = function () {
         cc.sys.localStorage.setItem("PlayerNum", 2);
@@ -66,6 +71,9 @@ var Playerchoose = /** @class */ (function (_super) {
     Playerchoose.prototype.loadTeamPlayers = function () {
         cc.sys.localStorage.setItem("PlayerNum", 4);
         cc.director.loadScene("player name");
+    };
+    Playerchoose.prototype.loadQuitGame = function () {
+        cc.director.loadScene("menu");
     };
     Playerchoose = __decorate([
         ccclass

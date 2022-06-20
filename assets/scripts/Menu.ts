@@ -42,10 +42,20 @@ export default class InstructionsMenuOption2 extends cc.Component {
         shopbtn.component = "Menu";
         shopbtn.handler = "loadShop";
         cc.find("shop").getComponent(cc.Button).clickEvents.push(shopbtn);
+
+        let xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Menu";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
     }
 
     loadShop(){
         cc.director.loadScene("shop");
+    }
+
+    loadQuitGame(){
+        cc.director.end();
     }
 
     loadInstructions(){

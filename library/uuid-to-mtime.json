@@ -10775,8 +10775,8 @@
     "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\frame.png"
   },
   "1c6c5c57-e0fd-4690-adf6-af1dff08214b": {
-    "asset": 1655728403155,
-    "meta": 1655728481508,
+    "asset": 1655730370173,
+    "meta": 1655730370206,
     "relativePath": "scenes\\player choose.fire"
   },
   "b8e6b544-f3e5-4e8c-9b08-08922730fee6": {
@@ -10914,19 +10914,14 @@
     "meta": 1655728482502,
     "relativePath": "scripts\\Instructions-win.ts"
   },
-  "32f77663-1432-4962-a902-993e9d5ef357": {
-    "asset": 1655728403191,
-    "meta": 1655728482866,
-    "relativePath": "scripts\\Playerchoose.ts"
-  },
   "e0d3c05a-2e0c-43b3-8114-70f9e5ac7bf2": {
     "asset": 1655728402931,
     "meta": 1655728479754,
     "relativePath": "audios"
   },
   "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
-    "asset": 1655728403153,
-    "meta": 1655728481411,
+    "asset": 1655729164234,
+    "meta": 1655729164256,
     "relativePath": "scenes\\menu.fire"
   },
   "4f45afb8-b756-49bb-9fa5-c2dcee8bcf3c": {
@@ -11045,8 +11040,13 @@
     "relativePath": "scenes\\map2.fire"
   },
   "4c7686a6-3d5a-452f-80f0-febc320f8769": {
-    "asset": 1655728954520,
-    "meta": 1655728955623,
+    "asset": 1655729370351,
+    "meta": 1655729371992,
     "relativePath": "scripts\\Menu.ts"
+  },
+  "32f77663-1432-4962-a902-993e9d5ef357": {
+    "asset": 1655730515910,
+    "meta": 1655730527825,
+    "relativePath": "scripts\\Playerchoose.ts"
   }
 }

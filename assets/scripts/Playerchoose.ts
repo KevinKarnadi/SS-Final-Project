@@ -42,6 +42,12 @@ export default class Playerchoose extends cc.Component {
 
         cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
 
+        let xbtn = new cc.Component.EventHandler();
+        xbtn.target = this.node;
+        xbtn.component = "Playerchoose";
+        xbtn.handler = "loadQuitGame";
+        cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
+
     }
 
     loadTwoPlayers(){
@@ -62,6 +68,10 @@ export default class Playerchoose extends cc.Component {
     loadTeamPlayers(){
         cc.sys.localStorage.setItem("PlayerNum", 4);
         cc.director.loadScene("player name");
+    }
+
+    loadQuitGame(){
+        cc.director.loadScene("menu");
     }
 
 }
