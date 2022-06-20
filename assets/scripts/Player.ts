@@ -451,13 +451,13 @@ export default class Player extends cc.Component {
             this.playerChar = "char1";
         } else if(this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
-            this.playerChar = "char2";
+            this.playerChar = "char1";
         } else if(this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
-            this.playerChar = "char3";
+            this.playerChar = "char1";
         } else if(this.node.name == "Player 4") {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
-            this.playerChar = "char4";
+            this.playerChar = "char1";
         }
     }
 
