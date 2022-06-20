@@ -222,8 +222,6 @@ var SelectChar = /** @class */ (function (_super) {
             }
             if (this.player4.active) {
                 this.lockBtn(this.p4c1);
-                console.log("check");
-                console.log(this.p4c1.node.getChildByName("LockedBackground").active);
             }
         }
         if (this.char2 == "true") {

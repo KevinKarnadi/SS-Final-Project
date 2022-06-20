@@ -129,7 +129,7 @@ export default class Shop extends cc.Component {
         this.AK = cc.sys.localStorage.getItem("AK47");
         this.AR = cc.sys.localStorage.getItem("AR");
         this.grenade = cc.sys.localStorage.getItem("grenade");
-        this.sniper = cc.sys.localStorage.getItem("shotgun");
+        this.shotgun = cc.sys.localStorage.getItem("shotgun");
         this.sniper = cc.sys.localStorage.getItem("sniper");
         this.purple = cc.sys.localStorage.getItem("purple");
         this.jungle = cc.sys.localStorage.getItem("jungle");
