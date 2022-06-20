@@ -7,7 +7,13 @@ export default class InstructionsMenuOption1 extends cc.Component {
             Edit_Box: cc.EditBox,
     }
 
-    start () {
+    onLoad() {
+        this.initButtons();
+    }
+
+    start () {}
+
+    initButtons() {
         let nextbtn = new cc.Component.EventHandler();
         nextbtn.target = this.node;
         nextbtn.component = "Instructions-option1";
@@ -24,7 +30,6 @@ export default class InstructionsMenuOption1 extends cc.Component {
 
 
         cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
-
     }
 
     loadNextInstructions(){

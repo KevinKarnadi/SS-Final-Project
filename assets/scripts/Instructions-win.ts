@@ -7,7 +7,13 @@ export default class InstructionsMenuWin extends cc.Component {
             Edit_Box: cc.EditBox,
     }
 
-    start () {
+    onLoad() {
+        this.initButtons();
+    }
+
+    start () {}
+
+    initButtons() {
         let returnbtn = new cc.Component.EventHandler();
         returnbtn.target = this.node;
         returnbtn.component = "Instructions-win";
@@ -24,7 +30,6 @@ export default class InstructionsMenuWin extends cc.Component {
 
 
         cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
-
     }
 
     loadNextInstructions(){
