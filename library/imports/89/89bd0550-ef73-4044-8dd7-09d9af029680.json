@@ -248,8 +248,11 @@
     "camera": {
       "__id__": 148
     },
-    "bgm": {
-      "__uuid__": "2ef1c993-505a-4965-b877-cf9c8ceb8b2b"
+    "bgm1": {
+      "__uuid__": "ffbbedd7-bb2d-4d8c-af61-6814c19b7d13"
+    },
+    "bgm2": {
+      "__uuid__": "7970018a-f994-49b5-a21d-eac636f2c70e"
     },
     "background": null,
     "weaponSprite0": {

@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '06ed0Oo1wFLHJ+J0nt3uw8e', 'SignIn');
-// scripts/SignIn.ts
+cc._RF.push(module, '901b4glBGxClKjmrMmHjTra', 'chooseMap');
+// scripts/chooseMap.ts
 
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -24,54 +24,46 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var SignIn = /** @class */ (function (_super) {
-    __extends(SignIn, _super);
-    function SignIn() {
+var chooseMap = /** @class */ (function (_super) {
+    __extends(chooseMap, _super);
+    function chooseMap() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    SignIn.prototype.initSignInBtn = function () {
+    // onLoad () {}
+    chooseMap.prototype.start = function () {
+        this.initMap1Btn();
+        this.initMap2Btn();
+    };
+    // update (dt) {}
+    chooseMap.prototype.initMap1Btn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
-        clickEventHandler.component = "SignIn";
-        clickEventHandler.handler = "signIn";
-        cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        clickEventHandler.component = "chooseMap";
+        clickEventHandler.handler = "map1";
+        cc.find("Btn_Square02_n/map1").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
-    SignIn.prototype.signIn = function () {
-        var emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
-        var passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
-        var email = emailBox.string;
-        var password = passwordBox.string;
-        /*
-        firebase.auth().signInWithEmailAndPassword(email, password)
-            .then(() => {
-                cc.director.loadScene("menu");
-            }).catch((e) => {
-                alert(e.message);
-            });
-        */
-        cc.director.loadScene("menu");
+    chooseMap.prototype.map1 = function () {
+        cc.director.loadScene("loading", function () {
+            cc.director.loadScene("map1");
+        });
     };
-    SignIn.prototype.initBackBtn = function () {
+    chooseMap.prototype.initMap2Btn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
-        clickEventHandler.component = "SignIn";
-        clickEventHandler.handler = "back";
-        cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        clickEventHandler.component = "chooseMap";
+        clickEventHandler.handler = "map2";
+        cc.find("Btn_Square02_n/map2").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
-    SignIn.prototype.back = function () {
-        cc.director.loadScene("main menu");
+    chooseMap.prototype.map2 = function () {
+        cc.director.loadScene("loading", function () {
+            cc.director.loadScene("map2");
+        });
     };
-    SignIn.prototype.onLoad = function () { };
-    SignIn.prototype.start = function () {
-        this.initSignInBtn();
-        this.initBackBtn();
-    };
-    SignIn.prototype.update = function (dt) { };
-    SignIn = __decorate([
+    chooseMap = __decorate([
         ccclass
-    ], SignIn);
-    return SignIn;
+    ], chooseMap);
+    return chooseMap;
 }(cc.Component));
-exports.default = SignIn;
+exports.default = chooseMap;
 
 cc._RF.pop();

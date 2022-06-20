@@ -36,7 +36,8 @@ var GameManager = /** @class */ (function (_super) {
         _this.player4 = null;
         _this.UI = null;
         _this.camera = null;
-        _this.bgm = null;
+        _this.bgm1 = null;
+        _this.bgm2 = null;
         _this.background = null;
         _this.weaponSprite0 = null;
         _this.weaponSprite1 = null;
@@ -69,6 +70,7 @@ var GameManager = /** @class */ (function (_super) {
         this.alivePlayer = parseInt(this.playerNum);
     };
     GameManager.prototype.start = function () {
+        cc.audioEngine.stopMusic();
         this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
@@ -196,7 +198,11 @@ var GameManager = /** @class */ (function (_super) {
         }
     };
     GameManager.prototype.playBGM = function () {
-        cc.audioEngine.playMusic(this.bgm, true);
+        var sceneName = cc.director.getScene().name;
+        if (sceneName == "map1")
+            cc.audioEngine.playMusic(this.bgm1, true);
+        else if (sceneName == "map2")
+            cc.audioEngine.playMusic(this.bgm2, true);
     };
     GameManager.prototype.onEnable = function () {
         if (this.player) {
@@ -543,7 +549,10 @@ var GameManager = /** @class */ (function (_super) {
     ], GameManager.prototype, "camera", void 0);
     __decorate([
         property(cc.AudioClip)
-    ], GameManager.prototype, "bgm", void 0);
+    ], GameManager.prototype, "bgm1", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], GameManager.prototype, "bgm2", void 0);
     __decorate([
         property(cc.Node)
     ], GameManager.prototype, "background", void 0);

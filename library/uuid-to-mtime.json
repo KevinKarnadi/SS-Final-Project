@@ -5,18 +5,18 @@
     "relativePath": "downloadedAssets"
   },
   "e7f16894-f6bc-49da-8936-f4d9ec85feea": {
-    "asset": 1655662413069,
-    "meta": 1655703175292,
+    "asset": 1655722631378,
+    "meta": 1655728070102,
     "relativePath": "prefabs"
   },
   "b5d82e68-2e74-4126-966f-946ea363403d": {
-    "asset": 1655667233998,
-    "meta": 1655703175293,
+    "asset": 1655728055323,
+    "meta": 1655728070103,
     "relativePath": "scenes"
   },
   "ca253d00-c589-48e0-a91a-c6ffd04663d8": {
-    "asset": 1655667234008,
-    "meta": 1655703175294,
+    "asset": 1655728055326,
+    "meta": 1655728070104,
     "relativePath": "scripts"
   },
   "fabfd8e8-6e5e-4a3a-92e4-07a50e1eb26f": {
@@ -1215,8 +1215,8 @@
     "relativePath": "Custom Soldiers\\bullets\\bullet2\\1_Bullet_Bullet 2_000.png"
   },
   "49256a4e-75de-44db-99ac-d93c600c0910": {
-    "asset": 1655456712534,
-    "meta": 1655620790481,
+    "asset": 1655703714881,
+    "meta": 1655728070520,
     "relativePath": "Custom Soldiers\\characters\\char1\\idle"
   },
   "b721f369-1dc0-47ae-b65b-11a3df281596": {
@@ -1255,8 +1255,8 @@
     "relativePath": "Custom Soldiers\\characters\\char2\\hurt"
   },
   "2130adaf-0596-478f-b769-2364fc4c052e": {
-    "asset": 1655456712603,
-    "meta": 1655620790509,
+    "asset": 1655703714882,
+    "meta": 1655728070531,
     "relativePath": "Custom Soldiers\\characters\\char2\\idle"
   },
   "92e0d640-6618-40b4-a46b-38c3e9b52045": {
@@ -1290,8 +1290,8 @@
     "relativePath": "Custom Soldiers\\characters\\char3\\hurt"
   },
   "267cbe01-7aa6-487f-a854-d00d68734b93": {
-    "asset": 1655456712669,
-    "meta": 1655620790520,
+    "asset": 1655703714883,
+    "meta": 1655728070535,
     "relativePath": "Custom Soldiers\\characters\\char3\\idle"
   },
   "a6161a1c-e225-4b33-b5c2-8a37b7b5c109": {
@@ -1325,8 +1325,8 @@
     "relativePath": "Custom Soldiers\\characters\\char4\\hurt"
   },
   "45e61324-abf4-4123-af04-849c40a80c6a": {
-    "asset": 1655456712745,
-    "meta": 1655620790534,
+    "asset": 1655703714883,
+    "meta": 1655728070545,
     "relativePath": "Custom Soldiers\\characters\\char4\\idle"
   },
   "84d7c99c-fd75-4a04-90db-49101d196a54": {
@@ -8020,8 +8020,8 @@
     "relativePath": "sounds"
   },
   "d88601a3-d368-4f56-a122-f399a96e41de": {
-    "asset": 1655667233992,
-    "meta": 1655703175291,
+    "asset": 1655703712846,
+    "meta": 1655728070102,
     "relativePath": "menu"
   },
   "8e985673-195e-401c-85e6-74be73298b0d": {
@@ -8030,8 +8030,8 @@
     "relativePath": "menu\\Play R.png"
   },
   "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
-    "asset": 1655521012006,
-    "meta": 1655620785577,
+    "asset": 1655728055298,
+    "meta": 1655728070519,
     "relativePath": "scenes\\map choose.fire"
   },
   "e3e1d4e5-5361-4979-b486-f16ff66ec3f7": {
@@ -8060,8 +8060,8 @@
     "relativePath": "scripts\\Instructions.ts"
   },
   "a1c84c84-e423-47be-abcd-c229d3f1ce7f": {
-    "asset": 1655521015665,
-    "meta": 1655620785763,
+    "asset": 1655728055323,
+    "meta": 1655728070534,
     "relativePath": "scenes\\player name.fire"
   },
   "4881d264-cab9-464f-a87f-2ce5043db4ea": {
@@ -10765,8 +10765,8 @@
     "relativePath": "tiles\\smoke.png"
   },
   "aa553534-e84c-4f00-ab8e-5a80ead88c94": {
-    "asset": 1655724242862,
-    "meta": 1655724242877,
+    "asset": 1655729091871,
+    "meta": 1655729091905,
     "relativePath": "scenes\\shop.fire"
   },
   "24aedc37-9032-4986-830e-ca3d84bd1a39": {
@@ -10885,8 +10885,8 @@
     "relativePath": "prefabs\\Bullet.prefab"
   },
   "eda25fc8-17ed-4d34-aab5-a42c421939e8": {
-    "asset": 1655716325264,
-    "meta": 1655716485850,
+    "asset": 1655728055298,
+    "meta": 1655728070549,
     "relativePath": "scenes\\main menu.fire"
   },
   "4bd3be66-dcc5-4070-9ace-215efb0dd8a0": {
@@ -10930,8 +10930,8 @@
     "relativePath": "audios"
   },
   "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
-    "asset": 1655716325285,
-    "meta": 1655716486321,
+    "asset": 1655728055322,
+    "meta": 1655728070540,
     "relativePath": "scenes\\menu.fire"
   },
   "4f45afb8-b756-49bb-9fa5-c2dcee8bcf3c": {
@@ -10965,13 +10965,13 @@
     "relativePath": "audios\\bomb.ogg"
   },
   "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
-    "asset": 1655716522358,
-    "meta": 1655716532615,
+    "asset": 1655728055324,
+    "meta": 1655728070454,
     "relativePath": "scripts\\MainMenu.ts"
   },
   "06ed03a8-d701-4b1c-9f89-d27b77bb0f1e": {
-    "asset": 1655716522358,
-    "meta": 1655716532683,
+    "asset": 1655728055325,
+    "meta": 1655728070517,
     "relativePath": "scripts\\SignIn.ts"
   },
   "7ec243e1-2beb-482d-b375-3722e4434f8e": {
@@ -10985,8 +10985,8 @@
     "relativePath": "scripts\\explosiveObj.ts"
   },
   "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655722631398,
-    "meta": 1655722707232,
+    "asset": 1655728055324,
+    "meta": 1655728070410,
     "relativePath": "scripts\\GameManager.ts"
   },
   "27c0127c-e3b1-4bf4-97cc-17049951fe99": {
@@ -11005,8 +11005,8 @@
     "relativePath": "scripts\\Player.ts"
   },
   "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
-    "asset": 1655722631400,
-    "meta": 1655722707431,
+    "asset": 1655728055325,
+    "meta": 1655728070494,
     "relativePath": "scripts\\PlayerName.ts"
   },
   "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
@@ -11025,18 +11025,33 @@
     "relativePath": "prefabs\\background2.prefab"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655722631387,
-    "meta": 1655722707509,
+    "asset": 1655728055308,
+    "meta": 1655728070603,
     "relativePath": "scenes\\map1.fire"
-  },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655722631398,
-    "meta": 1655722707538,
-    "relativePath": "scenes\\map2.fire"
   },
   "3373b1bd-596a-48f3-adf4-e224ec3e793a": {
     "asset": 1655724216892,
     "meta": 1655724221050,
     "relativePath": "scripts\\Shop.ts"
+  },
+  "901b4825-046c-4294-a8e6-acc9878d3ada": {
+    "asset": 1655728055326,
+    "meta": 1655728070146,
+    "relativePath": "scripts\\chooseMap.ts"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655728744217,
+    "meta": 1655728807580,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "0be99f9b-4df6-4093-af1a-1685c14dfd06": {
+    "asset": 1655738515314,
+    "meta": 1655738515328,
+    "relativePath": "scenes\\character choose.fire"
+  },
+  "989f335f-e664-406a-99c6-7486ad70183d": {
+    "asset": 1655738316803,
+    "meta": 1655738319895,
+    "relativePath": "scripts\\SelectChar.ts"
   }
 }

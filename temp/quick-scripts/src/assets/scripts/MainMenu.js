@@ -27,7 +27,9 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var MainMenu = /** @class */ (function (_super) {
     __extends(MainMenu, _super);
     function MainMenu() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.bgm = null;
+        return _this;
     }
     MainMenu.prototype.initSignUpBtn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
@@ -49,12 +51,19 @@ var MainMenu = /** @class */ (function (_super) {
     MainMenu.prototype.signIn = function () {
         cc.director.loadScene("sign in");
     };
+    MainMenu.prototype.playBGM = function () {
+        cc.audioEngine.playMusic(this.bgm, true);
+    };
     MainMenu.prototype.onLoad = function () { };
     MainMenu.prototype.start = function () {
+        this.playBGM();
         this.initSignUpBtn();
         this.initSignInBtn();
     };
     MainMenu.prototype.update = function (dt) { };
+    __decorate([
+        property(cc.AudioClip)
+    ], MainMenu.prototype, "bgm", void 0);
     MainMenu = __decorate([
         ccclass
     ], MainMenu);
