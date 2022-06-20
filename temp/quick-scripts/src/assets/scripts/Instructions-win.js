@@ -30,11 +30,11 @@ var InstructionsMenuWin = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     InstructionsMenuWin.prototype.start = function () {
-        var playbtn = new cc.Component.EventHandler();
-        playbtn.target = this.node;
-        playbtn.component = "Instructions-win";
-        playbtn.handler = "loadNextInstructions";
-        cc.find("Play").getComponent(cc.Button).clickEvents.push(playbtn);
+        var returnbtn = new cc.Component.EventHandler();
+        returnbtn.target = this.node;
+        returnbtn.component = "Instructions-win";
+        returnbtn.handler = "loadNextInstructions";
+        cc.find("Return").getComponent(cc.Button).clickEvents.push(returnbtn);
         var prevbtn = new cc.Component.EventHandler();
         prevbtn.target = this.node;
         prevbtn.component = "Instructions-win";
@@ -42,7 +42,7 @@ var InstructionsMenuWin = /** @class */ (function (_super) {
         cc.find("Prev").getComponent(cc.Button).clickEvents.push(prevbtn);
     };
     InstructionsMenuWin.prototype.loadNextInstructions = function () {
-        cc.director.loadScene("player choose");
+        cc.director.loadScene("menu");
     };
     InstructionsMenuWin.prototype.loadPrevInstructions = function () {
         cc.director.loadScene("instructions - minimap");

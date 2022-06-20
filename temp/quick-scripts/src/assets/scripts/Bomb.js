@@ -34,10 +34,13 @@ var Bomb = /** @class */ (function (_super) {
         _this.shootAngle = null;
         _this.animation = null;
         _this.power = null;
+        _this.sfx_shoot = null;
+        _this.sfx_bomb = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
     Bomb.prototype.init = function (node) {
+        cc.audioEngine.playEffect(this.sfx_shoot, false);
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
@@ -88,6 +91,7 @@ var Bomb = /** @class */ (function (_super) {
     //detect collision
     Bomb.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
         var _this = this;
+        cc.audioEngine.playEffect(this.sfx_bomb, false);
         this.scheduleOnce(function () {
             _this.node.stopAllActions();
             _this.unscheduleAllCallbacks();
@@ -99,6 +103,12 @@ var Bomb = /** @class */ (function (_super) {
         this.shootAngle = angle;
         this.power = power;
     };
+    __decorate([
+        property(cc.AudioClip)
+    ], Bomb.prototype, "sfx_shoot", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], Bomb.prototype, "sfx_bomb", void 0);
     Bomb = __decorate([
         ccclass
     ], Bomb);

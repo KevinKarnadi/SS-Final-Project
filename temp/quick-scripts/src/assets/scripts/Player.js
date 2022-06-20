@@ -64,6 +64,7 @@ var Player = /** @class */ (function (_super) {
         _this.gunType = "normal";
         _this.currWeaponNum = "0";
         _this.aim = false;
+        _this.sfx_hit = null;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -75,7 +76,7 @@ var Player = /** @class */ (function (_super) {
         this.line = this.node.getChildByName("Trajectory Line");
         this.aimLabel = this.node.getChildByName("Aim Bomb Layout");
         this.setPlayerName();
-        this.setPlayerNumber();
+        // this.setPlayerNumber();
         this.setPlayerChar();
         this.bombPool = new cc.NodePool('Bomb');
         var maxBombNum = 5;
@@ -119,6 +120,7 @@ var Player = /** @class */ (function (_super) {
         // }
         if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if (!this.isDie) {
+                cc.audioEngine.playEffect(this.sfx_hit, false);
                 this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
                 if (this.HP <= 0) {
                     this.HP = 0;
@@ -127,27 +129,15 @@ var Player = /** @class */ (function (_super) {
                     this.hurt = true;
                     if (this.playerChar == "char1" && this.HP != 0) {
                         this.animationState = this.animation.play('char1hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char1idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char2" && this.HP != 0) {
                         this.animationState = this.animation.play('char2hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char2idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char3" && this.HP != 0) {
                         this.animationState = this.animation.play('char3hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char3idle');
-                        // }, 0.5);
                     }
                     else if (this.playerChar == "char4" && this.HP != 0) {
                         this.animationState = this.animation.play('char4hurt');
-                        // this.scheduleOnce(function(){
-                        //     this.animationState = this.animation.play('char3idle');
-                        // }, 0.5);
                     }
                     this.scheduleOnce(function () {
                         _this.hurt = false;
@@ -414,20 +404,17 @@ var Player = /** @class */ (function (_super) {
             this.playerName.getComponent(cc.Label).string = cc.sys.localStorage.getItem("Player 4 Name");
         }
     };
-    Player.prototype.setPlayerNumber = function () {
-        if (this.node.name == "Player Number - 2") {
-            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("2 Players");
-        }
-        else if (this.node.name == "Player Number - 3") {
-            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("3 Players");
-        }
-        else if (this.node.name == "Player Number - 4") {
-            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("4 Players");
-        }
-        else if (this.node.name == "Player Number - team") {
-            this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("Team Players");
-        }
-    };
+    // setPlayerNumber() {
+    //     if(this.node.name == "Player Number - 2") {
+    //         this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("2 Players");
+    //     } else if(this.node.name == "Player Number - 3") {
+    //         this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("3 Players");
+    //     } else if(this.node.name == "Player Number - 4") {
+    //         this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("4 Players");
+    //     } else if(this.node.name == "Player Number - team") {
+    //         this.playerNumber.getComponent(cc.Button).string = cc.sys.localStorage.getItem("Team Players");
+    //     }
+    // }
     Player.prototype.setTotalPlayer = function () {
         if (this.node.name == "Player Number - 2") {
             this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 2");
@@ -454,15 +441,17 @@ var Player = /** @class */ (function (_super) {
         else if (this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
             this.playerChar = "char2";
-            //console.log("aaa")
+            this.playerChar = "char1";
         }
         else if (this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
             this.playerChar = "char3";
+            this.playerChar = "char1";
         }
         else if (this.node.name == "Player 4") {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
             this.playerChar = "char4";
+            this.playerChar = "char1";
         }
     };
     Player.prototype.getCurrWeaponNum = function () {
@@ -486,6 +475,9 @@ var Player = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Player.prototype, "damageEffAnim", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], Player.prototype, "sfx_hit", void 0);
     Player = __decorate([
         ccclass
     ], Player);

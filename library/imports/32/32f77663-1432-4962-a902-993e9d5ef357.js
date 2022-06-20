@@ -52,16 +52,20 @@ var Playerchoose = /** @class */ (function (_super) {
         cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
     };
     Playerchoose.prototype.loadTwoPlayers = function () {
-        cc.director.loadScene("instructions");
+        cc.sys.localStorage.setItem("PlayerNum", 2);
+        cc.director.loadScene("player name");
     };
     Playerchoose.prototype.loadThreePlayers = function () {
-        cc.director.loadScene("instructions");
+        cc.sys.localStorage.setItem("PlayerNum", 3);
+        cc.director.loadScene("player name");
     };
     Playerchoose.prototype.loadFourPlayers = function () {
-        cc.director.loadScene("instructions");
+        cc.sys.localStorage.setItem("PlayerNum", 4);
+        cc.director.loadScene("player name");
     };
     Playerchoose.prototype.loadTeamPlayers = function () {
-        cc.director.loadScene("instructions");
+        cc.sys.localStorage.setItem("PlayerNum", 4);
+        cc.director.loadScene("player name");
     };
     Playerchoose = __decorate([
         ccclass
