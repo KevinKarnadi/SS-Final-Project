@@ -32,6 +32,8 @@ export default class UI extends cc.Component {
 
     private gem: number = 0;
 
+    public freeze: boolean = false;
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
@@ -56,7 +58,7 @@ export default class UI extends cc.Component {
     }
 
     countTimer(){
-        if(!cc.director.isPaused() && !this.isWin) {
+        if(!cc.director.isPaused() && !this.isWin && !this.freeze) {
             this.timerVal--;
             if(this.timerVal < 0) {
                 this.timeout = true;
