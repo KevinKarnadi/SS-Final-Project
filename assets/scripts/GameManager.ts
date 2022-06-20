@@ -25,7 +25,10 @@ export default class GameManager extends cc.Component {
     camera: cc.Node = null;
 
     @property(cc.AudioClip)
-    bgm: cc.AudioClip = null;
+    bgm1: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    bgm2: cc.AudioClip = null;
 
     @property(cc.Node)
     background: cc.Node = null
@@ -89,6 +92,7 @@ export default class GameManager extends cc.Component {
     }
     
     start () {
+        cc.audioEngine.stopMusic();
         this.playBGM();
         this.loadPlayer();
         this.changePlayer(0);
@@ -219,7 +223,11 @@ export default class GameManager extends cc.Component {
     }
 
     playBGM() {
-        cc.audioEngine.playMusic(this.bgm, true);
+        let sceneName = cc.director.getScene().name;
+        if(sceneName == "map1")
+            cc.audioEngine.playMusic(this.bgm1, true);
+        else if(sceneName == "map2")
+            cc.audioEngine.playMusic(this.bgm2, true);
     }
 
     protected onEnable(): void {
