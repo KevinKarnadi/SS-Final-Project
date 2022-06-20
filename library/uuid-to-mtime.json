@@ -10930,8 +10930,8 @@
     "relativePath": "tiles\\buff"
   },
   "aa553534-e84c-4f00-ab8e-5a80ead88c94": {
-    "asset": 1655753594699,
-    "meta": 1655753594718,
+    "asset": 1655756507541,
+    "meta": 1655756507593,
     "relativePath": "scenes\\shop.fire"
   },
   "1c6c5c57-e0fd-4690-adf6-af1dff08214b": {
@@ -11105,8 +11105,8 @@
     "relativePath": "audios\\die.mp3"
   },
   "3373b1bd-596a-48f3-adf4-e224ec3e793a": {
-    "asset": 1655755156439,
-    "meta": 1655755160050,
+    "asset": 1655756435485,
+    "meta": 1655756440278,
     "relativePath": "scripts\\Shop.ts"
   }
 }

@@ -104,7 +104,7 @@ var Shop = /** @class */ (function (_super) {
         this.shotgun = cc.sys.localStorage.getItem("shotgun");
         this.sniper = cc.sys.localStorage.getItem("sniper");
         this.purple = cc.sys.localStorage.getItem("purple");
-        this.jungle = cc.sys.localStorage.getItem("jungle");
+        this.jungle = cc.sys.localStorage.getItem("forest");
         this.loadCharBtn();
     };
     Shop.prototype.menuMouseOn = function () {
@@ -185,7 +185,7 @@ var Shop = /** @class */ (function (_super) {
         this.junglebtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
             if (_this.jungle != "true") {
                 _this.playClickAudio();
-                _this.buyItemCoin(_this.junglebtn, "jungle");
+                _this.buyItemCoin(_this.junglebtn, "forest");
             }
         });
     };
@@ -247,6 +247,8 @@ var Shop = /** @class */ (function (_super) {
             this.gem.string = remain.toString();
             cc.sys.localStorage.setItem("gem", this.gem.string);
             cc.sys.localStorage.setItem(item, true);
+            this.updateDatabase(item, true);
+            this.updateDatabase("gem", remain);
             this.setUserStats();
         }
     };
@@ -258,7 +260,85 @@ var Shop = /** @class */ (function (_super) {
             this.coin.string = remain.toString();
             cc.sys.localStorage.setItem("coin", this.coin.string);
             cc.sys.localStorage.setItem(item, true);
+            this.updateDatabase(item, true);
+            this.updateDatabase("coin", remain);
             this.setUserStats();
+        }
+    };
+    Shop.prototype.updateDatabase = function (item, val) {
+        var user = firebase.auth().currentUser;
+        if (user) {
+            var userStats = void 0;
+            switch (item) {
+                case "AK47":
+                    userStats = {
+                        AK47: val
+                    };
+                    break;
+                case "AR":
+                    userStats = {
+                        AR: val
+                    };
+                    break;
+                case "char1":
+                    userStats = {
+                        char1: val
+                    };
+                    break;
+                case "char2":
+                    userStats = {
+                        char2: val
+                    };
+                    break;
+                case "char3":
+                    userStats = {
+                        char3: val
+                    };
+                    break;
+                case "char4":
+                    userStats = {
+                        char4: val
+                    };
+                    break;
+                case "coin":
+                    userStats = {
+                        coin: val
+                    };
+                    break;
+                case "forest":
+                    userStats = {
+                        forest: val
+                    };
+                    break;
+                case "gem":
+                    userStats = {
+                        gem: val
+                    };
+                    break;
+                case "grenade":
+                    userStats = {
+                        grenade: val
+                    };
+                    break;
+                case "purple":
+                    userStats = {
+                        purple: val
+                    };
+                    break;
+                case "shotgun":
+                    userStats = {
+                        shotgun: val
+                    };
+                    break;
+                case "sniper":
+                    userStats = {
+                        sniper: val
+                    };
+                    break;
+                default:
+                    break;
+            }
+            return firebase.database().ref("userData/" + user.uid).update(userStats);
         }
     };
     __decorate([

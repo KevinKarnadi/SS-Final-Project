@@ -1,3 +1,4 @@
+declare const firebase: any;
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -132,7 +133,7 @@ export default class Shop extends cc.Component {
         this.shotgun = cc.sys.localStorage.getItem("shotgun");
         this.sniper = cc.sys.localStorage.getItem("sniper");
         this.purple = cc.sys.localStorage.getItem("purple");
-        this.jungle = cc.sys.localStorage.getItem("jungle");
+        this.jungle = cc.sys.localStorage.getItem("forest");
         this.loadCharBtn();
     }
 
@@ -213,7 +214,7 @@ export default class Shop extends cc.Component {
         this.junglebtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
             if(this.jungle != "true") {
                 this.playClickAudio();
-                this.buyItemCoin(this.junglebtn, "jungle");
+                this.buyItemCoin(this.junglebtn, "forest");
             }
         });
     }
@@ -281,6 +282,8 @@ export default class Shop extends cc.Component {
             this.gem.string = remain.toString();
             cc.sys.localStorage.setItem("gem", this.gem.string);
             cc.sys.localStorage.setItem(item, true);
+            this.updateDatabase(item, true);
+            this.updateDatabase("gem", remain);
             this.setUserStats();
         }
     }
@@ -293,7 +296,86 @@ export default class Shop extends cc.Component {
             this.coin.string = remain.toString();
             cc.sys.localStorage.setItem("coin", this.coin.string);
             cc.sys.localStorage.setItem(item, true);
+            this.updateDatabase(item, true);
+            this.updateDatabase("coin", remain);
             this.setUserStats();
+        }
+    }
+
+    updateDatabase(item, val) {
+        let user = firebase.auth().currentUser;
+        if(user) {
+            let userStats;
+            switch (item) {
+                case "AK47":
+                    userStats = {
+                        AK47: val
+                    }
+                    break;
+                case "AR":
+                    userStats = {
+                        AR: val
+                    }
+                    break;
+                case "char1":
+                    userStats = {
+                        char1: val
+                    }
+                    break;
+                case "char2":
+                    userStats = {
+                        char2: val
+                    }
+                    break;
+                case "char3":
+                    userStats = {
+                        char3: val
+                    }
+                    break;
+                case "char4":
+                    userStats = {
+                        char4: val
+                    }
+                    break;
+                case "coin":
+                    userStats = {
+                        coin: val
+                    }
+                    break;
+                case "forest":
+                    userStats = {
+                        forest: val
+                    }
+                    break;
+                case "gem":
+                    userStats = {
+                        gem: val
+                    }
+                    break;
+                case "grenade":
+                    userStats = {
+                        grenade: val
+                    }
+                    break;
+                case "purple":
+                    userStats = {
+                        purple: val
+                    }
+                    break;
+                case "shotgun":
+                    userStats = {
+                        shotgun: val
+                    }
+                    break;
+                case "sniper":
+                    userStats = {
+                        sniper: val
+                    }
+                    break;
+                default:
+                    break;
+            }
+            return firebase.database().ref("userData/" + user.uid).update(userStats);
         }
     }
 }
