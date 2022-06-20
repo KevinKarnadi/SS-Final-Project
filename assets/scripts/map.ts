@@ -64,8 +64,8 @@ export default class Map extends cc.Component {
             // y.max = -222.5
         }
 
-        this.schedule(this.spawnWeapon, 10);
-        this.schedule(this.spawnPotion, 12);
+        this.schedule(this.spawnWeapon, 5);
+        this.schedule(this.spawnPotion, 4);
         this.schedule(()=>{
             this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8)
