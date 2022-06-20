@@ -28,56 +28,87 @@ var chooseMap = /** @class */ (function (_super) {
     __extends(chooseMap, _super);
     function chooseMap() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.chosenMap = "map1";
+        _this.bgm = null;
+        _this.click = null;
+        _this.back = null;
+        _this.map1btn = null;
+        _this.map2btn = null;
+        _this.map1 = "true";
+        _this.map2 = "false";
         return _this;
     }
     chooseMap.prototype.onLoad = function () {
-        this.initMap1Btn();
-        this.initMap2Btn();
-        this.initBackBtn();
+        if (!cc.audioEngine.isMusicPlaying()) {
+            this.playBGM();
+        }
+        this.loadMapAsset();
+        this.loadSelectMapBtn();
     };
-    chooseMap.prototype.start = function () { };
+    chooseMap.prototype.start = function () {
+        this.menuMouseOn();
+    };
     // update (dt) {}
-    chooseMap.prototype.initBackBtn = function () {
-        var clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "back";
-        cc.find("BlueButton").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    chooseMap.prototype.playBGM = function () {
+        cc.audioEngine.playMusic(this.bgm, true);
     };
-    chooseMap.prototype.back = function () {
-        cc.director.loadScene("loading", function () {
-            cc.director.loadScene("player name");
+    chooseMap.prototype.loadMapAsset = function () {
+        this.map1 = cc.sys.localStorage.getItem("purple");
+        this.map2 = cc.sys.localStorage.getItem("forest");
+    };
+    chooseMap.prototype.loadSelectMapBtn = function () {
+        if (this.map1 == "true") {
+            this.lockBtn(this.map1btn);
+        }
+        if (this.map2 == "true") {
+            this.lockBtn(this.map2btn);
+        }
+    };
+    chooseMap.prototype.lockBtn = function (btn) {
+        btn.node.getChildByName("LockedBackground").active = false;
+    };
+    chooseMap.prototype.menuMouseOn = function () {
+        var _this = this;
+        this.back.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            _this.playClickAudio();
+            _this.loadScene("character choose");
+        });
+        this.map1btn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.map1 == "true") {
+                _this.playClickAudio();
+                _this.loadScene("map1");
+            }
+        });
+        this.map2btn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.map2 == "true") {
+                _this.playClickAudio();
+                _this.loadScene("map2");
+            }
         });
     };
-    chooseMap.prototype.initMap1Btn = function () {
-        var clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "map1";
-        cc.find("Btn_Square02_n/map1").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    chooseMap.prototype.playClickAudio = function () {
+        cc.audioEngine.playEffect(this.click, false);
     };
-    chooseMap.prototype.map1 = function () {
+    chooseMap.prototype.loadScene = function (scene) {
         cc.audioEngine.stopAll();
         cc.director.loadScene("loading", function () {
-            cc.director.loadScene("map1");
+            cc.director.loadScene(scene);
         });
-        cc.sys.localStorage.setItem("Current Map", "map1");
     };
-    chooseMap.prototype.initMap2Btn = function () {
-        var clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "map2";
-        cc.find("Btn_Square02_n/map2").getComponent(cc.Button).clickEvents.push(clickEventHandler);
-    };
-    chooseMap.prototype.map2 = function () {
-        cc.audioEngine.stopAll();
-        cc.director.loadScene("loading", function () {
-            cc.director.loadScene("map2");
-        });
-        cc.sys.localStorage.setItem("Current Map", "map2");
-    };
+    __decorate([
+        property(cc.AudioClip)
+    ], chooseMap.prototype, "bgm", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], chooseMap.prototype, "click", void 0);
+    __decorate([
+        property(cc.Button)
+    ], chooseMap.prototype, "back", void 0);
+    __decorate([
+        property(cc.Button)
+    ], chooseMap.prototype, "map1btn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], chooseMap.prototype, "map2btn", void 0);
     chooseMap = __decorate([
         ccclass
     ], chooseMap);

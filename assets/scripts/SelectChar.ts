@@ -214,7 +214,7 @@ export default class SelectChar extends cc.Component {
             this.p3c4.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
                 if(this.char4 == "true") {
                     this.playClickAudio();
-                    this.selected("char3", "3");
+                    this.selected("char4", "3");
                 }
             });
         }
@@ -304,7 +304,6 @@ export default class SelectChar extends cc.Component {
 
     selected(charType, idx) {
         cc.sys.localStorage.setItem("Player " + idx + " Char", charType);
-        console.log(cc.sys.localStorage.getItem("Player " + idx + " Char"));
     }
 
     setTotalPlayer() {

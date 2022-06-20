@@ -3,62 +3,88 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class chooseMap extends cc.Component {
 
-    private chosenMap: string = "map1";
+    @property(cc.AudioClip)
+    bgm: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    click: cc.AudioClip = null;
+
+    @property(cc.Button)
+    back: cc.Button = null;
+
+    @property(cc.Button)
+    map1btn: cc.Button = null;
+
+    @property(cc.Button)
+    map2btn: cc.Button = null;
+
+    private map1: string = "true";
+
+    private map2: string = "false";
 
     onLoad () {
-        this.initMap1Btn();
-        this.initMap2Btn();
-        this.initBackBtn();
+        if(!cc.audioEngine.isMusicPlaying()) {
+            this.playBGM();
+        }
+        this.loadMapAsset();
+        this.loadSelectMapBtn();
     }
 
-    start () {}
+    start () {
+        this.menuMouseOn();
+    }
 
     // update (dt) {}
 
-    initBackBtn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "back";
-        cc.find("BlueButton").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    playBGM() {
+        cc.audioEngine.playMusic(this.bgm, true);
     }
 
-    back() {
-        cc.director.loadScene("loading", ()=>{
-            cc.director.loadScene("player name");
+    loadMapAsset(){
+        this.map1 = cc.sys.localStorage.getItem("purple");
+        this.map2 = cc.sys.localStorage.getItem("forest");
+    }
+
+    loadSelectMapBtn() {
+        if(this.map1 == "true") {
+            this.lockBtn(this.map1btn);
+        }
+        if(this.map2 == "true") {
+            this.lockBtn(this.map2btn);
+        }
+    }
+
+    lockBtn(btn) {
+        btn.node.getChildByName("LockedBackground").active = false;
+    }
+
+    menuMouseOn() {
+        this.back.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            this.playClickAudio();
+            this.loadScene("character choose");
+        });
+        this.map1btn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.map1 == "true") {
+                this.playClickAudio();
+                this.loadScene("map1");
+            }
+        });
+        this.map2btn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.map2 == "true") {
+                this.playClickAudio();
+                this.loadScene("map2");
+            }
         });
     }
 
-    initMap1Btn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "map1";
-        cc.find("Btn_Square02_n/map1").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    playClickAudio(){
+        cc.audioEngine.playEffect(this.click, false);
     }
 
-    map1() {
+    loadScene(scene: string) {
         cc.audioEngine.stopAll();
         cc.director.loadScene("loading", ()=>{
-            cc.director.loadScene("map1");
+            cc.director.loadScene(scene);
         });
-        cc.sys.localStorage.setItem("Current Map", "map1");
     }
-
-    initMap2Btn() {
-        let clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "chooseMap";
-        clickEventHandler.handler = "map2";
-        cc.find("Btn_Square02_n/map2").getComponent(cc.Button).clickEvents.push(clickEventHandler);
-    }
-
-    map2() {
-        cc.audioEngine.stopAll();
-        cc.director.loadScene("loading", ()=>{
-            cc.director.loadScene("map2");
-        });
-        cc.sys.localStorage.setItem("Current Map", "map2");
-    }
-
 }

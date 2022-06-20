@@ -176,7 +176,7 @@ var SelectChar = /** @class */ (function (_super) {
             this.p3c4.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
                 if (_this.char4 == "true") {
                     _this.playClickAudio();
-                    _this.selected("char3", "3");
+                    _this.selected("char4", "3");
                 }
             });
         }
@@ -222,6 +222,8 @@ var SelectChar = /** @class */ (function (_super) {
             }
             if (this.player4.active) {
                 this.lockBtn(this.p4c1);
+                console.log("check");
+                console.log(this.p4c1.node.getChildByName("LockedBackground").active);
             }
         }
         if (this.char2 == "true") {
@@ -260,7 +262,6 @@ var SelectChar = /** @class */ (function (_super) {
     };
     SelectChar.prototype.selected = function (charType, idx) {
         cc.sys.localStorage.setItem("Player " + idx + " Char", charType);
-        console.log(cc.sys.localStorage.getItem("Player " + idx + " Char"));
     };
     SelectChar.prototype.setTotalPlayer = function () {
         if (this.playerNum == "2") {

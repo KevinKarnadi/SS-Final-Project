@@ -68,7 +68,9 @@ var Menu = /** @class */ (function (_super) {
         return _this;
     }
     Menu.prototype.onLoad = function () {
-        this.playBGM();
+        if (!cc.audioEngine.isMusicPlaying()) {
+            this.playBGM();
+        }
         this.loadUserStats();
         this.initMenuButtons();
         this.initSettingsMenuButtons();

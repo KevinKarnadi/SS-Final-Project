@@ -11708,7 +11708,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
+    "_name": "LockedBackground",
     "_objFlags": 512,
     "_parent": {
       "__id__": 225
@@ -12603,7 +12603,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
+    "_name": "LockedBackground",
     "_objFlags": 512,
     "_parent": {
       "__id__": 243
@@ -13496,7 +13496,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
+    "_name": "LockedBackground",
     "_objFlags": 512,
     "_parent": {
       "__id__": 261
@@ -15045,7 +15045,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
+    "_name": "LockedBackground",
     "_objFlags": 0,
     "_parent": {
       "__id__": 293
@@ -15381,7 +15381,7 @@
   {
     "__type__": "cc.Node",
     "_name": "page_2",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 291
     },
@@ -15447,7 +15447,7 @@
   {
     "__type__": "cc.Node",
     "_name": "SelectToggleP4C2",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 310
     },
@@ -15519,7 +15519,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 311
     },
@@ -15938,8 +15938,8 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
-    "_objFlags": 0,
+    "_name": "LockedBackground",
+    "_objFlags": 512,
     "_parent": {
       "__id__": 311
     },
@@ -16276,7 +16276,7 @@
   {
     "__type__": "cc.Node",
     "_name": "page_3",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 291
     },
@@ -16342,7 +16342,7 @@
   {
     "__type__": "cc.Node",
     "_name": "SelectToggleP4C3",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 328
     },
@@ -16414,7 +16414,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 329
     },
@@ -16833,8 +16833,8 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
-    "_objFlags": 0,
+    "_name": "LockedBackground",
+    "_objFlags": 512,
     "_parent": {
       "__id__": 329
     },
@@ -17169,7 +17169,7 @@
   {
     "__type__": "cc.Node",
     "_name": "page_4",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 291
     },
@@ -17235,7 +17235,7 @@
   {
     "__type__": "cc.Node",
     "_name": "SelectToggleP4C4",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 346
     },
@@ -17307,7 +17307,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 347
     },
@@ -17726,8 +17726,8 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Background",
-    "_objFlags": 0,
+    "_name": "LockedBackground",
+    "_objFlags": 512,
     "_parent": {
       "__id__": 347
     },
@@ -18114,7 +18114,7 @@
   {
     "__type__": "cc.Node",
     "_name": "indicator",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 283
     },

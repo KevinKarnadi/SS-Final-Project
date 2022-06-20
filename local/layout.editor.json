@@ -87,7 +87,7 @@
         "cocos-services"
       ]
     },
-    "window-1655750274058": {}
+    "window-1655751358275": {}
   },
   "panels": {
     "project-settings": {
@@ -97,8 +97,8 @@
       "height": 572
     },
     "builder": {
-      "x": 416,
-      "y": 72,
+      "x": -566,
+      "y": -132,
       "width": 520,
       "height": 740
     }
