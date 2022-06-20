@@ -147,8 +147,10 @@ export default class Player extends cc.Component {
         if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if(!this.isDie) {
                 cc.audioEngine.playEffect(this.sfx_hit, false);
+                console.log(this.HP, "before");
                 this.HP -= (other.node.group == "explosiveObj") ? this.changeHp(25) : this.changeHp(10);
                 this.HP += (7*this.hpVec);
+                console.log(this.HP, "after");
                 if(this.HP <= 0) {
                     this.HP = 0;
                 } else {
@@ -476,6 +478,7 @@ export default class Player extends cc.Component {
             this.playerChar = "char4";
             this.playerChar = "char1";
         }
+        this.setSkill(this.playerChar);
     }
 
     getCurrWeaponNum(){

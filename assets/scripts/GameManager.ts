@@ -87,6 +87,7 @@ export default class GameManager extends cc.Component {
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        // this.playerNum = 4;
         // this.alivePlayer = this.totalPlayer;
         this.alivePlayer = parseInt(this.playerNum);
     }
