@@ -23,8 +23,8 @@ export default class ExplosiveObj extends cc.Component {
     }
     
     onBeginContact(contact, self, other){
-        if(!this.isExplode){
-            if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb" || other.node.name == "Die Boundary"){
+        if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb" || other.node.name == "Die Boundary"){
+            if(!this.isExplode){
                 cc.audioEngine.playEffect(this.sfx_barrel, false);
                 // this.node.y += 1;
                 // this.node.y -= 6;
@@ -34,8 +34,8 @@ export default class ExplosiveObj extends cc.Component {
                 this.scheduleOnce(()=>{
                     this.node.destroy()
                 }, 0.7);
+                this.isExplode = true;
             }
-            this.isExplode = true;
         }
     }
 }

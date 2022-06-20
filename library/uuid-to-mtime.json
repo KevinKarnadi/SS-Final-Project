@@ -10924,11 +10924,6 @@
     "meta": 1655720229457,
     "relativePath": "scenes\\instructions.fire"
   },
-  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
-    "asset": 1655710644315,
-    "meta": 1655720230379,
-    "relativePath": "scripts\\explosiveObj.ts"
-  },
   "56f80abf-11ab-4509-b792-89693b426946": {
     "asset": 1655715693848,
     "meta": 1655720231041,
@@ -11043,5 +11038,10 @@
     "asset": 1655720616286,
     "meta": 1655720802833,
     "relativePath": "scripts\\UI.ts"
+  },
+  "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
+    "asset": 1655721618816,
+    "meta": 1655721623545,
+    "relativePath": "scripts\\explosiveObj.ts"
   }
 }
