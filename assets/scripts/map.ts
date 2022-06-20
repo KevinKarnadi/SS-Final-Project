@@ -65,7 +65,7 @@ export default class Map extends cc.Component {
             // y.max = -222.5
         }
 
-        this.schedule(this.spawnWeapon, 1);
+        this.schedule(this.spawnWeapon, 10);
         this.schedule(this.spawnPotion, 12);
         this.schedule(()=>{
             this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
@@ -80,6 +80,14 @@ export default class Map extends cc.Component {
         this.weaponState[2] = cc.sys.localStorage.getItem("grenade");
         this.weaponState[3] = cc.sys.localStorage.getItem("shotgun");
         this.weaponState[4] = cc.sys.localStorage.getItem("sniper");
+        for(let i=0; i<5; i++){
+            if(!this.weaponState[i]){
+                this.weaponState[i] = false;
+            } else{
+                this.weaponState[i] = true;
+            }
+        }
+        // console.log(this.weaponState, "load");
     }
     
     start () {

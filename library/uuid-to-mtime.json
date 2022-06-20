@@ -11069,16 +11069,6 @@
     "meta": 1655751272370,
     "relativePath": "resources"
   },
-  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
-    "asset": 1655751220521,
-    "meta": 1655751272492,
-    "relativePath": "scripts\\map.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655751257985,
-    "meta": 1655751272774,
-    "relativePath": "scripts\\Player.ts"
-  },
   "989f335f-e664-406a-99c6-7486ad70183d": {
     "asset": 1655751257989,
     "meta": 1655751272950,
@@ -11089,14 +11079,39 @@
     "meta": 1655751273018,
     "relativePath": "scripts\\Win.ts"
   },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655751257983,
-    "meta": 1655751273064,
-    "relativePath": "scenes\\map2.fire"
-  },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
     "asset": 1655751257965,
     "meta": 1655751273116,
     "relativePath": "scenes\\map1.fire"
+  },
+  "14f7010a-9eff-411b-b546-b8756bc8ab98": {
+    "asset": 1655754883374,
+    "meta": 1655754890044,
+    "relativePath": "scripts\\map.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655754844483,
+    "meta": 1655754890535,
+    "relativePath": "scripts\\Player.ts"
+  },
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655754833445,
+    "meta": 1655754891086,
+    "relativePath": "scenes\\map2.fire"
+  },
+  "b79f0229-32a7-45c2-af49-30c5ca23c6b1": {
+    "asset": 1655754844436,
+    "meta": 1655754894122,
+    "relativePath": "audios\\walk.mp3"
+  },
+  "4e3bb7d0-73d4-4fef-8c8f-9cd940cc9265": {
+    "asset": 1655754844351,
+    "meta": 1655754894125,
+    "relativePath": "audios\\die.mp3"
+  },
+  "0a978afd-5f94-4d56-8a97-3a6f2dfdb4b9": {
+    "asset": 1655754844397,
+    "meta": 1655754894127,
+    "relativePath": "audios\\jump.wav"
   }
 }

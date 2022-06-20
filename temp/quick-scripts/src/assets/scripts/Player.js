@@ -30,6 +30,7 @@ var Player = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.jumpAudio = null;
         _this.dieAudio = null;
+        _this.walkAudio = null;
         _this.bulletPrefab = null;
         _this.bombPrefab = null;
         _this.damageParc = null;
@@ -206,6 +207,7 @@ var Player = /** @class */ (function (_super) {
         }
     };
     Player.prototype.playerMove = function (dt) {
+        //cc.audioEngine.playEffect(this.walkAudio, false);
         this.node.x += this.moveSpeed * this.speedVec * this.moveDirection * dt; // player walking
         this.isMove = (this.moveDirection != 0) ? true : false;
         if (this.moveDirection == 1 || this.changeDirection == 1) { // change direction using scaling
@@ -227,6 +229,7 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerJump = function () {
         if (this.isOnGround) { // player is on ground
+            cc.audioEngine.playEffect(this.jumpAudio, false);
             this.rigidBody.linearVelocity = cc.v2(0, this.jumpVelocity); // add jump velocity
             this.isOnGround = false;
             cc.audioEngine.playEffect(this.jumpAudio, false);
@@ -286,6 +289,7 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.playerDie = function () {
         this.isDie = true;
+        cc.audioEngine.playEffect(this.dieAudio, false);
         if (this.playerChar == "char1") {
             this.animation.stop('char1idle');
             this.animationState = this.animation.play('char1dead');
@@ -492,6 +496,9 @@ var Player = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], Player.prototype, "dieAudio", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], Player.prototype, "walkAudio", void 0);
     __decorate([
         property(cc.Prefab)
     ], Player.prototype, "bulletPrefab", void 0);

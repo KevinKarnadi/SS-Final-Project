@@ -42,6 +42,7 @@ var Map = /** @class */ (function (_super) {
         _this.firePool = null;
         _this.spawnCooldown = 0;
         _this.toSpawnWeaponNum = 0;
+        _this.weaponState = [true, false, false, false, false];
         return _this;
     }
     Map.prototype.onLoad = function () {
@@ -77,6 +78,25 @@ var Map = /** @class */ (function (_super) {
         this.schedule(function () {
             _this.toSpawnWeaponNum = Math.floor(Math.random() * 5);
         }, 8);
+        // cc.sys.localStorage.setItem("AK47", AK47);
+        // cc.sys.localStorage.setItem("AR", AR);
+        // cc.sys.localStorage.setItem("grenade", grenade);
+        // cc.sys.localStorage.setItem("shotgun", shotgun);
+        // cc.sys.localStorage.setItem("sniper", sniper);
+        this.weaponState[0] = cc.sys.localStorage.getItem("AK47");
+        this.weaponState[1] = cc.sys.localStorage.getItem("AR");
+        this.weaponState[2] = cc.sys.localStorage.getItem("grenade");
+        this.weaponState[3] = cc.sys.localStorage.getItem("shotgun");
+        this.weaponState[4] = cc.sys.localStorage.getItem("sniper");
+        for (var i = 0; i < 5; i++) {
+            if (!this.weaponState[i]) {
+                this.weaponState[i] = false;
+            }
+            else {
+                this.weaponState[i] = true;
+            }
+        }
+        // console.log(this.weaponState, "load");
     };
     Map.prototype.start = function () {
         this.createGround();
@@ -124,6 +144,16 @@ var Map = /** @class */ (function (_super) {
     Map.prototype.spawnWeapon = function () {
         var newWeapon = null;
         var position = cc.v2(Math.floor(Math.random() * 2200) - 150, 350);
+        for (var i = 0; i < 5; i++) {
+            if (this.weaponState[this.toSpawnWeaponNum]) {
+                break;
+            }
+            else {
+                this.toSpawnWeaponNum++;
+                this.toSpawnWeaponNum %= 5;
+            }
+            // console.log(this.toSpawnWeaponNum, "spawn");
+        }
         switch (this.toSpawnWeaponNum) {
             case 0:
                 newWeapon = cc.instantiate(this.weaponPrefab0);
@@ -141,7 +171,7 @@ var Map = /** @class */ (function (_super) {
                 newWeapon = cc.instantiate(this.weaponPrefab4);
                 break;
             default:
-                newWeapon = cc.instantiate(this.weaponPrefab3);
+                newWeapon = cc.instantiate(this.weaponPrefab0);
                 break;
         }
         if (newWeapon) {
