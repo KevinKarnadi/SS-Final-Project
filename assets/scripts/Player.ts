@@ -81,6 +81,12 @@ export default class Player extends cc.Component {
 
     private aim: boolean = false;
 
+    private skill: string = "none";
+
+    private speedVec: number = 1;
+
+    private hpVec: number = 0;
+
     @property(cc.AudioClip)
     sfx_hit: cc.AudioClip = null;
 
@@ -141,7 +147,8 @@ export default class Player extends cc.Component {
         if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if(!this.isDie) {
                 cc.audioEngine.playEffect(this.sfx_hit, false);
-                this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
+                this.HP -= (other.node.group == "explosiveObj") ? this.changeHp(25) : this.changeHp(10);
+                this.HP += (7*this.hpVec);
                 if(this.HP <= 0) {
                     this.HP = 0;
                 } else {
@@ -222,7 +229,7 @@ export default class Player extends cc.Component {
     }
 
     playerMove(dt) {
-        this.node.x += this.moveSpeed * this.moveDirection * dt;    // player walking
+        this.node.x += this.moveSpeed * this.speedVec * this.moveDirection * dt;    // player walking
         this.isMove = (this.moveDirection != 0) ? true : false;
         if(this.moveDirection == 1 || this.changeDirection == 1) {   // change direction using scaling
             this.node.scaleX = 1;
@@ -473,5 +480,36 @@ export default class Player extends cc.Component {
 
     getCurrWeaponNum(){
         return this.currWeaponNum;
+    }
+
+    setSkill(charNum: string){
+        switch (charNum){
+            case "char1":
+                this.skill = "none";
+                break;
+            case "char2":
+                this.skill = "speed";
+                this.speedVec = 1.5;
+                break;
+            case "char3":
+                this.skill = "health";
+                this.hpVec = 1;
+                break;
+            case "char4":
+                this.skill = "damage";
+                break;
+            default:
+                this.skill = "none";
+                break;
+        }
+    }
+
+    changeHp(value: number){
+        let currPlayer = cc.find("Canvas/Game Manager").getComponent("GameManager").getCurrPlayer();
+        let damageGet = value;
+        if(currPlayer == 3 && value != 25){
+            damageGet += 10;
+        }
+        return damageGet;
     }
 }

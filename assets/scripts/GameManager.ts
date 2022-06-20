@@ -584,4 +584,8 @@ export default class GameManager extends cc.Component {
                 break;
         }
     }
+
+    getCurrPlayer(){
+        return this.currPlayer;
+    }
 }

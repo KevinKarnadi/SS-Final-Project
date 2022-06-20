@@ -10969,11 +10969,6 @@
     "meta": 1655734469301,
     "relativePath": "scripts\\explosiveObj.ts"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655734394876,
-    "meta": 1655734469598,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "27c0127c-e3b1-4bf4-97cc-17049951fe99": {
     "asset": 1655720637780,
     "meta": 1655734469648,
@@ -10983,11 +10978,6 @@
     "asset": 1655720652443,
     "meta": 1655734469699,
     "relativePath": "scripts\\Ground2.ts"
-  },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655734394883,
-    "meta": 1655734470377,
-    "relativePath": "scripts\\Player.ts"
   },
   "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
     "asset": 1655726232396,
@@ -11088,5 +11078,15 @@
     "asset": 1655731296618,
     "meta": 1655734907361,
     "relativePath": "tiles\\buff\\extraHP.png"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655735084934,
+    "meta": 1655735256271,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655735241953,
+    "meta": 1655735256559,
+    "relativePath": "scripts\\Player.ts"
   }
 }

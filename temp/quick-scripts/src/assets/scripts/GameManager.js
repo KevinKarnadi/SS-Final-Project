@@ -529,6 +529,9 @@ var GameManager = /** @class */ (function (_super) {
                 break;
         }
     };
+    GameManager.prototype.getCurrPlayer = function () {
+        return this.currPlayer;
+    };
     __decorate([
         property(Player_1.default)
     ], GameManager.prototype, "player1", void 0);
