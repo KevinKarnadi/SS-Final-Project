@@ -50,7 +50,6 @@ export default class Bullet extends cc.Component
     private bulletMove()
     {
         let moveDir = null;
-        console.log("aaa")
 
         // decide bullet direction
         if(this.node.scaleX > 0) {

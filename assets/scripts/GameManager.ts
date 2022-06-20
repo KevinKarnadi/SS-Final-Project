@@ -511,26 +511,26 @@ export default class GameManager extends cc.Component {
     changePlayerUi(){
         cc.find("Canvas/Main Camera/Profile/name").getComponent(cc.Label).string = this.player.playerName.getComponent(cc.Label).string;
 
-        switch(this.currPlayer){
-            case 0:
+        switch(this.player.playerChar){
+            case "char1":
                 cc.find("Canvas/Main Camera/Profile/face0").active = true;
                 cc.find("Canvas/Main Camera/Profile/face1").active = false;
                 cc.find("Canvas/Main Camera/Profile/face2").active = false;
                 cc.find("Canvas/Main Camera/Profile/face3").active = false;
                 break;
-            case 1:
+            case "char2":
                 cc.find("Canvas/Main Camera/Profile/face0").active = false;
                 cc.find("Canvas/Main Camera/Profile/face1").active = true;
                 cc.find("Canvas/Main Camera/Profile/face2").active = false;
                 cc.find("Canvas/Main Camera/Profile/face3").active = false;
                 break;
-            case 2:
+            case "char3":
                 cc.find("Canvas/Main Camera/Profile/face0").active = false;
                 cc.find("Canvas/Main Camera/Profile/face1").active = false;
                 cc.find("Canvas/Main Camera/Profile/face2").active = true;
                 cc.find("Canvas/Main Camera/Profile/face3").active = false;
                 break;
-            case 3:
+            case "char4":
                 cc.find("Canvas/Main Camera/Profile/face0").active = false;
                 cc.find("Canvas/Main Camera/Profile/face1").active = false;
                 cc.find("Canvas/Main Camera/Profile/face2").active = false;

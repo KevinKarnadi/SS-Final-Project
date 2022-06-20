@@ -994,11 +994,6 @@
     "meta": 1655620784915,
     "relativePath": "animations\\char1"
   },
-  "9048496c-8fb7-42f2-b0cb-1b006f7c4a5b": {
-    "asset": 1655456712832,
-    "meta": 1655620786443,
-    "relativePath": "scenes\\welcome.fire"
-  },
   "457d5bc7-e8ff-4ddf-a4ae-d64c15b91b7f": {
     "asset": 1655456712459,
     "meta": 1655620786535,
@@ -10934,11 +10929,6 @@
     "meta": 1655703727794,
     "relativePath": "menu\\Icon_MenuIcon_Setting.Png"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655703714911,
-    "meta": 1655703727972,
-    "relativePath": "scripts\\GameManager.ts"
-  },
   "67fae45e-7dd3-4aec-8f8f-21654317f419": {
     "asset": 1655667234000,
     "meta": 1655703727992,
@@ -10999,14 +10989,24 @@
     "meta": 1655703728253,
     "relativePath": "menu\\titlemenu.png"
   },
-  "889b5329-bfed-4779-9715-b56e83d934ca": {
-    "asset": 1655703956775,
-    "meta": 1655703958585,
-    "relativePath": "scripts\\Bullet.ts"
-  },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
     "asset": 1655704268926,
     "meta": 1655704309493,
     "relativePath": "scripts\\Player.ts"
+  },
+  "9048496c-8fb7-42f2-b0cb-1b006f7c4a5b": {
+    "asset": 1655705178020,
+    "meta": 1655705193165,
+    "relativePath": "scenes\\welcome.fire"
+  },
+  "889b5329-bfed-4779-9715-b56e83d934ca": {
+    "asset": 1655705452471,
+    "meta": 1655705461248,
+    "relativePath": "scripts\\Bullet.ts"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655705747413,
+    "meta": 1655705753638,
+    "relativePath": "scripts\\GameManager.ts"
   }
 }
