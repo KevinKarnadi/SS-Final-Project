@@ -29,50 +29,55 @@ var Ending = /** @class */ (function (_super) {
     function Ending() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.map = "map1";
+        _this.bgm = null;
         return _this;
     }
     Ending.prototype.onLoad = function () {
+        // cc.sys.localStorage.setItem("Current Map", "map1");
     };
     Ending.prototype.start = function () {
-        this.mainMenuBtn();
-        this.quitBtn();
-        this.replayBtn();
-        console.log(this.map);
+        this.btnInit();
+        if (this.bgm) {
+            cc.audioEngine.playMusic(this.bgm, true);
+        }
     };
-    // update (dt) {}
-    Ending.prototype.mainMenuBtn = function () {
-        var clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "ending";
-        clickEventHandler.handler = "loadMainMenu";
-        cc.find("Canvas/MainMenu").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    Ending.prototype.update = function (dt) {
     };
-    Ending.prototype.loadMainMenu = function () {
-        cc.director.loadScene("main menu");
-    };
-    Ending.prototype.quitBtn = function () {
-        var clickEventHandler = new cc.Component.EventHandler();
-        clickEventHandler.target = this.node;
-        clickEventHandler.component = "ending";
-        clickEventHandler.handler = "quit";
-        cc.find("Canvas/Quit").getComponent(cc.Button).clickEvents.push(clickEventHandler);
-        // console.log(this.node.parent.getChildByName("Quit").getComponent(cc.Button)) ;
-    };
-    Ending.prototype.quit = function () {
-        cc.game.end();
-    };
-    Ending.prototype.replayBtn = function () {
+    Ending.prototype.btnInit = function () {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
         clickEventHandler.component = "ending";
         clickEventHandler.handler = "loadMap";
-        cc.find("Canvas/Replay").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Replay").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "ending";
+        clickEventHandler.handler = "quit";
+        cc.find("Canvas/Background/Quit").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "ending";
+        clickEventHandler.handler = "loadMainMenu";
+        cc.find("Canvas/Background/Main Menu").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
-    Ending.prototype.loadMap = function () {
+    Ending.prototype.loadMainMenu = function () {
         cc.director.loadScene("loading", function () {
-            cc.director.loadScene("map1");
+            cc.director.loadScene("menu");
         });
     };
+    Ending.prototype.quit = function () {
+        cc.game.end();
+    };
+    Ending.prototype.loadMap = function () {
+        var toLoad = cc.sys.localStorage.getItem("Current Map");
+        // toLoad = "map1";
+        cc.director.loadScene("loading", function () {
+            cc.director.loadScene(toLoad);
+        });
+    };
+    __decorate([
+        property(cc.AudioClip)
+    ], Ending.prototype, "bgm", void 0);
     Ending = __decorate([
         ccclass
     ], Ending);

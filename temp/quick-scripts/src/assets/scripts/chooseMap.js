@@ -27,7 +27,9 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var chooseMap = /** @class */ (function (_super) {
     __extends(chooseMap, _super);
     function chooseMap() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.chosenMap = "map1";
+        return _this;
     }
     chooseMap.prototype.onLoad = function () {
         this.initMap1Btn();
@@ -60,6 +62,7 @@ var chooseMap = /** @class */ (function (_super) {
         cc.director.loadScene("loading", function () {
             cc.director.loadScene("map1");
         });
+        cc.sys.localStorage.setItem("Current Map", "map1");
     };
     chooseMap.prototype.initMap2Btn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
@@ -73,6 +76,7 @@ var chooseMap = /** @class */ (function (_super) {
         cc.director.loadScene("loading", function () {
             cc.director.loadScene("map2");
         });
+        cc.sys.localStorage.setItem("Current Map", "map2");
     };
     chooseMap = __decorate([
         ccclass
