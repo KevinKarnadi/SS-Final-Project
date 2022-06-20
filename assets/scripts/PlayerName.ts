@@ -67,8 +67,7 @@ export default class NewClass extends cc.Component {
         });
         this.selectMap.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
             this.setPlayerName();
-            // this.loadScene("map choose");
-            this.loadScene("map1");
+            this.loadScene("map choose");
         });
     }
 
