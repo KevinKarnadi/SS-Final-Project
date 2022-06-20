@@ -201,6 +201,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": ""
   },
   {

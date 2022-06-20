@@ -64,6 +64,7 @@ var Player = /** @class */ (function (_super) {
         _this.gunType = "normal";
         _this.currWeaponNum = "0";
         _this.aim = false;
+        _this.sfx_hit = null;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -119,6 +120,7 @@ var Player = /** @class */ (function (_super) {
         // }
         if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if (!this.isDie) {
+                cc.audioEngine.playEffect(this.sfx_hit, false);
                 this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
                 if (this.HP <= 0) {
                     this.HP = 0;
@@ -438,14 +440,17 @@ var Player = /** @class */ (function (_super) {
         }
         else if (this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
+            this.playerChar = "char2";
             this.playerChar = "char1";
         }
         else if (this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
+            this.playerChar = "char3";
             this.playerChar = "char1";
         }
         else if (this.node.name == "Player 4") {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
+            this.playerChar = "char4";
             this.playerChar = "char1";
         }
     };
@@ -470,6 +475,9 @@ var Player = /** @class */ (function (_super) {
     __decorate([
         property(cc.Prefab)
     ], Player.prototype, "damageEffAnim", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], Player.prototype, "sfx_hit", void 0);
     Player = __decorate([
         ccclass
     ], Player);

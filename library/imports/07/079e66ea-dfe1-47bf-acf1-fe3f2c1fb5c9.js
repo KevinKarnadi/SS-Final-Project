@@ -29,6 +29,7 @@ var ExplosiveObj = /** @class */ (function (_super) {
     function ExplosiveObj() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.anim = null;
+        _this.sfx_barrel = null;
         return _this;
     }
     ExplosiveObj.prototype.onLoad = function () {
@@ -41,6 +42,7 @@ var ExplosiveObj = /** @class */ (function (_super) {
     ExplosiveObj.prototype.onBeginContact = function (contact, self, other) {
         var _this = this;
         if (other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb" || other.node.name == "Die Boundary") {
+            cc.audioEngine.playEffect(this.sfx_barrel, false);
             // this.node.y += 1;
             // this.node.y -= 6;
             this.node.getComponent(cc.PhysicsCircleCollider).enabled = true;
@@ -51,6 +53,9 @@ var ExplosiveObj = /** @class */ (function (_super) {
             }, 0.7);
         }
     };
+    __decorate([
+        property(cc.AudioClip)
+    ], ExplosiveObj.prototype, "sfx_barrel", void 0);
     ExplosiveObj = __decorate([
         ccclass
     ], ExplosiveObj);

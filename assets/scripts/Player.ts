@@ -81,6 +81,9 @@ export default class Player extends cc.Component {
 
     private aim: boolean = false;
 
+    @property(cc.AudioClip)
+    sfx_hit: cc.AudioClip = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -137,6 +140,7 @@ export default class Player extends cc.Component {
         // }
         if(other.node.group == "bullet" || other.node.group == "explosiveObj" || other.node.group == "bomb") {
             if(!this.isDie) {
+                cc.audioEngine.playEffect(this.sfx_hit, false);
                 this.HP -= (other.node.group == "explosiveObj") ? 25 : 10;
                 if(this.HP <= 0) {
                     this.HP = 0;
@@ -451,12 +455,15 @@ export default class Player extends cc.Component {
             this.playerChar = "char1";
         } else if(this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
+            this.playerChar = "char2";
             this.playerChar = "char1";
         } else if(this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
+            this.playerChar = "char3";
             this.playerChar = "char1";
         } else if(this.node.name == "Player 4") {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
+            this.playerChar = "char4";
             this.playerChar = "char1";
         }
     }

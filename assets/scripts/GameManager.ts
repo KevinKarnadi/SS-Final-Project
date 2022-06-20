@@ -451,6 +451,24 @@ export default class GameManager extends cc.Component {
         bgmute_clickEventHandler.component = "GameManager";
         bgmute_clickEventHandler.handler = "bgMute";
         cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Mute/bgMuteBtn").getComponent(cc.Button).clickEvents.push(bgmute_clickEventHandler);
+
+        let sfxmute_clickEventHandler = new cc.Component.EventHandler();
+        sfxmute_clickEventHandler.target = this.node;
+        sfxmute_clickEventHandler.component = "GameManager";
+        sfxmute_clickEventHandler.handler = "sfxMute";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Mute/sfxMuteBtn").getComponent(cc.Button).clickEvents.push(sfxmute_clickEventHandler);
+    
+        let bg_sliderEventHandler = new cc.Component.EventHandler();
+        bg_sliderEventHandler.target = this.node;
+        bg_sliderEventHandler.component = "GameManager";
+        bg_sliderEventHandler.handler = "changeBgVol";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Volume/bgSlider").getComponent(cc.Slider).slideEvents.push(bg_sliderEventHandler);
+
+        let sfx_sliderEventHandler = new cc.Component.EventHandler();
+        sfx_sliderEventHandler.target = this.node;
+        sfx_sliderEventHandler.component = "GameManager";
+        sfx_sliderEventHandler.handler = "changeSfxVol";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).slideEvents.push(sfx_sliderEventHandler);
     }
 
     close() {
@@ -459,6 +477,20 @@ export default class GameManager extends cc.Component {
 
     bgMute() {
         cc.audioEngine.setMusicVolume(0);
+    }
+
+    sfxMute() {
+        cc.audioEngine.setEffectsVolume(0);
+    }
+
+    changeBgVol() {
+        let value = cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Volume/bgSlider").getComponent(cc.Slider).progress;
+        cc.audioEngine.setMusicVolume(value);
+    }
+
+    changeSfxVol() {
+        let value = cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).progress;
+        cc.audioEngine.setEffectsVolume(value);
     }
 
     setCameraAnchor(value){

@@ -33,10 +33,12 @@ var Bullet = /** @class */ (function (_super) {
         _this.shootAngle = null;
         _this.animation = null;
         _this.speed = null;
+        _this.sfx_shoot = null;
         return _this;
     }
     // when created, the bullet need to be placed at correct position and play animation.
     Bullet.prototype.init = function (node, speed) {
+        cc.audioEngine.playEffect(this.sfx_shoot, false);
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
@@ -84,6 +86,9 @@ var Bullet = /** @class */ (function (_super) {
     Bullet.prototype.setAngle = function (angle) {
         this.shootAngle = angle;
     };
+    __decorate([
+        property(cc.AudioClip)
+    ], Bullet.prototype, "sfx_shoot", void 0);
     Bullet = __decorate([
         ccclass
     ], Bullet);

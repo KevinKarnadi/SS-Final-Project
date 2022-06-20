@@ -294,6 +294,9 @@
     "damageEffAnim": {
       "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
     },
+    "sfx_hit": {
+      "__uuid__": "35e19a37-513c-4138-aac5-a082e93fd5cb"
+    },
     "_id": "3ep6Z0rjpMppnB0/Fdq3wW"
   },
   {
@@ -1930,6 +1933,9 @@
     "damageEffAnim": {
       "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
     },
+    "sfx_hit": {
+      "__uuid__": "35e19a37-513c-4138-aac5-a082e93fd5cb"
+    },
     "_id": "a7lLcG491PBJn3d+gGNY8Y"
   },
   {
@@ -3405,6 +3411,9 @@
     "damageEffAnim": {
       "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
     },
+    "sfx_hit": {
+      "__uuid__": "35e19a37-513c-4138-aac5-a082e93fd5cb"
+    },
     "_id": "c9V8U5ZQZDfKA6ReVMtt1W"
   },
   {
@@ -4879,6 +4888,9 @@
     },
     "damageEffAnim": {
       "__uuid__": "e8377321-f999-4b8c-9de6-747ed22edec2"
+    },
+    "sfx_hit": {
+      "__uuid__": "35e19a37-513c-4138-aac5-a082e93fd5cb"
     },
     "_id": "4fT/X3nmBPnKfZ8i7JHTK9"
   },
@@ -71607,6 +71619,9 @@
       "__id__": 1673
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "3eQcms6ixAj4JWIth0fqWj"
   },
   {
@@ -71829,6 +71844,9 @@
       "__id__": 1681
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "0eBDq+1AlKYp/O5ik9038D"
   },
   {
@@ -72051,6 +72069,9 @@
       "__id__": 1689
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "e9dxxVfndNAp1EjPLlra5Q"
   },
   {
@@ -72273,6 +72294,9 @@
       "__id__": 1697
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "b5vmg/vAJIZKLfB9oRLiTO"
   },
   {
@@ -72495,6 +72519,9 @@
       "__id__": 1705
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "33CYzLTwRPYbgITdz/LnX+"
   },
   {
@@ -72717,6 +72744,9 @@
       "__id__": 1713
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "8a6WMOE7xLT5LuTUmVRM/L"
   },
   {
@@ -72939,6 +72969,9 @@
       "__id__": 1721
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "69O5EjozlOIaajMoY2uG3Y"
   },
   {
@@ -73161,6 +73194,9 @@
       "__id__": 1729
     },
     "_enabled": true,
+    "sfx_barrel": {
+      "__uuid__": "fe3a62f8-225d-4eb4-abcb-5673f5b6c0ee"
+    },
     "_id": "5b6JRkpL5JM5riocRHdTz/"
   },
   {
