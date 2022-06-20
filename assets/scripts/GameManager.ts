@@ -81,6 +81,8 @@ export default class GameManager extends cc.Component {
 
     private moveChoice: string = null;
 
+    private shootFlag: boolean = false;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -360,6 +362,7 @@ export default class GameManager extends cc.Component {
     onEventStart (event) {  // touched
         if (!this.enabledInHierarchy) return;
         if(this.moveChoice == "move") return;
+        if(this.shootFlag == true) return;
 
         if(!this.shoot) {
             // this.startPos = this.node.position;
@@ -374,6 +377,7 @@ export default class GameManager extends cc.Component {
     onEventMove (event) {   // aim
         if (!this.enabledInHierarchy) return;
         if(this.moveChoice == "move") return;
+        if(this.shootFlag == true) return;
 
         var playerPos = event.getStartLocation();
         var mousePos = event.getLocation();
@@ -413,6 +417,7 @@ export default class GameManager extends cc.Component {
     onEventCancel (event) { // shoot
         if (!this.enabledInHierarchy) return;
         if(this.moveChoice == "move") return;
+        if(this.shootFlag == true) return;
 
         this.haveShot();
     
@@ -422,6 +427,7 @@ export default class GameManager extends cc.Component {
     onEventEnd (event) {  // cancel shoot
         if (!this.enabledInHierarchy) return;
         if(this.moveChoice == "move") return;
+        if(this.shootFlag == true) return;
     
         this.haveShot();
     
@@ -431,6 +437,8 @@ export default class GameManager extends cc.Component {
     haveShot() {
         if(this.shoot) return;
         if(this.moveChoice == "move") return;
+        if(this.shootFlag == true) return;
+        this.shootFlag = true;
         this.player.line.getComponent("TrajectoryLine").clearLine();
         // this.shoot = true;
         if(this.player.weapon == "gun") {
@@ -449,6 +457,7 @@ export default class GameManager extends cc.Component {
         this.scheduleOnce(()=>{
             this.UI.freeze = false;
             this.UI.timerVal = 20;
+            this.shootFlag = false;
             this.changePlayer(this.currPlayer + 1);
         }, 2);
     }
