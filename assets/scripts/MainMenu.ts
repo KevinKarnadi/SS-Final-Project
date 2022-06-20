@@ -3,6 +3,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class MainMenu extends cc.Component {
 
+    @property(cc.AudioClip)
+    bgm: cc.AudioClip = null;
+
     initSignUpBtn() {
         let clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
@@ -27,9 +30,14 @@ export default class MainMenu extends cc.Component {
         cc.director.loadScene("sign in");
     }
 
+    playBGM() {
+        cc.audioEngine.playMusic(this.bgm, true);
+    }
+
     onLoad () {}
 
     start () {
+        this.playBGM();
         this.initSignUpBtn();
         this.initSignInBtn();
     }

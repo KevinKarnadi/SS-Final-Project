@@ -16,12 +16,15 @@ export default class SignIn extends cc.Component {
         let passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         let email = emailBox.string;
         let password = passwordBox.string;
+        /*
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
-                cc.director.loadScene("map1");
+                cc.director.loadScene("menu");
             }).catch((e) => {
                 alert(e.message);
             });
+        */
+        cc.director.loadScene("menu");
     }
 
     initBackBtn() {
