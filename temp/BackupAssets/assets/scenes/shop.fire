@@ -1773,7 +1773,7 @@
         "__id__": 35
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 103
@@ -2966,7 +2966,7 @@
   {
     "__type__": "cc.Node",
     "_name": "skill",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 53
     },
@@ -5455,7 +5455,7 @@
     "_N$target": {
       "__id__": 31
     },
-    "_N$isChecked": false,
+    "_N$isChecked": true,
     "toggleGroup": {
       "__id__": 107
     },
@@ -9806,7 +9806,7 @@
         "__id__": 193
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 227
@@ -11766,7 +11766,7 @@
     "_N$target": {
       "__id__": 189
     },
-    "_N$isChecked": true,
+    "_N$isChecked": false,
     "toggleGroup": {
       "__id__": 107
     },

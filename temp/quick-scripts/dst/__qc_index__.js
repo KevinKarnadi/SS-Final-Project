@@ -30,6 +30,7 @@ require('./assets/scripts/MiniCam');
 require('./assets/scripts/Player');
 require('./assets/scripts/PlayerName');
 require('./assets/scripts/Playerchoose');
+require('./assets/scripts/SelectChar');
 require('./assets/scripts/Shop');
 require('./assets/scripts/SignIn');
 require('./assets/scripts/SignUp');

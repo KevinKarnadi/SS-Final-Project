@@ -86,8 +86,14 @@ var Shop = /** @class */ (function (_super) {
         // cc.sys.localStorage.setItem("sniper", false);
         // cc.sys.localStorage.setItem("purple", false);
         // cc.sys.localStorage.setItem("jungle", false);
-        // this.coin.string = cc.sys.localStorage.getItem("coin");  // uncomment later
-        // this.gem.string = cc.sys.localStorage.getItem("gem");    // uncomment later
+        this.coin.string = cc.sys.localStorage.getItem("coin");
+        this.gem.string = cc.sys.localStorage.getItem("gem");
+        if (!this.coin.string) {
+            this.coin.string = "0";
+        }
+        if (!this.gem.string) {
+            this.gem.string = "0";
+        }
         this.char1 = cc.sys.localStorage.getItem("char1");
         this.char2 = cc.sys.localStorage.getItem("char2");
         this.char3 = cc.sys.localStorage.getItem("char3");
