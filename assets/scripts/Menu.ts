@@ -1,3 +1,4 @@
+declare const firebase: any;
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -12,6 +13,7 @@ export default class Menu extends cc.Component {
 
     onLoad() {
         this.playBGM();
+        this
     }
 
     start () {
@@ -21,6 +23,38 @@ export default class Menu extends cc.Component {
 
     playBGM() {
         cc.audioEngine.playMusic(this.bgm, true);
+    }
+
+    async loadUserStats() {
+        var user = firebase.auth().currentUser;
+        if(user) {
+            var stats = firebase.database().ref("userData/" + user.uid);
+            await stats.once("value").then((snapshot)=>{
+                this.setUserStat(snapshot.val().coin, snapshot.val().gem,snapshot.val().char1,
+                snapshot.val().char2, snapshot.val().char3, snapshot.val().char4,
+                snapshot.val().AK47, snapshot.val().AR, snapshot.val().grenade, snapshot.val().shotgun,
+                snapshot.val().sniper, snapshot.val().purple, snapshot.val().forest, snapshot.val().username)
+            })
+        } else {
+            this.setUserStat(0, 0, true, false, false, false, true, false, false, false, false, true, false, "");
+        }
+    }
+
+    setUserStat(coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
+        cc.sys.localStorage.setItem("coin", coin);
+        cc.sys.localStorage.setItem("gem", gem);
+        cc.sys.localStorage.setItem("char1", char1);
+        cc.sys.localStorage.setItem("char2", char2);
+        cc.sys.localStorage.setItem("char3", char3);
+        cc.sys.localStorage.setItem("char4", char4);
+        cc.sys.localStorage.setItem("AK47", AK47);
+        cc.sys.localStorage.setItem("AR", AR);
+        cc.sys.localStorage.setItem("grenade", grenade);
+        cc.sys.localStorage.setItem("shotgun", shotgun);
+        cc.sys.localStorage.setItem("sniper", sniper);
+        cc.sys.localStorage.setItem("purple", purple);
+        cc.sys.localStorage.setItem("forest", forest);
+        cc.sys.localStorage.setItem("username", username);
     }
 
     initMenuButtons() {

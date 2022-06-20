@@ -10929,16 +10929,6 @@
     "meta": 1655716487009,
     "relativePath": "audios\\bomb.ogg"
   },
-  "06ed03a8-d701-4b1c-9f89-d27b77bb0f1e": {
-    "asset": 1655728055325,
-    "meta": 1655728070517,
-    "relativePath": "scripts\\SignIn.ts"
-  },
-  "7ec243e1-2beb-482d-b375-3722e4434f8e": {
-    "asset": 1655716522359,
-    "meta": 1655716532723,
-    "relativePath": "scripts\\SignUp.ts"
-  },
   "079e66ea-dfe1-47bf-acf1-fe3f2c1fb5c9": {
     "asset": 1655722631401,
     "meta": 1655722707041,
@@ -10988,11 +10978,6 @@
     "asset": 1655738548705,
     "meta": 1655738636589,
     "relativePath": "scripts\\MainMenu.ts"
-  },
-  "4c7686a6-3d5a-452f-80f0-febc320f8769": {
-    "asset": 1655738548706,
-    "meta": 1655738636639,
-    "relativePath": "scripts\\Menu.ts"
   },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
     "asset": 1655738548707,
@@ -11088,5 +11073,25 @@
     "asset": 1655739888035,
     "meta": 1655739895574,
     "relativePath": "scenes\\map choose.fire"
+  },
+  "87af2905-c197-43f5-ad48-8882462e5cd8": {
+    "asset": 1655741621196,
+    "meta": 1655741693127,
+    "relativePath": "scripts\\firebase.js"
+  },
+  "7ec243e1-2beb-482d-b375-3722e4434f8e": {
+    "asset": 1655744423238,
+    "meta": 1655744676653,
+    "relativePath": "scripts\\SignUp.ts"
+  },
+  "4c7686a6-3d5a-452f-80f0-febc320f8769": {
+    "asset": 1655745528328,
+    "meta": 1655745560515,
+    "relativePath": "scripts\\Menu.ts"
+  },
+  "06ed03a8-d701-4b1c-9f89-d27b77bb0f1e": {
+    "asset": 1655745550057,
+    "meta": 1655745560550,
+    "relativePath": "scripts\\SignIn.ts"
   }
 }
