@@ -8,12 +8,12 @@ export default class SignIn extends cc.Component {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignIn";
         clickEventHandler.handler = "signIn";
-        cc.find("Canvas/menuBg/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     }
 
     signIn() {
-        let emailBox = cc.find("Canvas/menuBg/email").getComponent(cc.EditBox);
-        let passwordBox = cc.find("Canvas/menuBg/password").getComponent(cc.EditBox);
+        let emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
+        let passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         let email = emailBox.string;
         let password = passwordBox.string;
         firebase.auth().signInWithEmailAndPassword(email, password)
@@ -29,7 +29,7 @@ export default class SignIn extends cc.Component {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignIn";
         clickEventHandler.handler = "back";
-        cc.find("Canvas/menuBg/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     }
 
     back() {
