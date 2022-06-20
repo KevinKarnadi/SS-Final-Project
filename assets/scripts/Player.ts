@@ -39,7 +39,7 @@ export default class Player extends cc.Component {
 
     private changeDirection: number = 0;
 
-    private jumpVelocity: number = 2500;
+    private jumpVelocity: number = 2000;
 
     private jump: boolean = false;
 

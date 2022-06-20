@@ -11059,11 +11059,6 @@
     "meta": 1655750265556,
     "relativePath": "scripts\\Instructions.ts"
   },
-  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655750159451,
-    "meta": 1655750265686,
-    "relativePath": "scripts\\Player.ts"
-  },
   "989f335f-e664-406a-99c6-7486ad70183d": {
     "asset": 1655750214903,
     "meta": 1655750265757,
@@ -11085,13 +11080,18 @@
     "relativePath": "scenes\\ending.fire"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655750629663,
-    "meta": 1655750629696,
+    "asset": 1655750839390,
+    "meta": 1655750839426,
     "relativePath": "scenes\\map2.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655750613407,
-    "meta": 1655750613443,
+    "asset": 1655750977092,
+    "meta": 1655750977146,
     "relativePath": "scenes\\map1.fire"
+  },
+  "79d84ba8-7d46-499e-837b-8742cebc8c09": {
+    "asset": 1655750941246,
+    "meta": 1655750944357,
+    "relativePath": "scripts\\Player.ts"
   }
 }
