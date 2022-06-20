@@ -223,7 +223,8 @@ export default class GameManager extends cc.Component {
         if(!this.player.isDie) {
             this.onEnable();
             this.changePlayerUi();
-            this.chooseNextMove();
+            if(this.winner == null)
+                this.chooseNextMove();
         } else {
             // console.log(this.currPlayer, "change");
             this.changePlayer(num+1);
