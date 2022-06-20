@@ -58,6 +58,7 @@ var GameManager = /** @class */ (function (_super) {
         _this.playerPath = "Canvas/Players/";
         _this.cameraAnchor = 0;
         _this.moveChoice = null;
+        _this.shootFlag = false;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -194,7 +195,8 @@ var GameManager = /** @class */ (function (_super) {
         if (!this.player.isDie) {
             this.onEnable();
             this.changePlayerUi();
-            this.chooseNextMove();
+            if (this.winner == null)
+                this.chooseNextMove();
         }
         else {
             // console.log(this.currPlayer, "change");
@@ -327,6 +329,8 @@ var GameManager = /** @class */ (function (_super) {
             return;
         if (this.moveChoice == "move")
             return;
+        if (this.shootFlag == true)
+            return;
         if (!this.shoot) {
             // this.startPos = this.node.position;
             // this.motorJoint.enabled = false;
@@ -340,6 +344,8 @@ var GameManager = /** @class */ (function (_super) {
         if (!this.enabledInHierarchy)
             return;
         if (this.moveChoice == "move")
+            return;
+        if (this.shootFlag == true)
             return;
         var playerPos = event.getStartLocation();
         var mousePos = event.getLocation();
@@ -384,6 +390,8 @@ var GameManager = /** @class */ (function (_super) {
             return;
         if (this.moveChoice == "move")
             return;
+        if (this.shootFlag == true)
+            return;
         this.haveShot();
         event.stopPropagation();
     };
@@ -391,6 +399,8 @@ var GameManager = /** @class */ (function (_super) {
         if (!this.enabledInHierarchy)
             return;
         if (this.moveChoice == "move")
+            return;
+        if (this.shootFlag == true)
             return;
         this.haveShot();
         event.stopPropagation();
@@ -400,6 +410,9 @@ var GameManager = /** @class */ (function (_super) {
             return;
         if (this.moveChoice == "move")
             return;
+        if (this.shootFlag == true)
+            return;
+        this.shootFlag = true;
         this.player.line.getComponent("TrajectoryLine").clearLine();
         // this.shoot = true;
         if (this.player.weapon == "gun") {
@@ -418,6 +431,7 @@ var GameManager = /** @class */ (function (_super) {
         this.scheduleOnce(function () {
             _this.UI.freeze = false;
             _this.UI.timerVal = 20;
+            _this.shootFlag = false;
             _this.changePlayer(_this.currPlayer + 1);
         }, 2);
     };

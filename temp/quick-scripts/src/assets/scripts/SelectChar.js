@@ -67,6 +67,7 @@ var SelectChar = /** @class */ (function (_super) {
             this.playBGM();
         }
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        this.resetPlayerChar();
         this.setTotalPlayer();
         this.loadPlayerName();
         this.setUserStats();
@@ -78,6 +79,12 @@ var SelectChar = /** @class */ (function (_super) {
     // update (dt) {}
     SelectChar.prototype.playBGM = function () {
         cc.audioEngine.playMusic(this.bgm, true);
+    };
+    SelectChar.prototype.resetPlayerChar = function () {
+        cc.sys.localStorage.setItem("Player 1 Char", "char1");
+        cc.sys.localStorage.setItem("Player 2 Char", "char1");
+        cc.sys.localStorage.setItem("Player 3 Char", "char1");
+        cc.sys.localStorage.setItem("Player 4 Char", "char1");
     };
     SelectChar.prototype.setUserStats = function () {
         // cc.sys.localStorage.setItem("char1", false); // FOR DEBUG DON'T DELETE

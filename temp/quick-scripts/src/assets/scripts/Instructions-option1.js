@@ -29,7 +29,11 @@ var InstructionsMenuOption1 = /** @class */ (function (_super) {
     function InstructionsMenuOption1() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    InstructionsMenuOption1.prototype.start = function () {
+    InstructionsMenuOption1.prototype.onLoad = function () {
+        this.initButtons();
+    };
+    InstructionsMenuOption1.prototype.start = function () { };
+    InstructionsMenuOption1.prototype.initButtons = function () {
         var nextbtn = new cc.Component.EventHandler();
         nextbtn.target = this.node;
         nextbtn.component = "Instructions-option1";

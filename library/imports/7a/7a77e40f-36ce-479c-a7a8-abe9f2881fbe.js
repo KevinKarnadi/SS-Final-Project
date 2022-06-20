@@ -29,7 +29,11 @@ var InstructionsMenuMinimap = /** @class */ (function (_super) {
     function InstructionsMenuMinimap() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    InstructionsMenuMinimap.prototype.start = function () {
+    InstructionsMenuMinimap.prototype.onLoad = function () {
+        this.initButtons();
+    };
+    InstructionsMenuMinimap.prototype.start = function () { };
+    InstructionsMenuMinimap.prototype.initButtons = function () {
         var nextbtn = new cc.Component.EventHandler();
         nextbtn.target = this.node;
         nextbtn.component = "Instructions-minimap";

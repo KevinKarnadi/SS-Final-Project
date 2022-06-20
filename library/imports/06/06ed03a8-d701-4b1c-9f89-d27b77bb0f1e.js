@@ -41,12 +41,14 @@ var SignIn = /** @class */ (function (_super) {
         var passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         var email = emailBox.string;
         var password = passwordBox.string;
+        /*
         firebase.auth().signInWithEmailAndPassword(email, password)
-            .then(function () {
-            cc.director.loadScene("menu");
-        }).catch(function (e) {
-            alert(e.message);
-        });
+            .then(() => {
+                cc.director.loadScene("menu");
+            }).catch((e) => {
+                alert(e.message);
+            });
+        */
         cc.director.loadScene("menu");
     };
     SignIn.prototype.initBackBtn = function () {
