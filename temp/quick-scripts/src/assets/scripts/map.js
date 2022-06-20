@@ -83,20 +83,29 @@ var Map = /** @class */ (function (_super) {
         // cc.sys.localStorage.setItem("grenade", grenade);
         // cc.sys.localStorage.setItem("shotgun", shotgun);
         // cc.sys.localStorage.setItem("sniper", sniper);
-        this.weaponState[0] = cc.sys.localStorage.getItem("AK47");
-        this.weaponState[1] = cc.sys.localStorage.getItem("AR");
-        this.weaponState[2] = cc.sys.localStorage.getItem("grenade");
-        this.weaponState[3] = cc.sys.localStorage.getItem("shotgun");
-        this.weaponState[4] = cc.sys.localStorage.getItem("sniper");
-        for (var i = 0; i < 5; i++) {
-            if (!this.weaponState[i]) {
-                this.weaponState[i] = false;
-            }
-            else {
-                this.weaponState[i] = true;
-            }
-        }
+        // this.weaponState[0] = cc.sys.localStorage.getItem("AK47") ? (cc.sys.localStorage.getItem("AK47") == 'true' ? true : false) : false;
+        // this.weaponState[0] = cc.sys.localStorage.getItem("AR") ? (cc.sys.localStorage.getItem("AR") == 'true' ? true : false) : false;
+        // this.weaponState[0] = cc.sys.localStorage.getItem("grenade") ? (cc.sys.localStorage.getItem("grenade") == 'true' ? true : false) : false;
+        // this.weaponState[0] = cc.sys.localStorage.getItem("shotgun") ? (cc.sys.localStorage.getItem("shotgun") == 'true' ? true : false) : false;
+        // this.weaponState[0] = cc.sys.localStorage.getItem("sniper") ? (cc.sys.localStorage.getItem("sniper") == 'true' ? true : false) : false;
+        this.weaponState[0] = cc.sys.localStorage.getItem("AK47") ? (cc.sys.localStorage.getItem("AK47") == 'true' ? true : false) : false;
+        this.weaponState[1] = cc.sys.localStorage.getItem("AR") ? (cc.sys.localStorage.getItem("AR") == 'true' ? true : false) : false;
+        this.weaponState[2] = cc.sys.localStorage.getItem("grenade") ? (cc.sys.localStorage.getItem("grenade") == 'true' ? true : false) : false;
+        this.weaponState[3] = cc.sys.localStorage.getItem("shotgun") ? (cc.sys.localStorage.getItem("shotgun") == 'true' ? true : false) : false;
+        this.weaponState[4] = cc.sys.localStorage.getItem("sniper") ? (cc.sys.localStorage.getItem("sniper") == 'true' ? true : false) : false;
+        // this.weaponState[1] = cc.sys.localStorage.getItem("AR");
+        // this.weaponState[2] = cc.sys.localStorage.getItem("grenade");
+        // this.weaponState[3] = cc.sys.localStorage.getItem("shotgun");
+        // this.weaponState[4] = cc.sys.localStorage.getItem("sniper");
+        // for(let i=0; i<5; i++){
+        //     if(!this.weaponState[i]){
+        //         this.weaponState[i] = false;
+        //     } else{
+        //         this.weaponState[i] = true;
+        //     }
+        // }
         // console.log(this.weaponState, "load");
+        // console.log(cc.sys.localStorage.getItem("AK47"), cc.sys.localStorage.getItem("AR"), cc.sys.localStorage.getItem("grenade"), cc.sys.localStorage.getItem("shotgun"), cc.sys.localStorage.getItem("sniper"));
     };
     Map.prototype.start = function () {
         this.createGround();
