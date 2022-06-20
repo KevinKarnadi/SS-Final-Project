@@ -15,9 +15,17 @@ export default class Bomb extends cc.Component
 
     private power = null;
 
+    @property(cc.AudioClip)
+    sfx_shoot: cc.AudioClip = null;
+
+    @property(cc.AudioClip)
+    sfx_bomb: cc.AudioClip = null;
+
     // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node) 
     {
+        cc.audioEngine.playEffect(this.sfx_shoot, false);
+
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
         this.setInitPos(node);
@@ -80,6 +88,7 @@ export default class Bomb extends cc.Component
     r
     //detect collision
     onBeginContact(contact, selfCollider, otherCollider) {
+        cc.audioEngine.playEffect(this.sfx_bomb, false);
         this.scheduleOnce(() => {
             this.node.stopAllActions();
             this.unscheduleAllCallbacks();
