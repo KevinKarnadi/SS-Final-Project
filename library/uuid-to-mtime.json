@@ -11030,8 +11030,8 @@
     "relativePath": "scripts\\Playerchoose.ts"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
-    "asset": 1655734408493,
-    "meta": 1655734468242,
+    "asset": 1655735036677,
+    "meta": 1655735036742,
     "relativePath": "scenes\\map1.fire"
   },
   "901b4825-046c-4294-a8e6-acc9878d3ada": {
@@ -11055,13 +11055,38 @@
     "relativePath": "scripts\\Win.ts"
   },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655734814259,
-    "meta": 1655734826612,
+    "asset": 1655734984702,
+    "meta": 1655734984764,
     "relativePath": "scenes\\map2.fire"
   },
   "443b3d96-348e-4b75-b7bb-c3e79eef3608": {
     "asset": 1655734408468,
     "meta": 1655734826636,
     "relativePath": "menu\\Arrow 1 L.png"
+  },
+  "61fb21cf-39ed-4d0b-ab8c-a3a97e0e71ec": {
+    "asset": 1655734121689,
+    "meta": 1655734907225,
+    "relativePath": "prefabs\\buff.prefab"
+  },
+  "a1f12435-623b-4b34-945e-54f30d62f94d": {
+    "asset": 1655731800026,
+    "meta": 1655734907311,
+    "relativePath": "tiles\\buff\\extraSpd.png"
+  },
+  "107ad6ad-83bf-4f48-a221-155c4e0cf938": {
+    "asset": 1655731342483,
+    "meta": 1655734907322,
+    "relativePath": "tiles\\buff\\revive.png"
+  },
+  "5a9edc9f-0f62-41a1-af27-25629e749d1e": {
+    "asset": 1655731325956,
+    "meta": 1655734907351,
+    "relativePath": "tiles\\buff\\extraDmg.png"
+  },
+  "3e4eb314-6202-404d-bffc-6a1a407a8636": {
+    "asset": 1655731296618,
+    "meta": 1655734907361,
+    "relativePath": "tiles\\buff\\extraHP.png"
   }
 }
