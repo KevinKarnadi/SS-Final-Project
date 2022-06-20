@@ -85,7 +85,7 @@ var NewClass = /** @class */ (function (_super) {
         if (this.playerNum == "3" || this.playerNum == "4") {
             cc.sys.localStorage.setItem("Player 3 Name", this.player3.getComponentInChildren(cc.Label).string);
         }
-        else if (this.playerNum == "4") {
+        if (this.playerNum == "4") {
             cc.sys.localStorage.setItem("Player 4 Name", this.player4.getComponentInChildren(cc.Label).string);
         }
     };

@@ -29,10 +29,16 @@ var UI = /** @class */ (function (_super) {
     function UI() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.timer = null; // game timer
+        _this.scoreLabel = null;
+        _this.coinLabel = null;
+        _this.gemLabel = null;
         _this.GameManager = null;
         _this.timeout = false; // game ended
         _this.isWin = false;
         _this.currPlayer = 1;
+        _this.score = 0;
+        _this.coin = 0;
+        _this.gem = 0;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -76,9 +82,43 @@ var UI = /** @class */ (function (_super) {
     UI.prototype.getTime = function () {
         return this.timer.string;
     };
+    UI.prototype.updateRecord = function (type, value) {
+        if (type == "score") {
+            this.score += value;
+            this.scoreLabel.string = String(this.score).padStart(8, '0');
+        }
+        else if (type == "coin") {
+            this.coin += value;
+            this.coinLabel.string = String(this.coin);
+        }
+        else if (type == "gem") {
+            this.gem += value;
+            this.gemLabel.string = String(this.gem);
+        }
+    };
+    UI.prototype.getRecord = function (type) {
+        if (type == "score") {
+            return this.score;
+        }
+        else if (type == "coin") {
+            return this.coin;
+        }
+        else if (type == "gem") {
+            return this.gem;
+        }
+    };
     __decorate([
         property(cc.Label)
     ], UI.prototype, "timer", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UI.prototype, "scoreLabel", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UI.prototype, "coinLabel", void 0);
+    __decorate([
+        property(cc.Label)
+    ], UI.prototype, "gemLabel", void 0);
     __decorate([
         property(cc.Node)
     ], UI.prototype, "GameManager", void 0);

@@ -6,6 +6,15 @@ export default class UI extends cc.Component {
     @property(cc.Label)
     timer: cc.Label = null; // game timer
 
+    @property(cc.Label)
+    scoreLabel: cc.Label = null;
+
+    @property(cc.Label)
+    coinLabel: cc.Label = null;
+
+    @property(cc.Label)
+    gemLabel: cc.Label = null;
+
     @property(cc.Node)
     GameManager: cc.Node = null;
 
@@ -16,6 +25,12 @@ export default class UI extends cc.Component {
     private isWin: boolean = false;
 
     private currPlayer: number = 1;
+
+    private score: number = 0;
+
+    private coin: number = 0;
+
+    private gem: number = 0;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -32,6 +47,7 @@ export default class UI extends cc.Component {
             this.isWin = true;
             this.timer.string = "--"
         }
+
     }
 
     startTimer(time: number) {
@@ -64,5 +80,28 @@ export default class UI extends cc.Component {
 
     getTime(){
         return this.timer.string;
+    }
+
+    updateRecord(type, value){
+        if(type == "score"){
+            this.score += value;
+            this.scoreLabel.string = String(this.score).padStart(8, '0');
+        } else if(type == "coin"){
+            this.coin += value;
+            this.coinLabel.string = String(this.coin);
+        } else if(type == "gem"){
+            this.gem += value;
+            this.gemLabel.string = String(this.gem);
+        }
+    }
+
+    getRecord(type){
+        if(type == "score"){
+            return this.score;
+        } else if(type == "coin"){
+            return this.coin;
+        } else if(type == "gem"){
+            return this.gem;
+        }
     }
 }

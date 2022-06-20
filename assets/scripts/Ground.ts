@@ -4,32 +4,18 @@ const {ccclass, property} = cc._decorator;
 export default class Ground extends cc.Component 
 {
 
-    // private anim = null;
+    private isGone: boolean = false;
 
-    // private bulletManager = null;
-
-    public isTriggered = false; // I add this to make the bullet kill one enemy at a time.
-
-    // private rigidBody: cc.RigidBody = null;
-
-    // when created, the bullet need to be placed at correct position and play animation.
     public init(node: cc.Node, index: number) 
     {
-        // this.anim = this.getComponent(cc.Animation);
-        // this.rigidBody = this.getComponent(cc.RigidBody);
-
         this.setInitPos(node, index);
     }
 
-    // this function is called when the bullet manager calls "get" API.
     reuse(bulletManager)
     {
-        // this.bulletManager = bulletManager;
-
-        // this.isTriggered = false;
+        
     }
 
-    //this function sets the bullet's initial position when it is reused.
     private setInitPos(node: cc.Node, index: number)
     {
         this.node.parent = node;
@@ -41,28 +27,40 @@ export default class Ground extends cc.Component
     
     onBeginContact(contact, self, other) {
         if(other.node.group == "bomb") {
-            // console.log(other.node.group, "begin");
             this.node.getChildByName("particle").active = true;
-            
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0.1);
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.1);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
             
         } else if(other.node.group == "bullet") {
             this.node.getChildByName("particle").active = true;
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0.05);
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.05);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
         }
     }
 
     onPreSolve(contact, self, other){
         if(other.node.group == "explosiveObj"){
             this.node.getChildByName("particle").active = true;
-            
-            this.scheduleOnce(()=>{
-                this.node.destroy();
-            }, 0.35);
+            if(!this.isGone){
+                this.scheduleOnce(()=>{
+                    this.node.destroy();
+                }, 0.35);
+                this.isGone = true;
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("score", 100);
+                cc.find("Canvas/Main Camera/UI").getComponent("UI").updateRecord("coin", 100);
+            }
         } 
     }
 }
