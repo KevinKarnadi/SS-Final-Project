@@ -8030,8 +8030,8 @@
     "relativePath": "menu\\Play R.png"
   },
   "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
-    "asset": 1655728403129,
-    "meta": 1655728481394,
+    "asset": 1655731448080,
+    "meta": 1655731448093,
     "relativePath": "scenes\\map choose.fire"
   },
   "e3e1d4e5-5361-4979-b486-f16ff66ec3f7": {
@@ -10775,8 +10775,8 @@
     "relativePath": "GUI Kit resource\\Sprites\\Component\\Frame\\frame.png"
   },
   "1c6c5c57-e0fd-4690-adf6-af1dff08214b": {
-    "asset": 1655730370173,
-    "meta": 1655730370206,
+    "asset": 1655730668444,
+    "meta": 1655730668463,
     "relativePath": "scenes\\player choose.fire"
   },
   "b8e6b544-f3e5-4e8c-9b08-08922730fee6": {
@@ -10818,11 +10818,6 @@
     "asset": 1655728403007,
     "meta": 1655728481077,
     "relativePath": "menu\\Icon_MenuIcon_Setting.Png"
-  },
-  "67fae45e-7dd3-4aec-8f8f-21654317f419": {
-    "asset": 1655728403186,
-    "meta": 1655728482648,
-    "relativePath": "scripts\\Mapchoose.ts"
   },
   "927590d2-d42e-418c-a610-f255b8105c3b": {
     "asset": 1655728400657,
@@ -11029,11 +11024,6 @@
     "meta": 1655728481360,
     "relativePath": "scenes\\character choose.fire"
   },
-  "901b4825-046c-4294-a8e6-acc9878d3ada": {
-    "asset": 1655728403202,
-    "meta": 1655728482007,
-    "relativePath": "scripts\\chooseMap.ts"
-  },
   "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
     "asset": 1655728673103,
     "meta": 1655728681326,
@@ -11048,5 +11038,15 @@
     "asset": 1655730515910,
     "meta": 1655730527825,
     "relativePath": "scripts\\Playerchoose.ts"
+  },
+  "443b3d96-348e-4b75-b7bb-c3e79eef3608": {
+    "asset": 1655731041043,
+    "meta": 1655731041234,
+    "relativePath": "menu\\Arrow 1 L.png"
+  },
+  "901b4825-046c-4294-a8e6-acc9878d3ada": {
+    "asset": 1655731409969,
+    "meta": 1655731411031,
+    "relativePath": "scripts\\chooseMap.ts"
   }
 }

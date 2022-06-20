@@ -25,7 +25,6 @@ require('./assets/scripts/Instructions-win');
 require('./assets/scripts/Instructions');
 require('./assets/scripts/Lobby');
 require('./assets/scripts/MainMenu');
-require('./assets/scripts/Mapchoose');
 require('./assets/scripts/Menu');
 require('./assets/scripts/MiniCam');
 require('./assets/scripts/Player');

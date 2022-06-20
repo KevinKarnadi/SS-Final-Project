@@ -33,8 +33,21 @@ var chooseMap = /** @class */ (function (_super) {
     chooseMap.prototype.start = function () {
         this.initMap1Btn();
         this.initMap2Btn();
+        this.initBackBtn();
     };
     // update (dt) {}
+    chooseMap.prototype.initBackBtn = function () {
+        var clickEventHandler = new cc.Component.EventHandler();
+        clickEventHandler.target = this.node;
+        clickEventHandler.component = "chooseMap";
+        clickEventHandler.handler = "back";
+        cc.find("BlueButton").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+    };
+    chooseMap.prototype.back = function () {
+        cc.director.loadScene("loading", function () {
+            cc.director.loadScene("player name");
+        });
+    };
     chooseMap.prototype.initMap1Btn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
