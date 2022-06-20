@@ -457,6 +457,18 @@ export default class GameManager extends cc.Component {
         sfxmute_clickEventHandler.component = "GameManager";
         sfxmute_clickEventHandler.handler = "sfxMute";
         cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Mute/sfxMuteBtn").getComponent(cc.Button).clickEvents.push(sfxmute_clickEventHandler);
+    
+        let bg_sliderEventHandler = new cc.Component.EventHandler();
+        bg_sliderEventHandler.target = this.node;
+        bg_sliderEventHandler.component = "GameManager";
+        bg_sliderEventHandler.handler = "changeBgVol";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Volume/bgSlider").getComponent(cc.Slider).slideEvents.push(bg_sliderEventHandler);
+
+        let sfx_sliderEventHandler = new cc.Component.EventHandler();
+        sfx_sliderEventHandler.target = this.node;
+        sfx_sliderEventHandler.component = "GameManager";
+        sfx_sliderEventHandler.handler = "changeSfxVol";
+        cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).slideEvents.push(sfx_sliderEventHandler);
     }
 
     close() {
@@ -469,6 +481,16 @@ export default class GameManager extends cc.Component {
 
     sfxMute() {
         cc.audioEngine.setEffectsVolume(0);
+    }
+
+    changeBgVol() {
+        let value = cc.find("Canvas/Main Camera/Settings Menu/Big Layout/BG Volume/bgSlider").getComponent(cc.Slider).progress;
+        cc.audioEngine.setMusicVolume(value);
+    }
+
+    changeSfxVol() {
+        let value = cc.find("Canvas/Main Camera/Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).progress;
+        cc.audioEngine.setEffectsVolume(value);
     }
 
     setCameraAnchor(value){
