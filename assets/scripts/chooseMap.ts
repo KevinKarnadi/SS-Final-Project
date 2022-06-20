@@ -36,6 +36,7 @@ export default class chooseMap extends cc.Component {
     }
 
     map1() {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map1");
         });
@@ -50,6 +51,7 @@ export default class chooseMap extends cc.Component {
     }
 
     map2() {
+        cc.audioEngine.stopAll();
         cc.director.loadScene("loading", ()=>{
             cc.director.loadScene("map2");
         });
