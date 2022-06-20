@@ -10,8 +10,11 @@ export default class Menu extends cc.Component {
             Edit_Box: cc.EditBox,
     }
 
-    start () {
+    onLoad() {
         this.playBGM();
+    }
+
+    start () {
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     }
