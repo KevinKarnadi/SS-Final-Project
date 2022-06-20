@@ -2987,7 +2987,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Select Map",
+    "_name": "Select Character",
     "_objFlags": 0,
     "_parent": {
       "__id__": 57
@@ -3146,7 +3146,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 150,
-      "height": 40
+      "height": 45.199999999999996
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3197,10 +3197,10 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "SELECT MAP",
-    "_N$string": "SELECT MAP",
+    "_string": "SELECT CHARACTER",
+    "_N$string": "SELECT CHARACTER",
     "_fontSize": 20,
-    "_lineHeight": 40,
+    "_lineHeight": 20,
     "_enableWrapText": false,
     "_N$file": {
       "__uuid__": "bd15060f-4fac-4bc0-b033-8880b17e5370"
@@ -3213,7 +3213,7 @@
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
-    "_N$overflow": 1,
+    "_N$overflow": 3,
     "_N$cacheMode": 1,
     "_id": "a33Yx6eq9BP7ESAFe2wQTR"
   },

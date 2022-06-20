@@ -75,7 +75,7 @@ var NewClass = /** @class */ (function (_super) {
         });
         this.selectMap.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
             _this.setPlayerName();
-            _this.loadScene("map choose");
+            _this.loadScene("character choose");
         });
     };
     NewClass.prototype.setPlayerName = function () {

@@ -8055,8 +8055,8 @@
     "relativePath": "scripts\\Instructions.ts"
   },
   "a1c84c84-e423-47be-abcd-c229d3f1ce7f": {
-    "asset": 1655728055323,
-    "meta": 1655728070534,
+    "asset": 1655739318017,
+    "meta": 1655739318029,
     "relativePath": "scenes\\player name.fire"
   },
   "4881d264-cab9-464f-a87f-2ce5043db4ea": {
@@ -10954,11 +10954,6 @@
     "meta": 1655722707275,
     "relativePath": "scripts\\Ground2.ts"
   },
-  "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
-    "asset": 1655728055325,
-    "meta": 1655728070494,
-    "relativePath": "scripts\\PlayerName.ts"
-  },
   "2a1a9a0d-5c3c-4acd-bacf-54acafd18176": {
     "asset": 1655722631401,
     "meta": 1655722707464,
@@ -10973,11 +10968,6 @@
     "asset": 1655722631378,
     "meta": 1655722707482,
     "relativePath": "prefabs\\background2.prefab"
-  },
-  "0be99f9b-4df6-4093-af1a-1685c14dfd06": {
-    "asset": 1655738515314,
-    "meta": 1655738515328,
-    "relativePath": "scenes\\character choose.fire"
   },
   "989f335f-e664-406a-99c6-7486ad70183d": {
     "asset": 1655738316803,
@@ -11013,11 +11003,6 @@
     "asset": 1655738548707,
     "meta": 1655738636811,
     "relativePath": "scripts\\Playerchoose.ts"
-  },
-  "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
-    "asset": 1655738548675,
-    "meta": 1655738636820,
-    "relativePath": "scenes\\map choose.fire"
   },
   "cff5fa54-0ee6-44b6-8c49-5c8883ae0cf9": {
     "asset": 1655738548708,
@@ -11088,5 +11073,20 @@
     "asset": 1655739016154,
     "meta": 1655739032487,
     "relativePath": "scripts\\Shop.ts"
+  },
+  "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
+    "asset": 1655739367056,
+    "meta": 1655739369369,
+    "relativePath": "scripts\\PlayerName.ts"
+  },
+  "0be99f9b-4df6-4093-af1a-1685c14dfd06": {
+    "asset": 1655739884162,
+    "meta": 1655739895567,
+    "relativePath": "scenes\\character choose.fire"
+  },
+  "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
+    "asset": 1655739888035,
+    "meta": 1655739895574,
+    "relativePath": "scenes\\map choose.fire"
   }
 }
