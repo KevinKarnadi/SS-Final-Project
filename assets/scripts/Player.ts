@@ -445,38 +445,31 @@ export default class Player extends cc.Component {
     //     }
     // }
 
-    setTotalPlayer() {
-        if(this.node.name == "Player Number - 2") {
-            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 2");
-            this.totalPlayer = "num2";
-        } else if(this.node.name == "Player Number - 3") {
-            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 3");
-            this.totalPlayer = "num3";
-        } else if(this.node.name == "Player Number - 4") {
-            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 4");
-            this.totalPlayer = "num4";
-        } else if(this.node.name == "Player Number - team") {
-            this.totalPlayer = cc.sys.localStorage.getItem("Total Player - team");
-            this.totalPlayer = "numteam";
-        }
-    }
+    // setTotalPlayer() {
+    //     if(this.node.name == "Player Number - 2") {
+    //         this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 2");
+    //         this.totalPlayer = "num2";
+    //     } else if(this.node.name == "Player Number - 3") {
+    //         this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 3");
+    //         this.totalPlayer = "num3";
+    //     } else if(this.node.name == "Player Number - 4") {
+    //         this.totalPlayer = cc.sys.localStorage.getItem("Total Player - 4");
+    //         this.totalPlayer = "num4";
+    //     } else if(this.node.name == "Player Number - team") {
+    //         this.totalPlayer = cc.sys.localStorage.getItem("Total Player - team");
+    //         this.totalPlayer = "numteam";
+    //     }
+    // }
 
     setPlayerChar() {
         if(this.node.name == "Player 1") {
             this.playerChar = cc.sys.localStorage.getItem("Player 1 Char");
-            this.playerChar = "char1";
         } else if(this.node.name == "Player 2") {
             this.playerChar = cc.sys.localStorage.getItem("Player 2 Char");
-            this.playerChar = "char2";
-            this.playerChar = "char1";
         } else if(this.node.name == "Player 3") {
             this.playerChar = cc.sys.localStorage.getItem("Player 3 Char");
-            this.playerChar = "char3";
-            this.playerChar = "char1";
         } else if(this.node.name == "Player 4") {
             this.playerChar = cc.sys.localStorage.getItem("Player 4 Char");
-            this.playerChar = "char4";
-            this.playerChar = "char1";
         }
         this.setSkill(this.playerChar);
     }

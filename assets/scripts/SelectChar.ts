@@ -98,6 +98,7 @@ export default class SelectChar extends cc.Component {
             this.playBGM();
         }
         this.playerNum = cc.sys.localStorage.getItem("PlayerNum");
+        this.resetPlayerChar();
         this.setTotalPlayer();
         this.loadPlayerName();
         this.setUserStats();
@@ -112,6 +113,13 @@ export default class SelectChar extends cc.Component {
 
     playBGM() {
         cc.audioEngine.playMusic(this.bgm, true);
+    }
+
+    resetPlayerChar() {
+        cc.sys.localStorage.setItem("Player 1 Char", "char1");
+        cc.sys.localStorage.setItem("Player 2 Char", "char1");
+        cc.sys.localStorage.setItem("Player 3 Char", "char1");
+        cc.sys.localStorage.setItem("Player 4 Char", "char1");
     }
 
     setUserStats() {
