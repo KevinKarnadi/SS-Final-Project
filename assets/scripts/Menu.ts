@@ -13,6 +13,7 @@ export default class Menu extends cc.Component {
 
     onLoad() {
         this.playBGM();
+        this.loadUserStats();
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     }

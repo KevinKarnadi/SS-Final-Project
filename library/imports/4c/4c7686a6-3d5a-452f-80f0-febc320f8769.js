@@ -69,6 +69,7 @@ var Menu = /** @class */ (function (_super) {
     }
     Menu.prototype.onLoad = function () {
         this.playBGM();
+        this.loadUserStats();
         this.initMenuButtons();
         this.initSettingsMenuButtons();
     };
@@ -86,6 +87,7 @@ var Menu = /** @class */ (function (_super) {
                         user = firebase.auth().currentUser;
                         if (!user) return [3 /*break*/, 2];
                         stats = firebase.database().ref("userData/" + user.uid);
+                        console.log("ada");
                         return [4 /*yield*/, stats.once("value").then(function (snapshot) {
                                 _this.setUserStat(snapshot.val().coin, snapshot.val().gem, snapshot.val().char1, snapshot.val().char2, snapshot.val().char3, snapshot.val().char4, snapshot.val().AK47, snapshot.val().AR, snapshot.val().grenade, snapshot.val().shotgun, snapshot.val().sniper, snapshot.val().purple, snapshot.val().forest, snapshot.val().username);
                             })];
@@ -101,6 +103,7 @@ var Menu = /** @class */ (function (_super) {
         });
     };
     Menu.prototype.setUserStat = function (coin, gem, char1, char2, char3, char4, AK47, AR, grenade, shotgun, sniper, purple, forest, username) {
+        console.log("char1", char1);
         cc.sys.localStorage.setItem("coin", coin);
         cc.sys.localStorage.setItem("gem", gem);
         cc.sys.localStorage.setItem("char1", char1);
