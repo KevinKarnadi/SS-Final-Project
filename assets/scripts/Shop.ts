@@ -54,6 +54,12 @@ export default class Shop extends cc.Component {
     @property(cc.Button)
     sniperbtn: cc.Button = null;
 
+    @property(cc.Button)
+    purplebtn: cc.Button = null;
+
+    @property(cc.Button)
+    junglebtn: cc.Button = null;
+
     private char1: string = "true";
 
     private char2: string = "false";
@@ -71,6 +77,10 @@ export default class Shop extends cc.Component {
     private shotgun: string = "false";
 
     private sniper: string = "false";
+
+    private purple: string = "false";
+
+    private jungle: string = "false";
     
     // LIFE-CYCLE CALLBACKS:
 
@@ -92,8 +102,20 @@ export default class Shop extends cc.Component {
     }
 
     setUserStats() {
-        // this.coin.string = cc.sys.localStorage.getItem("coin");
-        // this.gem.string = cc.sys.localStorage.getItem("gem");
+        // cc.sys.localStorage.setItem("char1", false); // FOR DEBUG DON'T DELETE
+        // cc.sys.localStorage.setItem("char2", false);
+        // cc.sys.localStorage.setItem("char3", false);
+        // cc.sys.localStorage.setItem("char4", false);
+        // cc.sys.localStorage.setItem("AK47", false);
+        // cc.sys.localStorage.setItem("AR", false);
+        // cc.sys.localStorage.setItem("shotgun", false);
+        // cc.sys.localStorage.setItem("grenade", false);
+        // cc.sys.localStorage.setItem("sniper", false);
+        // cc.sys.localStorage.setItem("purple", false);
+        // cc.sys.localStorage.setItem("jungle", false);
+        
+        // this.coin.string = cc.sys.localStorage.getItem("coin");  // uncomment later
+        // this.gem.string = cc.sys.localStorage.getItem("gem");    // uncomment later
         this.char1 = cc.sys.localStorage.getItem("char1");
         this.char2 = cc.sys.localStorage.getItem("char2");
         this.char3 = cc.sys.localStorage.getItem("char3");
@@ -101,11 +123,10 @@ export default class Shop extends cc.Component {
         this.AK = cc.sys.localStorage.getItem("AK47");
         this.AR = cc.sys.localStorage.getItem("AR");
         this.grenade = cc.sys.localStorage.getItem("grenade");
+        this.sniper = cc.sys.localStorage.getItem("shotgun");
         this.sniper = cc.sys.localStorage.getItem("sniper");
-        // cc.sys.localStorage.setItem("char1", false); // for debug
-        // cc.sys.localStorage.setItem("char2", false);
-        // cc.sys.localStorage.setItem("char3", false);
-        // cc.sys.localStorage.setItem("char4", false);
+        this.purple = cc.sys.localStorage.getItem("purple");
+        this.jungle = cc.sys.localStorage.getItem("jungle");
         this.loadCharBtn();
     }
 
@@ -115,6 +136,9 @@ export default class Shop extends cc.Component {
             this.loadScene("menu");
         });
         this.characters.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            this.playClickAudio();
+        });
+        this.weapons.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
             this.playClickAudio();
         });
         this.maps.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
@@ -174,6 +198,18 @@ export default class Shop extends cc.Component {
                 this.buyItemGem(this.sniperbtn, "sniper");
             }
         });
+        this.purplebtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.purple != "true") {
+                this.playClickAudio();
+                this.buyItemCoin(this.purplebtn, "purple");
+            }
+        });
+        this.junglebtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.jungle != "true") {
+                this.playClickAudio();
+                this.buyItemCoin(this.junglebtn, "jungle");
+            }
+        });
     }
 
     playClickAudio(){
@@ -212,6 +248,12 @@ export default class Shop extends cc.Component {
         if(this.sniper == "true") {
             this.lockBtn(this.sniperbtn);
         }
+        if(this.purple == "true") {
+            this.lockBtn(this.purplebtn);
+        }
+        if(this.jungle == "true") {
+            this.lockBtn(this.junglebtn);
+        }
     }
 
     lockBtn(btn: cc.Button) {
@@ -232,6 +274,18 @@ export default class Shop extends cc.Component {
             let remain = currGem - price;
             this.gem.string = remain.toString();
             cc.sys.localStorage.setItem("gem", this.gem.string);
+            cc.sys.localStorage.setItem(item, true);
+            this.setUserStats();
+        }
+    }
+
+    buyItemCoin(btn, item) {
+        let price = parseInt(btn.node.getChildByName("Background").getChildByName("Label").getComponent(cc.Label).string);
+        let currCoin = parseInt(this.coin.string);
+        if(currCoin >= price) {
+            let remain = currCoin - price;
+            this.coin.string = remain.toString();
+            cc.sys.localStorage.setItem("coin", this.coin.string);
             cc.sys.localStorage.setItem(item, true);
             this.setUserStats();
         }

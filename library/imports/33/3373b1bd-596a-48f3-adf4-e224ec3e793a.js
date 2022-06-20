@@ -45,6 +45,8 @@ var Shop = /** @class */ (function (_super) {
         _this.grenadebtn = null;
         _this.shotgunbtn = null;
         _this.sniperbtn = null;
+        _this.purplebtn = null;
+        _this.junglebtn = null;
         _this.char1 = "true";
         _this.char2 = "false";
         _this.char3 = "false";
@@ -54,6 +56,8 @@ var Shop = /** @class */ (function (_super) {
         _this.grenade = "false";
         _this.shotgun = "false";
         _this.sniper = "false";
+        _this.purple = "false";
+        _this.jungle = "false";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -71,8 +75,19 @@ var Shop = /** @class */ (function (_super) {
         cc.audioEngine.playMusic(this.bgm, true);
     };
     Shop.prototype.setUserStats = function () {
-        // this.coin.string = cc.sys.localStorage.getItem("coin");
-        // this.gem.string = cc.sys.localStorage.getItem("gem");
+        // cc.sys.localStorage.setItem("char1", false); // FOR DEBUG DON'T DELETE
+        // cc.sys.localStorage.setItem("char2", false);
+        // cc.sys.localStorage.setItem("char3", false);
+        // cc.sys.localStorage.setItem("char4", false);
+        // cc.sys.localStorage.setItem("AK47", false);
+        // cc.sys.localStorage.setItem("AR", false);
+        // cc.sys.localStorage.setItem("shotgun", false);
+        // cc.sys.localStorage.setItem("grenade", false);
+        // cc.sys.localStorage.setItem("sniper", false);
+        // cc.sys.localStorage.setItem("purple", false);
+        // cc.sys.localStorage.setItem("jungle", false);
+        // this.coin.string = cc.sys.localStorage.getItem("coin");  // uncomment later
+        // this.gem.string = cc.sys.localStorage.getItem("gem");    // uncomment later
         this.char1 = cc.sys.localStorage.getItem("char1");
         this.char2 = cc.sys.localStorage.getItem("char2");
         this.char3 = cc.sys.localStorage.getItem("char3");
@@ -80,11 +95,10 @@ var Shop = /** @class */ (function (_super) {
         this.AK = cc.sys.localStorage.getItem("AK47");
         this.AR = cc.sys.localStorage.getItem("AR");
         this.grenade = cc.sys.localStorage.getItem("grenade");
+        this.sniper = cc.sys.localStorage.getItem("shotgun");
         this.sniper = cc.sys.localStorage.getItem("sniper");
-        // cc.sys.localStorage.setItem("char1", false); // for debug
-        // cc.sys.localStorage.setItem("char2", false);
-        // cc.sys.localStorage.setItem("char3", false);
-        // cc.sys.localStorage.setItem("char4", false);
+        this.purple = cc.sys.localStorage.getItem("purple");
+        this.jungle = cc.sys.localStorage.getItem("jungle");
         this.loadCharBtn();
     };
     Shop.prototype.menuMouseOn = function () {
@@ -94,6 +108,9 @@ var Shop = /** @class */ (function (_super) {
             _this.loadScene("menu");
         });
         this.characters.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            _this.playClickAudio();
+        });
+        this.weapons.on(cc.Node.EventType.MOUSE_DOWN, function () {
             _this.playClickAudio();
         });
         this.maps.on(cc.Node.EventType.MOUSE_DOWN, function () {
@@ -153,6 +170,18 @@ var Shop = /** @class */ (function (_super) {
                 _this.buyItemGem(_this.sniperbtn, "sniper");
             }
         });
+        this.purplebtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.purple != "true") {
+                _this.playClickAudio();
+                _this.buyItemCoin(_this.purplebtn, "purple");
+            }
+        });
+        this.junglebtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.jungle != "true") {
+                _this.playClickAudio();
+                _this.buyItemCoin(_this.junglebtn, "jungle");
+            }
+        });
     };
     Shop.prototype.playClickAudio = function () {
         cc.audioEngine.playEffect(this.click, false);
@@ -188,6 +217,12 @@ var Shop = /** @class */ (function (_super) {
         if (this.sniper == "true") {
             this.lockBtn(this.sniperbtn);
         }
+        if (this.purple == "true") {
+            this.lockBtn(this.purplebtn);
+        }
+        if (this.jungle == "true") {
+            this.lockBtn(this.junglebtn);
+        }
     };
     Shop.prototype.lockBtn = function (btn) {
         btn.node.off(cc.Node.EventType.MOUSE_DOWN);
@@ -205,6 +240,17 @@ var Shop = /** @class */ (function (_super) {
             var remain = currGem - price;
             this.gem.string = remain.toString();
             cc.sys.localStorage.setItem("gem", this.gem.string);
+            cc.sys.localStorage.setItem(item, true);
+            this.setUserStats();
+        }
+    };
+    Shop.prototype.buyItemCoin = function (btn, item) {
+        var price = parseInt(btn.node.getChildByName("Background").getChildByName("Label").getComponent(cc.Label).string);
+        var currCoin = parseInt(this.coin.string);
+        if (currCoin >= price) {
+            var remain = currCoin - price;
+            this.coin.string = remain.toString();
+            cc.sys.localStorage.setItem("coin", this.coin.string);
             cc.sys.localStorage.setItem(item, true);
             this.setUserStats();
         }
@@ -260,6 +306,12 @@ var Shop = /** @class */ (function (_super) {
     __decorate([
         property(cc.Button)
     ], Shop.prototype, "sniperbtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "purplebtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "junglebtn", void 0);
     Shop = __decorate([
         ccclass
     ], Shop);
