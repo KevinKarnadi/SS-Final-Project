@@ -10764,11 +10764,6 @@
     "meta": 1655734471132,
     "relativePath": "tiles\\smoke.png"
   },
-  "aa553534-e84c-4f00-ab8e-5a80ead88c94": {
-    "asset": 1655726232391,
-    "meta": 1655734468328,
-    "relativePath": "scenes\\shop.fire"
-  },
   "24aedc37-9032-4986-830e-ca3d84bd1a39": {
     "asset": 1655667507050,
     "meta": 1655734491799,
@@ -10914,11 +10909,6 @@
     "meta": 1655734465881,
     "relativePath": "audios"
   },
-  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
-    "asset": 1655734408518,
-    "meta": 1655734468170,
-    "relativePath": "scenes\\menu.fire"
-  },
   "4f45afb8-b756-49bb-9fa5-c2dcee8bcf3c": {
     "asset": 1655720185642,
     "meta": 1655734469117,
@@ -10948,11 +10938,6 @@
     "asset": 1655707925919,
     "meta": 1655734466952,
     "relativePath": "audios\\bomb.ogg"
-  },
-  "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
-    "asset": 1655726232395,
-    "meta": 1655734469939,
-    "relativePath": "scripts\\MainMenu.ts"
   },
   "06ed03a8-d701-4b1c-9f89-d27b77bb0f1e": {
     "asset": 1655726232404,
@@ -11009,11 +10994,6 @@
     "meta": 1655734468099,
     "relativePath": "scenes\\character choose.fire"
   },
-  "4c7686a6-3d5a-452f-80f0-febc320f8769": {
-    "asset": 1655734408524,
-    "meta": 1655734470112,
-    "relativePath": "scripts\\Menu.ts"
-  },
   "32f77663-1432-4962-a902-993e9d5ef357": {
     "asset": 1655734408526,
     "meta": 1655734470435,
@@ -11043,11 +11023,6 @@
     "asset": 1655734408527,
     "meta": 1655734826560,
     "relativePath": "scripts\\Win.ts"
-  },
-  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
-    "asset": 1655735340101,
-    "meta": 1655735340169,
-    "relativePath": "scenes\\map2.fire"
   },
   "443b3d96-348e-4b75-b7bb-c3e79eef3608": {
     "asset": 1655734408468,
@@ -11079,14 +11054,39 @@
     "meta": 1655734907361,
     "relativePath": "tiles\\buff\\extraHP.png"
   },
-  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
-    "asset": 1655735708438,
-    "meta": 1655735717573,
-    "relativePath": "scripts\\GameManager.ts"
+  "907ad930-c8ae-4b57-baca-66a0c6518dc3": {
+    "asset": 1655735956274,
+    "meta": 1655735992849,
+    "relativePath": "scenes\\map2.fire"
   },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
-    "asset": 1655735705437,
-    "meta": 1655735718352,
+    "asset": 1655736207008,
+    "meta": 1655736225278,
     "relativePath": "scripts\\Player.ts"
+  },
+  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
+    "asset": 1655736219411,
+    "meta": 1655736225298,
+    "relativePath": "scenes\\menu.fire"
+  },
+  "eecbb8cd-d525-4b03-a6d0-f20c8376fb0e": {
+    "asset": 1655738025314,
+    "meta": 1655738034702,
+    "relativePath": "scripts\\GameManager.ts"
+  },
+  "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
+    "asset": 1655738025340,
+    "meta": 1655738034807,
+    "relativePath": "scripts\\MainMenu.ts"
+  },
+  "4c7686a6-3d5a-452f-80f0-febc320f8769": {
+    "asset": 1655738025361,
+    "meta": 1655738034929,
+    "relativePath": "scripts\\Menu.ts"
+  },
+  "aa553534-e84c-4f00-ab8e-5a80ead88c94": {
+    "asset": 1655738200072,
+    "meta": 1655738200152,
+    "relativePath": "scenes\\shop.fire"
   }
 }
