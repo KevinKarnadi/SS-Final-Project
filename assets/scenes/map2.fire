@@ -12438,7 +12438,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "57pTtrqk9KnbL3hSnATtXI"
+    "_id": "e4EmvkIdNIq6n4+b5+yuqr"
   },
   {
     "__type__": "cc.Node",
@@ -12502,7 +12502,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "cckNZDK05IFKJJNDcapdT4"
+    "_id": "84zpNRgxlAyr6DDMQiFB8q"
   },
   {
     "__type__": "cc.Sprite",
@@ -12534,7 +12534,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
-    "_id": "6bjkg0hUJPCIrXyjAEpUpj"
+    "_id": "a7p6CgYAZGpr0m+iinXBFy"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -12609,7 +12609,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "eaNYzOYVZLL6cq2FnyRauT"
+    "_id": "c5K91+MKNO27dtw2fkco0r"
   },
   {
     "__type__": "cc.Sprite",
@@ -12641,7 +12641,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
-    "_id": "38pHd2eeJBDa/tErr5xaV1"
+    "_id": "c4HzVFN3BNz5RVlRynanc9"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -12716,7 +12716,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "a42N8N2PJEdZT8OG0K0Azl"
+    "_id": "55C/tglaNB460Q68fu2P0h"
   },
   {
     "__type__": "cc.Sprite",
@@ -12748,7 +12748,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
-    "_id": "b1SMpD3gxNS6QfqIRMebh2"
+    "_id": "c6cv53Li1IHqjipEzYtyFo"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -12823,7 +12823,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "39Hm/be1NGHp6aLOItorTj"
+    "_id": "cdO3hcLvFJ0J1u6BnOZCtw"
   },
   {
     "__type__": "cc.Sprite",
@@ -12855,7 +12855,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
-    "_id": "90Wc6qSmZGkK56ACMRNVjc"
+    "_id": "e6MACQWKZFzI6qcIcNyyWe"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -63543,7 +63543,7 @@
   {
     "__type__": "cc.Node",
     "_name": "hpPotion",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1469
     },
