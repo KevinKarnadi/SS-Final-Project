@@ -39,6 +39,21 @@ export default class Shop extends cc.Component {
     @property(cc.Button)
     char4btn: cc.Button = null;
 
+    @property(cc.Button)
+    AKbtn: cc.Button = null;
+
+    @property(cc.Button)
+    ARbtn: cc.Button = null;
+    
+    @property(cc.Button)
+    grenadebtn: cc.Button = null;
+
+    @property(cc.Button)
+    shotgunbtn: cc.Button = null;
+
+    @property(cc.Button)
+    sniperbtn: cc.Button = null;
+
     private char1: string = "true";
 
     private char2: string = "false";
@@ -46,6 +61,16 @@ export default class Shop extends cc.Component {
     private char3: string = "false";
     
     private char4: string = "false";
+
+    private AK: string = "true";
+
+    private AR: string = "false";
+    
+    private grenade: string = "false";
+    
+    private shotgun: string = "false";
+
+    private sniper: string = "false";
     
     // LIFE-CYCLE CALLBACKS:
 
@@ -73,6 +98,10 @@ export default class Shop extends cc.Component {
         this.char2 = cc.sys.localStorage.getItem("char2");
         this.char3 = cc.sys.localStorage.getItem("char3");
         this.char4 = cc.sys.localStorage.getItem("char4");
+        this.AK = cc.sys.localStorage.getItem("AK47");
+        this.AR = cc.sys.localStorage.getItem("AR");
+        this.grenade = cc.sys.localStorage.getItem("grenade");
+        this.sniper = cc.sys.localStorage.getItem("sniper");
         // cc.sys.localStorage.setItem("char1", false); // for debug
         // cc.sys.localStorage.setItem("char2", false);
         // cc.sys.localStorage.setItem("char3", false);
@@ -115,6 +144,36 @@ export default class Shop extends cc.Component {
                 this.buyItemGem(this.char4btn, "char4");
             }
         });
+        this.AKbtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.AK != "true") {
+                this.playClickAudio();
+                this.buyItemGem(this.AKbtn, "AK47");
+            }
+        });
+        this.ARbtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.AR != "true") {
+                this.playClickAudio();
+                this.buyItemGem(this.ARbtn, "AR");
+            }
+        });
+        this.grenadebtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.grenade != "true") {
+                this.playClickAudio();
+                this.buyItemGem(this.grenadebtn, "grenade");
+            }
+        });
+        this.shotgunbtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.AR != "true") {
+                this.playClickAudio();
+                this.buyItemGem(this.shotgunbtn, "shotgun");
+            }
+        });
+        this.sniperbtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
+            if(this.sniper != "true") {
+                this.playClickAudio();
+                this.buyItemGem(this.sniperbtn, "sniper");
+            }
+        });
     }
 
     playClickAudio(){
@@ -138,6 +197,21 @@ export default class Shop extends cc.Component {
         if(this.char4 == "true") {
             this.lockBtn(this.char4btn);
         }
+        if(this.AK == "true") {
+            this.lockBtn(this.AKbtn);
+        }
+        if(this.AR == "true") {
+            this.lockBtn(this.ARbtn);
+        }
+        if(this.grenade == "true") {
+            this.lockBtn(this.grenadebtn);
+        }
+        if(this.shotgun == "true") {
+            this.lockBtn(this.shotgunbtn);
+        }
+        if(this.sniper == "true") {
+            this.lockBtn(this.sniperbtn);
+        }
     }
 
     lockBtn(btn: cc.Button) {
@@ -148,7 +222,7 @@ export default class Shop extends cc.Component {
     }
 
     changePrice(btn) {
-        btn.node.getChildByName("Background").getChildByName("Label").getComponent(cc.Label).string = "SOLD"
+        btn.node.getChildByName("Background").getChildByName("Label").getComponent(cc.Label).string = "SOLD";
     }
 
     buyItemGem(btn, item) {

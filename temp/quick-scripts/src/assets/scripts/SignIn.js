@@ -34,11 +34,11 @@ var SignIn = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignIn";
         clickEventHandler.handler = "signIn";
-        cc.find("Canvas/menuBg/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignIn.prototype.signIn = function () {
-        var emailBox = cc.find("Canvas/menuBg/email").getComponent(cc.EditBox);
-        var passwordBox = cc.find("Canvas/menuBg/password").getComponent(cc.EditBox);
+        var emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
+        var passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         var email = emailBox.string;
         var password = passwordBox.string;
         firebase.auth().signInWithEmailAndPassword(email, password)
@@ -53,7 +53,7 @@ var SignIn = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignIn";
         clickEventHandler.handler = "back";
-        cc.find("Canvas/menuBg/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignIn.prototype.back = function () {
         cc.director.loadScene("main menu");

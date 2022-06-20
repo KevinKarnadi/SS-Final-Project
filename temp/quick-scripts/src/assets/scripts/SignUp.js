@@ -34,12 +34,12 @@ var SignUp = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignUp";
         clickEventHandler.handler = "signUp";
-        cc.find("Canvas/menuBg/SignUpBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/Block/Big Layout/SignUpBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignUp.prototype.signUp = function () {
-        var emailBox = cc.find("Canvas/menuBg/email").getComponent(cc.EditBox);
-        var usernameBox = cc.find("Canvas/menuBg/username").getComponent(cc.EditBox);
-        var passwordBox = cc.find("Canvas/menuBg/password").getComponent(cc.EditBox);
+        var emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
+        var usernameBox = cc.find("Canvas/Background/Block/Big Layout/username").getComponent(cc.EditBox);
+        var passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         var email = emailBox.string;
         var username = usernameBox.string;
         var password = passwordBox.string;
@@ -58,7 +58,7 @@ var SignUp = /** @class */ (function (_super) {
         clickEventHandler.target = this.node;
         clickEventHandler.component = "SignUp";
         clickEventHandler.handler = "back";
-        cc.find("Canvas/menuBg/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
+        cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignUp.prototype.back = function () {
         cc.director.loadScene("main menu");

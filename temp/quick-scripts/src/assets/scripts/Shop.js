@@ -40,10 +40,20 @@ var Shop = /** @class */ (function (_super) {
         _this.char2btn = null;
         _this.char3btn = null;
         _this.char4btn = null;
+        _this.AKbtn = null;
+        _this.ARbtn = null;
+        _this.grenadebtn = null;
+        _this.shotgunbtn = null;
+        _this.sniperbtn = null;
         _this.char1 = "true";
         _this.char2 = "false";
         _this.char3 = "false";
         _this.char4 = "false";
+        _this.AK = "true";
+        _this.AR = "false";
+        _this.grenade = "false";
+        _this.shotgun = "false";
+        _this.sniper = "false";
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -67,6 +77,10 @@ var Shop = /** @class */ (function (_super) {
         this.char2 = cc.sys.localStorage.getItem("char2");
         this.char3 = cc.sys.localStorage.getItem("char3");
         this.char4 = cc.sys.localStorage.getItem("char4");
+        this.AK = cc.sys.localStorage.getItem("AK47");
+        this.AR = cc.sys.localStorage.getItem("AR");
+        this.grenade = cc.sys.localStorage.getItem("grenade");
+        this.sniper = cc.sys.localStorage.getItem("sniper");
         // cc.sys.localStorage.setItem("char1", false); // for debug
         // cc.sys.localStorage.setItem("char2", false);
         // cc.sys.localStorage.setItem("char3", false);
@@ -109,6 +123,36 @@ var Shop = /** @class */ (function (_super) {
                 _this.buyItemGem(_this.char4btn, "char4");
             }
         });
+        this.AKbtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.AK != "true") {
+                _this.playClickAudio();
+                _this.buyItemGem(_this.AKbtn, "AK47");
+            }
+        });
+        this.ARbtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.AR != "true") {
+                _this.playClickAudio();
+                _this.buyItemGem(_this.ARbtn, "AR");
+            }
+        });
+        this.grenadebtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.grenade != "true") {
+                _this.playClickAudio();
+                _this.buyItemGem(_this.grenadebtn, "grenade");
+            }
+        });
+        this.shotgunbtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.AR != "true") {
+                _this.playClickAudio();
+                _this.buyItemGem(_this.shotgunbtn, "shotgun");
+            }
+        });
+        this.sniperbtn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
+            if (_this.sniper != "true") {
+                _this.playClickAudio();
+                _this.buyItemGem(_this.sniperbtn, "sniper");
+            }
+        });
     };
     Shop.prototype.playClickAudio = function () {
         cc.audioEngine.playEffect(this.click, false);
@@ -128,6 +172,21 @@ var Shop = /** @class */ (function (_super) {
         }
         if (this.char4 == "true") {
             this.lockBtn(this.char4btn);
+        }
+        if (this.AK == "true") {
+            this.lockBtn(this.AKbtn);
+        }
+        if (this.AR == "true") {
+            this.lockBtn(this.ARbtn);
+        }
+        if (this.grenade == "true") {
+            this.lockBtn(this.grenadebtn);
+        }
+        if (this.shotgun == "true") {
+            this.lockBtn(this.shotgunbtn);
+        }
+        if (this.sniper == "true") {
+            this.lockBtn(this.sniperbtn);
         }
     };
     Shop.prototype.lockBtn = function (btn) {
@@ -186,6 +245,21 @@ var Shop = /** @class */ (function (_super) {
     __decorate([
         property(cc.Button)
     ], Shop.prototype, "char4btn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "AKbtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "ARbtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "grenadebtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "shotgunbtn", void 0);
+    __decorate([
+        property(cc.Button)
+    ], Shop.prototype, "sniperbtn", void 0);
     Shop = __decorate([
         ccclass
     ], Shop);
