@@ -4526,7 +4526,7 @@
         1,
         1,
         1,
-        null
+        0
       ]
     },
     "_eulerAngles": {
@@ -8756,7 +8756,7 @@
         1,
         1,
         1,
-        null
+        0
       ]
     },
     "_eulerAngles": {
@@ -12986,7 +12986,7 @@
         1,
         1,
         1,
-        null
+        0
       ]
     },
     "_eulerAngles": {
@@ -17216,7 +17216,7 @@
         1,
         1,
         1,
-        null
+        0
       ]
     },
     "_eulerAngles": {
@@ -18312,10 +18312,18 @@
     "click": {
       "__uuid__": "6e4dc0e1-91f4-40d2-bacc-d321818e1683"
     },
-    "player1Name": null,
-    "player2Name": null,
-    "player3Name": null,
-    "player4Name": null,
+    "player1Name": {
+      "__id__": 29
+    },
+    "player2Name": {
+      "__id__": 115
+    },
+    "player3Name": {
+      "__id__": 201
+    },
+    "player4Name": {
+      "__id__": 287
+    },
     "player3": {
       "__id__": 197
     },
