@@ -34,6 +34,7 @@ var Bomb = /** @class */ (function (_super) {
         _this.shootAngle = null;
         _this.animation = null;
         _this.power = null;
+        _this.scaleX = 1;
         _this.sfx_shoot = null;
         _this.sfx_bomb = null;
         return _this;
@@ -43,6 +44,7 @@ var Bomb = /** @class */ (function (_super) {
         cc.audioEngine.playEffect(this.sfx_shoot, false);
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
+        this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         this.setInitPos(node);
         this.animation.play('grenade');
         this.bulletMove();
@@ -57,19 +59,20 @@ var Bomb = /** @class */ (function (_super) {
         this.node.parent = node.parent; // don't mount under the player, otherwise it will change direction when player move
         if (node.scaleX > 0) {
             this.node.position = cc.v3(35, 4);
-            this.node.scaleX = 1;
+            this.scaleX = 1;
         }
         else {
-            this.node.position = cc.v3(-35, 4);
-            this.node.scaleX = -1;
+            this.node.position = cc.v3(-65, 4);
+            this.scaleX = -1;
         }
+        this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         this.node.position = this.node.position.addSelf(node.position);
     };
     //make the bullet move from current position
     Bomb.prototype.bulletMove = function () {
         var moveDir = null;
         // decide bullet direction
-        if (this.node.scaleX >= 0) {
+        if (this.scaleX >= 0) {
             moveDir = 1;
         }
         else {
@@ -92,12 +95,16 @@ var Bomb = /** @class */ (function (_super) {
     Bomb.prototype.onBeginContact = function (contact, selfCollider, otherCollider) {
         var _this = this;
         cc.audioEngine.playEffect(this.sfx_bomb, false);
+        // console.log("sadadsfsfa");
+        selfCollider.node.getComponent(cc.PhysicsBoxCollider).enabled = true;
+        this.node.getComponent(cc.Animation).play("explosion2smaller");
         this.scheduleOnce(function () {
             _this.node.stopAllActions();
             _this.unscheduleAllCallbacks();
             _this.animation.stop();
             _this.bombManager.put(_this.node);
-        }, 0.07);
+            // this.node.destroy();
+        }, 0.1);
     };
     Bomb.prototype.setAnglePower = function (angle, power) {
         this.shootAngle = angle;

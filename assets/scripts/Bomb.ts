@@ -15,6 +15,8 @@ export default class Bomb extends cc.Component
 
     private power = null;
 
+    private scaleX: number = 1;
+
     @property(cc.AudioClip)
     sfx_shoot: cc.AudioClip = null;
 
@@ -28,6 +30,7 @@ export default class Bomb extends cc.Component
 
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
+        this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         this.setInitPos(node);
 
         this.animation.play('grenade');
@@ -51,14 +54,15 @@ export default class Bomb extends cc.Component
         {
             this.node.position = cc.v3(35, 4);
 
-            this.node.scaleX = 1;
+            this.scaleX = 1;
         }
         else
         {
-            this.node.position = cc.v3(-35, 4);
+            this.node.position = cc.v3(-65, 4);
 
-            this.node.scaleX = -1;
+            this.scaleX = -1;
         }
+        this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
 
         this.node.position = this.node.position.addSelf(node.position);
     }
@@ -68,7 +72,7 @@ export default class Bomb extends cc.Component
     {
         let moveDir = null;
         // decide bullet direction
-        if(this.node.scaleX >= 0) {
+        if(this.scaleX >= 0) {
             moveDir = 1;
         } else {
             moveDir = -1;
@@ -89,12 +93,16 @@ export default class Bomb extends cc.Component
     //detect collision
     onBeginContact(contact, selfCollider, otherCollider) {
         cc.audioEngine.playEffect(this.sfx_bomb, false);
+        // console.log("sadadsfsfa");
+        selfCollider.node.getComponent(cc.PhysicsBoxCollider).enabled = true;
+        this.node.getComponent(cc.Animation).play("explosion2smaller");
         this.scheduleOnce(() => {
             this.node.stopAllActions();
             this.unscheduleAllCallbacks();
             this.animation.stop();
             this.bombManager.put(this.node);
-        }, 0.07);
+            // this.node.destroy();
+        }, 0.1);
     }
 
     setAnglePower(angle, power) {

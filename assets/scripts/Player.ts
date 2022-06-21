@@ -184,12 +184,12 @@ export default class Player extends cc.Component {
                 }
 
                 if(other.node.group == "bomb"){
-                    let particleEff = cc.instantiate(this.damageEffAnim);
-                    particleEff.parent = cc.director.getScene();
-                    particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                    this.scheduleOnce(()=>{
-                        particleEff.destroy();
-                    }, 0.4);
+                    // let particleEff = cc.instantiate(this.damageEffAnim);
+                    // particleEff.parent = cc.director.getScene();
+                    // particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    // this.scheduleOnce(()=>{
+                    //     particleEff.destroy();
+                    // }, 0.4);
                 }
             }
         } else if(other.node.group == "wall") {
