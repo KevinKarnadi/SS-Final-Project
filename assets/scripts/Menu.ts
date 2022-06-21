@@ -7,6 +7,9 @@ export default class Menu extends cc.Component {
     @property(cc.AudioClip)
     bgm: cc.AudioClip = null;
 
+    @property(cc.AudioClip)
+    click: cc.AudioClip = null;
+
     properties: {
             Edit_Box: cc.EditBox,
     }
@@ -97,10 +100,12 @@ export default class Menu extends cc.Component {
     }
 
     loadShop(){
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("shop");
     }
 
     loadQuitGame(){
+        cc.audioEngine.playEffect(this.click, false);
         firebase.auth().signOut()
             .then(() => {
                 cc.director.loadScene("main menu");
@@ -108,14 +113,17 @@ export default class Menu extends cc.Component {
     }
 
     loadInstructions(){
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("instructions");
     }
 
     loadPlayInstructions(){
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("player choose");
     }
 
     settings() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.find("Settings Menu").active = true;
     }
 
@@ -152,14 +160,17 @@ export default class Menu extends cc.Component {
     }
 
     close() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.find("Settings Menu").active = false;
     }
 
     bgMute() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.audioEngine.setMusicVolume(0);
     }
 
     sfxMute() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.audioEngine.setEffectsVolume(0);
     }
 
