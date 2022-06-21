@@ -1,3 +1,4 @@
+declare const firebase: any;
 const {ccclass, property} = cc._decorator;
 
 @ccclass
