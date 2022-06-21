@@ -159,12 +159,12 @@ var Player = /** @class */ (function (_super) {
                     }, 0.6);
                 }
                 if (other.node.group == "bomb") {
-                    var particleEff_2 = cc.instantiate(this.damageEffAnim);
-                    particleEff_2.parent = cc.director.getScene();
-                    particleEff_2.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
-                    this.scheduleOnce(function () {
-                        particleEff_2.destroy();
-                    }, 0.4);
+                    // let particleEff = cc.instantiate(this.damageEffAnim);
+                    // particleEff.parent = cc.director.getScene();
+                    // particleEff.setPosition(other.node.getPosition().addSelf(cc.v2(480, 320)));
+                    // this.scheduleOnce(()=>{
+                    //     particleEff.destroy();
+                    // }, 0.4);
                 }
             }
         }
