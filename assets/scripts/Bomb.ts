@@ -30,6 +30,10 @@ export default class Bomb extends cc.Component
 
         this.animation = this.getComponent(cc.Animation);
         this.rigidBody = this.getComponent(cc.RigidBody);
+        this.node.scaleX = 1;
+        this.node.scaleY = 1;
+        this.node.width = 20;
+        this.node.height = 20;
         this.node.getComponent(cc.PhysicsBoxCollider).enabled = false;
         this.setInitPos(node);
 
