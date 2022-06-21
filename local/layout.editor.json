@@ -88,7 +88,7 @@
       ]
     },
     " common-asset-worker-worker": {},
-    " load-media-worker": {}
+    "window-1655781017093": {}
   },
   "panels": {
     "project-settings": {
@@ -98,10 +98,10 @@
       "height": 572
     },
     "builder": {
-      "x": -566,
-      "y": -132,
-      "width": 520,
-      "height": 740
+      "x": 227,
+      "y": 87,
+      "width": 521,
+      "height": 741
     }
   },
   "panelLabelWidth": {}

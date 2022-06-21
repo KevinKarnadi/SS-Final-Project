@@ -7115,28 +7115,28 @@
     "relativePath": "scenes\\ending.fire"
   },
   "2d743afe-407c-4994-96cd-8b013bd3bfb6": {
-    "asset": 1655630119506,
-    "meta": 1655779953846,
+    "asset": 1655780872333,
+    "meta": 1655780872353,
     "relativePath": "scenes\\instructions - minimap.fire"
   },
   "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
-    "asset": 1655630119507,
-    "meta": 1655779953849,
+    "asset": 1655780881627,
+    "meta": 1655780881649,
     "relativePath": "scenes\\instructions - option 1.fire"
   },
   "6555e4a8-1a9d-4cb6-aa84-03cfc8147668": {
-    "asset": 1655630119507,
-    "meta": 1655779953854,
+    "asset": 1655780943857,
+    "meta": 1655780943880,
     "relativePath": "scenes\\instructions - option 2.fire"
   },
   "0701692b-7313-45e8-943f-2c5d552864b6": {
-    "asset": 1655716325262,
-    "meta": 1655779953858,
+    "asset": 1655780986766,
+    "meta": 1655780986773,
     "relativePath": "scenes\\instructions.fire"
   },
   "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
-    "asset": 1655716325262,
-    "meta": 1655779953861,
+    "asset": 1655780955856,
+    "meta": 1655780955864,
     "relativePath": "scenes\\instructions - win.fire"
   },
   "c07f2332-4227-44ec-b46b-8823146031bc": {
@@ -11105,8 +11105,8 @@
     "relativePath": "tiles\\Purple Planet\\png\\256px\\tiles\\Vines (3).png"
   },
   "32f77663-1432-4962-a902-993e9d5ef357": {
-    "asset": 1655780508436,
-    "meta": 1655780510359,
+    "asset": 1655780546706,
+    "meta": 1655780639420,
     "relativePath": "scripts\\Playerchoose.ts"
   }
 }
