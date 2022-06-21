@@ -65,12 +65,14 @@ export default class chooseMap extends cc.Component {
         });
         this.map1btn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
             if(this.map1 == "true") {
+                cc.sys.localStorage.setItem("Current Map", "map1");
                 this.playClickAudio();
                 this.loadScene("map1");
             }
         });
         this.map2btn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
             if(this.map2 == "true") {
+                cc.sys.localStorage.setItem("Current Map", "map2");
                 this.playClickAudio();
                 this.loadScene("map2");
             }

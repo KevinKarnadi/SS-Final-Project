@@ -27,7 +27,9 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var SignIn = /** @class */ (function (_super) {
     __extends(SignIn, _super);
     function SignIn() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.click = null;
+        return _this;
     }
     SignIn.prototype.initSignInBtn = function () {
         var clickEventHandler = new cc.Component.EventHandler();
@@ -37,6 +39,7 @@ var SignIn = /** @class */ (function (_super) {
         cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignIn.prototype.signIn = function () {
+        cc.audioEngine.playEffect(this.click, false);
         var emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
         var passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         var email = emailBox.string;
@@ -56,6 +59,7 @@ var SignIn = /** @class */ (function (_super) {
         cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignIn.prototype.back = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("main menu");
     };
     SignIn.prototype.onLoad = function () {
@@ -64,6 +68,9 @@ var SignIn = /** @class */ (function (_super) {
     };
     SignIn.prototype.start = function () { };
     SignIn.prototype.update = function (dt) { };
+    __decorate([
+        property(cc.AudioClip)
+    ], SignIn.prototype, "click", void 0);
     SignIn = __decorate([
         ccclass
     ], SignIn);

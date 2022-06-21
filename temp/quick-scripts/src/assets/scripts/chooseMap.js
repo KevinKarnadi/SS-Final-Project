@@ -74,12 +74,14 @@ var chooseMap = /** @class */ (function (_super) {
         });
         this.map1btn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
             if (_this.map1 == "true") {
+                cc.sys.localStorage.setItem("Current Map", "map1");
                 _this.playClickAudio();
                 _this.loadScene("map1");
             }
         });
         this.map2btn.node.on(cc.Node.EventType.MOUSE_DOWN, function () {
             if (_this.map2 == "true") {
+                cc.sys.localStorage.setItem("Current Map", "map2");
                 _this.playClickAudio();
                 _this.loadScene("map2");
             }

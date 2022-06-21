@@ -64,6 +64,7 @@ var SignUp = /** @class */ (function (_super) {
     __extends(SignUp, _super);
     function SignUp() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.click = null;
         _this.username = null;
         return _this;
     }
@@ -79,6 +80,7 @@ var SignUp = /** @class */ (function (_super) {
             var emailBox, usernameBox, passwordBox, email, username, password;
             var _this = this;
             return __generator(this, function (_a) {
+                cc.audioEngine.playEffect(this.click, false);
                 emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
                 usernameBox = cc.find("Canvas/Background/Block/Big Layout/username").getComponent(cc.EditBox);
                 passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
@@ -108,6 +110,7 @@ var SignUp = /** @class */ (function (_super) {
         cc.find("Canvas/Background/BackBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     SignUp.prototype.back = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("main menu");
     };
     SignUp.prototype.onLoad = function () {
@@ -135,6 +138,9 @@ var SignUp = /** @class */ (function (_super) {
         };
         return firebase.database().ref("userData/" + firebase.auth().currentUser.uid).update(userStats);
     };
+    __decorate([
+        property(cc.AudioClip)
+    ], SignUp.prototype, "click", void 0);
     SignUp = __decorate([
         ccclass
     ], SignUp);
