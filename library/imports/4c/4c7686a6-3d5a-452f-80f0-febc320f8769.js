@@ -155,7 +155,10 @@ var Menu = /** @class */ (function (_super) {
         cc.director.loadScene("shop");
     };
     Menu.prototype.loadQuitGame = function () {
-        cc.director.end();
+        firebase.auth().signOut()
+            .then(function () {
+            cc.director.loadScene("main menu");
+        });
     };
     Menu.prototype.loadInstructions = function () {
         cc.director.loadScene("instructions");

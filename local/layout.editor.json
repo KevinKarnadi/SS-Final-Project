@@ -86,9 +86,7 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    " common-asset-worker-worker": {},
-    "window-1655781207746": {}
+    }
   },
   "panels": {
     "project-settings": {

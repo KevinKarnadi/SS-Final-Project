@@ -7,7 +7,7 @@ export default class Playerchoose extends cc.Component {
             Edit_Box: cc.EditBox,
     }
 
-    start () {
+    onLoad () {
         let twobtn = new cc.Component.EventHandler();
         twobtn.target = this.node;
         twobtn.component = "Playerchoose";

@@ -29,7 +29,7 @@ var Playerchoose = /** @class */ (function (_super) {
     function Playerchoose() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Playerchoose.prototype.start = function () {
+    Playerchoose.prototype.onLoad = function () {
         var twobtn = new cc.Component.EventHandler();
         twobtn.target = this.node;
         twobtn.component = "Playerchoose";
