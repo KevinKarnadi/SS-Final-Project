@@ -4,6 +4,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class SignIn extends cc.Component {
 
+    @property(cc.AudioClip)
+    click: cc.AudioClip = null;
+
     initSignInBtn() {
         let clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
@@ -13,6 +16,7 @@ export default class SignIn extends cc.Component {
     }
 
     signIn() {
+        cc.audioEngine.playEffect(this.click, false);
         let emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
         let passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
         let email = emailBox.string;
@@ -34,6 +38,7 @@ export default class SignIn extends cc.Component {
     }
 
     back() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("main menu");
     }
 

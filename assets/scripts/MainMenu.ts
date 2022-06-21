@@ -6,6 +6,9 @@ export default class MainMenu extends cc.Component {
     @property(cc.AudioClip)
     bgm: cc.AudioClip = null;
 
+    @property(cc.AudioClip)
+    click: cc.AudioClip = null;
+
     initSignUpBtn() {
         let clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;
@@ -15,6 +18,7 @@ export default class MainMenu extends cc.Component {
     }
 
     signUp() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("sign up");
     }
 
@@ -27,6 +31,7 @@ export default class MainMenu extends cc.Component {
     }
 
     signIn() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("sign in");
     }
 

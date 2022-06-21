@@ -4,6 +4,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class SignUp extends cc.Component {
 
+    @property(cc.AudioClip)
+    click: cc.AudioClip = null;
+
     private username: string = null;
 
     initSignUpBtn() {
@@ -15,6 +18,7 @@ export default class SignUp extends cc.Component {
     }
 
     async signUp() {
+        cc.audioEngine.playEffect(this.click, false);
         let emailBox = cc.find("Canvas/Background/Block/Big Layout/email").getComponent(cc.EditBox);
         let usernameBox = cc.find("Canvas/Background/Block/Big Layout/username").getComponent(cc.EditBox);
         let passwordBox = cc.find("Canvas/Background/Block/Big Layout/password").getComponent(cc.EditBox);
@@ -44,6 +48,7 @@ export default class SignUp extends cc.Component {
     }
 
     back() {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("main menu");
     }
 
