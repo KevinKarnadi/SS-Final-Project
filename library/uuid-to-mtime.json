@@ -7114,31 +7114,6 @@
     "meta": 1655779953843,
     "relativePath": "scenes\\ending.fire"
   },
-  "2d743afe-407c-4994-96cd-8b013bd3bfb6": {
-    "asset": 1655780872333,
-    "meta": 1655780872353,
-    "relativePath": "scenes\\instructions - minimap.fire"
-  },
-  "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
-    "asset": 1655780881627,
-    "meta": 1655780881649,
-    "relativePath": "scenes\\instructions - option 1.fire"
-  },
-  "6555e4a8-1a9d-4cb6-aa84-03cfc8147668": {
-    "asset": 1655781202822,
-    "meta": 1655781202830,
-    "relativePath": "scenes\\instructions - option 2.fire"
-  },
-  "0701692b-7313-45e8-943f-2c5d552864b6": {
-    "asset": 1655780986766,
-    "meta": 1655780986773,
-    "relativePath": "scenes\\instructions.fire"
-  },
-  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
-    "asset": 1655780955856,
-    "meta": 1655780955864,
-    "relativePath": "scenes\\instructions - win.fire"
-  },
   "c07f2332-4227-44ec-b46b-8823146031bc": {
     "asset": 1655477479191,
     "meta": 1655779953865,
@@ -7149,20 +7124,10 @@
     "meta": 1655779953868,
     "relativePath": "scenes\\lobby.fire"
   },
-  "eda25fc8-17ed-4d34-aab5-a42c421939e8": {
-    "asset": 1655728055298,
-    "meta": 1655779953874,
-    "relativePath": "scenes\\main menu.fire"
-  },
   "99e291d9-c0b0-4c02-afca-7ebd6c5646e3": {
     "asset": 1655754005251,
     "meta": 1655779953878,
     "relativePath": "scenes\\map choose.fire"
-  },
-  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
-    "asset": 1655738548699,
-    "meta": 1655779953883,
-    "relativePath": "scenes\\menu.fire"
   },
   "89bd0550-ef73-4044-8dd7-09d9af029680": {
     "asset": 1655785514004,
@@ -7173,11 +7138,6 @@
     "asset": 1655782469710,
     "meta": 1655785530247,
     "relativePath": "scripts"
-  },
-  "1c6c5c57-e0fd-4690-adf6-af1dff08214b": {
-    "asset": 1655778653711,
-    "meta": 1655779953911,
-    "relativePath": "scenes\\player choose.fire"
   },
   "4f5a1fdd-8cb8-427c-a7bc-bbb8c2d6ad33": {
     "asset": 1655620673016,
@@ -7208,11 +7168,6 @@
     "asset": 1655739318017,
     "meta": 1655779954110,
     "relativePath": "scenes\\player name.fire"
-  },
-  "901b4825-046c-4294-a8e6-acc9878d3ada": {
-    "asset": 1655754196151,
-    "meta": 1655779954142,
-    "relativePath": "scripts\\chooseMap.ts"
   },
   "4dfcd8af-4f2f-439b-82f2-a7692698c4f7": {
     "asset": 1655629792282,
@@ -7269,11 +7224,6 @@
     "meta": 1655779954492,
     "relativePath": "scripts\\Instructions-option2.ts"
   },
-  "b3ff54d3-07e8-496e-98cc-b5aa76e5afc1": {
-    "asset": 1655716325286,
-    "meta": 1655779954495,
-    "relativePath": "scenes\\sign in.fire"
-  },
   "56f80abf-11ab-4509-b792-89693b426946": {
     "asset": 1655749649385,
     "meta": 1655779954512,
@@ -7289,11 +7239,6 @@
     "meta": 1655779954551,
     "relativePath": "scripts\\Lobby.ts"
   },
-  "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
-    "asset": 1655745764349,
-    "meta": 1655779954572,
-    "relativePath": "scripts\\MainMenu.ts"
-  },
   "14f7010a-9eff-411b-b546-b8756bc8ab98": {
     "asset": 1655778653718,
     "meta": 1655779954675,
@@ -7303,11 +7248,6 @@
     "asset": 1655583373598,
     "meta": 1655779954754,
     "relativePath": "scripts\\MiniCam.ts"
-  },
-  "4f45afb8-b756-49bb-9fa5-c2dcee8bcf3c": {
-    "asset": 1655716325287,
-    "meta": 1655779954756,
-    "relativePath": "scenes\\sign up.fire"
   },
   "79d84ba8-7d46-499e-837b-8742cebc8c09": {
     "asset": 1655754922287,
@@ -7319,11 +7259,6 @@
     "meta": 1655779954877,
     "relativePath": "scenes\\welcome.fire"
   },
-  "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
-    "asset": 1655739367056,
-    "meta": 1655779954929,
-    "relativePath": "scripts\\PlayerName.ts"
-  },
   "989f335f-e664-406a-99c6-7486ad70183d": {
     "asset": 1655754882709,
     "meta": 1655779955004,
@@ -7333,11 +7268,6 @@
     "asset": 1655756435485,
     "meta": 1655779955058,
     "relativePath": "scripts\\Shop.ts"
-  },
-  "7ec243e1-2beb-482d-b375-3722e4434f8e": {
-    "asset": 1655745764541,
-    "meta": 1655779955099,
-    "relativePath": "scripts\\SignUp.ts"
   },
   "1aa02b41-fea3-42f5-a4ed-a3a145893008": {
     "asset": 1655654716280,
@@ -11094,19 +11024,94 @@
     "meta": 1655779962971,
     "relativePath": "tiles\\Purple Planet\\png\\256px\\tiles\\Vines (3).png"
   },
+  "32f77663-1432-4962-a902-993e9d5ef357": {
+    "asset": 1655785748454,
+    "meta": 1655785852208,
+    "relativePath": "scripts\\Playerchoose.ts"
+  },
+  "7729b32e-e728-4dc8-8ac5-f2a622703a73": {
+    "asset": 1655786693094,
+    "meta": 1655786734255,
+    "relativePath": "scripts\\MainMenu.ts"
+  },
   "06ed03a8-d701-4b1c-9f89-d27b77bb0f1e": {
-    "asset": 1655782048399,
-    "meta": 1655782052431,
+    "asset": 1655786714480,
+    "meta": 1655786734284,
     "relativePath": "scripts\\SignIn.ts"
   },
+  "7ec243e1-2beb-482d-b375-3722e4434f8e": {
+    "asset": 1655786693095,
+    "meta": 1655786734325,
+    "relativePath": "scripts\\SignUp.ts"
+  },
+  "4f45afb8-b756-49bb-9fa5-c2dcee8bcf3c": {
+    "asset": 1655786693093,
+    "meta": 1655786734380,
+    "relativePath": "scenes\\sign up.fire"
+  },
+  "eda25fc8-17ed-4d34-aab5-a42c421939e8": {
+    "asset": 1655786693092,
+    "meta": 1655786734382,
+    "relativePath": "scenes\\main menu.fire"
+  },
+  "b3ff54d3-07e8-496e-98cc-b5aa76e5afc1": {
+    "asset": 1655786693093,
+    "meta": 1655786734385,
+    "relativePath": "scenes\\sign in.fire"
+  },
+  "f8f6dc75-1d6d-43cf-95e2-392258e810c5": {
+    "asset": 1655786693091,
+    "meta": 1655786734940,
+    "relativePath": "audios\\click.wav"
+  },
+  "2407dc2b-bef5-4180-8d80-8bc84d3d9ef5": {
+    "asset": 1655787128191,
+    "meta": 1655787130523,
+    "relativePath": "scripts\\PlayerName.ts"
+  },
+  "901b4825-046c-4294-a8e6-acc9878d3ada": {
+    "asset": 1655787534363,
+    "meta": 1655787552959,
+    "relativePath": "scripts\\chooseMap.ts"
+  },
   "4c7686a6-3d5a-452f-80f0-febc320f8769": {
-    "asset": 1655782469710,
-    "meta": 1655782475712,
+    "asset": 1655788134657,
+    "meta": 1655788250530,
     "relativePath": "scripts\\Menu.ts"
   },
-  "32f77663-1432-4962-a902-993e9d5ef357": {
-    "asset": 1655785695447,
-    "meta": 1655785702041,
-    "relativePath": "scripts\\Playerchoose.ts"
+  "6b99706f-70fe-496f-adb1-d685ce9f01a5": {
+    "asset": 1655788088831,
+    "meta": 1655788250551,
+    "relativePath": "scenes\\instructions - win.fire"
+  },
+  "5c94bd13-ce2f-4eac-8cdc-184e91cfcc9a": {
+    "asset": 1655788088830,
+    "meta": 1655788250556,
+    "relativePath": "scenes\\instructions - option 1.fire"
+  },
+  "2d743afe-407c-4994-96cd-8b013bd3bfb6": {
+    "asset": 1655788088829,
+    "meta": 1655788250564,
+    "relativePath": "scenes\\instructions - minimap.fire"
+  },
+  "6555e4a8-1a9d-4cb6-aa84-03cfc8147668": {
+    "asset": 1655788088830,
+    "meta": 1655788250569,
+    "relativePath": "scenes\\instructions - option 2.fire"
+  },
+  "0701692b-7313-45e8-943f-2c5d552864b6": {
+    "asset": 1655788088831,
+    "meta": 1655788250573,
+    "relativePath": "scenes\\instructions.fire"
+  },
+  "64a9e853-c1e2-4a9d-8a9f-a060a7c491dc": {
+    "asset": 1655788088833,
+    "meta": 1655788250583,
+    "relativePath": "scenes\\menu.fire"
+  },
+  "1c6c5c57-e0fd-4690-adf6-af1dff08214b": {
+    "asset": 1655788088834,
+    "meta": 1655788250590,
+    "relativePath": "scenes\\player choose.fire"
   }
 }

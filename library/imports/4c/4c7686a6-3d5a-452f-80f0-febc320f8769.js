@@ -65,6 +65,7 @@ var Menu = /** @class */ (function (_super) {
     function Menu() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.bgm = null;
+        _this.click = null;
         return _this;
     }
     Menu.prototype.onLoad = function () {
@@ -152,21 +153,26 @@ var Menu = /** @class */ (function (_super) {
         cc.find("X button").getComponent(cc.Button).clickEvents.push(xbtn);
     };
     Menu.prototype.loadShop = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("shop");
     };
     Menu.prototype.loadQuitGame = function () {
+        cc.audioEngine.playEffect(this.click, false);
         firebase.auth().signOut()
             .then(function () {
             cc.director.loadScene("main menu");
         });
     };
     Menu.prototype.loadInstructions = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("instructions");
     };
     Menu.prototype.loadPlayInstructions = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("player choose");
     };
     Menu.prototype.settings = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.find("Settings Menu").active = true;
     };
     Menu.prototype.initSettingsMenuButtons = function () {
@@ -197,12 +203,15 @@ var Menu = /** @class */ (function (_super) {
         cc.find("Settings Menu/Big Layout/SFX Volume/sfxSlider").getComponent(cc.Slider).slideEvents.push(sfx_sliderEventHandler);
     };
     Menu.prototype.close = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.find("Settings Menu").active = false;
     };
     Menu.prototype.bgMute = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.audioEngine.setMusicVolume(0);
     };
     Menu.prototype.sfxMute = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.audioEngine.setEffectsVolume(0);
     };
     Menu.prototype.changeBgVol = function () {
@@ -216,6 +225,9 @@ var Menu = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], Menu.prototype, "bgm", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], Menu.prototype, "click", void 0);
     Menu = __decorate([
         ccclass
     ], Menu);

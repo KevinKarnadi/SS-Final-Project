@@ -29,6 +29,7 @@ var MainMenu = /** @class */ (function (_super) {
     function MainMenu() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.bgm = null;
+        _this.click = null;
         return _this;
     }
     MainMenu.prototype.initSignUpBtn = function () {
@@ -39,6 +40,7 @@ var MainMenu = /** @class */ (function (_super) {
         cc.find("Canvas/Background/Block/Big Layout/SignUpBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     MainMenu.prototype.signUp = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("sign up");
     };
     MainMenu.prototype.initSignInBtn = function () {
@@ -49,6 +51,7 @@ var MainMenu = /** @class */ (function (_super) {
         cc.find("Canvas/Background/Block/Big Layout/SignInBtn").getComponent(cc.Button).clickEvents.push(clickEventHandler);
     };
     MainMenu.prototype.signIn = function () {
+        cc.audioEngine.playEffect(this.click, false);
         cc.director.loadScene("sign in");
     };
     MainMenu.prototype.playBGM = function () {
@@ -64,6 +67,9 @@ var MainMenu = /** @class */ (function (_super) {
     __decorate([
         property(cc.AudioClip)
     ], MainMenu.prototype, "bgm", void 0);
+    __decorate([
+        property(cc.AudioClip)
+    ], MainMenu.prototype, "click", void 0);
     MainMenu = __decorate([
         ccclass
     ], MainMenu);

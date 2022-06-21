@@ -629,6 +629,9 @@
       "__id__": 9
     },
     "_enabled": true,
+    "click": {
+      "__uuid__": "f8f6dc75-1d6d-43cf-95e2-392258e810c5"
+    },
     "_id": "c13wc0jZhJ34j/nou9yeR0"
   },
   {
@@ -739,6 +742,9 @@
       "__id__": 13
     },
     "_enabled": true,
+    "click": {
+      "__uuid__": "f8f6dc75-1d6d-43cf-95e2-392258e810c5"
+    },
     "_id": "fc2jlqj6tKD4lyy2tz1WO7"
   },
   {
