@@ -101,7 +101,7 @@ export default class Menu extends cc.Component {
     }
 
     loadQuitGame(){
-        cc.director.end();
+        cc.game.end();
     }
 
     loadInstructions(){
