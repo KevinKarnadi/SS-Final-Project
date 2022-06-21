@@ -101,7 +101,10 @@ export default class Menu extends cc.Component {
     }
 
     loadQuitGame(){
-        cc.game.end();
+        firebase.auth().signOut()
+            .then(() => {
+                cc.director.loadScene("main menu");
+            });
     }
 
     loadInstructions(){
