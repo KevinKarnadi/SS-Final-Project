@@ -5,21 +5,21 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
-      "width": 1366,
+      "x": -1600,
+      "y": -148,
+      "width": 1368,
       "height": 728,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 215.4375,
+            "width": 215.3125,
             "height": 610,
             "type": "dock-v",
             "children": [
               {
-                "width": 215.4375,
-                "height": 304.96875,
+                "width": 215.3125,
+                "height": 304.984375,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 215.4375,
-                "height": 302.03125,
+                "width": 215.3125,
+                "height": 302,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,12 +38,12 @@
             ]
           },
           {
-            "width": 764.890625,
+            "width": 766.125,
             "height": 610,
             "type": "dock-v",
             "children": [
               {
-                "width": 764.890625,
+                "width": 766.125,
                 "height": 341,
                 "type": "panel",
                 "active": 0,
@@ -52,7 +52,7 @@
                 ]
               },
               {
-                "width": 764.890625,
+                "width": 766.125,
                 "height": 266,
                 "type": "panel",
                 "active": 2,
@@ -65,7 +65,7 @@
             ]
           },
           {
-            "width": 363.671875,
+            "width": 364.53125,
             "height": 610,
             "type": "panel",
             "active": 0,
@@ -86,7 +86,9 @@
         "inspector",
         "cocos-services"
       ]
-    }
+    },
+    " common-asset-worker-worker": {},
+    "window-1655821497198": {}
   },
   "panels": {
     "project-settings": {

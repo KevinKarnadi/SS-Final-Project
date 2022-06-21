@@ -194,7 +194,7 @@ export default class Shop extends cc.Component {
             }
         });
         this.shotgunbtn.node.on(cc.Node.EventType.MOUSE_DOWN, ()=>{
-            if(this.AR != "true") {
+            if(this.shotgun != "true") {
                 this.playClickAudio();
                 this.buyItemGem(this.shotgunbtn, "shotgun");
             }
