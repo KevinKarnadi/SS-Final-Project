@@ -13,13 +13,13 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 242.0749969482422,
+            "width": 242.0625,
             "height": 700.2000122070312,
             "type": "dock-v",
             "children": [
               {
-                "width": 242.0749969482422,
-                "height": 350.51251220703125,
+                "width": 242.0625,
+                "height": 350.6000061035156,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 242.0749969482422,
-                "height": 346.6875,
+                "width": 242.0625,
+                "height": 346.5874938964844,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,13 +38,13 @@
             ]
           },
           {
-            "width": 863.6500244140625,
+            "width": 864.2250366210938,
             "height": 700.2000122070312,
             "type": "dock-v",
             "children": [
               {
-                "width": 863.6500244140625,
-                "height": 431.20001220703125,
+                "width": 864.2250366210938,
+                "height": 431.1125183105469,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -52,8 +52,8 @@
                 ]
               },
               {
-                "width": 863.6500244140625,
-                "height": 266,
+                "width": 864.2250366210938,
+                "height": 266.07501220703125,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -65,7 +65,7 @@
             ]
           },
           {
-            "width": 410.6499938964844,
+            "width": 410.1000061035156,
             "height": 700.2000122070312,
             "type": "panel",
             "active": 0,
@@ -86,8 +86,7 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    " common-asset-worker-worker": {}
+    }
   },
   "panels": {
     "project-settings": {
