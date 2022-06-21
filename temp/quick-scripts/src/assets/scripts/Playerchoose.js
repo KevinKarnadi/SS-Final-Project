@@ -45,11 +45,11 @@ var Playerchoose = /** @class */ (function (_super) {
         fourbtn.component = "Playerchoose";
         fourbtn.handler = "loadFourPlayers";
         cc.find("4button").getComponent(cc.Button).clickEvents.push(fourbtn);
-        var teambtn = new cc.Component.EventHandler();
-        teambtn.target = this.node;
-        teambtn.component = "Playerchoose";
-        teambtn.handler = "loadTeamPlayers";
-        cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
+        // let teambtn = new cc.Component.EventHandler();
+        // teambtn.target = this.node;
+        // teambtn.component = "Playerchoose";
+        // teambtn.handler = "loadTeamPlayers";
+        // cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
         var xbtn = new cc.Component.EventHandler();
         xbtn.target = this.node;
         xbtn.component = "Playerchoose";

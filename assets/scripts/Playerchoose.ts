@@ -34,13 +34,13 @@ export default class Playerchoose extends cc.Component {
         cc.find("4button").getComponent(cc.Button).clickEvents.push(fourbtn);
 
 
-        let teambtn = new cc.Component.EventHandler();
-        teambtn.target = this.node;
-        teambtn.component = "Playerchoose";
-        teambtn.handler = "loadTeamPlayers";
+        // let teambtn = new cc.Component.EventHandler();
+        // teambtn.target = this.node;
+        // teambtn.component = "Playerchoose";
+        // teambtn.handler = "loadTeamPlayers";
 
 
-        cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
+        // cc.find("teambutton").getComponent(cc.Button).clickEvents.push(teambtn);
 
         let xbtn = new cc.Component.EventHandler();
         xbtn.target = this.node;
